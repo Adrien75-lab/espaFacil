@@ -51,7 +51,7 @@ const DATA = {
       { es: "la puerta", fr: "la porte", ex: "Abre la puerta." },
       { es: "la ventana", fr: "la fenetre", ex: "La ventana esta abierta." },
       { es: "la mesa", fr: "la table", ex: "La mesa es de madera." },
-      { es: "la silla", fr: "la chaise", ex: "Siéntate en la silla." },
+      { es: "la silla", fr: "la chaise", ex: "Sientate en la silla." },
       { es: "la cama", fr: "le lit", ex: "La cama es comoda." },
       { es: "el bano", fr: "la salle de bain", ex: "El bano esta aqui." },
       { es: "la cocina", fr: "la cuisine", ex: "Me gusta cocinar." },
@@ -115,7 +115,7 @@ const DATA = {
       { es: "el carril bici", fr: "la piste cyclable", ex: "Hay un carril bici nuevo." },
       { es: "el peaje", fr: "le peage", ex: "Paga el peaje." },
       { es: "el velocimetro", fr: "le compteur de vitesse", ex: "Mira el velocimetro." },
-      { es: "el retrovisior", fr: "le retroviseur", ex: "Ajusta el retrovisor." },
+      { es: "el retrovisor", fr: "le retroviseur", ex: "Ajusta el retrovisor." },
       { es: "el embrague", fr: "l'embrayage", ex: "Suelta el embrague." },
       { es: "el intermitente", fr: "le clignotant", ex: "Pon el intermitente." },
       { es: "el freno", fr: "le frein", ex: "Pisa el freno." },
@@ -153,13 +153,13 @@ const DATA = {
     avance: [
       { es: "el yerno", fr: "le gendre", ex: "El yerno es simpatico." },
       { es: "la nuera", fr: "la belle-fille", ex: "La nuera es encantadora." },
-      { es: "el cuñado", fr: "le beau-frere", ex: "El cuñado es generoso." },
+      { es: "el cunado", fr: "le beau-frere", ex: "El cunado es generoso." },
       { es: "el padrino", fr: "le parrain", ex: "El padrino es rico." },
       { es: "la madrina", fr: "la marraine", ex: "La madrina es buena." },
       { es: "el ahijado", fr: "le filleul", ex: "Mi ahijado es listo." },
       { es: "el bisabuelo", fr: "l'arriere grand-pere", ex: "El bisabuelo vive aqui." },
       { es: "el heredero", fr: "l'heritier", ex: "El heredero del trono." },
-      { es: "los antepasados", fr: "les ancetres", ex: "Mis antepasados son españoles." },
+      { es: "los antepasados", fr: "les ancetres", ex: "Mis antepasados son espanoles." },
       { es: "la descendencia", fr: "la descendance", ex: "La descendencia real." }
     ]
   },
@@ -197,7 +197,7 @@ const DATA = {
       { es: "champan", fr: "champagne", ex: "Color champan elegante." },
       { es: "cobalto", fr: "cobalt", ex: "Azul cobalto intenso." },
       { es: "magenta", fr: "magenta", ex: "Rosa magenta brillante." },
-      { es: "añil", fr: "indigo", ex: "Un añil profundo." },
+      { es: "anil", fr: "indigo", ex: "Un anil profundo." },
       { es: "terracota", fr: "terre cuite", ex: "Jarron de terracota." },
       { es: "alabastro", fr: "albatre", ex: "Blanco alabastro puro." },
       { es: "cobre", fr: "cuivre", ex: "Lamparitas de cobre." }
@@ -207,28 +207,28 @@ const DATA = {
     nom: "Expressions",
     icone: "💬",
     debutant: [
-      { es: "hola", fr: "bonjour / salut", ex: "Hola, ¿como estas?" },
+      { es: "hola", fr: "bonjour / salut", ex: "Hola, como estas?" },
       { es: "adios", fr: "au revoir", ex: "Adios, hasta luego." },
       { es: "gracias", fr: "merci", ex: "Muchas gracias." },
       { es: "por favor", fr: "s'il vous plait", ex: "Un cafe, por favor." },
       { es: "si", fr: "oui", ex: "Si, me gusta." },
       { es: "no", fr: "non", ex: "No, gracias." },
-      { es: "buenos dias", fr: "bonjour (matin)", ex: "Buenos dias, señor." },
-      { es: "buenas noches", fr: "bonne nuit", ex: "Buenas noches, hasta mañana." },
+      { es: "buenos dias", fr: "bonjour (matin)", ex: "Buenos dias, senor." },
+      { es: "buenas noches", fr: "bonne nuit", ex: "Buenas noches, hasta manana." },
       { es: "lo siento", fr: "je suis desole", ex: "Lo siento mucho." },
       { es: "de nada", fr: "de rien", ex: "De nada, con gusto." }
     ],
     intermediaire: [
-      { es: "¿como estas?", fr: "comment vas-tu?", ex: "Hola, ¿como estas hoy?" },
+      { es: "como estas", fr: "comment vas-tu?", ex: "Hola, como estas hoy?" },
       { es: "muy bien", fr: "tres bien", ex: "Estoy muy bien, gracias." },
-      { es: "¿donde esta?", fr: "où est?", ex: "¿Donde esta el banco?" },
+      { es: "donde esta", fr: "ou est?", ex: "Donde esta el banco?" },
       { es: "no entiendo", fr: "je ne comprends pas", ex: "No entiendo la pregunta." },
       { es: "habla mas despacio", fr: "parlez plus lentement", ex: "Por favor, habla mas despacio." },
-      { es: "¿cuanto cuesta?", fr: "combien ca coute?", ex: "¿Cuanto cuesta este libro?" },
+      { es: "cuanto cuesta", fr: "combien ca coute?", ex: "Cuanto cuesta este libro?" },
       { es: "me llamo", fr: "je m'appelle", ex: "Me llamo Carlos." },
       { es: "mucho gusto", fr: "enchante", ex: "Mucho gusto en conocerte." },
-      { es: "¿que hora es?", fr: "quelle heure est-il?", ex: "¿Que hora es, por favor?" },
-      { es: "tengo hambre", fr: "j'ai faim", ex: "Tengo hambre, ¿comemos?" }
+      { es: "que hora es", fr: "quelle heure est-il?", ex: "Que hora es, por favor?" },
+      { es: "tengo hambre", fr: "j'ai faim", ex: "Tengo hambre, comemos?" }
     ],
     avance: [
       { es: "en cambio", fr: "en revanche", ex: "En cambio, el otro es mejor." },
@@ -256,7 +256,7 @@ const DATA = {
       { es: "la oreja", fr: "l'oreille", ex: "Habla en mi oreja." },
       { es: "el pelo", fr: "les cheveux", ex: "Tiene el pelo largo." },
       { es: "el brazo", fr: "le bras", ex: "El brazo me duele." },
-      { es: "la pierna", fr: "la jambe", ex: "Me rompí la pierna." }
+      { es: "la pierna", fr: "la jambe", ex: "Me rompi la pierna." }
     ],
     intermediaire: [
       { es: "el hombro", fr: "l'epaule", ex: "Me duele el hombro." },
@@ -276,7 +276,7 @@ const DATA = {
       { es: "el higado", fr: "le foie", ex: "El higado filtra toxinas." },
       { es: "el rinon", fr: "le rein", ex: "Tiene problemas de rinon." },
       { es: "la columna", fr: "la colonne vertebrale", ex: "Cuida tu columna." },
-      { es: "el tendón", fr: "le tendon", ex: "Se rompió el tendon." },
+      { es: "el tendon", fr: "le tendon", ex: "Se rompio el tendon." },
       { es: "la arteria", fr: "l'artere", ex: "La arteria principal." },
       { es: "el pancreas", fr: "le pancreas", ex: "El pancreas regula el azucar." },
       { es: "el musculo", fr: "le muscle", ex: "Tiene muchos musculos." },
@@ -319,7 +319,7 @@ const DATA = {
       { es: "el flamenco", fr: "le flamant rose", ex: "El flamenco es rosado." },
       { es: "el cocodrilo", fr: "le crocodile", ex: "El cocodrilo abre la boca." },
       { es: "el loro", fr: "le perroquet", ex: "El loro habla y habla." },
-      { es: "el jabalí", fr: "le sanglier", ex: "El jabali es salvaje." },
+      { es: "el jabali", fr: "le sanglier", ex: "El jabali es salvaje." },
       { es: "el canguro", fr: "le kangourou", ex: "El canguro salta lejos." }
     ]
   },
@@ -336,7 +336,7 @@ const DATA = {
       { es: "la nube", fr: "le nuage", ex: "Hay muchas nubes." },
       { es: "la tormenta", fr: "la tempete", ex: "Viene una tormenta." },
       { es: "el cielo", fr: "le ciel", ex: "El cielo esta despejado." },
-      { es: "la niebla", fr: "le brouillard", ex: "Hay niebla esta mañana." }
+      { es: "la niebla", fr: "le brouillard", ex: "Hay niebla esta manana." }
     ],
     intermediaire: [
       { es: "el trueno", fr: "le tonnerre", ex: "El trueno asusta." },
@@ -346,7 +346,7 @@ const DATA = {
       { es: "el arcoiris", fr: "l'arc-en-ciel", ex: "Que bonito arcoiris." },
       { es: "la sequia", fr: "la secheresse", ex: "La sequia es grave." },
       { es: "la inundacion", fr: "l'inondation", ex: "La inundacion fue fuerte." },
-      { es: "el rocion", fr: "la rosee", ex: "El rocio de la mañana." },
+      { es: "el rocio", fr: "la rosee", ex: "El rocio de la manana." },
       { es: "la helada", fr: "le gel", ex: "Esta noche hay helada." },
       { es: "el temporal", fr: "la tempete", ex: "Un temporal de verano." }
     ],
@@ -359,7 +359,7 @@ const DATA = {
       { es: "la ola de calor", fr: "la canicule", ex: "Una ola de calor record." },
       { es: "la borrasca", fr: "la depression", ex: "Una borrasca lluviosa." },
       { es: "la ventisca", fr: "la tempete de neige", ex: "Una ventisca sorpresa." },
-      { es: "el calido", fr: "le temps chaud", ex: "Tiempo calido y seco." },
+      { es: "el tiempo calido", fr: "le temps chaud", ex: "Tiempo calido y seco." },
       { es: "el microclima", fr: "le microclimat", ex: "Un microclima especial." }
     ]
   },
@@ -397,7 +397,7 @@ const DATA = {
       { es: "la esgrima", fr: "l'escrime", ex: "La esgrima es un arte." },
       { es: "el remo", fr: "l'aviron", ex: "El remo es agotador." },
       { es: "el waterpolo", fr: "le water-polo", ex: "Juego al waterpolo." },
-      { es: "el triatlón", fr: "le triathlon", ex: "El triatlon es extremo." },
+      { es: "el triatlon", fr: "le triathlon", ex: "El triatlon es extremo." },
       { es: "el esqui acuatico", fr: "le ski nautique", ex: "Practico esqui acuatico." },
       { es: "la halterofilia", fr: "l'halterophilie", ex: "La halterofilia exige fuerza." },
       { es: "el tiro con arco", fr: "le tir a l'arc", ex: "El tiro con arco requiere precision." }
@@ -422,7 +422,7 @@ const STORAGE_KEY = "espafacil_progress";
 // =============================================
 // STATE
 // =============================================
-let modeJeu = "flip"; // "flip" ou "write"
+let modeJeu = "flip";
 
 let state = {
   themeActuel: null,
@@ -453,7 +453,18 @@ let writeState = {
 function chargerProgression() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? JSON.parse(raw) : {};
+    if (!raw) return {};
+    const data = JSON.parse(raw);
+    // Migration : ancien format sans cle "meilleur"
+    Object.values(data).forEach(theme => {
+      Object.values(theme).forEach(niveau => {
+        if (niveau.meilleur === undefined) {
+          niveau.meilleur = niveau.meilleurScore || niveau.score || niveau.pourcentage || 0;
+          if (!niveau.totalVu) niveau.totalVu = 10;
+        }
+      });
+    });
+    return data;
   } catch(e) { return {}; }
 }
 
@@ -463,8 +474,8 @@ function sauvegarderProgression(theme, niveau, bon, total) {
   const ancien = prog[theme][niveau] || { meilleur: 0, totalVu: 0 };
   const pct = Math.round((bon / total) * 100);
   prog[theme][niveau] = {
-    meilleur: Math.max(ancien.meilleur, pct),
-    totalVu: ancien.totalVu + total,
+    meilleur: Math.max(ancien.meilleur || 0, pct),
+    totalVu: (ancien.totalVu || 0) + total,
     derniereSession: new Date().toISOString()
   };
   localStorage.setItem(STORAGE_KEY, JSON.stringify(prog));
@@ -474,7 +485,7 @@ function estDebloque(themeCle, niveauCle) {
   const prerequis = PREREQUIS[niveauCle];
   if (!prerequis) return true;
   const prog = chargerProgression();
-  return prog[themeCle] && prog[themeCle][prerequis] && prog[themeCle][prerequis].meilleur >= 50;
+  return prog[themeCle] && prog[themeCle][prerequis] && (prog[themeCle][prerequis].meilleur || 0) >= 50;
 }
 
 // =============================================
@@ -496,7 +507,7 @@ function initAccueil() {
 
   Object.entries(DATA).forEach(([cle, theme]) => {
     const niveaux = Object.keys(NIVEAUX_CONFIG);
-    const completes = niveaux.filter(n => prog[cle] && prog[cle][n] && prog[cle][n].meilleur >= 50).length;
+    const completes = niveaux.filter(n => prog[cle] && prog[cle][n] && (prog[cle][n].meilleur || 0) >= 50).length;
     const pct = Math.round((completes / niveaux.length) * 100);
 
     const div = document.createElement('div');
@@ -512,15 +523,21 @@ function initAccueil() {
     grid.appendChild(div);
   });
 
-  // Résumé progression
+  // Resume progression
   const summary = document.getElementById('progress-summary');
   const touches = Object.entries(prog).filter(([,v]) => Object.keys(v).length > 0);
   if (touches.length > 0) {
     summary.innerHTML = '<h3>Ma progression</h3><div class="progress-tags">' +
       touches.map(([cle, niveaux]) => {
-        const best = Object.entries(niveaux).map(([n, d]) => `${NIVEAUX_CONFIG[n].icone} ${d.meilleur}%`).join(' ');
-        return `<span class="progress-tag">${DATA[cle].icone} ${DATA[cle].nom}: ${best}</span>`;
-      }).join('') + '</div>';
+        const themeData = DATA[cle];
+        if (!themeData) return '';
+        const best = Object.entries(niveaux).map(([n, d]) => {
+          const cfg = NIVEAUX_CONFIG[n];
+          if (!cfg) return '';
+          return cfg.icone + ' ' + (d.meilleur || 0) + '%';
+        }).filter(Boolean).join(' ');
+        return `<span class="progress-tag">${themeData.icone} ${themeData.nom}: ${best}</span>`;
+      }).filter(Boolean).join('') + '</div>';
     summary.classList.add('visible');
   } else {
     summary.classList.remove('visible');
@@ -557,7 +574,7 @@ function ouvrirNiveaux(themeCle) {
       </div>
       <div class="level-card-meta">
         ${debloque
-          ? `<div class="level-card-score">${stats ? stats.meilleur + '%' : '--'}</div>
+          ? `<div class="level-card-score">${stats ? (stats.meilleur || 0) + '%' : '--'}</div>
              <div class="level-card-cards">10 cartes</div>`
           : `<div class="level-card-locked-msg">Finissez le niveau precedent</div>`
         }
@@ -592,12 +609,10 @@ function demarrerSession(niveauCle, cartesRevision) {
   state.niveauActuel = niveauCle;
   state.modeRevision = !!cartesRevision;
 
-  // Répétition espacée : les cartes ratées (sans révision forcée) ont 2 occurrences
   if (cartesRevision) {
     state.cartes = melanger(cartesRevision);
   } else {
-    const base = melanger(theme[niveauCle]);
-    state.cartes = base;
+    state.cartes = melanger(theme[niveauCle]);
   }
 
   state.indexActuel = 0;
@@ -639,7 +654,7 @@ function retournerCarte() {
   flashcard.classList.add('is-flipped');
   document.getElementById('answer-buttons').classList.add('visible');
 
-  // Prononciation via Web Speech API
+  // Prononciation Web Speech API
   const carte = state.cartes[state.indexActuel];
   prononcer(carte.es);
 }
@@ -660,9 +675,7 @@ function repondre(savait) {
     state.scoreNon++;
     state.cartesRatees.push(state.cartes[state.indexActuel]);
   }
-
   state.indexActuel++;
-
   if (state.indexActuel < state.cartes.length) {
     afficherCarte();
   } else {
@@ -688,7 +701,7 @@ function terminerSession() {
     emoji = '🏆'; titre = 'Excellent !'; sous = 'Parfait, vous maitrisez ce niveau !';
     lancerConfettis();
   } else if (pct >= 70) {
-    emoji = '🌟'; titre = 'Tres bien !'; sous = 'Encore un peu d\'entrainement !';
+    emoji = '🌟'; titre = 'Tres bien !'; sous = "Encore un peu d'entrainement !";
   } else if (pct >= 50) {
     emoji = '💪'; titre = 'Pas mal !'; sous = 'Continuez a pratiquer !';
   } else {
@@ -718,7 +731,7 @@ function lancerConfettis() {
 }
 
 // =============================================
-// SESSION ÉCRITURE
+// SESSION ECRITURE
 // =============================================
 function demarrerSessionEcriture(niveauCle) {
   const theme = DATA[state.themeActuel];
@@ -757,7 +770,7 @@ function afficherCarteEcriture() {
   document.getElementById('write-feedback').textContent = '';
   document.getElementById('write-feedback').className = 'write-feedback';
   document.getElementById('btn-next-write').style.display = 'none';
-  document.getElementById('btn-validate').style.display = 'flex';
+  document.getElementById('btn-validate').style.display = '';
   writeState.reponduActuel = false;
 }
 
@@ -775,16 +788,16 @@ function validerEcriture() {
   const reponse = normaliserReponse(input.value);
   const attendu = normaliserReponse(carte.fr);
 
-  // Accepter aussi les variantes (ex: "le pain" et "pain")
+  // Accepter aussi sans article
   const variantes = [attendu];
-  const sanArticle = attendu.replace(/^(le |la |l'|les |un |une |des )/, '');
+  const sanArticle = attendu.replace(/^(le |la |l |les |un |une |des )/, '');
   if (sanArticle !== attendu) variantes.push(sanArticle);
 
   const correct = variantes.some(v => reponse === v || reponse.includes(v) || v.includes(reponse));
 
   writeState.reponduActuel = true;
   document.getElementById('btn-validate').style.display = 'none';
-  document.getElementById('btn-next-write').style.display = 'inline-flex';
+  document.getElementById('btn-next-write').style.display = 'inline-block';
 
   const feedback = document.getElementById('write-feedback');
   if (correct) {
@@ -836,9 +849,9 @@ function terminerSessionEcriture() {
     emoji = '🏆'; titre = 'Excellent !'; sous = 'Vous ecrivez parfaitement !';
     lancerConfettis();
   } else if (pct >= 70) {
-    emoji = '🌟'; titre = 'Tres bien !'; sous = 'Votre orthographe s\'ameliore !';
+    emoji = '🌟'; titre = 'Tres bien !'; sous = "Votre orthographe s'ameliore !";
   } else if (pct >= 50) {
-    emoji = '💪'; titre = 'Pas mal !'; sous = 'Continuez a pratiquer l\'ecriture !';
+    emoji = '💪'; titre = 'Pas mal !'; sous = "Continuez a pratiquer l'ecriture !";
   } else {
     emoji = '📚'; titre = 'A revoir !'; sous = 'Essayez d\'abord le mode retournement.';
   }
@@ -859,7 +872,7 @@ function terminerSessionEcriture() {
 }
 
 // =============================================
-// THÈME SOMBRE
+// THEME SOMBRE
 // =============================================
 function setMode(mode) {
   modeJeu = mode;
@@ -881,16 +894,14 @@ function toggleTheme() {
 function afficherStats() {
   const prog = chargerProgression();
 
-  // Globales
-  let totalCartes = 0, totalBonnes = 0, niveauxCompletes = 0;
+  let totalCartes = 0, niveauxCompletes = 0, meilleurGlobal = 0;
   Object.entries(prog).forEach(([themeCle, niveaux]) => {
     Object.entries(niveaux).forEach(([niveauCle, stats]) => {
       totalCartes += stats.totalVu || 0;
-      totalBonnes += Math.round((stats.meilleur / 100) * 10);
-      if (stats.meilleur >= 50) niveauxCompletes++;
+      if ((stats.meilleur || 0) >= 50) niveauxCompletes++;
+      if ((stats.meilleur || 0) > meilleurGlobal) meilleurGlobal = stats.meilleur || 0;
     });
   });
-  const txReussite = totalCartes > 0 ? Math.round((totalBonnes / totalCartes) * 100) : 0;
 
   document.getElementById('stats-global').innerHTML = `
     <div class="stats-global-card">
@@ -902,26 +913,23 @@ function afficherStats() {
       <span class="stats-global-label">Niveaux OK</span>
     </div>
     <div class="stats-global-card">
-      <span class="stats-global-number">${txReussite}%</span>
+      <span class="stats-global-number">${meilleurGlobal > 0 ? meilleurGlobal + '%' : '--'}</span>
       <span class="stats-global-label">Meilleur score</span>
     </div>`;
 
-  // Par thème
   const themesDiv = document.getElementById('stats-themes');
   themesDiv.innerHTML = '';
-
   const totalNiveaux = Object.keys(NIVEAUX_CONFIG).length;
 
   Object.entries(DATA).forEach(([cle, theme]) => {
     const niveauxData = prog[cle] || {};
     const niveauxFaits = Object.keys(niveauxData).length;
     const meilleur = niveauxFaits > 0
-      ? Math.max(...Object.values(niveauxData).map(d => d.meilleur))
+      ? Math.max(...Object.values(niveauxData).map(d => d.meilleur || 0))
       : 0;
     const pct = Math.round((niveauxFaits / totalNiveaux) * 100);
-
     const detail = niveauxFaits > 0
-      ? Object.entries(niveauxData).map(([n,d]) => NIVEAUX_CONFIG[n].icone + ' ' + d.meilleur + '%').join(' · ')
+      ? Object.entries(niveauxData).map(([n, d]) => NIVEAUX_CONFIG[n].icone + ' ' + (d.meilleur || 0) + '%').join(' · ')
       : 'Aucune session';
 
     themesDiv.innerHTML += `
@@ -943,14 +951,13 @@ function afficherStats() {
 // INIT
 // =============================================
 document.addEventListener('DOMContentLoaded', () => {
-  // Restaurer thème
+  // Restaurer theme
   const savedTheme = localStorage.getItem('espafacil_theme') || 'light';
   document.documentElement.setAttribute('data-theme', savedTheme);
   document.getElementById('btn-theme').textContent = savedTheme === 'dark' ? '☀️' : '🌙';
 
   initAccueil();
 
-  // Navigation accueil
   document.getElementById('back-to-home').addEventListener('click', () => {
     afficherEcran('screen-home');
     initAccueil();
@@ -967,7 +974,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('btn-knew').addEventListener('click', () => repondre(true));
   document.getElementById('btn-didnt').addEventListener('click', () => repondre(false));
 
-  // Session écriture
+  // Session ecriture
   document.getElementById('btn-validate').addEventListener('click', validerEcriture);
   document.getElementById('btn-next-write').addEventListener('click', suivantEcriture);
   document.getElementById('write-input').addEventListener('keydown', (e) => {
@@ -977,15 +984,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Résultats
+  // Resultats
   document.getElementById('btn-retry').addEventListener('click', () => {
     if (modeJeu === 'write') demarrerSessionEcriture(writeState.niveauActuel);
     else demarrerSession(state.niveauActuel);
   });
   document.getElementById('btn-review').addEventListener('click', () => {
-    const ratees = modeJeu === 'write' ? writeState.cartesRatees : state.cartesRatees;
     if (modeJeu === 'write') {
-      writeState.cartes = melanger(ratees);
+      writeState.cartes = melanger(writeState.cartesRatees);
       writeState.indexActuel = 0;
       writeState.scoreOui = 0;
       writeState.scoreNon = 0;
@@ -993,7 +999,7 @@ document.addEventListener('DOMContentLoaded', () => {
       afficherEcran('screen-write');
       afficherCarteEcriture();
     } else {
-      demarrerSession(state.niveauActuel, ratees);
+      demarrerSession(state.niveauActuel, state.cartesRatees);
     }
   });
   document.getElementById('btn-home').addEventListener('click', () => {
@@ -1001,7 +1007,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initAccueil();
   });
 
-  // Stats et thème
+  // Stats et theme
   document.getElementById('btn-open-stats').addEventListener('click', afficherStats);
   document.getElementById('btn-theme').addEventListener('click', toggleTheme);
 });
