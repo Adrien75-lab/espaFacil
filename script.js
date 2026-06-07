@@ -628,74 +628,47 @@ function demarrerSession(niveauCle, cartesRevision) {
   afficherCarte();
 }
 
-function getDistracteurs(carteActuelle, niveauCle) {
-  const pool = [];
-  Object.values(DATA).forEach(theme => {
-    if (theme[niveauCle]) {
-      theme[niveauCle].forEach(c => {
-        if (c.fr !== carteActuelle.fr) pool.push(c.fr);
-      });
-    }
-  });
-  return melanger(pool).slice(0, 2);
-}
-
 function afficherCarte() {
   const carte = state.cartes[state.indexActuel];
   const total = state.cartes.length;
 
-  document.getElementById('qcm-word').textContent = carte.es;
-  document.getElementById('qcm-example').textContent = '';
-  document.getElementById('qcm-example').classList.add('hidden');
+  document.getElementById('card-word-front').textContent = carte.es;
+  document.getElementById('card-word-back').textContent = carte.fr;
+  document.getElementById('card-example').textContent = carte.ex;
   document.getElementById('card-counter').textContent = 'Carte ' + (state.indexActuel + 1) + ' / ' + total;
   document.getElementById('progress-bar').style.width = (state.indexActuel / total * 100) + '%';
   document.getElementById('score-good').textContent = '✓ ' + state.scoreOui;
   document.getElementById('score-bad').textContent  = '✗ ' + state.scoreNon;
 
+  // Carte face avant, pas encore retournée
+  document.getElementById('flashcard').classList.remove('is-flipped');
   state.estRetournee = false;
 
-  // Générer 3 choix : 1 correct + 2 distracteurs
-  const distracteurs = getDistracteurs(carte, state.niveauActuel);
-  const choix = melanger([carte.fr, ...distracteurs]);
-  const lettres = ['A', 'B', 'C'];
-
-  const container = document.getElementById('qcm-choices');
-  container.innerHTML = '';
-  choix.forEach((c, i) => {
-    const btn = document.createElement('button');
-    btn.className = 'qcm-btn';
-    btn.innerHTML = '<span class="choice-letter">' + lettres[i] + '</span>' + c;
-    btn.addEventListener('click', () => repondreQCM(c === carte.fr, btn, carte));
-    container.appendChild(btn);
-  });
+  // Boutons actifs dès le départ - l'utilisateur s'engage AVANT de voir la réponse
+  const btns = document.getElementById('answer-buttons');
+  btns.querySelectorAll('button').forEach(b => b.disabled = false);
+  btns.style.opacity = '1';
 }
 
-function repondreQCM(correct, btnClique, carte) {
+function repondre(savait) {
   if (state.estRetournee) return;
   state.estRetournee = true;
 
-  // Désactiver tous les boutons et montrer la bonne réponse
-  document.querySelectorAll('.qcm-btn').forEach(b => {
-    b.disabled = true;
-    if (b.textContent.slice(1).trim() === carte.fr) b.classList.add('correct');
-  });
+  // Désactiver les boutons
+  document.getElementById('answer-buttons').querySelectorAll('button').forEach(b => b.disabled = true);
 
-  if (correct) {
+  // Retourner la carte pour montrer la réponse
+  document.getElementById('flashcard').classList.add('is-flipped');
+  prononcer(state.cartes[state.indexActuel].es);
+
+  if (savait) {
     state.scoreOui++;
-    btnClique.classList.add('correct');
   } else {
     state.scoreNon++;
-    btnClique.classList.add('wrong');
-    state.cartesRatees.push(carte);
+    state.cartesRatees.push(state.cartes[state.indexActuel]);
   }
 
-  // Afficher exemple + prononcer
-  const ex = document.getElementById('qcm-example');
-  ex.textContent = carte.ex;
-  ex.classList.remove('hidden');
-  prononcer(carte.es);
-
-  // Carte suivante
+  // Carte suivante après 1.3s
   setTimeout(() => {
     state.indexActuel++;
     if (state.indexActuel < state.cartes.length) {
@@ -703,7 +676,7 @@ function repondreQCM(correct, btnClique, carte) {
     } else {
       terminerSession();
     }
-  }, 1400);
+  }, 1300);
 }
 
 function terminerSession() {
@@ -994,7 +967,9 @@ document.addEventListener('DOMContentLoaded', () => {
     initAccueil();
   });
 
-  // Session QCM - les boutons sont générés dynamiquement dans afficherCarte()
+  // Session flip
+  document.getElementById('btn-knew').addEventListener('click', () => repondre(true));
+  document.getElementById('btn-didnt').addEventListener('click', () => repondre(false));
 
   // Session ecriture
   document.getElementById('btn-validate').addEventListener('click', validerEcriture);
