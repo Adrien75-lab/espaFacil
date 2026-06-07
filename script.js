@@ -643,7 +643,9 @@ function afficherCarte() {
   const flashcard = document.getElementById('flashcard');
   flashcard.classList.remove('is-flipped');
   state.estRetournee = false;
-  document.getElementById('answer-buttons').classList.remove('visible');
+  // Boutons visibles dès le départ - l'utilisateur s'engage AVANT de voir la réponse
+  document.getElementById('answer-buttons').classList.add('visible');
+  document.getElementById('answer-buttons').classList.remove('revealing');
 }
 
 function retournerCarte() {
@@ -669,18 +671,35 @@ function prononcer(texte) {
 }
 
 function repondre(savait) {
+  // Bloquer si déjà en cours de révélation
+  if (state.estRetournee) return;
+  state.estRetournee = true;
+
+  // Griser les boutons pendant la révélation
+  const btns = document.getElementById('answer-buttons');
+  btns.classList.add('revealing');
+
+  // Retourner la carte pour montrer la réponse
+  document.getElementById('flashcard').classList.add('is-flipped');
+  prononcer(state.cartes[state.indexActuel].es);
+
+  // Enregistrer le score
   if (savait) {
     state.scoreOui++;
   } else {
     state.scoreNon++;
     state.cartesRatees.push(state.cartes[state.indexActuel]);
   }
-  state.indexActuel++;
-  if (state.indexActuel < state.cartes.length) {
-    afficherCarte();
-  } else {
-    terminerSession();
-  }
+
+  // Passer à la carte suivante après un court délai
+  setTimeout(() => {
+    state.indexActuel++;
+    if (state.indexActuel < state.cartes.length) {
+      afficherCarte();
+    } else {
+      terminerSession();
+    }
+  }, 1200);
 }
 
 function terminerSession() {
@@ -969,8 +988,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initAccueil();
   });
 
-  // Session flip
-  document.getElementById('flashcard-scene').addEventListener('click', retournerCarte);
+  // Session flip - cliquer carte n'a plus d'effet, les boutons sont actifs dès le debut
   document.getElementById('btn-knew').addEventListener('click', () => repondre(true));
   document.getElementById('btn-didnt').addEventListener('click', () => repondre(false));
 
