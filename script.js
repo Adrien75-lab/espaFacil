@@ -628,70 +628,74 @@ function demarrerSession(niveauCle, cartesRevision) {
   afficherCarte();
 }
 
+function getDistracteurs(carteActuelle, niveauCle) {
+  const pool = [];
+  Object.values(DATA).forEach(theme => {
+    if (theme[niveauCle]) {
+      theme[niveauCle].forEach(c => {
+        if (c.fr !== carteActuelle.fr) pool.push(c.fr);
+      });
+    }
+  });
+  return melanger(pool).slice(0, 2);
+}
+
 function afficherCarte() {
   const carte = state.cartes[state.indexActuel];
   const total = state.cartes.length;
 
-  document.getElementById('card-word-front').textContent = carte.es;
-  document.getElementById('card-word-back').textContent = carte.fr;
-  document.getElementById('card-example').textContent = carte.ex;
+  document.getElementById('qcm-word').textContent = carte.es;
+  document.getElementById('qcm-example').textContent = '';
+  document.getElementById('qcm-example').classList.add('hidden');
   document.getElementById('card-counter').textContent = 'Carte ' + (state.indexActuel + 1) + ' / ' + total;
   document.getElementById('progress-bar').style.width = (state.indexActuel / total * 100) + '%';
   document.getElementById('score-good').textContent = '✓ ' + state.scoreOui;
   document.getElementById('score-bad').textContent  = '✗ ' + state.scoreNon;
 
-  const flashcard = document.getElementById('flashcard');
-  flashcard.classList.remove('is-flipped');
   state.estRetournee = false;
-  // Boutons visibles dès le départ - l'utilisateur s'engage AVANT de voir la réponse
-  document.getElementById('answer-buttons').classList.add('visible');
-  document.getElementById('answer-buttons').classList.remove('revealing');
+
+  // Générer 3 choix : 1 correct + 2 distracteurs
+  const distracteurs = getDistracteurs(carte, state.niveauActuel);
+  const choix = melanger([carte.fr, ...distracteurs]);
+  const lettres = ['A', 'B', 'C'];
+
+  const container = document.getElementById('qcm-choices');
+  container.innerHTML = '';
+  choix.forEach((c, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'qcm-btn';
+    btn.innerHTML = '<span class="choice-letter">' + lettres[i] + '</span>' + c;
+    btn.addEventListener('click', () => repondreQCM(c === carte.fr, btn, carte));
+    container.appendChild(btn);
+  });
 }
 
-function retournerCarte() {
+function repondreQCM(correct, btnClique, carte) {
   if (state.estRetournee) return;
   state.estRetournee = true;
 
-  const flashcard = document.getElementById('flashcard');
-  flashcard.classList.add('is-flipped');
-  document.getElementById('answer-buttons').classList.add('visible');
+  // Désactiver tous les boutons et montrer la bonne réponse
+  document.querySelectorAll('.qcm-btn').forEach(b => {
+    b.disabled = true;
+    if (b.textContent.slice(1).trim() === carte.fr) b.classList.add('correct');
+  });
 
-  // Prononciation Web Speech API
-  const carte = state.cartes[state.indexActuel];
-  prononcer(carte.es);
-}
-
-function prononcer(texte) {
-  if (!('speechSynthesis' in window)) return;
-  window.speechSynthesis.cancel();
-  const utter = new SpeechSynthesisUtterance(texte);
-  utter.lang = 'es-ES';
-  utter.rate = 0.9;
-  window.speechSynthesis.speak(utter);
-}
-
-function repondre(savait) {
-  // Bloquer si déjà en cours de révélation
-  if (state.estRetournee) return;
-  state.estRetournee = true;
-
-  // Griser les boutons pendant la révélation
-  const btns = document.getElementById('answer-buttons');
-  btns.classList.add('revealing');
-
-  // Retourner la carte pour montrer la réponse
-  document.getElementById('flashcard').classList.add('is-flipped');
-  prononcer(state.cartes[state.indexActuel].es);
-
-  // Enregistrer le score
-  if (savait) {
+  if (correct) {
     state.scoreOui++;
+    btnClique.classList.add('correct');
   } else {
     state.scoreNon++;
-    state.cartesRatees.push(state.cartes[state.indexActuel]);
+    btnClique.classList.add('wrong');
+    state.cartesRatees.push(carte);
   }
 
-  // Passer à la carte suivante après un court délai
+  // Afficher exemple + prononcer
+  const ex = document.getElementById('qcm-example');
+  ex.textContent = carte.ex;
+  ex.classList.remove('hidden');
+  prononcer(carte.es);
+
+  // Carte suivante
   setTimeout(() => {
     state.indexActuel++;
     if (state.indexActuel < state.cartes.length) {
@@ -699,7 +703,7 @@ function repondre(savait) {
     } else {
       terminerSession();
     }
-  }, 1200);
+  }, 1400);
 }
 
 function terminerSession() {
