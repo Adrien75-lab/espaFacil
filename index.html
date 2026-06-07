@@ -15,6 +15,7 @@
       <div class="top-bar">
         <button class="btn-stats" id="btn-open-stats">Stats</button>
         <button class="btn-custom-list" id="btn-open-custom" title="Ma liste perso">📝</button>
+        <button class="btn-gram" id="btn-open-gram" title="Fiche de grammaire">📖</button>
         <select class="lang-select" id="lang-select" title="Langue à apprendre">
           <option value="es">🇪🇸 Espagnol</option>
           <option value="en">🇬🇧 Anglais</option>
@@ -96,6 +97,7 @@
       <p class="session-question">Quelle est la traduction en français ?</p>
       <div class="es-word-row">
         <div class="es-word-display" id="es-word-display"></div>
+        <div class="es-word-rom" id="es-word-rom" style="display:none"></div>
         <button class="btn-prononcer" id="btn-prononcer" title="Écouter">🔊</button>
         <button class="btn-mic" id="btn-mic" title="Tester votre prononciation">🎤</button>
       </div>
@@ -150,6 +152,7 @@
       <div class="write-card">
         <p class="card-lang" id="write-card-lang">🇪🇸 Espagnol</p>
         <p class="write-word" id="write-word"></p>
+        <p class="es-word-rom" id="write-word-rom" style="display:none"></p>
         <div class="write-input-wrap">
           <input type="text" id="write-input" class="write-input" placeholder="Tapez la traduction en francais..." autocomplete="off" />
           <button class="btn-validate" id="btn-validate">Valider</button>
@@ -217,6 +220,17 @@
       <div class="custom-list" id="custom-list"></div>
 
       <button class="btn-primary custom-play" id="btn-custom-play">▶ Jouer ma liste</button>
+    </div>
+  </div>
+
+  <!-- MODAL GRAMMAIRE -->
+  <div class="gram-overlay" id="gram-overlay" style="display:none">
+    <div class="gram-modal">
+      <div class="gram-header">
+        <span id="gram-title">📖 Fiche de grammaire</span>
+        <button class="gram-close" id="gram-close">✕</button>
+      </div>
+      <div class="gram-body" id="gram-body"></div>
     </div>
   </div>
 

@@ -172,6 +172,7 @@ body {
 /* Ligne mot espagnol + bouton audio */
 .es-word-row { display: flex; align-items: center; justify-content: center; gap: 10px; margin: 4px 0 20px; }
 .es-word-display { font-size: 2rem; font-weight: 800; color: var(--text); letter-spacing: -0.5px; }
+.es-word-rom { font-size: 0.95rem; color: var(--text-light, #888); font-style: italic; text-align: center; margin: -14px 0 10px; letter-spacing: 0.5px; }
 .btn-prononcer { background: none; border: 2px solid var(--border); border-radius: 50%; width: 40px; height: 40px; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: var(--transition); color: var(--text); }
 .btn-prononcer:hover { background: var(--purple); border-color: var(--purple); color: white; transform: scale(1.1); }
 .btn-prononcer:active { transform: scale(0.95); }
@@ -498,3 +499,20 @@ body {
 .mnemo-input { flex: 1; padding: 8px 10px; border: 1.5px solid var(--purple); border-radius: 8px; font-size: 0.85rem; background: var(--card-bg); color: var(--text); outline: none; }
 .btn-mnemo-save { padding: 8px 14px; background: var(--purple); color: white; border: none; border-radius: 8px; font-size: 0.82rem; font-weight: 700; cursor: pointer; white-space: nowrap; }
 .btn-mnemo-save:hover { background: var(--purple-dark); }
+
+/* ============================================
+   FICHE DE GRAMMAIRE — MODAL
+   ============================================ */
+.btn-gram { background: none; border: 2px solid var(--purple); border-radius: 10px; padding: 5px 9px; cursor: pointer; font-size: 1rem; color: var(--purple); transition: var(--transition); }
+.btn-gram:hover { background: var(--purple); color: #fff; }
+.gram-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.55); z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 16px; }
+.gram-modal { background: var(--card-bg); border-radius: var(--radius); max-width: 480px; width: 100%; max-height: 82vh; display: flex; flex-direction: column; box-shadow: 0 8px 32px rgba(0,0,0,0.25); }
+.gram-header { display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; border-bottom: 1px solid var(--border); font-weight: 700; font-size: 1rem; color: var(--text); }
+.gram-close { background: none; border: none; font-size: 1.1rem; cursor: pointer; color: var(--text-light); padding: 4px 8px; border-radius: 6px; transition: var(--transition); }
+.gram-close:hover { background: var(--border); color: var(--text); }
+.gram-body { overflow-y: auto; padding: 16px 18px; }
+.gram-section { margin-bottom: 14px; }
+.gram-section h3 { font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--purple); margin: 0 0 6px; }
+.gram-section ul { margin: 0; padding-left: 16px; }
+.gram-section li { font-size: 0.88rem; color: var(--text); margin-bottom: 4px; line-height: 1.45; }
+.gram-empty { color: var(--text-light); font-size: 0.9rem; text-align: center; padding: 24px 0; }

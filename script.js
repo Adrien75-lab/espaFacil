@@ -1271,835 +1271,835 @@ const LANG_THEMES = {
   'ru': {
     essentiel: { nom: 'Essentiel', icone: '🌟',
       debutant: [
-        { es: 'привет', fr: 'bonjour', ex: 'Привет, как дела?' },
-        { es: 'до свидания', fr: 'au revoir', ex: 'До свидания, до скорой встречи!' },
-        { es: 'пожалуйста', fr: "s'il vous plaît", ex: 'Пожалуйста, помогите мне.' },
-        { es: 'спасибо', fr: 'merci', ex: 'Большое спасибо!' },
-        { es: 'да', fr: 'oui', ex: 'Да, я понимаю.' },
-        { es: 'нет', fr: 'non', ex: 'Нет, спасибо.' },
-        { es: 'извините', fr: 'excusez-moi', ex: 'Извините, где находится вокзал?' },
-        { es: 'простите', fr: 'je suis désolé', ex: 'Простите за опоздание.' },
-        { es: 'помощь', fr: "l'aide", ex: 'Мне нужна помощь, пожалуйста.' },
-        { es: 'друг', fr: "l'ami", ex: 'Она моя лучшая подруга.' }
+        { es: 'привет', rom: 'privet', fr: 'bonjour', ex: 'Привет, как дела?' },
+        { es: 'до свидания', rom: 'do svidaniya', fr: 'au revoir', ex: 'До свидания, до скорой встречи!' },
+        { es: 'пожалуйста', rom: 'pozhaluysta', fr: "s'il vous plaît", ex: 'Пожалуйста, помогите мне.' },
+        { es: 'спасибо', rom: 'spasibo', fr: 'merci', ex: 'Большое спасибо!' },
+        { es: 'да', rom: 'da', fr: 'oui', ex: 'Да, я понимаю.' },
+        { es: 'нет', rom: 'net', fr: 'non', ex: 'Нет, спасибо.' },
+        { es: 'извините', rom: 'izvinite', fr: 'excusez-moi', ex: 'Извините, где находится вокзал?' },
+        { es: 'простите', rom: 'prostite', fr: 'je suis désolé', ex: 'Простите за опоздание.' },
+        { es: 'помощь', rom: 'pomoshch',  fr: "l'aide", ex: 'Мне нужна помощь, пожалуйста.' },
+        { es: 'друг', rom: 'drug', fr: "l'ami", ex: 'Она моя лучшая подруга.' }
       ],
       intermediaire: [
-        { es: 'понимать', fr: 'comprendre', ex: 'Вы меня понимаете?' },
-        { es: 'говорить', fr: 'parler', ex: 'Я говорю немного по-русски.' },
-        { es: 'учить', fr: 'apprendre', ex: 'Я хочу учить русский язык.' },
-        { es: 'повторить', fr: 'répéter', ex: 'Можете повторить, пожалуйста?' },
-        { es: 'медленно', fr: 'lentement', ex: 'Говорите, пожалуйста, медленнее.' },
-        { es: 'знать', fr: 'savoir', ex: 'Я не знаю ответа.' },
-        { es: 'нуждаться', fr: 'avoir besoin de', ex: 'Мне нужна минута.' },
-        { es: 'хотеть', fr: 'vouloir', ex: 'Я хочу попробовать.' }
+        { es: 'понимать', rom: 'ponimat',  fr: 'comprendre', ex: 'Вы меня понимаете?' },
+        { es: 'говорить', rom: 'govorit',  fr: 'parler', ex: 'Я говорю немного по-русски.' },
+        { es: 'учить', rom: 'uchit',  fr: 'apprendre', ex: 'Я хочу учить русский язык.' },
+        { es: 'повторить', rom: 'povtorit',  fr: 'répéter', ex: 'Можете повторить, пожалуйста?' },
+        { es: 'медленно', rom: 'medlenno', fr: 'lentement', ex: 'Говорите, пожалуйста, медленнее.' },
+        { es: 'знать', rom: 'znat',  fr: 'savoir', ex: 'Я не знаю ответа.' },
+        { es: 'нуждаться', rom: 'nuzhdatsya', fr: 'avoir besoin de', ex: 'Мне нужна минута.' },
+        { es: 'хотеть', rom: 'khotet',  fr: 'vouloir', ex: 'Я хочу попробовать.' }
       ],
       avance: [
-        { es: 'возможность', fr: "l'opportunité", ex: 'Это замечательная возможность.' },
-        { es: 'вызов', fr: 'le défi', ex: 'Каждый вызов делает нас сильнее.' },
-        { es: 'достигать', fr: 'atteindre', ex: 'Я достигну своих целей.' },
-        { es: 'ответственность', fr: 'la responsabilité', ex: 'Мы разделяем ответственность.' },
-        { es: 'любопытный', fr: 'curieux', ex: 'Она очень любопытна в науке.' },
-        { es: 'решительный', fr: 'déterminé', ex: 'Он решительно настроен на успех.' },
-        { es: 'улучшать', fr: 'améliorer', ex: 'Я совершенствую свои навыки каждый день.' }
+        { es: 'возможность', rom: 'vozmozhnost',  fr: "l'opportunité", ex: 'Это замечательная возможность.' },
+        { es: 'вызов', rom: 'vyzov', fr: 'le défi', ex: 'Каждый вызов делает нас сильнее.' },
+        { es: 'достигать', rom: 'dostigat',  fr: 'atteindre', ex: 'Я достигну своих целей.' },
+        { es: 'ответственность', rom: 'otvetstvennost',  fr: 'la responsabilité', ex: 'Мы разделяем ответственность.' },
+        { es: 'любопытный', rom: 'lyubopytnyy', fr: 'curieux', ex: 'Она очень любопытна в науке.' },
+        { es: 'решительный', rom: 'reshitelnyy', fr: 'déterminé', ex: 'Он решительно настроен на успех.' },
+        { es: 'улучшать', rom: 'uluchshat',  fr: 'améliorer', ex: 'Я совершенствую свои навыки каждый день.' }
       ]
     },
     nourriture: { nom: 'Nourriture', icone: '🍕',
       debutant: [
-        { es: 'хлеб', fr: 'le pain', ex: 'Хлеб ещё тёплый.' },
-        { es: 'вода', fr: "l'eau", ex: 'Я пью воду весь день.' },
-        { es: 'молоко', fr: 'le lait', ex: 'Я добавляю молоко в кофе.' },
-        { es: 'яйцо', fr: "l'œuf", ex: 'Я ем яйцо на завтрак.' },
-        { es: 'курица', fr: 'le poulet', ex: 'Курица очень вкусная.' },
-        { es: 'рыба', fr: 'le poisson', ex: 'Я люблю есть рыбу.' },
-        { es: 'суп', fr: 'la soupe', ex: 'Этот суп очень горячий.' },
-        { es: 'яблоко', fr: 'la pomme', ex: 'Я ем яблоко каждое утро.' },
-        { es: 'сыр', fr: 'le fromage', ex: 'Россия производит много видов сыра.' },
-        { es: 'чай', fr: 'le thé', ex: 'Я пью чай каждое утро.' }
+        { es: 'хлеб', rom: 'khleb', fr: 'le pain', ex: 'Хлеб ещё тёплый.' },
+        { es: 'вода', rom: 'voda', fr: "l'eau", ex: 'Я пью воду весь день.' },
+        { es: 'молоко', rom: 'moloko', fr: 'le lait', ex: 'Я добавляю молоко в кофе.' },
+        { es: 'яйцо', rom: 'yaytso', fr: "l'œuf", ex: 'Я ем яйцо на завтрак.' },
+        { es: 'курица', rom: 'kuritsa', fr: 'le poulet', ex: 'Курица очень вкусная.' },
+        { es: 'рыба', rom: 'ryba', fr: 'le poisson', ex: 'Я люблю есть рыбу.' },
+        { es: 'суп', rom: 'sup', fr: 'la soupe', ex: 'Этот суп очень горячий.' },
+        { es: 'яблоко', rom: 'yabloko', fr: 'la pomme', ex: 'Я ем яблоко каждое утро.' },
+        { es: 'сыр', rom: 'syr', fr: 'le fromage', ex: 'Россия производит много видов сыра.' },
+        { es: 'чай', rom: 'chay', fr: 'le thé', ex: 'Я пью чай каждое утро.' }
       ],
       intermediaire: [
-        { es: 'клубника', fr: 'la fraise', ex: 'Клубника спелая и сладкая.' },
-        { es: 'апельсиновый сок', fr: "le jus d'orange", ex: 'Я пью апельсиновый сок утром.' },
-        { es: 'грибы', fr: 'les champignons', ex: 'Я добавляю грибы в соус.' },
-        { es: 'масло', fr: 'le beurre', ex: 'Я мажу масло на хлеб.' },
-        { es: 'сахар', fr: 'le sucre', ex: 'Вы берёте сахар в чай?' },
-        { es: 'перец', fr: 'le poivre', ex: 'Добавьте немного перца.' },
-        { es: 'десерт', fr: 'le dessert', ex: 'Что вы хотите на десерт?' },
-        { es: 'рецепт', fr: 'la recette', ex: 'Это рецепт моей бабушки.' }
+        { es: 'клубника', rom: 'klubnika', fr: 'la fraise', ex: 'Клубника спелая и сладкая.' },
+        { es: 'апельсиновый сок', rom: 'apelsinovyy sok', fr: "le jus d'orange", ex: 'Я пью апельсиновый сок утром.' },
+        { es: 'грибы', rom: 'griby', fr: 'les champignons', ex: 'Я добавляю грибы в соус.' },
+        { es: 'масло', rom: 'maslo', fr: 'le beurre', ex: 'Я мажу масло на хлеб.' },
+        { es: 'сахар', rom: 'sakhar', fr: 'le sucre', ex: 'Вы берёте сахар в чай?' },
+        { es: 'перец', rom: 'perets', fr: 'le poivre', ex: 'Добавьте немного перца.' },
+        { es: 'десерт', rom: 'desert', fr: 'le dessert', ex: 'Что вы хотите на десерт?' },
+        { es: 'рецепт', rom: 'retsept', fr: 'la recette', ex: 'Это рецепт моей бабушки.' }
       ],
       avance: [
-        { es: 'ингредиенты', fr: 'les ingrédients', ex: 'Все ингредиенты свежие.' },
-        { es: 'приправа', fr: "l'assaisonnement", ex: 'Приправа идеальная.' },
-        { es: 'питательный', fr: 'nutritif', ex: 'Это блюдо очень питательное.' },
-        { es: 'аппетит', fr: "l'appétit", ex: 'Запах возбуждает аппетит.' },
-        { es: 'кухня', fr: 'la cuisine', ex: 'Я люблю азиатскую кухню.' },
-        { es: 'вкус', fr: 'la saveur', ex: 'Вкус этого блюда уникален.' },
-        { es: 'порция', fr: 'la portion', ex: 'Порция очень щедрая.' }
+        { es: 'ингредиенты', rom: 'ingrediyenty', fr: 'les ingrédients', ex: 'Все ингредиенты свежие.' },
+        { es: 'приправа', rom: 'priprava', fr: "l'assaisonnement", ex: 'Приправа идеальная.' },
+        { es: 'питательный', rom: 'pitatelnyy', fr: 'nutritif', ex: 'Это блюдо очень питательное.' },
+        { es: 'аппетит', rom: 'appetit', fr: "l'appétit", ex: 'Запах возбуждает аппетит.' },
+        { es: 'кухня', rom: 'kukhnya', fr: 'la cuisine', ex: 'Я люблю азиатскую кухню.' },
+        { es: 'вкус', rom: 'vkus', fr: 'la saveur', ex: 'Вкус этого блюда уникален.' },
+        { es: 'порция', rom: 'portsiya', fr: 'la portion', ex: 'Порция очень щедрая.' }
       ]
     },
     voyage: { nom: 'Voyage', icone: '✈️',
       debutant: [
-        { es: 'аэропорт', fr: "l'aéroport", ex: 'Мы прибываем в аэропорт в восемь.' },
-        { es: 'гостиница', fr: "l'hôtel", ex: 'Гостиница находится рядом с пляжем.' },
-        { es: 'билет', fr: 'le billet', ex: 'Я купил авиабилет.' },
-        { es: 'паспорт', fr: 'le passeport', ex: 'Не забудьте паспорт.' },
-        { es: 'карта', fr: 'la carte', ex: 'Я пользуюсь картой, чтобы найти дорогу.' },
-        { es: 'поезд', fr: 'le train', ex: 'Поезд отправляется в девять.' },
-        { es: 'автобус', fr: 'le bus', ex: 'Я каждый день езжу на автобусе.' },
-        { es: 'вокзал', fr: 'la gare', ex: 'Вокзал находится в центре города.' },
-        { es: 'багаж', fr: 'les bagages', ex: 'Мой багаж очень тяжёлый.' },
-        { es: 'пляж', fr: 'la plage', ex: 'Мы отдыхаем на пляже.' }
+        { es: 'аэропорт', rom: 'aeroport', fr: "l'aéroport", ex: 'Мы прибываем в аэропорт в восемь.' },
+        { es: 'гостиница', rom: 'gostinitsa', fr: "l'hôtel", ex: 'Гостиница находится рядом с пляжем.' },
+        { es: 'билет', rom: 'bilet', fr: 'le billet', ex: 'Я купил авиабилет.' },
+        { es: 'паспорт', rom: 'pasport', fr: 'le passeport', ex: 'Не забудьте паспорт.' },
+        { es: 'карта', rom: 'karta', fr: 'la carte', ex: 'Я пользуюсь картой, чтобы найти дорогу.' },
+        { es: 'поезд', rom: 'poyezd', fr: 'le train', ex: 'Поезд отправляется в девять.' },
+        { es: 'автобус', rom: 'avtobus', fr: 'le bus', ex: 'Я каждый день езжу на автобусе.' },
+        { es: 'вокзал', rom: 'vokzal', fr: 'la gare', ex: 'Вокзал находится в центре города.' },
+        { es: 'багаж', rom: 'bagazh', fr: 'les bagages', ex: 'Мой багаж очень тяжёлый.' },
+        { es: 'пляж', rom: 'plyazh', fr: 'la plage', ex: 'Мы отдыхаем на пляже.' }
       ],
       intermediaire: [
-        { es: 'бронирование', fr: 'la réservation', ex: 'Я сделал бронирование онлайн.' },
-        { es: 'отправление', fr: 'le départ', ex: 'Отправление в полдень.' },
-        { es: 'прибытие', fr: "l'arrivée", ex: 'Наше прибытие задерживается.' },
-        { es: 'таможня', fr: 'la douane', ex: 'Мы проходим таможню.' },
-        { es: 'валюта', fr: 'la devise', ex: 'Я меняю валюту в банке.' },
-        { es: 'сувенир', fr: 'le souvenir', ex: 'Я покупаю сувенир для семьи.' },
-        { es: 'гид', fr: 'le guide', ex: 'Гид показывает нам город.' },
-        { es: 'приключение', fr: "l'aventure", ex: 'Каждая поездка — новое приключение.' }
+        { es: 'бронирование', rom: 'bronirovaniye', fr: 'la réservation', ex: 'Я сделал бронирование онлайн.' },
+        { es: 'отправление', rom: 'otpravleniye', fr: 'le départ', ex: 'Отправление в полдень.' },
+        { es: 'прибытие', rom: 'pribyitiye', fr: "l'arrivée", ex: 'Наше прибытие задерживается.' },
+        { es: 'таможня', rom: 'tamozhnya', fr: 'la douane', ex: 'Мы проходим таможню.' },
+        { es: 'валюта', rom: 'valyuta', fr: 'la devise', ex: 'Я меняю валюту в банке.' },
+        { es: 'сувенир', rom: 'suvenir', fr: 'le souvenir', ex: 'Я покупаю сувенир для семьи.' },
+        { es: 'гид', rom: 'gid', fr: 'le guide', ex: 'Гид показывает нам город.' },
+        { es: 'приключение', rom: 'priklyucheniye', fr: "l'aventure", ex: 'Каждая поездка — новое приключение.' }
       ],
       avance: [
-        { es: 'маршрут', fr: "l'itinéraire", ex: 'Наш маршрут включает пять городов.' },
-        { es: 'пункт назначения', fr: 'la destination', ex: 'Париж — мой город мечты.' },
-        { es: 'жильё', fr: "l'hébergement", ex: 'Жильё отличное.' },
-        { es: 'исследовать', fr: 'explorer', ex: 'Я исследую старый город пешком.' },
-        { es: 'достопримечательность', fr: 'le monument', ex: 'Красная площадь — знаменитая достопримечательность.' },
-        { es: 'культура', fr: 'la culture', ex: 'Я восхищаюсь местной культурой.' },
-        { es: 'пейзаж', fr: 'le paysage', ex: 'Пейзаж захватывает дух.' }
+        { es: 'маршрут', rom: 'marshrut', fr: "l'itinéraire", ex: 'Наш маршрут включает пять городов.' },
+        { es: 'пункт назначения', rom: 'punkt naznacheniya', fr: 'la destination', ex: 'Париж — мой город мечты.' },
+        { es: 'жильё', rom: 'zhilyo', fr: "l'hébergement", ex: 'Жильё отличное.' },
+        { es: 'исследовать', rom: 'issledovat',  fr: 'explorer', ex: 'Я исследую старый город пешком.' },
+        { es: 'достопримечательность', rom: 'dostoprimechatelnost', fr: 'le monument', ex: 'Красная площадь — знаменитая достопримечательность.' },
+        { es: 'культура', rom: 'kultura', fr: 'la culture', ex: 'Я восхищаюсь местной культурой.' },
+        { es: 'пейзаж', rom: 'peyzazh', fr: 'le paysage', ex: 'Пейзаж захватывает дух.' }
       ]
     },
     famille: { nom: 'Famille', icone: '👨‍👩‍👧',
       debutant: [
-        { es: 'мама', fr: 'la mère', ex: 'Моя мама очень хорошо готовит.' },
-        { es: 'папа', fr: 'le père', ex: 'Мой папа работает в Москве.' },
-        { es: 'сестра', fr: 'la sœur', ex: 'Моя сестра очень смешная.' },
-        { es: 'брат', fr: 'le frère', ex: 'Мой брат играет в футбол.' },
-        { es: 'бабушка', fr: 'la grand-mère', ex: 'Бабушка рассказывает замечательные истории.' },
-        { es: 'дедушка', fr: 'le grand-père', ex: 'Дедушка очень мудрый.' },
-        { es: 'ребёнок', fr: "l'enfant", ex: 'Ребёнок играет в саду.' },
-        { es: 'семья', fr: 'la famille', ex: 'Моя семья очень дружная.' },
-        { es: 'дом', fr: 'le foyer', ex: 'В гостях хорошо, а дома лучше.' },
-        { es: 'дочь', fr: 'la fille', ex: 'Дочь учится в университете.' }
+        { es: 'мама', rom: 'mama', fr: 'la mère', ex: 'Моя мама очень хорошо готовит.' },
+        { es: 'папа', rom: 'papa', fr: 'le père', ex: 'Мой папа работает в Москве.' },
+        { es: 'сестра', rom: 'sestra', fr: 'la sœur', ex: 'Моя сестра очень смешная.' },
+        { es: 'брат', rom: 'brat', fr: 'le frère', ex: 'Мой брат играет в футбол.' },
+        { es: 'бабушка', rom: 'babushka', fr: 'la grand-mère', ex: 'Бабушка рассказывает замечательные истории.' },
+        { es: 'дедушка', rom: 'dedushka', fr: 'le grand-père', ex: 'Дедушка очень мудрый.' },
+        { es: 'ребёнок', rom: 'rebyonok', fr: "l'enfant", ex: 'Ребёнок играет в саду.' },
+        { es: 'семья', rom: 'semya', fr: 'la famille', ex: 'Моя семья очень дружная.' },
+        { es: 'дом', rom: 'dom', fr: 'le foyer', ex: 'В гостях хорошо, а дома лучше.' },
+        { es: 'дочь', rom: 'doch',  fr: 'la fille', ex: 'Дочь учится в университете.' }
       ],
       intermediaire: [
-        { es: 'двоюродный брат', fr: 'le cousin', ex: 'Мой двоюродный брат живёт в Санкт-Петербурге.' },
-        { es: 'тётя', fr: 'la tante', ex: 'Тётя печёт вкусные пироги.' },
-        { es: 'дядя', fr: "l'oncle", ex: 'Дядя врач.' },
-        { es: 'племянник', fr: 'le neveu', ex: 'Племяннику два года.' },
-        { es: 'муж', fr: 'le mari', ex: 'Её муж очень заботливый.' },
-        { es: 'жена', fr: 'la femme', ex: 'Его жена учительница.' },
-        { es: 'свадьба', fr: 'le mariage', ex: 'Свадьба была прекрасной.' },
-        { es: 'родители', fr: 'les parents', ex: 'Мои родители в отпуске.' }
+        { es: 'двоюродный брат', rom: 'dvoyurodnyy brat', fr: 'le cousin', ex: 'Мой двоюродный брат живёт в Санкт-Петербурге.' },
+        { es: 'тётя', rom: 'tyotya', fr: 'la tante', ex: 'Тётя печёт вкусные пироги.' },
+        { es: 'дядя', rom: 'dyadya', fr: "l'oncle", ex: 'Дядя врач.' },
+        { es: 'племянник', rom: 'plemyannik', fr: 'le neveu', ex: 'Племяннику два года.' },
+        { es: 'муж', rom: 'muzh', fr: 'le mari', ex: 'Её муж очень заботливый.' },
+        { es: 'жена', rom: 'zhena', fr: 'la femme', ex: 'Его жена учительница.' },
+        { es: 'свадьба', rom: 'svadba', fr: 'le mariage', ex: 'Свадьба была прекрасной.' },
+        { es: 'родители', rom: 'roditeli', fr: 'les parents', ex: 'Мои родители в отпуске.' }
       ],
       avance: [
-        { es: 'отношения', fr: 'la relation', ex: 'Хорошие отношения требуют усилий.' },
-        { es: 'наследие', fr: "l'héritage", ex: 'Мы разделяем богатое культурное наследие.' },
-        { es: 'поколение', fr: 'la génération', ex: 'Каждое поколение учится у предыдущего.' },
-        { es: 'воспитание', fr: "l'éducation", ex: 'Хорошее воспитание формирует характер.' },
-        { es: 'традиция', fr: 'la tradition', ex: 'Мы храним семейные традиции.' },
-        { es: 'связь', fr: 'le lien', ex: 'Связь между братьями и сёстрами крепкая.' },
-        { es: 'воссоединение', fr: 'les retrouvailles', ex: 'Встреча семьи была замечательной.' }
+        { es: 'отношения', rom: 'otnosheniya', fr: 'la relation', ex: 'Хорошие отношения требуют усилий.' },
+        { es: 'наследие', rom: 'naslediye', fr: "l'héritage", ex: 'Мы разделяем богатое культурное наследие.' },
+        { es: 'поколение', rom: 'pokoleniye', fr: 'la génération', ex: 'Каждое поколение учится у предыдущего.' },
+        { es: 'воспитание', rom: 'vospitaniye', fr: "l'éducation", ex: 'Хорошее воспитание формирует характер.' },
+        { es: 'традиция', rom: 'traditsiya', fr: 'la tradition', ex: 'Мы храним семейные традиции.' },
+        { es: 'связь', rom: 'svyaz',  fr: 'le lien', ex: 'Связь между братьями и сёстрами крепкая.' },
+        { es: 'воссоединение', rom: 'vossoyedineniye', fr: 'les retrouvailles', ex: 'Встреча семьи была замечательной.' }
       ]
     },
     couleurs: { nom: 'Couleurs', icone: '🎨',
       debutant: [
-        { es: 'красный', fr: 'rouge', ex: 'Яблоко ярко-красное.' },
-        { es: 'синий', fr: 'bleu', ex: 'Небо ясное и синее.' },
-        { es: 'зелёный', fr: 'vert', ex: 'Трава зелёная после дождя.' },
-        { es: 'жёлтый', fr: 'jaune', ex: 'Солнце жёлтое и тёплое.' },
-        { es: 'чёрный', fr: 'noir', ex: 'Сегодня я ношу чёрную куртку.' },
-        { es: 'белый', fr: 'blanc', ex: 'Снег полностью белый.' },
-        { es: 'оранжевый', fr: 'orange', ex: 'Её платье ярко-оранжевое.' },
-        { es: 'розовый', fr: 'rose', ex: 'Розы бледно-розовые.' },
-        { es: 'фиолетовый', fr: 'violet', ex: 'Небо становится фиолетовым на закате.' },
-        { es: 'коричневый', fr: 'marron', ex: 'Ствол дерева коричневый.' }
+        { es: 'красный', rom: 'krasnyy', fr: 'rouge', ex: 'Яблоко ярко-красное.' },
+        { es: 'синий', rom: 'siniy', fr: 'bleu', ex: 'Небо ясное и синее.' },
+        { es: 'зелёный', rom: 'zelonyy', fr: 'vert', ex: 'Трава зелёная после дождя.' },
+        { es: 'жёлтый', rom: 'zholtyy', fr: 'jaune', ex: 'Солнце жёлтое и тёплое.' },
+        { es: 'чёрный', rom: 'chornyy', fr: 'noir', ex: 'Сегодня я ношу чёрную куртку.' },
+        { es: 'белый', rom: 'belyy', fr: 'blanc', ex: 'Снег полностью белый.' },
+        { es: 'оранжевый', rom: 'oranzhevyy', fr: 'orange', ex: 'Её платье ярко-оранжевое.' },
+        { es: 'розовый', rom: 'rozovyy', fr: 'rose', ex: 'Розы бледно-розовые.' },
+        { es: 'фиолетовый', rom: 'fioletovyy', fr: 'violet', ex: 'Небо становится фиолетовым на закате.' },
+        { es: 'коричневый', rom: 'korichnevyy', fr: 'marron', ex: 'Ствол дерева коричневый.' }
       ],
       intermediaire: [
-        { es: 'серый', fr: 'gris', ex: 'Тучи тёмно-серые.' },
-        { es: 'тёмный', fr: 'foncé', ex: 'Зимой я предпочитаю тёмные цвета.' },
-        { es: 'светлый', fr: 'clair', ex: 'Летом она носит светло-голубой.' },
-        { es: 'яркий', fr: 'vif', ex: 'На картине яркие цвета.' },
-        { es: 'бледный', fr: 'pâle', ex: 'Он сегодня выглядит бледным.' },
-        { es: 'красочный', fr: 'coloré', ex: 'Рынок очень красочный.' },
-        { es: 'оттенок', fr: 'la teinte', ex: 'Мне нравится этот оттенок синего.' },
-        { es: 'прозрачный', fr: 'transparent', ex: 'Стекло прозрачное.' }
+        { es: 'серый', rom: 'seryy', fr: 'gris', ex: 'Тучи тёмно-серые.' },
+        { es: 'тёмный', rom: 'tyomnyy', fr: 'foncé', ex: 'Зимой я предпочитаю тёмные цвета.' },
+        { es: 'светлый', rom: 'svetlyy', fr: 'clair', ex: 'Летом она носит светло-голубой.' },
+        { es: 'яркий', rom: 'yarkiy', fr: 'vif', ex: 'На картине яркие цвета.' },
+        { es: 'бледный', rom: 'blednyy', fr: 'pâle', ex: 'Он сегодня выглядит бледным.' },
+        { es: 'красочный', rom: 'krasochnyy', fr: 'coloré', ex: 'Рынок очень красочный.' },
+        { es: 'оттенок', rom: 'ottenok', fr: 'la teinte', ex: 'Мне нравится этот оттенок синего.' },
+        { es: 'прозрачный', rom: 'prozrachnyy', fr: 'transparent', ex: 'Стекло прозрачное.' }
       ],
       avance: [
-        { es: 'контраст', fr: 'le contraste', ex: 'Контраст между цветами разительный.' },
-        { es: 'насыщенный', fr: 'éclatant', ex: 'Насыщенные цвета привлекли моё внимание.' },
-        { es: 'нюанс', fr: 'la nuance', ex: 'Нюанс меняется при разном освещении.' },
-        { es: 'монохромный', fr: 'monochrome', ex: 'Фотография монохромная.' },
-        { es: 'пигмент', fr: 'le pigment', ex: 'В этой краске используются натуральные пигменты.' },
-        { es: 'спектр', fr: 'le spectre', ex: 'Радуга показывает полный спектр.' },
-        { es: 'тон', fr: 'la teinte', ex: 'Добавьте тон жёлтого в смесь.' }
+        { es: 'контраст', rom: 'kontrast', fr: 'le contraste', ex: 'Контраст между цветами разительный.' },
+        { es: 'насыщенный', rom: 'nasyshchennyy', fr: 'éclatant', ex: 'Насыщенные цвета привлекли моё внимание.' },
+        { es: 'нюанс', rom: 'nyuans', fr: 'la nuance', ex: 'Нюанс меняется при разном освещении.' },
+        { es: 'монохромный', rom: 'monokhromnyy', fr: 'monochrome', ex: 'Фотография монохромная.' },
+        { es: 'пигмент', rom: 'pigment', fr: 'le pigment', ex: 'В этой краске используются натуральные пигменты.' },
+        { es: 'спектр', rom: 'spektr', fr: 'le spectre', ex: 'Радуга показывает полный спектр.' },
+        { es: 'тон', rom: 'ton', fr: 'la teinte', ex: 'Добавьте тон жёлтого в смесь.' }
       ]
     }
   },
   'ja': {
     essentiel: { nom: 'Essentiel', icone: '🌟',
       debutant: [
-        { es: 'こんにちは', fr: 'bonjour', ex: 'こんにちは、お元気ですか？' },
-        { es: 'さようなら', fr: 'au revoir', ex: 'さようなら、またすぐに！' },
-        { es: 'おねがいします', fr: "s'il vous plaît", ex: 'おねがいします、助けてください。' },
-        { es: 'ありがとう', fr: 'merci', ex: 'ありがとうございます！' },
-        { es: 'はい', fr: 'oui', ex: 'はい、わかりました。' },
-        { es: 'いいえ', fr: 'non', ex: 'いいえ、けっこうです。' },
-        { es: 'すみません', fr: 'excusez-moi', ex: 'すみません、駅はどこですか？' },
-        { es: 'ごめんなさい', fr: 'je suis désolé', ex: 'ごめんなさい、遅れました。' },
-        { es: 'たすけて', fr: "l'aide", ex: 'たすけてください。' },
-        { es: 'ともだち', fr: "l'ami", ex: '彼女は私の親友です。' }
+        { es: 'こんにちは', rom: 'konnichiwa', fr: 'bonjour', ex: 'こんにちは、お元気ですか？' },
+        { es: 'さようなら', rom: 'sayounara', fr: 'au revoir', ex: 'さようなら、またすぐに！' },
+        { es: 'おねがいします', rom: 'onegaishimasu', fr: "s'il vous plaît", ex: 'おねがいします、助けてください。' },
+        { es: 'ありがとう', rom: 'arigatou', fr: 'merci', ex: 'ありがとうございます！' },
+        { es: 'はい', rom: 'hai', fr: 'oui', ex: 'はい、わかりました。' },
+        { es: 'いいえ', rom: 'iie', fr: 'non', ex: 'いいえ、けっこうです。' },
+        { es: 'すみません', rom: 'sumimasen', fr: 'excusez-moi', ex: 'すみません、駅はどこですか？' },
+        { es: 'ごめんなさい', rom: 'gomennasai', fr: 'je suis désolé', ex: 'ごめんなさい、遅れました。' },
+        { es: 'たすけて', rom: 'tasukete', fr: "l'aide", ex: 'たすけてください。' },
+        { es: 'ともだち', rom: 'tomodachi', fr: "l'ami", ex: '彼女は私の親友です。' }
       ],
       intermediaire: [
-        { es: 'わかる', fr: 'comprendre', ex: 'わかりますか？' },
-        { es: 'はなす', fr: 'parler', ex: '私は少し日本語を話します。' },
-        { es: 'まなぶ', fr: 'apprendre', ex: '日本語を学びたいです。' },
-        { es: 'もういちど', fr: 'répéter', ex: 'もう一度言ってください。' },
-        { es: 'ゆっくり', fr: 'lentement', ex: 'ゆっくり話してください。' },
-        { es: 'しる', fr: 'savoir', ex: '答えを知りません。' },
-        { es: 'ひつよう', fr: 'avoir besoin de', ex: '少し時間が必要です。' },
-        { es: 'したい', fr: 'vouloir', ex: 'やってみたいです。' }
+        { es: 'わかる', rom: 'wakaru', fr: 'comprendre', ex: 'わかりますか？' },
+        { es: 'はなす', rom: 'hanasu', fr: 'parler', ex: '私は少し日本語を話します。' },
+        { es: 'まなぶ', rom: 'manabu', fr: 'apprendre', ex: '日本語を学びたいです。' },
+        { es: 'もういちど', rom: 'mouichido', fr: 'répéter', ex: 'もう一度言ってください。' },
+        { es: 'ゆっくり', rom: 'yukkuri', fr: 'lentement', ex: 'ゆっくり話してください。' },
+        { es: 'しる', rom: 'shiru', fr: 'savoir', ex: '答えを知りません。' },
+        { es: 'ひつよう', rom: 'hitsuyou', fr: 'avoir besoin de', ex: '少し時間が必要です。' },
+        { es: 'したい', rom: 'shitai', fr: 'vouloir', ex: 'やってみたいです。' }
       ],
       avance: [
-        { es: 'きかい', fr: "l'opportunité", ex: 'これは素晴らしい機会です。' },
-        { es: 'ちょうせん', fr: 'le défi', ex: 'すべての挑戦が私たちを強くします。' },
-        { es: 'たっせいする', fr: 'atteindre', ex: '目標を達成します。' },
-        { es: 'せきにん', fr: 'la responsabilité', ex: '私たちは責任を共有しています。' },
-        { es: 'こうきしん', fr: 'curiosité', ex: '彼女は科学にとても好奇心旺盛です。' },
-        { es: 'けつい', fr: 'détermination', ex: '彼は成功しようと決意しています。' },
-        { es: 'むきりょく', fr: 'améliorer', ex: '毎日スキルを向上させています。' }
+        { es: 'きかい', rom: 'kikai', fr: "l'opportunité", ex: 'これは素晴らしい機会です。' },
+        { es: 'ちょうせん', rom: 'chousen', fr: 'le défi', ex: 'すべての挑戦が私たちを強くします。' },
+        { es: 'たっせいする', rom: 'tasseisuru', fr: 'atteindre', ex: '目標を達成します。' },
+        { es: 'せきにん', rom: 'sekinin', fr: 'la responsabilité', ex: '私たちは責任を共有しています。' },
+        { es: 'こうきしん', rom: 'koukishin', fr: 'curiosité', ex: '彼女は科学にとても好奇心旺盛です。' },
+        { es: 'けつい', rom: 'ketsui', fr: 'détermination', ex: '彼は成功しようと決意しています。' },
+        { es: 'むきりょく', rom: 'mukiryoku', fr: 'améliorer', ex: '毎日スキルを向上させています。' }
       ]
     },
     nourriture: { nom: 'Nourriture', icone: '🍕',
       debutant: [
-        { es: 'ごはん', fr: 'le riz / repas', ex: 'ごはんを毎日食べます。' },
-        { es: 'みず', fr: "l'eau", ex: '一日中水を飲みます。' },
-        { es: 'パン', fr: 'le pain', ex: 'パンはまだ温かいです。' },
-        { es: 'たまご', fr: "l'œuf", ex: '朝ごはんにたまごを食べます。' },
-        { es: 'さかな', fr: 'le poisson', ex: 'さかなが大好きです。' },
-        { es: 'とりにく', fr: 'le poulet', ex: 'とりにくはおいしいです。' },
-        { es: 'みそしる', fr: 'la soupe miso', ex: '毎朝みそしるを飲みます。' },
-        { es: 'すし', fr: 'les sushis', ex: 'すしは日本の有名な料理です。' },
-        { es: 'ラーメン', fr: 'les ramen', ex: 'このラーメンはとてもおいしい。' },
-        { es: 'おちゃ', fr: 'le thé', ex: '毎晩おちゃを飲みます。' }
+        { es: 'ごはん', rom: 'gohan', fr: 'le riz / repas', ex: 'ごはんを毎日食べます。' },
+        { es: 'みず', rom: 'mizu', fr: "l'eau", ex: '一日中水を飲みます。' },
+        { es: 'パン', rom: 'pan', fr: 'le pain', ex: 'パンはまだ温かいです。' },
+        { es: 'たまご', rom: 'tamago', fr: "l'œuf", ex: '朝ごはんにたまごを食べます。' },
+        { es: 'さかな', rom: 'sakana', fr: 'le poisson', ex: 'さかなが大好きです。' },
+        { es: 'とりにく', rom: 'toriniku', fr: 'le poulet', ex: 'とりにくはおいしいです。' },
+        { es: 'みそしる', rom: 'misoshiru', fr: 'la soupe miso', ex: '毎朝みそしるを飲みます。' },
+        { es: 'すし', rom: 'sushi', fr: 'les sushis', ex: 'すしは日本の有名な料理です。' },
+        { es: 'ラーメン', rom: 'raamen', fr: 'les ramen', ex: 'このラーメンはとてもおいしい。' },
+        { es: 'おちゃ', rom: 'ocha', fr: 'le thé', ex: '毎晩おちゃを飲みます。' }
       ],
       intermediaire: [
-        { es: 'いちご', fr: 'la fraise', ex: 'いちごは甘くて熟しています。' },
-        { es: 'だいこん', fr: 'le radis blanc', ex: 'だいこんを料理に入れます。' },
-        { es: 'とうふ', fr: 'le tofu', ex: 'とうふは栄養があります。' },
-        { es: 'しょうゆ', fr: 'la sauce soja', ex: 'しょうゆで味付けします。' },
-        { es: 'さとう', fr: 'le sucre', ex: 'さとうを少し加えます。' },
-        { es: 'デザート', fr: 'le dessert', ex: 'デザートは何にしますか？' },
-        { es: 'レシピ', fr: 'la recette', ex: 'これはおばあちゃんのレシピです。' },
-        { es: 'ぎゅうにゅう', fr: 'le lait', ex: 'コーヒーにぎゅうにゅうを入れます。' }
+        { es: 'いちご', rom: 'ichigo', fr: 'la fraise', ex: 'いちごは甘くて熟しています。' },
+        { es: 'だいこん', rom: 'daikon', fr: 'le radis blanc', ex: 'だいこんを料理に入れます。' },
+        { es: 'とうふ', rom: 'toufu', fr: 'le tofu', ex: 'とうふは栄養があります。' },
+        { es: 'しょうゆ', rom: 'shouyu', fr: 'la sauce soja', ex: 'しょうゆで味付けします。' },
+        { es: 'さとう', rom: 'satou', fr: 'le sucre', ex: 'さとうを少し加えます。' },
+        { es: 'デザート', rom: 'dezaato', fr: 'le dessert', ex: 'デザートは何にしますか？' },
+        { es: 'レシピ', rom: 'reshipi', fr: 'la recette', ex: 'これはおばあちゃんのレシピです。' },
+        { es: 'ぎゅうにゅう', rom: 'gyuunyuu', fr: 'le lait', ex: 'コーヒーにぎゅうにゅうを入れます。' }
       ],
       avance: [
-        { es: 'ざいりょう', fr: 'les ingrédients', ex: '材料はすべて新鮮です。' },
-        { es: 'ちょうみりょう', fr: "l'assaisonnement", ex: '調味料は完璧です。' },
-        { es: 'えいようがある', fr: 'nutritif', ex: 'この料理はとても栄養があります。' },
-        { es: 'しょくよく', fr: "l'appétit", ex: 'においで食欲が増します。' },
-        { es: 'りょうり', fr: 'la cuisine', ex: 'アジア料理が大好きです。' },
-        { es: 'あじ', fr: 'la saveur', ex: 'この料理の味は独特です。' },
-        { es: 'いちにんまえ', fr: 'la portion', ex: '一人前はとても多いです。' }
+        { es: 'ざいりょう', rom: 'zairyou', fr: 'les ingrédients', ex: '材料はすべて新鮮です。' },
+        { es: 'ちょうみりょう', rom: 'choumiryou', fr: "l'assaisonnement", ex: '調味料は完璧です。' },
+        { es: 'えいようがある', rom: 'eiyougaaru', fr: 'nutritif', ex: 'この料理はとても栄養があります。' },
+        { es: 'しょくよく', rom: 'shokuyoku', fr: "l'appétit", ex: 'においで食欲が増します。' },
+        { es: 'りょうり', rom: 'ryouri', fr: 'la cuisine', ex: 'アジア料理が大好きです。' },
+        { es: 'あじ', rom: 'aji', fr: 'la saveur', ex: 'この料理の味は独特です。' },
+        { es: 'いちにんまえ', rom: 'ichininmae', fr: 'la portion', ex: '一人前はとても多いです。' }
       ]
     },
     voyage: { nom: 'Voyage', icone: '✈️',
       debutant: [
-        { es: 'くうこう', fr: "l'aéroport", ex: '8時に空港に着きます。' },
-        { es: 'ホテル', fr: "l'hôtel", ex: 'ホテルはビーチの近くにあります。' },
-        { es: 'きっぷ', fr: 'le billet', ex: '飛行機のきっぷを買いました。' },
-        { es: 'パスポート', fr: 'le passeport', ex: 'パスポートを忘れないでください。' },
-        { es: 'ちず', fr: 'la carte', ex: '道を探すためにちずを使います。' },
-        { es: 'でんしゃ', fr: 'le train', ex: 'でんしゃは9時に出発します。' },
-        { es: 'バス', fr: 'le bus', ex: '毎日バスに乗ります。' },
-        { es: 'えき', fr: 'la gare', ex: 'えきは市の中心にあります。' },
-        { es: 'にもつ', fr: 'les bagages', ex: 'にもつはとても重いです。' },
-        { es: 'うみ', fr: 'la plage', ex: 'うみでリラックスします。' }
+        { es: 'くうこう', rom: 'kuukou', fr: "l'aéroport", ex: '8時に空港に着きます。' },
+        { es: 'ホテル', rom: 'hoteru', fr: "l'hôtel", ex: 'ホテルはビーチの近くにあります。' },
+        { es: 'きっぷ', rom: 'kippu', fr: 'le billet', ex: '飛行機のきっぷを買いました。' },
+        { es: 'パスポート', rom: 'pasupooto', fr: 'le passeport', ex: 'パスポートを忘れないでください。' },
+        { es: 'ちず', rom: 'chizu', fr: 'la carte', ex: '道を探すためにちずを使います。' },
+        { es: 'でんしゃ', rom: 'densha', fr: 'le train', ex: 'でんしゃは9時に出発します。' },
+        { es: 'バス', rom: 'basu', fr: 'le bus', ex: '毎日バスに乗ります。' },
+        { es: 'えき', rom: 'eki', fr: 'la gare', ex: 'えきは市の中心にあります。' },
+        { es: 'にもつ', rom: 'nimotsu', fr: 'les bagages', ex: 'にもつはとても重いです。' },
+        { es: 'うみ', rom: 'umi', fr: 'la plage', ex: 'うみでリラックスします。' }
       ],
       intermediaire: [
-        { es: 'よやく', fr: 'la réservation', ex: 'オンラインでよやくしました。' },
-        { es: 'しゅっぱつ', fr: 'le départ', ex: 'しゅっぱつは正午です。' },
-        { es: 'とうちゃく', fr: "l'arrivée", ex: 'とうちゃくが遅れています。' },
-        { es: 'ぜいかん', fr: 'la douane', ex: 'ぜいかんを通過します。' },
-        { es: 'つうか', fr: 'la devise', ex: '銀行でつうかを両替します。' },
-        { es: 'おみやげ', fr: 'le souvenir', ex: '家族のためにおみやげを買います。' },
-        { es: 'ガイド', fr: 'le guide', ex: 'ガイドが町を案内してくれます。' },
-        { es: 'ぼうけん', fr: "l'aventure", ex: '旅はいつも新しいぼうけんです。' }
+        { es: 'よやく', rom: 'yoyaku', fr: 'la réservation', ex: 'オンラインでよやくしました。' },
+        { es: 'しゅっぱつ', rom: 'shuppatsu', fr: 'le départ', ex: 'しゅっぱつは正午です。' },
+        { es: 'とうちゃく', rom: 'touchaku', fr: "l'arrivée", ex: 'とうちゃくが遅れています。' },
+        { es: 'ぜいかん', rom: 'zeikan', fr: 'la douane', ex: 'ぜいかんを通過します。' },
+        { es: 'つうか', rom: 'tsuuka', fr: 'la devise', ex: '銀行でつうかを両替します。' },
+        { es: 'おみやげ', rom: 'omiyage', fr: 'le souvenir', ex: '家族のためにおみやげを買います。' },
+        { es: 'ガイド', rom: 'gaido', fr: 'le guide', ex: 'ガイドが町を案内してくれます。' },
+        { es: 'ぼうけん', rom: 'bouken', fr: "l'aventure", ex: '旅はいつも新しいぼうけんです。' }
       ],
       avance: [
-        { es: 'いてぃねらりー', fr: "l'itinéraire", ex: '旅程には5つの都市が含まれています。' },
-        { es: 'もくてきち', fr: 'la destination', ex: 'パリは私の夢の目的地です。' },
-        { es: 'しゅくはく', fr: "l'hébergement", ex: '宿泊施設は素晴らしいです。' },
-        { es: 'たんけんする', fr: 'explorer', ex: '旧市街を徒歩で探検します。' },
-        { es: 'めいしょ', fr: 'le monument', ex: '富士山は有名な名所です。' },
-        { es: 'ぶんか', fr: 'la culture', ex: '地元の文化に魅了されています。' },
-        { es: 'けしき', fr: 'le paysage', ex: '景色は息をのむほど美しいです。' }
+        { es: 'いてぃねらりー', rom: 'itinerary', fr: "l'itinéraire", ex: '旅程には5つの都市が含まれています。' },
+        { es: 'もくてきち', rom: 'mokutekichi', fr: 'la destination', ex: 'パリは私の夢の目的地です。' },
+        { es: 'しゅくはく', rom: 'shukuhaku', fr: "l'hébergement", ex: '宿泊施設は素晴らしいです。' },
+        { es: 'たんけんする', rom: 'tankensuru', fr: 'explorer', ex: '旧市街を徒歩で探検します。' },
+        { es: 'めいしょ', rom: 'meisho', fr: 'le monument', ex: '富士山は有名な名所です。' },
+        { es: 'ぶんか', rom: 'bunka', fr: 'la culture', ex: '地元の文化に魅了されています。' },
+        { es: 'けしき', rom: 'keshiki', fr: 'le paysage', ex: '景色は息をのむほど美しいです。' }
       ]
     },
     famille: { nom: 'Famille', icone: '👨‍👩‍👧',
       debutant: [
-        { es: 'おかあさん', fr: 'la mère', ex: 'おかあさんはとても料理が上手です。' },
-        { es: 'おとうさん', fr: 'le père', ex: 'おとうさんは東京で働いています。' },
-        { es: 'いもうと', fr: 'la sœur cadette', ex: 'いもうとはとても面白いです。' },
-        { es: 'おにいさん', fr: 'le grand frère', ex: 'おにいさんはサッカーをします。' },
-        { es: 'おばあさん', fr: 'la grand-mère', ex: 'おばあさんは素敵な話をしてくれます。' },
-        { es: 'おじいさん', fr: 'le grand-père', ex: 'おじいさんはとても賢いです。' },
-        { es: 'あかちゃん', fr: 'le bébé', ex: 'あかちゃんは静かに眠っています。' },
-        { es: 'こども', fr: "l'enfant", ex: 'こどもは庭で遊んでいます。' },
-        { es: 'かぞく', fr: 'la famille', ex: 'かぞくはとても仲良しです。' },
-        { es: 'いえ', fr: 'le foyer', ex: 'いえが一番落ち着きます。' }
+        { es: 'おかあさん', rom: 'okaasan', fr: 'la mère', ex: 'おかあさんはとても料理が上手です。' },
+        { es: 'おとうさん', rom: 'otousan', fr: 'le père', ex: 'おとうさんは東京で働いています。' },
+        { es: 'いもうと', rom: 'imouto', fr: 'la sœur cadette', ex: 'いもうとはとても面白いです。' },
+        { es: 'おにいさん', rom: 'oniisan', fr: 'le grand frère', ex: 'おにいさんはサッカーをします。' },
+        { es: 'おばあさん', rom: 'obaasan', fr: 'la grand-mère', ex: 'おばあさんは素敵な話をしてくれます。' },
+        { es: 'おじいさん', rom: 'ojiisan', fr: 'le grand-père', ex: 'おじいさんはとても賢いです。' },
+        { es: 'あかちゃん', rom: 'akachan', fr: 'le bébé', ex: 'あかちゃんは静かに眠っています。' },
+        { es: 'こども', rom: 'kodomo', fr: "l'enfant", ex: 'こどもは庭で遊んでいます。' },
+        { es: 'かぞく', rom: 'kazoku', fr: 'la famille', ex: 'かぞくはとても仲良しです。' },
+        { es: 'いえ', rom: 'ie', fr: 'le foyer', ex: 'いえが一番落ち着きます。' }
       ],
       intermediaire: [
-        { es: 'いとこ', fr: 'le cousin', ex: 'いとこは大阪に住んでいます。' },
-        { es: 'おばさん', fr: 'la tante', ex: 'おばさんはおいしいお菓子を作ります。' },
-        { es: 'おじさん', fr: "l'oncle", ex: 'おじさんはお医者さんです。' },
-        { es: 'おい', fr: 'le neveu', ex: 'おいは2歳です。' },
-        { es: 'めい', fr: 'la nièce', ex: 'めいは絵を描くのが大好きです。' },
-        { es: 'だんな', fr: 'le mari', ex: 'だんなはとても優しいです。' },
-        { es: 'つま', fr: 'la femme', ex: 'つまは先生です。' },
-        { es: 'けっこん', fr: 'le mariage', ex: 'けっこん式はとても美しかったです。' }
+        { es: 'いとこ', rom: 'itoko', fr: 'le cousin', ex: 'いとこは大阪に住んでいます。' },
+        { es: 'おばさん', rom: 'obasan', fr: 'la tante', ex: 'おばさんはおいしいお菓子を作ります。' },
+        { es: 'おじさん', rom: 'ojisan', fr: "l'oncle", ex: 'おじさんはお医者さんです。' },
+        { es: 'おい', rom: 'oi', fr: 'le neveu', ex: 'おいは2歳です。' },
+        { es: 'めい', rom: 'mei', fr: 'la nièce', ex: 'めいは絵を描くのが大好きです。' },
+        { es: 'だんな', rom: 'danna', fr: 'le mari', ex: 'だんなはとても優しいです。' },
+        { es: 'つま', rom: 'tsuma', fr: 'la femme', ex: 'つまは先生です。' },
+        { es: 'けっこん', rom: 'kekkon', fr: 'le mariage', ex: 'けっこん式はとても美しかったです。' }
       ],
       avance: [
-        { es: 'かんけい', fr: 'la relation', ex: 'よい関係には努力が必要です。' },
-        { es: 'ぶんかいさん', fr: "l'héritage", ex: '私たちは豊かな文化遺産を共有しています。' },
-        { es: 'せだい', fr: 'la génération', ex: '世代ごとに前の世代から学びます。' },
-        { es: 'きょういく', fr: "l'éducation", ex: 'よい教育が人格を形成します。' },
-        { es: 'でんとう', fr: 'la tradition', ex: '家族の伝統を守っています。' },
-        { es: 'きずな', fr: 'le lien', ex: '兄弟のきずなは強いです。' },
-        { es: 'さいかい', fr: 'les retrouvailles', ex: '家族の再会はとても素晴らしかったです。' }
+        { es: 'かんけい', rom: 'kankei', fr: 'la relation', ex: 'よい関係には努力が必要です。' },
+        { es: 'ぶんかいさん', rom: 'bunkkaisan', fr: "l'héritage", ex: '私たちは豊かな文化遺産を共有しています。' },
+        { es: 'せだい', rom: 'sedai', fr: 'la génération', ex: '世代ごとに前の世代から学びます。' },
+        { es: 'きょういく', rom: 'kyouiku', fr: "l'éducation", ex: 'よい教育が人格を形成します。' },
+        { es: 'でんとう', rom: 'dentou', fr: 'la tradition', ex: '家族の伝統を守っています。' },
+        { es: 'きずな', rom: 'kizuna', fr: 'le lien', ex: '兄弟のきずなは強いです。' },
+        { es: 'さいかい', rom: 'saikai', fr: 'les retrouvailles', ex: '家族の再会はとても素晴らしかったです。' }
       ]
     },
     couleurs: { nom: 'Couleurs', icone: '🎨',
       debutant: [
-        { es: 'あか', fr: 'rouge', ex: 'りんごは真っ赤です。' },
-        { es: 'あお', fr: 'bleu', ex: 'そらは澄んで青いです。' },
-        { es: 'みどり', fr: 'vert', ex: '雨の後、草は緑です。' },
-        { es: 'き', fr: 'jaune', ex: 'たいようは黄色くて温かいです。' },
-        { es: 'くろ', fr: 'noir', ex: '今日は黒いジャケットを着ています。' },
-        { es: 'しろ', fr: 'blanc', ex: '雪は真っ白です。' },
-        { es: 'オレンジ', fr: 'orange', ex: '彼女のドレスは明るいオレンジです。' },
-        { es: 'ピンク', fr: 'rose', ex: 'バラは淡いピンクです。' },
-        { es: 'むらさき', fr: 'violet', ex: '夕暮れ時、空は紫になります。' },
-        { es: 'ちゃいろ', fr: 'marron', ex: '木の幹は茶色です。' }
+        { es: 'あか', rom: 'aka', fr: 'rouge', ex: 'りんごは真っ赤です。' },
+        { es: 'あお', rom: 'ao', fr: 'bleu', ex: 'そらは澄んで青いです。' },
+        { es: 'みどり', rom: 'midori', fr: 'vert', ex: '雨の後、草は緑です。' },
+        { es: 'き', rom: 'ki', fr: 'jaune', ex: 'たいようは黄色くて温かいです。' },
+        { es: 'くろ', rom: 'kuro', fr: 'noir', ex: '今日は黒いジャケットを着ています。' },
+        { es: 'しろ', rom: 'shiro', fr: 'blanc', ex: '雪は真っ白です。' },
+        { es: 'オレンジ', rom: 'orenji', fr: 'orange', ex: '彼女のドレスは明るいオレンジです。' },
+        { es: 'ピンク', rom: 'pinku', fr: 'rose', ex: 'バラは淡いピンクです。' },
+        { es: 'むらさき', rom: 'murasaki', fr: 'violet', ex: '夕暮れ時、空は紫になります。' },
+        { es: 'ちゃいろ', rom: 'chairo', fr: 'marron', ex: '木の幹は茶色です。' }
       ],
       intermediaire: [
-        { es: 'はいいろ', fr: 'gris', ex: '雲はだいだいはいいろです。' },
-        { es: 'こい', fr: 'foncé', ex: '冬は濃い色が好きです。' },
-        { es: 'うすい', fr: 'clair', ex: '夏には薄い青を着ます。' },
-        { es: 'あざやか', fr: 'vif', ex: '絵は鮮やかな色を使っています。' },
-        { es: 'あおざめた', fr: 'pâle', ex: '今日は顔色が青ざめています。' },
-        { es: 'いろとりどり', fr: 'coloré', ex: 'いちばはとてもいろとりどりです。' },
-        { es: 'いろあい', fr: 'la teinte', ex: 'この色合いの青が好きです。' },
-        { es: 'とうめい', fr: 'transparent', ex: 'ガラスは透明です。' }
+        { es: 'はいいろ', rom: 'haiiro', fr: 'gris', ex: '雲はだいだいはいいろです。' },
+        { es: 'こい', rom: 'koi', fr: 'foncé', ex: '冬は濃い色が好きです。' },
+        { es: 'うすい', rom: 'usui', fr: 'clair', ex: '夏には薄い青を着ます。' },
+        { es: 'あざやか', rom: 'azayaka', fr: 'vif', ex: '絵は鮮やかな色を使っています。' },
+        { es: 'あおざめた', rom: 'aozameta', fr: 'pâle', ex: '今日は顔色が青ざめています。' },
+        { es: 'いろとりどり', rom: 'irotoridori', fr: 'coloré', ex: 'いちばはとてもいろとりどりです。' },
+        { es: 'いろあい', rom: 'iroai', fr: 'la teinte', ex: 'この色合いの青が好きです。' },
+        { es: 'とうめい', rom: 'toumei', fr: 'transparent', ex: 'ガラスは透明です。' }
       ],
       avance: [
-        { es: 'たいひ', fr: 'le contraste', ex: '色のたいひが印象的です。' },
-        { es: 'あざやかな', fr: 'éclatant', ex: '鮮やかな色が目を引きました。' },
-        { es: 'ニュアンス', fr: 'la nuance', ex: '光によってニュアンスが変わります。' },
-        { es: 'モノクロ', fr: 'monochrome', ex: '写真はモノクロです。' },
-        { es: 'がんりょう', fr: 'le pigment', ex: 'この絵の具は天然顔料を使っています。' },
-        { es: 'スペクトル', fr: 'le spectre', ex: '虹はスペクトル全体を示します。' },
-        { es: 'いろみ', fr: 'la teinte', ex: '混合物に黄色の色みを加えます。' }
+        { es: 'たいひ', rom: 'taihi', fr: 'le contraste', ex: '色のたいひが印象的です。' },
+        { es: 'あざやかな', rom: 'azayakana', fr: 'éclatant', ex: '鮮やかな色が目を引きました。' },
+        { es: 'ニュアンス', rom: 'nyuansu', fr: 'la nuance', ex: '光によってニュアンスが変わります。' },
+        { es: 'モノクロ', rom: 'monokuro', fr: 'monochrome', ex: '写真はモノクロです。' },
+        { es: 'がんりょう', rom: 'ganryou', fr: 'le pigment', ex: 'この絵の具は天然顔料を使っています。' },
+        { es: 'スペクトル', rom: 'supekutoru', fr: 'le spectre', ex: '虹はスペクトル全体を示します。' },
+        { es: 'いろみ', rom: 'iromi', fr: 'la teinte', ex: '混合物に黄色の色みを加えます。' }
       ]
     }
   },
   'ko': {
     essentiel: { nom: 'Essentiel', icone: '🌟',
       debutant: [
-        { es: '안녕하세요', fr: 'bonjour', ex: '안녕하세요, 어떻게 지내세요?' },
-        { es: '안녕히 가세요', fr: 'au revoir', ex: '안녕히 가세요, 곧 봐요!' },
-        { es: '부탁합니다', fr: "s'il vous plaît", ex: '부탁합니다, 도와주세요.' },
-        { es: '감사합니다', fr: 'merci', ex: '정말 감사합니다!' },
-        { es: '네', fr: 'oui', ex: '네, 이해했습니다.' },
-        { es: '아니요', fr: 'non', ex: '아니요, 괜찮습니다.' },
-        { es: '실례합니다', fr: 'excusez-moi', ex: '실례합니다, 역이 어디 있나요?' },
-        { es: '죄송합니다', fr: 'je suis désolé', ex: '늦어서 죄송합니다.' },
-        { es: '도움', fr: "l'aide", ex: '도움이 필요합니다, 부탁합니다.' },
-        { es: '친구', fr: "l'ami", ex: '그녀는 제 가장 친한 친구예요.' }
+        { es: '안녕하세요', rom: 'annyeonghaseyo', fr: 'bonjour', ex: '안녕하세요, 어떻게 지내세요?' },
+        { es: '안녕히 가세요', rom: 'annyeonghi gaseyo', fr: 'au revoir', ex: '안녕히 가세요, 곧 봐요!' },
+        { es: '부탁합니다', rom: 'butakamnida', fr: "s'il vous plaît", ex: '부탁합니다, 도와주세요.' },
+        { es: '감사합니다', rom: 'gamsahamnida', fr: 'merci', ex: '정말 감사합니다!' },
+        { es: '네', rom: 'ne', fr: 'oui', ex: '네, 이해했습니다.' },
+        { es: '아니요', rom: 'aniyo', fr: 'non', ex: '아니요, 괜찮습니다.' },
+        { es: '실례합니다', rom: 'sillyehamnida', fr: 'excusez-moi', ex: '실례합니다, 역이 어디 있나요?' },
+        { es: '죄송합니다', rom: 'joesonghamnida', fr: 'je suis désolé', ex: '늦어서 죄송합니다.' },
+        { es: '도움', rom: 'doum', fr: "l'aide", ex: '도움이 필요합니다, 부탁합니다.' },
+        { es: '친구', rom: 'chingu', fr: "l'ami", ex: '그녀는 제 가장 친한 친구예요.' }
       ],
       intermediaire: [
-        { es: '이해하다', fr: 'comprendre', ex: '이해하시겠어요?' },
-        { es: '말하다', fr: 'parler', ex: '저는 한국어를 조금 합니다.' },
-        { es: '배우다', fr: 'apprendre', ex: '한국어를 배우고 싶어요.' },
-        { es: '다시 말하다', fr: 'répéter', ex: '다시 한번 말씀해 주세요.' },
-        { es: '천천히', fr: 'lentement', ex: '천천히 말씀해 주세요.' },
-        { es: '알다', fr: 'savoir', ex: '답을 모르겠어요.' },
-        { es: '필요하다', fr: 'avoir besoin de', ex: '잠깐 시간이 필요해요.' },
-        { es: '원하다', fr: 'vouloir', ex: '시도해 보고 싶어요.' }
+        { es: '이해하다', rom: 'ihaehada', fr: 'comprendre', ex: '이해하시겠어요?' },
+        { es: '말하다', rom: 'malhada', fr: 'parler', ex: '저는 한국어를 조금 합니다.' },
+        { es: '배우다', rom: 'baeuda', fr: 'apprendre', ex: '한국어를 배우고 싶어요.' },
+        { es: '다시 말하다', rom: 'dasi malhada', fr: 'répéter', ex: '다시 한번 말씀해 주세요.' },
+        { es: '천천히', rom: 'cheoncheonhi', fr: 'lentement', ex: '천천히 말씀해 주세요.' },
+        { es: '알다', rom: 'alda', fr: 'savoir', ex: '답을 모르겠어요.' },
+        { es: '필요하다', rom: 'piryohada', fr: 'avoir besoin de', ex: '잠깐 시간이 필요해요.' },
+        { es: '원하다', rom: 'wonhada', fr: 'vouloir', ex: '시도해 보고 싶어요.' }
       ],
       avance: [
-        { es: '기회', fr: "l'opportunité", ex: '이것은 훌륭한 기회입니다.' },
-        { es: '도전', fr: 'le défi', ex: '모든 도전은 우리를 더 강하게 만듭니다.' },
-        { es: '목표달성', fr: 'atteindre', ex: '목표를 달성할 것입니다.' },
-        { es: '책임', fr: 'la responsabilité', ex: '우리는 책임을 공유합니다.' },
-        { es: '호기심', fr: 'curiosité', ex: '그녀는 과학에 매우 호기심이 많습니다.' },
-        { es: '결단력', fr: 'détermination', ex: '그는 성공하기로 결심했습니다.' },
-        { es: '개선하다', fr: 'améliorer', ex: '매일 실력을 향상시키고 있습니다.' }
+        { es: '기회', rom: 'gihoe', fr: "l'opportunité", ex: '이것은 훌륭한 기회입니다.' },
+        { es: '도전', rom: 'dojeon', fr: 'le défi', ex: '모든 도전은 우리를 더 강하게 만듭니다.' },
+        { es: '목표달성', rom: 'mokpyo dalseong', fr: 'atteindre', ex: '목표를 달성할 것입니다.' },
+        { es: '책임', rom: 'chaegim', fr: 'la responsabilité', ex: '우리는 책임을 공유합니다.' },
+        { es: '호기심', rom: 'hogisim', fr: 'curiosité', ex: '그녀는 과학에 매우 호기심이 많습니다.' },
+        { es: '결단력', rom: 'gyeoldannyeok', fr: 'détermination', ex: '그는 성공하기로 결심했습니다.' },
+        { es: '개선하다', rom: 'gaeseonhada', fr: 'améliorer', ex: '매일 실력을 향상시키고 있습니다.' }
       ]
     },
     nourriture: { nom: 'Nourriture', icone: '🍕',
       debutant: [
-        { es: '밥', fr: 'le riz / repas', ex: '매일 밥을 먹어요.' },
-        { es: '물', fr: "l'eau", ex: '하루 종일 물을 마셔요.' },
-        { es: '빵', fr: 'le pain', ex: '빵이 아직 따뜻해요.' },
-        { es: '달걀', fr: "l'œuf", ex: '아침에 달걀을 먹어요.' },
-        { es: '닭고기', fr: 'le poulet', ex: '닭고기가 맛있어요.' },
-        { es: '생선', fr: 'le poisson', ex: '생선을 좋아해요.' },
-        { es: '김치', fr: 'le kimchi', ex: '김치는 한국의 전통 음식이에요.' },
-        { es: '불고기', fr: 'le bœuf mariné', ex: '불고기는 매우 맛있어요.' },
-        { es: '차', fr: 'le thé', ex: '매일 저녁 차를 마셔요.' },
-        { es: '치즈', fr: 'le fromage', ex: '치즈를 좋아해요.' }
+        { es: '밥', rom: 'bap', fr: 'le riz / repas', ex: '매일 밥을 먹어요.' },
+        { es: '물', rom: 'mul', fr: "l'eau", ex: '하루 종일 물을 마셔요.' },
+        { es: '빵', rom: 'ppang', fr: 'le pain', ex: '빵이 아직 따뜻해요.' },
+        { es: '달걀', rom: 'dalgyal', fr: "l'œuf", ex: '아침에 달걀을 먹어요.' },
+        { es: '닭고기', rom: 'dakgogi', fr: 'le poulet', ex: '닭고기가 맛있어요.' },
+        { es: '생선', rom: 'saengseon', fr: 'le poisson', ex: '생선을 좋아해요.' },
+        { es: '김치', rom: 'gimchi', fr: 'le kimchi', ex: '김치는 한국의 전통 음식이에요.' },
+        { es: '불고기', rom: 'bulgogi', fr: 'le bœuf mariné', ex: '불고기는 매우 맛있어요.' },
+        { es: '차', rom: 'cha', fr: 'le thé', ex: '매일 저녁 차를 마셔요.' },
+        { es: '치즈', rom: 'chijeu', fr: 'le fromage', ex: '치즈를 좋아해요.' }
       ],
       intermediaire: [
-        { es: '딸기', fr: 'la fraise', ex: '딸기가 익고 달콤해요.' },
-        { es: '오렌지 주스', fr: "le jus d'orange", ex: '아침에 오렌지 주스를 마셔요.' },
-        { es: '버섯', fr: 'les champignons', ex: '소스에 버섯을 넣어요.' },
-        { es: '버터', fr: 'le beurre', ex: '빵에 버터를 발라요.' },
-        { es: '설탕', fr: 'le sucre', ex: '차에 설탕을 넣을까요?' },
-        { es: '후추', fr: 'le poivre', ex: '후추를 조금 넣어요.' },
-        { es: '디저트', fr: 'le dessert', ex: '디저트는 무엇으로 드실래요?' },
-        { es: '레시피', fr: 'la recette', ex: '할머니 레시피예요.' }
+        { es: '딸기', rom: 'ttalgi', fr: 'la fraise', ex: '딸기가 익고 달콤해요.' },
+        { es: '오렌지 주스', rom: 'orenji juseu', fr: "le jus d'orange", ex: '아침에 오렌지 주스를 마셔요.' },
+        { es: '버섯', rom: 'beoseot', fr: 'les champignons', ex: '소스에 버섯을 넣어요.' },
+        { es: '버터', rom: 'beoteo', fr: 'le beurre', ex: '빵에 버터를 발라요.' },
+        { es: '설탕', rom: 'seoltang', fr: 'le sucre', ex: '차에 설탕을 넣을까요?' },
+        { es: '후추', rom: 'huchu', fr: 'le poivre', ex: '후추를 조금 넣어요.' },
+        { es: '디저트', rom: 'dijeoteu', fr: 'le dessert', ex: '디저트는 무엇으로 드실래요?' },
+        { es: '레시피', rom: 'resipi', fr: 'la recette', ex: '할머니 레시피예요.' }
       ],
       avance: [
-        { es: '재료', fr: 'les ingrédients', ex: '재료가 모두 신선해요.' },
-        { es: '양념', fr: "l'assaisonnement", ex: '양념이 완벽해요.' },
-        { es: '영양가 있는', fr: 'nutritif', ex: '이 음식은 매우 영양가 있어요.' },
-        { es: '식욕', fr: "l'appétit", ex: '냄새가 식욕을 자극해요.' },
-        { es: '요리', fr: 'la cuisine', ex: '아시아 요리를 좋아해요.' },
-        { es: '맛', fr: 'la saveur', ex: '이 요리의 맛은 독특해요.' },
-        { es: '1인분', fr: 'la portion', ex: '1인분이 매우 많아요.' }
+        { es: '재료', rom: 'jaeryo', fr: 'les ingrédients', ex: '재료가 모두 신선해요.' },
+        { es: '양념', rom: 'yangnyeom', fr: "l'assaisonnement", ex: '양념이 완벽해요.' },
+        { es: '영양가 있는', rom: 'yeongyang-ga inneun', fr: 'nutritif', ex: '이 음식은 매우 영양가 있어요.' },
+        { es: '식욕', rom: 'sigyok', fr: "l'appétit", ex: '냄새가 식욕을 자극해요.' },
+        { es: '요리', rom: 'yori', fr: 'la cuisine', ex: '아시아 요리를 좋아해요.' },
+        { es: '맛', rom: 'mat', fr: 'la saveur', ex: '이 요리의 맛은 독특해요.' },
+        { es: '1인분', rom: 'irinbun', fr: 'la portion', ex: '1인분이 매우 많아요.' }
       ]
     },
     voyage: { nom: 'Voyage', icone: '✈️',
       debutant: [
-        { es: '공항', fr: "l'aéroport", ex: '8시에 공항에 도착해요.' },
-        { es: '호텔', fr: "l'hôtel", ex: '호텔은 해변 근처에 있어요.' },
-        { es: '표', fr: 'le billet', ex: '비행기 표를 샀어요.' },
-        { es: '여권', fr: 'le passeport', ex: '여권을 잊지 마세요.' },
-        { es: '지도', fr: 'la carte', ex: '길을 찾기 위해 지도를 써요.' },
-        { es: '기차', fr: 'le train', ex: '기차는 9시에 출발해요.' },
-        { es: '버스', fr: 'le bus', ex: '매일 버스를 타요.' },
-        { es: '역', fr: 'la gare', ex: '역은 시내 중심에 있어요.' },
-        { es: '짐', fr: 'les bagages', ex: '짐이 매우 무거워요.' },
-        { es: '해변', fr: 'la plage', ex: '해변에서 쉬어요.' }
+        { es: '공항', rom: 'gonghang', fr: "l'aéroport", ex: '8시에 공항에 도착해요.' },
+        { es: '호텔', rom: 'hotel', fr: "l'hôtel", ex: '호텔은 해변 근처에 있어요.' },
+        { es: '표', rom: 'pyo', fr: 'le billet', ex: '비행기 표를 샀어요.' },
+        { es: '여권', rom: 'yeogwon', fr: 'le passeport', ex: '여권을 잊지 마세요.' },
+        { es: '지도', rom: 'jido', fr: 'la carte', ex: '길을 찾기 위해 지도를 써요.' },
+        { es: '기차', rom: 'gicha', fr: 'le train', ex: '기차는 9시에 출발해요.' },
+        { es: '버스', rom: 'beoseu', fr: 'le bus', ex: '매일 버스를 타요.' },
+        { es: '역', rom: 'yeok', fr: 'la gare', ex: '역은 시내 중심에 있어요.' },
+        { es: '짐', rom: 'jim', fr: 'les bagages', ex: '짐이 매우 무거워요.' },
+        { es: '해변', rom: 'haebyeon', fr: 'la plage', ex: '해변에서 쉬어요.' }
       ],
       intermediaire: [
-        { es: '예약', fr: 'la réservation', ex: '온라인으로 예약했어요.' },
-        { es: '출발', fr: 'le départ', ex: '출발은 정오예요.' },
-        { es: '도착', fr: "l'arrivée", ex: '도착이 늦어지고 있어요.' },
-        { es: '세관', fr: 'la douane', ex: '세관을 통과해요.' },
-        { es: '환전', fr: 'la devise', ex: '은행에서 환전해요.' },
-        { es: '기념품', fr: 'le souvenir', ex: '가족을 위해 기념품을 사요.' },
-        { es: '가이드', fr: 'le guide', ex: '가이드가 도시를 안내해줘요.' },
-        { es: '모험', fr: "l'aventure", ex: '모든 여행은 새로운 모험이에요.' }
+        { es: '예약', rom: 'yeyak', fr: 'la réservation', ex: '온라인으로 예약했어요.' },
+        { es: '출발', rom: 'chulbal', fr: 'le départ', ex: '출발은 정오예요.' },
+        { es: '도착', rom: 'dochak', fr: "l'arrivée", ex: '도착이 늦어지고 있어요.' },
+        { es: '세관', rom: 'segwan', fr: 'la douane', ex: '세관을 통과해요.' },
+        { es: '환전', rom: 'hwanjeon', fr: 'la devise', ex: '은행에서 환전해요.' },
+        { es: '기념품', rom: 'ginyeompum', fr: 'le souvenir', ex: '가족을 위해 기념품을 사요.' },
+        { es: '가이드', rom: 'gaideu', fr: 'le guide', ex: '가이드가 도시를 안내해줘요.' },
+        { es: '모험', rom: 'moheom', fr: "l'aventure", ex: '모든 여행은 새로운 모험이에요.' }
       ],
       avance: [
-        { es: '일정', fr: "l'itinéraire", ex: '일정에는 다섯 도시가 포함돼요.' },
-        { es: '목적지', fr: 'la destination', ex: '파리는 제 꿈의 목적지예요.' },
-        { es: '숙박', fr: "l'hébergement", ex: '숙박 시설이 훌륭해요.' },
-        { es: '탐험하다', fr: 'explorer', ex: '구시가를 걸어서 탐험해요.' },
-        { es: '명소', fr: 'le monument', ex: '경복궁은 유명한 명소예요.' },
-        { es: '문화', fr: 'la culture', ex: '현지 문화에 매료되었어요.' },
-        { es: '풍경', fr: 'le paysage', ex: '풍경이 숨막히게 아름다워요.' }
+        { es: '일정', rom: 'iljeong', fr: "l'itinéraire", ex: '일정에는 다섯 도시가 포함돼요.' },
+        { es: '목적지', rom: 'mokjeokji', fr: 'la destination', ex: '파리는 제 꿈의 목적지예요.' },
+        { es: '숙박', rom: 'sukbak', fr: "l'hébergement", ex: '숙박 시설이 훌륭해요.' },
+        { es: '탐험하다', rom: 'tamheomhada', fr: 'explorer', ex: '구시가를 걸어서 탐험해요.' },
+        { es: '명소', rom: 'myeongso', fr: 'le monument', ex: '경복궁은 유명한 명소예요.' },
+        { es: '문화', rom: 'munhwa', fr: 'la culture', ex: '현지 문화에 매료되었어요.' },
+        { es: '풍경', rom: 'punggyeong', fr: 'le paysage', ex: '풍경이 숨막히게 아름다워요.' }
       ]
     },
     famille: { nom: 'Famille', icone: '👨‍👩‍👧',
       debutant: [
-        { es: '어머니', fr: 'la mère', ex: '어머니는 요리를 아주 잘하세요.' },
-        { es: '아버지', fr: 'le père', ex: '아버지는 서울에서 일하세요.' },
-        { es: '언니/누나', fr: 'la grande sœur', ex: '언니는 매우 재미있어요.' },
-        { es: '오빠/형', fr: 'le grand frère', ex: '오빠는 축구를 해요.' },
-        { es: '할머니', fr: 'la grand-mère', ex: '할머니는 멋진 이야기를 해주세요.' },
-        { es: '할아버지', fr: 'le grand-père', ex: '할아버지는 매우 지혜로우세요.' },
-        { es: '아기', fr: 'le bébé', ex: '아기가 평화롭게 자고 있어요.' },
-        { es: '아이', fr: "l'enfant", ex: '아이가 정원에서 놀고 있어요.' },
-        { es: '가족', fr: 'la famille', ex: '우리 가족은 매우 가까워요.' },
-        { es: '집', fr: 'le foyer', ex: '집이 가장 편안해요.' }
+        { es: '어머니', rom: 'eomeoni', fr: 'la mère', ex: '어머니는 요리를 아주 잘하세요.' },
+        { es: '아버지', rom: 'abeoji', fr: 'le père', ex: '아버지는 서울에서 일하세요.' },
+        { es: '언니/누나', rom: 'eonni/nuna', fr: 'la grande sœur', ex: '언니는 매우 재미있어요.' },
+        { es: '오빠/형', rom: 'oppa/hyeong', fr: 'le grand frère', ex: '오빠는 축구를 해요.' },
+        { es: '할머니', rom: 'halmeoni', fr: 'la grand-mère', ex: '할머니는 멋진 이야기를 해주세요.' },
+        { es: '할아버지', rom: 'harabeoji', fr: 'le grand-père', ex: '할아버지는 매우 지혜로우세요.' },
+        { es: '아기', rom: 'agi', fr: 'le bébé', ex: '아기가 평화롭게 자고 있어요.' },
+        { es: '아이', rom: 'ai', fr: "l'enfant", ex: '아이가 정원에서 놀고 있어요.' },
+        { es: '가족', rom: 'gajok', fr: 'la famille', ex: '우리 가족은 매우 가까워요.' },
+        { es: '집', rom: 'jip', fr: 'le foyer', ex: '집이 가장 편안해요.' }
       ],
       intermediaire: [
-        { es: '사촌', fr: 'le cousin', ex: '사촌은 부산에 살아요.' },
-        { es: '이모/고모', fr: 'la tante', ex: '이모는 맛있는 케이크를 만들어요.' },
-        { es: '삼촌', fr: "l'oncle", ex: '삼촌은 의사예요.' },
-        { es: '조카', fr: 'le neveu / la nièce', ex: '조카는 두 살이에요.' },
-        { es: '남편', fr: 'le mari', ex: '남편은 매우 다정해요.' },
-        { es: '아내', fr: 'la femme', ex: '아내는 선생님이에요.' },
-        { es: '결혼', fr: 'le mariage', ex: '결혼식이 아름다웠어요.' },
-        { es: '부모님', fr: 'les parents', ex: '부모님은 휴가 중이에요.' }
+        { es: '사촌', rom: 'sachon', fr: 'le cousin', ex: '사촌은 부산에 살아요.' },
+        { es: '이모/고모', rom: 'imo/gomo', fr: 'la tante', ex: '이모는 맛있는 케이크를 만들어요.' },
+        { es: '삼촌', rom: 'samchon', fr: "l'oncle", ex: '삼촌은 의사예요.' },
+        { es: '조카', rom: 'joka', fr: 'le neveu / la nièce', ex: '조카는 두 살이에요.' },
+        { es: '남편', rom: 'nampyeon', fr: 'le mari', ex: '남편은 매우 다정해요.' },
+        { es: '아내', rom: 'anae', fr: 'la femme', ex: '아내는 선생님이에요.' },
+        { es: '결혼', rom: 'gyeolhon', fr: 'le mariage', ex: '결혼식이 아름다웠어요.' },
+        { es: '부모님', rom: 'bumonim', fr: 'les parents', ex: '부모님은 휴가 중이에요.' }
       ],
       avance: [
-        { es: '관계', fr: 'la relation', ex: '좋은 관계는 노력이 필요해요.' },
-        { es: '문화유산', fr: "l'héritage", ex: '우리는 풍부한 문화유산을 공유해요.' },
-        { es: '세대', fr: 'la génération', ex: '각 세대는 이전 세대에서 배워요.' },
-        { es: '교육', fr: "l'éducation", ex: '좋은 교육이 성품을 형성해요.' },
-        { es: '전통', fr: 'la tradition', ex: '가족 전통을 지키고 있어요.' },
-        { es: '유대', fr: 'le lien', ex: '형제자매의 유대는 강해요.' },
-        { es: '재결합', fr: 'les retrouvailles', ex: '가족 모임이 훌륭했어요.' }
+        { es: '관계', rom: 'gwangye', fr: 'la relation', ex: '좋은 관계는 노력이 필요해요.' },
+        { es: '문화유산', rom: 'munhwa yusan', fr: "l'héritage", ex: '우리는 풍부한 문화유산을 공유해요.' },
+        { es: '세대', rom: 'sedae', fr: 'la génération', ex: '각 세대는 이전 세대에서 배워요.' },
+        { es: '교육', rom: 'gyoyuk', fr: "l'éducation", ex: '좋은 교육이 성품을 형성해요.' },
+        { es: '전통', rom: 'jeontong', fr: 'la tradition', ex: '가족 전통을 지키고 있어요.' },
+        { es: '유대', rom: 'yudae', fr: 'le lien', ex: '형제자매의 유대는 강해요.' },
+        { es: '재결합', rom: 'jaegyeolhap', fr: 'les retrouvailles', ex: '가족 모임이 훌륭했어요.' }
       ]
     },
     couleurs: { nom: 'Couleurs', icone: '🎨',
       debutant: [
-        { es: '빨간색', fr: 'rouge', ex: '사과는 밝은 빨간색이에요.' },
-        { es: '파란색', fr: 'bleu', ex: '하늘은 맑고 파란색이에요.' },
-        { es: '초록색', fr: 'vert', ex: '비 온 뒤 잔디가 초록색이에요.' },
-        { es: '노란색', fr: 'jaune', ex: '태양은 노란색이고 따뜻해요.' },
-        { es: '검은색', fr: 'noir', ex: '오늘 검은색 재킷을 입었어요.' },
-        { es: '흰색', fr: 'blanc', ex: '눈이 완전히 흰색이에요.' },
-        { es: '주황색', fr: 'orange', ex: '그녀의 드레스는 밝은 주황색이에요.' },
-        { es: '분홍색', fr: 'rose', ex: '장미는 연한 분홍색이에요.' },
-        { es: '보라색', fr: 'violet', ex: '해질녘에 하늘이 보라색이 돼요.' },
-        { es: '갈색', fr: 'marron', ex: '나무 줄기는 갈색이에요.' }
+        { es: '빨간색', rom: 'ppalgansaek', fr: 'rouge', ex: '사과는 밝은 빨간색이에요.' },
+        { es: '파란색', rom: 'paransaek', fr: 'bleu', ex: '하늘은 맑고 파란색이에요.' },
+        { es: '초록색', rom: 'choroksaek', fr: 'vert', ex: '비 온 뒤 잔디가 초록색이에요.' },
+        { es: '노란색', rom: 'noransaek', fr: 'jaune', ex: '태양은 노란색이고 따뜻해요.' },
+        { es: '검은색', rom: 'geomeunsaek', fr: 'noir', ex: '오늘 검은색 재킷을 입었어요.' },
+        { es: '흰색', rom: 'huinsaek', fr: 'blanc', ex: '눈이 완전히 흰색이에요.' },
+        { es: '주황색', rom: 'juhwangsaek', fr: 'orange', ex: '그녀의 드레스는 밝은 주황색이에요.' },
+        { es: '분홍색', rom: 'bunhongsaek', fr: 'rose', ex: '장미는 연한 분홍색이에요.' },
+        { es: '보라색', rom: 'borasaek', fr: 'violet', ex: '해질녘에 하늘이 보라색이 돼요.' },
+        { es: '갈색', rom: 'galsaek', fr: 'marron', ex: '나무 줄기는 갈색이에요.' }
       ],
       intermediaire: [
-        { es: '회색', fr: 'gris', ex: '구름이 짙은 회색이에요.' },
-        { es: '어두운', fr: 'foncé', ex: '겨울에는 어두운 색을 선호해요.' },
-        { es: '밝은', fr: 'clair', ex: '여름에는 밝은 파란색을 입어요.' },
-        { es: '선명한', fr: 'vif', ex: '그림은 선명한 색을 사용해요.' },
-        { es: '창백한', fr: 'pâle', ex: '오늘 그가 창백해 보여요.' },
-        { es: '알록달록한', fr: 'coloré', ex: '시장이 매우 알록달록해요.' },
-        { es: '색조', fr: 'la teinte', ex: '이 파란색 색조가 좋아요.' },
-        { es: '투명한', fr: 'transparent', ex: '유리가 투명해요.' }
+        { es: '회색', rom: 'hoesaek', fr: 'gris', ex: '구름이 짙은 회색이에요.' },
+        { es: '어두운', rom: 'eoduun', fr: 'foncé', ex: '겨울에는 어두운 색을 선호해요.' },
+        { es: '밝은', rom: 'balgeun', fr: 'clair', ex: '여름에는 밝은 파란색을 입어요.' },
+        { es: '선명한', rom: 'seonmyeonghan', fr: 'vif', ex: '그림은 선명한 색을 사용해요.' },
+        { es: '창백한', rom: 'changbaekhan', fr: 'pâle', ex: '오늘 그가 창백해 보여요.' },
+        { es: '알록달록한', rom: 'allokdalrokhan', fr: 'coloré', ex: '시장이 매우 알록달록해요.' },
+        { es: '색조', rom: 'saekjo', fr: 'la teinte', ex: '이 파란색 색조가 좋아요.' },
+        { es: '투명한', rom: 'tumyeonghan', fr: 'transparent', ex: '유리가 투명해요.' }
       ],
       avance: [
-        { es: '대비', fr: 'le contraste', ex: '색의 대비가 인상적이에요.' },
-        { es: '생생한', fr: 'éclatant', ex: '생생한 색이 눈길을 끌었어요.' },
-        { es: '뉘앙스', fr: 'la nuance', ex: '빛에 따라 뉘앙스가 바뀌어요.' },
-        { es: '단색', fr: 'monochrome', ex: '사진이 단색이에요.' },
-        { es: '색소', fr: 'le pigment', ex: '이 페인트에는 천연 색소를 사용해요.' },
-        { es: '스펙트럼', fr: 'le spectre', ex: '무지개는 전체 스펙트럼을 보여줘요.' },
-        { es: '색감', fr: 'la teinte', ex: '혼합물에 노란색 색감을 더해요.' }
+        { es: '대비', rom: 'daebi', fr: 'le contraste', ex: '색의 대비가 인상적이에요.' },
+        { es: '생생한', rom: 'saengsaenghan', fr: 'éclatant', ex: '생생한 색이 눈길을 끌었어요.' },
+        { es: '뉘앙스', rom: 'nuiangseu', fr: 'la nuance', ex: '빛에 따라 뉘앙스가 바뀌어요.' },
+        { es: '단색', rom: 'dansaek', fr: 'monochrome', ex: '사진이 단색이에요.' },
+        { es: '색소', rom: 'saekso', fr: 'le pigment', ex: '이 페인트에는 천연 색소를 사용해요.' },
+        { es: '스펙트럼', rom: 'seupekteureom', fr: 'le spectre', ex: '무지개는 전체 스펙트럼을 보여줘요.' },
+        { es: '색감', rom: 'saekgam', fr: 'la teinte', ex: '혼합물에 노란색 색감을 더해요.' }
       ]
     }
   },
   'zh': {
     essentiel: { nom: 'Essentiel', icone: '🌟',
       debutant: [
-        { es: '你好', fr: 'bonjour', ex: '你好，你好吗？' },
-        { es: '再见', fr: 'au revoir', ex: '再见，很快见！' },
-        { es: '请', fr: "s'il vous plaît", ex: '请帮帮我。' },
-        { es: '谢谢', fr: 'merci', ex: '非常谢谢！' },
-        { es: '是', fr: 'oui', ex: '是，我明白。' },
-        { es: '不', fr: 'non', ex: '不，谢谢。' },
-        { es: '对不起', fr: 'excusez-moi', ex: '对不起，车站在哪里？' },
-        { es: '抱歉', fr: 'je suis désolé', ex: '抱歉我迟到了。' },
-        { es: '帮助', fr: "l'aide", ex: '我需要帮助，请。' },
-        { es: '朋友', fr: "l'ami", ex: '她是我最好的朋友。' }
+        { es: '你好', rom: 'nǐ hǎo', fr: 'bonjour', ex: '你好，你好吗？' },
+        { es: '再见', rom: 'zàijiàn', fr: 'au revoir', ex: '再见，很快见！' },
+        { es: '请', rom: 'qǐng', fr: "s'il vous plaît", ex: '请帮帮我。' },
+        { es: '谢谢', rom: 'xièxie', fr: 'merci', ex: '非常谢谢！' },
+        { es: '是', rom: 'shì', fr: 'oui', ex: '是，我明白。' },
+        { es: '不', rom: 'bù', fr: 'non', ex: '不，谢谢。' },
+        { es: '对不起', rom: 'duìbuqǐ', fr: 'excusez-moi', ex: '对不起，车站在哪里？' },
+        { es: '抱歉', rom: 'bàoqiàn', fr: 'je suis désolé', ex: '抱歉我迟到了。' },
+        { es: '帮助', rom: 'bāngzhù', fr: "l'aide", ex: '我需要帮助，请。' },
+        { es: '朋友', rom: 'péngyǒu', fr: "l'ami", ex: '她是我最好的朋友。' }
       ],
       intermediaire: [
-        { es: '理解', fr: 'comprendre', ex: '你理解我吗？' },
-        { es: '说话', fr: 'parler', ex: '我说一点中文。' },
-        { es: '学习', fr: 'apprendre', ex: '我想学习中文。' },
-        { es: '再说一次', fr: 'répéter', ex: '请再说一次。' },
-        { es: '慢慢说', fr: 'lentement', ex: '请慢慢说。' },
-        { es: '知道', fr: 'savoir', ex: '我不知道答案。' },
-        { es: '需要', fr: 'avoir besoin de', ex: '我需要一点时间。' },
-        { es: '想要', fr: 'vouloir', ex: '我想试试。' }
+        { es: '理解', rom: 'lǐjiě', fr: 'comprendre', ex: '你理解我吗？' },
+        { es: '说话', rom: 'shuōhuà', fr: 'parler', ex: '我说一点中文。' },
+        { es: '学习', rom: 'xuéxí', fr: 'apprendre', ex: '我想学习中文。' },
+        { es: '再说一次', rom: 'zài shuō yīcì', fr: 'répéter', ex: '请再说一次。' },
+        { es: '慢慢说', rom: 'màn màn shuō', fr: 'lentement', ex: '请慢慢说。' },
+        { es: '知道', rom: 'zhīdào', fr: 'savoir', ex: '我不知道答案。' },
+        { es: '需要', rom: 'xūyào', fr: 'avoir besoin de', ex: '我需要一点时间。' },
+        { es: '想要', rom: 'xiǎngyào', fr: 'vouloir', ex: '我想试试。' }
       ],
       avance: [
-        { es: '机会', fr: "l'opportunité", ex: '这是一个很好的机会。' },
-        { es: '挑战', fr: 'le défi', ex: '每一个挑战都使我们更强大。' },
-        { es: '实现目标', fr: 'atteindre', ex: '我会实现我的目标。' },
-        { es: '责任', fr: 'la responsabilité', ex: '我们共同承担责任。' },
-        { es: '好奇', fr: 'curieux', ex: '她对科学非常好奇。' },
-        { es: '坚定', fr: 'déterminé', ex: '他坚定地要成功。' },
-        { es: '进步', fr: 'améliorer', ex: '我每天都在提高我的技能。' }
+        { es: '机会', rom: 'jīhuì', fr: "l'opportunité", ex: '这是一个很好的机会。' },
+        { es: '挑战', rom: 'tiǎozhàn', fr: 'le défi', ex: '每一个挑战都使我们更强大。' },
+        { es: '实现目标', rom: 'shíxiàn mùbiāo', fr: 'atteindre', ex: '我会实现我的目标。' },
+        { es: '责任', rom: 'zérèn', fr: 'la responsabilité', ex: '我们共同承担责任。' },
+        { es: '好奇', rom: 'hàoqí', fr: 'curieux', ex: '她对科学非常好奇。' },
+        { es: '坚定', rom: 'jiāndìng', fr: 'déterminé', ex: '他坚定地要成功。' },
+        { es: '进步', rom: 'jìnbù', fr: 'améliorer', ex: '我每天都在提高我的技能。' }
       ]
     },
     nourriture: { nom: 'Nourriture', icone: '🍕',
       debutant: [
-        { es: '米饭', fr: 'le riz', ex: '我每天吃米饭。' },
-        { es: '水', fr: "l'eau", ex: '我整天喝水。' },
-        { es: '面包', fr: 'le pain', ex: '面包还是热的。' },
-        { es: '鸡蛋', fr: "l'œuf", ex: '我早饭吃鸡蛋。' },
-        { es: '鸡肉', fr: 'le poulet', ex: '鸡肉很好吃。' },
-        { es: '鱼', fr: 'le poisson', ex: '我喜欢吃鱼。' },
-        { es: '饺子', fr: 'les raviolis', ex: '饺子是中国的传统食物。' },
-        { es: '汤', fr: 'la soupe', ex: '这碗汤很热。' },
-        { es: '茶', fr: 'le thé', ex: '我每天喝茶。' },
-        { es: '苹果', fr: 'la pomme', ex: '我每天早上吃苹果。' }
+        { es: '米饭', rom: 'mǐfàn', fr: 'le riz', ex: '我每天吃米饭。' },
+        { es: '水', rom: 'shuǐ', fr: "l'eau", ex: '我整天喝水。' },
+        { es: '面包', rom: 'miànbāo', fr: 'le pain', ex: '面包还是热的。' },
+        { es: '鸡蛋', rom: 'jīdàn', fr: "l'œuf", ex: '我早饭吃鸡蛋。' },
+        { es: '鸡肉', rom: 'jīròu', fr: 'le poulet', ex: '鸡肉很好吃。' },
+        { es: '鱼', rom: 'yú', fr: 'le poisson', ex: '我喜欢吃鱼。' },
+        { es: '饺子', rom: 'jiǎozi', fr: 'les raviolis', ex: '饺子是中国的传统食物。' },
+        { es: '汤', rom: 'tāng', fr: 'la soupe', ex: '这碗汤很热。' },
+        { es: '茶', rom: 'chá', fr: 'le thé', ex: '我每天喝茶。' },
+        { es: '苹果', rom: 'píngguǒ', fr: 'la pomme', ex: '我每天早上吃苹果。' }
       ],
       intermediaire: [
-        { es: '草莓', fr: 'la fraise', ex: '草莓熟了，很甜。' },
-        { es: '橙汁', fr: "le jus d'orange", ex: '我早上喝橙汁。' },
-        { es: '蘑菇', fr: 'les champignons', ex: '我在酱料里加蘑菇。' },
-        { es: '黄油', fr: 'le beurre', ex: '我在面包上抹黄油。' },
-        { es: '糖', fr: 'le sucre', ex: '你喝茶加糖吗？' },
-        { es: '胡椒', fr: 'le poivre', ex: '加一点胡椒。' },
-        { es: '甜点', fr: 'le dessert', ex: '你想要什么甜点？' },
-        { es: '食谱', fr: 'la recette', ex: '这是我奶奶的食谱。' }
+        { es: '草莓', rom: 'cǎoméi', fr: 'la fraise', ex: '草莓熟了，很甜。' },
+        { es: '橙汁', rom: 'chéngzhī', fr: "le jus d'orange", ex: '我早上喝橙汁。' },
+        { es: '蘑菇', rom: 'mógu', fr: 'les champignons', ex: '我在酱料里加蘑菇。' },
+        { es: '黄油', rom: 'huángyóu', fr: 'le beurre', ex: '我在面包上抹黄油。' },
+        { es: '糖', rom: 'táng', fr: 'le sucre', ex: '你喝茶加糖吗？' },
+        { es: '胡椒', rom: 'hújiāo', fr: 'le poivre', ex: '加一点胡椒。' },
+        { es: '甜点', rom: 'tiándiǎn', fr: 'le dessert', ex: '你想要什么甜点？' },
+        { es: '食谱', rom: 'shípǔ', fr: 'la recette', ex: '这是我奶奶的食谱。' }
       ],
       avance: [
-        { es: '食材', fr: 'les ingrédients', ex: '食材都很新鲜。' },
-        { es: '调味', fr: "l'assaisonnement", ex: '调味很完美。' },
-        { es: '营养丰富', fr: 'nutritif', ex: '这道菜很有营养。' },
-        { es: '食欲', fr: "l'appétit", ex: '气味让我食欲大开。' },
-        { es: '烹饪', fr: 'la cuisine', ex: '我喜欢亚洲烹饪。' },
-        { es: '味道', fr: 'la saveur', ex: '这道菜的味道独特。' },
-        { es: '份量', fr: 'la portion', ex: '份量非常大。' }
+        { es: '食材', rom: 'shícái', fr: 'les ingrédients', ex: '食材都很新鲜。' },
+        { es: '调味', rom: 'tiáowèi', fr: "l'assaisonnement", ex: '调味很完美。' },
+        { es: '营养丰富', rom: 'yíngyǎng fēngfù', fr: 'nutritif', ex: '这道菜很有营养。' },
+        { es: '食欲', rom: 'shíyù', fr: "l'appétit", ex: '气味让我食欲大开。' },
+        { es: '烹饪', rom: 'pēngrèn', fr: 'la cuisine', ex: '我喜欢亚洲烹饪。' },
+        { es: '味道', rom: 'wèidào', fr: 'la saveur', ex: '这道菜的味道独特。' },
+        { es: '份量', rom: 'fènliàng', fr: 'la portion', ex: '份量非常大。' }
       ]
     },
     voyage: { nom: 'Voyage', icone: '✈️',
       debutant: [
-        { es: '机场', fr: "l'aéroport", ex: '我们八点到机场。' },
-        { es: '酒店', fr: "l'hôtel", ex: '酒店在海滩附近。' },
-        { es: '票', fr: 'le billet', ex: '我买了一张飞机票。' },
-        { es: '护照', fr: 'le passeport', ex: '不要忘记你的护照。' },
-        { es: '地图', fr: 'la carte', ex: '我用地图找路。' },
-        { es: '火车', fr: 'le train', ex: '火车九点出发。' },
-        { es: '公共汽车', fr: 'le bus', ex: '我每天坐公共汽车。' },
-        { es: '车站', fr: 'la gare', ex: '车站在市中心。' },
-        { es: '行李', fr: 'les bagages', ex: '我的行李很重。' },
-        { es: '海滩', fr: 'la plage', ex: '我们在海滩上放松。' }
+        { es: '机场', rom: 'jīchǎng', fr: "l'aéroport", ex: '我们八点到机场。' },
+        { es: '酒店', rom: 'jiǔdiàn', fr: "l'hôtel", ex: '酒店在海滩附近。' },
+        { es: '票', rom: 'piào', fr: 'le billet', ex: '我买了一张飞机票。' },
+        { es: '护照', rom: 'hùzhào', fr: 'le passeport', ex: '不要忘记你的护照。' },
+        { es: '地图', rom: 'dìtú', fr: 'la carte', ex: '我用地图找路。' },
+        { es: '火车', rom: 'huǒchē', fr: 'le train', ex: '火车九点出发。' },
+        { es: '公共汽车', rom: 'gōnggòng qìchē', fr: 'le bus', ex: '我每天坐公共汽车。' },
+        { es: '车站', rom: 'chēzhàn', fr: 'la gare', ex: '车站在市中心。' },
+        { es: '行李', rom: 'xíngli', fr: 'les bagages', ex: '我的行李很重。' },
+        { es: '海滩', rom: 'hǎitān', fr: 'la plage', ex: '我们在海滩上放松。' }
       ],
       intermediaire: [
-        { es: '预订', fr: 'la réservation', ex: '我在网上预订了。' },
-        { es: '出发', fr: 'le départ', ex: '出发时间是中午。' },
-        { es: '到达', fr: "l'arrivée", ex: '我们的到达延误了。' },
-        { es: '海关', fr: 'la douane', ex: '我们过海关。' },
-        { es: '货币', fr: 'la devise', ex: '我在银行兑换货币。' },
-        { es: '纪念品', fr: 'le souvenir', ex: '我给家人买纪念品。' },
-        { es: '导游', fr: 'le guide', ex: '导游带我们游览城市。' },
-        { es: '冒险', fr: "l'aventure", ex: '每次旅行都是一次新冒险。' }
+        { es: '预订', rom: 'yùdìng', fr: 'la réservation', ex: '我在网上预订了。' },
+        { es: '出发', rom: 'chūfā', fr: 'le départ', ex: '出发时间是中午。' },
+        { es: '到达', rom: 'dàodá', fr: "l'arrivée", ex: '我们的到达延误了。' },
+        { es: '海关', rom: 'hǎiguān', fr: 'la douane', ex: '我们过海关。' },
+        { es: '货币', rom: 'huòbì', fr: 'la devise', ex: '我在银行兑换货币。' },
+        { es: '纪念品', rom: 'jìniànpǐn', fr: 'le souvenir', ex: '我给家人买纪念品。' },
+        { es: '导游', rom: 'dǎoyóu', fr: 'le guide', ex: '导游带我们游览城市。' },
+        { es: '冒险', rom: 'màoxiǎn', fr: "l'aventure", ex: '每次旅行都是一次新冒险。' }
       ],
       avance: [
-        { es: '行程', fr: "l'itinéraire", ex: '我们的行程包括五个城市。' },
-        { es: '目的地', fr: 'la destination', ex: '巴黎是我的梦想目的地。' },
-        { es: '住宿', fr: "l'hébergement", ex: '住宿非常好。' },
-        { es: '探索', fr: 'explorer', ex: '我步行探索古城。' },
-        { es: '名胜', fr: 'le monument', ex: '长城是著名的名胜。' },
-        { es: '文化', fr: 'la culture', ex: '我对当地文化着迷。' },
-        { es: '风景', fr: 'le paysage', ex: '风景令人叹为观止。' }
+        { es: '行程', rom: 'xíngchéng', fr: "l'itinéraire", ex: '我们的行程包括五个城市。' },
+        { es: '目的地', rom: 'mùdìdì', fr: 'la destination', ex: '巴黎是我的梦想目的地。' },
+        { es: '住宿', rom: 'zhùsù', fr: "l'hébergement", ex: '住宿非常好。' },
+        { es: '探索', rom: 'tànsuǒ', fr: 'explorer', ex: '我步行探索古城。' },
+        { es: '名胜', rom: 'míngshèng', fr: 'le monument', ex: '长城是著名的名胜。' },
+        { es: '文化', rom: 'wénhuà', fr: 'la culture', ex: '我对当地文化着迷。' },
+        { es: '风景', rom: 'fēngjǐng', fr: 'le paysage', ex: '风景令人叹为观止。' }
       ]
     },
     famille: { nom: 'Famille', icone: '👨‍👩‍👧',
       debutant: [
-        { es: '妈妈', fr: 'la mère', ex: '我妈妈做饭做得很好。' },
-        { es: '爸爸', fr: 'le père', ex: '我爸爸在北京工作。' },
-        { es: '姐姐', fr: 'la grande sœur', ex: '我姐姐很有趣。' },
-        { es: '哥哥', fr: 'le grand frère', ex: '我哥哥踢足球。' },
-        { es: '奶奶', fr: 'la grand-mère', ex: '奶奶讲的故事很好听。' },
-        { es: '爷爷', fr: 'le grand-père', ex: '爷爷非常智慧。' },
-        { es: '宝宝', fr: 'le bébé', ex: '宝宝安静地睡着了。' },
-        { es: '孩子', fr: "l'enfant", ex: '孩子在花园里玩。' },
-        { es: '家庭', fr: 'la famille', ex: '我的家庭非常亲密。' },
-        { es: '家', fr: 'le foyer', ex: '家是最舒适的地方。' }
+        { es: '妈妈', rom: 'māma', fr: 'la mère', ex: '我妈妈做饭做得很好。' },
+        { es: '爸爸', rom: 'bàba', fr: 'le père', ex: '我爸爸在北京工作。' },
+        { es: '姐姐', rom: 'jiějie', fr: 'la grande sœur', ex: '我姐姐很有趣。' },
+        { es: '哥哥', rom: 'gēge', fr: 'le grand frère', ex: '我哥哥踢足球。' },
+        { es: '奶奶', rom: 'nǎinai', fr: 'la grand-mère', ex: '奶奶讲的故事很好听。' },
+        { es: '爷爷', rom: 'yéye', fr: 'le grand-père', ex: '爷爷非常智慧。' },
+        { es: '宝宝', rom: 'bǎobao', fr: 'le bébé', ex: '宝宝安静地睡着了。' },
+        { es: '孩子', rom: 'háizi', fr: "l'enfant", ex: '孩子在花园里玩。' },
+        { es: '家庭', rom: 'jiātíng', fr: 'la famille', ex: '我的家庭非常亲密。' },
+        { es: '家', rom: 'jiā', fr: 'le foyer', ex: '家是最舒适的地方。' }
       ],
       intermediaire: [
-        { es: '表哥', fr: 'le cousin', ex: '我表哥住在上海。' },
-        { es: '阿姨', fr: 'la tante', ex: '我阿姨做很好吃的蛋糕。' },
-        { es: '叔叔', fr: "l'oncle", ex: '我叔叔是医生。' },
-        { es: '侄子', fr: 'le neveu', ex: '我侄子两岁了。' },
-        { es: '丈夫', fr: 'le mari', ex: '她丈夫非常体贴。' },
-        { es: '妻子', fr: 'la femme', ex: '他妻子是老师。' },
-        { es: '婚礼', fr: 'le mariage', ex: '婚礼非常美丽。' },
-        { es: '父母', fr: 'les parents', ex: '我父母在度假。' }
+        { es: '表哥', rom: 'biǎogē', fr: 'le cousin', ex: '我表哥住在上海。' },
+        { es: '阿姨', rom: 'āyí', fr: 'la tante', ex: '我阿姨做很好吃的蛋糕。' },
+        { es: '叔叔', rom: 'shūshu', fr: "l'oncle", ex: '我叔叔是医生。' },
+        { es: '侄子', rom: 'zhízi', fr: 'le neveu', ex: '我侄子两岁了。' },
+        { es: '丈夫', rom: 'zhàngfu', fr: 'le mari', ex: '她丈夫非常体贴。' },
+        { es: '妻子', rom: 'qīzi', fr: 'la femme', ex: '他妻子是老师。' },
+        { es: '婚礼', rom: 'hūnlǐ', fr: 'le mariage', ex: '婚礼非常美丽。' },
+        { es: '父母', rom: 'fùmǔ', fr: 'les parents', ex: '我父母在度假。' }
       ],
       avance: [
-        { es: '关系', fr: 'la relation', ex: '好的关系需要努力。' },
-        { es: '文化遗产', fr: "l'héritage", ex: '我们共享丰富的文化遗产。' },
-        { es: '代', fr: 'la génération', ex: '每一代人都从上一代学习。' },
-        { es: '教育', fr: "l'éducation", ex: '良好的教育塑造品格。' },
-        { es: '传统', fr: 'la tradition', ex: '我们保持家庭传统。' },
-        { es: '纽带', fr: 'le lien', ex: '兄弟姐妹之间的纽带很强。' },
-        { es: '团聚', fr: 'les retrouvailles', ex: '家庭团聚非常美好。' }
+        { es: '关系', rom: 'guānxi', fr: 'la relation', ex: '好的关系需要努力。' },
+        { es: '文化遗产', rom: 'wénhuà yíchǎn', fr: "l'héritage", ex: '我们共享丰富的文化遗产。' },
+        { es: '代', rom: 'dài', fr: 'la génération', ex: '每一代人都从上一代学习。' },
+        { es: '教育', rom: 'jiàoyù', fr: "l'éducation", ex: '良好的教育塑造品格。' },
+        { es: '传统', rom: 'chuántǒng', fr: 'la tradition', ex: '我们保持家庭传统。' },
+        { es: '纽带', rom: 'niǔdài', fr: 'le lien', ex: '兄弟姐妹之间的纽带很强。' },
+        { es: '团聚', rom: 'tuánjù', fr: 'les retrouvailles', ex: '家庭团聚非常美好。' }
       ]
     },
     couleurs: { nom: 'Couleurs', icone: '🎨',
       debutant: [
-        { es: '红色', fr: 'rouge', ex: '苹果是鲜红色的。' },
-        { es: '蓝色', fr: 'bleu', ex: '天空晴朗，是蓝色的。' },
-        { es: '绿色', fr: 'vert', ex: '雨后草地是绿色的。' },
-        { es: '黄色', fr: 'jaune', ex: '太阳是黄色的，很温暖。' },
-        { es: '黑色', fr: 'noir', ex: '我今天穿了一件黑色夹克。' },
-        { es: '白色', fr: 'blanc', ex: '雪是完全白色的。' },
-        { es: '橙色', fr: 'orange', ex: '她的裙子是鲜橙色的。' },
-        { es: '粉红色', fr: 'rose', ex: '玫瑰是淡粉红色的。' },
-        { es: '紫色', fr: 'violet', ex: '黄昏时天空变成紫色。' },
-        { es: '棕色', fr: 'marron', ex: '树干是棕色的。' }
+        { es: '红色', rom: 'hóngsè', fr: 'rouge', ex: '苹果是鲜红色的。' },
+        { es: '蓝色', rom: 'lánsè', fr: 'bleu', ex: '天空晴朗，是蓝色的。' },
+        { es: '绿色', rom: 'lǜsè', fr: 'vert', ex: '雨后草地是绿色的。' },
+        { es: '黄色', rom: 'huángsè', fr: 'jaune', ex: '太阳是黄色的，很温暖。' },
+        { es: '黑色', rom: 'hēisè', fr: 'noir', ex: '我今天穿了一件黑色夹克。' },
+        { es: '白色', rom: 'báisè', fr: 'blanc', ex: '雪是完全白色的。' },
+        { es: '橙色', rom: 'chéngsè', fr: 'orange', ex: '她的裙子是鲜橙色的。' },
+        { es: '粉红色', rom: 'fěnhóngsè', fr: 'rose', ex: '玫瑰是淡粉红色的。' },
+        { es: '紫色', rom: 'zǐsè', fr: 'violet', ex: '黄昏时天空变成紫色。' },
+        { es: '棕色', rom: 'zōngsè', fr: 'marron', ex: '树干是棕色的。' }
       ],
       intermediaire: [
-        { es: '灰色', fr: 'gris', ex: '云是深灰色的。' },
-        { es: '深色', fr: 'foncé', ex: '冬天我喜欢深色。' },
-        { es: '浅色', fr: 'clair', ex: '夏天她穿浅蓝色。' },
-        { es: '鲜艳', fr: 'vif', ex: '这幅画用了鲜艳的颜色。' },
-        { es: '苍白', fr: 'pâle', ex: '他今天看起来苍白。' },
-        { es: '五颜六色', fr: 'coloré', ex: '市场非常五颜六色。' },
-        { es: '色调', fr: 'la teinte', ex: '我喜欢这种蓝色色调。' },
-        { es: '透明', fr: 'transparent', ex: '玻璃是透明的。' }
+        { es: '灰色', rom: 'huīsè', fr: 'gris', ex: '云是深灰色的。' },
+        { es: '深色', rom: 'shēnsè', fr: 'foncé', ex: '冬天我喜欢深色。' },
+        { es: '浅色', rom: 'qiǎnsè', fr: 'clair', ex: '夏天她穿浅蓝色。' },
+        { es: '鲜艳', rom: 'xiānyàn', fr: 'vif', ex: '这幅画用了鲜艳的颜色。' },
+        { es: '苍白', rom: 'cāngbái', fr: 'pâle', ex: '他今天看起来苍白。' },
+        { es: '五颜六色', rom: 'wǔyán liùsè', fr: 'coloré', ex: '市场非常五颜六色。' },
+        { es: '色调', rom: 'sèdiào', fr: 'la teinte', ex: '我喜欢这种蓝色色调。' },
+        { es: '透明', rom: 'tòumíng', fr: 'transparent', ex: '玻璃是透明的。' }
       ],
       avance: [
-        { es: '对比', fr: 'le contraste', ex: '颜色之间的对比很显著。' },
-        { es: '鲜明', fr: 'éclatant', ex: '鲜明的颜色吸引了我的注意。' },
-        { es: '色彩细微差别', fr: 'la nuance', ex: '色彩的细微差别随光线变化。' },
-        { es: '单色', fr: 'monochrome', ex: '这张照片是单色的。' },
-        { es: '颜料', fr: 'le pigment', ex: '这种涂料使用天然颜料。' },
-        { es: '光谱', fr: 'le spectre', ex: '彩虹显示完整的光谱。' },
-        { es: '色彩', fr: 'la teinte', ex: '在混合物中加入黄色色彩。' }
+        { es: '对比', rom: 'duìbǐ', fr: 'le contraste', ex: '颜色之间的对比很显著。' },
+        { es: '鲜明', rom: 'xiānmíng', fr: 'éclatant', ex: '鲜明的颜色吸引了我的注意。' },
+        { es: '色彩细微差别', rom: 'sècǎi xìwēi chābié', fr: 'la nuance', ex: '色彩的细微差别随光线变化。' },
+        { es: '单色', rom: 'dānsè', fr: 'monochrome', ex: '这张照片是单色的。' },
+        { es: '颜料', rom: 'yánliào', fr: 'le pigment', ex: '这种涂料使用天然颜料。' },
+        { es: '光谱', rom: 'guāngpǔ', fr: 'le spectre', ex: '彩虹显示完整的光谱。' },
+        { es: '色彩', rom: 'sècǎi', fr: 'la teinte', ex: '在混合物中加入黄色色彩。' }
       ]
     }
   },
   'ar': {
     essentiel: { nom: 'Essentiel', icone: '🌟',
       debutant: [
-        { es: 'مرحبا', fr: 'bonjour', ex: 'مرحبا، كيف حالك؟' },
-        { es: 'مع السلامة', fr: 'au revoir', ex: 'مع السلامة، إلى اللقاء!' },
-        { es: 'من فضلك', fr: "s'il vous plaît", ex: 'من فضلك، ساعدني.' },
-        { es: 'شكرا', fr: 'merci', ex: 'شكرا جزيلا!' },
-        { es: 'نعم', fr: 'oui', ex: 'نعم، أفهم.' },
-        { es: 'لا', fr: 'non', ex: 'لا، شكرا.' },
-        { es: 'عفوا', fr: 'excusez-moi', ex: 'عفوا، أين المحطة؟' },
-        { es: 'آسف', fr: 'je suis désolé', ex: 'آسف على التأخير.' },
-        { es: 'مساعدة', fr: "l'aide", ex: 'أحتاج مساعدة، من فضلك.' },
-        { es: 'صديق', fr: "l'ami", ex: 'هي صديقتي المفضلة.' }
+        { es: 'مرحبا', rom: 'marhaba', fr: 'bonjour', ex: 'مرحبا، كيف حالك؟' },
+        { es: 'مع السلامة', rom: 'maa al-salama', fr: 'au revoir', ex: 'مع السلامة، إلى اللقاء!' },
+        { es: 'من فضلك', rom: 'min fadlak', fr: "s'il vous plaît", ex: 'من فضلك، ساعدني.' },
+        { es: 'شكرا', rom: 'shukran', fr: 'merci', ex: 'شكرا جزيلا!' },
+        { es: 'نعم', rom: 'naam', fr: 'oui', ex: 'نعم، أفهم.' },
+        { es: 'لا', rom: 'la', fr: 'non', ex: 'لا، شكرا.' },
+        { es: 'عفوا', rom: 'afwan', fr: 'excusez-moi', ex: 'عفوا، أين المحطة؟' },
+        { es: 'آسف', rom: 'aasif', fr: 'je suis désolé', ex: 'آسف على التأخير.' },
+        { es: 'مساعدة', rom: 'musaada', fr: "l'aide", ex: 'أحتاج مساعدة، من فضلك.' },
+        { es: 'صديق', rom: 'sadiq', fr: "l'ami", ex: 'هي صديقتي المفضلة.' }
       ],
       intermediaire: [
-        { es: 'يفهم', fr: 'comprendre', ex: 'هل تفهمني؟' },
-        { es: 'يتكلم', fr: 'parler', ex: 'أتكلم القليل من العربية.' },
-        { es: 'يتعلم', fr: 'apprendre', ex: 'أريد أن أتعلم العربية.' },
-        { es: 'يكرر', fr: 'répéter', ex: 'هل يمكنك تكرار ذلك، من فضلك؟' },
-        { es: 'ببطء', fr: 'lentement', ex: 'تكلم ببطء من فضلك.' },
-        { es: 'يعرف', fr: 'savoir', ex: 'لا أعرف الجواب.' },
-        { es: 'يحتاج', fr: 'avoir besoin de', ex: 'أحتاج لحظة.' },
-        { es: 'يريد', fr: 'vouloir', ex: 'أريد المحاولة.' }
+        { es: 'يفهم', rom: 'yafham', fr: 'comprendre', ex: 'هل تفهمني؟' },
+        { es: 'يتكلم', rom: 'yatakallam', fr: 'parler', ex: 'أتكلم القليل من العربية.' },
+        { es: 'يتعلم', rom: 'yataalim', fr: 'apprendre', ex: 'أريد أن أتعلم العربية.' },
+        { es: 'يكرر', rom: 'yukarrir', fr: 'répéter', ex: 'هل يمكنك تكرار ذلك، من فضلك؟' },
+        { es: 'ببطء', rom: 'bibuti', fr: 'lentement', ex: 'تكلم ببطء من فضلك.' },
+        { es: 'يعرف', rom: 'yarif', fr: 'savoir', ex: 'لا أعرف الجواب.' },
+        { es: 'يحتاج', rom: 'yahtaj', fr: 'avoir besoin de', ex: 'أحتاج لحظة.' },
+        { es: 'يريد', rom: 'yurid', fr: 'vouloir', ex: 'أريد المحاولة.' }
       ],
       avance: [
-        { es: 'فرصة', fr: "l'opportunité", ex: 'هذه فرصة رائعة.' },
-        { es: 'تحدي', fr: 'le défi', ex: 'كل تحدٍّ يجعلنا أقوى.' },
-        { es: 'يحقق', fr: 'atteindre', ex: 'سأحقق أهدافي.' },
-        { es: 'مسؤولية', fr: 'la responsabilité', ex: 'نتقاسم المسؤولية.' },
-        { es: 'فضولي', fr: 'curieux', ex: 'إنها فضولية جدا تجاه العلوم.' },
-        { es: 'مصمم', fr: 'déterminé', ex: 'هو مصمم على النجاح.' },
-        { es: 'يتحسن', fr: 'améliorer', ex: 'أحسّن مهاراتي كل يوم.' }
+        { es: 'فرصة', rom: 'fursa', fr: "l'opportunité", ex: 'هذه فرصة رائعة.' },
+        { es: 'تحدي', rom: 'tahadi', fr: 'le défi', ex: 'كل تحدٍّ يجعلنا أقوى.' },
+        { es: 'يحقق', rom: 'yuhaqqiq', fr: 'atteindre', ex: 'سأحقق أهدافي.' },
+        { es: 'مسؤولية', rom: 'masuliyya', fr: 'la responsabilité', ex: 'نتقاسم المسؤولية.' },
+        { es: 'فضولي', rom: 'fuduli', fr: 'curieux', ex: 'إنها فضولية جدا تجاه العلوم.' },
+        { es: 'مصمم', rom: 'musammim', fr: 'déterminé', ex: 'هو مصمم على النجاح.' },
+        { es: 'يتحسن', rom: 'yatahassan', fr: 'améliorer', ex: 'أحسّن مهاراتي كل يوم.' }
       ]
     },
     nourriture: { nom: 'Nourriture', icone: '🍕',
       debutant: [
-        { es: 'خبز', fr: 'le pain', ex: 'الخبز لا يزال دافئا.' },
-        { es: 'ماء', fr: "l'eau", ex: 'أشرب الماء طوال اليوم.' },
-        { es: 'حليب', fr: 'le lait', ex: 'أضع الحليب في القهوة.' },
-        { es: 'بيضة', fr: "l'œuf", ex: 'آكل بيضة على الإفطار.' },
-        { es: 'دجاج', fr: 'le poulet', ex: 'الدجاج لذيذ.' },
-        { es: 'سمك', fr: 'le poisson', ex: 'أحب أكل السمك.' },
-        { es: 'أرز', fr: 'le riz', ex: 'أطبخ الأرز على العشاء.' },
-        { es: 'شوربة', fr: 'la soupe', ex: 'هذه الشوربة ساخنة جدا.' },
-        { es: 'تفاحة', fr: 'la pomme', ex: 'آكل تفاحة كل صباح.' },
-        { es: 'شاي', fr: 'le thé', ex: 'أشرب الشاي كل يوم.' }
+        { es: 'خبز', rom: 'khubz', fr: 'le pain', ex: 'الخبز لا يزال دافئا.' },
+        { es: 'ماء', rom: 'maa', fr: "l'eau", ex: 'أشرب الماء طوال اليوم.' },
+        { es: 'حليب', rom: 'halib', fr: 'le lait', ex: 'أضع الحليب في القهوة.' },
+        { es: 'بيضة', rom: 'bayda', fr: "l'œuf", ex: 'آكل بيضة على الإفطار.' },
+        { es: 'دجاج', rom: 'dajaj', fr: 'le poulet', ex: 'الدجاج لذيذ.' },
+        { es: 'سمك', rom: 'samak', fr: 'le poisson', ex: 'أحب أكل السمك.' },
+        { es: 'أرز', rom: 'aruzz', fr: 'le riz', ex: 'أطبخ الأرز على العشاء.' },
+        { es: 'شوربة', rom: 'shurba', fr: 'la soupe', ex: 'هذه الشوربة ساخنة جدا.' },
+        { es: 'تفاحة', rom: 'tuffaha', fr: 'la pomme', ex: 'آكل تفاحة كل صباح.' },
+        { es: 'شاي', rom: 'shay', fr: 'le thé', ex: 'أشرب الشاي كل يوم.' }
       ],
       intermediaire: [
-        { es: 'فراولة', fr: 'la fraise', ex: 'الفراولة ناضجة وحلوة.' },
-        { es: 'عصير برتقال', fr: "le jus d'orange", ex: 'أشرب عصير البرتقال صباحا.' },
-        { es: 'فطر', fr: 'les champignons', ex: 'أضيف الفطر إلى الصلصة.' },
-        { es: 'زبدة', fr: 'le beurre', ex: 'أضع الزبدة على الخبز.' },
-        { es: 'سكر', fr: 'le sucre', ex: 'هل تأخذ سكرا في الشاي؟' },
-        { es: 'فلفل', fr: 'le poivre', ex: 'أضف قليلا من الفلفل.' },
-        { es: 'حلوى', fr: 'le dessert', ex: 'ماذا تريد للحلوى؟' },
-        { es: 'وصفة', fr: 'la recette', ex: 'هذه وصفة جدتي.' }
+        { es: 'فراولة', rom: 'farawila', fr: 'la fraise', ex: 'الفراولة ناضجة وحلوة.' },
+        { es: 'عصير برتقال', rom: 'asir burtuqal', fr: "le jus d'orange", ex: 'أشرب عصير البرتقال صباحا.' },
+        { es: 'فطر', rom: 'futr', fr: 'les champignons', ex: 'أضيف الفطر إلى الصلصة.' },
+        { es: 'زبدة', rom: 'zubda', fr: 'le beurre', ex: 'أضع الزبدة على الخبز.' },
+        { es: 'سكر', rom: 'sukkar', fr: 'le sucre', ex: 'هل تأخذ سكرا في الشاي؟' },
+        { es: 'فلفل', rom: 'fulful', fr: 'le poivre', ex: 'أضف قليلا من الفلفل.' },
+        { es: 'حلوى', rom: 'halwa', fr: 'le dessert', ex: 'ماذا تريد للحلوى؟' },
+        { es: 'وصفة', rom: 'wasfa', fr: 'la recette', ex: 'هذه وصفة جدتي.' }
       ],
       avance: [
-        { es: 'مكونات', fr: 'les ingrédients', ex: 'المكونات كلها طازجة.' },
-        { es: 'تتبيل', fr: "l'assaisonnement", ex: 'التتبيل مثالي.' },
-        { es: 'مغذي', fr: 'nutritif', ex: 'هذه الوجبة مغذية جدا.' },
-        { es: 'شهية', fr: "l'appétit", ex: 'الرائحة تفتح الشهية.' },
-        { es: 'مطبخ', fr: 'la cuisine', ex: 'أحب المطبخ الآسيوي.' },
-        { es: 'نكهة', fr: 'la saveur', ex: 'نكهة هذا الطبق فريدة.' },
-        { es: 'حصة', fr: 'la portion', ex: 'الحصة كبيرة جدا.' }
+        { es: 'مكونات', rom: 'mukawwinat', fr: 'les ingrédients', ex: 'المكونات كلها طازجة.' },
+        { es: 'تتبيل', rom: 'tatbil', fr: "l'assaisonnement", ex: 'التتبيل مثالي.' },
+        { es: 'مغذي', rom: 'mughdhhi', fr: 'nutritif', ex: 'هذه الوجبة مغذية جدا.' },
+        { es: 'شهية', rom: 'shahiyya', fr: "l'appétit", ex: 'الرائحة تفتح الشهية.' },
+        { es: 'مطبخ', rom: 'matbakh', fr: 'la cuisine', ex: 'أحب المطبخ الآسيوي.' },
+        { es: 'نكهة', rom: 'nakha', fr: 'la saveur', ex: 'نكهة هذا الطبق فريدة.' },
+        { es: 'حصة', rom: 'hissa', fr: 'la portion', ex: 'الحصة كبيرة جدا.' }
       ]
     },
     voyage: { nom: 'Voyage', icone: '✈️',
       debutant: [
-        { es: 'مطار', fr: "l'aéroport", ex: 'نصل إلى المطار الساعة الثامنة.' },
-        { es: 'فندق', fr: "l'hôtel", ex: 'الفندق قريب من الشاطئ.' },
-        { es: 'تذكرة', fr: 'le billet', ex: 'اشتريت تذكرة طائرة.' },
-        { es: 'جواز سفر', fr: 'le passeport', ex: 'لا تنس جواز سفرك.' },
-        { es: 'خريطة', fr: 'la carte', ex: 'أستخدم الخريطة للتنقل.' },
-        { es: 'قطار', fr: 'le train', ex: 'القطار يغادر الساعة التاسعة.' },
-        { es: 'حافلة', fr: 'le bus', ex: 'أركب الحافلة كل يوم.' },
-        { es: 'محطة', fr: 'la gare', ex: 'المحطة في وسط المدينة.' },
-        { es: 'أمتعة', fr: 'les bagages', ex: 'أمتعتي ثقيلة جدا.' },
-        { es: 'شاطئ', fr: 'la plage', ex: 'نستريح على الشاطئ.' }
+        { es: 'مطار', rom: 'matar', fr: "l'aéroport", ex: 'نصل إلى المطار الساعة الثامنة.' },
+        { es: 'فندق', rom: 'funduq', fr: "l'hôtel", ex: 'الفندق قريب من الشاطئ.' },
+        { es: 'تذكرة', rom: 'tadhkira', fr: 'le billet', ex: 'اشتريت تذكرة طائرة.' },
+        { es: 'جواز سفر', rom: 'jawaz safar', fr: 'le passeport', ex: 'لا تنس جواز سفرك.' },
+        { es: 'خريطة', rom: 'kharita', fr: 'la carte', ex: 'أستخدم الخريطة للتنقل.' },
+        { es: 'قطار', rom: 'qitar', fr: 'le train', ex: 'القطار يغادر الساعة التاسعة.' },
+        { es: 'حافلة', rom: 'hafila', fr: 'le bus', ex: 'أركب الحافلة كل يوم.' },
+        { es: 'محطة', rom: 'mahatta', fr: 'la gare', ex: 'المحطة في وسط المدينة.' },
+        { es: 'أمتعة', rom: 'amtia', fr: 'les bagages', ex: 'أمتعتي ثقيلة جدا.' },
+        { es: 'شاطئ', rom: 'shati', fr: 'la plage', ex: 'نستريح على الشاطئ.' }
       ],
       intermediaire: [
-        { es: 'حجز', fr: 'la réservation', ex: 'قمت بحجز عبر الإنترنت.' },
-        { es: 'مغادرة', fr: 'le départ', ex: 'المغادرة عند الظهر.' },
-        { es: 'وصول', fr: "l'arrivée", ex: 'وصولنا متأخر.' },
-        { es: 'جمارك', fr: 'la douane', ex: 'نمر عبر الجمارك.' },
-        { es: 'عملة', fr: 'la devise', ex: 'أصرف العملة في البنك.' },
-        { es: 'هدية تذكارية', fr: 'le souvenir', ex: 'أشتري هدية تذكارية للعائلة.' },
-        { es: 'مرشد سياحي', fr: 'le guide', ex: 'المرشد يريكنا المدينة.' },
-        { es: 'مغامرة', fr: "l'aventure", ex: 'كل رحلة مغامرة جديدة.' }
+        { es: 'حجز', rom: 'hajz', fr: 'la réservation', ex: 'قمت بحجز عبر الإنترنت.' },
+        { es: 'مغادرة', rom: 'mughadara', fr: 'le départ', ex: 'المغادرة عند الظهر.' },
+        { es: 'وصول', rom: 'wusul', fr: "l'arrivée", ex: 'وصولنا متأخر.' },
+        { es: 'جمارك', rom: 'jamarik', fr: 'la douane', ex: 'نمر عبر الجمارك.' },
+        { es: 'عملة', rom: 'umla', fr: 'la devise', ex: 'أصرف العملة في البنك.' },
+        { es: 'هدية تذكارية', rom: 'hadiyya tadhkariyya', fr: 'le souvenir', ex: 'أشتري هدية تذكارية للعائلة.' },
+        { es: 'مرشد سياحي', rom: 'murshid siyahi', fr: 'le guide', ex: 'المرشد يريكنا المدينة.' },
+        { es: 'مغامرة', rom: 'mughamara', fr: "l'aventure", ex: 'كل رحلة مغامرة جديدة.' }
       ],
       avance: [
-        { es: 'خط سير', fr: "l'itinéraire", ex: 'خط سيرنا يشمل خمس مدن.' },
-        { es: 'وجهة', fr: 'la destination', ex: 'باريس هي وجهة أحلامي.' },
-        { es: 'إقامة', fr: "l'hébergement", ex: 'الإقامة ممتازة.' },
-        { es: 'يستكشف', fr: 'explorer', ex: 'أستكشف المدينة القديمة سيرا.' },
-        { es: 'معلم', fr: 'le monument', ex: 'الأهرامات معلم شهير.' },
-        { es: 'ثقافة', fr: 'la culture', ex: 'أنا مفتون بالثقافة المحلية.' },
-        { es: 'منظر', fr: 'le paysage', ex: 'المنظر رائع.' }
+        { es: 'خط سير', rom: 'khatt sayr', fr: "l'itinéraire", ex: 'خط سيرنا يشمل خمس مدن.' },
+        { es: 'وجهة', rom: 'wijha', fr: 'la destination', ex: 'باريس هي وجهة أحلامي.' },
+        { es: 'إقامة', rom: 'iqama', fr: "l'hébergement", ex: 'الإقامة ممتازة.' },
+        { es: 'يستكشف', rom: 'yastatashif', fr: 'explorer', ex: 'أستكشف المدينة القديمة سيرا.' },
+        { es: 'معلم', rom: 'maalim', fr: 'le monument', ex: 'الأهرامات معلم شهير.' },
+        { es: 'ثقافة', rom: 'thaqafa', fr: 'la culture', ex: 'أنا مفتون بالثقافة المحلية.' },
+        { es: 'منظر', rom: 'manzar', fr: 'le paysage', ex: 'المنظر رائع.' }
       ]
     },
     famille: { nom: 'Famille', icone: '👨‍👩‍👧',
       debutant: [
-        { es: 'أم', fr: 'la mère', ex: 'أمي تطبخ جيدا جدا.' },
-        { es: 'أب', fr: 'le père', ex: 'أبي يعمل في الرياض.' },
-        { es: 'أخت', fr: 'la sœur', ex: 'أختي مضحكة جدا.' },
-        { es: 'أخ', fr: 'le frère', ex: 'أخي يلعب كرة القدم.' },
-        { es: 'جدة', fr: 'la grand-mère', ex: 'جدتي تحكي قصصا رائعة.' },
-        { es: 'جد', fr: 'le grand-père', ex: 'جدي حكيم جدا.' },
-        { es: 'طفل', fr: "l'enfant", ex: 'الطفل يلعب في الحديقة.' },
-        { es: 'عائلة', fr: 'la famille', ex: 'عائلتي متقاربة جدا.' },
-        { es: 'منزل', fr: 'le foyer', ex: 'لا مكان مثل المنزل.' },
-        { es: 'رضيع', fr: 'le bébé', ex: 'الرضيع ينام بهدوء.' }
+        { es: 'أم', rom: 'umm', fr: 'la mère', ex: 'أمي تطبخ جيدا جدا.' },
+        { es: 'أب', rom: 'ab', fr: 'le père', ex: 'أبي يعمل في الرياض.' },
+        { es: 'أخت', rom: 'ukht', fr: 'la sœur', ex: 'أختي مضحكة جدا.' },
+        { es: 'أخ', rom: 'akh', fr: 'le frère', ex: 'أخي يلعب كرة القدم.' },
+        { es: 'جدة', rom: 'jadda', fr: 'la grand-mère', ex: 'جدتي تحكي قصصا رائعة.' },
+        { es: 'جد', rom: 'jadd', fr: 'le grand-père', ex: 'جدي حكيم جدا.' },
+        { es: 'طفل', rom: 'tifl', fr: "l'enfant", ex: 'الطفل يلعب في الحديقة.' },
+        { es: 'عائلة', rom: 'aila', fr: 'la famille', ex: 'عائلتي متقاربة جدا.' },
+        { es: 'منزل', rom: 'manzil', fr: 'le foyer', ex: 'لا مكان مثل المنزل.' },
+        { es: 'رضيع', rom: 'radi', fr: 'le bébé', ex: 'الرضيع ينام بهدوء.' }
       ],
       intermediaire: [
-        { es: 'ابن عم', fr: 'le cousin', ex: 'ابن عمي يسكن في القاهرة.' },
-        { es: 'عمة', fr: 'la tante', ex: 'عمتي تصنع حلويات لذيذة.' },
-        { es: 'عم', fr: "l'oncle", ex: 'عمي طبيب.' },
-        { es: 'ابن أخ', fr: 'le neveu', ex: 'ابن أخي عمره سنتان.' },
-        { es: 'زوج', fr: 'le mari', ex: 'زوجها عطوف جدا.' },
-        { es: 'زوجة', fr: 'la femme', ex: 'زوجته معلمة.' },
-        { es: 'زفاف', fr: 'le mariage', ex: 'كان حفل الزفاف جميلا.' },
-        { es: 'والدان', fr: 'les parents', ex: 'والداي في إجازة.' }
+        { es: 'ابن عم', rom: 'ibn amm', fr: 'le cousin', ex: 'ابن عمي يسكن في القاهرة.' },
+        { es: 'عمة', rom: 'amma', fr: 'la tante', ex: 'عمتي تصنع حلويات لذيذة.' },
+        { es: 'عم', rom: 'amm', fr: "l'oncle", ex: 'عمي طبيب.' },
+        { es: 'ابن أخ', rom: 'ibn akh', fr: 'le neveu', ex: 'ابن أخي عمره سنتان.' },
+        { es: 'زوج', rom: 'zawj', fr: 'le mari', ex: 'زوجها عطوف جدا.' },
+        { es: 'زوجة', rom: 'zawja', fr: 'la femme', ex: 'زوجته معلمة.' },
+        { es: 'زفاف', rom: 'zifaf', fr: 'le mariage', ex: 'كان حفل الزفاف جميلا.' },
+        { es: 'والدان', rom: 'walidaan', fr: 'les parents', ex: 'والداي في إجازة.' }
       ],
       avance: [
-        { es: 'علاقة', fr: 'la relation', ex: 'العلاقة الجيدة تحتاج جهدا.' },
-        { es: 'إرث ثقافي', fr: "l'héritage", ex: 'نتشارك إرثا ثقافيا غنيا.' },
-        { es: 'جيل', fr: 'la génération', ex: 'كل جيل يتعلم من السابق.' },
-        { es: 'تربية', fr: "l'éducation", ex: 'التربية الجيدة تشكل الشخصية.' },
-        { es: 'تقاليد', fr: 'la tradition', ex: 'نحافظ على تقاليد العائلة.' },
-        { es: 'رابطة', fr: 'le lien', ex: 'الرابطة بين الأخوة قوية.' },
-        { es: 'لمّ الشمل', fr: 'les retrouvailles', ex: 'كان لمّ شمل العائلة رائعا.' }
+        { es: 'علاقة', rom: 'alaqa', fr: 'la relation', ex: 'العلاقة الجيدة تحتاج جهدا.' },
+        { es: 'إرث ثقافي', rom: 'irth thaqafi', fr: "l'héritage", ex: 'نتشارك إرثا ثقافيا غنيا.' },
+        { es: 'جيل', rom: 'jil', fr: 'la génération', ex: 'كل جيل يتعلم من السابق.' },
+        { es: 'تربية', rom: 'tarbiyya', fr: "l'éducation", ex: 'التربية الجيدة تشكل الشخصية.' },
+        { es: 'تقاليد', rom: 'taqalid', fr: 'la tradition', ex: 'نحافظ على تقاليد العائلة.' },
+        { es: 'رابطة', rom: 'rabita', fr: 'le lien', ex: 'الرابطة بين الأخوة قوية.' },
+        { es: 'لمّ الشمل', rom: 'lamm al-shaml', fr: 'les retrouvailles', ex: 'كان لمّ شمل العائلة رائعا.' }
       ]
     },
     couleurs: { nom: 'Couleurs', icone: '🎨',
       debutant: [
-        { es: 'أحمر', fr: 'rouge', ex: 'التفاحة حمراء ساطعة.' },
-        { es: 'أزرق', fr: 'bleu', ex: 'السماء صافية وزرقاء.' },
-        { es: 'أخضر', fr: 'vert', ex: 'العشب أخضر بعد المطر.' },
-        { es: 'أصفر', fr: 'jaune', ex: 'الشمس صفراء ودافئة.' },
-        { es: 'أسود', fr: 'noir', ex: 'أرتدي اليوم جاكيتا أسود.' },
-        { es: 'أبيض', fr: 'blanc', ex: 'الثلج أبيض تماما.' },
-        { es: 'برتقالي', fr: 'orange', ex: 'فستانها برتقالي ساطع.' },
-        { es: 'وردي', fr: 'rose', ex: 'الورود وردية شاحبة.' },
-        { es: 'بنفسجي', fr: 'violet', ex: 'السماء تتحول إلى بنفسجي عند الغروب.' },
-        { es: 'بني', fr: 'marron', ex: 'جذع الشجرة بني.' }
+        { es: 'أحمر', rom: 'ahmar', fr: 'rouge', ex: 'التفاحة حمراء ساطعة.' },
+        { es: 'أزرق', rom: 'azraq', fr: 'bleu', ex: 'السماء صافية وزرقاء.' },
+        { es: 'أخضر', rom: 'akhdar', fr: 'vert', ex: 'العشب أخضر بعد المطر.' },
+        { es: 'أصفر', rom: 'asfar', fr: 'jaune', ex: 'الشمس صفراء ودافئة.' },
+        { es: 'أسود', rom: 'aswad', fr: 'noir', ex: 'أرتدي اليوم جاكيتا أسود.' },
+        { es: 'أبيض', rom: 'abyad', fr: 'blanc', ex: 'الثلج أبيض تماما.' },
+        { es: 'برتقالي', rom: 'burtuqali', fr: 'orange', ex: 'فستانها برتقالي ساطع.' },
+        { es: 'وردي', rom: 'wardi', fr: 'rose', ex: 'الورود وردية شاحبة.' },
+        { es: 'بنفسجي', rom: 'banafsaji', fr: 'violet', ex: 'السماء تتحول إلى بنفسجي عند الغروب.' },
+        { es: 'بني', rom: 'bunni', fr: 'marron', ex: 'جذع الشجرة بني.' }
       ],
       intermediaire: [
-        { es: 'رمادي', fr: 'gris', ex: 'الغيوم رمادية داكنة.' },
-        { es: 'داكن', fr: 'foncé', ex: 'أفضل الألوان الداكنة في الشتاء.' },
-        { es: 'فاتح', fr: 'clair', ex: 'ترتدي الأزرق الفاتح في الصيف.' },
-        { es: 'زاهي', fr: 'vif', ex: 'اللوحة تستخدم ألوانا زاهية.' },
-        { es: 'شاحب', fr: 'pâle', ex: 'يبدو شاحبا اليوم.' },
-        { es: 'ملون', fr: 'coloré', ex: 'السوق ملون جدا.' },
-        { es: 'درجة لونية', fr: 'la teinte', ex: 'أحب هذه الدرجة من الأزرق.' },
-        { es: 'شفاف', fr: 'transparent', ex: 'الزجاج شفاف.' }
+        { es: 'رمادي', rom: 'ramadi', fr: 'gris', ex: 'الغيوم رمادية داكنة.' },
+        { es: 'داكن', rom: 'dakin', fr: 'foncé', ex: 'أفضل الألوان الداكنة في الشتاء.' },
+        { es: 'فاتح', rom: 'fatih', fr: 'clair', ex: 'ترتدي الأزرق الفاتح في الصيف.' },
+        { es: 'زاهي', rom: 'zahi', fr: 'vif', ex: 'اللوحة تستخدم ألوانا زاهية.' },
+        { es: 'شاحب', rom: 'shahib', fr: 'pâle', ex: 'يبدو شاحبا اليوم.' },
+        { es: 'ملون', rom: 'mulawwan', fr: 'coloré', ex: 'السوق ملون جدا.' },
+        { es: 'درجة لونية', rom: 'daraja lawniyya', fr: 'la teinte', ex: 'أحب هذه الدرجة من الأزرق.' },
+        { es: 'شفاف', rom: 'shaffaf', fr: 'transparent', ex: 'الزجاج شفاف.' }
       ],
       avance: [
-        { es: 'تباين', fr: 'le contraste', ex: 'التباين بين الألوان لافت.' },
-        { es: 'زاهي جدا', fr: 'éclatant', ex: 'الألوان الزاهية جذبت انتباهي.' },
-        { es: 'فارق دقيق', fr: 'la nuance', ex: 'الفارق الدقيق يتغير مع الضوء.' },
-        { es: 'أحادي اللون', fr: 'monochrome', ex: 'الصورة أحادية اللون.' },
-        { es: 'صبغة', fr: 'le pigment', ex: 'تُستخدم صبغات طبيعية في هذا الطلاء.' },
-        { es: 'طيف', fr: 'le spectre', ex: 'قوس قزح يعرض الطيف كاملا.' },
-        { es: 'مسحة', fr: 'la teinte', ex: 'أضف مسحة من الأصفر إلى المزيج.' }
+        { es: 'تباين', rom: 'tabayun', fr: 'le contraste', ex: 'التباين بين الألوان لافت.' },
+        { es: 'زاهي جدا', rom: 'zahi jiddan', fr: 'éclatant', ex: 'الألوان الزاهية جذبت انتباهي.' },
+        { es: 'فارق دقيق', rom: 'fariq daqiq', fr: 'la nuance', ex: 'الفارق الدقيق يتغير مع الضوء.' },
+        { es: 'أحادي اللون', rom: 'uhadi al-lawn', fr: 'monochrome', ex: 'الصورة أحادية اللون.' },
+        { es: 'صبغة', rom: 'sabgha', fr: 'le pigment', ex: 'تُستخدم صبغات طبيعية في هذا الطلاء.' },
+        { es: 'طيف', rom: 'tayf', fr: 'le spectre', ex: 'قوس قزح يعرض الطيف كاملا.' },
+        { es: 'مسحة', rom: 'massha', fr: 'la teinte', ex: 'أضف مسحة من الأصفر إلى المزيج.' }
       ]
     }
   },
@@ -2440,167 +2440,167 @@ const LANG_THEMES = {
   'hi': {
     essentiel: { nom: 'Essentiel', icone: '🌟',
       debutant: [
-        { es: 'नमस्ते', fr: 'bonjour', ex: 'नमस्ते, आप कैसे हैं?' },
-        { es: 'अलविदा', fr: 'au revoir', ex: 'अलविदा, जल्दी मिलते हैं!' },
-        { es: 'कृपया', fr: "s'il vous plaît", ex: 'कृपया मेरी मदद करें।' },
-        { es: 'धन्यवाद', fr: 'merci', ex: 'बहुत धन्यवाद!' },
-        { es: 'हाँ', fr: 'oui', ex: 'हाँ, मैं समझता हूँ।' },
-        { es: 'नहीं', fr: 'non', ex: 'नहीं, धन्यवाद।' },
-        { es: 'माफ़ कीजिए', fr: 'excusez-moi', ex: 'माफ़ कीजिए, स्टेशन कहाँ है?' },
-        { es: 'मुझे खेद है', fr: 'je suis désolé', ex: 'देर के लिए मुझे खेद है।' },
-        { es: 'मदद', fr: "l'aide", ex: 'मुझे मदद चाहिए, कृपया।' },
-        { es: 'दोस्त', fr: "l'ami", ex: 'वह मेरी सबसे अच्छी दोस्त है।' }
+        { es: 'नमस्ते', rom: 'namaste', fr: 'bonjour', ex: 'नमस्ते, आप कैसे हैं?' },
+        { es: 'अलविदा', rom: 'alvida', fr: 'au revoir', ex: 'अलविदा, जल्दी मिलते हैं!' },
+        { es: 'कृपया', rom: 'kripaya', fr: "s'il vous plaît", ex: 'कृपया मेरी मदद करें।' },
+        { es: 'धन्यवाद', rom: 'dhanyavad', fr: 'merci', ex: 'बहुत धन्यवाद!' },
+        { es: 'हाँ', rom: 'haan', fr: 'oui', ex: 'हाँ, मैं समझता हूँ।' },
+        { es: 'नहीं', rom: 'nahin', fr: 'non', ex: 'नहीं, धन्यवाद।' },
+        { es: 'माफ़ कीजिए', rom: 'maaf kijiye', fr: 'excusez-moi', ex: 'माफ़ कीजिए, स्टेशन कहाँ है?' },
+        { es: 'मुझे खेद है', rom: 'mujhe khed hai', fr: 'je suis désolé', ex: 'देर के लिए मुझे खेद है।' },
+        { es: 'मदद', rom: 'madad', fr: "l'aide", ex: 'मुझे मदद चाहिए, कृपया।' },
+        { es: 'दोस्त', rom: 'dost', fr: "l'ami", ex: 'वह मेरी सबसे अच्छी दोस्त है।' }
       ],
       intermediaire: [
-        { es: 'समझना', fr: 'comprendre', ex: 'क्या आप मुझे समझते हैं?' },
-        { es: 'बोलना', fr: 'parler', ex: 'मैं थोड़ी हिंदी बोलता हूँ।' },
-        { es: 'सीखना', fr: 'apprendre', ex: 'मैं हिंदी सीखना चाहता हूँ।' },
-        { es: 'दोहराना', fr: 'répéter', ex: 'क्या आप कृपया दोहरा सकते हैं?' },
-        { es: 'धीरे', fr: 'lentement', ex: 'कृपया धीरे बोलें।' },
-        { es: 'जानना', fr: 'savoir', ex: 'मुझे जवाब नहीं पता।' },
-        { es: 'ज़रूरत होना', fr: 'avoir besoin de', ex: 'मुझे एक पल चाहिए।' },
-        { es: 'चाहना', fr: 'vouloir', ex: 'मैं कोशिश करना चाहता हूँ।' }
+        { es: 'समझना', rom: 'samajhna', fr: 'comprendre', ex: 'क्या आप मुझे समझते हैं?' },
+        { es: 'बोलना', rom: 'bolna', fr: 'parler', ex: 'मैं थोड़ी हिंदी बोलता हूँ।' },
+        { es: 'सीखना', rom: 'sikhna', fr: 'apprendre', ex: 'मैं हिंदी सीखना चाहता हूँ।' },
+        { es: 'दोहराना', rom: 'dohrana', fr: 'répéter', ex: 'क्या आप कृपया दोहरा सकते हैं?' },
+        { es: 'धीरे', rom: 'dhire', fr: 'lentement', ex: 'कृपया धीरे बोलें।' },
+        { es: 'जानना', rom: 'janna', fr: 'savoir', ex: 'मुझे जवाब नहीं पता।' },
+        { es: 'ज़रूरत होना', rom: 'zarurat hona', fr: 'avoir besoin de', ex: 'मुझे एक पल चाहिए।' },
+        { es: 'चाहना', rom: 'chahna', fr: 'vouloir', ex: 'मैं कोशिश करना चाहता हूँ।' }
       ],
       avance: [
-        { es: 'अवसर', fr: "l'opportunité", ex: 'यह एक बेहतरीन अवसर है।' },
-        { es: 'चुनौती', fr: 'le défi', ex: 'हर चुनौती हमें मज़बूत बनाती है।' },
-        { es: 'हासिल करना', fr: 'atteindre', ex: 'मैं अपने लक्ष्य हासिल करूँगा।' },
-        { es: 'ज़िम्मेदारी', fr: 'la responsabilité', ex: 'हम ज़िम्मेदारी साझा करते हैं।' },
-        { es: 'जिज्ञासु', fr: 'curieux', ex: 'वह विज्ञान के बारे में बहुत जिज्ञासु है।' },
-        { es: 'दृढ़निश्चयी', fr: 'déterminé', ex: 'वह सफल होने के लिए दृढ़निश्चयी है।' },
-        { es: 'सुधारना', fr: 'améliorer', ex: 'मैं हर दिन अपने कौशल सुधारता हूँ।' }
+        { es: 'अवसर', rom: 'avsar', fr: "l'opportunité", ex: 'यह एक बेहतरीन अवसर है।' },
+        { es: 'चुनौती', rom: 'chunauti', fr: 'le défi', ex: 'हर चुनौती हमें मज़बूत बनाती है।' },
+        { es: 'हासिल करना', rom: 'hasil karna', fr: 'atteindre', ex: 'मैं अपने लक्ष्य हासिल करूँगा।' },
+        { es: 'ज़िम्मेदारी', rom: 'zimmedari', fr: 'la responsabilité', ex: 'हम ज़िम्मेदारी साझा करते हैं।' },
+        { es: 'जिज्ञासु', rom: 'jigyasu', fr: 'curieux', ex: 'वह विज्ञान के बारे में बहुत जिज्ञासु है।' },
+        { es: 'दृढ़निश्चयी', rom: 'dridhnishchayi', fr: 'déterminé', ex: 'वह सफल होने के लिए दृढ़निश्चयी है।' },
+        { es: 'सुधारना', rom: 'sudharna', fr: 'améliorer', ex: 'मैं हर दिन अपने कौशल सुधारता हूँ।' }
       ]
     },
     nourriture: { nom: 'Nourriture', icone: '🍕',
       debutant: [
-        { es: 'रोटी', fr: 'le pain', ex: 'रोटी अभी भी गरम है।' },
-        { es: 'पानी', fr: "l'eau", ex: 'मैं पूरे दिन पानी पीता हूँ।' },
-        { es: 'दूध', fr: 'le lait', ex: 'मैं चाय में दूध डालता हूँ।' },
-        { es: 'अंडा', fr: "l'œuf", ex: 'मैं नाश्ते में अंडा खाता हूँ।' },
-        { es: 'चिकन', fr: 'le poulet', ex: 'चिकन बहुत स्वादिष्ट है।' },
-        { es: 'मछली', fr: 'le poisson', ex: 'मुझे मछली खाना पसंद है।' },
-        { es: 'चावल', fr: 'le riz', ex: 'मैं रात के खाने में चावल पकाता हूँ।' },
-        { es: 'दाल', fr: 'les lentilles', ex: 'दाल बहुत पौष्टिक होती है।' },
-        { es: 'चाय', fr: 'le thé', ex: 'मैं हर दिन चाय पीता हूँ।' },
-        { es: 'सेब', fr: 'la pomme', ex: 'मैं हर सुबह एक सेब खाता हूँ।' }
+        { es: 'रोटी', rom: 'roti', fr: 'le pain', ex: 'रोटी अभी भी गरम है।' },
+        { es: 'पानी', rom: 'pani', fr: "l'eau", ex: 'मैं पूरे दिन पानी पीता हूँ।' },
+        { es: 'दूध', rom: 'dudh', fr: 'le lait', ex: 'मैं चाय में दूध डालता हूँ।' },
+        { es: 'अंडा', rom: 'anda', fr: "l'œuf", ex: 'मैं नाश्ते में अंडा खाता हूँ।' },
+        { es: 'चिकन', rom: 'chikan', fr: 'le poulet', ex: 'चिकन बहुत स्वादिष्ट है।' },
+        { es: 'मछली', rom: 'machli', fr: 'le poisson', ex: 'मुझे मछली खाना पसंद है।' },
+        { es: 'चावल', rom: 'chaval', fr: 'le riz', ex: 'मैं रात के खाने में चावल पकाता हूँ।' },
+        { es: 'दाल', rom: 'dal', fr: 'les lentilles', ex: 'दाल बहुत पौष्टिक होती है।' },
+        { es: 'चाय', rom: 'chay', fr: 'le thé', ex: 'मैं हर दिन चाय पीता हूँ।' },
+        { es: 'सेब', rom: 'seb', fr: 'la pomme', ex: 'मैं हर सुबह एक सेब खाता हूँ।' }
       ],
       intermediaire: [
-        { es: 'स्ट्रॉबेरी', fr: 'la fraise', ex: 'स्ट्रॉबेरी पकी हुई और मीठी हैं।' },
-        { es: 'संतरे का रस', fr: "le jus d'orange", ex: 'मैं सुबह संतरे का रस पीता हूँ।' },
-        { es: 'मशरूम', fr: 'les champignons', ex: 'मैं सब्ज़ी में मशरूम डालता हूँ।' },
-        { es: 'मक्खन', fr: 'le beurre', ex: 'मैं रोटी पर मक्खन लगाता हूँ।' },
-        { es: 'चीनी', fr: 'le sucre', ex: 'क्या आप चाय में चीनी लेते हैं?' },
-        { es: 'काली मिर्च', fr: 'le poivre', ex: 'थोड़ी काली मिर्च डालें।' },
-        { es: 'मिठाई', fr: 'le dessert', ex: 'मिठाई में क्या लेंगे?' },
-        { es: 'नुस्खा', fr: 'la recette', ex: 'यह मेरी दादी का नुस्खा है।' }
+        { es: 'स्ट्रॉबेरी', rom: 'strawberi', fr: 'la fraise', ex: 'स्ट्रॉबेरी पकी हुई और मीठी हैं।' },
+        { es: 'संतरे का रस', rom: 'santare ka ras', fr: "le jus d'orange", ex: 'मैं सुबह संतरे का रस पीता हूँ।' },
+        { es: 'मशरूम', rom: 'mashrum', fr: 'les champignons', ex: 'मैं सब्ज़ी में मशरूम डालता हूँ।' },
+        { es: 'मक्खन', rom: 'makkhan', fr: 'le beurre', ex: 'मैं रोटी पर मक्खन लगाता हूँ।' },
+        { es: 'चीनी', rom: 'chini', fr: 'le sucre', ex: 'क्या आप चाय में चीनी लेते हैं?' },
+        { es: 'काली मिर्च', rom: 'kali mirch', fr: 'le poivre', ex: 'थोड़ी काली मिर्च डालें।' },
+        { es: 'मिठाई', rom: 'mithai', fr: 'le dessert', ex: 'मिठाई में क्या लेंगे?' },
+        { es: 'नुस्खा', rom: 'nuskha', fr: 'la recette', ex: 'यह मेरी दादी का नुस्खा है।' }
       ],
       avance: [
-        { es: 'सामग्री', fr: 'les ingrédients', ex: 'सभी सामग्री ताज़ी है।' },
-        { es: 'मसाले', fr: "l'assaisonnement", ex: 'मसाले एकदम सही हैं।' },
-        { es: 'पौष्टिक', fr: 'nutritif', ex: 'यह खाना बहुत पौष्टिक है।' },
-        { es: 'भूख', fr: "l'appétit", ex: 'खुशबू से भूख बढ़ जाती है।' },
-        { es: 'व्यंजन', fr: 'la cuisine', ex: 'मुझे एशियाई व्यंजन पसंद है।' },
-        { es: 'स्वाद', fr: 'la saveur', ex: 'इस व्यंजन का स्वाद अनोखा है।' },
-        { es: 'हिस्सा', fr: 'la portion', ex: 'हिस्सा बहुत बड़ा है।' }
+        { es: 'सामग्री', rom: 'samagri', fr: 'les ingrédients', ex: 'सभी सामग्री ताज़ी है।' },
+        { es: 'मसाले', rom: 'masale', fr: "l'assaisonnement", ex: 'मसाले एकदम सही हैं।' },
+        { es: 'पौष्टिक', rom: 'paushtik', fr: 'nutritif', ex: 'यह खाना बहुत पौष्टिक है।' },
+        { es: 'भूख', rom: 'bhukh', fr: "l'appétit", ex: 'खुशबू से भूख बढ़ जाती है।' },
+        { es: 'व्यंजन', rom: 'vyanjan', fr: 'la cuisine', ex: 'मुझे एशियाई व्यंजन पसंद है।' },
+        { es: 'स्वाद', rom: 'swad', fr: 'la saveur', ex: 'इस व्यंजन का स्वाद अनोखा है।' },
+        { es: 'हिस्सा', rom: 'hissa', fr: 'la portion', ex: 'हिस्सा बहुत बड़ा है।' }
       ]
     },
     voyage: { nom: 'Voyage', icone: '✈️',
       debutant: [
-        { es: 'हवाई अड्डा', fr: "l'aéroport", ex: 'हम आठ बजे हवाई अड्डे पर पहुँचते हैं।' },
-        { es: 'होटल', fr: "l'hôtel", ex: 'होटल समुद्र तट के पास है।' },
-        { es: 'टिकट', fr: 'le billet', ex: 'मैंने हवाई जहाज़ का टिकट खरीदा।' },
-        { es: 'पासपोर्ट', fr: 'le passeport', ex: 'अपना पासपोर्ट मत भूलें।' },
-        { es: 'नक्शा', fr: 'la carte', ex: 'मैं रास्ता खोजने के लिए नक्शा इस्तेमाल करता हूँ।' },
-        { es: 'ट्रेन', fr: 'le train', ex: 'ट्रेन नौ बजे रवाना होती है।' },
-        { es: 'बस', fr: 'le bus', ex: 'मैं हर दिन बस लेता हूँ।' },
-        { es: 'स्टेशन', fr: 'la gare', ex: 'स्टेशन शहर के केंद्र में है।' },
-        { es: 'सामान', fr: 'les bagages', ex: 'मेरा सामान बहुत भारी है।' },
-        { es: 'समुद्र तट', fr: 'la plage', ex: 'हम समुद्र तट पर आराम करते हैं।' }
+        { es: 'हवाई अड्डा', rom: 'havai adda', fr: "l'aéroport", ex: 'हम आठ बजे हवाई अड्डे पर पहुँचते हैं।' },
+        { es: 'होटल', rom: 'hotel', fr: "l'hôtel", ex: 'होटल समुद्र तट के पास है।' },
+        { es: 'टिकट', rom: 'tikat', fr: 'le billet', ex: 'मैंने हवाई जहाज़ का टिकट खरीदा।' },
+        { es: 'पासपोर्ट', rom: 'pasport', fr: 'le passeport', ex: 'अपना पासपोर्ट मत भूलें।' },
+        { es: 'नक्शा', rom: 'naksha', fr: 'la carte', ex: 'मैं रास्ता खोजने के लिए नक्शा इस्तेमाल करता हूँ।' },
+        { es: 'ट्रेन', rom: 'tren', fr: 'le train', ex: 'ट्रेन नौ बजे रवाना होती है।' },
+        { es: 'बस', rom: 'bas', fr: 'le bus', ex: 'मैं हर दिन बस लेता हूँ।' },
+        { es: 'स्टेशन', rom: 'steshan', fr: 'la gare', ex: 'स्टेशन शहर के केंद्र में है।' },
+        { es: 'सामान', rom: 'saman', fr: 'les bagages', ex: 'मेरा सामान बहुत भारी है।' },
+        { es: 'समुद्र तट', rom: 'samudra tat', fr: 'la plage', ex: 'हम समुद्र तट पर आराम करते हैं।' }
       ],
       intermediaire: [
-        { es: 'बुकिंग', fr: 'la réservation', ex: 'मैंने ऑनलाइन बुकिंग की।' },
-        { es: 'प्रस्थान', fr: 'le départ', ex: 'प्रस्थान दोपहर को है।' },
-        { es: 'आगमन', fr: "l'arrivée", ex: 'हमारा आगमन देर से हो रहा है।' },
-        { es: 'सीमा शुल्क', fr: 'la douane', ex: 'हम सीमा शुल्क से गुज़रते हैं।' },
-        { es: 'मुद्रा', fr: 'la devise', ex: 'मैं बैंक में मुद्रा बदलता हूँ।' },
-        { es: 'यादगार', fr: 'le souvenir', ex: 'मैं परिवार के लिए यादगार खरीदता हूँ।' },
-        { es: 'गाइड', fr: 'le guide', ex: 'गाइड हमें शहर दिखाता है।' },
-        { es: 'साहसिक कार्य', fr: "l'aventure", ex: 'हर यात्रा एक नया साहसिक कार्य है।' }
+        { es: 'बुकिंग', rom: 'buking', fr: 'la réservation', ex: 'मैंने ऑनलाइन बुकिंग की।' },
+        { es: 'प्रस्थान', rom: 'prasthan', fr: 'le départ', ex: 'प्रस्थान दोपहर को है।' },
+        { es: 'आगमन', rom: 'agman', fr: "l'arrivée", ex: 'हमारा आगमन देर से हो रहा है।' },
+        { es: 'सीमा शुल्क', rom: 'sima shulk', fr: 'la douane', ex: 'हम सीमा शुल्क से गुज़रते हैं।' },
+        { es: 'मुद्रा', rom: 'mudra', fr: 'la devise', ex: 'मैं बैंक में मुद्रा बदलता हूँ।' },
+        { es: 'यादगार', rom: 'yadgar', fr: 'le souvenir', ex: 'मैं परिवार के लिए यादगार खरीदता हूँ।' },
+        { es: 'गाइड', rom: 'gayd', fr: 'le guide', ex: 'गाइड हमें शहर दिखाता है।' },
+        { es: 'साहसिक कार्य', rom: 'sahasik karya', fr: "l'aventure", ex: 'हर यात्रा एक नया साहसिक कार्य है।' }
       ],
       avance: [
-        { es: 'यात्रा कार्यक्रम', fr: "l'itinéraire", ex: 'हमारे यात्रा कार्यक्रम में पाँच शहर हैं।' },
-        { es: 'मंज़िल', fr: 'la destination', ex: 'पेरिस मेरी सपनों की मंज़िल है।' },
-        { es: 'आवास', fr: "l'hébergement", ex: 'आवास बेहतरीन है।' },
-        { es: 'खोजना', fr: 'explorer', ex: 'मैं पैदल पुराने शहर की खोज करता हूँ।' },
-        { es: 'ऐतिहासिक स्थल', fr: 'le monument', ex: 'ताजमहल एक प्रसिद्ध ऐतिहासिक स्थल है।' },
-        { es: 'संस्कृति', fr: 'la culture', ex: 'मैं स्थानीय संस्कृति से मोहित हूँ।' },
-        { es: 'दृश्य', fr: 'le paysage', ex: 'दृश्य मनमोहक है।' }
+        { es: 'यात्रा कार्यक्रम', rom: 'yatra karyakram', fr: "l'itinéraire", ex: 'हमारे यात्रा कार्यक्रम में पाँच शहर हैं।' },
+        { es: 'मंज़िल', rom: 'manzil', fr: 'la destination', ex: 'पेरिस मेरी सपनों की मंज़िल है।' },
+        { es: 'आवास', rom: 'avas', fr: "l'hébergement", ex: 'आवास बेहतरीन है।' },
+        { es: 'खोजना', rom: 'khojna', fr: 'explorer', ex: 'मैं पैदल पुराने शहर की खोज करता हूँ।' },
+        { es: 'ऐतिहासिक स्थल', rom: 'aitihasik sthal', fr: 'le monument', ex: 'ताजमहल एक प्रसिद्ध ऐतिहासिक स्थल है।' },
+        { es: 'संस्कृति', rom: 'sanskriti', fr: 'la culture', ex: 'मैं स्थानीय संस्कृति से मोहित हूँ।' },
+        { es: 'दृश्य', rom: 'drishya', fr: 'le paysage', ex: 'दृश्य मनमोहक है।' }
       ]
     },
     famille: { nom: 'Famille', icone: '👨‍👩‍👧',
       debutant: [
-        { es: 'माँ', fr: 'la mère', ex: 'मेरी माँ बहुत अच्छा खाना बनाती है।' },
-        { es: 'पिता', fr: 'le père', ex: 'मेरे पिता दिल्ली में काम करते हैं।' },
-        { es: 'बहन', fr: 'la sœur', ex: 'मेरी बहन बहुत मज़ेदार है।' },
-        { es: 'भाई', fr: 'le frère', ex: 'मेरा भाई फ़ुटबॉल खेलता है।' },
-        { es: 'दादी', fr: 'la grand-mère', ex: 'दादी अच्छी कहानियाँ सुनाती हैं।' },
-        { es: 'दादा', fr: 'le grand-père', ex: 'दादा जी बहुत बुद्धिमान हैं।' },
-        { es: 'बच्चा', fr: "l'enfant", ex: 'बच्चा बगीचे में खेल रहा है।' },
-        { es: 'परिवार', fr: 'la famille', ex: 'मेरा परिवार बहुत करीब है।' },
-        { es: 'घर', fr: 'le foyer', ex: 'घर जैसी कोई जगह नहीं।' },
-        { es: 'बेटी', fr: 'la fille', ex: 'बेटी विश्वविद्यालय में पढ़ती है।' }
+        { es: 'माँ', rom: 'maan', fr: 'la mère', ex: 'मेरी माँ बहुत अच्छा खाना बनाती है।' },
+        { es: 'पिता', rom: 'pita', fr: 'le père', ex: 'मेरे पिता दिल्ली में काम करते हैं।' },
+        { es: 'बहन', rom: 'bahan', fr: 'la sœur', ex: 'मेरी बहन बहुत मज़ेदार है।' },
+        { es: 'भाई', rom: 'bhai', fr: 'le frère', ex: 'मेरा भाई फ़ुटबॉल खेलता है।' },
+        { es: 'दादी', rom: 'dadi', fr: 'la grand-mère', ex: 'दादी अच्छी कहानियाँ सुनाती हैं।' },
+        { es: 'दादा', rom: 'dada', fr: 'le grand-père', ex: 'दादा जी बहुत बुद्धिमान हैं।' },
+        { es: 'बच्चा', rom: 'bachcha', fr: "l'enfant", ex: 'बच्चा बगीचे में खेल रहा है।' },
+        { es: 'परिवार', rom: 'parivar', fr: 'la famille', ex: 'मेरा परिवार बहुत करीब है।' },
+        { es: 'घर', rom: 'ghar', fr: 'le foyer', ex: 'घर जैसी कोई जगह नहीं।' },
+        { es: 'बेटी', rom: 'beti', fr: 'la fille', ex: 'बेटी विश्वविद्यालय में पढ़ती है।' }
       ],
       intermediaire: [
-        { es: 'चचेरा भाई', fr: 'le cousin', ex: 'मेरा चचेरा भाई मुंबई में रहता है।' },
-        { es: 'चाची', fr: 'la tante', ex: 'चाची स्वादिष्ट मिठाइयाँ बनाती हैं।' },
-        { es: 'चाचा', fr: "l'oncle", ex: 'चाचा जी डॉक्टर हैं।' },
-        { es: 'भतीजा', fr: 'le neveu', ex: 'मेरा भतीजा दो साल का है।' },
-        { es: 'पति', fr: 'le mari', ex: 'उनके पति बहुत देखभाल करने वाले हैं।' },
-        { es: 'पत्नी', fr: 'la femme', ex: 'उनकी पत्नी शिक्षिका हैं।' },
-        { es: 'शादी', fr: 'le mariage', ex: 'शादी बहुत सुंदर थी।' },
-        { es: 'माता-पिता', fr: 'les parents', ex: 'मेरे माता-पिता छुट्टी पर हैं।' }
+        { es: 'चचेरा भाई', rom: 'chachera bhai', fr: 'le cousin', ex: 'मेरा चचेरा भाई मुंबई में रहता है।' },
+        { es: 'चाची', rom: 'chachi', fr: 'la tante', ex: 'चाची स्वादिष्ट मिठाइयाँ बनाती हैं।' },
+        { es: 'चाचा', rom: 'chacha', fr: "l'oncle", ex: 'चाचा जी डॉक्टर हैं।' },
+        { es: 'भतीजा', rom: 'bhatija', fr: 'le neveu', ex: 'मेरा भतीजा दो साल का है।' },
+        { es: 'पति', rom: 'pati', fr: 'le mari', ex: 'उनके पति बहुत देखभाल करने वाले हैं।' },
+        { es: 'पत्नी', rom: 'patni', fr: 'la femme', ex: 'उनकी पत्नी शिक्षिका हैं।' },
+        { es: 'शादी', rom: 'shadi', fr: 'le mariage', ex: 'शादी बहुत सुंदर थी।' },
+        { es: 'माता-पिता', rom: 'mata-pita', fr: 'les parents', ex: 'मेरे माता-पिता छुट्टी पर हैं।' }
       ],
       avance: [
-        { es: 'रिश्ता', fr: 'la relation', ex: 'अच्छे रिश्ते के लिए मेहनत चाहिए।' },
-        { es: 'सांस्कृतिक विरासत', fr: "l'héritage", ex: 'हम एक समृद्ध सांस्कृतिक विरासत साझा करते हैं।' },
-        { es: 'पीढ़ी', fr: 'la génération', ex: 'हर पीढ़ी पिछली पीढ़ी से सीखती है।' },
-        { es: 'परवरिश', fr: "l'éducation", ex: 'अच्छी परवरिश चरित्र बनाती है।' },
-        { es: 'परंपरा', fr: 'la tradition', ex: 'हम पारिवारिक परंपराओं को जीवित रखते हैं।' },
-        { es: 'बंधन', fr: 'le lien', ex: 'भाई-बहनों का बंधन मज़बूत होता है।' },
-        { es: 'पुनर्मिलन', fr: 'les retrouvailles', ex: 'पारिवारिक पुनर्मिलन शानदार था।' }
+        { es: 'रिश्ता', rom: 'rishta', fr: 'la relation', ex: 'अच्छे रिश्ते के लिए मेहनत चाहिए।' },
+        { es: 'सांस्कृतिक विरासत', rom: 'sanskritik virasat', fr: "l'héritage", ex: 'हम एक समृद्ध सांस्कृतिक विरासत साझा करते हैं।' },
+        { es: 'पीढ़ी', rom: 'pidhi', fr: 'la génération', ex: 'हर पीढ़ी पिछली पीढ़ी से सीखती है।' },
+        { es: 'परवरिश', rom: 'parvarish', fr: "l'éducation", ex: 'अच्छी परवरिश चरित्र बनाती है।' },
+        { es: 'परंपरा', rom: 'parampara', fr: 'la tradition', ex: 'हम पारिवारिक परंपराओं को जीवित रखते हैं।' },
+        { es: 'बंधन', rom: 'bandhan', fr: 'le lien', ex: 'भाई-बहनों का बंधन मज़बूत होता है।' },
+        { es: 'पुनर्मिलन', rom: 'punarmilan', fr: 'les retrouvailles', ex: 'पारिवारिक पुनर्मिलन शानदार था।' }
       ]
     },
     couleurs: { nom: 'Couleurs', icone: '🎨',
       debutant: [
-        { es: 'लाल', fr: 'rouge', ex: 'सेब चमकीला लाल है।' },
-        { es: 'नीला', fr: 'bleu', ex: 'आसमान साफ़ और नीला है।' },
-        { es: 'हरा', fr: 'vert', ex: 'बारिश के बाद घास हरी है।' },
-        { es: 'पीला', fr: 'jaune', ex: 'सूरज पीला और गर्म है।' },
-        { es: 'काला', fr: 'noir', ex: 'आज मैं काली जैकेट पहन रहा हूँ।' },
-        { es: 'सफ़ेद', fr: 'blanc', ex: 'बर्फ़ पूरी तरह सफ़ेद है।' },
-        { es: 'नारंगी', fr: 'orange', ex: 'उसकी ड्रेस चमकीली नारंगी है।' },
-        { es: 'गुलाबी', fr: 'rose', ex: 'गुलाब हल्के गुलाबी हैं।' },
-        { es: 'बैंगनी', fr: 'violet', ex: 'शाम को आसमान बैंगनी हो जाता है।' },
-        { es: 'भूरा', fr: 'marron', ex: 'पेड़ का तना भूरा है।' }
+        { es: 'लाल', rom: 'lal', fr: 'rouge', ex: 'सेब चमकीला लाल है।' },
+        { es: 'नीला', rom: 'nila', fr: 'bleu', ex: 'आसमान साफ़ और नीला है।' },
+        { es: 'हरा', rom: 'hara', fr: 'vert', ex: 'बारिश के बाद घास हरी है।' },
+        { es: 'पीला', rom: 'pila', fr: 'jaune', ex: 'सूरज पीला और गर्म है।' },
+        { es: 'काला', rom: 'kala', fr: 'noir', ex: 'आज मैं काली जैकेट पहन रहा हूँ।' },
+        { es: 'सफ़ेद', rom: 'safed', fr: 'blanc', ex: 'बर्फ़ पूरी तरह सफ़ेद है।' },
+        { es: 'नारंगी', rom: 'narangi', fr: 'orange', ex: 'उसकी ड्रेस चमकीली नारंगी है।' },
+        { es: 'गुलाबी', rom: 'gulabi', fr: 'rose', ex: 'गुलाब हल्के गुलाबी हैं।' },
+        { es: 'बैंगनी', rom: 'baingani', fr: 'violet', ex: 'शाम को आसमान बैंगनी हो जाता है।' },
+        { es: 'भूरा', rom: 'bhura', fr: 'marron', ex: 'पेड़ का तना भूरा है।' }
       ],
       intermediaire: [
-        { es: 'भूरा-सलेटी', fr: 'gris', ex: 'बादल गहरे सलेटी हैं।' },
-        { es: 'गहरा', fr: 'foncé', ex: 'सर्दियों में मुझे गहरे रंग पसंद हैं।' },
-        { es: 'हल्का', fr: 'clair', ex: 'वह गर्मियों में हल्का नीला पहनती है।' },
-        { es: 'चमकीला', fr: 'vif', ex: 'पेंटिंग में चमकीले रंग हैं।' },
-        { es: 'पीला पड़ना', fr: 'pâle', ex: 'वह आज पीला दिख रहा है।' },
-        { es: 'रंग-बिरंगा', fr: 'coloré', ex: 'बाज़ार बहुत रंग-बिरंगा है।' },
-        { es: 'रंगत', fr: 'la teinte', ex: 'मुझे नीले का यह रंगत पसंद है।' },
-        { es: 'पारदर्शी', fr: 'transparent', ex: 'शीशा पारदर्शी है।' }
+        { es: 'भूरा-सलेटी', rom: 'bhura-saleti', fr: 'gris', ex: 'बादल गहरे सलेटी हैं।' },
+        { es: 'गहरा', rom: 'gahra', fr: 'foncé', ex: 'सर्दियों में मुझे गहरे रंग पसंद हैं।' },
+        { es: 'हल्का', rom: 'halka', fr: 'clair', ex: 'वह गर्मियों में हल्का नीला पहनती है।' },
+        { es: 'चमकीला', rom: 'chamkila', fr: 'vif', ex: 'पेंटिंग में चमकीले रंग हैं।' },
+        { es: 'पीला पड़ना', rom: 'pila parna', fr: 'pâle', ex: 'वह आज पीला दिख रहा है।' },
+        { es: 'रंग-बिरंगा', rom: 'rang-biranga', fr: 'coloré', ex: 'बाज़ार बहुत रंग-बिरंगा है।' },
+        { es: 'रंगत', rom: 'rangat', fr: 'la teinte', ex: 'मुझे नीले का यह रंगत पसंद है।' },
+        { es: 'पारदर्शी', rom: 'pardarshi', fr: 'transparent', ex: 'शीशा पारदर्शी है।' }
       ],
       avance: [
-        { es: 'विपरीतता', fr: 'le contraste', ex: 'रंगों के बीच विपरीतता प्रभावशाली है।' },
-        { es: 'जीवंत', fr: 'éclatant', ex: 'जीवंत रंगों ने मेरा ध्यान खींचा।' },
-        { es: 'बारीकता', fr: 'la nuance', ex: 'रोशनी में बारीकता बदलती है।' },
-        { es: 'एकरंगी', fr: 'monochrome', ex: 'तस्वीर एकरंगी है।' },
-        { es: 'रंगद्रव्य', fr: 'le pigment', ex: 'इस रंग में प्राकृतिक रंगद्रव्य इस्तेमाल होते हैं।' },
-        { es: 'वर्णक्रम', fr: 'le spectre', ex: 'इंद्रधनुष पूरा वर्णक्रम दिखाता है।' },
-        { es: 'रंग का आभास', fr: 'la teinte', ex: 'मिश्रण में पीले का आभास जोड़ें।' }
+        { es: 'विपरीतता', rom: 'viparitata', fr: 'le contraste', ex: 'रंगों के बीच विपरीतता प्रभावशाली है।' },
+        { es: 'जीवंत', rom: 'jivant', fr: 'éclatant', ex: 'जीवंत रंगों ने मेरा ध्यान खींचा।' },
+        { es: 'बारीकता', rom: 'barikta', fr: 'la nuance', ex: 'रोशनी में बारीकता बदलती है।' },
+        { es: 'एकरंगी', rom: 'ekarangi', fr: 'monochrome', ex: 'तस्वीर एकरंगी है।' },
+        { es: 'रंगद्रव्य', rom: 'rangdravya', fr: 'le pigment', ex: 'इस रंग में प्राकृतिक रंगद्रव्य इस्तेमाल होते हैं।' },
+        { es: 'वर्णक्रम', rom: 'varnakram', fr: 'le spectre', ex: 'इंद्रधनुष पूरा वर्णक्रम दिखाता है।' },
+        { es: 'रंग का आभास', rom: 'rang ka abhas', fr: 'la teinte', ex: 'मिश्रण में पीले का आभास जोड़ें।' }
       ]
     }
   }
@@ -3069,6 +3069,16 @@ function afficherCarte() {
 
   // Afficher le mot espagnol
   document.getElementById('es-word-display').textContent = carte.es;
+  const _romEl = document.getElementById('es-word-rom');
+  const _NON_LATIN = ['ru','ja','ko','zh','ar','hi'];
+  if (_romEl) {
+    if (carte.rom && _NON_LATIN.includes(langCible)) {
+      _romEl.textContent = carte.rom;
+      _romEl.style.display = '';
+    } else {
+      _romEl.style.display = 'none';
+    }
+  }
 
   // 3 options: 1 correct + 2 distracteurs
   const distractors = getDistractors(carte.fr, 2);
@@ -3285,6 +3295,15 @@ function afficherCarteEcriture() {
   const total = writeState.cartes.length;
 
   document.getElementById('write-word').textContent = carte.es;
+  const _wRomEl = document.getElementById('write-word-rom');
+  if (_wRomEl) {
+    if (carte.rom && ['ru','ja','ko','zh','ar','hi'].includes(langCible)) {
+      _wRomEl.textContent = carte.rom;
+      _wRomEl.style.display = '';
+    } else {
+      _wRomEl.style.display = 'none';
+    }
+  }
   document.getElementById('write-card-counter').textContent = 'Carte ' + (writeState.indexActuel + 1) + ' / ' + total;
   document.getElementById('write-progress-bar').style.width = (writeState.indexActuel / total * 100) + '%';
   document.getElementById('write-score-good').textContent = '✓ ' + writeState.scoreOui;
@@ -3885,6 +3904,16 @@ document.addEventListener('DOMContentLoaded', () => {
     initAccueil();
   });
   document.getElementById('btn-open-custom').addEventListener('click', ouvrirListePerso);
+
+  // Bouton grammaire
+  document.getElementById('btn-open-gram').addEventListener('click', () => afficherFicheGrammaire(langCible));
+  document.getElementById('gram-close').addEventListener('click', () => {
+    document.getElementById('gram-overlay').style.display = 'none';
+  });
+  document.getElementById('gram-overlay').addEventListener('click', (e) => {
+    if (e.target === document.getElementById('gram-overlay'))
+      document.getElementById('gram-overlay').style.display = 'none';
+  });
   document.getElementById('btn-custom-add').addEventListener('click', () => {
     const es = document.getElementById('custom-input-es').value;
     const fr = document.getElementById('custom-input-fr').value;
@@ -3964,13 +3993,360 @@ document.addEventListener('DOMContentLoaded', () => {
     const mot = document.getElementById('es-word-display').textContent;
     if (mot) lancerReconnaissance(mot, document.getElementById('btn-mic'));
   });
-  // Bouton micro — phrases session
-  document.getElementById('btn-mic-phrases').addEventListener('click', () => {
-    const ph = phraseState.phrases[phraseState.indexActuel];
-    if (ph) lancerReconnaissance(ph.answer, document.getElementById('btn-mic-phrases'));
-  });
-
-  // Stats et theme
-  document.getElementById('btn-open-stats').addEventListener('click', afficherStats);
-  document.getElementById('btn-theme').addEventListener('click', toggleTheme);
 });
+
+// =============================================
+// FICHES DE GRAMMAIRE
+// =============================================
+const GRAM_TIPS = {};
+
+// --- RUSSE ---
+GRAM_TIPS['ru'] = {
+  nom: 'Russe',
+  sections: [
+    { titre: 'Écriture', items: [
+      'Alphabet cyrillique : 33 lettres. Certaines ressemblent au latin mais se prononcent différemment (P = R, H = N, C = S).',
+      'Apprendre le cyrillique prend ~1 semaine, ça vaut le coup avant de mémoriser du vocabulaire.'
+    ]},
+    { titre: 'Ordre des mots', items: [
+      'Ordre de base : Sujet–Verbe–Objet, mais très flexible grâce aux cas grammaticaux.',
+      "Exemple : «Я люблю кофе» et «Кофе я люблю» signifient tous les deux «J'aime le café» (nuance d'emphase)."
+    ]},
+    { titre: 'Articles', items: [
+      "Pas d'articles définis ni indéfinis en russe.",
+      '«Кот» peut signifier «un chat» ou «le chat» selon le contexte.'
+    ]},
+    { titre: 'Particularités clés', items: [
+      '6 cas grammaticaux (nominatif, génitif, datif, accusatif, instrumental, prépositionnel) — les terminaisons changent selon la fonction du mot.',
+      'Le verbe «être» (быть) est souvent omis au présent : «Я студент» = Je (suis) étudiant.',
+      'Deux aspects verbaux : imperfectif (action en cours) et perfectif (action complète).',
+      'Accent tonique variable et non marqué — à apprendre mot par mot.'
+    ]}
+  ]
+};
+
+// --- JAPONAIS ---
+GRAM_TIPS['ja'] = {
+  nom: 'Japonais',
+  sections: [
+    { titre: 'Écriture', items: [
+      '3 systèmes : hiragana (46 syllabes natives), katakana (46 syllabes pour mots étrangers), kanji (idéogrammes chinois adaptés).',
+      'Hiragana et katakana sont phonétiques et s\'apprennent en 1-2 semaines chacun.',
+      'Un texte courant mélange les 3 systèmes simultanément.'
+    ]},
+    { titre: 'Ordre des mots', items: [
+      'SOV : Sujet – Objet – Verbe. Le verbe est toujours en fin de phrase.',
+      '«私はコーヒーを飲みます» = Moi (wa) café (wo) bois → "Je bois du café".',
+      'Les particules (は、が、を、に…) indiquent la fonction grammaticale de chaque mot.'
+    ]},
+    { titre: 'Articles', items: [
+      "Pas d'articles. Le contexte et les particules suffisent.",
+    ]},
+    { titre: 'Particularités clés', items: [
+      'Le sujet est souvent omis quand il est clair : «飲みます» peut suffire pour "je bois".',
+      'Niveaux de politesse : forme polie (ます/です) pour les inconnus, forme courte entre amis.',
+      'Les adjectifs se conjuguent comme des verbes (い-adjectifs et な-adjectifs).',
+      'Pas de pluriel grammatical obligatoire : «猫» = un chat ou des chats.'
+    ]}
+  ]
+};
+
+// --- CORÉEN ---
+GRAM_TIPS['ko'] = {
+  nom: 'Coréen',
+  sections: [
+    { titre: 'Écriture', items: [
+      "Hangul : alphabet syllabique de 24 lettres combinées en blocs. Créé en 1443, c'est l'un des systèmes les plus logiques du monde.",
+      "Chaque bloc représente une syllabe : 한 = han. Lisible en ~2-3 jours d'apprentissage."
+    ]},
+    { titre: 'Ordre des mots', items: [
+      'SOV : Sujet – Objet – Verbe. Comme le japonais, le verbe est toujours en dernier.',
+      '«저는 커피를 마셔요» = Moi (neun) café (reul) bois → "Je bois du café".',
+      'Des particules suffixes indiquent le rôle de chaque nom (sujet, objet, lieu…).'
+    ]},
+    { titre: 'Articles', items: [
+      "Pas d'articles. Le contexte détermine le nombre et la définition."
+    ]},
+    { titre: 'Particularités clés', items: [
+      "Deux niveaux de politesse principaux : forme formelle (합니다) et forme polie standard (해요).",
+      'Les verbes et adjectifs se terminent toujours en 다 à la forme de base.',
+      "Le sujet est souvent omis quand il est évident.",
+      "Nombreux mots d'emprunt au japonais (époque coloniale) et à l'anglais (modern)."
+    ]}
+  ]
+};
+
+// --- MANDARIN (CHINOIS) ---
+GRAM_TIPS['zh'] = {
+  nom: 'Mandarin',
+  sections: [
+    { titre: 'Écriture', items: [
+      'Caractères Han : ~3000 pour la lecture courante, ~7000 pour la presse. Pas d\'alphabet — chaque caractère est un morphème.',
+      'Pinyin : transcription phonétique en lettres latines avec tons, utilisée pour apprendre la prononciation.',
+      'Écriture simplifiée (Chine continentale) vs. traditionnelle (Taïwan, Hong Kong).'
+    ]},
+    { titre: 'Tons', items: [
+      '4 tons + un ton neutre : mā (1er), má (2e), mǎ (3e), mà (4e), ma (neutre).',
+      'Le même son avec un ton différent = mot totalement différent : 妈 (mère) vs 马 (cheval).'
+    ]},
+    { titre: 'Ordre des mots', items: [
+      'SVO : Sujet–Verbe–Objet, proche du français.',
+      'Les modificateurs (adjectifs, propositions relatives) se placent AVANT le nom.'
+    ]},
+    { titre: 'Particularités clés', items: [
+      "Pas de conjugaison verbale : le temps est indiqué par des marqueurs (了, 过, 在…) ou le contexte.",
+      "Pas de genre grammatical, pas de pluriel obligatoire, pas d'articles.",
+      "Classificateurs obligatoires : on ne dit pas «un livre» mais «一本书» (un [classificateur-livre] livre).",
+      "Langue tonale isolante : la grammaire est relativement simple une fois les tons maîtrisés."
+    ]}
+  ]
+};
+
+// --- ARABE ---
+GRAM_TIPS['ar'] = {
+  nom: 'Arabe',
+  sections: [
+    { titre: 'Écriture', items: [
+      "28 lettres, s'écrit de droite à gauche. Chaque lettre a 4 formes selon sa position dans le mot.",
+      "Les voyelles courtes (signes diacritiques) sont souvent omises dans les textes courants — contexte essentiel.",
+      "L'arabe standard moderne (MSA) est compris partout ; les dialectes régionaux varient fortement."
+    ]},
+    { titre: 'Ordre des mots', items: [
+      'VSO traditionnel (Verbe–Sujet–Objet) en arabe littéraire, mais SVO fréquent en arabe moderne.',
+      "L'adjectif suit toujours le nom et s'accorde en genre, nombre et état (défini/indéfini)."
+    ]},
+    { titre: 'Articles', items: [
+      "Un seul article défini : ال (al-), préfixé au nom. Pas d'article indéfini.",
+      "«كتاب» = un livre / «الكتاب» = le livre."
+    ]},
+    { titre: 'Particularités clés', items: [
+      'Système triconsonantique : la plupart des mots dérivent de racines à 3 consonnes (k-t-b → écrire, livre, bureau…).',
+      'Duel grammatical : forme spéciale pour exactement deux choses.',
+      'Genre grammatical (masculin/féminin) pour tous les noms ; le féminin se forme souvent avec ة (ta marbuta).',
+      "Accord sujet-verbe : si le sujet est pluriel non-humain, le verbe est au féminin singulier."
+    ]}
+  ]
+};
+
+// --- HINDI ---
+GRAM_TIPS['hi'] = {
+  nom: 'Hindi',
+  sections: [
+    { titre: 'Écriture', items: [
+      "Devanagari : écriture syllabique de 48 signes de base (voyelles + consonnes). Les lettres sont suspendues à une ligne horizontale.",
+      "Phonétique : chaque signe a un son précis et constant. Apprendre le script facilite grandement la prononciation."
+    ]},
+    { titre: 'Ordre des mots', items: [
+      'SOV : Sujet–Objet–Verbe. Le verbe est en fin de phrase.',
+      '«मैं चाय पीता हूँ» = Moi thé bois → "Je bois du thé".',
+      'Les postpositions (équivalents des prépositions) se placent APRÈS le nom.'
+    ]},
+    { titre: 'Articles', items: [
+      "Pas d'articles définis ni indéfinis. Le contexte suffit.",
+      "«एक» (ek = un) peut jouer le rôle d'article indéfini informellement."
+    ]},
+    { titre: 'Particularités clés', items: [
+      'Genre grammatical (masculin/féminin) pour tous les noms — affecte les adjectifs et les verbes.',
+      'Le verbe s\'accorde avec le sujet ET parfois avec l\'objet (construction ergative au passé).',
+      "Niveaux de politesse : «तू» (très familier), «तुम» (familier), «आप» (formel/respectueux).",
+      "Vocabulaire : mots sanskrits pour le registre soutenu, mots arabes/persans dans le vocabulaire courant (legs de l'ère moghole)."
+    ]}
+  ]
+};
+
+// --- ANGLAIS ---
+GRAM_TIPS['en'] = {
+  nom: 'Anglais',
+  sections: [
+    { titre: 'Ordre des mots', items: [
+      'SVO strict : Sujet–Verbe–Objet. Contrairement au français, l\'ordre est rarement flexible.',
+      'Les adjectifs se placent toujours AVANT le nom : "a big red car" (jamais *"une voiture rouge grande").'
+    ]},
+    { titre: 'Articles', items: [
+      '"the" = article défini (le/la/les). "a/an" = article indéfini.',
+      '"a" devant consonne, "an" devant voyelle : "a cat", "an apple".'
+    ]},
+    { titre: 'Particularités clés', items: [
+      'Pas de genre grammatical : tous les noms sont neutres, les pronoms he/she/it dépendent du sexe ou de la nature.',
+      'Conjugaison très simple : une seule terminaison à l\'indicatif présent (-s à la 3e pers. sing.).',
+      'Aspect progressif : "I am eating" (en train de) vs "I eat" (habitude).',
+      'Phrasal verbs : "give up", "look after", "turn on" — le sens change complètement avec la particule.'
+    ]}
+  ]
+};
+
+// --- ITALIEN ---
+GRAM_TIPS['it'] = {
+  nom: 'Italien',
+  sections: [
+    { titre: 'Ordre des mots', items: [
+      'SVO de base, mais flexible. Le sujet peut être omis car la terminaison verbale l\'indique.',
+      '«Mangio la pizza» ou «La pizza la mangio io» (avec emphase) — les deux sont corrects.'
+    ]},
+    { titre: 'Articles', items: [
+      'Articles définis : il (m. sg.), la (f. sg.), i (m. pl.), le (f. pl.), + lo/gli devant s+consonne, z, gn.',
+      'Articles indéfinis : un/uno (m.), una/un\' (f.).'
+    ]},
+    { titre: 'Particularités clés', items: [
+      'Genre grammatical pour tous les noms : -o généralement masculin, -a généralement féminin.',
+      'Double consonnes importantes : "penna" (stylo) ≠ "pena" (peine) — prononciation distincte.',
+      'Subjonctif très utilisé dans la langue parlée (contrairement au français qui le fuit).',
+      'Le conditionnel avec "vorrei" (je voudrais) est essentiel pour la politesse.'
+    ]}
+  ]
+};
+
+// --- ALLEMAND ---
+GRAM_TIPS['de'] = {
+  nom: 'Allemand',
+  sections: [
+    { titre: 'Ordre des mots', items: [
+      'Le verbe conjugué est toujours en 2e position dans une proposition principale.',
+      'En subordonnée, le verbe va en DERNIÈRE position : "Ich weiß, dass er kommt" (…qu\'il vient).',
+      'Inversion sujet-verbe si un autre élément commence la phrase : "Heute gehe ich" (Aujourd\'hui vais-je).'
+    ]},
+    { titre: 'Articles', items: [
+      '3 genres : masculin (der), féminin (die), neutre (das). À apprendre avec chaque nom.',
+      'Les articles changent selon le cas (nominatif, accusatif, datif, génitif).'
+    ]},
+    { titre: 'Particularités clés', items: [
+      '4 cas grammaticaux : ils modifient les articles, adjectifs et parfois les noms.',
+      'Noms toujours avec majuscule : "der Hund" (le chien), "die Freiheit" (la liberté).',
+      'Mots composés illimités : "Donaudampfschifffahrtsgesellschaft" est un vrai mot.',
+      'Séparation des verbes à préfixe : "anrufen" → "Ich rufe dich an" (je t\'appelle).'
+    ]}
+  ]
+};
+
+// --- PORTUGAIS ---
+GRAM_TIPS['pt'] = {
+  nom: 'Portugais',
+  sections: [
+    { titre: 'Ordre des mots', items: [
+      'SVO, proche du français et de l\'espagnol.',
+      'Les pronoms objets se placent différemment selon le pays : après le verbe au Portugal ("dá-me"), avant au Brésil ("me dá").'
+    ]},
+    { titre: 'Articles', items: [
+      'Définis : o (m. sg.), a (f. sg.), os (m. pl.), as (f. pl.).',
+      'Se contractent avec les prépositions : de + o = do, em + a = na, a + o = ao.'
+    ]},
+    { titre: 'Particularités clés', items: [
+      'Deux variantes majeures : portugais européen (PT) et brésilien (BR) — prononciation très différente, vocabulaire partiellement divergent.',
+      'Infinitif personnel : conjugué avec un sujet, spécificité rare dans les langues romanes ("para eu fazer" = pour que je fasse).',
+      'Subjonctif futur encore utilisé au quotidien en portugais européen.',
+      'Nasales complexes : ão, ã, em — sons n\'existant pas en français standard.'
+    ]}
+  ]
+};
+
+// --- NÉERLANDAIS ---
+GRAM_TIPS['nl'] = {
+  nom: 'Néerlandais',
+  sections: [
+    { titre: 'Ordre des mots', items: [
+      'Comme l\'allemand : verbe en 2e position en principale, en dernière en subordonnée.',
+      '«Ik ga morgen naar Amsterdam» (Je vais demain à Amsterdam) — verbe en 2e position.'
+    ]},
+    { titre: 'Articles', items: [
+      '2 genres : commun (de, pour anciens masc./fém.) et neutre (het). ~75% des noms sont de-woorden.',
+      'Article indéfini : een (un/une), invariable.'
+    ]},
+    { titre: 'Particularités clés', items: [
+      'Proche de l\'anglais et de l\'allemand : beaucoup de vocabulaire familier pour les anglophones.',
+      'Diminutifs en -je très courants et affectifs : "huisje" (petite maison/maisonnette).',
+      'Verbes à particules séparables comme l\'allemand : "ophellen" → "Ik bel je op" (je te rappelle).',
+      'Prononciation du "g" gutturale, caractéristique du néerlandais.'
+    ]}
+  ]
+};
+
+// --- POLONAIS ---
+GRAM_TIPS['pl'] = {
+  nom: 'Polonais',
+  sections: [
+    { titre: 'Écriture', items: [
+      'Alphabet latin enrichi de signes diacritiques : ą, ć, ę, ł, ń, ó, ś, ź, ż.',
+      '«Ł» se prononce comme un "w" anglais, «cz» = tch, «sz» = ch français.'
+    ]},
+    { titre: 'Ordre des mots', items: [
+      'Très flexible grâce aux 7 cas grammaticaux — l\'ordre exprime l\'emphase plutôt que la structure.',
+      'SOV, SVO, VSO… tous possibles selon le contexte.'
+    ]},
+    { titre: 'Particularités clés', items: [
+      '7 cas grammaticaux : nominatif, génitif, datif, accusatif, instrumental, locatif, vocatif.',
+      '3 genres (masculin animé, masculin inanimé, féminin, neutre) — avec distinctions spéciales au pluriel.',
+      'Pas d\'articles (ni définis ni indéfinis) — contexte essentiel.',
+      'Aspect verbal perfectif/imperfectif comme en russe, omniprésent.'
+    ]}
+  ]
+};
+
+// --- TURC ---
+GRAM_TIPS['tr'] = {
+  nom: 'Turc',
+  sections: [
+    { titre: 'Ordre des mots', items: [
+      'SOV strict : Sujet–Objet–Verbe. Le verbe est toujours en dernière position.',
+      '«Ben kahve içiyorum» = Moi café bois → "Je bois du café".'
+    ]},
+    { titre: 'Articles', items: [
+      "Pas d'articles définis. L'accusatif défini -(y)ı/i/u/ü joue ce rôle pour les objets directs.",
+      '"bir" (un) est l\'équivalent de l\'article indéfini.'
+    ]},
+    { titre: 'Particularités clés', items: [
+      'Langue agglutinante : les suffixes s\'accumulent sur un radical pour exprimer temps, personne, négation, etc.',
+      '«Gidebilmeyecektim» = "je n\'allais pas pouvoir y aller" — un seul mot !',
+      'Harmonie vocalique : les suffixes adaptent leurs voyelles à la voyelle du radical (8 voyelles, 2 séries).',
+      'Pas de genre grammatical — aucun accord féminin/masculin.',
+      'Réforme alphabétique 1928 : passage de l\'arabe au latin sous Atatürk — alphabet de 29 lettres phonétiques.'
+    ]}
+  ]
+};
+
+// --- ESPAGNOL ---
+GRAM_TIPS['es'] = {
+  nom: 'Espagnol',
+  sections: [
+    { titre: 'Ordre des mots', items: [
+      'SVO de base, mais flexible. Le sujet peut être omis ("Como" = je mange).',
+      'Les questions s\'inversent : "¿Hablas español?" (parles-tu espagnol ?).'
+    ]},
+    { titre: 'Articles', items: [
+      'Définis : el (m. sg.), la (f. sg.), los (m. pl.), las (f. pl.).',
+      '"el" remplace "la" devant voyelle accentuée : "el agua" (l\'eau, féminin !).'
+    ]},
+    { titre: 'Particularités clés', items: [
+      'Genre grammatical (masc./fém.) pour tous les noms — les adjectifs s\'accordent.',
+      '2 verbes "être" : ser (permanent/identité) vs estar (temporaire/état/lieu).',
+      'Subjonctif très vivant — indispensable pour exprimer doute, désir, hypothèse.',
+      'Pronoms d\'objet clitiques : "Me lo da" (Il me le donne) — ordre et position stricts.',
+      '¡ et ¿ en début de phrase — marque distinctive de la typographie espagnole.'
+    ]}
+  ]
+};
+
+// =============================================
+// LOGIQUE MODAL GRAMMAIRE
+// =============================================
+function afficherFicheGrammaire(lang) {
+  const overlay = document.getElementById('gram-overlay');
+  const title   = document.getElementById('gram-title');
+  const body    = document.getElementById('gram-body');
+  if (!overlay || !title || !body) return;
+
+  const fiche = GRAM_TIPS[lang];
+  if (!fiche) {
+    title.textContent = '📖 Grammaire';
+    body.innerHTML = '<p class="gram-empty">Fiche non disponible pour cette langue.</p>';
+    overlay.style.display = 'flex';
+    return;
+  }
+
+  title.textContent = '📖 ' + fiche.nom + ' — Grammaire';
+  body.innerHTML = fiche.sections.map(s =>
+    '<div class="gram-section"><h3>' + s.titre + '</h3><ul>' +
+    s.items.map(i => '<li>' + i + '</li>').join('') +
+    '</ul></div>'
+  ).join('');
+  overlay.style.display = 'flex';
+}
