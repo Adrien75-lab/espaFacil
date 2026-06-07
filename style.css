@@ -475,11 +475,13 @@ body {
 .custom-play:disabled { opacity: 0.4; cursor: default; }
 
 /* ============================================
-   SÉLECTEUR VARIANTE RÉGIONALE
+   SÉLECTEUR DE LANGUE + VARIANTE RÉGIONALE
    ============================================ */
+.lang-select { font-size: 0.82rem; padding: 5px 10px; border: 2px solid var(--purple); border-radius: 10px; background: var(--card-bg); color: var(--text); cursor: pointer; appearance: none; -webkit-appearance: none; outline: none; max-width: 140px; font-weight: 600; }
+.lang-select:hover { background: var(--purple); color: #fff; }
 .variante-select { font-size: 0.78rem; padding: 5px 8px; border: 1px solid var(--border); border-radius: 10px; background: var(--card-bg); color: var(--text); cursor: pointer; appearance: none; -webkit-appearance: none; outline: none; max-width: 110px; }
 .variante-select:hover { border-color: var(--purple); }
-@media (max-width: 360px) { .variante-select { max-width: 80px; font-size: 0.7rem; } }
+@media (max-width: 360px) { .variante-select { max-width: 80px; font-size: 0.7rem; } .lang-select { max-width: 110px; font-size: 0.75rem; } }
 
 /* ============================================
    MNÉMOTECHNIQUES

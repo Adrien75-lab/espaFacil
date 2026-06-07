@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EspaFacil - Apprendre l'espagnol</title>
+  <title>LinguaFacil - Apprenez une langue</title>
   <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 </head>
@@ -15,7 +15,23 @@
       <div class="top-bar">
         <button class="btn-stats" id="btn-open-stats">Stats</button>
         <button class="btn-custom-list" id="btn-open-custom" title="Ma liste perso">📝</button>
-        <select class="variante-select" id="variante-select" title="Variante espagnol">
+        <select class="lang-select" id="lang-select" title="Langue à apprendre">
+          <option value="es">🇪🇸 Espagnol</option>
+          <option value="en">🇬🇧 Anglais</option>
+          <option value="it">🇮🇹 Italien</option>
+          <option value="de">🇩🇪 Allemand</option>
+          <option value="pt">🇵🇹 Portugais</option>
+          <option value="nl">🇳🇱 Néerlandais</option>
+          <option value="ru">🇷🇺 Russe</option>
+          <option value="ja">🇯🇵 Japonais</option>
+          <option value="ko">🇰🇷 Coréen</option>
+          <option value="zh">🇨🇳 Mandarin</option>
+          <option value="ar">🇸🇦 Arabe</option>
+          <option value="pl">🇵🇱 Polonais</option>
+          <option value="tr">🇹🇷 Turc</option>
+          <option value="hi">🇮🇳 Hindi</option>
+        </select>
+        <select class="variante-select" id="variante-select" title="Variante régionale">
           <option value="es-ES">🇪🇸 Castillan</option>
           <option value="es-MX">🇲🇽 Mexicain</option>
           <option value="es-AR">🇦🇷 Argentin</option>
@@ -23,9 +39,9 @@
         <button class="btn-theme-toggle" id="btn-theme" title="Thème sombre">🌙</button>
       </div>
       <div class="logo">
-        <span class="logo-icon">ES</span>
-        <h1>EspaFacil</h1>
-        <p class="tagline">Apprenez l'espagnol, carte par carte</p>
+        <span class="logo-icon" id="logo-icon">🇪🇸</span>
+        <h1>LinguaFacil</h1>
+        <p class="tagline" id="tagline">Apprenez Espagnol, carte par carte</p>
       </div>
       <div class="mode-toggle">
         <span class="mode-label">Mode</span>
@@ -132,7 +148,7 @@
       <div class="progress-bar-wrap"><div class="progress-bar" id="write-progress-bar"></div></div>
       <p class="card-counter" id="write-card-counter">Carte 1 / 10</p>
       <div class="write-card">
-        <p class="card-lang">ES Espagnol</p>
+        <p class="card-lang" id="write-card-lang">🇪🇸 Espagnol</p>
         <p class="write-word" id="write-word"></p>
         <div class="write-input-wrap">
           <input type="text" id="write-input" class="write-input" placeholder="Tapez la traduction en francais..." autocomplete="off" />
@@ -183,14 +199,14 @@
       <h2 class="custom-title">📝 Ma liste perso</h2>
 
       <div class="custom-add-form">
-        <input type="text" id="custom-input-es" class="custom-input" placeholder="Mot espagnol (ex: el gato)" autocomplete="off">
+        <input type="text" id="custom-input-es" class="custom-input" placeholder="Mot dans la langue cible" autocomplete="off">
         <input type="text" id="custom-input-fr" class="custom-input" placeholder="Traduction française (ex: le chat)" autocomplete="off">
         <button class="btn-custom-add" id="btn-custom-add">＋ Ajouter</button>
       </div>
 
       <details class="custom-import-section">
         <summary>⬇ Importer par collage</summary>
-        <textarea id="custom-import-area" class="custom-import-area" placeholder="Un mot par ligne, format : espagnol,français&#10;el gato,le chat&#10;la casa,la maison" rows="5"></textarea>
+        <textarea id="custom-import-area" class="custom-import-area" placeholder="Un mot par ligne, format : mot_cible,traduction_fr&#10;hello,bonjour&#10;cat,le chat" rows="5"></textarea>
         <button class="btn-custom-import" id="btn-custom-import">Importer</button>
       </details>
 

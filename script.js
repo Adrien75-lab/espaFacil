@@ -405,6 +405,598 @@ const DATA = {
   }
 };
 
+// =============================================
+// CLONE ESPAGNOL + CONFIG LANGUES
+// =============================================
+const DATA_ES_ORIGINAL = JSON.parse(JSON.stringify(DATA));
+
+const LANG_CONFIGS = {
+  'es': { nom: 'Espagnol',    flag: '🇪🇸', bcp47: 'es-ES',
+          variantes: [{code:'es-ES',nom:'🇪🇸 Castillan'},{code:'es-MX',nom:'🇲🇽 Mexicain'},{code:'es-AR',nom:'🇦🇷 Argentin'}] },
+  'en': { nom: 'Anglais',     flag: '🇬🇧', bcp47: 'en-US', variantes: [] },
+  'it': { nom: 'Italien',     flag: '🇮🇹', bcp47: 'it-IT', variantes: [] },
+  'de': { nom: 'Allemand',    flag: '🇩🇪', bcp47: 'de-DE', variantes: [] },
+  'pt': { nom: 'Portugais',   flag: '🇵🇹', bcp47: 'pt-PT', variantes: [] },
+  'nl': { nom: 'Néerlandais', flag: '🇳🇱', bcp47: 'nl-NL', variantes: [] },
+  'ru': { nom: 'Russe',       flag: '🇷🇺', bcp47: 'ru-RU', variantes: [] },
+  'ja': { nom: 'Japonais',    flag: '🇯🇵', bcp47: 'ja-JP', variantes: [] },
+  'ko': { nom: 'Coréen',      flag: '🇰🇷', bcp47: 'ko-KR', variantes: [] },
+  'zh': { nom: 'Mandarin',    flag: '🇨🇳', bcp47: 'zh-CN', variantes: [] },
+  'ar': { nom: 'Arabe',       flag: '🇸🇦', bcp47: 'ar-SA', variantes: [] },
+  'pl': { nom: 'Polonais',    flag: '🇵🇱', bcp47: 'pl-PL', variantes: [] },
+  'tr': { nom: 'Turc',        flag: '🇹🇷', bcp47: 'tr-TR', variantes: [] },
+  'hi': { nom: 'Hindi',       flag: '🇮🇳', bcp47: 'hi-IN', variantes: [] }
+};
+
+// =============================================
+// VOCABULAIRE MULTI-LANGUES
+// =============================================
+const LANG_THEMES = {
+  'es': DATA_ES_ORIGINAL,
+  'en': {
+    vocabulaire: { nom: 'Vocabulary', icone: '📚',
+      debutant: [
+        { es: 'hello', fr: 'bonjour', ex: 'Hello, how are you?' },
+        { es: 'goodbye', fr: 'au revoir', ex: 'Goodbye, see you soon!' },
+        { es: 'yes', fr: 'oui', ex: 'Yes, please.' },
+        { es: 'no', fr: 'non', ex: 'No, thank you.' },
+        { es: 'water', fr: "l'eau", ex: 'I drink water every day.' },
+        { es: 'bread', fr: 'le pain', ex: 'I eat bread for breakfast.' },
+        { es: 'house', fr: 'la maison', ex: 'My house is very big.' },
+        { es: 'cat', fr: 'le chat', ex: 'The cat sleeps on the sofa.' },
+        { es: 'book', fr: 'le livre', ex: 'I read a book every night.' },
+        { es: 'friend', fr: "l'ami", ex: 'My friend is very kind.' }
+      ],
+      intermediaire: [
+        { es: 'city', fr: 'la ville', ex: 'The city is very lively.' },
+        { es: 'school', fr: "l'école", ex: 'I go to school every morning.' },
+        { es: 'money', fr: "l'argent", ex: 'I need money to travel.' },
+        { es: 'car', fr: 'la voiture', ex: 'My car is red.' },
+        { es: 'beautiful', fr: 'beau', ex: 'The sunset is beautiful.' },
+        { es: 'happy', fr: 'heureux', ex: 'I am happy today.' },
+        { es: 'work', fr: 'le travail', ex: 'Work is important.' },
+        { es: 'time', fr: 'le temps', ex: 'Time flies quickly.' },
+        { es: 'eat', fr: 'manger', ex: 'I eat lunch at noon.' },
+        { es: 'sleep', fr: 'dormir', ex: 'I sleep eight hours a night.' }
+      ],
+      avance: [
+        { es: 'journey', fr: 'le voyage', ex: 'A long journey awaits us.' },
+        { es: 'freedom', fr: 'la liberté', ex: 'Freedom is a fundamental right.' },
+        { es: 'dream', fr: 'le rêve', ex: 'I have a dream for the future.' },
+        { es: 'challenge', fr: 'le défi', ex: 'This challenge is very difficult.' },
+        { es: 'success', fr: 'le succès', ex: 'Success requires hard work.' },
+        { es: 'experience', fr: "l'expérience", ex: 'Experience is the best teacher.' },
+        { es: 'discover', fr: 'découvrir', ex: 'I discover new places every day.' },
+        { es: 'understand', fr: 'comprendre', ex: 'I understand the problem now.' },
+        { es: 'love', fr: "l'amour", ex: 'Love is a wonderful feeling.' },
+        { es: 'music', fr: 'la musique', ex: 'Music brings people together.' }
+      ]
+    }
+  },
+  'it': {
+    vocabulaire: { nom: 'Vocabolario', icone: '📚',
+      debutant: [
+        { es: 'ciao', fr: 'salut/bonjour', ex: 'Ciao, come stai oggi?' },
+        { es: 'arrivederci', fr: 'au revoir', ex: 'Arrivederci, a presto!' },
+        { es: 'sì', fr: 'oui', ex: 'Sì, grazie mille.' },
+        { es: 'no', fr: 'non', ex: 'No, grazie.' },
+        { es: 'acqua', fr: "l'eau", ex: "Bevo acqua ogni giorno." },
+        { es: 'pane', fr: 'le pain', ex: 'Il pane è molto fresco.' },
+        { es: 'casa', fr: 'la maison', ex: 'La mia casa è grande.' },
+        { es: 'gatto', fr: 'le chat', ex: 'Il gatto dorme sul divano.' },
+        { es: 'libro', fr: 'le livre', ex: 'Leggo un libro ogni sera.' },
+        { es: 'amico', fr: "l'ami", ex: 'Il mio amico è gentile.' }
+      ],
+      intermediaire: [
+        { es: 'città', fr: 'la ville', ex: 'La città è molto vivace.' },
+        { es: 'scuola', fr: "l'école", ex: 'Vado a scuola ogni mattina.' },
+        { es: 'soldi', fr: "l'argent", ex: 'Ho bisogno di soldi.' },
+        { es: 'macchina', fr: 'la voiture', ex: 'La mia macchina è rossa.' },
+        { es: 'bello', fr: 'beau', ex: 'Il tramonto è bello.' },
+        { es: 'felice', fr: 'heureux', ex: 'Sono molto felice oggi.' },
+        { es: 'lavoro', fr: 'le travail', ex: 'Il lavoro è importante.' },
+        { es: 'tempo', fr: 'le temps', ex: 'Il tempo vola.' },
+        { es: 'mangiare', fr: 'manger', ex: 'Mi piace mangiare la pasta.' },
+        { es: 'dormire', fr: 'dormir', ex: 'Devo dormire otto ore.' }
+      ],
+      avance: [
+        { es: 'viaggio', fr: 'le voyage', ex: 'Un lungo viaggio ci aspetta.' },
+        { es: 'libertà', fr: 'la liberté', ex: 'La libertà è un diritto.' },
+        { es: 'sogno', fr: 'le rêve', ex: 'Ho un sogno per il futuro.' },
+        { es: 'sfida', fr: 'le défi', ex: 'Questa sfida è difficile.' },
+        { es: 'successo', fr: 'le succès', ex: 'Il successo richiede impegno.' },
+        { es: 'esperienza', fr: "l'expérience", ex: "L'esperienza insegna molto." },
+        { es: 'scoprire', fr: 'découvrir', ex: 'Mi piace scoprire nuovi posti.' },
+        { es: 'capire', fr: 'comprendre', ex: 'Ora capisco il problema.' },
+        { es: 'amore', fr: "l'amour", ex: "L'amore è meraviglioso." },
+        { es: 'musica', fr: 'la musique', ex: 'La musica unisce le persone.' }
+      ]
+    }
+  },
+  'de': {
+    vocabulaire: { nom: 'Wortschatz', icone: '📚',
+      debutant: [
+        { es: 'Hallo', fr: 'bonjour', ex: 'Hallo, wie geht es dir?' },
+        { es: 'Tschüss', fr: 'au revoir', ex: 'Tschüss, bis bald!' },
+        { es: 'ja', fr: 'oui', ex: 'Ja, bitte.' },
+        { es: 'nein', fr: 'non', ex: 'Nein, danke.' },
+        { es: 'Wasser', fr: "l'eau", ex: 'Ich trinke Wasser jeden Tag.' },
+        { es: 'Brot', fr: 'le pain', ex: 'Das Brot ist sehr frisch.' },
+        { es: 'Haus', fr: 'la maison', ex: 'Mein Haus ist sehr groß.' },
+        { es: 'Katze', fr: 'le chat', ex: 'Die Katze schläft auf dem Sofa.' },
+        { es: 'Buch', fr: 'le livre', ex: 'Ich lese jeden Abend ein Buch.' },
+        { es: 'Freund', fr: "l'ami", ex: 'Mein Freund ist sehr nett.' }
+      ],
+      intermediaire: [
+        { es: 'Stadt', fr: 'la ville', ex: 'Die Stadt ist sehr lebendig.' },
+        { es: 'Schule', fr: "l'école", ex: 'Ich gehe jeden Morgen zur Schule.' },
+        { es: 'Geld', fr: "l'argent", ex: 'Ich brauche Geld zum Reisen.' },
+        { es: 'Auto', fr: 'la voiture', ex: 'Mein Auto ist rot.' },
+        { es: 'schön', fr: 'beau', ex: 'Der Sonnenuntergang ist schön.' },
+        { es: 'glücklich', fr: 'heureux', ex: 'Ich bin heute glücklich.' },
+        { es: 'Arbeit', fr: 'le travail', ex: 'Die Arbeit ist wichtig.' },
+        { es: 'Zeit', fr: 'le temps', ex: 'Die Zeit vergeht schnell.' },
+        { es: 'essen', fr: 'manger', ex: 'Ich möchte jetzt essen.' },
+        { es: 'schlafen', fr: 'dormir', ex: 'Ich muss schlafen gehen.' }
+      ],
+      avance: [
+        { es: 'Reise', fr: 'le voyage', ex: 'Eine lange Reise wartet auf uns.' },
+        { es: 'Freiheit', fr: 'la liberté', ex: 'Freiheit ist ein Grundrecht.' },
+        { es: 'Traum', fr: 'le rêve', ex: 'Ich habe einen Traum für die Zukunft.' },
+        { es: 'Herausforderung', fr: 'le défi', ex: 'Diese Herausforderung ist schwierig.' },
+        { es: 'Erfolg', fr: 'le succès', ex: 'Erfolg erfordert harte Arbeit.' },
+        { es: 'Erfahrung', fr: "l'expérience", ex: 'Erfahrung ist der beste Lehrer.' },
+        { es: 'entdecken', fr: 'découvrir', ex: 'Ich entdecke gerne neue Orte.' },
+        { es: 'verstehen', fr: 'comprendre', ex: 'Ich verstehe das Problem jetzt.' },
+        { es: 'Liebe', fr: "l'amour", ex: 'Liebe ist ein wunderbares Gefühl.' },
+        { es: 'Musik', fr: 'la musique', ex: 'Musik verbindet die Menschen.' }
+      ]
+    }
+  },
+  'pt': {
+    vocabulaire: { nom: 'Vocabulário', icone: '📚',
+      debutant: [
+        { es: 'olá', fr: 'bonjour', ex: 'Olá, como vai você?' },
+        { es: 'adeus', fr: 'au revoir', ex: 'Adeus, até logo!' },
+        { es: 'sim', fr: 'oui', ex: 'Sim, por favor.' },
+        { es: 'não', fr: 'non', ex: 'Não, obrigado.' },
+        { es: 'água', fr: "l'eau", ex: 'Bebo água todos os dias.' },
+        { es: 'pão', fr: 'le pain', ex: 'O pão está muito fresco.' },
+        { es: 'casa', fr: 'la maison', ex: 'A minha casa é grande.' },
+        { es: 'gato', fr: 'le chat', ex: 'O gato dorme no sofá.' },
+        { es: 'livro', fr: 'le livre', ex: 'Leio um livro toda noite.' },
+        { es: 'amigo', fr: "l'ami", ex: 'O meu amigo é muito gentil.' }
+      ],
+      intermediaire: [
+        { es: 'cidade', fr: 'la ville', ex: 'A cidade é muito animada.' },
+        { es: 'escola', fr: "l'école", ex: 'Vou à escola toda manhã.' },
+        { es: 'dinheiro', fr: "l'argent", ex: 'Preciso de dinheiro para viajar.' },
+        { es: 'carro', fr: 'la voiture', ex: 'O meu carro é vermelho.' },
+        { es: 'bonito', fr: 'beau', ex: 'O pôr do sol é bonito.' },
+        { es: 'feliz', fr: 'heureux', ex: 'Estou muito feliz hoje.' },
+        { es: 'trabalho', fr: 'le travail', ex: 'O trabalho é importante.' },
+        { es: 'tempo', fr: 'le temps', ex: 'O tempo passa rápido.' },
+        { es: 'comer', fr: 'manger', ex: 'Quero comer agora.' },
+        { es: 'dormir', fr: 'dormir', ex: 'Preciso dormir oito horas.' }
+      ],
+      avance: [
+        { es: 'viagem', fr: 'le voyage', ex: 'Uma longa viagem nos aguarda.' },
+        { es: 'liberdade', fr: 'la liberté', ex: 'A liberdade é um direito.' },
+        { es: 'sonho', fr: 'le rêve', ex: 'Tenho um sonho para o futuro.' },
+        { es: 'desafio', fr: 'le défi', ex: 'Este desafio é muito difícil.' },
+        { es: 'sucesso', fr: 'le succès', ex: 'O sucesso exige esforço.' },
+        { es: 'experiência', fr: "l'expérience", ex: 'A experiência é a melhor professora.' },
+        { es: 'descobrir', fr: 'découvrir', ex: 'Gosto de descobrir novos lugares.' },
+        { es: 'entender', fr: 'comprendre', ex: 'Agora entendo o problema.' },
+        { es: 'amor', fr: "l'amour", ex: 'O amor é maravilhoso.' },
+        { es: 'música', fr: 'la musique', ex: 'A música une as pessoas.' }
+      ]
+    }
+  },
+  'nl': {
+    vocabulaire: { nom: 'Woordenschat', icone: '📚',
+      debutant: [
+        { es: 'hallo', fr: 'bonjour', ex: 'Hallo, hoe gaat het?' },
+        { es: 'tot ziens', fr: 'au revoir', ex: 'Tot ziens, tot snel!' },
+        { es: 'ja', fr: 'oui', ex: 'Ja, graag.' },
+        { es: 'nee', fr: 'non', ex: 'Nee, dank je wel.' },
+        { es: 'water', fr: "l'eau", ex: 'Ik drink elke dag water.' },
+        { es: 'brood', fr: 'le pain', ex: 'Het brood is heel vers.' },
+        { es: 'huis', fr: 'la maison', ex: 'Mijn huis is groot.' },
+        { es: 'kat', fr: 'le chat', ex: 'De kat slaapt op de bank.' },
+        { es: 'boek', fr: 'le livre', ex: 'Ik lees elke avond een boek.' },
+        { es: 'vriend', fr: "l'ami", ex: 'Mijn vriend is heel aardig.' }
+      ],
+      intermediaire: [
+        { es: 'stad', fr: 'la ville', ex: 'De stad is zeer levendig.' },
+        { es: 'school', fr: "l'école", ex: 'Ik ga elke ochtend naar school.' },
+        { es: 'geld', fr: "l'argent", ex: 'Ik heb geld nodig om te reizen.' },
+        { es: 'auto', fr: 'la voiture', ex: 'Mijn auto is rood.' },
+        { es: 'mooi', fr: 'beau', ex: 'De zonsondergang is mooi.' },
+        { es: 'gelukkig', fr: 'heureux', ex: 'Ik ben vandaag gelukkig.' },
+        { es: 'werk', fr: 'le travail', ex: 'Het werk is belangrijk.' },
+        { es: 'tijd', fr: 'le temps', ex: 'De tijd vliegt snel.' },
+        { es: 'eten', fr: 'manger', ex: 'Ik wil nu eten.' },
+        { es: 'slapen', fr: 'dormir', ex: 'Ik moet goed slapen.' }
+      ],
+      avance: [
+        { es: 'reis', fr: 'le voyage', ex: 'Een lange reis wacht op ons.' },
+        { es: 'vrijheid', fr: 'la liberté', ex: 'Vrijheid is een grondrecht.' },
+        { es: 'droom', fr: 'le rêve', ex: 'Ik heb een droom voor de toekomst.' },
+        { es: 'uitdaging', fr: 'le défi', ex: 'Deze uitdaging is moeilijk.' },
+        { es: 'succes', fr: 'le succès', ex: 'Succes vereist hard werken.' },
+        { es: 'ervaring', fr: "l'expérience", ex: 'Ervaring is de beste leraar.' },
+        { es: 'ontdekken', fr: 'découvrir', ex: 'Ik hou van nieuwe plaatsen ontdekken.' },
+        { es: 'begrijpen', fr: 'comprendre', ex: 'Ik begrijp het probleem nu.' },
+        { es: 'liefde', fr: "l'amour", ex: 'Liefde is een prachtig gevoel.' },
+        { es: 'muziek', fr: 'la musique', ex: 'Muziek verbindt de mensen.' }
+      ]
+    }
+  },
+  'ru': {
+    vocabulaire: { nom: 'Словарь', icone: '📚',
+      debutant: [
+        { es: 'привет', fr: 'bonjour/salut', ex: 'Привет, как дела?' },
+        { es: 'пока', fr: 'au revoir', ex: 'Пока, до скорого!' },
+        { es: 'да', fr: 'oui', ex: 'Да, пожалуйста.' },
+        { es: 'нет', fr: 'non', ex: 'Нет, спасибо.' },
+        { es: 'вода', fr: "l'eau", ex: 'Я пью воду каждый день.' },
+        { es: 'хлеб', fr: 'le pain', ex: 'Хлеб очень свежий.' },
+        { es: 'дом', fr: 'la maison', ex: 'Мой дом большой.' },
+        { es: 'кот', fr: 'le chat', ex: 'Кот спит на диване.' },
+        { es: 'книга', fr: 'le livre', ex: 'Я читаю книгу каждый вечер.' },
+        { es: 'друг', fr: "l'ami", ex: 'Мой друг очень добрый.' }
+      ],
+      intermediaire: [
+        { es: 'город', fr: 'la ville', ex: 'Город очень оживлённый.' },
+        { es: 'школа', fr: "l'école", ex: 'Я иду в школу каждое утро.' },
+        { es: 'деньги', fr: "l'argent", ex: 'Мне нужны деньги для путешествия.' },
+        { es: 'машина', fr: 'la voiture', ex: 'Моя машина красная.' },
+        { es: 'красивый', fr: 'beau', ex: 'Закат очень красивый.' },
+        { es: 'счастливый', fr: 'heureux', ex: 'Я сегодня счастливый.' },
+        { es: 'работа', fr: 'le travail', ex: 'Работа важна.' },
+        { es: 'время', fr: 'le temps', ex: 'Время летит быстро.' },
+        { es: 'есть', fr: 'manger', ex: 'Хочу есть прямо сейчас.' },
+        { es: 'спать', fr: 'dormir', ex: 'Мне нужно спать восемь часов.' }
+      ],
+      avance: [
+        { es: 'путешествие', fr: 'le voyage', ex: 'Долгое путешествие ждёт нас.' },
+        { es: 'свобода', fr: 'la liberté', ex: 'Свобода — основное право.' },
+        { es: 'мечта', fr: 'le rêve', ex: 'У меня есть мечта о будущем.' },
+        { es: 'вызов', fr: 'le défi', ex: 'Этот вызов очень сложный.' },
+        { es: 'успех', fr: 'le succès', ex: 'Успех требует упорного труда.' },
+        { es: 'опыт', fr: "l'expérience", ex: 'Опыт — лучший учитель.' },
+        { es: 'открывать', fr: 'découvrir', ex: 'Я люблю открывать новые места.' },
+        { es: 'понимать', fr: 'comprendre', ex: 'Теперь я понимаю проблему.' },
+        { es: 'любовь', fr: "l'amour", ex: 'Любовь — прекрасное чувство.' },
+        { es: 'музыка', fr: 'la musique', ex: 'Музыка объединяет людей.' }
+      ]
+    }
+  },
+  'ja': {
+    vocabulaire: { nom: '語彙', icone: '📚',
+      debutant: [
+        { es: 'こんにちは', fr: 'bonjour', ex: 'こんにちは、お元気ですか？' },
+        { es: 'さようなら', fr: 'au revoir', ex: 'さようなら、またね！' },
+        { es: 'はい', fr: 'oui', ex: 'はい、お願いします。' },
+        { es: 'いいえ', fr: 'non', ex: 'いいえ、けっこうです。' },
+        { es: 'みず', fr: "l'eau", ex: 'まいにちみずをのみます。' },
+        { es: 'パン', fr: 'le pain', ex: 'パンをたべます。' },
+        { es: 'いえ', fr: 'la maison', ex: 'わたしのいえはおおきい。' },
+        { es: 'ねこ', fr: 'le chat', ex: 'ねこがソファでねています。' },
+        { es: 'ほん', fr: 'le livre', ex: 'まいばんほんをよみます。' },
+        { es: 'ともだち', fr: "l'ami", ex: 'わたしのともだちはやさしい。' }
+      ],
+      intermediaire: [
+        { es: 'まち', fr: 'la ville', ex: 'まちはにぎやかです。' },
+        { es: 'がっこう', fr: "l'école", ex: 'まいあさがっこうへいきます。' },
+        { es: 'おかね', fr: "l'argent", ex: 'りょこうにおかねがひつようです。' },
+        { es: 'くるま', fr: 'la voiture', ex: 'わたしのくるまはあかい。' },
+        { es: 'きれい', fr: 'beau/joli', ex: 'ゆうやけはきれいです。' },
+        { es: 'しあわせ', fr: 'heureux', ex: 'きょうはしあわせです。' },
+        { es: 'しごと', fr: 'le travail', ex: 'しごとはたいせつです。' },
+        { es: 'じかん', fr: 'le temps', ex: 'じかんははやくたちます。' },
+        { es: 'たべる', fr: 'manger', ex: 'いましたべたいです。' },
+        { es: 'ねる', fr: 'dormir', ex: 'はちじかんねるひつようがあります。' }
+      ],
+      avance: [
+        { es: 'たび', fr: 'le voyage', ex: 'ながいたびがまっています。' },
+        { es: 'じゆう', fr: 'la liberté', ex: 'じゆうはきほんてきなけんりです。' },
+        { es: 'ゆめ', fr: 'le rêve', ex: 'しょうらいのゆめがあります。' },
+        { es: 'ちょうせん', fr: 'le défi', ex: 'このちょうせんはむずかしい。' },
+        { es: 'せいこう', fr: 'le succès', ex: 'せいこうにはどりょくがひつよう。' },
+        { es: 'けいけん', fr: "l'expérience", ex: 'けいけんはいちばんのせんせいです。' },
+        { es: 'はっけん', fr: 'découvrir', ex: 'あたらしいばしょをはっけんします。' },
+        { es: 'りかい', fr: 'comprendre', ex: 'もんだいをりかいしました。' },
+        { es: 'あい', fr: "l'amour", ex: 'あいはすばらしいきもちです。' },
+        { es: 'おんがく', fr: 'la musique', ex: 'おんがくはひとをつなぎます。' }
+      ]
+    }
+  },
+  'ko': {
+    vocabulaire: { nom: '어휘', icone: '📚',
+      debutant: [
+        { es: '안녕하세요', fr: 'bonjour', ex: '안녕하세요, 어떻게 지내세요?' },
+        { es: '안녕히 가세요', fr: 'au revoir', ex: '안녕히 가세요, 또 봐요!' },
+        { es: '네', fr: 'oui', ex: '네, 감사합니다.' },
+        { es: '아니요', fr: 'non', ex: '아니요, 괜찮아요.' },
+        { es: '물', fr: "l'eau", ex: '매일 물을 마십니다.' },
+        { es: '빵', fr: 'le pain', ex: '아침에 빵을 먹습니다.' },
+        { es: '집', fr: 'la maison', ex: '우리 집이 정말 큽니다.' },
+        { es: '고양이', fr: 'le chat', ex: '고양이가 소파에서 잡니다.' },
+        { es: '책', fr: 'le livre', ex: '매일 저녁 책을 읽습니다.' },
+        { es: '친구', fr: "l'ami", ex: '제 친구는 정말 친절합니다.' }
+      ],
+      intermediaire: [
+        { es: '도시', fr: 'la ville', ex: '도시는 매우 활기찹니다.' },
+        { es: '학교', fr: "l'école", ex: '매일 아침 학교에 갑니다.' },
+        { es: '돈', fr: "l'argent", ex: '여행하려면 돈이 필요합니다.' },
+        { es: '자동차', fr: 'la voiture', ex: '제 자동차는 빨간색입니다.' },
+        { es: '아름다워요', fr: 'beau', ex: '노을이 정말 아름다워요.' },
+        { es: '행복해요', fr: 'heureux', ex: '오늘 저는 행복해요.' },
+        { es: '일', fr: 'le travail', ex: '일이 중요합니다.' },
+        { es: '시간', fr: 'le temps', ex: '시간이 빨리 갑니다.' },
+        { es: '먹다', fr: 'manger', ex: '지금 먹다 싶어요.' },
+        { es: '자다', fr: 'dormir', ex: '여덟 시간 자다 해요.' }
+      ],
+      avance: [
+        { es: '여행', fr: 'le voyage', ex: '긴 여행이 우리를 기다립니다.' },
+        { es: '자유', fr: 'la liberté', ex: '자유는 기본 권리입니다.' },
+        { es: '꿈', fr: 'le rêve', ex: '미래에 대한 꿈이 있습니다.' },
+        { es: '도전', fr: 'le défi', ex: '이 도전은 정말 어렵습니다.' },
+        { es: '성공', fr: 'le succès', ex: '성공에는 노력이 필요합니다.' },
+        { es: '경험', fr: "l'expérience", ex: '경험은 최고의 선생님입니다.' },
+        { es: '발견하다', fr: 'découvrir', ex: '새로운 장소를 발견하다 합니다.' },
+        { es: '이해하다', fr: 'comprendre', ex: '이제 문제를 이해하다 했어요.' },
+        { es: '사랑', fr: "l'amour", ex: '사랑은 아름다운 감정입니다.' },
+        { es: '음악', fr: 'la musique', ex: '음악은 사람들을 하나로 만듭니다.' }
+      ]
+    }
+  },
+  'zh': {
+    vocabulaire: { nom: '词汇', icone: '📚',
+      debutant: [
+        { es: '你好', fr: 'bonjour', ex: '你好，你怎么样？' },
+        { es: '再见', fr: 'au revoir', ex: '再见，一会儿见！' },
+        { es: '是', fr: 'oui', ex: '是，请。' },
+        { es: '不', fr: 'non', ex: '不，谢谢。' },
+        { es: '水', fr: "l'eau", ex: '我每天喝水。' },
+        { es: '面包', fr: 'le pain', ex: '我早饭吃面包。' },
+        { es: '家', fr: 'la maison', ex: '我的家很大。' },
+        { es: '猫', fr: 'le chat', ex: '猫在沙发上睡觉。' },
+        { es: '书', fr: 'le livre', ex: '我每天晚上看书。' },
+        { es: '朋友', fr: "l'ami", ex: '我的朋友非常好。' }
+      ],
+      intermediaire: [
+        { es: '城市', fr: 'la ville', ex: '城市非常热闹。' },
+        { es: '学校', fr: "l'école", ex: '我每天早上去学校。' },
+        { es: '钱', fr: "l'argent", ex: '我需要钱来旅行。' },
+        { es: '汽车', fr: 'la voiture', ex: '我的汽车是红色的。' },
+        { es: '漂亮', fr: 'beau/joli', ex: '日落很漂亮。' },
+        { es: '快乐', fr: 'heureux', ex: '今天我很快乐。' },
+        { es: '工作', fr: 'le travail', ex: '工作很重要。' },
+        { es: '时间', fr: 'le temps', ex: '时间过得很快。' },
+        { es: '吃', fr: 'manger', ex: '我想现在吃。' },
+        { es: '睡觉', fr: 'dormir', ex: '我需要睡觉八个小时。' }
+      ],
+      avance: [
+        { es: '旅行', fr: 'le voyage', ex: '一段长途旅行等着我们。' },
+        { es: '自由', fr: 'la liberté', ex: '自由是基本权利。' },
+        { es: '梦想', fr: 'le rêve', ex: '我有一个关于未来的梦想。' },
+        { es: '挑战', fr: 'le défi', ex: '这个挑战很难。' },
+        { es: '成功', fr: 'le succès', ex: '成功需要努力工作。' },
+        { es: '经验', fr: "l'expérience", ex: '经验是最好的老师。' },
+        { es: '发现', fr: 'découvrir', ex: '我喜欢发现新的地方。' },
+        { es: '理解', fr: 'comprendre', ex: '我现在理解这个问题。' },
+        { es: '爱', fr: "l'amour", ex: '爱是美好的感情。' },
+        { es: '音乐', fr: 'la musique', ex: '音乐把人们聚在一起。' }
+      ]
+    }
+  },
+  'ar': {
+    vocabulaire: { nom: 'مفردات', icone: '📚',
+      debutant: [
+        { es: 'مرحبا', fr: 'bonjour', ex: 'مرحبا، كيف حالك؟' },
+        { es: 'مع السلامة', fr: 'au revoir', ex: 'مع السلامة، إلى اللقاء!' },
+        { es: 'نعم', fr: 'oui', ex: 'نعم، من فضلك.' },
+        { es: 'لا', fr: 'non', ex: 'لا، شكرا.' },
+        { es: 'ماء', fr: "l'eau", ex: 'أشرب الماء كل يوم.' },
+        { es: 'خبز', fr: 'le pain', ex: 'الخبز طازج جدا.' },
+        { es: 'بيت', fr: 'la maison', ex: 'بيتي كبير.' },
+        { es: 'قطة', fr: 'le chat', ex: 'القطة تنام على الأريكة.' },
+        { es: 'كتاب', fr: 'le livre', ex: 'أقرأ كتابا كل مساء.' },
+        { es: 'صديق', fr: "l'ami", ex: 'صديقي لطيف جدا.' }
+      ],
+      intermediaire: [
+        { es: 'مدينة', fr: 'la ville', ex: 'المدينة حيوية جدا.' },
+        { es: 'مدرسة', fr: "l'école", ex: 'أذهب إلى المدرسة كل صباح.' },
+        { es: 'مال', fr: "l'argent", ex: 'أحتاج مالا للسفر.' },
+        { es: 'سيارة', fr: 'la voiture', ex: 'سيارتي حمراء.' },
+        { es: 'جميل', fr: 'beau', ex: 'الغروب جميل.' },
+        { es: 'سعيد', fr: 'heureux', ex: 'أنا سعيد اليوم.' },
+        { es: 'عمل', fr: 'le travail', ex: 'العمل مهم.' },
+        { es: 'وقت', fr: 'le temps', ex: 'الوقت يمر بسرعة.' },
+        { es: 'يأكل', fr: 'manger', ex: 'أريد أن يأكل الآن.' },
+        { es: 'ينام', fr: 'dormir', ex: 'أحتاج أن ينام ثماني ساعات.' }
+      ],
+      avance: [
+        { es: 'رحلة', fr: 'le voyage', ex: 'رحلة طويلة تنتظرنا.' },
+        { es: 'حرية', fr: 'la liberté', ex: 'الحرية حق أساسي.' },
+        { es: 'حلم', fr: 'le rêve', ex: 'لدي حلم للمستقبل.' },
+        { es: 'تحدٍّ', fr: 'le défi', ex: 'هذا التحدي صعب جدا.' },
+        { es: 'نجاح', fr: 'le succès', ex: 'النجاح يتطلب عملا شاقا.' },
+        { es: 'خبرة', fr: "l'expérience", ex: 'الخبرة خير معلم.' },
+        { es: 'اكتشاف', fr: 'découvrir', ex: 'أحب اكتشاف أماكن جديدة.' },
+        { es: 'فهم', fr: 'comprendre', ex: 'أفهم المشكلة الآن.' },
+        { es: 'حب', fr: "l'amour", ex: 'الحب شعور رائع.' },
+        { es: 'موسيقى', fr: 'la musique', ex: 'الموسيقى تجمع الناس.' }
+      ]
+    }
+  },
+  'pl': {
+    vocabulaire: { nom: 'Słownictwo', icone: '📚',
+      debutant: [
+        { es: 'cześć', fr: 'bonjour/salut', ex: 'Cześć, jak się masz?' },
+        { es: 'do widzenia', fr: 'au revoir', ex: 'Do widzenia, do zobaczenia!' },
+        { es: 'tak', fr: 'oui', ex: 'Tak, proszę.' },
+        { es: 'nie', fr: 'non', ex: 'Nie, dziękuję.' },
+        { es: 'woda', fr: "l'eau", ex: 'Piję wodę każdego dnia.' },
+        { es: 'chleb', fr: 'le pain', ex: 'Chleb jest bardzo świeży.' },
+        { es: 'dom', fr: 'la maison', ex: 'Mój dom jest duży.' },
+        { es: 'kot', fr: 'le chat', ex: 'Kot śpi na kanapie.' },
+        { es: 'książka', fr: 'le livre', ex: 'Czytam książkę każdy wieczór.' },
+        { es: 'przyjaciel', fr: "l'ami", ex: 'Mój przyjaciel jest bardzo miły.' }
+      ],
+      intermediaire: [
+        { es: 'miasto', fr: 'la ville', ex: 'Miasto jest bardzo tętniące życiem.' },
+        { es: 'szkoła', fr: "l'école", ex: 'Chodzę do szkoły każdego ranka.' },
+        { es: 'pieniądze', fr: "l'argent", ex: 'Potrzebuję pieniądze na podróż.' },
+        { es: 'samochód', fr: 'la voiture', ex: 'Mój samochód jest czerwony.' },
+        { es: 'piękny', fr: 'beau', ex: 'Zachód słońca jest piękny.' },
+        { es: 'szczęśliwy', fr: 'heureux', ex: 'Jestem dzisiaj szczęśliwy.' },
+        { es: 'praca', fr: 'le travail', ex: 'Praca jest ważna.' },
+        { es: 'czas', fr: 'le temps', ex: 'Czas leci szybko.' },
+        { es: 'jeść', fr: 'manger', ex: 'Chcę teraz jeść.' },
+        { es: 'spać', fr: 'dormir', ex: 'Muszę teraz spać.' }
+      ],
+      avance: [
+        { es: 'podróż', fr: 'le voyage', ex: 'Długa podróż na nas czeka.' },
+        { es: 'wolność', fr: 'la liberté', ex: 'Wolność jest prawem podstawowym.' },
+        { es: 'marzenie', fr: 'le rêve', ex: 'Mam marzenie o przyszłości.' },
+        { es: 'wyzwanie', fr: 'le défi', ex: 'To wyzwanie jest trudne.' },
+        { es: 'sukces', fr: 'le succès', ex: 'Sukces wymaga ciężkiej pracy.' },
+        { es: 'doświadczenie', fr: "l'expérience", ex: 'Doświadczenie jest najlepszym nauczycielem.' },
+        { es: 'odkryć', fr: 'découvrir', ex: 'Lubię odkryć nowe miejsca.' },
+        { es: 'rozumieć', fr: 'comprendre', ex: 'Teraz rozumieć problem.' },
+        { es: 'miłość', fr: "l'amour", ex: 'Miłość jest pięknym uczuciem.' },
+        { es: 'muzyka', fr: 'la musique', ex: 'Muzyka łączy ludzi.' }
+      ]
+    }
+  },
+  'tr': {
+    vocabulaire: { nom: 'Kelime Hazinesi', icone: '📚',
+      debutant: [
+        { es: 'merhaba', fr: 'bonjour', ex: 'Merhaba, nasılsın?' },
+        { es: 'hoşça kal', fr: 'au revoir', ex: 'Hoşça kal, görüşürüz!' },
+        { es: 'evet', fr: 'oui', ex: 'Evet, lütfen.' },
+        { es: 'hayır', fr: 'non', ex: 'Hayır, teşekkürler.' },
+        { es: 'su', fr: "l'eau", ex: 'Her gün su içiyorum.' },
+        { es: 'ekmek', fr: 'le pain', ex: 'Ekmek çok taze.' },
+        { es: 'ev', fr: 'la maison', ex: 'Evim çok büyük.' },
+        { es: 'kedi', fr: 'le chat', ex: 'Kedi kanepede uyuyor.' },
+        { es: 'kitap', fr: 'le livre', ex: 'Her akşam kitap okuyorum.' },
+        { es: 'arkadaş', fr: "l'ami", ex: 'Arkadaşım çok nazik.' }
+      ],
+      intermediaire: [
+        { es: 'şehir', fr: 'la ville', ex: 'Şehir çok canlı.' },
+        { es: 'okul', fr: "l'école", ex: 'Her sabah okula gidiyorum.' },
+        { es: 'para', fr: "l'argent", ex: 'Seyahat için para lazım.' },
+        { es: 'araba', fr: 'la voiture', ex: 'Arabam kırmızı.' },
+        { es: 'güzel', fr: 'beau', ex: 'Gün batımı çok güzel.' },
+        { es: 'mutlu', fr: 'heureux', ex: 'Bugün çok mutluyum.' },
+        { es: 'iş', fr: 'le travail', ex: 'İş çok önemli.' },
+        { es: 'zaman', fr: 'le temps', ex: 'Zaman çabuk geçiyor.' },
+        { es: 'yemek', fr: 'manger', ex: 'Şimdi yemek istiyorum.' },
+        { es: 'uyumak', fr: 'dormir', ex: 'Sekiz saat uyumak gerekiyor.' }
+      ],
+      avance: [
+        { es: 'yolculuk', fr: 'le voyage', ex: 'Uzun bir yolculuk bizi bekliyor.' },
+        { es: 'özgürlük', fr: 'la liberté', ex: 'Özgürlük temel bir haktır.' },
+        { es: 'rüya', fr: 'le rêve', ex: 'Geleceğe dair bir rüyam var.' },
+        { es: 'zorluk', fr: 'le défi', ex: 'Bu zorluk çok zor.' },
+        { es: 'başarı', fr: 'le succès', ex: 'Başarı çok çalışmayı gerektirir.' },
+        { es: 'deneyim', fr: "l'expérience", ex: 'Deneyim en iyi öğretmendir.' },
+        { es: 'keşfetmek', fr: 'découvrir', ex: 'Yeni yerler keşfetmeyi severim.' },
+        { es: 'anlamak', fr: 'comprendre', ex: 'Artık problemi anlamak istiyorum.' },
+        { es: 'aşk', fr: "l'amour", ex: 'Aşk güzel bir duygudur.' },
+        { es: 'müzik', fr: 'la musique', ex: 'Müzik insanları bir araya getirir.' }
+      ]
+    }
+  },
+  'hi': {
+    vocabulaire: { nom: 'शब्द भंडार', icone: '📚',
+      debutant: [
+        { es: 'नमस्ते', fr: 'bonjour', ex: 'नमस्ते, आप कैसे हैं?' },
+        { es: 'अलविदा', fr: 'au revoir', ex: 'अलविदा, जल्दी मिलते हैं!' },
+        { es: 'हाँ', fr: 'oui', ex: 'हाँ, कृपया।' },
+        { es: 'नहीं', fr: 'non', ex: 'नहीं, धन्यवाद।' },
+        { es: 'पानी', fr: "l'eau", ex: 'मैं हर दिन पानी पीता हूँ।' },
+        { es: 'रोटी', fr: 'le pain', ex: 'रोटी बहुत ताज़ी है।' },
+        { es: 'घर', fr: 'la maison', ex: 'मेरा घर बड़ा है।' },
+        { es: 'बिल्ली', fr: 'le chat', ex: 'बिल्ली सोफे पर सोती है।' },
+        { es: 'किताब', fr: 'le livre', ex: 'मैं हर शाम किताब पढ़ता हूँ।' },
+        { es: 'दोस्त', fr: "l'ami", ex: 'मेरा दोस्त बहुत अच्छा है।' }
+      ],
+      intermediaire: [
+        { es: 'शहर', fr: 'la ville', ex: 'शहर बहुत जीवंत है।' },
+        { es: 'स्कूल', fr: "l'école", ex: 'मैं हर सुबह स्कूल जाता हूँ।' },
+        { es: 'पैसा', fr: "l'argent", ex: 'मुझे यात्रा के लिए पैसा चाहिए।' },
+        { es: 'गाड़ी', fr: 'la voiture', ex: 'मेरी गाड़ी लाल है।' },
+        { es: 'सुंदर', fr: 'beau', ex: 'सूर्यास्त बहुत सुंदर है।' },
+        { es: 'खुश', fr: 'heureux', ex: 'मैं आज बहुत खुश हूँ।' },
+        { es: 'काम', fr: 'le travail', ex: 'काम बहुत ज़रूरी है।' },
+        { es: 'समय', fr: 'le temps', ex: 'समय बहुत जल्दी बीतता है।' },
+        { es: 'खाना', fr: 'manger', ex: 'मैं अभी खाना चाहता हूँ।' },
+        { es: 'सोना', fr: 'dormir', ex: 'मुझे आठ घंटे सोना है।' }
+      ],
+      avance: [
+        { es: 'यात्रा', fr: 'le voyage', ex: 'एक लंबी यात्रा हमारा इंतजार कर रही है।' },
+        { es: 'आज़ादी', fr: 'la liberté', ex: 'आज़ादी एक मौलिक अधिकार है।' },
+        { es: 'सपना', fr: 'le rêve', ex: 'मेरे भविष्य के लिए एक सपना है।' },
+        { es: 'चुनौती', fr: 'le défi', ex: 'यह चुनौती बहुत कठिन है।' },
+        { es: 'सफलता', fr: 'le succès', ex: 'सफलता के लिए मेहनत ज़रूरी है।' },
+        { es: 'अनुभव', fr: "l'expérience", ex: 'अनुभव सबसे अच्छा शिक्षक है।' },
+        { es: 'खोज', fr: 'découvrir', ex: 'मुझे नई जगहें खोज करना पसंद है।' },
+        { es: 'समझना', fr: 'comprendre', ex: 'मैं अब समस्या समझना समझ गया।' },
+        { es: 'प्यार', fr: "l'amour", ex: 'प्यार एक सुंदर भावना है।' },
+        { es: 'संगीत', fr: 'la musique', ex: 'संगीत लोगों को एकजुट करता है।' }
+      ]
+    }
+  }
+};
+
+// Fonction principale de changement de langue
+function changerLangue(code) {
+  if (!LANG_CONFIGS[code]) return;
+  langCible = code;
+  localStorage.setItem('linguafacil_lang', code);
+
+  // Variante TTS : personnalisable pour ES, sinon bcp47 par défaut
+  if (code === 'es') {
+    varianteRegionale = localStorage.getItem('linguafacil_variante_es') || 'es-ES';
+  } else {
+    varianteRegionale = LANG_CONFIGS[code].bcp47;
+  }
+
+  // Remplacer les données actives (DATA est const mais mutable)
+  Object.keys(DATA).forEach(k => delete DATA[k]);
+  Object.assign(DATA, LANG_THEMES[code] || LANG_THEMES['es']);
+
+  // Mettre à jour les éléments visuels
+  const cfg = LANG_CONFIGS[code];
+  const logoIcon = document.getElementById('logo-icon');
+  if (logoIcon) logoIcon.textContent = cfg.flag;
+  const tagline = document.getElementById('tagline');
+  if (tagline) tagline.textContent = 'Apprenez ' + cfg.nom + ', carte par carte';
+  const writeCardLang = document.getElementById('write-card-lang');
+  if (writeCardLang) writeCardLang.textContent = cfg.flag + ' ' + cfg.nom;
+
+  // Afficher/masquer le sélecteur de variante régionale
+  const varSel = document.getElementById('variante-select');
+  if (varSel) {
+    varSel.style.display = (code === 'es') ? '' : 'none';
+    if (code === 'es') varSel.value = varianteRegionale;
+  }
+
+  // Synchroniser le sélecteur de langue
+  const langSel = document.getElementById('lang-select');
+  if (langSel) langSel.value = code;
+
+  // Réinitialiser l'accueil
+  initAccueil();
+}
+
+
 const NIVEAUX_CONFIG = {
   debutant:      { nom: "Debutant",      icone: "🌱", classe: "easy",   desc: "Vocabulaire de base" },
   intermediaire: { nom: "Intermediaire", icone: "🔥", classe: "medium", desc: "Vocabulaire courant" },
@@ -417,12 +1009,37 @@ const PREREQUIS = {
   avance: "intermediaire"
 };
 
-const STORAGE_KEY = "espafacil_progress";
+// Langue active + clé de stockage par langue
+let langCible = localStorage.getItem('linguafacil_lang') || 'es';
 
-const STORAGE_XP = 'espafacil_user';
-const STORAGE_VARIANTE = 'espafacil_variante';
+function storageKey(base) {
+  return 'linguafacil_' + base + '_' + langCible;
+}
 
-let varianteRegionale = localStorage.getItem(STORAGE_VARIANTE) || 'es-ES';
+// Migration automatique des anciennes clés espafacil → linguafacil_*_es
+(function migrateStorage() {
+  var map = {
+    'espafacil_progress': 'linguafacil_progress_es',
+    'espafacil_user':     'linguafacil_user_es',
+    'espafacil_mnemo':    'linguafacil_mnemo_es',
+    'espafacil_custom':   'linguafacil_custom_es'
+  };
+  Object.keys(map).forEach(function(o) {
+    var n = map[o];
+    if (!localStorage.getItem(n) && localStorage.getItem(o)) {
+      localStorage.setItem(n, localStorage.getItem(o));
+    }
+  });
+})();
+
+// Compat (non utilisé directement - garder pour éviter erreurs de ref)
+const STORAGE_KEY = 'linguafacil_progress_legacy';
+const STORAGE_XP  = 'linguafacil_user_legacy';
+const STORAGE_VARIANTE = 'linguafacil_variante_es';
+
+let varianteRegionale = (langCible === 'es')
+  ? (localStorage.getItem('linguafacil_variante_es') || 'es-ES')
+  : (LANG_CONFIGS[langCible] ? LANG_CONFIGS[langCible].bcp47 : langCible);
 
 // Niveaux de progression
 const LEVELS = [
@@ -494,7 +1111,7 @@ let writeState = {
 // =============================================
 function chargerProgression() {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = localStorage.getItem(storageKey('progress'));
     if (!raw) return {};
     const data = JSON.parse(raw);
     // Migration : ancien format sans cle "meilleur"
@@ -520,7 +1137,7 @@ function sauvegarderProgression(theme, niveau, bon, total) {
     totalVu: (ancien.totalVu || 0) + total,
     derniereSession: new Date().toISOString()
   };
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(prog));
+  localStorage.setItem(storageKey('progress'), JSON.stringify(prog));
 }
 
 // =============================================
@@ -528,7 +1145,7 @@ function sauvegarderProgression(theme, niveau, bon, total) {
 // =============================================
 function chargerUser() {
   try {
-    const raw = localStorage.getItem(STORAGE_XP);
+    const raw = localStorage.getItem(storageKey('user'));
     const def = { xp: 0, sessions: 0, badges: [], maxSerie: 0, sessionParfaites: 0, phrasesSessions: 0, activityDays: [] };
     if (!raw) return def;
     const u = JSON.parse(raw);
@@ -538,7 +1155,7 @@ function chargerUser() {
     return { xp: 0, sessions: 0, badges: [], maxSerie: 0, sessionParfaites: 0, phrasesSessions: 0 };
   }
 }
-function sauvegarderUser(u) { localStorage.setItem(STORAGE_XP, JSON.stringify(u)); }
+function sauvegarderUser(u) { localStorage.setItem(storageKey('user'), JSON.stringify(u)); }
 
 function obtenirNiveau(xp) {
   let lv = LEVELS[0];
@@ -1162,15 +1779,13 @@ function encouragerUtilisateur(serie) {
 // =============================================
 // MNÉMOTECHNIQUES
 // =============================================
-const STORAGE_MNEMO = 'espafacil_mnemo';
-
 function chargerMnemos() {
-  try { return JSON.parse(localStorage.getItem(STORAGE_MNEMO) || '{}'); } catch(e) { return {}; }
+  try { return JSON.parse(localStorage.getItem(storageKey('mnemo')) || '{}'); } catch(e) { return {}; }
 }
 function sauvegarderMnemo(esWord, texte) {
   const m = chargerMnemos();
   if (texte) m[esWord] = texte; else delete m[esWord];
-  localStorage.setItem(STORAGE_MNEMO, JSON.stringify(m));
+  localStorage.setItem(storageKey('mnemo'), JSON.stringify(m));
 }
 
 function afficherMnemo(esWord) {
@@ -1213,12 +1828,10 @@ function afficherMnemo(esWord) {
 // =============================================
 // LISTE DE MOTS PERSO
 // =============================================
-const STORAGE_CUSTOM = 'espafacil_custom';
-
 function chargerListePerso() {
-  try { return JSON.parse(localStorage.getItem(STORAGE_CUSTOM) || '[]'); } catch(e) { return []; }
+  try { return JSON.parse(localStorage.getItem(storageKey('custom')) || '[]'); } catch(e) { return []; }
 }
-function sauvegarderListePerso(liste) { localStorage.setItem(STORAGE_CUSTOM, JSON.stringify(liste)); }
+function sauvegarderListePerso(liste) { localStorage.setItem(storageKey('custom'), JSON.stringify(liste)); }
 
 function afficherListePerso() {
   const liste = chargerListePerso();
@@ -1316,13 +1929,22 @@ function genererPhrases(themeCle, niveauCle) {
   cartes.forEach(carte => {
     const mot = carte.es.replace(/^(el|la|los|las|un|una)\s+/i, '').trim();
     const ex = carte.ex;
-    const re = new RegExp('\\b' + mot + '\\b', 'i');
-    const repl = new RegExp('\\b' + mot + '\\b', 'gi');
-    const repl2 = new RegExp('\\b' + mot + 's\\b', 'gi');
-    if (re.test(ex)) {
-      result.push({ sentence: ex.replace(repl, '___'), answer: mot, fr: carte.fr, es: carte.es });
-    } else if (new RegExp('\\b' + mot + 's\\b', 'i').test(ex)) {
-      result.push({ sentence: ex.replace(repl2, '___'), answer: mot, fr: carte.fr, es: carte.es });
+    // Essai avec délimiteur de mot (scripts latins + cyrillique)
+    try {
+      const re   = new RegExp('\\b' + mot.replace(/[.*+?^${}()|[\]\\]/g,'\\$&') + '\\b', 'i');
+      const repl = new RegExp('\\b' + mot.replace(/[.*+?^${}()|[\]\\]/g,'\\$&') + '\\b', 'gi');
+      const repl2= new RegExp('\\b' + mot.replace(/[.*+?^${}()|[\]\\]/g,'\\$&') + 's\\b', 'gi');
+      if (re.test(ex)) {
+        result.push({ sentence: ex.replace(repl, '___'), answer: mot, fr: carte.fr, es: carte.es });
+        return;
+      } else if (new RegExp('\\b' + mot.replace(/[.*+?^${}()|[\]\\]/g,'\\$&') + 's\\b','i').test(ex)) {
+        result.push({ sentence: ex.replace(repl2, '___'), answer: mot, fr: carte.fr, es: carte.es });
+        return;
+      }
+    } catch(e) {}
+    // Fallback : remplacement simple de sous-chaîne (CJK, arabe, hindi...)
+    if (ex.includes(mot)) {
+      result.push({ sentence: ex.replace(mot, '___'), answer: mot, fr: carte.fr, es: carte.es });
     }
   });
   return melanger(result);
@@ -1500,7 +2122,7 @@ function toggleTheme() {
   const isDark = html.getAttribute('data-theme') === 'dark';
   html.setAttribute('data-theme', isDark ? 'light' : 'dark');
   document.getElementById('btn-theme').textContent = isDark ? '🌙' : '☀️';
-  localStorage.setItem('espafacil_theme', isDark ? 'light' : 'dark');
+  localStorage.setItem('linguafacil_theme', isDark ? 'light' : 'dark');
 }
 
 // =============================================
@@ -1567,18 +2189,33 @@ function afficherStats() {
 // INIT
 // =============================================
 document.addEventListener('DOMContentLoaded', () => {
-  // Restaurer variante régionale
+  // Initialiser la langue active
+  const langSelectEl = document.getElementById('lang-select');
+  if (langSelectEl) {
+    langSelectEl.value = langCible;
+    langSelectEl.addEventListener('change', () => {
+      changerLangue(langSelectEl.value);
+    });
+  }
+
+  // Variante régionale (espagnol seulement)
   const selectVariante = document.getElementById('variante-select');
-  selectVariante.value = varianteRegionale;
-  selectVariante.addEventListener('change', () => {
-    varianteRegionale = selectVariante.value;
-    localStorage.setItem(STORAGE_VARIANTE, varianteRegionale);
-    const noms = { 'es-ES': 'Castillan 🇪🇸', 'es-MX': 'Mexicain 🇲🇽', 'es-AR': 'Argentin 🇦🇷' };
-    montrerToast('Variante : ' + (noms[varianteRegionale] || varianteRegionale));
-  });
+  if (selectVariante) {
+    selectVariante.value = varianteRegionale;
+    selectVariante.style.display = (langCible === 'es') ? '' : 'none';
+    selectVariante.addEventListener('change', () => {
+      varianteRegionale = selectVariante.value;
+      localStorage.setItem('linguafacil_variante_es', varianteRegionale);
+      const noms = { 'es-ES': 'Castillan 🇪🇸', 'es-MX': 'Mexicain 🇲🇽', 'es-AR': 'Argentin 🇦🇷' };
+      montrerToast('Variante : ' + (noms[varianteRegionale] || varianteRegionale));
+    });
+  }
+
+  // Appliquer la langue persistée (met à jour DATA + visuel)
+  changerLangue(langCible);
 
   // Restaurer theme
-  const savedTheme = localStorage.getItem('espafacil_theme') || 'light';
+  const savedTheme = localStorage.getItem('linguafacil_theme') || 'light';
   document.documentElement.setAttribute('data-theme', savedTheme);
   document.getElementById('btn-theme').textContent = savedTheme === 'dark' ? '☀️' : '🌙';
 
