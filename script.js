@@ -650,6 +650,15 @@ function afficherCarte() {
   btns.style.opacity = '1';
 }
 
+function prononcer(texte) {
+  if (!('speechSynthesis' in window)) return;
+  window.speechSynthesis.cancel();
+  const utter = new SpeechSynthesisUtterance(texte);
+  utter.lang = 'es-ES';
+  utter.rate = 0.9;
+  window.speechSynthesis.speak(utter);
+}
+
 function repondre(savait) {
   if (state.estRetournee) return;
   state.estRetournee = true;
