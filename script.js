@@ -3933,6 +3933,7 @@ document.addEventListener('DOMContentLoaded', () => {
     afficherEcran('screen-home');
     initAccueil();
   });
+  document.getElementById('btn-open-stats').addEventListener('click', afficherStats);
   document.getElementById('btn-open-custom').addEventListener('click', ouvrirListePerso);
 
   // Bouton indice (💡) — session QCM
