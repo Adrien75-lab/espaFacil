@@ -628,26 +628,60 @@ function demarrerSession(niveauCle, cartesRevision) {
   afficherCarte();
 }
 
+function getDistractors(correctFr, count) {
+  const pool = [];
+  Object.values(DATA).forEach(theme => {
+    ['debutant', 'intermediaire', 'avance'].forEach(niv => {
+      theme[niv].forEach(c => {
+        if (c.fr !== correctFr) pool.push(c.fr);
+      });
+    });
+  });
+  return melanger(pool).slice(0, count);
+}
+
 function afficherCarte() {
   const carte = state.cartes[state.indexActuel];
   const total = state.cartes.length;
 
-  document.getElementById('card-word-front').textContent = carte.es;
-  document.getElementById('card-word-back').textContent = carte.fr;
-  document.getElementById('card-example').textContent = carte.ex;
   document.getElementById('card-counter').textContent = 'Carte ' + (state.indexActuel + 1) + ' / ' + total;
   document.getElementById('progress-bar').style.width = (state.indexActuel / total * 100) + '%';
   document.getElementById('score-good').textContent = '✓ ' + state.scoreOui;
   document.getElementById('score-bad').textContent  = '✗ ' + state.scoreNon;
 
-  // Carte face avant, pas encore retournée
-  document.getElementById('flashcard').classList.remove('is-flipped');
-  state.estRetournee = false;
+  // Afficher le mot espagnol
+  document.getElementById('es-word-display').textContent = carte.es;
 
-  // Boutons actifs dès le départ - l'utilisateur s'engage AVANT de voir la réponse
-  const btns = document.getElementById('answer-buttons');
-  btns.querySelectorAll('button').forEach(b => b.disabled = false);
-  btns.style.opacity = '1';
+  // 3 options: 1 correct + 2 distracteurs
+  const distractors = getDistractors(carte.fr, 2);
+  const options = melanger([
+    { fr: carte.fr, correct: true },
+    { fr: distractors[0], correct: false },
+    { fr: distractors[1], correct: false }
+  ]);
+
+  const trio = document.getElementById('cards-trio');
+  trio.innerHTML = '';
+  options.forEach((opt, i) => {
+    const scene = document.createElement('div');
+    scene.className = 'option-scene';
+    const icon = opt.correct ? '✓' : '✗';
+    scene.innerHTML =
+      '<div class="option-card" id="option-' + i + '" data-correct="' + opt.correct + '">' +
+        '<div class="option-face option-front">' +
+          '<p class="option-lang">FR · Français</p>' +
+          '<p class="option-word">' + opt.fr + '</p>' +
+        '</div>' +
+        '<div class="option-face option-back">' +
+          '<p class="option-result-icon">' + icon + '</p>' +
+          '<p class="option-word">' + opt.fr + '</p>' +
+        '</div>' +
+      '</div>';
+    scene.addEventListener('click', () => choisirOption(opt.correct, carte));
+    trio.appendChild(scene);
+  });
+
+  state.estRetournee = false;
 }
 
 function prononcer(texte) {
@@ -659,25 +693,30 @@ function prononcer(texte) {
   window.speechSynthesis.speak(utter);
 }
 
-function repondre(savait) {
+function choisirOption(correct, carte) {
   if (state.estRetournee) return;
   state.estRetournee = true;
 
-  // Désactiver les boutons
-  document.getElementById('answer-buttons').querySelectorAll('button').forEach(b => b.disabled = true);
+  // Prononcer le mot espagnol
+  prononcer(carte.es);
 
-  // Retourner la carte pour montrer la réponse
-  document.getElementById('flashcard').classList.add('is-flipped');
-  prononcer(state.cartes[state.indexActuel].es);
+  // Retourner toutes les cartes avec couleur correct/wrong
+  const trio = document.getElementById('cards-trio');
+  trio.querySelectorAll('.option-scene').forEach(scene => {
+    const card = scene.querySelector('.option-card');
+    card.classList.add(card.dataset.correct === 'true' ? 'correct' : 'wrong');
+    setTimeout(() => card.classList.add('is-flipped'), 50);
+    scene.style.cursor = 'default';
+    scene.style.pointerEvents = 'none';
+  });
 
-  if (savait) {
+  if (correct) {
     state.scoreOui++;
   } else {
     state.scoreNon++;
-    state.cartesRatees.push(state.cartes[state.indexActuel]);
+    state.cartesRatees.push(carte);
   }
 
-  // Carte suivante après 1.3s
   setTimeout(() => {
     state.indexActuel++;
     if (state.indexActuel < state.cartes.length) {
@@ -685,7 +724,7 @@ function repondre(savait) {
     } else {
       terminerSession();
     }
-  }, 1300);
+  }, 1500);
 }
 
 function terminerSession() {
@@ -975,10 +1014,6 @@ document.addEventListener('DOMContentLoaded', () => {
     afficherEcran('screen-home');
     initAccueil();
   });
-
-  // Session flip
-  document.getElementById('btn-knew').addEventListener('click', () => repondre(true));
-  document.getElementById('btn-didnt').addEventListener('click', () => repondre(false));
 
   // Session ecriture
   document.getElementById('btn-validate').addEventListener('click', validerEcriture);

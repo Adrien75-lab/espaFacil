@@ -357,3 +357,22 @@ body {
   .stats-global-number { font-size: 1.4rem; }
   .write-input-wrap { flex-direction: column; }
 }
+
+/* === 3 CARTES OPTION === */
+.es-word-display { font-size: 2rem; font-weight: 800; color: var(--text); margin: 4px 0 20px; text-align: center; letter-spacing: -0.5px; }
+.cards-trio { display: flex; gap: 10px; width: 100%; max-width: 420px; margin-bottom: 24px; }
+.option-scene { flex: 1; height: 130px; perspective: 800px; cursor: pointer; }
+.option-card { width: 100%; height: 100%; position: relative; transform-style: preserve-3d; transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1); border-radius: var(--radius); }
+.option-card.is-flipped { transform: rotateY(180deg); }
+.option-face { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: var(--radius); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 10px; text-align: center; box-shadow: var(--shadow); }
+.option-front { background: var(--card-bg); border: 2px solid var(--border); transition: border-color 0.2s, transform 0.2s; }
+.option-scene:hover .option-front { border-color: var(--purple); transform: translateY(-3px); }
+.option-back { transform: rotateY(180deg); color: white; background: var(--purple); }
+.option-card.correct .option-back { background: linear-gradient(135deg, #27ae60, #1e8449); }
+.option-card.wrong .option-back { background: linear-gradient(135deg, #e74c3c, #c0392b); }
+.option-lang { font-size: 0.58rem; font-weight: 700; letter-spacing: 0.5px; opacity: 0.55; text-transform: uppercase; margin-bottom: 6px; }
+.option-back .option-lang { opacity: 0.8; }
+.option-word { font-size: 0.88rem; font-weight: 700; line-height: 1.3; }
+.option-result-icon { font-size: 1.4rem; margin-bottom: 4px; }
+[data-theme="dark"] .option-front { background: var(--card-bg); }
+@media (max-width: 480px) { .es-word-display { font-size: 1.6rem; } .option-scene { height: 110px; } .option-word { font-size: 0.78rem; } }
