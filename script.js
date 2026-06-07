@@ -419,6 +419,30 @@ const PREREQUIS = {
 
 const STORAGE_KEY = "espafacil_progress";
 
+const STORAGE_XP = 'espafacil_user';
+
+// Niveaux de progression
+const LEVELS = [
+  { niveau: 1, nom: 'Principiante', xpMin: 0,   xpNext: 15,  icon: '🌱' },
+  { niveau: 2, nom: 'Aprendiz',     xpMin: 15,  xpNext: 40,  icon: '📚' },
+  { niveau: 3, nom: 'Estudiante',   xpMin: 40,  xpNext: 80,  icon: '✏️' },
+  { niveau: 4, nom: 'Avanzado',     xpMin: 80,  xpNext: 150, icon: '🎓' },
+  { niveau: 5, nom: 'Experto',      xpMin: 150, xpNext: 250, icon: '⭐' },
+  { niveau: 6, nom: 'Maestro',      xpMin: 250, xpNext: null, icon: '🏆' }
+];
+
+// Définition des badges
+const BADGES_DEF = [
+  { id: 'first_correct',    icon: '🎯', nom: 'Premier pas',  desc: '1ère bonne réponse',          cond: u => u.xp >= 1 },
+  { id: 'serie_3',          icon: '🔥', nom: 'En feu',       desc: 'Série de 3',                  cond: u => u.maxSerie >= 3 },
+  { id: 'serie_5',          icon: '💥', nom: 'Explosif',     desc: 'Série de 5',                  cond: u => u.maxSerie >= 5 },
+  { id: 'perfect',          icon: '⭐', nom: 'Parfait',      desc: 'Session 10/10',               cond: u => u.sessionParfaites >= 1 },
+  { id: 'sessions_5',       icon: '💪', nom: 'Assidu',       desc: '5 sessions terminées',        cond: u => u.sessions >= 5 },
+  { id: 'niveau_3',         icon: '🎓', nom: 'Étudiant',     desc: 'Niveau Estudiante atteint',   cond: u => u.xp >= 40 },
+  { id: 'niveau_5',         icon: '🏆', nom: 'Expert',       desc: 'Niveau Experto atteint',      cond: u => u.xp >= 150 },
+  { id: 'phrases_ok',       icon: '📝', nom: 'Grammairien',  desc: 'Session Phrases terminée',    cond: u => u.phrasesSessions >= 1 }
+];
+
 // =============================================
 // STATE
 // =============================================
@@ -431,9 +455,24 @@ let state = {
   indexActuel: 0,
   scoreOui: 0,
   scoreNon: 0,
+  serie: 0,
+  maxSerie: 0,
   estRetournee: false,
   cartesRatees: [],
   modeRevision: false
+};
+
+let phraseState = {
+  themeActuel: null,
+  niveauActuel: null,
+  phrases: [],
+  indexActuel: 0,
+  scoreOui: 0,
+  scoreNon: 0,
+  serie: 0,
+  maxSerie: 0,
+  estRepondu: false,
+  cartesRatees: []
 };
 
 let writeState = {
@@ -481,6 +520,104 @@ function sauvegarderProgression(theme, niveau, bon, total) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(prog));
 }
 
+// =============================================
+// XP · NIVEAUX · BADGES
+// =============================================
+function chargerUser() {
+  try {
+    const raw = localStorage.getItem(STORAGE_XP);
+    const def = { xp: 0, sessions: 0, badges: [], maxSerie: 0, sessionParfaites: 0, phrasesSessions: 0 };
+    if (!raw) return def;
+    const u = JSON.parse(raw);
+    return Object.assign(def, u);
+  } catch(e) {
+    return { xp: 0, sessions: 0, badges: [], maxSerie: 0, sessionParfaites: 0, phrasesSessions: 0 };
+  }
+}
+function sauvegarderUser(u) { localStorage.setItem(STORAGE_XP, JSON.stringify(u)); }
+
+function obtenirNiveau(xp) {
+  let lv = LEVELS[0];
+  for (const l of LEVELS) { if (xp >= l.xpMin) lv = l; else break; }
+  return lv;
+}
+
+function verifierBadges(user) {
+  const nouveaux = [];
+  BADGES_DEF.forEach(b => {
+    if (!user.badges.includes(b.id) && b.cond(user)) {
+      user.badges.push(b.id);
+      nouveaux.push(b);
+    }
+  });
+  return nouveaux;
+}
+
+function montrerToast(texte) {
+  const el = document.getElementById('level-up-toast');
+  document.getElementById('toast-content').textContent = texte;
+  el.classList.add('visible');
+  setTimeout(() => el.classList.remove('visible'), 3000);
+}
+
+function accorderXPSession(bon, total, maxSerieSession, isPhrases) {
+  const user = chargerUser();
+  let xp = bon;
+  if (bon === total && total >= 5) { xp += 3; user.sessionParfaites++; }
+  if (maxSerieSession >= 5) xp += 2;
+  user.sessions++;
+  if (isPhrases) user.phrasesSessions = (user.phrasesSessions || 0) + 1;
+  if (maxSerieSession > (user.maxSerie || 0)) user.maxSerie = maxSerieSession;
+
+  const nvAvant = obtenirNiveau(user.xp);
+  user.xp += xp;
+  const nvApres = obtenirNiveau(user.xp);
+  const levelUp = nvApres.niveau > nvAvant.niveau;
+  const nouveauxBadges = verifierBadges(user);
+  sauvegarderUser(user);
+
+  let delay = 800;
+  if (levelUp) {
+    setTimeout(() => montrerToast(nvApres.icon + ' Niveau ' + nvApres.niveau + ' — ' + nvApres.nom + ' !'), delay);
+    delay += 3400;
+  }
+  nouveauxBadges.forEach(b => {
+    setTimeout(() => montrerToast(b.icon + ' Badge débloqué : ' + b.nom), delay);
+    delay += 3400;
+  });
+  return xp;
+}
+
+function afficherNiveauHome() {
+  const user = chargerUser();
+  const lv = obtenirNiveau(user.xp);
+  document.getElementById('level-icon').textContent = lv.icon;
+  document.getElementById('level-name').textContent = lv.nom;
+  if (lv.xpNext) {
+    const pct = Math.round(((user.xp - lv.xpMin) / (lv.xpNext - lv.xpMin)) * 100);
+    document.getElementById('level-xp-bar').style.width = pct + '%';
+    document.getElementById('level-xp-text').textContent = user.xp + ' / ' + lv.xpNext + ' XP';
+  } else {
+    document.getElementById('level-xp-bar').style.width = '100%';
+    document.getElementById('level-xp-text').textContent = user.xp + ' XP — Niveau max 🏆';
+  }
+}
+
+function afficherBadges() {
+  const user = chargerUser();
+  const grid = document.getElementById('badges-grid');
+  grid.innerHTML = '';
+  BADGES_DEF.forEach(b => {
+    const earned = user.badges.includes(b.id);
+    grid.innerHTML += '<div class="badge-item ' + (earned ? 'earned' : 'locked') + '">' +
+      '<span class="badge-icon">' + b.icon + '</span>' +
+      '<span class="badge-nom">' + b.nom + '</span>' +
+      '<span class="badge-desc">' + b.desc + '</span>' +
+    '</div>';
+  });
+}
+
+
 function estDebloque(themeCle, niveauCle) {
   const prerequis = PREREQUIS[niveauCle];
   if (!prerequis) return true;
@@ -502,6 +639,7 @@ function afficherEcran(id) {
 // =============================================
 function initAccueil() {
   const prog = chargerProgression();
+  afficherNiveauHome();
   const grid = document.getElementById('theme-grid');
   grid.innerHTML = '';
 
@@ -583,6 +721,7 @@ function ouvrirNiveaux(themeCle) {
     if (debloque) {
       div.addEventListener('click', () => {
         if (modeJeu === 'write') demarrerSessionEcriture(niveauCle);
+        else if (modeJeu === 'phrases') demarrerSessionPhrases(niveauCle);
         else demarrerSession(niveauCle);
       });
     }
@@ -619,6 +758,7 @@ function demarrerSession(niveauCle, cartesRevision) {
   state.scoreOui = 0;
   state.scoreNon = 0;
   state.serie = 0;
+  state.maxSerie = 0;
   state.estRetournee = false;
   state.cartesRatees = [];
 
@@ -715,6 +855,7 @@ function choisirOption(correct, carte) {
   if (correct) {
     state.scoreOui++;
     state.serie++;
+    if (state.serie > state.maxSerie) state.maxSerie = state.serie;
     // Animation feu si série >= 3
     const elSerie = document.getElementById('score-serie');
     if (state.serie >= 3) { elSerie.classList.remove('hot'); void elSerie.offsetWidth; elSerie.classList.add('hot'); }
@@ -741,6 +882,7 @@ function terminerSession() {
 
   if (!state.modeRevision) {
     sauvegarderProgression(state.themeActuel, state.niveauActuel, bon, total);
+    accorderXPSession(bon, total, state.maxSerie, false);
   }
 
   document.getElementById('result-good').textContent = bon;
@@ -883,6 +1025,7 @@ function terminerSessionEcriture() {
   const pct = Math.round((bon / total) * 100);
 
   sauvegarderProgression(writeState.themeActuel, writeState.niveauActuel, bon, total);
+  accorderXPSession(bon, total, 0, false);
 
   state.themeActuel = writeState.themeActuel;
   state.niveauActuel = writeState.niveauActuel;
@@ -923,12 +1066,188 @@ function terminerSessionEcriture() {
 }
 
 // =============================================
+// SESSION PHRASES À TROUS
+// =============================================
+function genererPhrases(themeCle, niveauCle) {
+  const cartes = DATA[themeCle][niveauCle];
+  const result = [];
+  cartes.forEach(carte => {
+    const mot = carte.es.replace(/^(el|la|los|las|un|una)\s+/i, '').trim();
+    const ex = carte.ex;
+    const re = new RegExp('\\b' + mot + '\\b', 'i');
+    const repl = new RegExp('\\b' + mot + '\\b', 'gi');
+    const repl2 = new RegExp('\\b' + mot + 's\\b', 'gi');
+    if (re.test(ex)) {
+      result.push({ sentence: ex.replace(repl, '___'), answer: mot, fr: carte.fr, es: carte.es });
+    } else if (new RegExp('\\b' + mot + 's\\b', 'i').test(ex)) {
+      result.push({ sentence: ex.replace(repl2, '___'), answer: mot, fr: carte.fr, es: carte.es });
+    }
+  });
+  return melanger(result);
+}
+
+function demarrerSessionPhrases(niveauCle) {
+  const theme = DATA[state.themeActuel];
+  phraseState.themeActuel = state.themeActuel;
+  phraseState.niveauActuel = niveauCle;
+  phraseState.phrases = genererPhrases(state.themeActuel, niveauCle);
+  phraseState.indexActuel = 0;
+  phraseState.scoreOui = 0;
+  phraseState.scoreNon = 0;
+  phraseState.serie = 0;
+  phraseState.maxSerie = 0;
+  phraseState.estRepondu = false;
+  phraseState.cartesRatees = [];
+
+  document.getElementById('phrases-theme-label').textContent = theme.icone + ' ' + theme.nom;
+  document.getElementById('phrases-level-badge').textContent = NIVEAUX_CONFIG[niveauCle].nom;
+
+  if (phraseState.phrases.length === 0) {
+    alert('Pas de phrases disponibles pour ce niveau.');
+    return;
+  }
+  afficherEcran('screen-phrases');
+  afficherPhrase();
+}
+
+function afficherPhrase() {
+  const ph = phraseState.phrases[phraseState.indexActuel];
+  const total = phraseState.phrases.length;
+
+  document.getElementById('phrases-card-counter').textContent = 'Phrase ' + (phraseState.indexActuel + 1) + ' / ' + total;
+  document.getElementById('phrases-progress-bar').style.width = (phraseState.indexActuel / total * 100) + '%';
+  document.getElementById('phrases-score-good').textContent = '✓ ' + phraseState.scoreOui;
+  document.getElementById('phrases-score-bad').textContent  = '✗ ' + phraseState.scoreNon;
+  document.getElementById('phrases-score-serie').textContent = '🔥 ' + phraseState.serie;
+
+  // Phrase avec trou mis en valeur
+  document.getElementById('phrase-sentence').innerHTML =
+    ph.sentence.replace('___', '<span class="phrase-blank" id="phrase-blank">___</span>');
+
+  // Bouton prononciation lit la phrase complète
+  document.getElementById('btn-prononcer-phrases').onclick = () =>
+    prononcer(ph.sentence.replace('___', ph.answer));
+
+  // 3 options : 1 correcte + 2 distracteurs du même thème/niveau
+  const pool = DATA[phraseState.themeActuel][phraseState.niveauActuel]
+    .map(c => c.es.replace(/^(el|la|los|las|un|una)\s+/i, '').trim())
+    .filter(m => m !== ph.answer);
+  const distractors = melanger(pool).slice(0, 2);
+  while (distractors.length < 2) distractors.push('?');
+
+  const options = melanger([
+    { mot: ph.answer, correct: true },
+    { mot: distractors[0], correct: false },
+    { mot: distractors[1], correct: false }
+  ]);
+
+  const trio = document.getElementById('phrases-trio');
+  trio.innerHTML = '';
+  options.forEach((opt, i) => {
+    const scene = document.createElement('div');
+    scene.className = 'option-scene';
+    const icon = opt.correct ? '✓' : '✗';
+    scene.innerHTML =
+      '<div class="option-card" id="popt-' + i + '" data-correct="' + opt.correct + '">' +
+        '<div class="option-face option-front">' +
+          '<p class="option-lang">ES · Mot</p>' +
+          '<p class="option-word">' + opt.mot + '</p>' +
+        '</div>' +
+        '<div class="option-face option-back">' +
+          '<p class="option-result-icon">' + icon + '</p>' +
+          '<p class="option-word">' + opt.mot + '</p>' +
+        '</div>' +
+      '</div>';
+    scene.addEventListener('click', () => choisirMotPhrase(opt.correct, ph));
+    trio.appendChild(scene);
+  });
+
+  phraseState.estRepondu = false;
+}
+
+function choisirMotPhrase(correct, ph) {
+  if (phraseState.estRepondu) return;
+  phraseState.estRepondu = true;
+
+  prononcer(ph.answer);
+
+  // Remplir le trou avec la bonne réponse
+  const blank = document.getElementById('phrase-blank');
+  if (blank) {
+    blank.textContent = ph.answer;
+    blank.classList.add(correct ? 'filled-correct' : 'filled-wrong');
+  }
+
+  // Retourner les cartes
+  document.getElementById('phrases-trio').querySelectorAll('.option-scene').forEach(scene => {
+    const card = scene.querySelector('.option-card');
+    card.classList.add(card.dataset.correct === 'true' ? 'correct' : 'wrong');
+    setTimeout(() => card.classList.add('is-flipped'), 50);
+    scene.style.cursor = 'default';
+    scene.style.pointerEvents = 'none';
+  });
+
+  if (correct) {
+    phraseState.scoreOui++;
+    phraseState.serie++;
+    if (phraseState.serie > phraseState.maxSerie) phraseState.maxSerie = phraseState.serie;
+    const el = document.getElementById('phrases-score-serie');
+    if (phraseState.serie >= 3) { el.classList.remove('hot'); void el.offsetWidth; el.classList.add('hot'); }
+  } else {
+    phraseState.scoreNon++;
+    phraseState.serie = 0;
+  }
+
+  setTimeout(() => {
+    phraseState.indexActuel++;
+    if (phraseState.indexActuel < phraseState.phrases.length) afficherPhrase();
+    else terminerSessionPhrases();
+  }, 1500);
+}
+
+function terminerSessionPhrases() {
+  const total = phraseState.phrases.length;
+  const bon = phraseState.scoreOui;
+  const pct = Math.round((bon / total) * 100);
+
+  sauvegarderProgression(phraseState.themeActuel, phraseState.niveauActuel, bon, total);
+  accorderXPSession(bon, total, phraseState.maxSerie, true);
+
+  // Réutiliser l'écran résultats existant
+  state.themeActuel = phraseState.themeActuel;
+  state.niveauActuel = phraseState.niveauActuel;
+  state.scoreOui = bon;
+  state.scoreNon = total - bon;
+  state.cartesRatees = [];
+  state.modeRevision = false;
+
+  document.getElementById('result-good').textContent = bon;
+  document.getElementById('result-bad').textContent  = total - bon;
+  document.getElementById('result-score').textContent = pct + '%';
+  document.getElementById('btn-review').style.display = 'none';
+
+  let emoji, titre, sous;
+  if (pct >= 90) { emoji = '🏆'; titre = 'Excellent !'; sous = 'Grammaire parfaite !'; lancerConfettis(); }
+  else if (pct >= 70) { emoji = '🌟'; titre = 'Très bien !'; sous = 'Vos phrases progressent !'; }
+  else if (pct >= 50) { emoji = '💪'; titre = 'Pas mal !'; sous = 'Continuez à pratiquer !'; }
+  else { emoji = '📚'; titre = 'À revoir !'; sous = "Révisez d'abord le vocabulaire."; }
+
+  document.getElementById('results-emoji').textContent = emoji;
+  document.getElementById('results-title').textContent = titre;
+  document.getElementById('results-subtitle').textContent = sous;
+
+  afficherEcran('screen-results');
+}
+
+
+// =============================================
 // THEME SOMBRE
 // =============================================
 function setMode(mode) {
   modeJeu = mode;
   document.getElementById('mode-flip').classList.toggle('active', mode === 'flip');
   document.getElementById('mode-write').classList.toggle('active', mode === 'write');
+  document.getElementById('mode-phrases').classList.toggle('active', mode === 'phrases');
 }
 // Alias pour l'HTML onclick
 window.setMode = setMode;
@@ -997,6 +1316,7 @@ function afficherStats() {
       </div>`;
   });
 
+  afficherBadges();
   afficherEcran('screen-stats');
 }
 
@@ -1017,6 +1337,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   document.getElementById('back-to-level').addEventListener('click', () => ouvrirNiveaux(state.themeActuel));
   document.getElementById('back-to-level-write').addEventListener('click', () => ouvrirNiveaux(state.themeActuel));
+  document.getElementById('back-to-level-phrases').addEventListener('click', () => ouvrirNiveaux(phraseState.themeActuel || state.themeActuel));
   document.getElementById('back-from-stats').addEventListener('click', () => {
     afficherEcran('screen-home');
     initAccueil();
@@ -1041,6 +1362,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Resultats
   document.getElementById('btn-retry').addEventListener('click', () => {
     if (modeJeu === 'write') demarrerSessionEcriture(writeState.niveauActuel);
+    else if (modeJeu === 'phrases') demarrerSessionPhrases(phraseState.niveauActuel);
     else demarrerSession(state.niveauActuel);
   });
   // Note: btn-review pour QCM utilise state.cartesRatees

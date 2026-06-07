@@ -24,9 +24,18 @@
       <div class="mode-toggle">
         <span class="mode-label">Mode</span>
         <button class="mode-btn active" id="mode-flip" onclick="setMode('flip')">Retournement</button>
-        <button class="mode-btn" id="mode-write" onclick="setMode('write')">Ecriture</button>
+        <button class="mode-btn" id="mode-write" onclick="setMode('write')">Écriture</button>
+        <button class="mode-btn" id="mode-phrases" onclick="setMode('phrases')">Phrases</button>
       </div>
       <div class="progress-summary" id="progress-summary"></div>
+      <div class="level-display" id="level-display">
+        <span class="level-icon-big" id="level-icon">🌱</span>
+        <div class="level-info">
+          <span class="level-name" id="level-name">Principiante</span>
+          <div class="level-xp-bar-wrap"><div class="level-xp-bar" id="level-xp-bar"></div></div>
+          <span class="level-xp-text" id="level-xp-text">0 / 15 XP</span>
+        </div>
+      </div>
       <h2 class="section-title">Choisissez un theme</h2>
       <div class="theme-grid" id="theme-grid"></div>
     </div>
@@ -68,6 +77,32 @@
         <button class="btn-prononcer" id="btn-prononcer" title="Écouter">🔊</button>
       </div>
       <div class="cards-trio" id="cards-trio"></div>
+    </div>
+  </div>
+
+  <!-- ECRAN 3C : SESSION PHRASES -->
+  <div id="screen-phrases" class="screen">
+    <div class="session-container">
+      <div class="session-header">
+        <button class="btn-back" id="back-to-level-phrases">← Quitter</button>
+        <div class="session-info">
+          <span id="phrases-theme-label"></span>
+          <span class="session-level-badge" id="phrases-level-badge"></span>
+        </div>
+        <div class="session-score">
+          <span class="score-good" id="phrases-score-good">✓ 0</span>
+          <span class="score-serie" id="phrases-score-serie">🔥 0</span>
+          <span class="score-bad" id="phrases-score-bad">✗ 0</span>
+        </div>
+      </div>
+      <div class="progress-bar-wrap"><div class="progress-bar" id="phrases-progress-bar"></div></div>
+      <p class="card-counter" id="phrases-card-counter">Phrase 1 / 8</p>
+      <p class="session-question">Complétez la phrase :</p>
+      <div class="phrase-box">
+        <p class="phrase-sentence" id="phrase-sentence"></p>
+        <button class="btn-prononcer" id="btn-prononcer-phrases" title="Écouter">🔊</button>
+      </div>
+      <div class="cards-trio" id="phrases-trio"></div>
     </div>
   </div>
 
@@ -127,7 +162,14 @@
       <div class="stats-global" id="stats-global"></div>
       <h3 class="stats-section-title">Par theme</h3>
       <div class="stats-themes" id="stats-themes"></div>
+      <h3 class="stats-section-title">Badges</h3>
+      <div class="badges-grid" id="badges-grid"></div>
     </div>
+  </div>
+
+  <!-- TOAST niveau -->
+  <div class="level-up-toast" id="level-up-toast">
+    <span id="toast-content">🎉 Niveau 2 !</span>
   </div>
 
   <script src="script.js"></script>
