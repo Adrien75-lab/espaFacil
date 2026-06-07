@@ -14,6 +14,12 @@
     <div class="home-container">
       <div class="top-bar">
         <button class="btn-stats" id="btn-open-stats">Stats</button>
+        <button class="btn-custom-list" id="btn-open-custom" title="Ma liste perso">📝</button>
+        <select class="variante-select" id="variante-select" title="Variante espagnol">
+          <option value="es-ES">🇪🇸 Castillan</option>
+          <option value="es-MX">🇲🇽 Mexicain</option>
+          <option value="es-AR">🇦🇷 Argentin</option>
+        </select>
         <button class="btn-theme-toggle" id="btn-theme" title="Thème sombre">🌙</button>
       </div>
       <div class="logo">
@@ -75,8 +81,10 @@
       <div class="es-word-row">
         <div class="es-word-display" id="es-word-display"></div>
         <button class="btn-prononcer" id="btn-prononcer" title="Écouter">🔊</button>
+        <button class="btn-mic" id="btn-mic" title="Tester votre prononciation">🎤</button>
       </div>
       <div class="cards-trio" id="cards-trio"></div>
+      <div class="mnemo-zone" id="mnemo-zone" style="display:none"></div>
     </div>
   </div>
 
@@ -101,6 +109,7 @@
       <div class="phrase-box">
         <p class="phrase-sentence" id="phrase-sentence"></p>
         <button class="btn-prononcer" id="btn-prononcer-phrases" title="Écouter">🔊</button>
+        <button class="btn-mic" id="btn-mic-phrases" title="Tester votre prononciation">🎤</button>
       </div>
       <div class="cards-trio" id="phrases-trio"></div>
     </div>
@@ -164,6 +173,34 @@
       <div class="stats-themes" id="stats-themes"></div>
       <h3 class="stats-section-title">Badges</h3>
       <div class="badges-grid" id="badges-grid"></div>
+    </div>
+  </div>
+
+  <!-- ECRAN : LISTE PERSO -->
+  <div id="screen-custom" class="screen">
+    <div class="custom-container">
+      <button class="btn-back" id="back-from-custom">← Retour</button>
+      <h2 class="custom-title">📝 Ma liste perso</h2>
+
+      <div class="custom-add-form">
+        <input type="text" id="custom-input-es" class="custom-input" placeholder="Mot espagnol (ex: el gato)" autocomplete="off">
+        <input type="text" id="custom-input-fr" class="custom-input" placeholder="Traduction française (ex: le chat)" autocomplete="off">
+        <button class="btn-custom-add" id="btn-custom-add">＋ Ajouter</button>
+      </div>
+
+      <details class="custom-import-section">
+        <summary>⬇ Importer par collage</summary>
+        <textarea id="custom-import-area" class="custom-import-area" placeholder="Un mot par ligne, format : espagnol,français&#10;el gato,le chat&#10;la casa,la maison" rows="5"></textarea>
+        <button class="btn-custom-import" id="btn-custom-import">Importer</button>
+      </details>
+
+      <div class="custom-list-header">
+        <span id="custom-count">0 mot(s)</span>
+        <button class="btn-custom-clear" id="btn-custom-clear">🗑 Tout effacer</button>
+      </div>
+      <div class="custom-list" id="custom-list"></div>
+
+      <button class="btn-primary custom-play" id="btn-custom-play">▶ Jouer ma liste</button>
     </div>
   </div>
 

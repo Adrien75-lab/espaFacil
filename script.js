@@ -420,6 +420,9 @@ const PREREQUIS = {
 const STORAGE_KEY = "espafacil_progress";
 
 const STORAGE_XP = 'espafacil_user';
+const STORAGE_VARIANTE = 'espafacil_variante';
+
+let varianteRegionale = localStorage.getItem(STORAGE_VARIANTE) || 'es-ES';
 
 // Niveaux de progression
 const LEVELS = [
@@ -526,9 +529,10 @@ function sauvegarderProgression(theme, niveau, bon, total) {
 function chargerUser() {
   try {
     const raw = localStorage.getItem(STORAGE_XP);
-    const def = { xp: 0, sessions: 0, badges: [], maxSerie: 0, sessionParfaites: 0, phrasesSessions: 0 };
+    const def = { xp: 0, sessions: 0, badges: [], maxSerie: 0, sessionParfaites: 0, phrasesSessions: 0, activityDays: [] };
     if (!raw) return def;
     const u = JSON.parse(raw);
+    if (!u.activityDays) u.activityDays = [];
     return Object.assign(def, u);
   } catch(e) {
     return { xp: 0, sessions: 0, badges: [], maxSerie: 0, sessionParfaites: 0, phrasesSessions: 0 };
@@ -566,6 +570,7 @@ function accorderXPSession(bon, total, maxSerieSession, isPhrases) {
   if (bon === total && total >= 5) { xp += 3; user.sessionParfaites++; }
   if (maxSerieSession >= 5) xp += 2;
   user.sessions++;
+  marquerJourActif(user);
   if (isPhrases) user.phrasesSessions = (user.phrasesSessions || 0) + 1;
   if (maxSerieSession > (user.maxSerie || 0)) user.maxSerie = maxSerieSession;
 
@@ -596,10 +601,12 @@ function afficherNiveauHome() {
   if (lv.xpNext) {
     const pct = Math.round(((user.xp - lv.xpMin) / (lv.xpNext - lv.xpMin)) * 100);
     document.getElementById('level-xp-bar').style.width = pct + '%';
-    document.getElementById('level-xp-text').textContent = user.xp + ' / ' + lv.xpNext + ' XP';
+    const j = (user.activityDays || []).length;
+    document.getElementById('level-xp-text').textContent = user.xp + ' / ' + lv.xpNext + ' XP · 🗓 ' + j + ' jour' + (j > 1 ? 's' : '');
   } else {
     document.getElementById('level-xp-bar').style.width = '100%';
-    document.getElementById('level-xp-text').textContent = user.xp + ' XP — Niveau max 🏆';
+    const j2 = (user.activityDays || []).length;
+    document.getElementById('level-xp-text').textContent = user.xp + ' XP · 🗓 ' + j2 + ' jour' + (j2 > 1 ? 's' : '') + ' · Niveau max 🏆';
   }
 }
 
@@ -824,13 +831,68 @@ function afficherCarte() {
   });
 
   state.estRetournee = false;
+  const mz = document.getElementById('mnemo-zone');
+  if (mz) mz.style.display = 'none';
 }
+
+// =============================================
+// RECONNAISSANCE VOCALE
+// =============================================
+function lancerReconnaissance(motCible, bouton) {
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SR) {
+    montrerToast('🎤 Non disponible — utilisez Chrome ou Edge');
+    return;
+  }
+  if (bouton.classList.contains('listening')) return;
+
+  const rec = new SR();
+  rec.lang = varianteRegionale;
+  rec.continuous = false;
+  rec.interimResults = false;
+  rec.maxAlternatives = 5;
+
+  bouton.textContent = '⏺';
+  bouton.classList.add('listening');
+
+  const reset = () => { bouton.classList.remove('listening'); bouton.textContent = '🎤'; };
+
+  rec.onresult = (e) => {
+    const transcripts = Array.from(e.results[0]).map(r => normaliserReponse(r.transcript));
+    const cible = normaliserReponse(motCible);
+    const cibleNue = cible.replace(/^(el|la|los|las|un|una)\s+/, '').trim();
+    const correct = transcripts.some(t => t === cible || t === cibleNue || t.includes(cibleNue));
+
+    bouton.textContent = correct ? '✅' : '❌';
+    bouton.classList.remove('listening');
+
+    if (correct) {
+      montrerToast('¡Muy bien! Prononciation correcte 👏');
+    } else {
+      montrerToast('🎤 Entendu : "' + transcripts[0] + '" — Attendu : "' + motCible + '"');
+      prononcer(motCible);
+    }
+    setTimeout(reset, 2000);
+  };
+
+  rec.onerror = (e) => {
+    reset();
+    if (e.error !== 'aborted') {
+      montrerToast('🎤 ' + (e.error === 'no-speech' ? 'Rien entendu...' : 'Erreur : ' + e.error));
+    }
+  };
+
+  rec.onend = () => { if (bouton.classList.contains('listening')) reset(); };
+
+  try { rec.start(); } catch(err) { reset(); }
+}
+
 
 function prononcer(texte) {
   if (!('speechSynthesis' in window)) return;
   window.speechSynthesis.cancel();
   const utter = new SpeechSynthesisUtterance(texte);
-  utter.lang = 'es-ES';
+  utter.lang = varianteRegionale;
   utter.rate = 0.9;
   window.speechSynthesis.speak(utter);
 }
@@ -856,14 +918,17 @@ function choisirOption(correct, carte) {
     state.scoreOui++;
     state.serie++;
     if (state.serie > state.maxSerie) state.maxSerie = state.serie;
-    // Animation feu si série >= 3
     const elSerie = document.getElementById('score-serie');
     if (state.serie >= 3) { elSerie.classList.remove('hot'); void elSerie.offsetWidth; elSerie.classList.add('hot'); }
+    encouragerUtilisateur(state.serie);
   } else {
     state.scoreNon++;
-    state.serie = 0;
+    state.serie = 0; // reset silencieux — pas de notification négative
     state.cartesRatees.push(carte);
   }
+
+  // Afficher la mnémotechnique après le retournement
+  setTimeout(() => afficherMnemo(carte.es), 300);
 
   setTimeout(() => {
     state.indexActuel++;
@@ -880,8 +945,10 @@ function terminerSession() {
   const bon = state.scoreOui;
   const pct = Math.round((bon / total) * 100);
 
-  if (!state.modeRevision) {
+  if (!state.modeRevision && state.themeActuel !== '_custom') {
     sauvegarderProgression(state.themeActuel, state.niveauActuel, bon, total);
+  }
+  if (!state.modeRevision) {
     accorderXPSession(bon, total, state.maxSerie, false);
   }
 
@@ -1066,6 +1133,181 @@ function terminerSessionEcriture() {
 }
 
 // =============================================
+// GAMIFICATION SAINE
+// =============================================
+const ENCOURAGEMENTS = [
+  '¡Vamos! 💪', '¡Excelente! 🌟', 'Continue comme ça !',
+  '¡Genial! 🎉', 'Tu progresses bien !', '¡Muy bien! ✨',
+  'En pleine forme !', '¡Fantástico! 🚀'
+];
+
+function marquerJourActif(user) {
+  const today = new Date().toISOString().slice(0, 10);
+  if (!user.activityDays.includes(today)) {
+    user.activityDays.push(today);
+    if (user.activityDays.length > 365) user.activityDays = user.activityDays.slice(-365);
+  }
+}
+
+// Encouragement positif aux paliers de série (3, 5, 10) — pas à chaque réponse
+function encouragerUtilisateur(serie) {
+  const paliers = [3, 5, 10, 15, 20];
+  if (paliers.includes(serie)) {
+    const msg = ENCOURAGEMENTS[Math.floor(Math.random() * ENCOURAGEMENTS.length)];
+    montrerToast(msg + ' ' + serie + " d'affilée !");
+  }
+}
+
+
+// =============================================
+// MNÉMOTECHNIQUES
+// =============================================
+const STORAGE_MNEMO = 'espafacil_mnemo';
+
+function chargerMnemos() {
+  try { return JSON.parse(localStorage.getItem(STORAGE_MNEMO) || '{}'); } catch(e) { return {}; }
+}
+function sauvegarderMnemo(esWord, texte) {
+  const m = chargerMnemos();
+  if (texte) m[esWord] = texte; else delete m[esWord];
+  localStorage.setItem(STORAGE_MNEMO, JSON.stringify(m));
+}
+
+function afficherMnemo(esWord) {
+  const zone = document.getElementById('mnemo-zone');
+  if (!zone) return;
+  const astuce = chargerMnemos()[esWord] || '';
+
+  zone.innerHTML =
+    '<div class="mnemo-content">' +
+      (astuce
+        ? '<p class="mnemo-text">💡 ' + astuce + '</p>'
+        : '<p class="mnemo-empty">Aucune astuce — ajoutez-en une !</p>') +
+      '<button class="btn-mnemo-edit" id="btn-mnemo-edit">' + (astuce ? '✏️ Modifier' : '＋ Astuce') + '</button>' +
+    '</div>' +
+    '<div class="mnemo-edit-form" id="mnemo-edit-form">' +
+      '<input type="text" class="mnemo-input" id="mnemo-input" placeholder="Ex: ressemble à un mot français..." value="' + astuce.replace(/"/g, '&quot;') + '">' +
+      '<button class="btn-mnemo-save" id="btn-mnemo-save">✓</button>' +
+    '</div>';
+
+  zone.style.display = 'block';
+
+  document.getElementById('btn-mnemo-edit').addEventListener('click', () => {
+    const form = document.getElementById('mnemo-edit-form');
+    form.classList.toggle('visible');
+    if (form.classList.contains('visible')) document.getElementById('mnemo-input').focus();
+  });
+
+  const sauvegarder = () => {
+    const val = document.getElementById('mnemo-input').value.trim();
+    sauvegarderMnemo(esWord, val);
+    afficherMnemo(esWord);
+  };
+  document.getElementById('btn-mnemo-save').addEventListener('click', sauvegarder);
+  document.getElementById('mnemo-input').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') sauvegarder();
+  });
+}
+
+
+// =============================================
+// LISTE DE MOTS PERSO
+// =============================================
+const STORAGE_CUSTOM = 'espafacil_custom';
+
+function chargerListePerso() {
+  try { return JSON.parse(localStorage.getItem(STORAGE_CUSTOM) || '[]'); } catch(e) { return []; }
+}
+function sauvegarderListePerso(liste) { localStorage.setItem(STORAGE_CUSTOM, JSON.stringify(liste)); }
+
+function afficherListePerso() {
+  const liste = chargerListePerso();
+  const container = document.getElementById('custom-list');
+  const countEl = document.getElementById('custom-count');
+  countEl.textContent = liste.length + ' mot(s)';
+  const playBtn = document.getElementById('btn-custom-play');
+  playBtn.disabled = liste.length < 3;
+
+  container.innerHTML = '';
+  if (liste.length === 0) {
+    container.innerHTML = '<p style="color:var(--text-light);text-align:center;font-size:0.85rem;padding:12px">Aucun mot ajouté</p>';
+    return;
+  }
+  liste.forEach((mot, i) => {
+    const div = document.createElement('div');
+    div.className = 'custom-word-item';
+    div.innerHTML =
+      '<span class="custom-word-es">' + mot.es + '</span>' +
+      '<span class="custom-word-sep">→</span>' +
+      '<span class="custom-word-fr">' + mot.fr + '</span>' +
+      '<button class="btn-custom-delete" data-idx="' + i + '" title="Supprimer">✕</button>';
+    div.querySelector('.btn-custom-delete').addEventListener('click', () => {
+      const l = chargerListePerso();
+      l.splice(i, 1);
+      sauvegarderListePerso(l);
+      afficherListePerso();
+    });
+    container.appendChild(div);
+  });
+}
+
+function ajouterMotPerso(es, fr) {
+  es = es.trim(); fr = fr.trim();
+  if (!es || !fr) { montrerToast('Remplissez les deux champs'); return false; }
+  const liste = chargerListePerso();
+  if (liste.some(m => m.es.toLowerCase() === es.toLowerCase())) {
+    montrerToast('Ce mot existe déjà'); return false;
+  }
+  liste.push({ id: Date.now(), es, fr });
+  sauvegarderListePerso(liste);
+  return true;
+}
+
+function importerMotsPerso(texte) {
+  const lignes = texte.split('\n').map(l => l.trim()).filter(Boolean);
+  let ajoutes = 0;
+  lignes.forEach(ligne => {
+    const parts = ligne.split(',');
+    if (parts.length >= 2) {
+      const es = parts[0].trim(), fr = parts.slice(1).join(',').trim();
+      if (ajouterMotPerso(es, fr)) ajoutes++;
+    }
+  });
+  return ajoutes;
+}
+
+function demarrerSessionCustom() {
+  const liste = chargerListePerso();
+  if (liste.length < 3) { montrerToast('Ajoutez au moins 3 mots !'); return; }
+
+  const cartes = liste.map(m => ({ es: m.es, fr: m.fr, ex: '' }));
+
+  state.themeActuel = '_custom';
+  state.niveauActuel = 'perso';
+  state.modeRevision = false;
+  state.cartes = melanger(cartes);
+  state.indexActuel = 0;
+  state.scoreOui = 0;
+  state.scoreNon = 0;
+  state.serie = 0;
+  state.maxSerie = 0;
+  state.estRetournee = false;
+  state.cartesRatees = [];
+
+  document.getElementById('session-theme-label').textContent = '📝 Ma liste';
+  document.getElementById('session-level-badge').textContent = 'Perso';
+
+  afficherEcran('screen-session');
+  afficherCarte();
+}
+
+function ouvrirListePerso() {
+  afficherListePerso();
+  afficherEcran('screen-custom');
+}
+
+
+// =============================================
 // SESSION PHRASES À TROUS
 // =============================================
 function genererPhrases(themeCle, niveauCle) {
@@ -1193,9 +1435,10 @@ function choisirMotPhrase(correct, ph) {
     if (phraseState.serie > phraseState.maxSerie) phraseState.maxSerie = phraseState.serie;
     const el = document.getElementById('phrases-score-serie');
     if (phraseState.serie >= 3) { el.classList.remove('hot'); void el.offsetWidth; el.classList.add('hot'); }
+    encouragerUtilisateur(phraseState.serie);
   } else {
     phraseState.scoreNon++;
-    phraseState.serie = 0;
+    phraseState.serie = 0; // reset silencieux
   }
 
   setTimeout(() => {
@@ -1324,6 +1567,16 @@ function afficherStats() {
 // INIT
 // =============================================
 document.addEventListener('DOMContentLoaded', () => {
+  // Restaurer variante régionale
+  const selectVariante = document.getElementById('variante-select');
+  selectVariante.value = varianteRegionale;
+  selectVariante.addEventListener('change', () => {
+    varianteRegionale = selectVariante.value;
+    localStorage.setItem(STORAGE_VARIANTE, varianteRegionale);
+    const noms = { 'es-ES': 'Castillan 🇪🇸', 'es-MX': 'Mexicain 🇲🇽', 'es-AR': 'Argentin 🇦🇷' };
+    montrerToast('Variante : ' + (noms[varianteRegionale] || varianteRegionale));
+  });
+
   // Restaurer theme
   const savedTheme = localStorage.getItem('espafacil_theme') || 'light';
   document.documentElement.setAttribute('data-theme', savedTheme);
@@ -1338,6 +1591,39 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('back-to-level').addEventListener('click', () => ouvrirNiveaux(state.themeActuel));
   document.getElementById('back-to-level-write').addEventListener('click', () => ouvrirNiveaux(state.themeActuel));
   document.getElementById('back-to-level-phrases').addEventListener('click', () => ouvrirNiveaux(phraseState.themeActuel || state.themeActuel));
+  document.getElementById('back-from-custom').addEventListener('click', () => {
+    afficherEcran('screen-home');
+    initAccueil();
+  });
+  document.getElementById('btn-open-custom').addEventListener('click', ouvrirListePerso);
+  document.getElementById('btn-custom-add').addEventListener('click', () => {
+    const es = document.getElementById('custom-input-es').value;
+    const fr = document.getElementById('custom-input-fr').value;
+    if (ajouterMotPerso(es, fr)) {
+      document.getElementById('custom-input-es').value = '';
+      document.getElementById('custom-input-fr').value = '';
+      afficherListePerso();
+    }
+  });
+  document.getElementById('custom-input-fr').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') document.getElementById('btn-custom-add').click();
+  });
+  document.getElementById('btn-custom-import').addEventListener('click', () => {
+    const texte = document.getElementById('custom-import-area').value;
+    const n = importerMotsPerso(texte);
+    document.getElementById('custom-import-area').value = '';
+    afficherListePerso();
+    montrerToast(n > 0 ? n + ' mot(s) importé(s) ✓' : 'Aucun mot valide trouvé');
+  });
+  document.getElementById('btn-custom-clear').addEventListener('click', () => {
+    if (confirm('Effacer toute la liste ?')) {
+      sauvegarderListePerso([]);
+      afficherListePerso();
+    }
+  });
+  document.getElementById('btn-custom-play').addEventListener('click', () => {
+    demarrerSessionCustom();
+  });
   document.getElementById('back-from-stats').addEventListener('click', () => {
     afficherEcran('screen-home');
     initAccueil();
@@ -1382,6 +1668,17 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('btn-home').addEventListener('click', () => {
     afficherEcran('screen-home');
     initAccueil();
+  });
+
+  // Bouton micro — flip session
+  document.getElementById('btn-mic').addEventListener('click', () => {
+    const mot = document.getElementById('es-word-display').textContent;
+    if (mot) lancerReconnaissance(mot, document.getElementById('btn-mic'));
+  });
+  // Bouton micro — phrases session
+  document.getElementById('btn-mic-phrases').addEventListener('click', () => {
+    const ph = phraseState.phrases[phraseState.indexActuel];
+    if (ph) lancerReconnaissance(ph.answer, document.getElementById('btn-mic-phrases'));
   });
 
   // Stats et theme
