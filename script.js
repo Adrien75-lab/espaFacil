@@ -618,6 +618,7 @@ function demarrerSession(niveauCle, cartesRevision) {
   state.indexActuel = 0;
   state.scoreOui = 0;
   state.scoreNon = 0;
+  state.serie = 0;
   state.estRetournee = false;
   state.cartesRatees = [];
 
@@ -648,6 +649,7 @@ function afficherCarte() {
   document.getElementById('progress-bar').style.width = (state.indexActuel / total * 100) + '%';
   document.getElementById('score-good').textContent = '✓ ' + state.scoreOui;
   document.getElementById('score-bad').textContent  = '✗ ' + state.scoreNon;
+  document.getElementById('score-serie').textContent = '🔥 ' + state.serie;
 
   // Afficher le mot espagnol
   document.getElementById('es-word-display').textContent = carte.es;
@@ -712,8 +714,13 @@ function choisirOption(correct, carte) {
 
   if (correct) {
     state.scoreOui++;
+    state.serie++;
+    // Animation feu si série >= 3
+    const elSerie = document.getElementById('score-serie');
+    if (state.serie >= 3) { elSerie.classList.remove('hot'); void elSerie.offsetWidth; elSerie.classList.add('hot'); }
   } else {
     state.scoreNon++;
+    state.serie = 0;
     state.cartesRatees.push(carte);
   }
 
@@ -1013,6 +1020,12 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('back-from-stats').addEventListener('click', () => {
     afficherEcran('screen-home');
     initAccueil();
+  });
+
+  // Bouton prononciation
+  document.getElementById('btn-prononcer').addEventListener('click', () => {
+    const mot = document.getElementById('es-word-display').textContent;
+    if (mot) prononcer(mot);
   });
 
   // Session ecriture
