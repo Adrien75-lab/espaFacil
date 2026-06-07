@@ -1,0 +1,640 @@
+// =============================================
+// EspaFácil — Logique principale
+// =============================================
+
+// --- BASE DE DONNÉES DES FLASHCARDS ---
+// Structure : thèmes > niveaux > cartes { es, fr, exemple }
+
+const DATA = {
+  nourriture: {
+    nom: "Nourriture",
+    icone: "🍎",
+    niveaux: {
+      debutant: [
+        { es: "el agua",     fr: "l'eau",          exemple: "Quiero agua, por favor." },
+        { es: "el pan",      fr: "le pain",         exemple: "El pan está caliente." },
+        { es: "la leche",    fr: "le lait",         exemple: "Me gusta la leche." },
+        { es: "el café",     fr: "le café",         exemple: "Un café, por favor." },
+        { es: "la manzana",  fr: "la pomme",        exemple: "La manzana es roja." },
+        { es: "el huevo",    fr: "l'œuf",           exemple: "Me gustan los huevos." },
+        { es: "el queso",    fr: "le fromage",      exemple: "El queso es delicioso." },
+        { es: "la naranja",  fr: "l'orange",        exemple: "La naranja es dulce." },
+        { es: "el arroz",    fr: "le riz",          exemple: "El arroz está listo." },
+        { es: "el tomate",   fr: "la tomate",       exemple: "El tomate es rojo." },
+      ],
+      intermediaire: [
+        { es: "la carne",      fr: "la viande",       exemple: "La carne está bien cocinada." },
+        { es: "el pescado",    fr: "le poisson",      exemple: "Me gusta el pescado fresco." },
+        { es: "las verduras",  fr: "les légumes",     exemple: "Las verduras son sanas." },
+        { es: "el postre",     fr: "le dessert",      exemple: "¿Hay postre hoy?" },
+        { es: "la sopa",       fr: "la soupe",        exemple: "La sopa está muy caliente." },
+        { es: "el desayuno",   fr: "le petit-déjeuner", exemple: "El desayuno es importante." },
+        { es: "la cena",       fr: "le dîner",        exemple: "La cena es a las nueve." },
+        { es: "el almuerzo",   fr: "le déjeuner",     exemple: "El almuerzo está listo." },
+        { es: "el zumo",       fr: "le jus",          exemple: "Un zumo de naranja, por favor." },
+        { es: "la mantequilla",fr: "le beurre",       exemple: "Pan con mantequilla." },
+      ],
+      avance: [
+        { es: "el aguacate",   fr: "l'avocat",        exemple: "El aguacate está maduro." },
+        { es: "la harina",     fr: "la farine",       exemple: "Necesito harina para el pastel." },
+        { es: "el vinagre",    fr: "le vinaigre",     exemple: "Una ensalada con vinagre." },
+        { es: "la mostaza",    fr: "la moutarde",     exemple: "¿Me pasas la mostaza?" },
+        { es: "el cordero",    fr: "l'agneau",        exemple: "El cordero está tierno." },
+        { es: "las gambas",    fr: "les crevettes",   exemple: "Las gambas a la plancha." },
+        { es: "el pimiento",   fr: "le poivron",      exemple: "El pimiento rojo es dulce." },
+        { es: "el ajo",        fr: "l'ail",           exemple: "Añade ajo a la salsa." },
+        { es: "la berenjena",  fr: "l'aubergine",     exemple: "La berenjena a la brasa." },
+        { es: "el caldo",      fr: "le bouillon",     exemple: "Un caldo de pollo caliente." },
+      ],
+    },
+  },
+  maison: {
+    nom: "Maison",
+    icone: "🏠",
+    niveaux: {
+      debutant: [
+        { es: "la casa",     fr: "la maison",       exemple: "Mi casa es grande." },
+        { es: "la puerta",   fr: "la porte",        exemple: "Abre la puerta." },
+        { es: "la ventana",  fr: "la fenêtre",      exemple: "La ventana está abierta." },
+        { es: "la silla",    fr: "la chaise",       exemple: "Siéntate en la silla." },
+        { es: "la mesa",     fr: "la table",        exemple: "La mesa es de madera." },
+        { es: "la cama",     fr: "le lit",          exemple: "La cama es cómoda." },
+        { es: "el baño",     fr: "la salle de bain",exemple: "El baño está limpio." },
+        { es: "la cocina",   fr: "la cuisine",      exemple: "La cocina es moderna." },
+        { es: "el suelo",    fr: "le sol",          exemple: "El suelo está frío." },
+        { es: "la pared",    fr: "le mur",          exemple: "La pared es blanca." },
+      ],
+      intermediaire: [
+        { es: "el armario",    fr: "l'armoire",       exemple: "La ropa está en el armario." },
+        { es: "el espejo",     fr: "le miroir",       exemple: "Me miro en el espejo." },
+        { es: "la lámpara",    fr: "la lampe",        exemple: "La lámpara da buena luz." },
+        { es: "el sofá",       fr: "le canapé",       exemple: "Me siento en el sofá." },
+        { es: "el frigorífico",fr: "le réfrigérateur",exemple: "El frigorífico está vacío." },
+        { es: "la ducha",      fr: "la douche",       exemple: "Me doy una ducha." },
+        { es: "el tejado",     fr: "le toit",         exemple: "El tejado es rojo." },
+        { es: "el garaje",     fr: "le garage",       exemple: "El coche está en el garaje." },
+        { es: "el pasillo",    fr: "le couloir",      exemple: "El pasillo es largo." },
+        { es: "la estantería", fr: "l'étagère",       exemple: "Los libros están en la estantería." },
+      ],
+      avance: [
+        { es: "el interruptor",fr: "l'interrupteur",  exemple: "Apaga el interruptor." },
+        { es: "el grifo",      fr: "le robinet",      exemple: "El grifo gotea." },
+        { es: "la persiana",   fr: "le volet",        exemple: "Baja la persiana." },
+        { es: "el enchufe",    fr: "la prise",        exemple: "El enchufe no funciona." },
+        { es: "la calefacción",fr: "le chauffage",    exemple: "Enciende la calefacción." },
+        { es: "el sótano",     fr: "la cave",         exemple: "El sótano está oscuro." },
+        { es: "el desván",     fr: "le grenier",      exemple: "Hay cajas en el desván." },
+        { es: "la baldosa",    fr: "le carrelage",    exemple: "La baldosa está rota." },
+        { es: "el umbral",     fr: "le seuil",        exemple: "Espera en el umbral." },
+        { es: "el buzón",      fr: "la boîte aux lettres", exemple: "Hay carta en el buzón." },
+      ],
+    },
+  },
+  transport: {
+    nom: "Transport",
+    icone: "🚗",
+    niveaux: {
+      debutant: [
+        { es: "el coche",    fr: "la voiture",      exemple: "Mi coche es azul." },
+        { es: "el bus",      fr: "le bus",          exemple: "El bus llega tarde." },
+        { es: "el tren",     fr: "le train",        exemple: "El tren sale a las ocho." },
+        { es: "el avión",    fr: "l'avion",         exemple: "El avión está en el cielo." },
+        { es: "la bici",     fr: "le vélo",         exemple: "Me voy en bici." },
+        { es: "el barco",    fr: "le bateau",       exemple: "El barco es grande." },
+        { es: "la calle",    fr: "la rue",          exemple: "Cruza la calle." },
+        { es: "el aeropuerto",fr: "l'aéroport",     exemple: "El aeropuerto está lejos." },
+        { es: "la estación", fr: "la gare",         exemple: "La estación es nueva." },
+        { es: "el taxi",     fr: "le taxi",         exemple: "Llamo un taxi." },
+      ],
+      intermediaire: [
+        { es: "el semáforo",   fr: "le feu tricolore", exemple: "Para en el semáforo rojo." },
+        { es: "la autopista",  fr: "l'autoroute",    exemple: "La autopista está cortada." },
+        { es: "el desvío",     fr: "la déviation",   exemple: "Hay un desvío aquí." },
+        { es: "el aparcamiento",fr: "le parking",    exemple: "Busco un aparcamiento." },
+        { es: "el tranvía",    fr: "le tramway",     exemple: "El tranvía es rápido." },
+        { es: "el metro",      fr: "le métro",       exemple: "Cojo el metro cada día." },
+        { es: "la gasolina",   fr: "l'essence",      exemple: "El coche necesita gasolina." },
+        { es: "el billete",    fr: "le billet",      exemple: "Compra el billete online." },
+        { es: "el puente",     fr: "le pont",        exemple: "El puente es muy largo." },
+        { es: "el andén",      fr: "le quai",        exemple: "El tren sale del andén 3." },
+      ],
+      avance: [
+        { es: "el embrague",   fr: "l'embrayage",    exemple: "Suelta el embrague despacio." },
+        { es: "el retrovisor", fr: "le rétroviseur", exemple: "Mira el retrovisor." },
+        { es: "el maletero",   fr: "le coffre",      exemple: "Las maletas van en el maletero." },
+        { es: "la rotonda",    fr: "le rond-point",  exemple: "Gira en la rotonda." },
+        { es: "el peaje",      fr: "le péage",       exemple: "Paga el peaje." },
+        { es: "la avería",     fr: "la panne",       exemple: "Tengo una avería en la autopista." },
+        { es: "el remolque",   fr: "la remorque",    exemple: "El camión lleva remolque." },
+        { es: "el carril",     fr: "la voie",        exemple: "Circula por el carril derecho." },
+        { es: "el arcén",      fr: "l'accotement",   exemple: "Para en el arcén." },
+        { es: "la señal",      fr: "le panneau",     exemple: "Respeta las señales." },
+      ],
+    },
+  },
+  famille: {
+    nom: "Famille",
+    icone: "👨‍👩‍👧",
+    niveaux: {
+      debutant: [
+        { es: "la madre",    fr: "la mère",         exemple: "Mi madre es simpática." },
+        { es: "el padre",    fr: "le père",         exemple: "Mi padre trabaja mucho." },
+        { es: "el hermano",  fr: "le frère",        exemple: "Tengo un hermano." },
+        { es: "la hermana",  fr: "la sœur",         exemple: "Mi hermana es pequeña." },
+        { es: "el abuelo",   fr: "le grand-père",   exemple: "El abuelo cuenta historias." },
+        { es: "la abuela",   fr: "la grand-mère",   exemple: "La abuela cocina bien." },
+        { es: "el hijo",     fr: "le fils",         exemple: "Mi hijo tiene cinco años." },
+        { es: "la hija",     fr: "la fille",        exemple: "La hija estudia mucho." },
+        { es: "el bebé",     fr: "le bébé",         exemple: "El bebé duerme." },
+        { es: "la familia",  fr: "la famille",      exemple: "Me encanta mi familia." },
+      ],
+      intermediaire: [
+        { es: "el tío",        fr: "l'oncle",         exemple: "Mi tío vive en Madrid." },
+        { es: "la tía",        fr: "la tante",        exemple: "La tía viene mañana." },
+        { es: "el primo",      fr: "le cousin",       exemple: "Mi primo es mayor." },
+        { es: "la prima",      fr: "la cousine",      exemple: "La prima es divertida." },
+        { es: "el sobrino",    fr: "le neveu",        exemple: "El sobrino tiene dos años." },
+        { es: "la sobrina",    fr: "la nièce",        exemple: "La sobrina es adorable." },
+        { es: "el marido",     fr: "le mari",         exemple: "Su marido es médico." },
+        { es: "la mujer",      fr: "la femme",        exemple: "Su mujer es profesora." },
+        { es: "los gemelos",   fr: "les jumeaux",     exemple: "Los gemelos son idénticos." },
+        { es: "el padrino",    fr: "le parrain",      exemple: "El padrino es generoso." },
+      ],
+      avance: [
+        { es: "el suegro",     fr: "le beau-père",    exemple: "Mi suegro es simpático." },
+        { es: "la suegra",     fr: "la belle-mère",   exemple: "La suegra cocina bien." },
+        { es: "el cuñado",     fr: "le beau-frère",   exemple: "Mi cuñado es ingeniero." },
+        { es: "la nuera",      fr: "la belle-fille",  exemple: "La nuera llegó ayer." },
+        { es: "el yerno",      fr: "le gendre",       exemple: "El yerno es muy amable." },
+        { es: "el bisabuelo",  fr: "l'arrière-grand-père", exemple: "El bisabuelo tiene 95 años." },
+        { es: "el heredero",   fr: "l'héritier",      exemple: "Es el heredero de la empresa." },
+        { es: "el huérfano",   fr: "l'orphelin",      exemple: "El niño es huérfano." },
+        { es: "el tuturo",     fr: "le tuteur",       exemple: "El tutor firma los papeles." },
+        { es: "el cónyuge",    fr: "le conjoint",     exemple: "El cónyuge debe firmar." },
+      ],
+    },
+  },
+  couleurs: {
+    nom: "Couleurs & Chiffres",
+    icone: "🎨",
+    niveaux: {
+      debutant: [
+        { es: "rojo",        fr: "rouge",           exemple: "El tomate es rojo." },
+        { es: "azul",        fr: "bleu",            exemple: "El cielo es azul." },
+        { es: "verde",       fr: "vert",            exemple: "La hierba es verde." },
+        { es: "amarillo",    fr: "jaune",           exemple: "El sol es amarillo." },
+        { es: "blanco",      fr: "blanc",           exemple: "La nieve es blanca." },
+        { es: "negro",       fr: "noir",            exemple: "La noche es negra." },
+        { es: "uno",         fr: "un",              exemple: "Tengo un gato." },
+        { es: "dos",         fr: "deux",            exemple: "Dos más dos son cuatro." },
+        { es: "tres",        fr: "trois",           exemple: "Hay tres personas." },
+        { es: "cuatro",      fr: "quatre",          exemple: "Una mesa tiene cuatro patas." },
+      ],
+      intermediaire: [
+        { es: "naranja",       fr: "orange",          exemple: "La naranja es naranja." },
+        { es: "morado",        fr: "violet",          exemple: "Las uvas son moradas." },
+        { es: "rosa",          fr: "rose",            exemple: "Las flores son rosas." },
+        { es: "gris",          fr: "gris",            exemple: "El elefante es gris." },
+        { es: "marrón",        fr: "marron",          exemple: "El oso es marrón." },
+        { es: "diez",          fr: "dix",             exemple: "Tengo diez dedos." },
+        { es: "veinte",        fr: "vingt",           exemple: "Veinte euros, por favor." },
+        { es: "cincuenta",     fr: "cinquante",       exemple: "Cincuenta personas." },
+        { es: "cien",          fr: "cent",            exemple: "Cien kilómetros." },
+        { es: "mil",           fr: "mille",           exemple: "Mil personas en el estadio." },
+      ],
+      avance: [
+        { es: "turquesa",      fr: "turquoise",       exemple: "El mar es turquesa." },
+        { es: "burdeos",       fr: "bordeaux",        exemple: "Una camisa burdeos." },
+        { es: "dorado",        fr: "doré",            exemple: "Un anillo dorado." },
+        { es: "plateado",      fr: "argenté",         exemple: "Un collar plateado." },
+        { es: "beige",         fr: "beige",           exemple: "Un abrigo beige." },
+        { es: "un millón",     fr: "un million",      exemple: "Un millón de personas." },
+        { es: "el doble",      fr: "le double",       exemple: "El doble de lo esperado." },
+        { es: "la mitad",      fr: "la moitié",       exemple: "La mitad del pastel." },
+        { es: "ambos",         fr: "les deux / tous les deux", exemple: "Ambos tienen razón." },
+        { es: "el triple",     fr: "le triple",       exemple: "Cuesta el triple." },
+      ],
+    },
+  },
+  expressions: {
+    nom: "Expressions courantes",
+    icone: "💬",
+    niveaux: {
+      debutant: [
+        { es: "hola",        fr: "bonjour / salut",  exemple: "¡Hola! ¿Cómo estás?" },
+        { es: "gracias",     fr: "merci",             exemple: "Muchas gracias." },
+        { es: "por favor",   fr: "s'il vous plaît",  exemple: "Un café, por favor." },
+        { es: "adiós",       fr: "au revoir",         exemple: "¡Adiós! Hasta luego." },
+        { es: "sí",          fr: "oui",               exemple: "Sí, claro." },
+        { es: "no",          fr: "non",               exemple: "No, gracias." },
+        { es: "¿cómo estás?",fr: "comment vas-tu ?", exemple: "Hola, ¿cómo estás?" },
+        { es: "bien",        fr: "bien",              exemple: "Estoy muy bien." },
+        { es: "lo siento",   fr: "je suis désolé",   exemple: "Lo siento mucho." },
+        { es: "de nada",     fr: "de rien",           exemple: "—Gracias. —De nada." },
+      ],
+      intermediaire: [
+        { es: "¿Dónde está?",  fr: "Où est-ce ?",      exemple: "¿Dónde está el baño?" },
+        { es: "¿Cuánto cuesta?",fr: "Combien ça coûte ?", exemple: "¿Cuánto cuesta esto?" },
+        { es: "No entiendo",   fr: "Je ne comprends pas", exemple: "No entiendo, ¿puede repetir?" },
+        { es: "Más despacio",  fr: "Plus lentement",   exemple: "Hable más despacio, por favor." },
+        { es: "¿Habla francés?",fr: "Parlez-vous français ?", exemple: "¿Habla francés, por favor?" },
+        { es: "Me llamo...",   fr: "Je m'appelle...",  exemple: "Me llamo María." },
+        { es: "¿Cómo se llama?",fr: "Comment vous appelez-vous ?", exemple: "¿Cómo se llama usted?" },
+        { es: "Tengo hambre",  fr: "J'ai faim",        exemple: "Tengo mucha hambre." },
+        { es: "Tengo sed",     fr: "J'ai soif",        exemple: "Tengo sed, ¿hay agua?" },
+        { es: "Estoy perdido", fr: "Je suis perdu",    exemple: "Estoy perdido, ¿puede ayudarme?" },
+      ],
+      avance: [
+        { es: "A ver si nos vemos", fr: "On se voit bientôt j'espère", exemple: "¡A ver si nos vemos pronto!" },
+        { es: "No hay de qué",  fr: "Il n'y a pas de quoi", exemple: "—Gracias. —No hay de qué." },
+        { es: "¡Qué tal!",      fr: "Ça va ?",          exemple: "¡Eh! ¿Qué tal todo?" },
+        { es: "Ahora mismo",    fr: "Tout de suite / maintenant", exemple: "Voy ahora mismo." },
+        { es: "A propósito",    fr: "À propos",         exemple: "A propósito, ¿viste la película?" },
+        { es: "Sin embargo",    fr: "Cependant / néanmoins", exemple: "Es difícil, sin embargo posible." },
+        { es: "Desde luego",    fr: "Bien sûr / évidemment", exemple: "Desde luego que vengo." },
+        { es: "En cuanto a",    fr: "En ce qui concerne", exemple: "En cuanto a tu pregunta…" },
+        { es: "Más o menos",    fr: "Plus ou moins",    exemple: "Son más o menos iguales." },
+        { es: "Por supuesto",   fr: "Bien sûr",         exemple: "¡Por supuesto que sí!" },
+      ],
+    },
+  },
+};
+
+// --- CONFIGURATION DES NIVEAUX ---
+const NIVEAUX_CONFIG = {
+  debutant:      { nom: "Débutant",      icone: "🌱", classe: "easy",   desc: "Vocabulaire essentiel" },
+  intermediaire: { nom: "Intermédiaire", icone: "🔥", classe: "medium", desc: "Élargissez votre vocabulaire" },
+  avance:        { nom: "Avancé",        icone: "⚡", classe: "hard",   desc: "Expressions complexes" },
+};
+
+// Niveau précédent requis pour déverrouiller chaque niveau
+const PREREQUIS = {
+  debutant:      null,          // toujours débloqué
+  intermediaire: "debutant",
+  avance:        "intermediaire",
+};
+
+// Retourne true si le niveau est accessible pour ce thème
+function estDebloque(themeCle, niveauCle) {
+  const prerequis = PREREQUIS[niveauCle];
+  if (!prerequis) return true; // Débutant toujours ouvert
+  const prog = chargerProgression();
+  return !!(prog[themeCle]?.[prerequis]); // débloqué si le niveau précédent a été joué au moins une fois
+}
+
+// =============================================
+// ÉTAT DE L'APPLICATION
+// =============================================
+let state = {
+  themeActuel: null,
+  niveauActuel: null,
+  cartes: [],
+  indexActuel: 0,
+  scoreOui: 0,
+  scoreNon: 0,
+  estRetournee: false,
+};
+
+// =============================================
+// GESTION DU localStorage
+// =============================================
+const STORAGE_KEY = "espafacil_progress";
+
+function chargerProgression() {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+  } catch {
+    return {};
+  }
+}
+
+function sauvegarderProgression(theme, niveau, bon, total) {
+  const prog = chargerProgression();
+  if (!prog[theme]) prog[theme] = {};
+  prog[theme][niveau] = { bon, total, date: new Date().toLocaleDateString("fr-FR") };
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(prog));
+}
+
+// =============================================
+// NAVIGATION ENTRE ÉCRANS
+// =============================================
+function afficherEcran(id) {
+  document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
+  document.getElementById(id).classList.add("active");
+  window.scrollTo(0, 0);
+}
+
+// =============================================
+// ÉCRAN 1 — ACCUEIL
+// =============================================
+function initAccueil() {
+  const prog = chargerProgression();
+  const grid = document.getElementById("theme-grid");
+  grid.innerHTML = "";
+
+  // Afficher le résumé de progression si elle existe
+  const themes = Object.keys(prog);
+  const summaryEl = document.getElementById("progress-summary");
+  if (themes.length > 0) {
+    summaryEl.classList.add("visible");
+    const tags = Object.entries(prog).map(([theme, niveaux]) => {
+      const total = Object.values(niveaux).reduce((a, n) => a + n.total, 0);
+      const bon   = Object.values(niveaux).reduce((a, n) => a + n.bon, 0);
+      const pct   = Math.round((bon / total) * 100);
+      return `<span class="progress-tag">${DATA[theme].icone} ${DATA[theme].nom} — ${pct}%</span>`;
+    }).join("");
+    summaryEl.innerHTML = `<h3>Votre progression</h3><div class="progress-tags">${tags}</div>`;
+  } else {
+    summaryEl.classList.remove("visible");
+  }
+
+  // Générer les cartes de thèmes
+  Object.entries(DATA).forEach(([cle, theme]) => {
+    const progTheme = prog[cle] || {};
+    const totalCartes = Object.values(theme.niveaux).reduce((a, n) => a + n.length, 0);
+    const cartesVues  = Object.values(progTheme).reduce((a, n) => a + n.total, 0);
+    const pct = totalCartes > 0 ? Math.round((cartesVues / totalCartes) * 100) : 0;
+
+    const card = document.createElement("div");
+    card.className = "theme-card";
+    card.innerHTML = `
+      <span class="theme-card-icon">${theme.icone}</span>
+      <p class="theme-card-name">${theme.nom}</p>
+      <p class="theme-card-count">${totalCartes} cartes</p>
+      <div class="theme-card-progress">
+        <div class="theme-card-progress-fill" style="width: ${pct}%"></div>
+      </div>
+    `;
+    card.addEventListener("click", () => ouvrirNiveaux(cle));
+    grid.appendChild(card);
+  });
+}
+
+// =============================================
+// ÉCRAN 2 — SÉLECTION DU NIVEAU
+// =============================================
+function ouvrirNiveaux(themeCle) {
+  state.themeActuel = themeCle;
+  const theme = DATA[themeCle];
+  const prog  = chargerProgression();
+
+  document.getElementById("level-theme-icon").textContent = theme.icone;
+  document.getElementById("level-theme-name").textContent = theme.nom;
+
+  const container = document.getElementById("level-cards");
+  container.innerHTML = "";
+
+  Object.entries(NIVEAUX_CONFIG).forEach(([cle, config]) => {
+    const saved    = prog[themeCle]?.[cle];
+    const nbCartes = theme.niveaux[cle].length;
+    const debloque = estDebloque(themeCle, cle);
+
+    // Contenu de droite : score si joué, sinon nb cartes ou cadenas
+    let metaHtml;
+    if (!debloque) {
+      const prerequisNom = NIVEAUX_CONFIG[PREREQUIS[cle]].nom;
+      metaHtml = `<div class="level-card-locked-msg">Terminez « ${prerequisNom} »</div>`;
+    } else if (saved) {
+      metaHtml = `<div class="level-card-score">${saved.bon}/${saved.total} correctes</div>
+                  <div class="level-card-cards">Dernière session : ${saved.date}</div>`;
+    } else {
+      metaHtml = `<div class="level-card-cards">${nbCartes} cartes</div>`;
+    }
+
+    const card = document.createElement("div");
+    card.className = "level-card" + (debloque ? "" : " level-card--locked");
+    card.innerHTML = `
+      <div class="level-card-left">
+        <div class="level-badge ${config.classe}">${debloque ? config.icone : "🔒"}</div>
+        <div>
+          <div class="level-card-name">${config.nom}</div>
+          <div class="level-card-desc">${config.desc}</div>
+        </div>
+      </div>
+      <div class="level-card-meta">${metaHtml}</div>
+    `;
+
+    if (debloque) {
+      card.addEventListener("click", () => demarrerSession(cle));
+    }
+    container.appendChild(card);
+  });
+
+  afficherEcran("screen-level");
+}
+
+// =============================================
+// ÉCRAN 3 — SESSION DE FLASHCARDS
+// =============================================
+function demarrerSession(niveauCle) {
+  state.niveauActuel = niveauCle;
+  const theme  = DATA[state.themeActuel];
+  const cartes = [...theme.niveaux[niveauCle]];
+
+  // Mélanger les cartes
+  for (let i = cartes.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [cartes[i], cartes[j]] = [cartes[j], cartes[i]];
+  }
+
+  state.cartes       = cartes;
+  state.indexActuel  = 0;
+  state.scoreOui     = 0;
+  state.scoreNon     = 0;
+  state.estRetournee = false;
+
+  // Labels de session
+  document.getElementById("session-theme-label").textContent = theme.icone + " " + theme.nom;
+  document.getElementById("session-level-badge").textContent = NIVEAUX_CONFIG[niveauCle].nom;
+
+  afficherEcran("screen-session");
+  afficherCarte();
+}
+
+function afficherCarte() {
+  const carte = state.cartes[state.indexActuel];
+  const total = state.cartes.length;
+  const index = state.indexActuel;
+
+  // Réinitialiser le retournement
+  const flashcard = document.getElementById("flashcard");
+  flashcard.classList.remove("is-flipped");
+  state.estRetournee = false;
+
+  // Cacher les boutons
+  document.getElementById("answer-buttons").classList.remove("visible");
+
+  // Remplir le contenu
+  document.getElementById("card-word-front").textContent = carte.es;
+  document.getElementById("card-word-back").textContent  = carte.fr;
+  document.getElementById("card-example").textContent    = carte.exemple;
+
+  // Compteur et barre
+  document.getElementById("card-counter").textContent = `Carte ${index + 1} / ${total}`;
+  document.getElementById("progress-bar").style.width = `${(index / total) * 100}%`;
+
+  // Score
+  document.getElementById("score-good").textContent = `✓ ${state.scoreOui}`;
+  document.getElementById("score-bad").textContent  = `✗ ${state.scoreNon}`;
+}
+
+function retournerCarte() {
+  if (state.estRetournee) return;
+  state.estRetournee = true;
+  document.getElementById("flashcard").classList.add("is-flipped");
+
+  // Afficher les boutons après un délai (laisse l'animation se terminer)
+  setTimeout(() => {
+    document.getElementById("answer-buttons").classList.add("visible");
+  }, 300);
+}
+
+function repondre(savait) {
+  if (savait) {
+    state.scoreOui++;
+  } else {
+    state.scoreNon++;
+  }
+
+  state.indexActuel++;
+
+  if (state.indexActuel >= state.cartes.length) {
+    terminerSession();
+  } else {
+    afficherCarte();
+  }
+}
+
+// =============================================
+// ÉCRAN 4 — RÉSULTATS
+// =============================================
+function terminerSession() {
+  const total = state.cartes.length;
+  const bon   = state.scoreOui;
+  const pct   = Math.round((bon / total) * 100);
+
+  // Sauvegarder la progression
+  sauvegarderProgression(state.themeActuel, state.niveauActuel, bon, total);
+
+  // Choisir l'emoji et le message selon le score
+  let emoji, titre, sous;
+  if (pct >= 90) {
+    emoji = "🏆"; titre = "Excellent !";        sous = "Vous maîtrisez parfaitement ce niveau.";
+  } else if (pct >= 70) {
+    emoji = "🌟"; titre = "Très bien !";         sous = "Encore un peu de pratique et ce sera parfait.";
+  } else if (pct >= 50) {
+    emoji = "💪"; titre = "Bon effort !";        sous = "Continuez à pratiquer, vous progressez.";
+  } else {
+    emoji = "📚"; titre = "À retravailler";      sous = "Recommencez ce niveau pour consolider les bases.";
+  }
+
+  document.getElementById("results-emoji").textContent    = emoji;
+  document.getElementById("results-title").textContent    = titre;
+  document.getElementById("results-subtitle").textContent = sous;
+  document.getElementById("result-good").textContent  = bon;
+  document.getElementById("result-bad").textContent   = total - bon;
+  document.getElementById("result-score").textContent = pct + "%";
+
+  // Barre finale à 100%
+  document.getElementById("progress-bar").style.width = "100%";
+
+  afficherEcran("screen-results");
+}
+
+// =============================================
+// INITIALISATION DES ÉVÉNEMENTS
+// =============================================
+document.addEventListener("DOMContentLoaded", () => {
+
+  // Accueil
+  initAccueil();
+
+  // Retour vers l'accueil depuis la sélection de niveau
+  document.getElementById("back-to-home").addEventListener("click", () => {
+    afficherEcran("screen-home");
+    initAccueil();
+  });
+
+  // Retour vers la sélection de niveau depuis la session
+  document.getElementById("back-to-level").addEventListener("click", () => {
+    ouvrirNiveaux(state.themeActuel);
+  });
+
+  // Cliquer sur la carte pour la retourner
+  document.getElementById("flashcard-scene").addEventListener("click", retournerCarte);
+
+  // Boutons de réponse
+  document.getElementById("btn-knew").addEventListener("click",  () => repondre(true));
+  document.getElementById("btn-didnt").addEventListener("click", () => repondre(false));
+
+  // Résultats — recommencer
+  document.getElementById("btn-retry").addEventListener("click", () => {
+    demarrerSession(state.niveauActuel);
+  });
+
+  // Résultats — accueil
+  document.getElementById("btn-home").addEventListener("click", () => {
+    afficherEcran("screen-home");
+    initAccueil();
+  });
+});ion de niveau
+  document.getElementById("back-to-home").addEventListener("click", () => {
+    afficherEcran("screen-home");
+    initAccueil(); // rafraîchit la progression
+  });
+
+  // Retour vers la sélection de niveau depuis la session
+  document.getElementById("back-to-level").addEventListener("click", () => {
+    ouvrirNiveaux(state.themeActuel);
+  });
+
+  // Cliquer sur la carte pour la retourner
+  document.getElementById("flashcard-scene").addEventListener("click", retournerCarte);
+
+  // Boutons de réponse
+  document.getElementById("btn-knew").addEventListener("click",  () => repondre(true));
+  document.getElementById("btn-didnt").addEventListener("click", () => repondre(false));
+
+  // Résultats — recommencer
+  document.getElementById("btn-retry").addEventListener("click", () => {
+    demarrerSession(state.niveauActuel);
+  });
+
+  // Résultats — accueil
+  document.getElementById("btn-home").addEventListener("click", () => {
+    afficherEcran("screen-home");
+    initAccueil();
+  });
+});
+ion de niveau
+  document.getElementById("back-to-home").addEventListener("click", () => {
+    afficherEcran("screen-home");
+    initAccueil();
+  });
+
+  // Retour vers la selection de niveau depuis la session
+  document.getElementById("back-to-level").addEventListener("click", () => {
+    ouvrirNiveaux(state.themeActuel);
+  });
+
+  // Cliquer sur la carte pour la retourner
+  document.getElementById("flashcard-scene").addEventListener("click", retournerCarte);
+
+  // Boutons de reponse
+  document.getElementById("btn-knew").addEventListener("click",  () => repondre(true));
+  document.getElementById("btn-didnt").addEventListener("click", () => repondre(false));
+
+  // Resultats - recommencer
+  document.getElementById("btn-retry").addEventListener("click", () => {
+    demarrerSession(state.niveauActuel);
+  });
+
+  // Resultats - accueil
+  document.getElementById("btn-home").addEventListener("click", () => {
+    afficherEcran("screen-home");
+    initAccueil();
+  });
+});
+
+  });
+});

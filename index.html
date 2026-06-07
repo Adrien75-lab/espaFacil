@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EspaFácil — Apprendre l'espagnol</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ÉCRAN 1 : ACCUEIL -->
+  <div id="screen-home" class="screen active">
+    <div class="home-container">
+      <div class="logo">
+        <span class="logo-icon">🇪🇸</span>
+        <h1>EspaFácil</h1>
+        <p class="tagline">Apprenez l'espagnol, carte par carte</p>
+      </div>
+      <div class="progress-summary" id="progress-summary"></div>
+      <h2 class="section-title">Choisissez un thème</h2>
+      <div class="theme-grid" id="theme-grid"></div>
+    </div>
+  </div>
+
+  <!-- ÉCRAN 2 : SÉLECTION DU NIVEAU -->
+  <div id="screen-level" class="screen">
+    <div class="level-container">
+      <button class="btn-back" id="back-to-home">← Retour</button>
+      <div class="level-header">
+        <span class="level-theme-icon" id="level-theme-icon"></span>
+        <h2 id="level-theme-name"></h2>
+      </div>
+      <p class="level-subtitle">Choisissez votre niveau</p>
+      <div class="level-cards" id="level-cards"></div>
+    </div>
+  </div>
+
+  <!-- ÉCRAN 3 : SESSION DE FLASHCARDS -->
+  <div id="screen-session" class="screen">
+    <div class="session-container">
+      <div class="session-header">
+        <button class="btn-back" id="back-to-level">← Quitter</button>
+        <div class="session-info">
+          <span id="session-theme-label"></span>
+          <span class="session-level-badge" id="session-level-badge"></span>
+        </div>
+        <div class="session-score">
+          <span class="score-good" id="score-good">✓ 0</span>
+          <span class="score-bad" id="score-bad">✗ 0</span>
+        </div>
+      </div>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      <p class="card-counter" id="card-counter">Carte 1 / 10</p>
+      <div class="flashcard-scene" id="flashcard-scene">
+        <div class="flashcard" id="flashcard">
+          <div class="flashcard-face flashcard-front">
+            <p class="card-lang">🇪🇸 Espagnol</p>
+            <p class="card-word" id="card-word-front"></p>
+            <p class="card-hint">Cliquez pour retourner</p>
+          </div>
+          <div class="flashcard-face flashcard-back">
+            <p class="card-lang">🇫🇷 Français</p>
+            <p class="card-word" id="card-word-back"></p>
+            <p class="card-example" id="card-example"></p>
+          </div>
+        </div>
+      </div>
+      <div class="answer-buttons" id="answer-buttons">
+        <button class="btn-knew" id="btn-knew">✓ Je savais</button>
+        <button class="btn-didnt" id="btn-didnt">✗ Je ne savais pas</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ÉCRAN 4 : RÉSULTATS -->
+  <div id="screen-results" class="screen">
+    <div class="results-container">
+      <div class="results-emoji" id="results-emoji"></div>
+      <h2 class="results-title" id="results-title"></h2>
+      <p class="results-subtitle" id="results-subtitle"></p>
+      <div class="results-stats">
+        <div class="stat-box stat-good">
+          <span class="stat-number" id="result-good">0</span>
+          <span class="stat-label">Connues</span>
+        </div>
+        <div class="stat-box stat-bad">
+          <span class="stat-number" id="result-bad">0</span>
+          <span class="stat-label">A revoir</span>
+        </div>
+        <div class="stat-box stat-score">
+          <span class="stat-number" id="result-score">0%</span>
+          <span class="stat-label">Score</span>
+        </div>
+      </div>
+      <div class="results-actions">
+        <button class="btn-primary" id="btn-retry">Recommencer</button>
+        <button class="btn-secondary" id="btn-home">Accueil</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
