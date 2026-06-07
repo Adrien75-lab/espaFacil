@@ -157,7 +157,7 @@ body {
 .level-card-cards { font-size: 0.75rem; color: var(--text-light); }
 .level-card-locked-msg { font-size: 0.75rem; color: var(--text-light); font-style: italic; max-width: 100px; text-align: right; line-height: 1.3; }
 
-/* SESSION FLIP */
+/* SESSION QCM */
 .session-container { width: 100%; max-width: 540px; padding: 24px 20px 60px; display: flex; flex-direction: column; align-items: center; }
 .session-header { width: 100%; display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
 .session-info { display: flex; align-items: center; gap: 8px; font-size: 0.88rem; color: var(--text-light); font-weight: 600; }
@@ -168,42 +168,109 @@ body {
 
 .progress-bar-wrap { width: 100%; height: 6px; background: var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 8px; }
 .progress-bar { height: 100%; background: linear-gradient(90deg, var(--purple), var(--purple-light)); border-radius: 10px; transition: width 0.4s ease; width: 0%; }
-.card-counter { font-size: 0.82rem; color: var(--text-light); margin-bottom: 28px; align-self: flex-end; }
+.card-counter { font-size: 0.82rem; color: var(--text-light); margin-bottom: 20px; align-self: flex-end; }
 
-.flashcard-scene { width: 100%; max-width: 420px; height: 240px; perspective: 1000px; cursor: pointer; margin-bottom: 28px; }
-.flashcard { width: 100%; height: 100%; position: relative; transform-style: preserve-3d; transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1); border-radius: var(--radius); }
-.flashcard.is-flipped { transform: rotateY(180deg); }
-.flashcard-face { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: var(--radius); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; box-shadow: var(--shadow); text-align: center; }
-.flashcard-front { background: var(--card-bg); border: 2px solid var(--border); }
-.flashcard-back { background: linear-gradient(135deg, var(--purple), var(--purple-dark)); color: white; transform: rotateY(180deg); border: none; }
-.card-lang { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.5px; opacity: 0.6; margin-bottom: 10px; text-transform: uppercase; }
-.flashcard-back .card-lang { opacity: 0.8; }
-.card-word { font-size: 2rem; font-weight: 800; letter-spacing: -0.5px; line-height: 1.2; }
-.card-hint { font-size: 0.78rem; color: var(--text-light); margin-top: 14px; font-style: italic; }
-.card-example { font-size: 0.85rem; opacity: 0.85; margin-top: 10px; font-style: italic; }
-
-/* Bouton prononciation sur la carte */
-.btn-pronounce {
-  margin-top: 12px;
-  background: rgba(255,255,255,0.2);
-  border: 1px solid rgba(255,255,255,0.4);
-  border-radius: 8px;
-  color: white;
-  font-size: 0.82rem;
-  padding: 5px 12px;
-  cursor: pointer;
-  transition: var(--transition);
+/* Carte QCM */
+.qcm-card {
+  width: 100%;
+  max-width: 460px;
+  background: var(--card-bg);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px 24px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  margin-bottom: 20px;
 }
-.btn-pronounce:hover { background: rgba(255,255,255,0.3); }
+.qcm-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--text-light);
+  margin-bottom: 12px;
+}
+.qcm-word {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.qcm-example {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  font-style: italic;
+  min-height: 20px;
+  transition: opacity 0.3s;
+}
+.qcm-example.hidden { opacity: 0; }
 
-.answer-buttons { display: flex; gap: 14px; width: 100%; max-width: 420px; opacity: 0; pointer-events: none; transition: opacity 0.3s ease; }
-.answer-buttons.visible { opacity: 1; pointer-events: all; }
-.answer-buttons.revealing { pointer-events: none; opacity: 0.6; }
-.btn-knew { flex: 1; padding: 14px; background: var(--green); color: white; border: none; border-radius: 14px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: var(--transition); }
-.btn-knew:hover { background: #3d9e70; transform: translateY(-2px); }
-.btn-didnt { flex: 1; padding: 14px; background: #FEE8E8; color: var(--red); border: none; border-radius: 14px; font-size: 1rem; font-weight: 700; cursor: pointer; transition: var(--transition); }
-[data-theme="dark"] .btn-didnt { background: #3a1e1e; }
-.btn-didnt:hover { background: #fdd5d5; transform: translateY(-2px); }
+/* Boutons choix QCM */
+.qcm-choices {
+  width: 100%;
+  max-width: 460px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.qcm-btn {
+  width: 100%;
+  padding: 15px 20px;
+  background: var(--card-bg);
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.2s, background 0.2s, transform 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.qcm-btn:hover:not(:disabled) {
+  border-color: var(--purple-light);
+  background: var(--bg);
+  transform: translateX(4px);
+}
+.qcm-btn .choice-letter {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--bg);
+  border: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.78rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  color: var(--text-light);
+}
+.qcm-btn.correct {
+  border-color: var(--green);
+  background: #f0fdf4;
+}
+[data-theme="dark"] .qcm-btn.correct { background: #1a2f1f; }
+.qcm-btn.correct .choice-letter {
+  background: var(--green);
+  border-color: var(--green);
+  color: white;
+}
+.qcm-btn.wrong {
+  border-color: var(--red);
+  background: #fff5f5;
+}
+[data-theme="dark"] .qcm-btn.wrong { background: #2f1a1a; }
+.qcm-btn.wrong .choice-letter {
+  background: var(--red);
+  border-color: var(--red);
+  color: white;
+}
+.qcm-btn:disabled { cursor: default; }
 
 /* SESSION ECRITURE */
 .write-card {

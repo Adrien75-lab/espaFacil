@@ -898,6 +898,8 @@ function setMode(mode) {
   document.getElementById('mode-flip').classList.toggle('active', mode === 'flip');
   document.getElementById('mode-write').classList.toggle('active', mode === 'write');
 }
+// Alias pour l'HTML onclick
+window.setMode = setMode;
 
 function toggleTheme() {
   const html = document.documentElement;
@@ -988,9 +990,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initAccueil();
   });
 
-  // Session flip - cliquer carte n'a plus d'effet, les boutons sont actifs dès le debut
-  document.getElementById('btn-knew').addEventListener('click', () => repondre(true));
-  document.getElementById('btn-didnt').addEventListener('click', () => repondre(false));
+  // Session QCM - les boutons sont générés dynamiquement dans afficherCarte()
 
   // Session ecriture
   document.getElementById('btn-validate').addEventListener('click', validerEcriture);
@@ -1007,6 +1007,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modeJeu === 'write') demarrerSessionEcriture(writeState.niveauActuel);
     else demarrerSession(state.niveauActuel);
   });
+  // Note: btn-review pour QCM utilise state.cartesRatees
   document.getElementById('btn-review').addEventListener('click', () => {
     if (modeJeu === 'write') {
       writeState.cartes = melanger(writeState.cartesRatees);
