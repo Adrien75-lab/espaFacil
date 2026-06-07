@@ -434,525 +434,2177 @@ const LANG_CONFIGS = {
 const LANG_THEMES = {
   'es': DATA_ES_ORIGINAL,
   'en': {
-    vocabulaire: { nom: 'Vocabulary', icone: '📚',
+    essentiel: { nom: 'Essentiel', icone: '🌟',
       debutant: [
         { es: 'hello', fr: 'bonjour', ex: 'Hello, how are you?' },
         { es: 'goodbye', fr: 'au revoir', ex: 'Goodbye, see you soon!' },
-        { es: 'yes', fr: 'oui', ex: 'Yes, please.' },
+        { es: 'please', fr: "s'il vous plaît", ex: 'Please help me.' },
+        { es: 'thank you', fr: 'merci', ex: 'Thank you very much!' },
+        { es: 'yes', fr: 'oui', ex: 'Yes, I understand.' },
         { es: 'no', fr: 'non', ex: 'No, thank you.' },
-        { es: 'water', fr: "l'eau", ex: 'I drink water every day.' },
-        { es: 'bread', fr: 'le pain', ex: 'I eat bread for breakfast.' },
-        { es: 'house', fr: 'la maison', ex: 'My house is very big.' },
-        { es: 'cat', fr: 'le chat', ex: 'The cat sleeps on the sofa.' },
-        { es: 'book', fr: 'le livre', ex: 'I read a book every night.' },
-        { es: 'friend', fr: "l'ami", ex: 'My friend is very kind.' }
+        { es: 'excuse me', fr: 'excusez-moi', ex: 'Excuse me, where is the station?' },
+        { es: 'sorry', fr: 'désolé', ex: 'I am sorry for being late.' },
+        { es: 'help', fr: "l'aide", ex: 'I need help, please.' },
+        { es: 'friend', fr: "l'ami", ex: 'She is my best friend.' }
       ],
       intermediaire: [
-        { es: 'city', fr: 'la ville', ex: 'The city is very lively.' },
-        { es: 'school', fr: "l'école", ex: 'I go to school every morning.' },
-        { es: 'money', fr: "l'argent", ex: 'I need money to travel.' },
-        { es: 'car', fr: 'la voiture', ex: 'My car is red.' },
-        { es: 'beautiful', fr: 'beau', ex: 'The sunset is beautiful.' },
-        { es: 'happy', fr: 'heureux', ex: 'I am happy today.' },
-        { es: 'work', fr: 'le travail', ex: 'Work is important.' },
-        { es: 'time', fr: 'le temps', ex: 'Time flies quickly.' },
-        { es: 'eat', fr: 'manger', ex: 'I eat lunch at noon.' },
-        { es: 'sleep', fr: 'dormir', ex: 'I sleep eight hours a night.' }
+        { es: 'understand', fr: 'comprendre', ex: 'Do you understand me?' },
+        { es: 'speak', fr: 'parler', ex: 'I speak a little English.' },
+        { es: 'learn', fr: 'apprendre', ex: 'I want to learn English.' },
+        { es: 'repeat', fr: 'répéter', ex: 'Can you repeat that, please?' },
+        { es: 'slowly', fr: 'lentement', ex: 'Please speak slowly.' },
+        { es: 'know', fr: 'savoir', ex: 'I do not know the answer.' },
+        { es: 'need', fr: 'avoir besoin de', ex: 'I need a moment.' },
+        { es: 'want', fr: 'vouloir', ex: 'I want to try.' }
       ],
       avance: [
-        { es: 'journey', fr: 'le voyage', ex: 'A long journey awaits us.' },
-        { es: 'freedom', fr: 'la liberté', ex: 'Freedom is a fundamental right.' },
-        { es: 'dream', fr: 'le rêve', ex: 'I have a dream for the future.' },
-        { es: 'challenge', fr: 'le défi', ex: 'This challenge is very difficult.' },
-        { es: 'success', fr: 'le succès', ex: 'Success requires hard work.' },
-        { es: 'experience', fr: "l'expérience", ex: 'Experience is the best teacher.' },
-        { es: 'discover', fr: 'découvrir', ex: 'I discover new places every day.' },
-        { es: 'understand', fr: 'comprendre', ex: 'I understand the problem now.' },
-        { es: 'love', fr: "l'amour", ex: 'Love is a wonderful feeling.' },
-        { es: 'music', fr: 'la musique', ex: 'Music brings people together.' }
+        { es: 'opportunity', fr: "l'opportunité", ex: 'This is a great opportunity.' },
+        { es: 'challenge', fr: 'le défi', ex: 'Every challenge makes us stronger.' },
+        { es: 'achieve', fr: 'accomplir', ex: 'I will achieve my goals.' },
+        { es: 'responsibility', fr: 'la responsabilité', ex: 'We share the responsibility.' },
+        { es: 'curious', fr: 'curieux', ex: 'She is very curious about science.' },
+        { es: 'determined', fr: 'déterminé', ex: 'He is determined to succeed.' },
+        { es: 'improve', fr: 'améliorer', ex: 'I improve my skills every day.' }
+      ]
+    },
+    nourriture: { nom: 'Nourriture', icone: '🍕',
+      debutant: [
+        { es: 'apple', fr: 'la pomme', ex: 'I eat an apple every morning.' },
+        { es: 'bread', fr: 'le pain', ex: 'The bread is fresh and warm.' },
+        { es: 'water', fr: "l'eau", ex: 'I drink water all day long.' },
+        { es: 'milk', fr: 'le lait', ex: 'I put milk in my coffee.' },
+        { es: 'egg', fr: "l'œuf", ex: 'I eat an egg for breakfast.' },
+        { es: 'chicken', fr: 'le poulet', ex: 'The chicken is delicious.' },
+        { es: 'rice', fr: 'le riz', ex: 'I cook rice for dinner.' },
+        { es: 'fish', fr: 'le poisson', ex: 'I like to eat fish on Fridays.' },
+        { es: 'cheese', fr: 'le fromage', ex: 'England has many fine cheeses.' },
+        { es: 'soup', fr: 'la soupe', ex: 'This soup is very hot.' }
+      ],
+      intermediaire: [
+        { es: 'strawberry', fr: 'la fraise', ex: 'The strawberries are perfectly ripe.' },
+        { es: 'orange juice', fr: "le jus d'orange", ex: 'I drink orange juice every morning.' },
+        { es: 'mushroom', fr: 'le champignon', ex: 'I add mushrooms to my pasta.' },
+        { es: 'butter', fr: 'le beurre', ex: 'I spread butter on my toast.' },
+        { es: 'sugar', fr: 'le sucre', ex: 'Do you take sugar in your tea?' },
+        { es: 'pepper', fr: 'le poivre', ex: 'Add a little pepper to the dish.' },
+        { es: 'dessert', fr: 'le dessert', ex: 'What would you like for dessert?' },
+        { es: 'recipe', fr: 'la recette', ex: "This is my grandmother's recipe." }
+      ],
+      avance: [
+        { es: 'ingredients', fr: 'les ingrédients', ex: 'The ingredients are all fresh.' },
+        { es: 'seasoning', fr: "l'assaisonnement", ex: 'The seasoning is perfect.' },
+        { es: 'nutritious', fr: 'nutritif', ex: 'This meal is very nutritious.' },
+        { es: 'appetite', fr: "l'appétit", ex: 'The smell gives me an appetite.' },
+        { es: 'cuisine', fr: 'la cuisine', ex: 'I love Asian cuisine.' },
+        { es: 'flavour', fr: 'la saveur', ex: 'The flavour of this dish is unique.' },
+        { es: 'portion', fr: 'la portion', ex: 'The portion is very generous.' }
+      ]
+    },
+    voyage: { nom: 'Voyage', icone: '✈️',
+      debutant: [
+        { es: 'airport', fr: "l'aéroport", ex: 'We arrive at the airport at eight.' },
+        { es: 'hotel', fr: "l'hôtel", ex: 'The hotel is near the beach.' },
+        { es: 'ticket', fr: 'le billet', ex: 'I bought a plane ticket.' },
+        { es: 'passport', fr: 'le passeport', ex: 'Do not forget your passport.' },
+        { es: 'map', fr: 'la carte', ex: 'I use a map to find my way.' },
+        { es: 'train', fr: 'le train', ex: 'The train leaves at nine.' },
+        { es: 'bus', fr: 'le bus', ex: 'I take the bus every day.' },
+        { es: 'station', fr: 'la gare', ex: 'The station is in the city centre.' },
+        { es: 'luggage', fr: 'les bagages', ex: 'My luggage is very heavy.' },
+        { es: 'beach', fr: 'la plage', ex: 'We relax on the beach.' }
+      ],
+      intermediaire: [
+        { es: 'booking', fr: 'la réservation', ex: 'I made a booking online.' },
+        { es: 'departure', fr: 'le départ', ex: 'The departure is at noon.' },
+        { es: 'arrival', fr: "l'arrivée", ex: 'Our arrival is delayed.' },
+        { es: 'customs', fr: 'la douane', ex: 'We pass through customs.' },
+        { es: 'currency', fr: 'la devise', ex: 'I exchange my currency at the bank.' },
+        { es: 'souvenir', fr: 'le souvenir', ex: 'I buy a souvenir for my family.' },
+        { es: 'guide', fr: 'le guide', ex: 'The guide shows us the city.' },
+        { es: 'adventure', fr: "l'aventure", ex: 'Every trip is a new adventure.' }
+      ],
+      avance: [
+        { es: 'itinerary', fr: "l'itinéraire", ex: 'Our itinerary includes five cities.' },
+        { es: 'destination', fr: 'la destination', ex: 'Paris is my dream destination.' },
+        { es: 'accommodation', fr: "l'hébergement", ex: 'The accommodation is excellent.' },
+        { es: 'explore', fr: 'explorer', ex: 'I explore the old town on foot.' },
+        { es: 'landmark', fr: 'le monument', ex: 'Big Ben is a famous landmark.' },
+        { es: 'culture', fr: 'la culture', ex: 'I am fascinated by local culture.' },
+        { es: 'landscape', fr: 'le paysage', ex: 'The landscape is breathtaking.' }
+      ]
+    },
+    famille: { nom: 'Famille', icone: '👨‍👩‍👧',
+      debutant: [
+        { es: 'mother', fr: 'la mère', ex: 'My mother cooks very well.' },
+        { es: 'father', fr: 'le père', ex: 'My father works in London.' },
+        { es: 'sister', fr: 'la sœur', ex: 'My sister is very funny.' },
+        { es: 'brother', fr: 'le frère', ex: 'My brother plays football.' },
+        { es: 'grandmother', fr: 'la grand-mère', ex: 'My grandmother tells great stories.' },
+        { es: 'grandfather', fr: 'le grand-père', ex: 'My grandfather is very wise.' },
+        { es: 'baby', fr: 'le bébé', ex: 'The baby sleeps peacefully.' },
+        { es: 'child', fr: "l'enfant", ex: 'The child plays in the garden.' },
+        { es: 'family', fr: 'la famille', ex: 'My family is very close.' },
+        { es: 'home', fr: 'le foyer', ex: 'Home is where the heart is.' }
+      ],
+      intermediaire: [
+        { es: 'cousin', fr: 'le cousin', ex: 'My cousin lives in Scotland.' },
+        { es: 'aunt', fr: 'la tante', ex: 'My aunt bakes delicious cakes.' },
+        { es: 'uncle', fr: "l'oncle", ex: 'My uncle is a doctor.' },
+        { es: 'nephew', fr: 'le neveu', ex: 'My nephew is two years old.' },
+        { es: 'niece', fr: 'la nièce', ex: 'My niece loves drawing.' },
+        { es: 'husband', fr: 'le mari', ex: 'Her husband is very caring.' },
+        { es: 'wife', fr: 'la femme', ex: 'His wife is a teacher.' },
+        { es: 'marriage', fr: 'le mariage', ex: 'Their marriage is a success.' }
+      ],
+      avance: [
+        { es: 'relationship', fr: 'la relation', ex: 'A good relationship takes effort.' },
+        { es: 'heritage', fr: "l'héritage", ex: 'We share a rich cultural heritage.' },
+        { es: 'generation', fr: 'la génération', ex: 'Each generation learns from the last.' },
+        { es: 'upbringing', fr: "l'éducation", ex: 'A good upbringing shapes character.' },
+        { es: 'tradition', fr: 'la tradition', ex: 'We keep our family traditions alive.' },
+        { es: 'bond', fr: 'le lien', ex: 'The bond between siblings is strong.' },
+        { es: 'reunion', fr: 'les retrouvailles', ex: 'The family reunion was wonderful.' }
+      ]
+    },
+    couleurs: { nom: 'Couleurs', icone: '🎨',
+      debutant: [
+        { es: 'red', fr: 'rouge', ex: 'The apple is bright red.' },
+        { es: 'blue', fr: 'bleu', ex: 'The sky is clear and blue.' },
+        { es: 'green', fr: 'vert', ex: 'The grass is green after the rain.' },
+        { es: 'yellow', fr: 'jaune', ex: 'The sun is yellow and warm.' },
+        { es: 'black', fr: 'noir', ex: 'I wear a black jacket today.' },
+        { es: 'white', fr: 'blanc', ex: 'The snow is completely white.' },
+        { es: 'orange', fr: 'orange', ex: 'Her dress is bright orange.' },
+        { es: 'pink', fr: 'rose', ex: 'The roses are pale pink.' },
+        { es: 'purple', fr: 'violet', ex: 'The sky turns purple at dusk.' },
+        { es: 'brown', fr: 'marron', ex: 'The tree trunk is brown.' }
+      ],
+      intermediaire: [
+        { es: 'grey', fr: 'gris', ex: 'The clouds are dark grey.' },
+        { es: 'dark', fr: 'foncé', ex: 'I prefer dark colours in winter.' },
+        { es: 'light', fr: 'clair', ex: 'She wears light blue in summer.' },
+        { es: 'bright', fr: 'vif', ex: 'The painting uses bright colours.' },
+        { es: 'pale', fr: 'pâle', ex: 'He looks pale today.' },
+        { es: 'colourful', fr: 'coloré', ex: 'The market is very colourful.' },
+        { es: 'shade', fr: 'la teinte', ex: 'I like this shade of blue.' },
+        { es: 'transparent', fr: 'transparent', ex: 'The glass is transparent.' }
+      ],
+      avance: [
+        { es: 'contrast', fr: 'le contraste', ex: 'The contrast between the colours is striking.' },
+        { es: 'vivid', fr: 'éclatant', ex: 'The vivid colours caught my eye.' },
+        { es: 'hue', fr: 'la nuance', ex: 'The hue changes in different lights.' },
+        { es: 'monochrome', fr: 'monochrome', ex: 'The photo is in monochrome.' },
+        { es: 'pigment', fr: 'le pigment', ex: 'Natural pigments are used in this paint.' },
+        { es: 'spectrum', fr: 'le spectre', ex: 'A rainbow shows the full spectrum.' },
+        { es: 'tint', fr: 'la teinte claire', ex: 'Add a tint of yellow to the mix.' }
       ]
     }
   },
   'it': {
-    vocabulaire: { nom: 'Vocabolario', icone: '📚',
+    essentiel: { nom: 'Essentiel', icone: '🌟',
       debutant: [
-        { es: 'ciao', fr: 'salut/bonjour', ex: 'Ciao, come stai oggi?' },
+        { es: 'ciao', fr: 'bonjour / salut', ex: 'Ciao, come stai?' },
         { es: 'arrivederci', fr: 'au revoir', ex: 'Arrivederci, a presto!' },
-        { es: 'sì', fr: 'oui', ex: 'Sì, grazie mille.' },
+        { es: 'per favore', fr: "s'il vous plaît", ex: 'Per favore, puoi aiutarmi?' },
+        { es: 'grazie', fr: 'merci', ex: 'Grazie mille!' },
+        { es: 'sì', fr: 'oui', ex: 'Sì, capisco.' },
         { es: 'no', fr: 'non', ex: 'No, grazie.' },
-        { es: 'acqua', fr: "l'eau", ex: "Bevo acqua ogni giorno." },
-        { es: 'pane', fr: 'le pain', ex: 'Il pane è molto fresco.' },
-        { es: 'casa', fr: 'la maison', ex: 'La mia casa è grande.' },
-        { es: 'gatto', fr: 'le chat', ex: 'Il gatto dorme sul divano.' },
-        { es: 'libro', fr: 'le livre', ex: 'Leggo un libro ogni sera.' },
-        { es: 'amico', fr: "l'ami", ex: 'Il mio amico è gentile.' }
+        { es: 'scusa', fr: 'excuse-moi', ex: 'Scusa, dov è la stazione?' },
+        { es: 'mi dispiace', fr: 'je suis désolé', ex: 'Mi dispiace per il ritardo.' },
+        { es: 'aiuto', fr: "l'aide", ex: 'Ho bisogno di aiuto.' },
+        { es: 'amico', fr: "l'ami", ex: 'Lei è la mia migliore amica.' }
       ],
       intermediaire: [
-        { es: 'città', fr: 'la ville', ex: 'La città è molto vivace.' },
-        { es: 'scuola', fr: "l'école", ex: 'Vado a scuola ogni mattina.' },
-        { es: 'soldi', fr: "l'argent", ex: 'Ho bisogno di soldi.' },
-        { es: 'macchina', fr: 'la voiture', ex: 'La mia macchina è rossa.' },
-        { es: 'bello', fr: 'beau', ex: 'Il tramonto è bello.' },
-        { es: 'felice', fr: 'heureux', ex: 'Sono molto felice oggi.' },
-        { es: 'lavoro', fr: 'le travail', ex: 'Il lavoro è importante.' },
-        { es: 'tempo', fr: 'le temps', ex: 'Il tempo vola.' },
-        { es: 'mangiare', fr: 'manger', ex: 'Mi piace mangiare la pasta.' },
-        { es: 'dormire', fr: 'dormir', ex: 'Devo dormire otto ore.' }
+        { es: 'capire', fr: 'comprendre', ex: 'Non capisco questa parola.' },
+        { es: 'parlare', fr: 'parler', ex: 'Parlo un po italiano.' },
+        { es: 'imparare', fr: 'apprendre', ex: 'Voglio imparare l italiano.' },
+        { es: 'ripetere', fr: 'répéter', ex: 'Puoi ripetere, per favore?' },
+        { es: 'lentamente', fr: 'lentement', ex: 'Parla più lentamente, ti prego.' },
+        { es: 'sapere', fr: 'savoir', ex: 'Non so la risposta.' },
+        { es: 'avere bisogno', fr: 'avoir besoin', ex: 'Ho bisogno di un momento.' },
+        { es: 'volere', fr: 'vouloir', ex: 'Voglio provare.' }
       ],
       avance: [
-        { es: 'viaggio', fr: 'le voyage', ex: 'Un lungo viaggio ci aspetta.' },
-        { es: 'libertà', fr: 'la liberté', ex: 'La libertà è un diritto.' },
-        { es: 'sogno', fr: 'le rêve', ex: 'Ho un sogno per il futuro.' },
-        { es: 'sfida', fr: 'le défi', ex: 'Questa sfida è difficile.' },
-        { es: 'successo', fr: 'le succès', ex: 'Il successo richiede impegno.' },
-        { es: 'esperienza', fr: "l'expérience", ex: "L'esperienza insegna molto." },
-        { es: 'scoprire', fr: 'découvrir', ex: 'Mi piace scoprire nuovi posti.' },
-        { es: 'capire', fr: 'comprendre', ex: 'Ora capisco il problema.' },
-        { es: 'amore', fr: "l'amour", ex: "L'amore è meraviglioso." },
-        { es: 'musica', fr: 'la musique', ex: 'La musica unisce le persone.' }
+        { es: 'opportunità', fr: "l'opportunité", ex: 'Questa è una grande opportunità.' },
+        { es: 'sfida', fr: 'le défi', ex: 'Ogni sfida ci rende più forti.' },
+        { es: 'raggiungere', fr: 'atteindre', ex: 'Raggiungerò i miei obiettivi.' },
+        { es: 'responsabilità', fr: 'la responsabilité', ex: 'Condividiamo la responsabilità.' },
+        { es: 'curioso', fr: 'curieux', ex: 'È molto curiosa riguardo alla scienza.' },
+        { es: 'determinato', fr: 'déterminé', ex: 'È determinato ad avere successo.' },
+        { es: 'migliorare', fr: 'améliorer', ex: 'Miglioro le mie competenze ogni giorno.' }
+      ]
+    },
+    nourriture: { nom: 'Nourriture', icone: '🍕',
+      debutant: [
+        { es: 'pizza', fr: 'la pizza', ex: 'La pizza margherita è la mia preferita.' },
+        { es: 'pasta', fr: 'les pâtes', ex: 'Mangio la pasta ogni domenica.' },
+        { es: 'pane', fr: 'le pain', ex: 'Il pane è ancora caldo.' },
+        { es: 'acqua', fr: "l'eau", ex: 'Bevo acqua tutto il giorno.' },
+        { es: 'vino', fr: 'le vin', ex: 'Il vino rosso italiano è famoso.' },
+        { es: 'formaggio', fr: 'le fromage', ex: 'Il parmigiano è un formaggio eccellente.' },
+        { es: 'pollo', fr: 'le poulet', ex: 'Il pollo arrosto è delizioso.' },
+        { es: 'pesce', fr: 'le poisson', ex: 'Il pesce fresco è ottimo.' },
+        { es: 'gelato', fr: 'la glace', ex: 'Il gelato italiano è il migliore del mondo.' },
+        { es: 'caffè', fr: 'le café', ex: 'Prendo un caffè ogni mattina.' }
+      ],
+      intermediaire: [
+        { es: 'fragola', fr: 'la fraise', ex: 'Le fragole sono mature e dolci.' },
+        { es: 'olio d oliva', fr: "l'huile d'olive", ex: "L'olio d'oliva è essenziale in cucina." },
+        { es: 'funghi', fr: 'les champignons', ex: 'I funghi porcini sono deliziosi.' },
+        { es: 'burro', fr: 'le beurre', ex: 'Aggiungo il burro alla pasta.' },
+        { es: 'zucchero', fr: 'le sucre', ex: 'Vuoi dello zucchero nel caffè?' },
+        { es: 'pepe', fr: 'le poivre', ex: 'Aggiungi un po di pepe.' },
+        { es: 'dolce', fr: 'le dessert', ex: 'Cosa vuoi come dolce?' },
+        { es: 'ricetta', fr: 'la recette', ex: 'Questa è la ricetta di mia nonna.' }
+      ],
+      avance: [
+        { es: 'ingredienti', fr: 'les ingrédients', ex: 'Gli ingredienti sono tutti freschi.' },
+        { es: 'condimento', fr: "l'assaisonnement", ex: 'Il condimento è perfetto.' },
+        { es: 'nutriente', fr: 'nutritif', ex: 'Questo pasto è molto nutriente.' },
+        { es: 'appetito', fr: "l'appétit", ex: "L'odore mi mette appetito." },
+        { es: 'cucina', fr: 'la cuisine', ex: 'Adoro la cucina asiatica.' },
+        { es: 'sapore', fr: 'la saveur', ex: 'Il sapore di questo piatto è unico.' },
+        { es: 'porzione', fr: 'la portion', ex: 'La porzione è molto generosa.' }
+      ]
+    },
+    voyage: { nom: 'Voyage', icone: '✈️',
+      debutant: [
+        { es: 'aeroporto', fr: "l'aéroport", ex: "Arriviamo all'aeroporto alle otto." },
+        { es: 'albergo', fr: "l'hôtel", ex: "L'albergo è vicino alla spiaggia." },
+        { es: 'biglietto', fr: 'le billet', ex: 'Ho comprato un biglietto aereo.' },
+        { es: 'passaporto', fr: 'le passeport', ex: 'Non dimenticare il passaporto.' },
+        { es: 'mappa', fr: 'la carte', ex: 'Uso una mappa per orientarmi.' },
+        { es: 'treno', fr: 'le train', ex: 'Il treno parte alle nove.' },
+        { es: 'autobus', fr: 'le bus', ex: 'Prendo l autobus ogni giorno.' },
+        { es: 'stazione', fr: 'la gare', ex: 'La stazione è in centro città.' },
+        { es: 'bagaglio', fr: 'les bagages', ex: 'Il mio bagaglio è molto pesante.' },
+        { es: 'spiaggia', fr: 'la plage', ex: 'Ci rilassiamo in spiaggia.' }
+      ],
+      intermediaire: [
+        { es: 'prenotazione', fr: 'la réservation', ex: 'Ho fatto una prenotazione online.' },
+        { es: 'partenza', fr: 'le départ', ex: 'La partenza è a mezzogiorno.' },
+        { es: 'arrivo', fr: "l'arrivée", ex: 'Il nostro arrivo è in ritardo.' },
+        { es: 'dogana', fr: 'la douane', ex: 'Passiamo dalla dogana.' },
+        { es: 'valuta', fr: 'la devise', ex: 'Cambio la valuta in banca.' },
+        { es: 'souvenir', fr: 'le souvenir', ex: 'Compro un souvenir per la famiglia.' },
+        { es: 'guida', fr: 'le guide', ex: 'La guida ci mostra la città.' },
+        { es: 'avventura', fr: "l'aventure", ex: 'Ogni viaggio è una nuova avventura.' }
+      ],
+      avance: [
+        { es: 'itinerario', fr: "l'itinéraire", ex: "L'itinerario prevede cinque città." },
+        { es: 'destinazione', fr: 'la destination', ex: 'Parigi è la mia destinazione dei sogni.' },
+        { es: 'alloggio', fr: "l'hébergement", ex: "L'alloggio è eccellente." },
+        { es: 'esplorare', fr: 'explorer', ex: 'Esploro il centro storico a piedi.' },
+        { es: 'monumento', fr: 'le monument', ex: 'Il Colosseo è un monumento famoso.' },
+        { es: 'cultura', fr: 'la culture', ex: 'Sono affascinato dalla cultura locale.' },
+        { es: 'paesaggio', fr: 'le paysage', ex: 'Il paesaggio è mozzafiato.' }
+      ]
+    },
+    famille: { nom: 'Famille', icone: '👨‍👩‍👧',
+      debutant: [
+        { es: 'madre', fr: 'la mère', ex: 'Mia madre cucina molto bene.' },
+        { es: 'padre', fr: 'le père', ex: 'Mio padre lavora a Roma.' },
+        { es: 'sorella', fr: 'la sœur', ex: 'Mia sorella è molto divertente.' },
+        { es: 'fratello', fr: 'le frère', ex: 'Mio fratello gioca a calcio.' },
+        { es: 'nonna', fr: 'la grand-mère', ex: 'La nonna racconta storie bellissime.' },
+        { es: 'nonno', fr: 'le grand-père', ex: 'Il nonno è molto saggio.' },
+        { es: 'bambino', fr: "l'enfant", ex: 'Il bambino gioca in giardino.' },
+        { es: 'famiglia', fr: 'la famille', ex: 'La mia famiglia è molto unita.' },
+        { es: 'figlio', fr: 'le fils', ex: 'Il figlio studia all università.' },
+        { es: 'figlia', fr: 'la fille', ex: 'La figlia ama la musica.' }
+      ],
+      intermediaire: [
+        { es: 'cugino', fr: 'le cousin', ex: 'Mio cugino vive a Milano.' },
+        { es: 'zia', fr: 'la tante', ex: 'Mia zia prepara dolci deliziosi.' },
+        { es: 'zio', fr: "l'oncle", ex: 'Mio zio è medico.' },
+        { es: 'nipote', fr: 'le neveu / la nièce', ex: 'Il nipote ha due anni.' },
+        { es: 'marito', fr: 'le mari', ex: 'Il marito è molto premuroso.' },
+        { es: 'moglie', fr: 'la femme', ex: 'La moglie è insegnante.' },
+        { es: 'matrimonio', fr: 'le mariage', ex: 'Il matrimonio è stato bellissimo.' },
+        { es: 'genitori', fr: 'les parents', ex: 'I miei genitori sono in vacanza.' }
+      ],
+      avance: [
+        { es: 'relazione', fr: 'la relation', ex: 'Una buona relazione richiede impegno.' },
+        { es: 'eredità', fr: "l'héritage", ex: 'Condividiamo una ricca eredità culturale.' },
+        { es: 'generazione', fr: 'la génération', ex: 'Ogni generazione impara dalla precedente.' },
+        { es: 'educazione', fr: "l'éducation", ex: "Una buona educazione forma il carattere." },
+        { es: 'tradizione', fr: 'la tradition', ex: 'Manteniamo vive le tradizioni di famiglia.' },
+        { es: 'legame', fr: 'le lien', ex: 'Il legame tra fratelli è forte.' },
+        { es: 'riunione', fr: 'la réunion', ex: 'La riunione di famiglia è stata splendida.' }
+      ]
+    },
+    couleurs: { nom: 'Couleurs', icone: '🎨',
+      debutant: [
+        { es: 'rosso', fr: 'rouge', ex: 'La mela è di un rosso brillante.' },
+        { es: 'blu', fr: 'bleu', ex: 'Il cielo è limpido e blu.' },
+        { es: 'verde', fr: 'vert', ex: "L'erba è verde dopo la pioggia." },
+        { es: 'giallo', fr: 'jaune', ex: 'Il sole è giallo e caldo.' },
+        { es: 'nero', fr: 'noir', ex: 'Indosso una giacca nera oggi.' },
+        { es: 'bianco', fr: 'blanc', ex: 'La neve è completamente bianca.' },
+        { es: 'arancione', fr: 'orange', ex: 'Il suo vestito è arancione acceso.' },
+        { es: 'rosa', fr: 'rose', ex: 'Le rose sono di un rosa pallido.' },
+        { es: 'viola', fr: 'violet', ex: 'Il cielo diventa viola al tramonto.' },
+        { es: 'marrone', fr: 'marron', ex: 'Il tronco dell albero è marrone.' }
+      ],
+      intermediaire: [
+        { es: 'grigio', fr: 'gris', ex: 'Le nuvole sono grigio scuro.' },
+        { es: 'scuro', fr: 'foncé', ex: 'Preferisco i colori scuri in inverno.' },
+        { es: 'chiaro', fr: 'clair', ex: "Indossa il blu chiaro d'estate." },
+        { es: 'vivace', fr: 'vif', ex: 'Il dipinto usa colori vivaci.' },
+        { es: 'pallido', fr: 'pâle', ex: 'Sembra pallido oggi.' },
+        { es: 'colorato', fr: 'coloré', ex: 'Il mercato è molto colorato.' },
+        { es: 'tonalità', fr: 'la teinte', ex: 'Mi piace questa tonalità di blu.' },
+        { es: 'trasparente', fr: 'transparent', ex: 'Il vetro è trasparente.' }
+      ],
+      avance: [
+        { es: 'contrasto', fr: 'le contraste', ex: 'Il contrasto tra i colori è notevole.' },
+        { es: 'brillante', fr: 'éclatant', ex: 'I colori brillanti hanno attirato la mia attenzione.' },
+        { es: 'sfumatura', fr: 'la nuance', ex: 'La sfumatura cambia con la luce.' },
+        { es: 'monocromo', fr: 'monochrome', ex: 'La foto è in monocromo.' },
+        { es: 'pigmento', fr: 'le pigment', ex: 'In questa vernice si usano pigmenti naturali.' },
+        { es: 'spettro', fr: 'le spectre', ex: 'Un arcobaleno mostra lo spettro completo.' },
+        { es: 'tinta', fr: 'la tinte', ex: 'Aggiungi una tinta di giallo al mix.' }
       ]
     }
   },
   'de': {
-    vocabulaire: { nom: 'Wortschatz', icone: '📚',
+    essentiel: { nom: 'Essentiel', icone: '🌟',
       debutant: [
-        { es: 'Hallo', fr: 'bonjour', ex: 'Hallo, wie geht es dir?' },
-        { es: 'Tschüss', fr: 'au revoir', ex: 'Tschüss, bis bald!' },
-        { es: 'ja', fr: 'oui', ex: 'Ja, bitte.' },
+        { es: 'hallo', fr: 'bonjour', ex: 'Hallo, wie geht es dir?' },
+        { es: 'auf Wiedersehen', fr: 'au revoir', ex: 'Auf Wiedersehen, bis bald!' },
+        { es: 'bitte', fr: "s'il vous plaît", ex: 'Bitte hilf mir.' },
+        { es: 'danke', fr: 'merci', ex: 'Danke schön!' },
+        { es: 'ja', fr: 'oui', ex: 'Ja, ich verstehe.' },
         { es: 'nein', fr: 'non', ex: 'Nein, danke.' },
-        { es: 'Wasser', fr: "l'eau", ex: 'Ich trinke Wasser jeden Tag.' },
-        { es: 'Brot', fr: 'le pain', ex: 'Das Brot ist sehr frisch.' },
-        { es: 'Haus', fr: 'la maison', ex: 'Mein Haus ist sehr groß.' },
-        { es: 'Katze', fr: 'le chat', ex: 'Die Katze schläft auf dem Sofa.' },
-        { es: 'Buch', fr: 'le livre', ex: 'Ich lese jeden Abend ein Buch.' },
-        { es: 'Freund', fr: "l'ami", ex: 'Mein Freund ist sehr nett.' }
+        { es: 'Entschuldigung', fr: 'excusez-moi', ex: 'Entschuldigung, wo ist der Bahnhof?' },
+        { es: 'Es tut mir leid', fr: 'je suis désolé', ex: 'Es tut mir leid für die Verspätung.' },
+        { es: 'Hilfe', fr: "l'aide", ex: 'Ich brauche Hilfe, bitte.' },
+        { es: 'Freund', fr: "l'ami", ex: 'Sie ist meine beste Freundin.' }
       ],
       intermediaire: [
-        { es: 'Stadt', fr: 'la ville', ex: 'Die Stadt ist sehr lebendig.' },
-        { es: 'Schule', fr: "l'école", ex: 'Ich gehe jeden Morgen zur Schule.' },
-        { es: 'Geld', fr: "l'argent", ex: 'Ich brauche Geld zum Reisen.' },
-        { es: 'Auto', fr: 'la voiture', ex: 'Mein Auto ist rot.' },
-        { es: 'schön', fr: 'beau', ex: 'Der Sonnenuntergang ist schön.' },
-        { es: 'glücklich', fr: 'heureux', ex: 'Ich bin heute glücklich.' },
-        { es: 'Arbeit', fr: 'le travail', ex: 'Die Arbeit ist wichtig.' },
-        { es: 'Zeit', fr: 'le temps', ex: 'Die Zeit vergeht schnell.' },
-        { es: 'essen', fr: 'manger', ex: 'Ich möchte jetzt essen.' },
-        { es: 'schlafen', fr: 'dormir', ex: 'Ich muss schlafen gehen.' }
+        { es: 'verstehen', fr: 'comprendre', ex: 'Verstehst du mich?' },
+        { es: 'sprechen', fr: 'parler', ex: 'Ich spreche ein bisschen Deutsch.' },
+        { es: 'lernen', fr: 'apprendre', ex: 'Ich möchte Deutsch lernen.' },
+        { es: 'wiederholen', fr: 'répéter', ex: 'Können Sie das bitte wiederholen?' },
+        { es: 'langsam', fr: 'lentement', ex: 'Bitte sprechen Sie langsamer.' },
+        { es: 'wissen', fr: 'savoir', ex: 'Ich weiß die Antwort nicht.' },
+        { es: 'brauchen', fr: 'avoir besoin de', ex: 'Ich brauche einen Moment.' },
+        { es: 'wollen', fr: 'vouloir', ex: 'Ich will es versuchen.' }
       ],
       avance: [
-        { es: 'Reise', fr: 'le voyage', ex: 'Eine lange Reise wartet auf uns.' },
-        { es: 'Freiheit', fr: 'la liberté', ex: 'Freiheit ist ein Grundrecht.' },
-        { es: 'Traum', fr: 'le rêve', ex: 'Ich habe einen Traum für die Zukunft.' },
-        { es: 'Herausforderung', fr: 'le défi', ex: 'Diese Herausforderung ist schwierig.' },
-        { es: 'Erfolg', fr: 'le succès', ex: 'Erfolg erfordert harte Arbeit.' },
-        { es: 'Erfahrung', fr: "l'expérience", ex: 'Erfahrung ist der beste Lehrer.' },
-        { es: 'entdecken', fr: 'découvrir', ex: 'Ich entdecke gerne neue Orte.' },
-        { es: 'verstehen', fr: 'comprendre', ex: 'Ich verstehe das Problem jetzt.' },
-        { es: 'Liebe', fr: "l'amour", ex: 'Liebe ist ein wunderbares Gefühl.' },
-        { es: 'Musik', fr: 'la musique', ex: 'Musik verbindet die Menschen.' }
+        { es: 'Möglichkeit', fr: "l'opportunité", ex: 'Das ist eine großartige Möglichkeit.' },
+        { es: 'Herausforderung', fr: 'le défi', ex: 'Jede Herausforderung macht uns stärker.' },
+        { es: 'erreichen', fr: 'atteindre', ex: 'Ich werde meine Ziele erreichen.' },
+        { es: 'Verantwortung', fr: 'la responsabilité', ex: 'Wir teilen die Verantwortung.' },
+        { es: 'neugierig', fr: 'curieux', ex: 'Sie ist sehr neugierig auf die Wissenschaft.' },
+        { es: 'entschlossen', fr: 'déterminé', ex: 'Er ist entschlossen zu gewinnen.' },
+        { es: 'verbessern', fr: 'améliorer', ex: 'Ich verbessere meine Fähigkeiten täglich.' }
+      ]
+    },
+    nourriture: { nom: 'Nourriture', icone: '🍕',
+      debutant: [
+        { es: 'Brot', fr: 'le pain', ex: 'Das Brot ist noch warm.' },
+        { es: 'Wasser', fr: "l'eau", ex: 'Ich trinke den ganzen Tag Wasser.' },
+        { es: 'Milch', fr: 'le lait', ex: 'Ich gebe Milch in meinen Kaffee.' },
+        { es: 'Ei', fr: "l'œuf", ex: 'Ich esse morgens ein Ei.' },
+        { es: 'Fleisch', fr: 'la viande', ex: 'Das Fleisch ist sehr zart.' },
+        { es: 'Käse', fr: 'le fromage', ex: 'Deutschland hat viele Käsesorten.' },
+        { es: 'Suppe', fr: 'la soupe', ex: 'Die Suppe ist sehr heiß.' },
+        { es: 'Apfel', fr: 'la pomme', ex: 'Ich esse jeden Morgen einen Apfel.' },
+        { es: 'Kuchen', fr: 'le gâteau', ex: 'Der Kuchen schmeckt ausgezeichnet.' },
+        { es: 'Kaffee', fr: 'le café', ex: 'Ich trinke jeden Morgen Kaffee.' }
+      ],
+      intermediaire: [
+        { es: 'Erdbeere', fr: 'la fraise', ex: 'Die Erdbeeren sind reif und süß.' },
+        { es: 'Saft', fr: 'le jus', ex: 'Ich trinke morgens Orangensaft.' },
+        { es: 'Pilze', fr: 'les champignons', ex: 'Ich gebe Pilze in die Soße.' },
+        { es: 'Butter', fr: 'le beurre', ex: 'Ich streiche Butter auf mein Brot.' },
+        { es: 'Zucker', fr: 'le sucre', ex: 'Nimmst du Zucker in deinen Tee?' },
+        { es: 'Pfeffer', fr: 'le poivre', ex: 'Gib etwas Pfeffer dazu.' },
+        { es: 'Nachtisch', fr: 'le dessert', ex: 'Was möchtest du als Nachtisch?' },
+        { es: 'Rezept', fr: 'la recette', ex: 'Das ist das Rezept meiner Oma.' }
+      ],
+      avance: [
+        { es: 'Zutaten', fr: 'les ingrédients', ex: 'Die Zutaten sind alle frisch.' },
+        { es: 'Würzung', fr: "l'assaisonnement", ex: 'Die Würzung ist perfekt.' },
+        { es: 'nahrhaft', fr: 'nutritif', ex: 'Diese Mahlzeit ist sehr nahrhaft.' },
+        { es: 'Appetit', fr: "l'appétit", ex: 'Der Geruch macht mir Appetit.' },
+        { es: 'Küche', fr: 'la cuisine', ex: 'Ich liebe die asiatische Küche.' },
+        { es: 'Geschmack', fr: 'la saveur', ex: 'Der Geschmack dieses Gerichts ist einzigartig.' },
+        { es: 'Portion', fr: 'la portion', ex: 'Die Portion ist sehr großzügig.' }
+      ]
+    },
+    voyage: { nom: 'Voyage', icone: '✈️',
+      debutant: [
+        { es: 'Flughafen', fr: "l'aéroport", ex: 'Wir kommen um acht am Flughafen an.' },
+        { es: 'Hotel', fr: "l'hôtel", ex: 'Das Hotel liegt am Strand.' },
+        { es: 'Ticket', fr: 'le billet', ex: 'Ich habe ein Flugticket gekauft.' },
+        { es: 'Reisepass', fr: 'le passeport', ex: 'Vergiss deinen Reisepass nicht.' },
+        { es: 'Karte', fr: 'la carte', ex: 'Ich benutze eine Karte zur Orientierung.' },
+        { es: 'Zug', fr: 'le train', ex: 'Der Zug fährt um neun ab.' },
+        { es: 'Bus', fr: 'le bus', ex: 'Ich nehme jeden Tag den Bus.' },
+        { es: 'Bahnhof', fr: 'la gare', ex: 'Der Bahnhof liegt im Stadtzentrum.' },
+        { es: 'Gepäck', fr: 'les bagages', ex: 'Mein Gepäck ist sehr schwer.' },
+        { es: 'Strand', fr: 'la plage', ex: 'Wir entspannen uns am Strand.' }
+      ],
+      intermediaire: [
+        { es: 'Reservierung', fr: 'la réservation', ex: 'Ich habe eine Reservierung online gemacht.' },
+        { es: 'Abfahrt', fr: 'le départ', ex: 'Die Abfahrt ist um Mittag.' },
+        { es: 'Ankunft', fr: "l'arrivée", ex: 'Unsere Ankunft verzögert sich.' },
+        { es: 'Zoll', fr: 'la douane', ex: 'Wir passieren den Zoll.' },
+        { es: 'Währung', fr: 'la devise', ex: 'Ich wechsle meine Währung bei der Bank.' },
+        { es: 'Souvenir', fr: 'le souvenir', ex: 'Ich kaufe ein Souvenir für die Familie.' },
+        { es: 'Reiseführer', fr: 'le guide', ex: 'Der Reiseführer zeigt uns die Stadt.' },
+        { es: 'Abenteuer', fr: "l'aventure", ex: 'Jede Reise ist ein neues Abenteuer.' }
+      ],
+      avance: [
+        { es: 'Reiseroute', fr: "l'itinéraire", ex: 'Unsere Reiseroute umfasst fünf Städte.' },
+        { es: 'Reiseziel', fr: 'la destination', ex: 'Paris ist mein Traumreiseziel.' },
+        { es: 'Unterkunft', fr: "l'hébergement", ex: 'Die Unterkunft ist ausgezeichnet.' },
+        { es: 'erkunden', fr: 'explorer', ex: 'Ich erkunde die Altstadt zu Fuß.' },
+        { es: 'Sehenswürdigkeit', fr: 'le monument', ex: 'Das Brandenburger Tor ist eine bekannte Sehenswürdigkeit.' },
+        { es: 'Kultur', fr: 'la culture', ex: 'Ich bin von der lokalen Kultur fasziniert.' },
+        { es: 'Landschaft', fr: 'le paysage', ex: 'Die Landschaft ist atemberaubend.' }
+      ]
+    },
+    famille: { nom: 'Famille', icone: '👨‍👩‍👧',
+      debutant: [
+        { es: 'Mutter', fr: 'la mère', ex: 'Meine Mutter kocht sehr gut.' },
+        { es: 'Vater', fr: 'le père', ex: 'Mein Vater arbeitet in Berlin.' },
+        { es: 'Schwester', fr: 'la sœur', ex: 'Meine Schwester ist sehr lustig.' },
+        { es: 'Bruder', fr: 'le frère', ex: 'Mein Bruder spielt Fußball.' },
+        { es: 'Oma', fr: 'la grand-mère', ex: 'Die Oma erzählt tolle Geschichten.' },
+        { es: 'Opa', fr: 'le grand-père', ex: 'Der Opa ist sehr weise.' },
+        { es: 'Baby', fr: 'le bébé', ex: 'Das Baby schläft friedlich.' },
+        { es: 'Kind', fr: "l'enfant", ex: 'Das Kind spielt im Garten.' },
+        { es: 'Familie', fr: 'la famille', ex: 'Meine Familie ist sehr eng.' },
+        { es: 'Zuhause', fr: 'le foyer', ex: 'Zuhause ist es am schönsten.' }
+      ],
+      intermediaire: [
+        { es: 'Cousin', fr: 'le cousin', ex: 'Mein Cousin lebt in München.' },
+        { es: 'Tante', fr: 'la tante', ex: 'Meine Tante backt köstliche Kuchen.' },
+        { es: 'Onkel', fr: "l'oncle", ex: 'Mein Onkel ist Arzt.' },
+        { es: 'Neffe', fr: 'le neveu', ex: 'Mein Neffe ist zwei Jahre alt.' },
+        { es: 'Nichte', fr: 'la nièce', ex: 'Meine Nichte liebt das Malen.' },
+        { es: 'Ehemann', fr: 'le mari', ex: 'Ihr Ehemann ist sehr fürsorglich.' },
+        { es: 'Ehefrau', fr: 'la femme', ex: 'Seine Ehefrau ist Lehrerin.' },
+        { es: 'Hochzeit', fr: 'le mariage', ex: 'Die Hochzeit war wunderschön.' }
+      ],
+      avance: [
+        { es: 'Beziehung', fr: 'la relation', ex: 'Eine gute Beziehung braucht Einsatz.' },
+        { es: 'Erbe', fr: "l'héritage", ex: 'Wir teilen ein reiches kulturelles Erbe.' },
+        { es: 'Generation', fr: 'la génération', ex: 'Jede Generation lernt von der vorherigen.' },
+        { es: 'Erziehung', fr: "l'éducation", ex: 'Eine gute Erziehung prägt den Charakter.' },
+        { es: 'Tradition', fr: 'la tradition', ex: 'Wir pflegen unsere Familientraditionen.' },
+        { es: 'Verbindung', fr: 'le lien', ex: 'Die Verbindung unter Geschwistern ist stark.' },
+        { es: 'Wiedersehen', fr: 'les retrouvailles', ex: 'Das Familientreffen war wunderbar.' }
+      ]
+    },
+    couleurs: { nom: 'Couleurs', icone: '🎨',
+      debutant: [
+        { es: 'rot', fr: 'rouge', ex: 'Der Apfel ist leuchtend rot.' },
+        { es: 'blau', fr: 'bleu', ex: 'Der Himmel ist klar und blau.' },
+        { es: 'grün', fr: 'vert', ex: 'Das Gras ist nach dem Regen grün.' },
+        { es: 'gelb', fr: 'jaune', ex: 'Die Sonne ist gelb und warm.' },
+        { es: 'schwarz', fr: 'noir', ex: 'Ich trage heute eine schwarze Jacke.' },
+        { es: 'weiß', fr: 'blanc', ex: 'Der Schnee ist vollständig weiß.' },
+        { es: 'orange', fr: 'orange', ex: 'Ihr Kleid ist leuchtendes Orange.' },
+        { es: 'rosa', fr: 'rose', ex: 'Die Rosen sind blass rosa.' },
+        { es: 'lila', fr: 'violet', ex: 'Der Himmel wird in der Dämmerung lila.' },
+        { es: 'braun', fr: 'marron', ex: 'Der Baumstamm ist braun.' }
+      ],
+      intermediaire: [
+        { es: 'grau', fr: 'gris', ex: 'Die Wolken sind dunkelgrau.' },
+        { es: 'dunkel', fr: 'foncé', ex: 'Ich bevorzuge im Winter dunkle Farben.' },
+        { es: 'hell', fr: 'clair', ex: 'Sie trägt im Sommer Hellblau.' },
+        { es: 'leuchtend', fr: 'vif', ex: 'Das Bild verwendet leuchtende Farben.' },
+        { es: 'blass', fr: 'pâle', ex: 'Er sieht heute blass aus.' },
+        { es: 'farbenfroh', fr: 'coloré', ex: 'Der Markt ist sehr farbenfroh.' },
+        { es: 'Farbton', fr: 'la teinte', ex: 'Ich mag diesen Farbton von Blau.' },
+        { es: 'transparent', fr: 'transparent', ex: 'Das Glas ist transparent.' }
+      ],
+      avance: [
+        { es: 'Kontrast', fr: 'le contraste', ex: 'Der Kontrast zwischen den Farben ist auffällig.' },
+        { es: 'leuchtend', fr: 'éclatant', ex: 'Die leuchtenden Farben haben mich angezogen.' },
+        { es: 'Farbstich', fr: 'la nuance', ex: 'Der Farbstich ändert sich im Licht.' },
+        { es: 'einfarbig', fr: 'monochrome', ex: 'Das Foto ist einfarbig.' },
+        { es: 'Pigment', fr: 'le pigment', ex: 'In dieser Farbe werden natürliche Pigmente verwendet.' },
+        { es: 'Spektrum', fr: 'le spectre', ex: 'Ein Regenbogen zeigt das vollständige Spektrum.' },
+        { es: 'Tönung', fr: 'la teinte', ex: 'Füge eine Tönung von Gelb hinzu.' }
       ]
     }
   },
   'pt': {
-    vocabulaire: { nom: 'Vocabulário', icone: '📚',
+    essentiel: { nom: 'Essentiel', icone: '🌟',
       debutant: [
-        { es: 'olá', fr: 'bonjour', ex: 'Olá, como vai você?' },
+        { es: 'olá', fr: 'bonjour', ex: 'Olá, como está?' },
         { es: 'adeus', fr: 'au revoir', ex: 'Adeus, até logo!' },
-        { es: 'sim', fr: 'oui', ex: 'Sim, por favor.' },
+        { es: 'por favor', fr: "s'il vous plaît", ex: 'Por favor, pode ajudar-me?' },
+        { es: 'obrigado', fr: 'merci', ex: 'Obrigado muito!' },
+        { es: 'sim', fr: 'oui', ex: 'Sim, eu percebo.' },
         { es: 'não', fr: 'non', ex: 'Não, obrigado.' },
-        { es: 'água', fr: "l'eau", ex: 'Bebo água todos os dias.' },
-        { es: 'pão', fr: 'le pain', ex: 'O pão está muito fresco.' },
-        { es: 'casa', fr: 'la maison', ex: 'A minha casa é grande.' },
-        { es: 'gato', fr: 'le chat', ex: 'O gato dorme no sofá.' },
-        { es: 'livro', fr: 'le livre', ex: 'Leio um livro toda noite.' },
-        { es: 'amigo', fr: "l'ami", ex: 'O meu amigo é muito gentil.' }
+        { es: 'desculpe', fr: 'excusez-moi', ex: 'Desculpe, onde fica a estação?' },
+        { es: 'lamento', fr: 'je suis désolé', ex: 'Lamento o atraso.' },
+        { es: 'ajuda', fr: "l'aide", ex: 'Preciso de ajuda, por favor.' },
+        { es: 'amigo', fr: "l'ami", ex: 'Ela é a minha melhor amiga.' }
       ],
       intermediaire: [
-        { es: 'cidade', fr: 'la ville', ex: 'A cidade é muito animada.' },
-        { es: 'escola', fr: "l'école", ex: 'Vou à escola toda manhã.' },
-        { es: 'dinheiro', fr: "l'argent", ex: 'Preciso de dinheiro para viajar.' },
-        { es: 'carro', fr: 'la voiture', ex: 'O meu carro é vermelho.' },
-        { es: 'bonito', fr: 'beau', ex: 'O pôr do sol é bonito.' },
-        { es: 'feliz', fr: 'heureux', ex: 'Estou muito feliz hoje.' },
-        { es: 'trabalho', fr: 'le travail', ex: 'O trabalho é importante.' },
-        { es: 'tempo', fr: 'le temps', ex: 'O tempo passa rápido.' },
-        { es: 'comer', fr: 'manger', ex: 'Quero comer agora.' },
-        { es: 'dormir', fr: 'dormir', ex: 'Preciso dormir oito horas.' }
+        { es: 'entender', fr: 'comprendre', ex: 'Você me entende?' },
+        { es: 'falar', fr: 'parler', ex: 'Falo um pouco de português.' },
+        { es: 'aprender', fr: 'apprendre', ex: 'Quero aprender português.' },
+        { es: 'repetir', fr: 'répéter', ex: 'Pode repetir, por favor?' },
+        { es: 'devagar', fr: 'lentement', ex: 'Fale mais devagar, por favor.' },
+        { es: 'saber', fr: 'savoir', ex: 'Não sei a resposta.' },
+        { es: 'precisar', fr: 'avoir besoin de', ex: 'Preciso de um momento.' },
+        { es: 'querer', fr: 'vouloir', ex: 'Quero tentar.' }
       ],
       avance: [
-        { es: 'viagem', fr: 'le voyage', ex: 'Uma longa viagem nos aguarda.' },
-        { es: 'liberdade', fr: 'la liberté', ex: 'A liberdade é um direito.' },
-        { es: 'sonho', fr: 'le rêve', ex: 'Tenho um sonho para o futuro.' },
-        { es: 'desafio', fr: 'le défi', ex: 'Este desafio é muito difícil.' },
-        { es: 'sucesso', fr: 'le succès', ex: 'O sucesso exige esforço.' },
-        { es: 'experiência', fr: "l'expérience", ex: 'A experiência é a melhor professora.' },
-        { es: 'descobrir', fr: 'découvrir', ex: 'Gosto de descobrir novos lugares.' },
-        { es: 'entender', fr: 'comprendre', ex: 'Agora entendo o problema.' },
-        { es: 'amor', fr: "l'amour", ex: 'O amor é maravilhoso.' },
-        { es: 'música', fr: 'la musique', ex: 'A música une as pessoas.' }
+        { es: 'oportunidade', fr: "l'opportunité", ex: 'Esta é uma grande oportunidade.' },
+        { es: 'desafio', fr: 'le défi', ex: 'Cada desafio torna-nos mais fortes.' },
+        { es: 'alcançar', fr: 'atteindre', ex: 'Vou alcançar os meus objetivos.' },
+        { es: 'responsabilidade', fr: 'la responsabilité', ex: 'Partilhamos a responsabilidade.' },
+        { es: 'curioso', fr: 'curieux', ex: 'Ela é muito curiosa sobre ciência.' },
+        { es: 'determinado', fr: 'déterminé', ex: 'Ele está determinado a ter sucesso.' },
+        { es: 'melhorar', fr: 'améliorer', ex: 'Melhoro as minhas competências todos os dias.' }
+      ]
+    },
+    nourriture: { nom: 'Nourriture', icone: '🍕',
+      debutant: [
+        { es: 'pão', fr: 'le pain', ex: 'O pão ainda está quente.' },
+        { es: 'água', fr: "l'eau", ex: 'Bebo água durante todo o dia.' },
+        { es: 'leite', fr: 'le lait', ex: 'Ponho leite no café.' },
+        { es: 'ovo', fr: "l'œuf", ex: 'Como um ovo ao pequeno-almoço.' },
+        { es: 'frango', fr: 'le poulet', ex: 'O frango assado é delicioso.' },
+        { es: 'peixe', fr: 'le poisson', ex: 'Gosto de comer peixe.' },
+        { es: 'arroz', fr: 'le riz', ex: 'Cozinho arroz ao jantar.' },
+        { es: 'queijo', fr: 'le fromage', ex: 'Portugal tem queijos excelentes.' },
+        { es: 'sopa', fr: 'la soupe', ex: 'A sopa está muito quente.' },
+        { es: 'café', fr: 'le café', ex: 'Tomo um café todas as manhãs.' }
+      ],
+      intermediaire: [
+        { es: 'morango', fr: 'la fraise', ex: 'Os morangos estão maduros e doces.' },
+        { es: 'sumo de laranja', fr: "le jus d'orange", ex: 'Bebo sumo de laranja de manhã.' },
+        { es: 'cogumelos', fr: 'les champignons', ex: 'Adiciono cogumelos à massa.' },
+        { es: 'manteiga', fr: 'le beurre', ex: 'Barro manteiga na torrada.' },
+        { es: 'açúcar', fr: 'le sucre', ex: 'Toma açúcar no chá?' },
+        { es: 'pimenta', fr: 'le poivre', ex: 'Adiciona um pouco de pimenta.' },
+        { es: 'sobremesa', fr: 'le dessert', ex: 'O que queres de sobremesa?' },
+        { es: 'receita', fr: 'la recette', ex: 'Esta é a receita da minha avó.' }
+      ],
+      avance: [
+        { es: 'ingredientes', fr: 'les ingrédients', ex: 'Os ingredientes são todos frescos.' },
+        { es: 'tempero', fr: "l'assaisonnement", ex: 'O tempero está perfeito.' },
+        { es: 'nutritivo', fr: 'nutritif', ex: 'Esta refeição é muito nutritiva.' },
+        { es: 'apetite', fr: "l'appétit", ex: 'O cheiro dá-me apetite.' },
+        { es: 'cozinha', fr: 'la cuisine', ex: 'Adoro a cozinha asiática.' },
+        { es: 'sabor', fr: 'la saveur', ex: 'O sabor deste prato é único.' },
+        { es: 'porção', fr: 'la portion', ex: 'A porção é muito generosa.' }
+      ]
+    },
+    voyage: { nom: 'Voyage', icone: '✈️',
+      debutant: [
+        { es: 'aeroporto', fr: "l'aéroport", ex: 'Chegamos ao aeroporto às oito.' },
+        { es: 'hotel', fr: "l'hôtel", ex: 'O hotel fica perto da praia.' },
+        { es: 'bilhete', fr: 'le billet', ex: 'Comprei um bilhete de avião.' },
+        { es: 'passaporte', fr: 'le passeport', ex: 'Não te esqueças do passaporte.' },
+        { es: 'mapa', fr: 'la carte', ex: 'Uso um mapa para me orientar.' },
+        { es: 'comboio', fr: 'le train', ex: 'O comboio parte às nove.' },
+        { es: 'autocarro', fr: 'le bus', ex: 'Apanho o autocarro todos os dias.' },
+        { es: 'estação', fr: 'la gare', ex: 'A estação fica no centro.' },
+        { es: 'bagagem', fr: 'les bagages', ex: 'A minha bagagem é muito pesada.' },
+        { es: 'praia', fr: 'la plage', ex: 'Descansamos na praia.' }
+      ],
+      intermediaire: [
+        { es: 'reserva', fr: 'la réservation', ex: 'Fiz uma reserva online.' },
+        { es: 'partida', fr: 'le départ', ex: 'A partida é ao meio-dia.' },
+        { es: 'chegada', fr: "l'arrivée", ex: 'A nossa chegada está atrasada.' },
+        { es: 'alfândega', fr: 'la douane', ex: 'Passamos pela alfândega.' },
+        { es: 'moeda', fr: 'la devise', ex: 'Troco a minha moeda no banco.' },
+        { es: 'lembrança', fr: 'le souvenir', ex: 'Compro uma lembrança para a família.' },
+        { es: 'guia', fr: 'le guide', ex: 'O guia mostra-nos a cidade.' },
+        { es: 'aventura', fr: "l'aventure", ex: 'Cada viagem é uma nova aventura.' }
+      ],
+      avance: [
+        { es: 'itinerário', fr: "l'itinéraire", ex: 'O itinerário inclui cinco cidades.' },
+        { es: 'destino', fr: 'la destination', ex: 'Paris é o meu destino de sonho.' },
+        { es: 'alojamento', fr: "l'hébergement", ex: 'O alojamento é excelente.' },
+        { es: 'explorar', fr: 'explorer', ex: 'Exploro a cidade antiga a pé.' },
+        { es: 'monumento', fr: 'le monument', ex: 'A Torre de Belém é um monumento famoso.' },
+        { es: 'cultura', fr: 'la culture', ex: 'Estou fascinado pela cultura local.' },
+        { es: 'paisagem', fr: 'le paysage', ex: 'A paisagem é deslumbrante.' }
+      ]
+    },
+    famille: { nom: 'Famille', icone: '👨‍👩‍👧',
+      debutant: [
+        { es: 'mãe', fr: 'la mère', ex: 'A minha mãe cozinha muito bem.' },
+        { es: 'pai', fr: 'le père', ex: 'O meu pai trabalha em Lisboa.' },
+        { es: 'irmã', fr: 'la sœur', ex: 'A minha irmã é muito engraçada.' },
+        { es: 'irmão', fr: 'le frère', ex: 'O meu irmão joga futebol.' },
+        { es: 'avó', fr: 'la grand-mère', ex: 'A avó conta histórias fantásticas.' },
+        { es: 'avô', fr: 'le grand-père', ex: 'O avô é muito sábio.' },
+        { es: 'bebé', fr: 'le bébé', ex: 'O bebé dorme tranquilamente.' },
+        { es: 'criança', fr: "l'enfant", ex: 'A criança brinca no jardim.' },
+        { es: 'família', fr: 'la famille', ex: 'A minha família é muito unida.' },
+        { es: 'filho', fr: 'le fils / la fille', ex: 'O filho estuda na universidade.' }
+      ],
+      intermediaire: [
+        { es: 'primo', fr: 'le cousin', ex: 'O meu primo vive no Porto.' },
+        { es: 'tia', fr: 'la tante', ex: 'A minha tia faz bolos deliciosos.' },
+        { es: 'tio', fr: "l'oncle", ex: 'O meu tio é médico.' },
+        { es: 'sobrinho', fr: 'le neveu', ex: 'O meu sobrinho tem dois anos.' },
+        { es: 'sobrinha', fr: 'la nièce', ex: 'A minha sobrinha adora desenhar.' },
+        { es: 'marido', fr: 'le mari', ex: 'O marido é muito atencioso.' },
+        { es: 'esposa', fr: 'la femme', ex: 'A esposa é professora.' },
+        { es: 'casamento', fr: 'le mariage', ex: 'O casamento foi maravilhoso.' }
+      ],
+      avance: [
+        { es: 'relação', fr: 'la relation', ex: 'Uma boa relação exige esforço.' },
+        { es: 'herança', fr: "l'héritage", ex: 'Partilhamos uma rica herança cultural.' },
+        { es: 'geração', fr: 'la génération', ex: 'Cada geração aprende com a anterior.' },
+        { es: 'educação', fr: "l'éducation", ex: 'Uma boa educação forma o caráter.' },
+        { es: 'tradição', fr: 'la tradition', ex: 'Mantemos as tradições de família vivas.' },
+        { es: 'laço', fr: 'le lien', ex: 'O laço entre irmãos é forte.' },
+        { es: 'reunião', fr: 'les retrouvailles', ex: 'A reunião de família foi maravilhosa.' }
+      ]
+    },
+    couleurs: { nom: 'Couleurs', icone: '🎨',
+      debutant: [
+        { es: 'vermelho', fr: 'rouge', ex: 'A maçã é de um vermelho brilhante.' },
+        { es: 'azul', fr: 'bleu', ex: 'O céu está limpo e azul.' },
+        { es: 'verde', fr: 'vert', ex: 'A erva está verde depois da chuva.' },
+        { es: 'amarelo', fr: 'jaune', ex: 'O sol é amarelo e quente.' },
+        { es: 'preto', fr: 'noir', ex: 'Uso um casaco preto hoje.' },
+        { es: 'branco', fr: 'blanc', ex: 'A neve é completamente branca.' },
+        { es: 'laranja', fr: 'orange', ex: 'O vestido dela é laranja.' },
+        { es: 'rosa', fr: 'rose', ex: 'As rosas são de um rosa suave.' },
+        { es: 'roxo', fr: 'violet', ex: 'O céu fica roxo ao entardecer.' },
+        { es: 'castanho', fr: 'marron', ex: 'O tronco da árvore é castanho.' }
+      ],
+      intermediaire: [
+        { es: 'cinzento', fr: 'gris', ex: 'As nuvens estão cinzentas.' },
+        { es: 'escuro', fr: 'foncé', ex: 'Prefiro cores escuras no inverno.' },
+        { es: 'claro', fr: 'clair', ex: 'Ela usa azul claro no verão.' },
+        { es: 'vivo', fr: 'vif', ex: 'O quadro usa cores vivas.' },
+        { es: 'pálido', fr: 'pâle', ex: 'Ele parece pálido hoje.' },
+        { es: 'colorido', fr: 'coloré', ex: 'O mercado é muito colorido.' },
+        { es: 'tom', fr: 'la teinte', ex: 'Gosto deste tom de azul.' },
+        { es: 'transparente', fr: 'transparent', ex: 'O vidro é transparente.' }
+      ],
+      avance: [
+        { es: 'contraste', fr: 'le contraste', ex: 'O contraste entre as cores é marcante.' },
+        { es: 'vívido', fr: 'éclatant', ex: 'As cores vívidas chamaram a minha atenção.' },
+        { es: 'matiz', fr: 'la nuance', ex: 'A matiz muda com a luz.' },
+        { es: 'monocromático', fr: 'monochrome', ex: 'A foto é monocromática.' },
+        { es: 'pigmento', fr: 'le pigment', ex: 'Esta tinta usa pigmentos naturais.' },
+        { es: 'espectro', fr: 'le spectre', ex: 'O arco-íris mostra o espectro completo.' },
+        { es: 'tonalidade', fr: 'la tonalité', ex: 'Adiciona uma tonalidade de amarelo.' }
       ]
     }
   },
   'nl': {
-    vocabulaire: { nom: 'Woordenschat', icone: '📚',
+    essentiel: { nom: 'Essentiel', icone: '🌟',
       debutant: [
         { es: 'hallo', fr: 'bonjour', ex: 'Hallo, hoe gaat het?' },
         { es: 'tot ziens', fr: 'au revoir', ex: 'Tot ziens, tot snel!' },
-        { es: 'ja', fr: 'oui', ex: 'Ja, graag.' },
-        { es: 'nee', fr: 'non', ex: 'Nee, dank je wel.' },
-        { es: 'water', fr: "l'eau", ex: 'Ik drink elke dag water.' },
-        { es: 'brood', fr: 'le pain', ex: 'Het brood is heel vers.' },
-        { es: 'huis', fr: 'la maison', ex: 'Mijn huis is groot.' },
-        { es: 'kat', fr: 'le chat', ex: 'De kat slaapt op de bank.' },
-        { es: 'boek', fr: 'le livre', ex: 'Ik lees elke avond een boek.' },
-        { es: 'vriend', fr: "l'ami", ex: 'Mijn vriend is heel aardig.' }
+        { es: 'alstublieft', fr: "s'il vous plaît", ex: 'Alstublieft, kunt u mij helpen?' },
+        { es: 'dank u', fr: 'merci', ex: 'Dank u wel!' },
+        { es: 'ja', fr: 'oui', ex: 'Ja, ik begrijp het.' },
+        { es: 'nee', fr: 'non', ex: 'Nee, dank u.' },
+        { es: 'excuseer mij', fr: 'excusez-moi', ex: 'Excuseer mij, waar is het station?' },
+        { es: 'het spijt mij', fr: 'je suis désolé', ex: 'Het spijt mij voor de vertraging.' },
+        { es: 'hulp', fr: "l'aide", ex: 'Ik heb hulp nodig, alstublieft.' },
+        { es: 'vriend', fr: "l'ami", ex: 'Zij is mijn beste vriendin.' }
       ],
       intermediaire: [
-        { es: 'stad', fr: 'la ville', ex: 'De stad is zeer levendig.' },
-        { es: 'school', fr: "l'école", ex: 'Ik ga elke ochtend naar school.' },
-        { es: 'geld', fr: "l'argent", ex: 'Ik heb geld nodig om te reizen.' },
-        { es: 'auto', fr: 'la voiture', ex: 'Mijn auto is rood.' },
-        { es: 'mooi', fr: 'beau', ex: 'De zonsondergang is mooi.' },
-        { es: 'gelukkig', fr: 'heureux', ex: 'Ik ben vandaag gelukkig.' },
-        { es: 'werk', fr: 'le travail', ex: 'Het werk is belangrijk.' },
-        { es: 'tijd', fr: 'le temps', ex: 'De tijd vliegt snel.' },
-        { es: 'eten', fr: 'manger', ex: 'Ik wil nu eten.' },
-        { es: 'slapen', fr: 'dormir', ex: 'Ik moet goed slapen.' }
+        { es: 'begrijpen', fr: 'comprendre', ex: 'Begrijpt u mij?' },
+        { es: 'spreken', fr: 'parler', ex: 'Ik spreek een beetje Nederlands.' },
+        { es: 'leren', fr: 'apprendre', ex: 'Ik wil Nederlands leren.' },
+        { es: 'herhalen', fr: 'répéter', ex: 'Kunt u dat herhalen, alstublieft?' },
+        { es: 'langzaam', fr: 'lentement', ex: 'Spreek alstublieft langzamer.' },
+        { es: 'weten', fr: 'savoir', ex: 'Ik weet het antwoord niet.' },
+        { es: 'nodig hebben', fr: 'avoir besoin de', ex: 'Ik heb een moment nodig.' },
+        { es: 'willen', fr: 'vouloir', ex: 'Ik wil het proberen.' }
       ],
       avance: [
-        { es: 'reis', fr: 'le voyage', ex: 'Een lange reis wacht op ons.' },
-        { es: 'vrijheid', fr: 'la liberté', ex: 'Vrijheid is een grondrecht.' },
-        { es: 'droom', fr: 'le rêve', ex: 'Ik heb een droom voor de toekomst.' },
-        { es: 'uitdaging', fr: 'le défi', ex: 'Deze uitdaging is moeilijk.' },
-        { es: 'succes', fr: 'le succès', ex: 'Succes vereist hard werken.' },
-        { es: 'ervaring', fr: "l'expérience", ex: 'Ervaring is de beste leraar.' },
-        { es: 'ontdekken', fr: 'découvrir', ex: 'Ik hou van nieuwe plaatsen ontdekken.' },
-        { es: 'begrijpen', fr: 'comprendre', ex: 'Ik begrijp het probleem nu.' },
-        { es: 'liefde', fr: "l'amour", ex: 'Liefde is een prachtig gevoel.' },
-        { es: 'muziek', fr: 'la musique', ex: 'Muziek verbindt de mensen.' }
+        { es: 'kans', fr: "l'opportunité", ex: 'Dit is een geweldige kans.' },
+        { es: 'uitdaging', fr: 'le défi', ex: 'Elke uitdaging maakt ons sterker.' },
+        { es: 'bereiken', fr: 'atteindre', ex: 'Ik zal mijn doelen bereiken.' },
+        { es: 'verantwoordelijkheid', fr: 'la responsabilité', ex: 'We delen de verantwoordelijkheid.' },
+        { es: 'nieuwsgierig', fr: 'curieux', ex: 'Ze is erg nieuwsgierig naar wetenschap.' },
+        { es: 'vastberaden', fr: 'déterminé', ex: 'Hij is vastberaden te slagen.' },
+        { es: 'verbeteren', fr: 'améliorer', ex: 'Ik verbeter mijn vaardigheden elke dag.' }
+      ]
+    },
+    nourriture: { nom: 'Nourriture', icone: '🍕',
+      debutant: [
+        { es: 'brood', fr: 'le pain', ex: 'Het brood is nog warm.' },
+        { es: 'water', fr: "l'eau", ex: 'Ik drink de hele dag water.' },
+        { es: 'melk', fr: 'le lait', ex: 'Ik doe melk in mijn koffie.' },
+        { es: 'ei', fr: "l'œuf", ex: "Ik eet 's ochtends een ei." },
+        { es: 'kip', fr: 'le poulet', ex: 'De kip is heerlijk.' },
+        { es: 'vis', fr: 'le poisson', ex: 'Ik eet graag vis op vrijdag.' },
+        { es: 'rijst', fr: 'le riz', ex: 'Ik kook rijst voor het avondeten.' },
+        { es: 'kaas', fr: 'le fromage', ex: 'Nederland heeft veel lekkere kazen.' },
+        { es: 'soep', fr: 'la soupe', ex: 'Deze soep is erg heet.' },
+        { es: 'appel', fr: 'la pomme', ex: "Ik eet elke ochtend een appel." }
+      ],
+      intermediaire: [
+        { es: 'aardbei', fr: 'la fraise', ex: 'De aardbeien zijn rijp en zoet.' },
+        { es: 'sinaasappelsap', fr: "le jus d'orange", ex: "Ik drink 's ochtends sinaasappelsap." },
+        { es: 'champignons', fr: 'les champignons', ex: 'Ik voeg champignons toe aan de saus.' },
+        { es: 'boter', fr: 'le beurre', ex: 'Ik smeer boter op mijn brood.' },
+        { es: 'suiker', fr: 'le sucre', ex: 'Neem je suiker in je thee?' },
+        { es: 'peper', fr: 'le poivre', ex: 'Voeg een beetje peper toe.' },
+        { es: 'dessert', fr: 'le dessert', ex: 'Wat wil je als dessert?' },
+        { es: 'recept', fr: 'la recette', ex: 'Dit is het recept van mijn oma.' }
+      ],
+      avance: [
+        { es: 'ingrediënten', fr: 'les ingrédients', ex: 'De ingrediënten zijn allemaal vers.' },
+        { es: 'kruiding', fr: "l'assaisonnement", ex: 'De kruiding is perfect.' },
+        { es: 'voedzaam', fr: 'nutritif', ex: 'Dit gerecht is erg voedzaam.' },
+        { es: 'eetlust', fr: "l'appétit", ex: 'De geur geeft me eetlust.' },
+        { es: 'keuken', fr: 'la cuisine', ex: 'Ik hou van de Aziatische keuken.' },
+        { es: 'smaak', fr: 'la saveur', ex: 'De smaak van dit gerecht is uniek.' },
+        { es: 'portie', fr: 'la portion', ex: 'De portie is erg royaal.' }
+      ]
+    },
+    voyage: { nom: 'Voyage', icone: '✈️',
+      debutant: [
+        { es: 'luchthaven', fr: "l'aéroport", ex: 'We komen om acht uur aan op de luchthaven.' },
+        { es: 'hotel', fr: "l'hôtel", ex: 'Het hotel ligt vlak bij het strand.' },
+        { es: 'ticket', fr: 'le billet', ex: 'Ik heb een vliegticket gekocht.' },
+        { es: 'paspoort', fr: 'le passeport', ex: 'Vergeet je paspoort niet.' },
+        { es: 'kaart', fr: 'la carte', ex: 'Ik gebruik een kaart om de weg te vinden.' },
+        { es: 'trein', fr: 'le train', ex: 'De trein vertrekt om negen uur.' },
+        { es: 'bus', fr: 'le bus', ex: 'Ik neem elke dag de bus.' },
+        { es: 'station', fr: 'la gare', ex: 'Het station ligt in het stadscentrum.' },
+        { es: 'bagage', fr: 'les bagages', ex: 'Mijn bagage is erg zwaar.' },
+        { es: 'strand', fr: 'la plage', ex: 'We ontspannen op het strand.' }
+      ],
+      intermediaire: [
+        { es: 'reservering', fr: 'la réservation', ex: 'Ik heb online een reservering gemaakt.' },
+        { es: 'vertrek', fr: 'le départ', ex: 'Het vertrek is om twaalf uur.' },
+        { es: 'aankomst', fr: "l'arrivée", ex: 'Onze aankomst is vertraagd.' },
+        { es: 'douane', fr: 'la douane', ex: 'We passeren de douane.' },
+        { es: 'valuta', fr: 'la devise', ex: 'Ik wissel mijn valuta bij de bank.' },
+        { es: 'souvenir', fr: 'le souvenir', ex: 'Ik koop een souvenir voor mijn familie.' },
+        { es: 'gids', fr: 'le guide', ex: 'De gids laat ons de stad zien.' },
+        { es: 'avontuur', fr: "l'aventure", ex: 'Elke reis is een nieuw avontuur.' }
+      ],
+      avance: [
+        { es: 'reisplan', fr: "l'itinéraire", ex: 'Ons reisplan omvat vijf steden.' },
+        { es: 'bestemming', fr: 'la destination', ex: 'Parijs is mijn droombestemming.' },
+        { es: 'accommodatie', fr: "l'hébergement", ex: 'De accommodatie is uitstekend.' },
+        { es: 'verkennen', fr: 'explorer', ex: 'Ik verken de oude stad te voet.' },
+        { es: 'monument', fr: 'le monument', ex: 'De Eiffeltoren is een beroemd monument.' },
+        { es: 'cultuur', fr: 'la culture', ex: 'Ik ben gefascineerd door de lokale cultuur.' },
+        { es: 'landschap', fr: 'le paysage', ex: 'Het landschap is adembenemend.' }
+      ]
+    },
+    famille: { nom: 'Famille', icone: '👨‍👩‍👧',
+      debutant: [
+        { es: 'moeder', fr: 'la mère', ex: 'Mijn moeder kookt erg lekker.' },
+        { es: 'vader', fr: 'le père', ex: 'Mijn vader werkt in Amsterdam.' },
+        { es: 'zus', fr: 'la sœur', ex: 'Mijn zus is erg grappig.' },
+        { es: 'broer', fr: 'le frère', ex: 'Mijn broer speelt voetbal.' },
+        { es: 'oma', fr: 'la grand-mère', ex: 'Oma vertelt prachtige verhalen.' },
+        { es: 'opa', fr: 'le grand-père', ex: 'Opa is erg wijs.' },
+        { es: 'baby', fr: 'le bébé', ex: 'De baby slaapt vredig.' },
+        { es: 'kind', fr: "l'enfant", ex: 'Het kind speelt in de tuin.' },
+        { es: 'familie', fr: 'la famille', ex: 'Mijn familie is erg hecht.' },
+        { es: 'thuis', fr: 'le foyer', ex: 'Thuis is het fijnst.' }
+      ],
+      intermediaire: [
+        { es: 'neef', fr: 'le cousin', ex: 'Mijn neef woont in Rotterdam.' },
+        { es: 'tante', fr: 'la tante', ex: 'Mijn tante bakt heerlijke taarten.' },
+        { es: 'oom', fr: "l'oncle", ex: 'Mijn oom is dokter.' },
+        { es: 'neefje', fr: 'le neveu', ex: 'Mijn neefje is twee jaar oud.' },
+        { es: 'nichtje', fr: 'la nièce', ex: 'Mijn nichtje houdt van tekenen.' },
+        { es: 'man', fr: 'le mari', ex: 'Haar man is erg zorgzaam.' },
+        { es: 'vrouw', fr: 'la femme', ex: 'Zijn vrouw is lerares.' },
+        { es: 'huwelijk', fr: 'le mariage', ex: 'Het huwelijk was prachtig.' }
+      ],
+      avance: [
+        { es: 'relatie', fr: 'la relation', ex: 'Een goede relatie vergt inspanning.' },
+        { es: 'erfenis', fr: "l'héritage", ex: 'We delen een rijke culturele erfenis.' },
+        { es: 'generatie', fr: 'la génération', ex: 'Elke generatie leert van de vorige.' },
+        { es: 'opvoeding', fr: "l'éducation", ex: 'Een goede opvoeding vormt het karakter.' },
+        { es: 'traditie', fr: 'la tradition', ex: 'We houden onze familietradities levend.' },
+        { es: 'band', fr: 'le lien', ex: 'De band tussen broers en zussen is sterk.' },
+        { es: 'reünie', fr: 'les retrouvailles', ex: 'De familiereünie was geweldig.' }
+      ]
+    },
+    couleurs: { nom: 'Couleurs', icone: '🎨',
+      debutant: [
+        { es: 'rood', fr: 'rouge', ex: 'De appel is heldere rood.' },
+        { es: 'blauw', fr: 'bleu', ex: 'De lucht is helder en blauw.' },
+        { es: 'groen', fr: 'vert', ex: 'Het gras is groen na de regen.' },
+        { es: 'geel', fr: 'jaune', ex: 'De zon is geel en warm.' },
+        { es: 'zwart', fr: 'noir', ex: 'Ik draag vandaag een zwart jasje.' },
+        { es: 'wit', fr: 'blanc', ex: 'De sneeuw is volledig wit.' },
+        { es: 'oranje', fr: 'orange', ex: 'Haar jurk is fel oranje.' },
+        { es: 'roze', fr: 'rose', ex: 'De rozen zijn lichtroze.' },
+        { es: 'paars', fr: 'violet', ex: 'De lucht wordt paars bij zonsondergang.' },
+        { es: 'bruin', fr: 'marron', ex: 'De boomstam is bruin.' }
+      ],
+      intermediaire: [
+        { es: 'grijs', fr: 'gris', ex: 'De wolken zijn donkergrijs.' },
+        { es: 'donker', fr: 'foncé', ex: 'Ik geef in de winter de voorkeur aan donkere kleuren.' },
+        { es: 'licht', fr: 'clair', ex: 'Ze draagt lichtblauw in de zomer.' },
+        { es: 'helder', fr: 'vif', ex: 'Het schilderij gebruikt heldere kleuren.' },
+        { es: 'bleek', fr: 'pâle', ex: 'Hij ziet er vandaag bleek uit.' },
+        { es: 'kleurrijk', fr: 'coloré', ex: 'De markt is erg kleurrijk.' },
+        { es: 'tint', fr: 'la teinte', ex: 'Ik hou van deze tint blauw.' },
+        { es: 'transparant', fr: 'transparent', ex: 'Het glas is transparant.' }
+      ],
+      avance: [
+        { es: 'contrast', fr: 'le contraste', ex: 'Het contrast tussen de kleuren is opvallend.' },
+        { es: 'levendig', fr: 'éclatant', ex: 'De levendige kleuren trokken mijn aandacht.' },
+        { es: 'toon', fr: 'la nuance', ex: 'De toon verandert in ander licht.' },
+        { es: 'monochroom', fr: 'monochrome', ex: "De foto is in monochroom." },
+        { es: 'pigment', fr: 'le pigment', ex: 'In deze verf worden natuurlijke pigmenten gebruikt.' },
+        { es: 'spectrum', fr: 'le spectre', ex: 'Een regenboog toont het volledige spectrum.' },
+        { es: 'tint toevoegen', fr: 'la teinte', ex: 'Voeg een tint geel toe aan het mengsel.' }
       ]
     }
   },
   'ru': {
-    vocabulaire: { nom: 'Словарь', icone: '📚',
+    essentiel: { nom: 'Essentiel', icone: '🌟',
       debutant: [
-        { es: 'привет', fr: 'bonjour/salut', ex: 'Привет, как дела?' },
-        { es: 'пока', fr: 'au revoir', ex: 'Пока, до скорого!' },
-        { es: 'да', fr: 'oui', ex: 'Да, пожалуйста.' },
+        { es: 'привет', fr: 'bonjour', ex: 'Привет, как дела?' },
+        { es: 'до свидания', fr: 'au revoir', ex: 'До свидания, до скорой встречи!' },
+        { es: 'пожалуйста', fr: "s'il vous plaît", ex: 'Пожалуйста, помогите мне.' },
+        { es: 'спасибо', fr: 'merci', ex: 'Большое спасибо!' },
+        { es: 'да', fr: 'oui', ex: 'Да, я понимаю.' },
         { es: 'нет', fr: 'non', ex: 'Нет, спасибо.' },
-        { es: 'вода', fr: "l'eau", ex: 'Я пью воду каждый день.' },
-        { es: 'хлеб', fr: 'le pain', ex: 'Хлеб очень свежий.' },
-        { es: 'дом', fr: 'la maison', ex: 'Мой дом большой.' },
-        { es: 'кот', fr: 'le chat', ex: 'Кот спит на диване.' },
-        { es: 'книга', fr: 'le livre', ex: 'Я читаю книгу каждый вечер.' },
-        { es: 'друг', fr: "l'ami", ex: 'Мой друг очень добрый.' }
+        { es: 'извините', fr: 'excusez-moi', ex: 'Извините, где находится вокзал?' },
+        { es: 'простите', fr: 'je suis désolé', ex: 'Простите за опоздание.' },
+        { es: 'помощь', fr: "l'aide", ex: 'Мне нужна помощь, пожалуйста.' },
+        { es: 'друг', fr: "l'ami", ex: 'Она моя лучшая подруга.' }
       ],
       intermediaire: [
-        { es: 'город', fr: 'la ville', ex: 'Город очень оживлённый.' },
-        { es: 'школа', fr: "l'école", ex: 'Я иду в школу каждое утро.' },
-        { es: 'деньги', fr: "l'argent", ex: 'Мне нужны деньги для путешествия.' },
-        { es: 'машина', fr: 'la voiture', ex: 'Моя машина красная.' },
-        { es: 'красивый', fr: 'beau', ex: 'Закат очень красивый.' },
-        { es: 'счастливый', fr: 'heureux', ex: 'Я сегодня счастливый.' },
-        { es: 'работа', fr: 'le travail', ex: 'Работа важна.' },
-        { es: 'время', fr: 'le temps', ex: 'Время летит быстро.' },
-        { es: 'есть', fr: 'manger', ex: 'Хочу есть прямо сейчас.' },
-        { es: 'спать', fr: 'dormir', ex: 'Мне нужно спать восемь часов.' }
+        { es: 'понимать', fr: 'comprendre', ex: 'Вы меня понимаете?' },
+        { es: 'говорить', fr: 'parler', ex: 'Я говорю немного по-русски.' },
+        { es: 'учить', fr: 'apprendre', ex: 'Я хочу учить русский язык.' },
+        { es: 'повторить', fr: 'répéter', ex: 'Можете повторить, пожалуйста?' },
+        { es: 'медленно', fr: 'lentement', ex: 'Говорите, пожалуйста, медленнее.' },
+        { es: 'знать', fr: 'savoir', ex: 'Я не знаю ответа.' },
+        { es: 'нуждаться', fr: 'avoir besoin de', ex: 'Мне нужна минута.' },
+        { es: 'хотеть', fr: 'vouloir', ex: 'Я хочу попробовать.' }
       ],
       avance: [
-        { es: 'путешествие', fr: 'le voyage', ex: 'Долгое путешествие ждёт нас.' },
-        { es: 'свобода', fr: 'la liberté', ex: 'Свобода — основное право.' },
-        { es: 'мечта', fr: 'le rêve', ex: 'У меня есть мечта о будущем.' },
-        { es: 'вызов', fr: 'le défi', ex: 'Этот вызов очень сложный.' },
-        { es: 'успех', fr: 'le succès', ex: 'Успех требует упорного труда.' },
-        { es: 'опыт', fr: "l'expérience", ex: 'Опыт — лучший учитель.' },
-        { es: 'открывать', fr: 'découvrir', ex: 'Я люблю открывать новые места.' },
-        { es: 'понимать', fr: 'comprendre', ex: 'Теперь я понимаю проблему.' },
-        { es: 'любовь', fr: "l'amour", ex: 'Любовь — прекрасное чувство.' },
-        { es: 'музыка', fr: 'la musique', ex: 'Музыка объединяет людей.' }
+        { es: 'возможность', fr: "l'opportunité", ex: 'Это замечательная возможность.' },
+        { es: 'вызов', fr: 'le défi', ex: 'Каждый вызов делает нас сильнее.' },
+        { es: 'достигать', fr: 'atteindre', ex: 'Я достигну своих целей.' },
+        { es: 'ответственность', fr: 'la responsabilité', ex: 'Мы разделяем ответственность.' },
+        { es: 'любопытный', fr: 'curieux', ex: 'Она очень любопытна в науке.' },
+        { es: 'решительный', fr: 'déterminé', ex: 'Он решительно настроен на успех.' },
+        { es: 'улучшать', fr: 'améliorer', ex: 'Я совершенствую свои навыки каждый день.' }
+      ]
+    },
+    nourriture: { nom: 'Nourriture', icone: '🍕',
+      debutant: [
+        { es: 'хлеб', fr: 'le pain', ex: 'Хлеб ещё тёплый.' },
+        { es: 'вода', fr: "l'eau", ex: 'Я пью воду весь день.' },
+        { es: 'молоко', fr: 'le lait', ex: 'Я добавляю молоко в кофе.' },
+        { es: 'яйцо', fr: "l'œuf", ex: 'Я ем яйцо на завтрак.' },
+        { es: 'курица', fr: 'le poulet', ex: 'Курица очень вкусная.' },
+        { es: 'рыба', fr: 'le poisson', ex: 'Я люблю есть рыбу.' },
+        { es: 'суп', fr: 'la soupe', ex: 'Этот суп очень горячий.' },
+        { es: 'яблоко', fr: 'la pomme', ex: 'Я ем яблоко каждое утро.' },
+        { es: 'сыр', fr: 'le fromage', ex: 'Россия производит много видов сыра.' },
+        { es: 'чай', fr: 'le thé', ex: 'Я пью чай каждое утро.' }
+      ],
+      intermediaire: [
+        { es: 'клубника', fr: 'la fraise', ex: 'Клубника спелая и сладкая.' },
+        { es: 'апельсиновый сок', fr: "le jus d'orange", ex: 'Я пью апельсиновый сок утром.' },
+        { es: 'грибы', fr: 'les champignons', ex: 'Я добавляю грибы в соус.' },
+        { es: 'масло', fr: 'le beurre', ex: 'Я мажу масло на хлеб.' },
+        { es: 'сахар', fr: 'le sucre', ex: 'Вы берёте сахар в чай?' },
+        { es: 'перец', fr: 'le poivre', ex: 'Добавьте немного перца.' },
+        { es: 'десерт', fr: 'le dessert', ex: 'Что вы хотите на десерт?' },
+        { es: 'рецепт', fr: 'la recette', ex: 'Это рецепт моей бабушки.' }
+      ],
+      avance: [
+        { es: 'ингредиенты', fr: 'les ingrédients', ex: 'Все ингредиенты свежие.' },
+        { es: 'приправа', fr: "l'assaisonnement", ex: 'Приправа идеальная.' },
+        { es: 'питательный', fr: 'nutritif', ex: 'Это блюдо очень питательное.' },
+        { es: 'аппетит', fr: "l'appétit", ex: 'Запах возбуждает аппетит.' },
+        { es: 'кухня', fr: 'la cuisine', ex: 'Я люблю азиатскую кухню.' },
+        { es: 'вкус', fr: 'la saveur', ex: 'Вкус этого блюда уникален.' },
+        { es: 'порция', fr: 'la portion', ex: 'Порция очень щедрая.' }
+      ]
+    },
+    voyage: { nom: 'Voyage', icone: '✈️',
+      debutant: [
+        { es: 'аэропорт', fr: "l'aéroport", ex: 'Мы прибываем в аэропорт в восемь.' },
+        { es: 'гостиница', fr: "l'hôtel", ex: 'Гостиница находится рядом с пляжем.' },
+        { es: 'билет', fr: 'le billet', ex: 'Я купил авиабилет.' },
+        { es: 'паспорт', fr: 'le passeport', ex: 'Не забудьте паспорт.' },
+        { es: 'карта', fr: 'la carte', ex: 'Я пользуюсь картой, чтобы найти дорогу.' },
+        { es: 'поезд', fr: 'le train', ex: 'Поезд отправляется в девять.' },
+        { es: 'автобус', fr: 'le bus', ex: 'Я каждый день езжу на автобусе.' },
+        { es: 'вокзал', fr: 'la gare', ex: 'Вокзал находится в центре города.' },
+        { es: 'багаж', fr: 'les bagages', ex: 'Мой багаж очень тяжёлый.' },
+        { es: 'пляж', fr: 'la plage', ex: 'Мы отдыхаем на пляже.' }
+      ],
+      intermediaire: [
+        { es: 'бронирование', fr: 'la réservation', ex: 'Я сделал бронирование онлайн.' },
+        { es: 'отправление', fr: 'le départ', ex: 'Отправление в полдень.' },
+        { es: 'прибытие', fr: "l'arrivée", ex: 'Наше прибытие задерживается.' },
+        { es: 'таможня', fr: 'la douane', ex: 'Мы проходим таможню.' },
+        { es: 'валюта', fr: 'la devise', ex: 'Я меняю валюту в банке.' },
+        { es: 'сувенир', fr: 'le souvenir', ex: 'Я покупаю сувенир для семьи.' },
+        { es: 'гид', fr: 'le guide', ex: 'Гид показывает нам город.' },
+        { es: 'приключение', fr: "l'aventure", ex: 'Каждая поездка — новое приключение.' }
+      ],
+      avance: [
+        { es: 'маршрут', fr: "l'itinéraire", ex: 'Наш маршрут включает пять городов.' },
+        { es: 'пункт назначения', fr: 'la destination', ex: 'Париж — мой город мечты.' },
+        { es: 'жильё', fr: "l'hébergement", ex: 'Жильё отличное.' },
+        { es: 'исследовать', fr: 'explorer', ex: 'Я исследую старый город пешком.' },
+        { es: 'достопримечательность', fr: 'le monument', ex: 'Красная площадь — знаменитая достопримечательность.' },
+        { es: 'культура', fr: 'la culture', ex: 'Я восхищаюсь местной культурой.' },
+        { es: 'пейзаж', fr: 'le paysage', ex: 'Пейзаж захватывает дух.' }
+      ]
+    },
+    famille: { nom: 'Famille', icone: '👨‍👩‍👧',
+      debutant: [
+        { es: 'мама', fr: 'la mère', ex: 'Моя мама очень хорошо готовит.' },
+        { es: 'папа', fr: 'le père', ex: 'Мой папа работает в Москве.' },
+        { es: 'сестра', fr: 'la sœur', ex: 'Моя сестра очень смешная.' },
+        { es: 'брат', fr: 'le frère', ex: 'Мой брат играет в футбол.' },
+        { es: 'бабушка', fr: 'la grand-mère', ex: 'Бабушка рассказывает замечательные истории.' },
+        { es: 'дедушка', fr: 'le grand-père', ex: 'Дедушка очень мудрый.' },
+        { es: 'ребёнок', fr: "l'enfant", ex: 'Ребёнок играет в саду.' },
+        { es: 'семья', fr: 'la famille', ex: 'Моя семья очень дружная.' },
+        { es: 'дом', fr: 'le foyer', ex: 'В гостях хорошо, а дома лучше.' },
+        { es: 'дочь', fr: 'la fille', ex: 'Дочь учится в университете.' }
+      ],
+      intermediaire: [
+        { es: 'двоюродный брат', fr: 'le cousin', ex: 'Мой двоюродный брат живёт в Санкт-Петербурге.' },
+        { es: 'тётя', fr: 'la tante', ex: 'Тётя печёт вкусные пироги.' },
+        { es: 'дядя', fr: "l'oncle", ex: 'Дядя врач.' },
+        { es: 'племянник', fr: 'le neveu', ex: 'Племяннику два года.' },
+        { es: 'муж', fr: 'le mari', ex: 'Её муж очень заботливый.' },
+        { es: 'жена', fr: 'la femme', ex: 'Его жена учительница.' },
+        { es: 'свадьба', fr: 'le mariage', ex: 'Свадьба была прекрасной.' },
+        { es: 'родители', fr: 'les parents', ex: 'Мои родители в отпуске.' }
+      ],
+      avance: [
+        { es: 'отношения', fr: 'la relation', ex: 'Хорошие отношения требуют усилий.' },
+        { es: 'наследие', fr: "l'héritage", ex: 'Мы разделяем богатое культурное наследие.' },
+        { es: 'поколение', fr: 'la génération', ex: 'Каждое поколение учится у предыдущего.' },
+        { es: 'воспитание', fr: "l'éducation", ex: 'Хорошее воспитание формирует характер.' },
+        { es: 'традиция', fr: 'la tradition', ex: 'Мы храним семейные традиции.' },
+        { es: 'связь', fr: 'le lien', ex: 'Связь между братьями и сёстрами крепкая.' },
+        { es: 'воссоединение', fr: 'les retrouvailles', ex: 'Встреча семьи была замечательной.' }
+      ]
+    },
+    couleurs: { nom: 'Couleurs', icone: '🎨',
+      debutant: [
+        { es: 'красный', fr: 'rouge', ex: 'Яблоко ярко-красное.' },
+        { es: 'синий', fr: 'bleu', ex: 'Небо ясное и синее.' },
+        { es: 'зелёный', fr: 'vert', ex: 'Трава зелёная после дождя.' },
+        { es: 'жёлтый', fr: 'jaune', ex: 'Солнце жёлтое и тёплое.' },
+        { es: 'чёрный', fr: 'noir', ex: 'Сегодня я ношу чёрную куртку.' },
+        { es: 'белый', fr: 'blanc', ex: 'Снег полностью белый.' },
+        { es: 'оранжевый', fr: 'orange', ex: 'Её платье ярко-оранжевое.' },
+        { es: 'розовый', fr: 'rose', ex: 'Розы бледно-розовые.' },
+        { es: 'фиолетовый', fr: 'violet', ex: 'Небо становится фиолетовым на закате.' },
+        { es: 'коричневый', fr: 'marron', ex: 'Ствол дерева коричневый.' }
+      ],
+      intermediaire: [
+        { es: 'серый', fr: 'gris', ex: 'Тучи тёмно-серые.' },
+        { es: 'тёмный', fr: 'foncé', ex: 'Зимой я предпочитаю тёмные цвета.' },
+        { es: 'светлый', fr: 'clair', ex: 'Летом она носит светло-голубой.' },
+        { es: 'яркий', fr: 'vif', ex: 'На картине яркие цвета.' },
+        { es: 'бледный', fr: 'pâle', ex: 'Он сегодня выглядит бледным.' },
+        { es: 'красочный', fr: 'coloré', ex: 'Рынок очень красочный.' },
+        { es: 'оттенок', fr: 'la teinte', ex: 'Мне нравится этот оттенок синего.' },
+        { es: 'прозрачный', fr: 'transparent', ex: 'Стекло прозрачное.' }
+      ],
+      avance: [
+        { es: 'контраст', fr: 'le contraste', ex: 'Контраст между цветами разительный.' },
+        { es: 'насыщенный', fr: 'éclatant', ex: 'Насыщенные цвета привлекли моё внимание.' },
+        { es: 'нюанс', fr: 'la nuance', ex: 'Нюанс меняется при разном освещении.' },
+        { es: 'монохромный', fr: 'monochrome', ex: 'Фотография монохромная.' },
+        { es: 'пигмент', fr: 'le pigment', ex: 'В этой краске используются натуральные пигменты.' },
+        { es: 'спектр', fr: 'le spectre', ex: 'Радуга показывает полный спектр.' },
+        { es: 'тон', fr: 'la teinte', ex: 'Добавьте тон жёлтого в смесь.' }
       ]
     }
   },
   'ja': {
-    vocabulaire: { nom: '語彙', icone: '📚',
+    essentiel: { nom: 'Essentiel', icone: '🌟',
       debutant: [
         { es: 'こんにちは', fr: 'bonjour', ex: 'こんにちは、お元気ですか？' },
-        { es: 'さようなら', fr: 'au revoir', ex: 'さようなら、またね！' },
-        { es: 'はい', fr: 'oui', ex: 'はい、お願いします。' },
+        { es: 'さようなら', fr: 'au revoir', ex: 'さようなら、またすぐに！' },
+        { es: 'おねがいします', fr: "s'il vous plaît", ex: 'おねがいします、助けてください。' },
+        { es: 'ありがとう', fr: 'merci', ex: 'ありがとうございます！' },
+        { es: 'はい', fr: 'oui', ex: 'はい、わかりました。' },
         { es: 'いいえ', fr: 'non', ex: 'いいえ、けっこうです。' },
-        { es: 'みず', fr: "l'eau", ex: 'まいにちみずをのみます。' },
-        { es: 'パン', fr: 'le pain', ex: 'パンをたべます。' },
-        { es: 'いえ', fr: 'la maison', ex: 'わたしのいえはおおきい。' },
-        { es: 'ねこ', fr: 'le chat', ex: 'ねこがソファでねています。' },
-        { es: 'ほん', fr: 'le livre', ex: 'まいばんほんをよみます。' },
-        { es: 'ともだち', fr: "l'ami", ex: 'わたしのともだちはやさしい。' }
+        { es: 'すみません', fr: 'excusez-moi', ex: 'すみません、駅はどこですか？' },
+        { es: 'ごめんなさい', fr: 'je suis désolé', ex: 'ごめんなさい、遅れました。' },
+        { es: 'たすけて', fr: "l'aide", ex: 'たすけてください。' },
+        { es: 'ともだち', fr: "l'ami", ex: '彼女は私の親友です。' }
       ],
       intermediaire: [
-        { es: 'まち', fr: 'la ville', ex: 'まちはにぎやかです。' },
-        { es: 'がっこう', fr: "l'école", ex: 'まいあさがっこうへいきます。' },
-        { es: 'おかね', fr: "l'argent", ex: 'りょこうにおかねがひつようです。' },
-        { es: 'くるま', fr: 'la voiture', ex: 'わたしのくるまはあかい。' },
-        { es: 'きれい', fr: 'beau/joli', ex: 'ゆうやけはきれいです。' },
-        { es: 'しあわせ', fr: 'heureux', ex: 'きょうはしあわせです。' },
-        { es: 'しごと', fr: 'le travail', ex: 'しごとはたいせつです。' },
-        { es: 'じかん', fr: 'le temps', ex: 'じかんははやくたちます。' },
-        { es: 'たべる', fr: 'manger', ex: 'いましたべたいです。' },
-        { es: 'ねる', fr: 'dormir', ex: 'はちじかんねるひつようがあります。' }
+        { es: 'わかる', fr: 'comprendre', ex: 'わかりますか？' },
+        { es: 'はなす', fr: 'parler', ex: '私は少し日本語を話します。' },
+        { es: 'まなぶ', fr: 'apprendre', ex: '日本語を学びたいです。' },
+        { es: 'もういちど', fr: 'répéter', ex: 'もう一度言ってください。' },
+        { es: 'ゆっくり', fr: 'lentement', ex: 'ゆっくり話してください。' },
+        { es: 'しる', fr: 'savoir', ex: '答えを知りません。' },
+        { es: 'ひつよう', fr: 'avoir besoin de', ex: '少し時間が必要です。' },
+        { es: 'したい', fr: 'vouloir', ex: 'やってみたいです。' }
       ],
       avance: [
-        { es: 'たび', fr: 'le voyage', ex: 'ながいたびがまっています。' },
-        { es: 'じゆう', fr: 'la liberté', ex: 'じゆうはきほんてきなけんりです。' },
-        { es: 'ゆめ', fr: 'le rêve', ex: 'しょうらいのゆめがあります。' },
-        { es: 'ちょうせん', fr: 'le défi', ex: 'このちょうせんはむずかしい。' },
-        { es: 'せいこう', fr: 'le succès', ex: 'せいこうにはどりょくがひつよう。' },
-        { es: 'けいけん', fr: "l'expérience", ex: 'けいけんはいちばんのせんせいです。' },
-        { es: 'はっけん', fr: 'découvrir', ex: 'あたらしいばしょをはっけんします。' },
-        { es: 'りかい', fr: 'comprendre', ex: 'もんだいをりかいしました。' },
-        { es: 'あい', fr: "l'amour", ex: 'あいはすばらしいきもちです。' },
-        { es: 'おんがく', fr: 'la musique', ex: 'おんがくはひとをつなぎます。' }
+        { es: 'きかい', fr: "l'opportunité", ex: 'これは素晴らしい機会です。' },
+        { es: 'ちょうせん', fr: 'le défi', ex: 'すべての挑戦が私たちを強くします。' },
+        { es: 'たっせいする', fr: 'atteindre', ex: '目標を達成します。' },
+        { es: 'せきにん', fr: 'la responsabilité', ex: '私たちは責任を共有しています。' },
+        { es: 'こうきしん', fr: 'curiosité', ex: '彼女は科学にとても好奇心旺盛です。' },
+        { es: 'けつい', fr: 'détermination', ex: '彼は成功しようと決意しています。' },
+        { es: 'むきりょく', fr: 'améliorer', ex: '毎日スキルを向上させています。' }
+      ]
+    },
+    nourriture: { nom: 'Nourriture', icone: '🍕',
+      debutant: [
+        { es: 'ごはん', fr: 'le riz / repas', ex: 'ごはんを毎日食べます。' },
+        { es: 'みず', fr: "l'eau", ex: '一日中水を飲みます。' },
+        { es: 'パン', fr: 'le pain', ex: 'パンはまだ温かいです。' },
+        { es: 'たまご', fr: "l'œuf", ex: '朝ごはんにたまごを食べます。' },
+        { es: 'さかな', fr: 'le poisson', ex: 'さかなが大好きです。' },
+        { es: 'とりにく', fr: 'le poulet', ex: 'とりにくはおいしいです。' },
+        { es: 'みそしる', fr: 'la soupe miso', ex: '毎朝みそしるを飲みます。' },
+        { es: 'すし', fr: 'les sushis', ex: 'すしは日本の有名な料理です。' },
+        { es: 'ラーメン', fr: 'les ramen', ex: 'このラーメンはとてもおいしい。' },
+        { es: 'おちゃ', fr: 'le thé', ex: '毎晩おちゃを飲みます。' }
+      ],
+      intermediaire: [
+        { es: 'いちご', fr: 'la fraise', ex: 'いちごは甘くて熟しています。' },
+        { es: 'だいこん', fr: 'le radis blanc', ex: 'だいこんを料理に入れます。' },
+        { es: 'とうふ', fr: 'le tofu', ex: 'とうふは栄養があります。' },
+        { es: 'しょうゆ', fr: 'la sauce soja', ex: 'しょうゆで味付けします。' },
+        { es: 'さとう', fr: 'le sucre', ex: 'さとうを少し加えます。' },
+        { es: 'デザート', fr: 'le dessert', ex: 'デザートは何にしますか？' },
+        { es: 'レシピ', fr: 'la recette', ex: 'これはおばあちゃんのレシピです。' },
+        { es: 'ぎゅうにゅう', fr: 'le lait', ex: 'コーヒーにぎゅうにゅうを入れます。' }
+      ],
+      avance: [
+        { es: 'ざいりょう', fr: 'les ingrédients', ex: '材料はすべて新鮮です。' },
+        { es: 'ちょうみりょう', fr: "l'assaisonnement", ex: '調味料は完璧です。' },
+        { es: 'えいようがある', fr: 'nutritif', ex: 'この料理はとても栄養があります。' },
+        { es: 'しょくよく', fr: "l'appétit", ex: 'においで食欲が増します。' },
+        { es: 'りょうり', fr: 'la cuisine', ex: 'アジア料理が大好きです。' },
+        { es: 'あじ', fr: 'la saveur', ex: 'この料理の味は独特です。' },
+        { es: 'いちにんまえ', fr: 'la portion', ex: '一人前はとても多いです。' }
+      ]
+    },
+    voyage: { nom: 'Voyage', icone: '✈️',
+      debutant: [
+        { es: 'くうこう', fr: "l'aéroport", ex: '8時に空港に着きます。' },
+        { es: 'ホテル', fr: "l'hôtel", ex: 'ホテルはビーチの近くにあります。' },
+        { es: 'きっぷ', fr: 'le billet', ex: '飛行機のきっぷを買いました。' },
+        { es: 'パスポート', fr: 'le passeport', ex: 'パスポートを忘れないでください。' },
+        { es: 'ちず', fr: 'la carte', ex: '道を探すためにちずを使います。' },
+        { es: 'でんしゃ', fr: 'le train', ex: 'でんしゃは9時に出発します。' },
+        { es: 'バス', fr: 'le bus', ex: '毎日バスに乗ります。' },
+        { es: 'えき', fr: 'la gare', ex: 'えきは市の中心にあります。' },
+        { es: 'にもつ', fr: 'les bagages', ex: 'にもつはとても重いです。' },
+        { es: 'うみ', fr: 'la plage', ex: 'うみでリラックスします。' }
+      ],
+      intermediaire: [
+        { es: 'よやく', fr: 'la réservation', ex: 'オンラインでよやくしました。' },
+        { es: 'しゅっぱつ', fr: 'le départ', ex: 'しゅっぱつは正午です。' },
+        { es: 'とうちゃく', fr: "l'arrivée", ex: 'とうちゃくが遅れています。' },
+        { es: 'ぜいかん', fr: 'la douane', ex: 'ぜいかんを通過します。' },
+        { es: 'つうか', fr: 'la devise', ex: '銀行でつうかを両替します。' },
+        { es: 'おみやげ', fr: 'le souvenir', ex: '家族のためにおみやげを買います。' },
+        { es: 'ガイド', fr: 'le guide', ex: 'ガイドが町を案内してくれます。' },
+        { es: 'ぼうけん', fr: "l'aventure", ex: '旅はいつも新しいぼうけんです。' }
+      ],
+      avance: [
+        { es: 'いてぃねらりー', fr: "l'itinéraire", ex: '旅程には5つの都市が含まれています。' },
+        { es: 'もくてきち', fr: 'la destination', ex: 'パリは私の夢の目的地です。' },
+        { es: 'しゅくはく', fr: "l'hébergement", ex: '宿泊施設は素晴らしいです。' },
+        { es: 'たんけんする', fr: 'explorer', ex: '旧市街を徒歩で探検します。' },
+        { es: 'めいしょ', fr: 'le monument', ex: '富士山は有名な名所です。' },
+        { es: 'ぶんか', fr: 'la culture', ex: '地元の文化に魅了されています。' },
+        { es: 'けしき', fr: 'le paysage', ex: '景色は息をのむほど美しいです。' }
+      ]
+    },
+    famille: { nom: 'Famille', icone: '👨‍👩‍👧',
+      debutant: [
+        { es: 'おかあさん', fr: 'la mère', ex: 'おかあさんはとても料理が上手です。' },
+        { es: 'おとうさん', fr: 'le père', ex: 'おとうさんは東京で働いています。' },
+        { es: 'いもうと', fr: 'la sœur cadette', ex: 'いもうとはとても面白いです。' },
+        { es: 'おにいさん', fr: 'le grand frère', ex: 'おにいさんはサッカーをします。' },
+        { es: 'おばあさん', fr: 'la grand-mère', ex: 'おばあさんは素敵な話をしてくれます。' },
+        { es: 'おじいさん', fr: 'le grand-père', ex: 'おじいさんはとても賢いです。' },
+        { es: 'あかちゃん', fr: 'le bébé', ex: 'あかちゃんは静かに眠っています。' },
+        { es: 'こども', fr: "l'enfant", ex: 'こどもは庭で遊んでいます。' },
+        { es: 'かぞく', fr: 'la famille', ex: 'かぞくはとても仲良しです。' },
+        { es: 'いえ', fr: 'le foyer', ex: 'いえが一番落ち着きます。' }
+      ],
+      intermediaire: [
+        { es: 'いとこ', fr: 'le cousin', ex: 'いとこは大阪に住んでいます。' },
+        { es: 'おばさん', fr: 'la tante', ex: 'おばさんはおいしいお菓子を作ります。' },
+        { es: 'おじさん', fr: "l'oncle", ex: 'おじさんはお医者さんです。' },
+        { es: 'おい', fr: 'le neveu', ex: 'おいは2歳です。' },
+        { es: 'めい', fr: 'la nièce', ex: 'めいは絵を描くのが大好きです。' },
+        { es: 'だんな', fr: 'le mari', ex: 'だんなはとても優しいです。' },
+        { es: 'つま', fr: 'la femme', ex: 'つまは先生です。' },
+        { es: 'けっこん', fr: 'le mariage', ex: 'けっこん式はとても美しかったです。' }
+      ],
+      avance: [
+        { es: 'かんけい', fr: 'la relation', ex: 'よい関係には努力が必要です。' },
+        { es: 'ぶんかいさん', fr: "l'héritage", ex: '私たちは豊かな文化遺産を共有しています。' },
+        { es: 'せだい', fr: 'la génération', ex: '世代ごとに前の世代から学びます。' },
+        { es: 'きょういく', fr: "l'éducation", ex: 'よい教育が人格を形成します。' },
+        { es: 'でんとう', fr: 'la tradition', ex: '家族の伝統を守っています。' },
+        { es: 'きずな', fr: 'le lien', ex: '兄弟のきずなは強いです。' },
+        { es: 'さいかい', fr: 'les retrouvailles', ex: '家族の再会はとても素晴らしかったです。' }
+      ]
+    },
+    couleurs: { nom: 'Couleurs', icone: '🎨',
+      debutant: [
+        { es: 'あか', fr: 'rouge', ex: 'りんごは真っ赤です。' },
+        { es: 'あお', fr: 'bleu', ex: 'そらは澄んで青いです。' },
+        { es: 'みどり', fr: 'vert', ex: '雨の後、草は緑です。' },
+        { es: 'き', fr: 'jaune', ex: 'たいようは黄色くて温かいです。' },
+        { es: 'くろ', fr: 'noir', ex: '今日は黒いジャケットを着ています。' },
+        { es: 'しろ', fr: 'blanc', ex: '雪は真っ白です。' },
+        { es: 'オレンジ', fr: 'orange', ex: '彼女のドレスは明るいオレンジです。' },
+        { es: 'ピンク', fr: 'rose', ex: 'バラは淡いピンクです。' },
+        { es: 'むらさき', fr: 'violet', ex: '夕暮れ時、空は紫になります。' },
+        { es: 'ちゃいろ', fr: 'marron', ex: '木の幹は茶色です。' }
+      ],
+      intermediaire: [
+        { es: 'はいいろ', fr: 'gris', ex: '雲はだいだいはいいろです。' },
+        { es: 'こい', fr: 'foncé', ex: '冬は濃い色が好きです。' },
+        { es: 'うすい', fr: 'clair', ex: '夏には薄い青を着ます。' },
+        { es: 'あざやか', fr: 'vif', ex: '絵は鮮やかな色を使っています。' },
+        { es: 'あおざめた', fr: 'pâle', ex: '今日は顔色が青ざめています。' },
+        { es: 'いろとりどり', fr: 'coloré', ex: 'いちばはとてもいろとりどりです。' },
+        { es: 'いろあい', fr: 'la teinte', ex: 'この色合いの青が好きです。' },
+        { es: 'とうめい', fr: 'transparent', ex: 'ガラスは透明です。' }
+      ],
+      avance: [
+        { es: 'たいひ', fr: 'le contraste', ex: '色のたいひが印象的です。' },
+        { es: 'あざやかな', fr: 'éclatant', ex: '鮮やかな色が目を引きました。' },
+        { es: 'ニュアンス', fr: 'la nuance', ex: '光によってニュアンスが変わります。' },
+        { es: 'モノクロ', fr: 'monochrome', ex: '写真はモノクロです。' },
+        { es: 'がんりょう', fr: 'le pigment', ex: 'この絵の具は天然顔料を使っています。' },
+        { es: 'スペクトル', fr: 'le spectre', ex: '虹はスペクトル全体を示します。' },
+        { es: 'いろみ', fr: 'la teinte', ex: '混合物に黄色の色みを加えます。' }
       ]
     }
   },
   'ko': {
-    vocabulaire: { nom: '어휘', icone: '📚',
+    essentiel: { nom: 'Essentiel', icone: '🌟',
       debutant: [
         { es: '안녕하세요', fr: 'bonjour', ex: '안녕하세요, 어떻게 지내세요?' },
-        { es: '안녕히 가세요', fr: 'au revoir', ex: '안녕히 가세요, 또 봐요!' },
-        { es: '네', fr: 'oui', ex: '네, 감사합니다.' },
-        { es: '아니요', fr: 'non', ex: '아니요, 괜찮아요.' },
-        { es: '물', fr: "l'eau", ex: '매일 물을 마십니다.' },
-        { es: '빵', fr: 'le pain', ex: '아침에 빵을 먹습니다.' },
-        { es: '집', fr: 'la maison', ex: '우리 집이 정말 큽니다.' },
-        { es: '고양이', fr: 'le chat', ex: '고양이가 소파에서 잡니다.' },
-        { es: '책', fr: 'le livre', ex: '매일 저녁 책을 읽습니다.' },
-        { es: '친구', fr: "l'ami", ex: '제 친구는 정말 친절합니다.' }
+        { es: '안녕히 가세요', fr: 'au revoir', ex: '안녕히 가세요, 곧 봐요!' },
+        { es: '부탁합니다', fr: "s'il vous plaît", ex: '부탁합니다, 도와주세요.' },
+        { es: '감사합니다', fr: 'merci', ex: '정말 감사합니다!' },
+        { es: '네', fr: 'oui', ex: '네, 이해했습니다.' },
+        { es: '아니요', fr: 'non', ex: '아니요, 괜찮습니다.' },
+        { es: '실례합니다', fr: 'excusez-moi', ex: '실례합니다, 역이 어디 있나요?' },
+        { es: '죄송합니다', fr: 'je suis désolé', ex: '늦어서 죄송합니다.' },
+        { es: '도움', fr: "l'aide", ex: '도움이 필요합니다, 부탁합니다.' },
+        { es: '친구', fr: "l'ami", ex: '그녀는 제 가장 친한 친구예요.' }
       ],
       intermediaire: [
-        { es: '도시', fr: 'la ville', ex: '도시는 매우 활기찹니다.' },
-        { es: '학교', fr: "l'école", ex: '매일 아침 학교에 갑니다.' },
-        { es: '돈', fr: "l'argent", ex: '여행하려면 돈이 필요합니다.' },
-        { es: '자동차', fr: 'la voiture', ex: '제 자동차는 빨간색입니다.' },
-        { es: '아름다워요', fr: 'beau', ex: '노을이 정말 아름다워요.' },
-        { es: '행복해요', fr: 'heureux', ex: '오늘 저는 행복해요.' },
-        { es: '일', fr: 'le travail', ex: '일이 중요합니다.' },
-        { es: '시간', fr: 'le temps', ex: '시간이 빨리 갑니다.' },
-        { es: '먹다', fr: 'manger', ex: '지금 먹다 싶어요.' },
-        { es: '자다', fr: 'dormir', ex: '여덟 시간 자다 해요.' }
+        { es: '이해하다', fr: 'comprendre', ex: '이해하시겠어요?' },
+        { es: '말하다', fr: 'parler', ex: '저는 한국어를 조금 합니다.' },
+        { es: '배우다', fr: 'apprendre', ex: '한국어를 배우고 싶어요.' },
+        { es: '다시 말하다', fr: 'répéter', ex: '다시 한번 말씀해 주세요.' },
+        { es: '천천히', fr: 'lentement', ex: '천천히 말씀해 주세요.' },
+        { es: '알다', fr: 'savoir', ex: '답을 모르겠어요.' },
+        { es: '필요하다', fr: 'avoir besoin de', ex: '잠깐 시간이 필요해요.' },
+        { es: '원하다', fr: 'vouloir', ex: '시도해 보고 싶어요.' }
       ],
       avance: [
-        { es: '여행', fr: 'le voyage', ex: '긴 여행이 우리를 기다립니다.' },
-        { es: '자유', fr: 'la liberté', ex: '자유는 기본 권리입니다.' },
-        { es: '꿈', fr: 'le rêve', ex: '미래에 대한 꿈이 있습니다.' },
-        { es: '도전', fr: 'le défi', ex: '이 도전은 정말 어렵습니다.' },
-        { es: '성공', fr: 'le succès', ex: '성공에는 노력이 필요합니다.' },
-        { es: '경험', fr: "l'expérience", ex: '경험은 최고의 선생님입니다.' },
-        { es: '발견하다', fr: 'découvrir', ex: '새로운 장소를 발견하다 합니다.' },
-        { es: '이해하다', fr: 'comprendre', ex: '이제 문제를 이해하다 했어요.' },
-        { es: '사랑', fr: "l'amour", ex: '사랑은 아름다운 감정입니다.' },
-        { es: '음악', fr: 'la musique', ex: '음악은 사람들을 하나로 만듭니다.' }
+        { es: '기회', fr: "l'opportunité", ex: '이것은 훌륭한 기회입니다.' },
+        { es: '도전', fr: 'le défi', ex: '모든 도전은 우리를 더 강하게 만듭니다.' },
+        { es: '목표달성', fr: 'atteindre', ex: '목표를 달성할 것입니다.' },
+        { es: '책임', fr: 'la responsabilité', ex: '우리는 책임을 공유합니다.' },
+        { es: '호기심', fr: 'curiosité', ex: '그녀는 과학에 매우 호기심이 많습니다.' },
+        { es: '결단력', fr: 'détermination', ex: '그는 성공하기로 결심했습니다.' },
+        { es: '개선하다', fr: 'améliorer', ex: '매일 실력을 향상시키고 있습니다.' }
+      ]
+    },
+    nourriture: { nom: 'Nourriture', icone: '🍕',
+      debutant: [
+        { es: '밥', fr: 'le riz / repas', ex: '매일 밥을 먹어요.' },
+        { es: '물', fr: "l'eau", ex: '하루 종일 물을 마셔요.' },
+        { es: '빵', fr: 'le pain', ex: '빵이 아직 따뜻해요.' },
+        { es: '달걀', fr: "l'œuf", ex: '아침에 달걀을 먹어요.' },
+        { es: '닭고기', fr: 'le poulet', ex: '닭고기가 맛있어요.' },
+        { es: '생선', fr: 'le poisson', ex: '생선을 좋아해요.' },
+        { es: '김치', fr: 'le kimchi', ex: '김치는 한국의 전통 음식이에요.' },
+        { es: '불고기', fr: 'le bœuf mariné', ex: '불고기는 매우 맛있어요.' },
+        { es: '차', fr: 'le thé', ex: '매일 저녁 차를 마셔요.' },
+        { es: '치즈', fr: 'le fromage', ex: '치즈를 좋아해요.' }
+      ],
+      intermediaire: [
+        { es: '딸기', fr: 'la fraise', ex: '딸기가 익고 달콤해요.' },
+        { es: '오렌지 주스', fr: "le jus d'orange", ex: '아침에 오렌지 주스를 마셔요.' },
+        { es: '버섯', fr: 'les champignons', ex: '소스에 버섯을 넣어요.' },
+        { es: '버터', fr: 'le beurre', ex: '빵에 버터를 발라요.' },
+        { es: '설탕', fr: 'le sucre', ex: '차에 설탕을 넣을까요?' },
+        { es: '후추', fr: 'le poivre', ex: '후추를 조금 넣어요.' },
+        { es: '디저트', fr: 'le dessert', ex: '디저트는 무엇으로 드실래요?' },
+        { es: '레시피', fr: 'la recette', ex: '할머니 레시피예요.' }
+      ],
+      avance: [
+        { es: '재료', fr: 'les ingrédients', ex: '재료가 모두 신선해요.' },
+        { es: '양념', fr: "l'assaisonnement", ex: '양념이 완벽해요.' },
+        { es: '영양가 있는', fr: 'nutritif', ex: '이 음식은 매우 영양가 있어요.' },
+        { es: '식욕', fr: "l'appétit", ex: '냄새가 식욕을 자극해요.' },
+        { es: '요리', fr: 'la cuisine', ex: '아시아 요리를 좋아해요.' },
+        { es: '맛', fr: 'la saveur', ex: '이 요리의 맛은 독특해요.' },
+        { es: '1인분', fr: 'la portion', ex: '1인분이 매우 많아요.' }
+      ]
+    },
+    voyage: { nom: 'Voyage', icone: '✈️',
+      debutant: [
+        { es: '공항', fr: "l'aéroport", ex: '8시에 공항에 도착해요.' },
+        { es: '호텔', fr: "l'hôtel", ex: '호텔은 해변 근처에 있어요.' },
+        { es: '표', fr: 'le billet', ex: '비행기 표를 샀어요.' },
+        { es: '여권', fr: 'le passeport', ex: '여권을 잊지 마세요.' },
+        { es: '지도', fr: 'la carte', ex: '길을 찾기 위해 지도를 써요.' },
+        { es: '기차', fr: 'le train', ex: '기차는 9시에 출발해요.' },
+        { es: '버스', fr: 'le bus', ex: '매일 버스를 타요.' },
+        { es: '역', fr: 'la gare', ex: '역은 시내 중심에 있어요.' },
+        { es: '짐', fr: 'les bagages', ex: '짐이 매우 무거워요.' },
+        { es: '해변', fr: 'la plage', ex: '해변에서 쉬어요.' }
+      ],
+      intermediaire: [
+        { es: '예약', fr: 'la réservation', ex: '온라인으로 예약했어요.' },
+        { es: '출발', fr: 'le départ', ex: '출발은 정오예요.' },
+        { es: '도착', fr: "l'arrivée", ex: '도착이 늦어지고 있어요.' },
+        { es: '세관', fr: 'la douane', ex: '세관을 통과해요.' },
+        { es: '환전', fr: 'la devise', ex: '은행에서 환전해요.' },
+        { es: '기념품', fr: 'le souvenir', ex: '가족을 위해 기념품을 사요.' },
+        { es: '가이드', fr: 'le guide', ex: '가이드가 도시를 안내해줘요.' },
+        { es: '모험', fr: "l'aventure", ex: '모든 여행은 새로운 모험이에요.' }
+      ],
+      avance: [
+        { es: '일정', fr: "l'itinéraire", ex: '일정에는 다섯 도시가 포함돼요.' },
+        { es: '목적지', fr: 'la destination', ex: '파리는 제 꿈의 목적지예요.' },
+        { es: '숙박', fr: "l'hébergement", ex: '숙박 시설이 훌륭해요.' },
+        { es: '탐험하다', fr: 'explorer', ex: '구시가를 걸어서 탐험해요.' },
+        { es: '명소', fr: 'le monument', ex: '경복궁은 유명한 명소예요.' },
+        { es: '문화', fr: 'la culture', ex: '현지 문화에 매료되었어요.' },
+        { es: '풍경', fr: 'le paysage', ex: '풍경이 숨막히게 아름다워요.' }
+      ]
+    },
+    famille: { nom: 'Famille', icone: '👨‍👩‍👧',
+      debutant: [
+        { es: '어머니', fr: 'la mère', ex: '어머니는 요리를 아주 잘하세요.' },
+        { es: '아버지', fr: 'le père', ex: '아버지는 서울에서 일하세요.' },
+        { es: '언니/누나', fr: 'la grande sœur', ex: '언니는 매우 재미있어요.' },
+        { es: '오빠/형', fr: 'le grand frère', ex: '오빠는 축구를 해요.' },
+        { es: '할머니', fr: 'la grand-mère', ex: '할머니는 멋진 이야기를 해주세요.' },
+        { es: '할아버지', fr: 'le grand-père', ex: '할아버지는 매우 지혜로우세요.' },
+        { es: '아기', fr: 'le bébé', ex: '아기가 평화롭게 자고 있어요.' },
+        { es: '아이', fr: "l'enfant", ex: '아이가 정원에서 놀고 있어요.' },
+        { es: '가족', fr: 'la famille', ex: '우리 가족은 매우 가까워요.' },
+        { es: '집', fr: 'le foyer', ex: '집이 가장 편안해요.' }
+      ],
+      intermediaire: [
+        { es: '사촌', fr: 'le cousin', ex: '사촌은 부산에 살아요.' },
+        { es: '이모/고모', fr: 'la tante', ex: '이모는 맛있는 케이크를 만들어요.' },
+        { es: '삼촌', fr: "l'oncle", ex: '삼촌은 의사예요.' },
+        { es: '조카', fr: 'le neveu / la nièce', ex: '조카는 두 살이에요.' },
+        { es: '남편', fr: 'le mari', ex: '남편은 매우 다정해요.' },
+        { es: '아내', fr: 'la femme', ex: '아내는 선생님이에요.' },
+        { es: '결혼', fr: 'le mariage', ex: '결혼식이 아름다웠어요.' },
+        { es: '부모님', fr: 'les parents', ex: '부모님은 휴가 중이에요.' }
+      ],
+      avance: [
+        { es: '관계', fr: 'la relation', ex: '좋은 관계는 노력이 필요해요.' },
+        { es: '문화유산', fr: "l'héritage", ex: '우리는 풍부한 문화유산을 공유해요.' },
+        { es: '세대', fr: 'la génération', ex: '각 세대는 이전 세대에서 배워요.' },
+        { es: '교육', fr: "l'éducation", ex: '좋은 교육이 성품을 형성해요.' },
+        { es: '전통', fr: 'la tradition', ex: '가족 전통을 지키고 있어요.' },
+        { es: '유대', fr: 'le lien', ex: '형제자매의 유대는 강해요.' },
+        { es: '재결합', fr: 'les retrouvailles', ex: '가족 모임이 훌륭했어요.' }
+      ]
+    },
+    couleurs: { nom: 'Couleurs', icone: '🎨',
+      debutant: [
+        { es: '빨간색', fr: 'rouge', ex: '사과는 밝은 빨간색이에요.' },
+        { es: '파란색', fr: 'bleu', ex: '하늘은 맑고 파란색이에요.' },
+        { es: '초록색', fr: 'vert', ex: '비 온 뒤 잔디가 초록색이에요.' },
+        { es: '노란색', fr: 'jaune', ex: '태양은 노란색이고 따뜻해요.' },
+        { es: '검은색', fr: 'noir', ex: '오늘 검은색 재킷을 입었어요.' },
+        { es: '흰색', fr: 'blanc', ex: '눈이 완전히 흰색이에요.' },
+        { es: '주황색', fr: 'orange', ex: '그녀의 드레스는 밝은 주황색이에요.' },
+        { es: '분홍색', fr: 'rose', ex: '장미는 연한 분홍색이에요.' },
+        { es: '보라색', fr: 'violet', ex: '해질녘에 하늘이 보라색이 돼요.' },
+        { es: '갈색', fr: 'marron', ex: '나무 줄기는 갈색이에요.' }
+      ],
+      intermediaire: [
+        { es: '회색', fr: 'gris', ex: '구름이 짙은 회색이에요.' },
+        { es: '어두운', fr: 'foncé', ex: '겨울에는 어두운 색을 선호해요.' },
+        { es: '밝은', fr: 'clair', ex: '여름에는 밝은 파란색을 입어요.' },
+        { es: '선명한', fr: 'vif', ex: '그림은 선명한 색을 사용해요.' },
+        { es: '창백한', fr: 'pâle', ex: '오늘 그가 창백해 보여요.' },
+        { es: '알록달록한', fr: 'coloré', ex: '시장이 매우 알록달록해요.' },
+        { es: '색조', fr: 'la teinte', ex: '이 파란색 색조가 좋아요.' },
+        { es: '투명한', fr: 'transparent', ex: '유리가 투명해요.' }
+      ],
+      avance: [
+        { es: '대비', fr: 'le contraste', ex: '색의 대비가 인상적이에요.' },
+        { es: '생생한', fr: 'éclatant', ex: '생생한 색이 눈길을 끌었어요.' },
+        { es: '뉘앙스', fr: 'la nuance', ex: '빛에 따라 뉘앙스가 바뀌어요.' },
+        { es: '단색', fr: 'monochrome', ex: '사진이 단색이에요.' },
+        { es: '색소', fr: 'le pigment', ex: '이 페인트에는 천연 색소를 사용해요.' },
+        { es: '스펙트럼', fr: 'le spectre', ex: '무지개는 전체 스펙트럼을 보여줘요.' },
+        { es: '색감', fr: 'la teinte', ex: '혼합물에 노란색 색감을 더해요.' }
       ]
     }
   },
   'zh': {
-    vocabulaire: { nom: '词汇', icone: '📚',
+    essentiel: { nom: 'Essentiel', icone: '🌟',
       debutant: [
-        { es: '你好', fr: 'bonjour', ex: '你好，你怎么样？' },
-        { es: '再见', fr: 'au revoir', ex: '再见，一会儿见！' },
-        { es: '是', fr: 'oui', ex: '是，请。' },
+        { es: '你好', fr: 'bonjour', ex: '你好，你好吗？' },
+        { es: '再见', fr: 'au revoir', ex: '再见，很快见！' },
+        { es: '请', fr: "s'il vous plaît", ex: '请帮帮我。' },
+        { es: '谢谢', fr: 'merci', ex: '非常谢谢！' },
+        { es: '是', fr: 'oui', ex: '是，我明白。' },
         { es: '不', fr: 'non', ex: '不，谢谢。' },
-        { es: '水', fr: "l'eau", ex: '我每天喝水。' },
-        { es: '面包', fr: 'le pain', ex: '我早饭吃面包。' },
-        { es: '家', fr: 'la maison', ex: '我的家很大。' },
-        { es: '猫', fr: 'le chat', ex: '猫在沙发上睡觉。' },
-        { es: '书', fr: 'le livre', ex: '我每天晚上看书。' },
-        { es: '朋友', fr: "l'ami", ex: '我的朋友非常好。' }
+        { es: '对不起', fr: 'excusez-moi', ex: '对不起，车站在哪里？' },
+        { es: '抱歉', fr: 'je suis désolé', ex: '抱歉我迟到了。' },
+        { es: '帮助', fr: "l'aide", ex: '我需要帮助，请。' },
+        { es: '朋友', fr: "l'ami", ex: '她是我最好的朋友。' }
       ],
       intermediaire: [
-        { es: '城市', fr: 'la ville', ex: '城市非常热闹。' },
-        { es: '学校', fr: "l'école", ex: '我每天早上去学校。' },
-        { es: '钱', fr: "l'argent", ex: '我需要钱来旅行。' },
-        { es: '汽车', fr: 'la voiture', ex: '我的汽车是红色的。' },
-        { es: '漂亮', fr: 'beau/joli', ex: '日落很漂亮。' },
-        { es: '快乐', fr: 'heureux', ex: '今天我很快乐。' },
-        { es: '工作', fr: 'le travail', ex: '工作很重要。' },
-        { es: '时间', fr: 'le temps', ex: '时间过得很快。' },
-        { es: '吃', fr: 'manger', ex: '我想现在吃。' },
-        { es: '睡觉', fr: 'dormir', ex: '我需要睡觉八个小时。' }
+        { es: '理解', fr: 'comprendre', ex: '你理解我吗？' },
+        { es: '说话', fr: 'parler', ex: '我说一点中文。' },
+        { es: '学习', fr: 'apprendre', ex: '我想学习中文。' },
+        { es: '再说一次', fr: 'répéter', ex: '请再说一次。' },
+        { es: '慢慢说', fr: 'lentement', ex: '请慢慢说。' },
+        { es: '知道', fr: 'savoir', ex: '我不知道答案。' },
+        { es: '需要', fr: 'avoir besoin de', ex: '我需要一点时间。' },
+        { es: '想要', fr: 'vouloir', ex: '我想试试。' }
       ],
       avance: [
-        { es: '旅行', fr: 'le voyage', ex: '一段长途旅行等着我们。' },
-        { es: '自由', fr: 'la liberté', ex: '自由是基本权利。' },
-        { es: '梦想', fr: 'le rêve', ex: '我有一个关于未来的梦想。' },
-        { es: '挑战', fr: 'le défi', ex: '这个挑战很难。' },
-        { es: '成功', fr: 'le succès', ex: '成功需要努力工作。' },
-        { es: '经验', fr: "l'expérience", ex: '经验是最好的老师。' },
-        { es: '发现', fr: 'découvrir', ex: '我喜欢发现新的地方。' },
-        { es: '理解', fr: 'comprendre', ex: '我现在理解这个问题。' },
-        { es: '爱', fr: "l'amour", ex: '爱是美好的感情。' },
-        { es: '音乐', fr: 'la musique', ex: '音乐把人们聚在一起。' }
+        { es: '机会', fr: "l'opportunité", ex: '这是一个很好的机会。' },
+        { es: '挑战', fr: 'le défi', ex: '每一个挑战都使我们更强大。' },
+        { es: '实现目标', fr: 'atteindre', ex: '我会实现我的目标。' },
+        { es: '责任', fr: 'la responsabilité', ex: '我们共同承担责任。' },
+        { es: '好奇', fr: 'curieux', ex: '她对科学非常好奇。' },
+        { es: '坚定', fr: 'déterminé', ex: '他坚定地要成功。' },
+        { es: '进步', fr: 'améliorer', ex: '我每天都在提高我的技能。' }
+      ]
+    },
+    nourriture: { nom: 'Nourriture', icone: '🍕',
+      debutant: [
+        { es: '米饭', fr: 'le riz', ex: '我每天吃米饭。' },
+        { es: '水', fr: "l'eau", ex: '我整天喝水。' },
+        { es: '面包', fr: 'le pain', ex: '面包还是热的。' },
+        { es: '鸡蛋', fr: "l'œuf", ex: '我早饭吃鸡蛋。' },
+        { es: '鸡肉', fr: 'le poulet', ex: '鸡肉很好吃。' },
+        { es: '鱼', fr: 'le poisson', ex: '我喜欢吃鱼。' },
+        { es: '饺子', fr: 'les raviolis', ex: '饺子是中国的传统食物。' },
+        { es: '汤', fr: 'la soupe', ex: '这碗汤很热。' },
+        { es: '茶', fr: 'le thé', ex: '我每天喝茶。' },
+        { es: '苹果', fr: 'la pomme', ex: '我每天早上吃苹果。' }
+      ],
+      intermediaire: [
+        { es: '草莓', fr: 'la fraise', ex: '草莓熟了，很甜。' },
+        { es: '橙汁', fr: "le jus d'orange", ex: '我早上喝橙汁。' },
+        { es: '蘑菇', fr: 'les champignons', ex: '我在酱料里加蘑菇。' },
+        { es: '黄油', fr: 'le beurre', ex: '我在面包上抹黄油。' },
+        { es: '糖', fr: 'le sucre', ex: '你喝茶加糖吗？' },
+        { es: '胡椒', fr: 'le poivre', ex: '加一点胡椒。' },
+        { es: '甜点', fr: 'le dessert', ex: '你想要什么甜点？' },
+        { es: '食谱', fr: 'la recette', ex: '这是我奶奶的食谱。' }
+      ],
+      avance: [
+        { es: '食材', fr: 'les ingrédients', ex: '食材都很新鲜。' },
+        { es: '调味', fr: "l'assaisonnement", ex: '调味很完美。' },
+        { es: '营养丰富', fr: 'nutritif', ex: '这道菜很有营养。' },
+        { es: '食欲', fr: "l'appétit", ex: '气味让我食欲大开。' },
+        { es: '烹饪', fr: 'la cuisine', ex: '我喜欢亚洲烹饪。' },
+        { es: '味道', fr: 'la saveur', ex: '这道菜的味道独特。' },
+        { es: '份量', fr: 'la portion', ex: '份量非常大。' }
+      ]
+    },
+    voyage: { nom: 'Voyage', icone: '✈️',
+      debutant: [
+        { es: '机场', fr: "l'aéroport", ex: '我们八点到机场。' },
+        { es: '酒店', fr: "l'hôtel", ex: '酒店在海滩附近。' },
+        { es: '票', fr: 'le billet', ex: '我买了一张飞机票。' },
+        { es: '护照', fr: 'le passeport', ex: '不要忘记你的护照。' },
+        { es: '地图', fr: 'la carte', ex: '我用地图找路。' },
+        { es: '火车', fr: 'le train', ex: '火车九点出发。' },
+        { es: '公共汽车', fr: 'le bus', ex: '我每天坐公共汽车。' },
+        { es: '车站', fr: 'la gare', ex: '车站在市中心。' },
+        { es: '行李', fr: 'les bagages', ex: '我的行李很重。' },
+        { es: '海滩', fr: 'la plage', ex: '我们在海滩上放松。' }
+      ],
+      intermediaire: [
+        { es: '预订', fr: 'la réservation', ex: '我在网上预订了。' },
+        { es: '出发', fr: 'le départ', ex: '出发时间是中午。' },
+        { es: '到达', fr: "l'arrivée", ex: '我们的到达延误了。' },
+        { es: '海关', fr: 'la douane', ex: '我们过海关。' },
+        { es: '货币', fr: 'la devise', ex: '我在银行兑换货币。' },
+        { es: '纪念品', fr: 'le souvenir', ex: '我给家人买纪念品。' },
+        { es: '导游', fr: 'le guide', ex: '导游带我们游览城市。' },
+        { es: '冒险', fr: "l'aventure", ex: '每次旅行都是一次新冒险。' }
+      ],
+      avance: [
+        { es: '行程', fr: "l'itinéraire", ex: '我们的行程包括五个城市。' },
+        { es: '目的地', fr: 'la destination', ex: '巴黎是我的梦想目的地。' },
+        { es: '住宿', fr: "l'hébergement", ex: '住宿非常好。' },
+        { es: '探索', fr: 'explorer', ex: '我步行探索古城。' },
+        { es: '名胜', fr: 'le monument', ex: '长城是著名的名胜。' },
+        { es: '文化', fr: 'la culture', ex: '我对当地文化着迷。' },
+        { es: '风景', fr: 'le paysage', ex: '风景令人叹为观止。' }
+      ]
+    },
+    famille: { nom: 'Famille', icone: '👨‍👩‍👧',
+      debutant: [
+        { es: '妈妈', fr: 'la mère', ex: '我妈妈做饭做得很好。' },
+        { es: '爸爸', fr: 'le père', ex: '我爸爸在北京工作。' },
+        { es: '姐姐', fr: 'la grande sœur', ex: '我姐姐很有趣。' },
+        { es: '哥哥', fr: 'le grand frère', ex: '我哥哥踢足球。' },
+        { es: '奶奶', fr: 'la grand-mère', ex: '奶奶讲的故事很好听。' },
+        { es: '爷爷', fr: 'le grand-père', ex: '爷爷非常智慧。' },
+        { es: '宝宝', fr: 'le bébé', ex: '宝宝安静地睡着了。' },
+        { es: '孩子', fr: "l'enfant", ex: '孩子在花园里玩。' },
+        { es: '家庭', fr: 'la famille', ex: '我的家庭非常亲密。' },
+        { es: '家', fr: 'le foyer', ex: '家是最舒适的地方。' }
+      ],
+      intermediaire: [
+        { es: '表哥', fr: 'le cousin', ex: '我表哥住在上海。' },
+        { es: '阿姨', fr: 'la tante', ex: '我阿姨做很好吃的蛋糕。' },
+        { es: '叔叔', fr: "l'oncle", ex: '我叔叔是医生。' },
+        { es: '侄子', fr: 'le neveu', ex: '我侄子两岁了。' },
+        { es: '丈夫', fr: 'le mari', ex: '她丈夫非常体贴。' },
+        { es: '妻子', fr: 'la femme', ex: '他妻子是老师。' },
+        { es: '婚礼', fr: 'le mariage', ex: '婚礼非常美丽。' },
+        { es: '父母', fr: 'les parents', ex: '我父母在度假。' }
+      ],
+      avance: [
+        { es: '关系', fr: 'la relation', ex: '好的关系需要努力。' },
+        { es: '文化遗产', fr: "l'héritage", ex: '我们共享丰富的文化遗产。' },
+        { es: '代', fr: 'la génération', ex: '每一代人都从上一代学习。' },
+        { es: '教育', fr: "l'éducation", ex: '良好的教育塑造品格。' },
+        { es: '传统', fr: 'la tradition', ex: '我们保持家庭传统。' },
+        { es: '纽带', fr: 'le lien', ex: '兄弟姐妹之间的纽带很强。' },
+        { es: '团聚', fr: 'les retrouvailles', ex: '家庭团聚非常美好。' }
+      ]
+    },
+    couleurs: { nom: 'Couleurs', icone: '🎨',
+      debutant: [
+        { es: '红色', fr: 'rouge', ex: '苹果是鲜红色的。' },
+        { es: '蓝色', fr: 'bleu', ex: '天空晴朗，是蓝色的。' },
+        { es: '绿色', fr: 'vert', ex: '雨后草地是绿色的。' },
+        { es: '黄色', fr: 'jaune', ex: '太阳是黄色的，很温暖。' },
+        { es: '黑色', fr: 'noir', ex: '我今天穿了一件黑色夹克。' },
+        { es: '白色', fr: 'blanc', ex: '雪是完全白色的。' },
+        { es: '橙色', fr: 'orange', ex: '她的裙子是鲜橙色的。' },
+        { es: '粉红色', fr: 'rose', ex: '玫瑰是淡粉红色的。' },
+        { es: '紫色', fr: 'violet', ex: '黄昏时天空变成紫色。' },
+        { es: '棕色', fr: 'marron', ex: '树干是棕色的。' }
+      ],
+      intermediaire: [
+        { es: '灰色', fr: 'gris', ex: '云是深灰色的。' },
+        { es: '深色', fr: 'foncé', ex: '冬天我喜欢深色。' },
+        { es: '浅色', fr: 'clair', ex: '夏天她穿浅蓝色。' },
+        { es: '鲜艳', fr: 'vif', ex: '这幅画用了鲜艳的颜色。' },
+        { es: '苍白', fr: 'pâle', ex: '他今天看起来苍白。' },
+        { es: '五颜六色', fr: 'coloré', ex: '市场非常五颜六色。' },
+        { es: '色调', fr: 'la teinte', ex: '我喜欢这种蓝色色调。' },
+        { es: '透明', fr: 'transparent', ex: '玻璃是透明的。' }
+      ],
+      avance: [
+        { es: '对比', fr: 'le contraste', ex: '颜色之间的对比很显著。' },
+        { es: '鲜明', fr: 'éclatant', ex: '鲜明的颜色吸引了我的注意。' },
+        { es: '色彩细微差别', fr: 'la nuance', ex: '色彩的细微差别随光线变化。' },
+        { es: '单色', fr: 'monochrome', ex: '这张照片是单色的。' },
+        { es: '颜料', fr: 'le pigment', ex: '这种涂料使用天然颜料。' },
+        { es: '光谱', fr: 'le spectre', ex: '彩虹显示完整的光谱。' },
+        { es: '色彩', fr: 'la teinte', ex: '在混合物中加入黄色色彩。' }
       ]
     }
   },
   'ar': {
-    vocabulaire: { nom: 'مفردات', icone: '📚',
+    essentiel: { nom: 'Essentiel', icone: '🌟',
       debutant: [
         { es: 'مرحبا', fr: 'bonjour', ex: 'مرحبا، كيف حالك؟' },
         { es: 'مع السلامة', fr: 'au revoir', ex: 'مع السلامة، إلى اللقاء!' },
-        { es: 'نعم', fr: 'oui', ex: 'نعم، من فضلك.' },
+        { es: 'من فضلك', fr: "s'il vous plaît", ex: 'من فضلك، ساعدني.' },
+        { es: 'شكرا', fr: 'merci', ex: 'شكرا جزيلا!' },
+        { es: 'نعم', fr: 'oui', ex: 'نعم، أفهم.' },
         { es: 'لا', fr: 'non', ex: 'لا، شكرا.' },
-        { es: 'ماء', fr: "l'eau", ex: 'أشرب الماء كل يوم.' },
-        { es: 'خبز', fr: 'le pain', ex: 'الخبز طازج جدا.' },
-        { es: 'بيت', fr: 'la maison', ex: 'بيتي كبير.' },
-        { es: 'قطة', fr: 'le chat', ex: 'القطة تنام على الأريكة.' },
-        { es: 'كتاب', fr: 'le livre', ex: 'أقرأ كتابا كل مساء.' },
-        { es: 'صديق', fr: "l'ami", ex: 'صديقي لطيف جدا.' }
+        { es: 'عفوا', fr: 'excusez-moi', ex: 'عفوا، أين المحطة؟' },
+        { es: 'آسف', fr: 'je suis désolé', ex: 'آسف على التأخير.' },
+        { es: 'مساعدة', fr: "l'aide", ex: 'أحتاج مساعدة، من فضلك.' },
+        { es: 'صديق', fr: "l'ami", ex: 'هي صديقتي المفضلة.' }
       ],
       intermediaire: [
-        { es: 'مدينة', fr: 'la ville', ex: 'المدينة حيوية جدا.' },
-        { es: 'مدرسة', fr: "l'école", ex: 'أذهب إلى المدرسة كل صباح.' },
-        { es: 'مال', fr: "l'argent", ex: 'أحتاج مالا للسفر.' },
-        { es: 'سيارة', fr: 'la voiture', ex: 'سيارتي حمراء.' },
-        { es: 'جميل', fr: 'beau', ex: 'الغروب جميل.' },
-        { es: 'سعيد', fr: 'heureux', ex: 'أنا سعيد اليوم.' },
-        { es: 'عمل', fr: 'le travail', ex: 'العمل مهم.' },
-        { es: 'وقت', fr: 'le temps', ex: 'الوقت يمر بسرعة.' },
-        { es: 'يأكل', fr: 'manger', ex: 'أريد أن يأكل الآن.' },
-        { es: 'ينام', fr: 'dormir', ex: 'أحتاج أن ينام ثماني ساعات.' }
+        { es: 'يفهم', fr: 'comprendre', ex: 'هل تفهمني؟' },
+        { es: 'يتكلم', fr: 'parler', ex: 'أتكلم القليل من العربية.' },
+        { es: 'يتعلم', fr: 'apprendre', ex: 'أريد أن أتعلم العربية.' },
+        { es: 'يكرر', fr: 'répéter', ex: 'هل يمكنك تكرار ذلك، من فضلك؟' },
+        { es: 'ببطء', fr: 'lentement', ex: 'تكلم ببطء من فضلك.' },
+        { es: 'يعرف', fr: 'savoir', ex: 'لا أعرف الجواب.' },
+        { es: 'يحتاج', fr: 'avoir besoin de', ex: 'أحتاج لحظة.' },
+        { es: 'يريد', fr: 'vouloir', ex: 'أريد المحاولة.' }
       ],
       avance: [
-        { es: 'رحلة', fr: 'le voyage', ex: 'رحلة طويلة تنتظرنا.' },
-        { es: 'حرية', fr: 'la liberté', ex: 'الحرية حق أساسي.' },
-        { es: 'حلم', fr: 'le rêve', ex: 'لدي حلم للمستقبل.' },
-        { es: 'تحدٍّ', fr: 'le défi', ex: 'هذا التحدي صعب جدا.' },
-        { es: 'نجاح', fr: 'le succès', ex: 'النجاح يتطلب عملا شاقا.' },
-        { es: 'خبرة', fr: "l'expérience", ex: 'الخبرة خير معلم.' },
-        { es: 'اكتشاف', fr: 'découvrir', ex: 'أحب اكتشاف أماكن جديدة.' },
-        { es: 'فهم', fr: 'comprendre', ex: 'أفهم المشكلة الآن.' },
-        { es: 'حب', fr: "l'amour", ex: 'الحب شعور رائع.' },
-        { es: 'موسيقى', fr: 'la musique', ex: 'الموسيقى تجمع الناس.' }
+        { es: 'فرصة', fr: "l'opportunité", ex: 'هذه فرصة رائعة.' },
+        { es: 'تحدي', fr: 'le défi', ex: 'كل تحدٍّ يجعلنا أقوى.' },
+        { es: 'يحقق', fr: 'atteindre', ex: 'سأحقق أهدافي.' },
+        { es: 'مسؤولية', fr: 'la responsabilité', ex: 'نتقاسم المسؤولية.' },
+        { es: 'فضولي', fr: 'curieux', ex: 'إنها فضولية جدا تجاه العلوم.' },
+        { es: 'مصمم', fr: 'déterminé', ex: 'هو مصمم على النجاح.' },
+        { es: 'يتحسن', fr: 'améliorer', ex: 'أحسّن مهاراتي كل يوم.' }
+      ]
+    },
+    nourriture: { nom: 'Nourriture', icone: '🍕',
+      debutant: [
+        { es: 'خبز', fr: 'le pain', ex: 'الخبز لا يزال دافئا.' },
+        { es: 'ماء', fr: "l'eau", ex: 'أشرب الماء طوال اليوم.' },
+        { es: 'حليب', fr: 'le lait', ex: 'أضع الحليب في القهوة.' },
+        { es: 'بيضة', fr: "l'œuf", ex: 'آكل بيضة على الإفطار.' },
+        { es: 'دجاج', fr: 'le poulet', ex: 'الدجاج لذيذ.' },
+        { es: 'سمك', fr: 'le poisson', ex: 'أحب أكل السمك.' },
+        { es: 'أرز', fr: 'le riz', ex: 'أطبخ الأرز على العشاء.' },
+        { es: 'شوربة', fr: 'la soupe', ex: 'هذه الشوربة ساخنة جدا.' },
+        { es: 'تفاحة', fr: 'la pomme', ex: 'آكل تفاحة كل صباح.' },
+        { es: 'شاي', fr: 'le thé', ex: 'أشرب الشاي كل يوم.' }
+      ],
+      intermediaire: [
+        { es: 'فراولة', fr: 'la fraise', ex: 'الفراولة ناضجة وحلوة.' },
+        { es: 'عصير برتقال', fr: "le jus d'orange", ex: 'أشرب عصير البرتقال صباحا.' },
+        { es: 'فطر', fr: 'les champignons', ex: 'أضيف الفطر إلى الصلصة.' },
+        { es: 'زبدة', fr: 'le beurre', ex: 'أضع الزبدة على الخبز.' },
+        { es: 'سكر', fr: 'le sucre', ex: 'هل تأخذ سكرا في الشاي؟' },
+        { es: 'فلفل', fr: 'le poivre', ex: 'أضف قليلا من الفلفل.' },
+        { es: 'حلوى', fr: 'le dessert', ex: 'ماذا تريد للحلوى؟' },
+        { es: 'وصفة', fr: 'la recette', ex: 'هذه وصفة جدتي.' }
+      ],
+      avance: [
+        { es: 'مكونات', fr: 'les ingrédients', ex: 'المكونات كلها طازجة.' },
+        { es: 'تتبيل', fr: "l'assaisonnement", ex: 'التتبيل مثالي.' },
+        { es: 'مغذي', fr: 'nutritif', ex: 'هذه الوجبة مغذية جدا.' },
+        { es: 'شهية', fr: "l'appétit", ex: 'الرائحة تفتح الشهية.' },
+        { es: 'مطبخ', fr: 'la cuisine', ex: 'أحب المطبخ الآسيوي.' },
+        { es: 'نكهة', fr: 'la saveur', ex: 'نكهة هذا الطبق فريدة.' },
+        { es: 'حصة', fr: 'la portion', ex: 'الحصة كبيرة جدا.' }
+      ]
+    },
+    voyage: { nom: 'Voyage', icone: '✈️',
+      debutant: [
+        { es: 'مطار', fr: "l'aéroport", ex: 'نصل إلى المطار الساعة الثامنة.' },
+        { es: 'فندق', fr: "l'hôtel", ex: 'الفندق قريب من الشاطئ.' },
+        { es: 'تذكرة', fr: 'le billet', ex: 'اشتريت تذكرة طائرة.' },
+        { es: 'جواز سفر', fr: 'le passeport', ex: 'لا تنس جواز سفرك.' },
+        { es: 'خريطة', fr: 'la carte', ex: 'أستخدم الخريطة للتنقل.' },
+        { es: 'قطار', fr: 'le train', ex: 'القطار يغادر الساعة التاسعة.' },
+        { es: 'حافلة', fr: 'le bus', ex: 'أركب الحافلة كل يوم.' },
+        { es: 'محطة', fr: 'la gare', ex: 'المحطة في وسط المدينة.' },
+        { es: 'أمتعة', fr: 'les bagages', ex: 'أمتعتي ثقيلة جدا.' },
+        { es: 'شاطئ', fr: 'la plage', ex: 'نستريح على الشاطئ.' }
+      ],
+      intermediaire: [
+        { es: 'حجز', fr: 'la réservation', ex: 'قمت بحجز عبر الإنترنت.' },
+        { es: 'مغادرة', fr: 'le départ', ex: 'المغادرة عند الظهر.' },
+        { es: 'وصول', fr: "l'arrivée", ex: 'وصولنا متأخر.' },
+        { es: 'جمارك', fr: 'la douane', ex: 'نمر عبر الجمارك.' },
+        { es: 'عملة', fr: 'la devise', ex: 'أصرف العملة في البنك.' },
+        { es: 'هدية تذكارية', fr: 'le souvenir', ex: 'أشتري هدية تذكارية للعائلة.' },
+        { es: 'مرشد سياحي', fr: 'le guide', ex: 'المرشد يريكنا المدينة.' },
+        { es: 'مغامرة', fr: "l'aventure", ex: 'كل رحلة مغامرة جديدة.' }
+      ],
+      avance: [
+        { es: 'خط سير', fr: "l'itinéraire", ex: 'خط سيرنا يشمل خمس مدن.' },
+        { es: 'وجهة', fr: 'la destination', ex: 'باريس هي وجهة أحلامي.' },
+        { es: 'إقامة', fr: "l'hébergement", ex: 'الإقامة ممتازة.' },
+        { es: 'يستكشف', fr: 'explorer', ex: 'أستكشف المدينة القديمة سيرا.' },
+        { es: 'معلم', fr: 'le monument', ex: 'الأهرامات معلم شهير.' },
+        { es: 'ثقافة', fr: 'la culture', ex: 'أنا مفتون بالثقافة المحلية.' },
+        { es: 'منظر', fr: 'le paysage', ex: 'المنظر رائع.' }
+      ]
+    },
+    famille: { nom: 'Famille', icone: '👨‍👩‍👧',
+      debutant: [
+        { es: 'أم', fr: 'la mère', ex: 'أمي تطبخ جيدا جدا.' },
+        { es: 'أب', fr: 'le père', ex: 'أبي يعمل في الرياض.' },
+        { es: 'أخت', fr: 'la sœur', ex: 'أختي مضحكة جدا.' },
+        { es: 'أخ', fr: 'le frère', ex: 'أخي يلعب كرة القدم.' },
+        { es: 'جدة', fr: 'la grand-mère', ex: 'جدتي تحكي قصصا رائعة.' },
+        { es: 'جد', fr: 'le grand-père', ex: 'جدي حكيم جدا.' },
+        { es: 'طفل', fr: "l'enfant", ex: 'الطفل يلعب في الحديقة.' },
+        { es: 'عائلة', fr: 'la famille', ex: 'عائلتي متقاربة جدا.' },
+        { es: 'منزل', fr: 'le foyer', ex: 'لا مكان مثل المنزل.' },
+        { es: 'رضيع', fr: 'le bébé', ex: 'الرضيع ينام بهدوء.' }
+      ],
+      intermediaire: [
+        { es: 'ابن عم', fr: 'le cousin', ex: 'ابن عمي يسكن في القاهرة.' },
+        { es: 'عمة', fr: 'la tante', ex: 'عمتي تصنع حلويات لذيذة.' },
+        { es: 'عم', fr: "l'oncle", ex: 'عمي طبيب.' },
+        { es: 'ابن أخ', fr: 'le neveu', ex: 'ابن أخي عمره سنتان.' },
+        { es: 'زوج', fr: 'le mari', ex: 'زوجها عطوف جدا.' },
+        { es: 'زوجة', fr: 'la femme', ex: 'زوجته معلمة.' },
+        { es: 'زفاف', fr: 'le mariage', ex: 'كان حفل الزفاف جميلا.' },
+        { es: 'والدان', fr: 'les parents', ex: 'والداي في إجازة.' }
+      ],
+      avance: [
+        { es: 'علاقة', fr: 'la relation', ex: 'العلاقة الجيدة تحتاج جهدا.' },
+        { es: 'إرث ثقافي', fr: "l'héritage", ex: 'نتشارك إرثا ثقافيا غنيا.' },
+        { es: 'جيل', fr: 'la génération', ex: 'كل جيل يتعلم من السابق.' },
+        { es: 'تربية', fr: "l'éducation", ex: 'التربية الجيدة تشكل الشخصية.' },
+        { es: 'تقاليد', fr: 'la tradition', ex: 'نحافظ على تقاليد العائلة.' },
+        { es: 'رابطة', fr: 'le lien', ex: 'الرابطة بين الأخوة قوية.' },
+        { es: 'لمّ الشمل', fr: 'les retrouvailles', ex: 'كان لمّ شمل العائلة رائعا.' }
+      ]
+    },
+    couleurs: { nom: 'Couleurs', icone: '🎨',
+      debutant: [
+        { es: 'أحمر', fr: 'rouge', ex: 'التفاحة حمراء ساطعة.' },
+        { es: 'أزرق', fr: 'bleu', ex: 'السماء صافية وزرقاء.' },
+        { es: 'أخضر', fr: 'vert', ex: 'العشب أخضر بعد المطر.' },
+        { es: 'أصفر', fr: 'jaune', ex: 'الشمس صفراء ودافئة.' },
+        { es: 'أسود', fr: 'noir', ex: 'أرتدي اليوم جاكيتا أسود.' },
+        { es: 'أبيض', fr: 'blanc', ex: 'الثلج أبيض تماما.' },
+        { es: 'برتقالي', fr: 'orange', ex: 'فستانها برتقالي ساطع.' },
+        { es: 'وردي', fr: 'rose', ex: 'الورود وردية شاحبة.' },
+        { es: 'بنفسجي', fr: 'violet', ex: 'السماء تتحول إلى بنفسجي عند الغروب.' },
+        { es: 'بني', fr: 'marron', ex: 'جذع الشجرة بني.' }
+      ],
+      intermediaire: [
+        { es: 'رمادي', fr: 'gris', ex: 'الغيوم رمادية داكنة.' },
+        { es: 'داكن', fr: 'foncé', ex: 'أفضل الألوان الداكنة في الشتاء.' },
+        { es: 'فاتح', fr: 'clair', ex: 'ترتدي الأزرق الفاتح في الصيف.' },
+        { es: 'زاهي', fr: 'vif', ex: 'اللوحة تستخدم ألوانا زاهية.' },
+        { es: 'شاحب', fr: 'pâle', ex: 'يبدو شاحبا اليوم.' },
+        { es: 'ملون', fr: 'coloré', ex: 'السوق ملون جدا.' },
+        { es: 'درجة لونية', fr: 'la teinte', ex: 'أحب هذه الدرجة من الأزرق.' },
+        { es: 'شفاف', fr: 'transparent', ex: 'الزجاج شفاف.' }
+      ],
+      avance: [
+        { es: 'تباين', fr: 'le contraste', ex: 'التباين بين الألوان لافت.' },
+        { es: 'زاهي جدا', fr: 'éclatant', ex: 'الألوان الزاهية جذبت انتباهي.' },
+        { es: 'فارق دقيق', fr: 'la nuance', ex: 'الفارق الدقيق يتغير مع الضوء.' },
+        { es: 'أحادي اللون', fr: 'monochrome', ex: 'الصورة أحادية اللون.' },
+        { es: 'صبغة', fr: 'le pigment', ex: 'تُستخدم صبغات طبيعية في هذا الطلاء.' },
+        { es: 'طيف', fr: 'le spectre', ex: 'قوس قزح يعرض الطيف كاملا.' },
+        { es: 'مسحة', fr: 'la teinte', ex: 'أضف مسحة من الأصفر إلى المزيج.' }
       ]
     }
   },
   'pl': {
-    vocabulaire: { nom: 'Słownictwo', icone: '📚',
+    essentiel: { nom: 'Essentiel', icone: '🌟',
       debutant: [
-        { es: 'cześć', fr: 'bonjour/salut', ex: 'Cześć, jak się masz?' },
+        { es: 'cześć', fr: 'bonjour / salut', ex: 'Cześć, jak się masz?' },
         { es: 'do widzenia', fr: 'au revoir', ex: 'Do widzenia, do zobaczenia!' },
-        { es: 'tak', fr: 'oui', ex: 'Tak, proszę.' },
+        { es: 'proszę', fr: "s'il vous plaît", ex: 'Proszę, pomoż mi.' },
+        { es: 'dziękuję', fr: 'merci', ex: 'Dziękuję bardzo!' },
+        { es: 'tak', fr: 'oui', ex: 'Tak, rozumiem.' },
         { es: 'nie', fr: 'non', ex: 'Nie, dziękuję.' },
-        { es: 'woda', fr: "l'eau", ex: 'Piję wodę każdego dnia.' },
-        { es: 'chleb', fr: 'le pain', ex: 'Chleb jest bardzo świeży.' },
-        { es: 'dom', fr: 'la maison', ex: 'Mój dom jest duży.' },
-        { es: 'kot', fr: 'le chat', ex: 'Kot śpi na kanapie.' },
-        { es: 'książka', fr: 'le livre', ex: 'Czytam książkę każdy wieczór.' },
-        { es: 'przyjaciel', fr: "l'ami", ex: 'Mój przyjaciel jest bardzo miły.' }
+        { es: 'przepraszam', fr: 'excusez-moi', ex: 'Przepraszam, gdzie jest stacja?' },
+        { es: 'przykro mi', fr: 'je suis désolé', ex: 'Przykro mi za spóźnienie.' },
+        { es: 'pomoc', fr: "l'aide", ex: 'Potrzebuję pomocy, proszę.' },
+        { es: 'przyjaciel', fr: "l'ami", ex: 'Ona jest moją najlepszą przyjaciółką.' }
       ],
       intermediaire: [
-        { es: 'miasto', fr: 'la ville', ex: 'Miasto jest bardzo tętniące życiem.' },
-        { es: 'szkoła', fr: "l'école", ex: 'Chodzę do szkoły każdego ranka.' },
-        { es: 'pieniądze', fr: "l'argent", ex: 'Potrzebuję pieniądze na podróż.' },
-        { es: 'samochód', fr: 'la voiture', ex: 'Mój samochód jest czerwony.' },
-        { es: 'piękny', fr: 'beau', ex: 'Zachód słońca jest piękny.' },
-        { es: 'szczęśliwy', fr: 'heureux', ex: 'Jestem dzisiaj szczęśliwy.' },
-        { es: 'praca', fr: 'le travail', ex: 'Praca jest ważna.' },
-        { es: 'czas', fr: 'le temps', ex: 'Czas leci szybko.' },
-        { es: 'jeść', fr: 'manger', ex: 'Chcę teraz jeść.' },
-        { es: 'spać', fr: 'dormir', ex: 'Muszę teraz spać.' }
+        { es: 'rozumieć', fr: 'comprendre', ex: 'Czy mnie rozumiesz?' },
+        { es: 'mówić', fr: 'parler', ex: 'Mówię trochę po polsku.' },
+        { es: 'uczyć się', fr: 'apprendre', ex: 'Chcę się uczyć polskiego.' },
+        { es: 'powtórzyć', fr: 'répéter', ex: 'Czy możesz powtórzyć, proszę?' },
+        { es: 'wolno', fr: 'lentement', ex: 'Proszę mówić wolniej.' },
+        { es: 'wiedzieć', fr: 'savoir', ex: 'Nie wiem odpowiedzi.' },
+        { es: 'potrzebować', fr: 'avoir besoin de', ex: 'Potrzebuję chwili.' },
+        { es: 'chcieć', fr: 'vouloir', ex: 'Chcę spróbować.' }
       ],
       avance: [
-        { es: 'podróż', fr: 'le voyage', ex: 'Długa podróż na nas czeka.' },
-        { es: 'wolność', fr: 'la liberté', ex: 'Wolność jest prawem podstawowym.' },
-        { es: 'marzenie', fr: 'le rêve', ex: 'Mam marzenie o przyszłości.' },
-        { es: 'wyzwanie', fr: 'le défi', ex: 'To wyzwanie jest trudne.' },
-        { es: 'sukces', fr: 'le succès', ex: 'Sukces wymaga ciężkiej pracy.' },
-        { es: 'doświadczenie', fr: "l'expérience", ex: 'Doświadczenie jest najlepszym nauczycielem.' },
-        { es: 'odkryć', fr: 'découvrir', ex: 'Lubię odkryć nowe miejsca.' },
-        { es: 'rozumieć', fr: 'comprendre', ex: 'Teraz rozumieć problem.' },
-        { es: 'miłość', fr: "l'amour", ex: 'Miłość jest pięknym uczuciem.' },
-        { es: 'muzyka', fr: 'la musique', ex: 'Muzyka łączy ludzi.' }
+        { es: 'okazja', fr: "l'opportunité", ex: 'To jest świetna okazja.' },
+        { es: 'wyzwanie', fr: 'le défi', ex: 'Każde wyzwanie czyni nas silniejszymi.' },
+        { es: 'osiągnąć', fr: 'atteindre', ex: 'Osiągnę swoje cele.' },
+        { es: 'odpowiedzialność', fr: 'la responsabilité', ex: 'Dzielimy odpowiedzialność.' },
+        { es: 'ciekawy', fr: 'curieux', ex: 'Ona jest bardzo ciekawa nauki.' },
+        { es: 'zdeterminowany', fr: 'déterminé', ex: 'On jest zdeterminowany, by odnieść sukces.' },
+        { es: 'poprawiać', fr: 'améliorer', ex: 'Poprawiam swoje umiejętności każdego dnia.' }
+      ]
+    },
+    nourriture: { nom: 'Nourriture', icone: '🍕',
+      debutant: [
+        { es: 'chleb', fr: 'le pain', ex: 'Chleb jest jeszcze ciepły.' },
+        { es: 'woda', fr: "l'eau", ex: 'Piję wodę przez cały dzień.' },
+        { es: 'mleko', fr: 'le lait', ex: 'Dodaję mleko do kawy.' },
+        { es: 'jajko', fr: "l'œuf", ex: 'Jem jajko na śniadanie.' },
+        { es: 'kurczak', fr: 'le poulet', ex: 'Kurczak jest pyszny.' },
+        { es: 'ryba', fr: 'le poisson', ex: 'Lubię jeść rybę.' },
+        { es: 'zupa', fr: 'la soupe', ex: 'Ta zupa jest bardzo gorąca.' },
+        { es: 'jabłko', fr: 'la pomme', ex: 'Jem jabłko każdego ranka.' },
+        { es: 'ser', fr: 'le fromage', ex: 'Polska ma wiele rodzajów serów.' },
+        { es: 'herbata', fr: 'le thé', ex: 'Piję herbatę każdego dnia.' }
+      ],
+      intermediaire: [
+        { es: 'truskawka', fr: 'la fraise', ex: 'Truskawki są dojrzałe i słodkie.' },
+        { es: 'sok pomarańczowy', fr: "le jus d'orange", ex: 'Piję sok pomarańczowy rano.' },
+        { es: 'grzyby', fr: 'les champignons', ex: 'Dodaję grzyby do sosu.' },
+        { es: 'masło', fr: 'le beurre', ex: 'Smaruję masłem chleb.' },
+        { es: 'cukier', fr: 'le sucre', ex: 'Czy bierzesz cukier do herbaty?' },
+        { es: 'pieprz', fr: 'le poivre', ex: 'Dodaj trochę pieprzu.' },
+        { es: 'deser', fr: 'le dessert', ex: 'Co chcesz na deser?' },
+        { es: 'przepis', fr: 'la recette', ex: 'To przepis mojej babci.' }
+      ],
+      avance: [
+        { es: 'składniki', fr: 'les ingrédients', ex: 'Składniki są wszystkie świeże.' },
+        { es: 'przyprawy', fr: "l'assaisonnement", ex: 'Przyprawy są idealne.' },
+        { es: 'pożywny', fr: 'nutritif', ex: 'Ten posiłek jest bardzo pożywny.' },
+        { es: 'apetyt', fr: "l'appétit", ex: 'Zapach pobudza apetyt.' },
+        { es: 'kuchnia', fr: 'la cuisine', ex: 'Uwielbiam kuchnię azjatycką.' },
+        { es: 'smak', fr: 'la saveur', ex: 'Smak tej potrawy jest wyjątkowy.' },
+        { es: 'porcja', fr: 'la portion', ex: 'Porcja jest bardzo duża.' }
+      ]
+    },
+    voyage: { nom: 'Voyage', icone: '✈️',
+      debutant: [
+        { es: 'lotnisko', fr: "l'aéroport", ex: 'Przylatujemy na lotnisko o ósmej.' },
+        { es: 'hotel', fr: "l'hôtel", ex: 'Hotel jest blisko plaży.' },
+        { es: 'bilet', fr: 'le billet', ex: 'Kupiłem bilet lotniczy.' },
+        { es: 'paszport', fr: 'le passeport', ex: 'Nie zapomnij paszportu.' },
+        { es: 'mapa', fr: 'la carte', ex: 'Używam mapy, żeby znaleźć drogę.' },
+        { es: 'pociąg', fr: 'le train', ex: 'Pociąg odjeżdża o dziewiątej.' },
+        { es: 'autobus', fr: 'le bus', ex: 'Jeżdżę autobusem każdego dnia.' },
+        { es: 'dworzec', fr: 'la gare', ex: 'Dworzec jest w centrum miasta.' },
+        { es: 'bagaż', fr: 'les bagages', ex: 'Mój bagaż jest bardzo ciężki.' },
+        { es: 'plaża', fr: 'la plage', ex: 'Odpoczywamy na plaży.' }
+      ],
+      intermediaire: [
+        { es: 'rezerwacja', fr: 'la réservation', ex: 'Zrobiłem rezerwację online.' },
+        { es: 'odjazd', fr: 'le départ', ex: 'Odjazd jest w południe.' },
+        { es: 'przyjazd', fr: "l'arrivée", ex: 'Nasz przyjazd się opóźnia.' },
+        { es: 'odprawa celna', fr: 'la douane', ex: 'Przechodzimy odprawę celną.' },
+        { es: 'waluta', fr: 'la devise', ex: 'Wymieniam walutę w banku.' },
+        { es: 'pamiątka', fr: 'le souvenir', ex: 'Kupuję pamiątkę dla rodziny.' },
+        { es: 'przewodnik', fr: 'le guide', ex: 'Przewodnik oprowadza nas po mieście.' },
+        { es: 'przygoda', fr: "l'aventure", ex: 'Każda podróż to nowa przygoda.' }
+      ],
+      avance: [
+        { es: 'plan podróży', fr: "l'itinéraire", ex: 'Nasz plan podróży obejmuje pięć miast.' },
+        { es: 'cel podróży', fr: 'la destination', ex: 'Paryż to moje wymarzone miejsce.' },
+        { es: 'zakwaterowanie', fr: "l'hébergement", ex: 'Zakwaterowanie jest doskonałe.' },
+        { es: 'zwiedzać', fr: 'explorer', ex: 'Zwiedzam stare miasto pieszo.' },
+        { es: 'zabytek', fr: 'le monument', ex: 'Zamek Królewski to sławny zabytek.' },
+        { es: 'kultura', fr: 'la culture', ex: 'Jestem zafascynowany lokalną kulturą.' },
+        { es: 'krajobraz', fr: 'le paysage', ex: 'Krajobraz zapiera dech w piersiach.' }
+      ]
+    },
+    famille: { nom: 'Famille', icone: '👨‍👩‍👧',
+      debutant: [
+        { es: 'mama', fr: 'la mère', ex: 'Moja mama bardzo dobrze gotuje.' },
+        { es: 'tata', fr: 'le père', ex: 'Mój tata pracuje w Warszawie.' },
+        { es: 'siostra', fr: 'la sœur', ex: 'Moja siostra jest bardzo zabawna.' },
+        { es: 'brat', fr: 'le frère', ex: 'Mój brat gra w piłkę nożną.' },
+        { es: 'babcia', fr: 'la grand-mère', ex: 'Babcia opowiada wspaniałe historie.' },
+        { es: 'dziadek', fr: 'le grand-père', ex: 'Dziadek jest bardzo mądry.' },
+        { es: 'niemowlę', fr: 'le bébé', ex: 'Niemowlę śpi spokojnie.' },
+        { es: 'dziecko', fr: "l'enfant", ex: 'Dziecko bawi się w ogrodzie.' },
+        { es: 'rodzina', fr: 'la famille', ex: 'Moja rodzina jest bardzo bliska.' },
+        { es: 'dom', fr: 'le foyer', ex: 'W domu jest najlepiej.' }
+      ],
+      intermediaire: [
+        { es: 'kuzyn', fr: 'le cousin', ex: 'Mój kuzyn mieszka w Krakowie.' },
+        { es: 'ciotka', fr: 'la tante', ex: 'Ciotka piecze pyszne ciasta.' },
+        { es: 'wujek', fr: "l'oncle", ex: 'Wujek jest lekarzem.' },
+        { es: 'siostrzeniec', fr: 'le neveu', ex: 'Siostrzeniec ma dwa lata.' },
+        { es: 'mąż', fr: 'le mari', ex: 'Jej mąż jest bardzo troskliwy.' },
+        { es: 'żona', fr: 'la femme', ex: 'Jego żona jest nauczycielką.' },
+        { es: 'ślub', fr: 'le mariage', ex: 'Ślub był piękny.' },
+        { es: 'rodzice', fr: 'les parents', ex: 'Moi rodzice są na wakacjach.' }
+      ],
+      avance: [
+        { es: 'relacja', fr: 'la relation', ex: 'Dobra relacja wymaga wysiłku.' },
+        { es: 'dziedzictwo', fr: "l'héritage", ex: 'Dzielimy bogate dziedzictwo kulturowe.' },
+        { es: 'pokolenie', fr: 'la génération', ex: 'Każde pokolenie uczy się od poprzedniego.' },
+        { es: 'wychowanie', fr: "l'éducation", ex: 'Dobre wychowanie kształtuje charakter.' },
+        { es: 'tradycja', fr: 'la tradition', ex: 'Pielęgnujemy tradycje rodzinne.' },
+        { es: 'więź', fr: 'le lien', ex: 'Więź między rodzeństwem jest silna.' },
+        { es: 'zjazd rodzinny', fr: 'les retrouvailles', ex: 'Zjazd rodzinny był wspaniały.' }
+      ]
+    },
+    couleurs: { nom: 'Couleurs', icone: '🎨',
+      debutant: [
+        { es: 'czerwony', fr: 'rouge', ex: 'Jabłko jest jaskrawoczerwone.' },
+        { es: 'niebieski', fr: 'bleu', ex: 'Niebo jest czyste i niebieskie.' },
+        { es: 'zielony', fr: 'vert', ex: 'Trawa jest zielona po deszczu.' },
+        { es: 'żółty', fr: 'jaune', ex: 'Słońce jest żółte i ciepłe.' },
+        { es: 'czarny', fr: 'noir', ex: 'Dziś noszę czarną kurtkę.' },
+        { es: 'biały', fr: 'blanc', ex: 'Śnieg jest całkowicie biały.' },
+        { es: 'pomarańczowy', fr: 'orange', ex: 'Jej sukienka jest jaskrawopomarańczowa.' },
+        { es: 'różowy', fr: 'rose', ex: 'Róże są bladoróżowe.' },
+        { es: 'fioletowy', fr: 'violet', ex: 'Niebo staje się fioletowe o zmierzchu.' },
+        { es: 'brązowy', fr: 'marron', ex: 'Pień drzewa jest brązowy.' }
+      ],
+      intermediaire: [
+        { es: 'szary', fr: 'gris', ex: 'Chmury są ciemnoszare.' },
+        { es: 'ciemny', fr: 'foncé', ex: 'Zimą preferuję ciemne kolory.' },
+        { es: 'jasny', fr: 'clair', ex: 'Latem nosi jasnoniebieski.' },
+        { es: 'jaskrawy', fr: 'vif', ex: 'Obraz używa jaskrawych kolorów.' },
+        { es: 'blady', fr: 'pâle', ex: 'Wygląda dziś blado.' },
+        { es: 'kolorowy', fr: 'coloré', ex: 'Rynek jest bardzo kolorowy.' },
+        { es: 'odcień', fr: 'la teinte', ex: 'Lubię ten odcień niebieskiego.' },
+        { es: 'przezroczysty', fr: 'transparent', ex: 'Szkło jest przezroczyste.' }
+      ],
+      avance: [
+        { es: 'kontrast', fr: 'le contraste', ex: 'Kontrast między kolorami jest uderzający.' },
+        { es: 'intensywny', fr: 'éclatant', ex: 'Intensywne kolory przyciągnęły moją uwagę.' },
+        { es: 'niuans', fr: 'la nuance', ex: 'Niuans zmienia się w różnym świetle.' },
+        { es: 'monochromatyczny', fr: 'monochrome', ex: 'Zdjęcie jest monochromatyczne.' },
+        { es: 'pigment', fr: 'le pigment', ex: 'Ta farba używa naturalnych pigmentów.' },
+        { es: 'widmo', fr: 'le spectre', ex: 'Tęcza pokazuje pełne widmo.' },
+        { es: 'odcień koloru', fr: 'la teinte', ex: 'Dodaj odcień żółtego do mieszanki.' }
       ]
     }
   },
   'tr': {
-    vocabulaire: { nom: 'Kelime Hazinesi', icone: '📚',
+    essentiel: { nom: 'Essentiel', icone: '🌟',
       debutant: [
         { es: 'merhaba', fr: 'bonjour', ex: 'Merhaba, nasılsın?' },
-        { es: 'hoşça kal', fr: 'au revoir', ex: 'Hoşça kal, görüşürüz!' },
-        { es: 'evet', fr: 'oui', ex: 'Evet, lütfen.' },
+        { es: 'güle güle', fr: 'au revoir', ex: 'Güle güle, yakında görüşürüz!' },
+        { es: 'lütfen', fr: "s'il vous plaît", ex: 'Lütfen bana yardım eder misin?' },
+        { es: 'teşekkür ederim', fr: 'merci', ex: 'Çok teşekkür ederim!' },
+        { es: 'evet', fr: 'oui', ex: 'Evet, anlıyorum.' },
         { es: 'hayır', fr: 'non', ex: 'Hayır, teşekkürler.' },
-        { es: 'su', fr: "l'eau", ex: 'Her gün su içiyorum.' },
-        { es: 'ekmek', fr: 'le pain', ex: 'Ekmek çok taze.' },
-        { es: 'ev', fr: 'la maison', ex: 'Evim çok büyük.' },
-        { es: 'kedi', fr: 'le chat', ex: 'Kedi kanepede uyuyor.' },
-        { es: 'kitap', fr: 'le livre', ex: 'Her akşam kitap okuyorum.' },
-        { es: 'arkadaş', fr: "l'ami", ex: 'Arkadaşım çok nazik.' }
+        { es: 'özür dilerim', fr: 'excusez-moi', ex: 'Özür dilerim, istasyon nerede?' },
+        { es: 'üzgünüm', fr: 'je suis désolé', ex: 'Geç kaldığım için üzgünüm.' },
+        { es: 'yardım', fr: "l'aide", ex: 'Lütfen yardıma ihtiyacım var.' },
+        { es: 'arkadaş', fr: "l'ami", ex: 'O benim en iyi arkadaşım.' }
       ],
       intermediaire: [
-        { es: 'şehir', fr: 'la ville', ex: 'Şehir çok canlı.' },
-        { es: 'okul', fr: "l'école", ex: 'Her sabah okula gidiyorum.' },
-        { es: 'para', fr: "l'argent", ex: 'Seyahat için para lazım.' },
-        { es: 'araba', fr: 'la voiture', ex: 'Arabam kırmızı.' },
-        { es: 'güzel', fr: 'beau', ex: 'Gün batımı çok güzel.' },
-        { es: 'mutlu', fr: 'heureux', ex: 'Bugün çok mutluyum.' },
-        { es: 'iş', fr: 'le travail', ex: 'İş çok önemli.' },
-        { es: 'zaman', fr: 'le temps', ex: 'Zaman çabuk geçiyor.' },
-        { es: 'yemek', fr: 'manger', ex: 'Şimdi yemek istiyorum.' },
-        { es: 'uyumak', fr: 'dormir', ex: 'Sekiz saat uyumak gerekiyor.' }
+        { es: 'anlamak', fr: 'comprendre', ex: 'Beni anlıyor musun?' },
+        { es: 'konuşmak', fr: 'parler', ex: 'Biraz Türkçe konuşuyorum.' },
+        { es: 'öğrenmek', fr: 'apprendre', ex: 'Türkçe öğrenmek istiyorum.' },
+        { es: 'tekrarlamak', fr: 'répéter', ex: 'Lütfen tekrar eder misin?' },
+        { es: 'yavaş', fr: 'lentement', ex: 'Lütfen daha yavaş konuş.' },
+        { es: 'bilmek', fr: 'savoir', ex: 'Cevabı bilmiyorum.' },
+        { es: 'ihtiyaç duymak', fr: 'avoir besoin de', ex: 'Bir dakikaya ihtiyacım var.' },
+        { es: 'istemek', fr: 'vouloir', ex: 'Denemek istiyorum.' }
       ],
       avance: [
-        { es: 'yolculuk', fr: 'le voyage', ex: 'Uzun bir yolculuk bizi bekliyor.' },
-        { es: 'özgürlük', fr: 'la liberté', ex: 'Özgürlük temel bir haktır.' },
-        { es: 'rüya', fr: 'le rêve', ex: 'Geleceğe dair bir rüyam var.' },
-        { es: 'zorluk', fr: 'le défi', ex: 'Bu zorluk çok zor.' },
-        { es: 'başarı', fr: 'le succès', ex: 'Başarı çok çalışmayı gerektirir.' },
-        { es: 'deneyim', fr: "l'expérience", ex: 'Deneyim en iyi öğretmendir.' },
-        { es: 'keşfetmek', fr: 'découvrir', ex: 'Yeni yerler keşfetmeyi severim.' },
-        { es: 'anlamak', fr: 'comprendre', ex: 'Artık problemi anlamak istiyorum.' },
-        { es: 'aşk', fr: "l'amour", ex: 'Aşk güzel bir duygudur.' },
-        { es: 'müzik', fr: 'la musique', ex: 'Müzik insanları bir araya getirir.' }
+        { es: 'fırsat', fr: "l'opportunité", ex: 'Bu harika bir fırsat.' },
+        { es: 'meydan okuma', fr: 'le défi', ex: 'Her meydan okuma bizi güçlendirir.' },
+        { es: 'başarmak', fr: 'atteindre', ex: 'Hedeflerimi başaracağım.' },
+        { es: 'sorumluluk', fr: 'la responsabilité', ex: 'Sorumluluğu paylaşıyoruz.' },
+        { es: 'meraklı', fr: 'curieux', ex: 'O bilim konusunda çok meraklı.' },
+        { es: 'kararlı', fr: 'déterminé', ex: 'O başarmaya kararlı.' },
+        { es: 'geliştirmek', fr: 'améliorer', ex: 'Her gün becerilerimi geliştiriyorum.' }
+      ]
+    },
+    nourriture: { nom: 'Nourriture', icone: '🍕',
+      debutant: [
+        { es: 'ekmek', fr: 'le pain', ex: 'Ekmek hâlâ sıcak.' },
+        { es: 'su', fr: "l'eau", ex: 'Bütün gün su içiyorum.' },
+        { es: 'süt', fr: 'le lait', ex: 'Kahveye süt ekliyorum.' },
+        { es: 'yumurta', fr: "l'œuf", ex: 'Kahvaltıda yumurta yiyorum.' },
+        { es: 'tavuk', fr: 'le poulet', ex: 'Tavuk çok lezzetli.' },
+        { es: 'balık', fr: 'le poisson', ex: 'Balık yemeyi seviyorum.' },
+        { es: 'çorba', fr: 'la soupe', ex: 'Bu çorba çok sıcak.' },
+        { es: 'elma', fr: 'la pomme', ex: 'Her sabah elma yerim.' },
+        { es: 'peynir', fr: 'le fromage', ex: "Türkiye'nin pek çok peynir çeşidi var." },
+        { es: 'çay', fr: 'le thé', ex: 'Her gün çay içerim.' }
+      ],
+      intermediaire: [
+        { es: 'çilek', fr: 'la fraise', ex: 'Çilekler olgun ve tatlı.' },
+        { es: 'portakal suyu', fr: "le jus d'orange", ex: 'Sabahları portakal suyu içiyorum.' },
+        { es: 'mantar', fr: 'les champignons', ex: 'Sosuna mantar ekliyorum.' },
+        { es: 'tereyağı', fr: 'le beurre', ex: 'Ekmeğe tereyağı sürüyorum.' },
+        { es: 'şeker', fr: 'le sucre', ex: 'Çayına şeker alıyor musun?' },
+        { es: 'karabiber', fr: 'le poivre', ex: 'Biraz karabiber ekle.' },
+        { es: 'tatlı', fr: 'le dessert', ex: 'Tatlı olarak ne istersin?' },
+        { es: 'tarif', fr: 'la recette', ex: 'Bu büyükannemin tarifi.' }
+      ],
+      avance: [
+        { es: 'malzemeler', fr: 'les ingrédients', ex: 'Malzemelerin hepsi taze.' },
+        { es: 'baharat', fr: "l'assaisonnement", ex: 'Baharat mükemmel.' },
+        { es: 'besleyici', fr: 'nutritif', ex: 'Bu yemek çok besleyici.' },
+        { es: 'iştah', fr: "l'appétit", ex: 'Koku iştahımı açıyor.' },
+        { es: 'mutfak', fr: 'la cuisine', ex: 'Asya mutfağını seviyorum.' },
+        { es: 'lezzet', fr: 'la saveur', ex: 'Bu yemeğin lezzeti eşsiz.' },
+        { es: 'porsiyon', fr: 'la portion', ex: 'Porsiyon çok cömert.' }
+      ]
+    },
+    voyage: { nom: 'Voyage', icone: '✈️',
+      debutant: [
+        { es: 'havalimanı', fr: "l'aéroport", ex: 'Saat sekizde havalimanına varıyoruz.' },
+        { es: 'otel', fr: "l'hôtel", ex: 'Otel sahile yakın.' },
+        { es: 'bilet', fr: 'le billet', ex: 'Bir uçak bileti aldım.' },
+        { es: 'pasaport', fr: 'le passeport', ex: 'Pasaportunu unutma.' },
+        { es: 'harita', fr: 'la carte', ex: 'Yol bulmak için harita kullanıyorum.' },
+        { es: 'tren', fr: 'le train', ex: 'Tren saat dokuzda kalkıyor.' },
+        { es: 'otobüs', fr: 'le bus', ex: 'Her gün otobüse biniyorum.' },
+        { es: 'istasyon', fr: 'la gare', ex: 'İstasyon şehir merkezinde.' },
+        { es: 'bagaj', fr: 'les bagages', ex: 'Bagajım çok ağır.' },
+        { es: 'plaj', fr: 'la plage', ex: 'Plajda dinleniyoruz.' }
+      ],
+      intermediaire: [
+        { es: 'rezervasyon', fr: 'la réservation', ex: 'Online rezervasyon yaptım.' },
+        { es: 'kalkış', fr: 'le départ', ex: 'Kalkış öğlen.' },
+        { es: 'varış', fr: "l'arrivée", ex: 'Varışımız gecikiyor.' },
+        { es: 'gümrük', fr: 'la douane', ex: 'Gümrükten geçiyoruz.' },
+        { es: 'döviz', fr: 'la devise', ex: 'Bankada döviz bozuyorum.' },
+        { es: 'hediyelik eşya', fr: 'le souvenir', ex: 'Aile için hediyelik eşya alıyorum.' },
+        { es: 'rehber', fr: 'le guide', ex: 'Rehber bize şehri gösteriyor.' },
+        { es: 'macera', fr: "l'aventure", ex: 'Her yolculuk yeni bir macera.' }
+      ],
+      avance: [
+        { es: 'güzergah', fr: "l'itinéraire", ex: 'Güzergahımız beş şehir içeriyor.' },
+        { es: 'destinasyon', fr: 'la destination', ex: "Paris hayalimdeki destinasyon." },
+        { es: 'konaklama', fr: "l'hébergement", ex: 'Konaklama mükemmel.' },
+        { es: 'keşfetmek', fr: 'explorer', ex: 'Eski şehri yürüyerek keşfediyorum.' },
+        { es: 'anıt', fr: 'le monument', ex: 'Ayasofya ünlü bir anıt.' },
+        { es: 'kültür', fr: 'la culture', ex: 'Yerel kültüre büyüleniyorum.' },
+        { es: 'manzara', fr: 'le paysage', ex: 'Manzara nefes kesici.' }
+      ]
+    },
+    famille: { nom: 'Famille', icone: '👨‍👩‍👧',
+      debutant: [
+        { es: 'anne', fr: 'la mère', ex: 'Annem çok iyi yemek pişirir.' },
+        { es: 'baba', fr: 'le père', ex: "Babam İstanbul'da çalışıyor." },
+        { es: 'kız kardeş', fr: 'la sœur', ex: 'Kız kardeşim çok komik.' },
+        { es: 'erkek kardeş', fr: 'le frère', ex: 'Erkek kardeşim futbol oynuyor.' },
+        { es: 'büyükanne', fr: 'la grand-mère', ex: 'Büyükannem harika hikayeler anlatır.' },
+        { es: 'büyükbaba', fr: 'le grand-père', ex: 'Büyükbabam çok bilgeli.' },
+        { es: 'bebek', fr: 'le bébé', ex: 'Bebek huzurla uyuyor.' },
+        { es: 'çocuk', fr: "l'enfant", ex: 'Çocuk bahçede oynuyor.' },
+        { es: 'aile', fr: 'la famille', ex: 'Ailem çok yakın.' },
+        { es: 'ev', fr: 'le foyer', ex: 'Ev en güzel yerdir.' }
+      ],
+      intermediaire: [
+        { es: 'kuzen', fr: 'le cousin', ex: 'Kuzenim Ankara da yaşıyor.' },
+        { es: 'hala', fr: 'la tante', ex: 'Halam lezzetli kekler yapar.' },
+        { es: 'amca', fr: "l'oncle", ex: 'Amcam doktor.' },
+        { es: 'yeğen', fr: 'le neveu / la nièce', ex: 'Yeğenim iki yaşında.' },
+        { es: 'koca', fr: 'le mari', ex: 'Kocası çok şefkatli.' },
+        { es: 'eş', fr: 'la femme', ex: 'Eşi öğretmen.' },
+        { es: 'düğün', fr: 'le mariage', ex: 'Düğün çok güzeldi.' },
+        { es: 'ebeveynler', fr: 'les parents', ex: 'Ebeveynlerim tatilde.' }
+      ],
+      avance: [
+        { es: 'ilişki', fr: 'la relation', ex: 'İyi bir ilişki çaba gerektirir.' },
+        { es: 'kültürel miras', fr: "l'héritage", ex: 'Zengin bir kültürel mirası paylaşıyoruz.' },
+        { es: 'nesil', fr: 'la génération', ex: 'Her nesil bir öncekinden öğrenir.' },
+        { es: 'eğitim', fr: "l'éducation", ex: 'İyi bir eğitim karakter oluşturur.' },
+        { es: 'gelenek', fr: 'la tradition', ex: 'Aile geleneklerimizi yaşatıyoruz.' },
+        { es: 'bağ', fr: 'le lien', ex: 'Kardeşler arasındaki bağ güçlüdür.' },
+        { es: 'yeniden birleşme', fr: 'les retrouvailles', ex: 'Aile buluşması harikaydı.' }
+      ]
+    },
+    couleurs: { nom: 'Couleurs', icone: '🎨',
+      debutant: [
+        { es: 'kırmızı', fr: 'rouge', ex: 'Elma parlak kırmızı.' },
+        { es: 'mavi', fr: 'bleu', ex: 'Gökyüzü açık ve mavi.' },
+        { es: 'yeşil', fr: 'vert', ex: 'Çimen yağmurdan sonra yeşil.' },
+        { es: 'sarı', fr: 'jaune', ex: 'Güneş sarı ve sıcak.' },
+        { es: 'siyah', fr: 'noir', ex: 'Bugün siyah ceket giyiyorum.' },
+        { es: 'beyaz', fr: 'blanc', ex: 'Kar tamamen beyaz.' },
+        { es: 'turuncu', fr: 'orange', ex: 'Elbisesi parlak turuncu.' },
+        { es: 'pembe', fr: 'rose', ex: 'Güller soluk pembe.' },
+        { es: 'mor', fr: 'violet', ex: 'Alacakaranlıkta gökyüzü mora döner.' },
+        { es: 'kahverengi', fr: 'marron', ex: 'Ağaç gövdesi kahverengi.' }
+      ],
+      intermediaire: [
+        { es: 'gri', fr: 'gris', ex: 'Bulutlar koyu gri.' },
+        { es: 'koyu', fr: 'foncé', ex: 'Kışın koyu renkleri tercih ederim.' },
+        { es: 'açık', fr: 'clair', ex: 'Yazın açık mavi giyer.' },
+        { es: 'canlı', fr: 'vif', ex: 'Resim canlı renkler kullanıyor.' },
+        { es: 'solgun', fr: 'pâle', ex: 'Bugün solgun görünüyor.' },
+        { es: 'renkli', fr: 'coloré', ex: 'Pazar yeri çok renkli.' },
+        { es: 'ton', fr: 'la teinte', ex: 'Bu mavi tonu seviyorum.' },
+        { es: 'şeffaf', fr: 'transparent', ex: 'Cam şeffaf.' }
+      ],
+      avance: [
+        { es: 'kontrast', fr: 'le contraste', ex: 'Renkler arasındaki kontrast çarpıcı.' },
+        { es: 'canlı renk', fr: 'éclatant', ex: 'Canlı renkler dikkatimi çekti.' },
+        { es: 'nüans', fr: 'la nuance', ex: 'Nüans farklı ışıklarda değişiyor.' },
+        { es: 'tek renkli', fr: 'monochrome', ex: 'Fotoğraf tek renkli.' },
+        { es: 'pigment', fr: 'le pigment', ex: 'Bu boyada doğal pigmentler kullanılıyor.' },
+        { es: 'spektrum', fr: 'le spectre', ex: 'Gökkuşağı tam spektrumu gösterir.' },
+        { es: 'renk tonu', fr: 'la teinte', ex: 'Karışıma sarı renk tonu ekle.' }
       ]
     }
   },
   'hi': {
-    vocabulaire: { nom: 'शब्द भंडार', icone: '📚',
+    essentiel: { nom: 'Essentiel', icone: '🌟',
       debutant: [
         { es: 'नमस्ते', fr: 'bonjour', ex: 'नमस्ते, आप कैसे हैं?' },
         { es: 'अलविदा', fr: 'au revoir', ex: 'अलविदा, जल्दी मिलते हैं!' },
-        { es: 'हाँ', fr: 'oui', ex: 'हाँ, कृपया।' },
+        { es: 'कृपया', fr: "s'il vous plaît", ex: 'कृपया मेरी मदद करें।' },
+        { es: 'धन्यवाद', fr: 'merci', ex: 'बहुत धन्यवाद!' },
+        { es: 'हाँ', fr: 'oui', ex: 'हाँ, मैं समझता हूँ।' },
         { es: 'नहीं', fr: 'non', ex: 'नहीं, धन्यवाद।' },
-        { es: 'पानी', fr: "l'eau", ex: 'मैं हर दिन पानी पीता हूँ।' },
-        { es: 'रोटी', fr: 'le pain', ex: 'रोटी बहुत ताज़ी है।' },
-        { es: 'घर', fr: 'la maison', ex: 'मेरा घर बड़ा है।' },
-        { es: 'बिल्ली', fr: 'le chat', ex: 'बिल्ली सोफे पर सोती है।' },
-        { es: 'किताब', fr: 'le livre', ex: 'मैं हर शाम किताब पढ़ता हूँ।' },
-        { es: 'दोस्त', fr: "l'ami", ex: 'मेरा दोस्त बहुत अच्छा है।' }
+        { es: 'माफ़ कीजिए', fr: 'excusez-moi', ex: 'माफ़ कीजिए, स्टेशन कहाँ है?' },
+        { es: 'मुझे खेद है', fr: 'je suis désolé', ex: 'देर के लिए मुझे खेद है।' },
+        { es: 'मदद', fr: "l'aide", ex: 'मुझे मदद चाहिए, कृपया।' },
+        { es: 'दोस्त', fr: "l'ami", ex: 'वह मेरी सबसे अच्छी दोस्त है।' }
       ],
       intermediaire: [
-        { es: 'शहर', fr: 'la ville', ex: 'शहर बहुत जीवंत है।' },
-        { es: 'स्कूल', fr: "l'école", ex: 'मैं हर सुबह स्कूल जाता हूँ।' },
-        { es: 'पैसा', fr: "l'argent", ex: 'मुझे यात्रा के लिए पैसा चाहिए।' },
-        { es: 'गाड़ी', fr: 'la voiture', ex: 'मेरी गाड़ी लाल है।' },
-        { es: 'सुंदर', fr: 'beau', ex: 'सूर्यास्त बहुत सुंदर है।' },
-        { es: 'खुश', fr: 'heureux', ex: 'मैं आज बहुत खुश हूँ।' },
-        { es: 'काम', fr: 'le travail', ex: 'काम बहुत ज़रूरी है।' },
-        { es: 'समय', fr: 'le temps', ex: 'समय बहुत जल्दी बीतता है।' },
-        { es: 'खाना', fr: 'manger', ex: 'मैं अभी खाना चाहता हूँ।' },
-        { es: 'सोना', fr: 'dormir', ex: 'मुझे आठ घंटे सोना है।' }
+        { es: 'समझना', fr: 'comprendre', ex: 'क्या आप मुझे समझते हैं?' },
+        { es: 'बोलना', fr: 'parler', ex: 'मैं थोड़ी हिंदी बोलता हूँ।' },
+        { es: 'सीखना', fr: 'apprendre', ex: 'मैं हिंदी सीखना चाहता हूँ।' },
+        { es: 'दोहराना', fr: 'répéter', ex: 'क्या आप कृपया दोहरा सकते हैं?' },
+        { es: 'धीरे', fr: 'lentement', ex: 'कृपया धीरे बोलें।' },
+        { es: 'जानना', fr: 'savoir', ex: 'मुझे जवाब नहीं पता।' },
+        { es: 'ज़रूरत होना', fr: 'avoir besoin de', ex: 'मुझे एक पल चाहिए।' },
+        { es: 'चाहना', fr: 'vouloir', ex: 'मैं कोशिश करना चाहता हूँ।' }
       ],
       avance: [
-        { es: 'यात्रा', fr: 'le voyage', ex: 'एक लंबी यात्रा हमारा इंतजार कर रही है।' },
-        { es: 'आज़ादी', fr: 'la liberté', ex: 'आज़ादी एक मौलिक अधिकार है।' },
-        { es: 'सपना', fr: 'le rêve', ex: 'मेरे भविष्य के लिए एक सपना है।' },
-        { es: 'चुनौती', fr: 'le défi', ex: 'यह चुनौती बहुत कठिन है।' },
-        { es: 'सफलता', fr: 'le succès', ex: 'सफलता के लिए मेहनत ज़रूरी है।' },
-        { es: 'अनुभव', fr: "l'expérience", ex: 'अनुभव सबसे अच्छा शिक्षक है।' },
-        { es: 'खोज', fr: 'découvrir', ex: 'मुझे नई जगहें खोज करना पसंद है।' },
-        { es: 'समझना', fr: 'comprendre', ex: 'मैं अब समस्या समझना समझ गया।' },
-        { es: 'प्यार', fr: "l'amour", ex: 'प्यार एक सुंदर भावना है।' },
-        { es: 'संगीत', fr: 'la musique', ex: 'संगीत लोगों को एकजुट करता है।' }
+        { es: 'अवसर', fr: "l'opportunité", ex: 'यह एक बेहतरीन अवसर है।' },
+        { es: 'चुनौती', fr: 'le défi', ex: 'हर चुनौती हमें मज़बूत बनाती है।' },
+        { es: 'हासिल करना', fr: 'atteindre', ex: 'मैं अपने लक्ष्य हासिल करूँगा।' },
+        { es: 'ज़िम्मेदारी', fr: 'la responsabilité', ex: 'हम ज़िम्मेदारी साझा करते हैं।' },
+        { es: 'जिज्ञासु', fr: 'curieux', ex: 'वह विज्ञान के बारे में बहुत जिज्ञासु है।' },
+        { es: 'दृढ़निश्चयी', fr: 'déterminé', ex: 'वह सफल होने के लिए दृढ़निश्चयी है।' },
+        { es: 'सुधारना', fr: 'améliorer', ex: 'मैं हर दिन अपने कौशल सुधारता हूँ।' }
+      ]
+    },
+    nourriture: { nom: 'Nourriture', icone: '🍕',
+      debutant: [
+        { es: 'रोटी', fr: 'le pain', ex: 'रोटी अभी भी गरम है।' },
+        { es: 'पानी', fr: "l'eau", ex: 'मैं पूरे दिन पानी पीता हूँ।' },
+        { es: 'दूध', fr: 'le lait', ex: 'मैं चाय में दूध डालता हूँ।' },
+        { es: 'अंडा', fr: "l'œuf", ex: 'मैं नाश्ते में अंडा खाता हूँ।' },
+        { es: 'चिकन', fr: 'le poulet', ex: 'चिकन बहुत स्वादिष्ट है।' },
+        { es: 'मछली', fr: 'le poisson', ex: 'मुझे मछली खाना पसंद है।' },
+        { es: 'चावल', fr: 'le riz', ex: 'मैं रात के खाने में चावल पकाता हूँ।' },
+        { es: 'दाल', fr: 'les lentilles', ex: 'दाल बहुत पौष्टिक होती है।' },
+        { es: 'चाय', fr: 'le thé', ex: 'मैं हर दिन चाय पीता हूँ।' },
+        { es: 'सेब', fr: 'la pomme', ex: 'मैं हर सुबह एक सेब खाता हूँ।' }
+      ],
+      intermediaire: [
+        { es: 'स्ट्रॉबेरी', fr: 'la fraise', ex: 'स्ट्रॉबेरी पकी हुई और मीठी हैं।' },
+        { es: 'संतरे का रस', fr: "le jus d'orange", ex: 'मैं सुबह संतरे का रस पीता हूँ।' },
+        { es: 'मशरूम', fr: 'les champignons', ex: 'मैं सब्ज़ी में मशरूम डालता हूँ।' },
+        { es: 'मक्खन', fr: 'le beurre', ex: 'मैं रोटी पर मक्खन लगाता हूँ।' },
+        { es: 'चीनी', fr: 'le sucre', ex: 'क्या आप चाय में चीनी लेते हैं?' },
+        { es: 'काली मिर्च', fr: 'le poivre', ex: 'थोड़ी काली मिर्च डालें।' },
+        { es: 'मिठाई', fr: 'le dessert', ex: 'मिठाई में क्या लेंगे?' },
+        { es: 'नुस्खा', fr: 'la recette', ex: 'यह मेरी दादी का नुस्खा है।' }
+      ],
+      avance: [
+        { es: 'सामग्री', fr: 'les ingrédients', ex: 'सभी सामग्री ताज़ी है।' },
+        { es: 'मसाले', fr: "l'assaisonnement", ex: 'मसाले एकदम सही हैं।' },
+        { es: 'पौष्टिक', fr: 'nutritif', ex: 'यह खाना बहुत पौष्टिक है।' },
+        { es: 'भूख', fr: "l'appétit", ex: 'खुशबू से भूख बढ़ जाती है।' },
+        { es: 'व्यंजन', fr: 'la cuisine', ex: 'मुझे एशियाई व्यंजन पसंद है।' },
+        { es: 'स्वाद', fr: 'la saveur', ex: 'इस व्यंजन का स्वाद अनोखा है।' },
+        { es: 'हिस्सा', fr: 'la portion', ex: 'हिस्सा बहुत बड़ा है।' }
+      ]
+    },
+    voyage: { nom: 'Voyage', icone: '✈️',
+      debutant: [
+        { es: 'हवाई अड्डा', fr: "l'aéroport", ex: 'हम आठ बजे हवाई अड्डे पर पहुँचते हैं।' },
+        { es: 'होटल', fr: "l'hôtel", ex: 'होटल समुद्र तट के पास है।' },
+        { es: 'टिकट', fr: 'le billet', ex: 'मैंने हवाई जहाज़ का टिकट खरीदा।' },
+        { es: 'पासपोर्ट', fr: 'le passeport', ex: 'अपना पासपोर्ट मत भूलें।' },
+        { es: 'नक्शा', fr: 'la carte', ex: 'मैं रास्ता खोजने के लिए नक्शा इस्तेमाल करता हूँ।' },
+        { es: 'ट्रेन', fr: 'le train', ex: 'ट्रेन नौ बजे रवाना होती है।' },
+        { es: 'बस', fr: 'le bus', ex: 'मैं हर दिन बस लेता हूँ।' },
+        { es: 'स्टेशन', fr: 'la gare', ex: 'स्टेशन शहर के केंद्र में है।' },
+        { es: 'सामान', fr: 'les bagages', ex: 'मेरा सामान बहुत भारी है।' },
+        { es: 'समुद्र तट', fr: 'la plage', ex: 'हम समुद्र तट पर आराम करते हैं।' }
+      ],
+      intermediaire: [
+        { es: 'बुकिंग', fr: 'la réservation', ex: 'मैंने ऑनलाइन बुकिंग की।' },
+        { es: 'प्रस्थान', fr: 'le départ', ex: 'प्रस्थान दोपहर को है।' },
+        { es: 'आगमन', fr: "l'arrivée", ex: 'हमारा आगमन देर से हो रहा है।' },
+        { es: 'सीमा शुल्क', fr: 'la douane', ex: 'हम सीमा शुल्क से गुज़रते हैं।' },
+        { es: 'मुद्रा', fr: 'la devise', ex: 'मैं बैंक में मुद्रा बदलता हूँ।' },
+        { es: 'यादगार', fr: 'le souvenir', ex: 'मैं परिवार के लिए यादगार खरीदता हूँ।' },
+        { es: 'गाइड', fr: 'le guide', ex: 'गाइड हमें शहर दिखाता है।' },
+        { es: 'साहसिक कार्य', fr: "l'aventure", ex: 'हर यात्रा एक नया साहसिक कार्य है।' }
+      ],
+      avance: [
+        { es: 'यात्रा कार्यक्रम', fr: "l'itinéraire", ex: 'हमारे यात्रा कार्यक्रम में पाँच शहर हैं।' },
+        { es: 'मंज़िल', fr: 'la destination', ex: 'पेरिस मेरी सपनों की मंज़िल है।' },
+        { es: 'आवास', fr: "l'hébergement", ex: 'आवास बेहतरीन है।' },
+        { es: 'खोजना', fr: 'explorer', ex: 'मैं पैदल पुराने शहर की खोज करता हूँ।' },
+        { es: 'ऐतिहासिक स्थल', fr: 'le monument', ex: 'ताजमहल एक प्रसिद्ध ऐतिहासिक स्थल है।' },
+        { es: 'संस्कृति', fr: 'la culture', ex: 'मैं स्थानीय संस्कृति से मोहित हूँ।' },
+        { es: 'दृश्य', fr: 'le paysage', ex: 'दृश्य मनमोहक है।' }
+      ]
+    },
+    famille: { nom: 'Famille', icone: '👨‍👩‍👧',
+      debutant: [
+        { es: 'माँ', fr: 'la mère', ex: 'मेरी माँ बहुत अच्छा खाना बनाती है।' },
+        { es: 'पिता', fr: 'le père', ex: 'मेरे पिता दिल्ली में काम करते हैं।' },
+        { es: 'बहन', fr: 'la sœur', ex: 'मेरी बहन बहुत मज़ेदार है।' },
+        { es: 'भाई', fr: 'le frère', ex: 'मेरा भाई फ़ुटबॉल खेलता है।' },
+        { es: 'दादी', fr: 'la grand-mère', ex: 'दादी अच्छी कहानियाँ सुनाती हैं।' },
+        { es: 'दादा', fr: 'le grand-père', ex: 'दादा जी बहुत बुद्धिमान हैं।' },
+        { es: 'बच्चा', fr: "l'enfant", ex: 'बच्चा बगीचे में खेल रहा है।' },
+        { es: 'परिवार', fr: 'la famille', ex: 'मेरा परिवार बहुत करीब है।' },
+        { es: 'घर', fr: 'le foyer', ex: 'घर जैसी कोई जगह नहीं।' },
+        { es: 'बेटी', fr: 'la fille', ex: 'बेटी विश्वविद्यालय में पढ़ती है।' }
+      ],
+      intermediaire: [
+        { es: 'चचेरा भाई', fr: 'le cousin', ex: 'मेरा चचेरा भाई मुंबई में रहता है।' },
+        { es: 'चाची', fr: 'la tante', ex: 'चाची स्वादिष्ट मिठाइयाँ बनाती हैं।' },
+        { es: 'चाचा', fr: "l'oncle", ex: 'चाचा जी डॉक्टर हैं।' },
+        { es: 'भतीजा', fr: 'le neveu', ex: 'मेरा भतीजा दो साल का है।' },
+        { es: 'पति', fr: 'le mari', ex: 'उनके पति बहुत देखभाल करने वाले हैं।' },
+        { es: 'पत्नी', fr: 'la femme', ex: 'उनकी पत्नी शिक्षिका हैं।' },
+        { es: 'शादी', fr: 'le mariage', ex: 'शादी बहुत सुंदर थी।' },
+        { es: 'माता-पिता', fr: 'les parents', ex: 'मेरे माता-पिता छुट्टी पर हैं।' }
+      ],
+      avance: [
+        { es: 'रिश्ता', fr: 'la relation', ex: 'अच्छे रिश्ते के लिए मेहनत चाहिए।' },
+        { es: 'सांस्कृतिक विरासत', fr: "l'héritage", ex: 'हम एक समृद्ध सांस्कृतिक विरासत साझा करते हैं।' },
+        { es: 'पीढ़ी', fr: 'la génération', ex: 'हर पीढ़ी पिछली पीढ़ी से सीखती है।' },
+        { es: 'परवरिश', fr: "l'éducation", ex: 'अच्छी परवरिश चरित्र बनाती है।' },
+        { es: 'परंपरा', fr: 'la tradition', ex: 'हम पारिवारिक परंपराओं को जीवित रखते हैं।' },
+        { es: 'बंधन', fr: 'le lien', ex: 'भाई-बहनों का बंधन मज़बूत होता है।' },
+        { es: 'पुनर्मिलन', fr: 'les retrouvailles', ex: 'पारिवारिक पुनर्मिलन शानदार था।' }
+      ]
+    },
+    couleurs: { nom: 'Couleurs', icone: '🎨',
+      debutant: [
+        { es: 'लाल', fr: 'rouge', ex: 'सेब चमकीला लाल है।' },
+        { es: 'नीला', fr: 'bleu', ex: 'आसमान साफ़ और नीला है।' },
+        { es: 'हरा', fr: 'vert', ex: 'बारिश के बाद घास हरी है।' },
+        { es: 'पीला', fr: 'jaune', ex: 'सूरज पीला और गर्म है।' },
+        { es: 'काला', fr: 'noir', ex: 'आज मैं काली जैकेट पहन रहा हूँ।' },
+        { es: 'सफ़ेद', fr: 'blanc', ex: 'बर्फ़ पूरी तरह सफ़ेद है।' },
+        { es: 'नारंगी', fr: 'orange', ex: 'उसकी ड्रेस चमकीली नारंगी है।' },
+        { es: 'गुलाबी', fr: 'rose', ex: 'गुलाब हल्के गुलाबी हैं।' },
+        { es: 'बैंगनी', fr: 'violet', ex: 'शाम को आसमान बैंगनी हो जाता है।' },
+        { es: 'भूरा', fr: 'marron', ex: 'पेड़ का तना भूरा है।' }
+      ],
+      intermediaire: [
+        { es: 'भूरा-सलेटी', fr: 'gris', ex: 'बादल गहरे सलेटी हैं।' },
+        { es: 'गहरा', fr: 'foncé', ex: 'सर्दियों में मुझे गहरे रंग पसंद हैं।' },
+        { es: 'हल्का', fr: 'clair', ex: 'वह गर्मियों में हल्का नीला पहनती है।' },
+        { es: 'चमकीला', fr: 'vif', ex: 'पेंटिंग में चमकीले रंग हैं।' },
+        { es: 'पीला पड़ना', fr: 'pâle', ex: 'वह आज पीला दिख रहा है।' },
+        { es: 'रंग-बिरंगा', fr: 'coloré', ex: 'बाज़ार बहुत रंग-बिरंगा है।' },
+        { es: 'रंगत', fr: 'la teinte', ex: 'मुझे नीले का यह रंगत पसंद है।' },
+        { es: 'पारदर्शी', fr: 'transparent', ex: 'शीशा पारदर्शी है।' }
+      ],
+      avance: [
+        { es: 'विपरीतता', fr: 'le contraste', ex: 'रंगों के बीच विपरीतता प्रभावशाली है।' },
+        { es: 'जीवंत', fr: 'éclatant', ex: 'जीवंत रंगों ने मेरा ध्यान खींचा।' },
+        { es: 'बारीकता', fr: 'la nuance', ex: 'रोशनी में बारीकता बदलती है।' },
+        { es: 'एकरंगी', fr: 'monochrome', ex: 'तस्वीर एकरंगी है।' },
+        { es: 'रंगद्रव्य', fr: 'le pigment', ex: 'इस रंग में प्राकृतिक रंगद्रव्य इस्तेमाल होते हैं।' },
+        { es: 'वर्णक्रम', fr: 'le spectre', ex: 'इंद्रधनुष पूरा वर्णक्रम दिखाता है।' },
+        { es: 'रंग का आभास', fr: 'la teinte', ex: 'मिश्रण में पीले का आभास जोड़ें।' }
       ]
     }
   }
+
 };
 
 // Fonction principale de changement de langue
