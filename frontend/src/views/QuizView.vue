@@ -68,9 +68,12 @@
 import { ref, computed, onMounted, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
+import { useAuthStore } from '@/stores/auth'
+import { postSession, calcXp } from '@/api/progress'
 import type { Word } from '@/types'
 
 const store  = useLangStore()
+const auth   = useAuthStore()
 const router = useRouter()
 
 const cards    = ref<Word[]>([])
@@ -129,6 +132,22 @@ function speak() {
   utter.lang = store.currentLang?.voice_locale ?? 'fr-FR'
   speechSynthesis.speak(utter)
 }
+
+watch(done, (val) => {
+  if (!val || !auth.user || !store.currentLang || !store.currentTheme) return
+  const total = cards.value.length
+  const xp    = calcXp('quiz', score.value, total)
+  postSession({
+    language:  store.currentLang.code,
+    theme:     store.currentTheme.key,
+    level:     store.currentLevel,
+    mode:      'quiz',
+    score:     Math.round(score.value / total * 100),
+    xp_gained: xp,
+    correct:   score.value,
+    total,
+  })
+})
 
 onMounted(async () => {
   if (!store.words.length) await store.loadWords()

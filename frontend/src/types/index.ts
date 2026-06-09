@@ -23,6 +23,7 @@ export interface Word {
   transliteration: string | null
   clue: string | null
   example_sentence: string | null
+  example_gloss: { w: string; t: string | null }[] | null
 }
 
 export interface GrammarTip {
