@@ -7,6 +7,7 @@ use App\Http\Controllers\Api\ProgressController;
 use App\Http\Controllers\Api\WordController;
 use App\Http\Controllers\Api\GrammarController;
 use App\Http\Controllers\Api\DashboardController;
+use App\Http\Controllers\Api\TodayController;
 use App\Http\Controllers\Api\ReviewController;
 
 // Auth (SPA stateful via Sanctum cookie)
@@ -23,8 +24,10 @@ Route::middleware('auth:sanctum')->prefix('me')->group(function () {
     Route::post('/custom-words',      [CustomWordController::class, 'store']);
     Route::delete('/custom-words/{id}', [CustomWordController::class, 'destroy']);
 
-    // Dashboard
+    // Dashboard + aujourd'hui
     Route::get('/dashboard',           [DashboardController::class, 'index']);
+    Route::get('/today',               [TodayController::class, 'index']);
+    Route::put('/goal',                [TodayController::class, 'updateGoal']);
 
     // SRS
     Route::post('/reviews',            [ReviewController::class, 'record']);
