@@ -6,6 +6,7 @@ use App\Http\Controllers\Api\LanguageController;
 use App\Http\Controllers\Api\ProgressController;
 use App\Http\Controllers\Api\WordController;
 use App\Http\Controllers\Api\GrammarController;
+use App\Http\Controllers\Api\ReviewController;
 
 // Auth (SPA stateful via Sanctum cookie)
 Route::post('/register', [AuthController::class, 'register']);
@@ -20,6 +21,11 @@ Route::middleware('auth:sanctum')->prefix('me')->group(function () {
     Route::get('/custom-words',       [CustomWordController::class, 'index']);
     Route::post('/custom-words',      [CustomWordController::class, 'store']);
     Route::delete('/custom-words/{id}', [CustomWordController::class, 'destroy']);
+
+    // SRS
+    Route::post('/reviews',            [ReviewController::class, 'record']);
+    Route::get('/reviews/due',         [ReviewController::class, 'due']);
+    Route::get('/reviews/difficult',   [ReviewController::class, 'difficult']);
 });
 
 // Public: catalogue

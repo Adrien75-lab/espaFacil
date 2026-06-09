@@ -66,6 +66,7 @@ import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
 import { postSession, calcXp } from '@/api/progress'
+import { postReview } from '@/api/reviews'
 import type { Word } from '@/types'
 
 const store  = useLangStore()
@@ -87,6 +88,7 @@ function flip() { flipped.value = true }
 function decide(ok: boolean) {
   if (ok) known.value++
   else review.value.push(current.value)
+  if (auth.user && store.currentLang) postReview(current.value.id, store.currentLang.code, ok)
   next()
 }
 

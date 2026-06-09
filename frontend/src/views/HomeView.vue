@@ -68,6 +68,16 @@
         :disabled="!store.currentTheme"
         @click="goMode"
       >▶ Commencer</button>
+
+      <!-- SRS : visible uniquement si connecté -->
+      <div v-if="auth.user" class="srs-row">
+        <button class="srs-btn review-btn" @click="router.push('/review')">
+          🔁 Révision SRS
+        </button>
+        <button class="srs-btn difficult-btn" @click="router.push('/difficult')">
+          🔥 Mots difficiles
+        </button>
+      </div>
     </template>
 
     <div v-if="store.loading" class="loader">Chargement…</div>
@@ -78,9 +88,11 @@
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
+import { useAuthStore } from '@/stores/auth'
 import type { Level } from '@/types'
 
 const store  = useLangStore()
+const auth   = useAuthStore()
 const router = useRouter()
 
 const levels: { key: Level; label: string }[] = [
@@ -143,4 +155,10 @@ h2 { margin: 1rem 0 0.5rem; font-size: 1.4rem; }
   align-items: center; gap: 0.25rem; font-size: 0.88rem; transition: border-color .2s; min-width: 90px; }
 .mode-btn span:first-child { font-size: 1.5rem; }
 .mode-btn:hover, .mode-btn.active { border-color: #4f46e5; background: #2a2a3e; color: #fff; }
+
+.srs-row { display: flex; gap: 0.75rem; justify-content: center; margin-top: 1.25rem; flex-wrap: wrap; }
+.srs-btn { border: none; border-radius: 8px; padding: 0.6rem 1.4rem; font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: opacity .2s; }
+.review-btn   { background: #4f46e520; color: #a5b4fc; border: 2px solid #4f46e5; }
+.difficult-btn { background: #ef444420; color: #fca5a5; border: 2px solid #ef4444; }
+.srs-btn:hover { opacity: 0.8; }
 </style>

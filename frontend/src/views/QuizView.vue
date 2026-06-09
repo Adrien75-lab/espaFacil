@@ -70,6 +70,7 @@ import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
 import { postSession, calcXp } from '@/api/progress'
+import { postReview } from '@/api/reviews'
 import type { Word } from '@/types'
 
 const store  = useLangStore()
@@ -108,7 +109,9 @@ function answer(choice: string) {
   if (answered.value) return
   answered.value = true
   selected.value = choice
-  if (choice === current.value.translation_fr) score.value++
+  const ok = choice === current.value.translation_fr
+  if (ok) score.value++
+  if (auth.user && store.currentLang) postReview(current.value.id, store.currentLang.code, ok)
 }
 
 function next() {
