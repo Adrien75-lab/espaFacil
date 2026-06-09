@@ -12,6 +12,8 @@ const router = createRouter({
     { path: '/login',      name: 'login',      component: () => import('@/views/LoginView.vue') },
     { path: '/register',   name: 'register',   component: () => import('@/views/RegisterView.vue') },
     { path: '/profile',    name: 'profile',    component: () => import('@/views/ProfileView.vue') },
+    { path: '/listen',     name: 'listen',     component: () => import('@/views/ListenView.vue') },
+    { path: '/speak',      name: 'speak',      component: () => import('@/views/SpeakView.vue') },
     { path: '/review',     name: 'review',     component: () => import('@/views/ReviewView.vue') },
     { path: '/difficult',  name: 'difficult',  component: () => import('@/views/DifficultView.vue') },
   ]

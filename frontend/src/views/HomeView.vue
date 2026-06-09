@@ -105,6 +105,8 @@ const modes = [
   { key: 'quiz',       emoji: '🧠', label: 'QCM' },
   { key: 'cards',      emoji: '🃏', label: 'Cartes' },
   { key: 'fill-blank', emoji: '✏️',  label: 'Phrases' },
+  { key: 'listen',     emoji: '🎧', label: 'Écoute' },
+  { key: 'speak',      emoji: '🎙️', label: 'Prononciation' },
 ]
 const currentMode = ref<string>('quiz')
 
