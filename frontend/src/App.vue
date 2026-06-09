@@ -3,7 +3,7 @@
     <!-- Auth bar -->
     <div class="auth-bar">
       <template v-if="auth.user">
-        <span class="auth-name">👤 {{ auth.user.name }}</span>
+        <RouterLink class="auth-btn" to="/profile">👤 {{ auth.user.name }}</RouterLink>
         <button class="auth-btn" @click="doLogout">Déconnexion</button>
       </template>
       <template v-else>

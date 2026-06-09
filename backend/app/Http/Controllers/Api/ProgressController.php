@@ -70,6 +70,14 @@ class ProgressController extends Controller
         $stat->max_serie  = max($stat->max_serie, $streak);
         if ($data['mode'] === 'fill-blank') $stat->phrases_sessions += 1;
         $stat->activity_days = $days;
+
+        // XP history : map date → xp cumulé du jour (30 derniers jours)
+        $hist = $stat->xp_history ?? [];
+        $hist[$today] = ($hist[$today] ?? 0) + $data['xp_gained'];
+        // Garder seulement les 30 dernières clés
+        krsort($hist);
+        $stat->xp_history = array_slice($hist, 0, 30, true);
+
         $stat->save();
 
         // --- Progress ---

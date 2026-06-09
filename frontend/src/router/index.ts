@@ -11,6 +11,7 @@ const router = createRouter({
     { path: '/learn',      name: 'learn',      component: () => import('@/views/LearnView.vue') },
     { path: '/login',      name: 'login',      component: () => import('@/views/LoginView.vue') },
     { path: '/register',   name: 'register',   component: () => import('@/views/RegisterView.vue') },
+    { path: '/profile',    name: 'profile',    component: () => import('@/views/ProfileView.vue') },
     { path: '/review',     name: 'review',     component: () => import('@/views/ReviewView.vue') },
     { path: '/difficult',  name: 'difficult',  component: () => import('@/views/DifficultView.vue') },
   ]
