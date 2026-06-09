@@ -48,10 +48,25 @@
         >{{ lvl.label }}</button>
       </div>
 
+      <!-- Sélecteur de mode -->
+      <p class="subtitle" style="margin-top:1rem">Mode de jeu :</p>
+      <div class="mode-row">
+        <button
+          v-for="m in modes"
+          :key="m.key"
+          class="mode-btn"
+          :class="{ active: currentMode === m.key }"
+          @click="currentMode = m.key"
+        >
+          <span>{{ m.emoji }}</span>
+          <span>{{ m.label }}</span>
+        </button>
+      </div>
+
       <button
         class="btn-start"
         :disabled="!store.currentTheme"
-        @click="goQuiz"
+        @click="goMode"
       >▶ Commencer</button>
     </template>
 
@@ -60,7 +75,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import type { Level } from '@/types'
@@ -74,10 +89,17 @@ const levels: { key: Level; label: string }[] = [
   { key: 'avance',        label: '🌳 Avancé' },
 ]
 
+const modes = [
+  { key: 'quiz',       emoji: '🧠', label: 'QCM' },
+  { key: 'cards',      emoji: '🃏', label: 'Cartes' },
+  { key: 'fill-blank', emoji: '✏️',  label: 'Phrases' },
+]
+const currentMode = ref<string>('quiz')
+
 onMounted(() => { if (!store.languages.length) store.loadLanguages() })
 
-function goQuiz() {
-  if (store.currentTheme) router.push('/quiz')
+function goMode() {
+  if (store.currentTheme) router.push('/' + currentMode.value)
 }
 </script>
 
@@ -114,4 +136,11 @@ h2 { margin: 1rem 0 0.5rem; font-size: 1.4rem; }
 
 .btn-back { background: none; border: none; color: #888; cursor: pointer; margin-bottom: 0.5rem; font-size: 0.9rem; }
 .loader { margin-top: 2rem; color: #888; }
+
+.mode-row { display: flex; gap: 0.75rem; justify-content: center; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.mode-btn { background: #1e1e2e; border: 2px solid #333; border-radius: 10px;
+  padding: 0.65rem 1.4rem; cursor: pointer; color: #ccc; display: flex; flex-direction: column;
+  align-items: center; gap: 0.25rem; font-size: 0.88rem; transition: border-color .2s; min-width: 90px; }
+.mode-btn span:first-child { font-size: 1.5rem; }
+.mode-btn:hover, .mode-btn.active { border-color: #4f46e5; background: #2a2a3e; color: #fff; }
 </style>
