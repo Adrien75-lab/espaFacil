@@ -59,6 +59,7 @@ class LinguaFacilSeeder extends Seeder
                 'transliteration' => $word['transliteration'],
                 'clue'            => $word['clue'],
                 'example_sentence'=> $word['example_sentence'],
+                'example_gloss'   => isset($word['example_gloss']) ? json_encode($word['example_gloss']) : null,
                 'mnemonic'        => null,
                 'created_at'      => now(),
                 'updated_at'      => now(),

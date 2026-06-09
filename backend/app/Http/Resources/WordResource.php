@@ -13,6 +13,7 @@ class WordResource extends JsonResource {
             'transliteration'  => $this->transliteration,
             'clue'             => $this->clue,
             'example_sentence' => $this->example_sentence,
+            'example_gloss'    => $this->example_gloss ? json_decode($this->example_gloss, true) : null,
         ];
     }
 }
