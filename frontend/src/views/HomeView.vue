@@ -2,6 +2,9 @@
   <div class="home">
     <h1>🌍 LinguaFacil</h1>
 
+    <!-- Objectif quotidien (si connecté) -->
+    <DailyGoalWidget v-if="auth.user" ref="goalWidget" />
+
     <!-- Langue non choisie : grille des 14 langues -->
     <template v-if="!store.currentLang">
       <p class="subtitle">Choisissez une langue</p>
@@ -89,11 +92,13 @@ import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
+import DailyGoalWidget from '@/components/DailyGoalWidget.vue'
 import type { Level } from '@/types'
 
-const store  = useLangStore()
-const auth   = useAuthStore()
-const router = useRouter()
+const store      = useLangStore()
+const auth       = useAuthStore()
+const router     = useRouter()
+const goalWidget = ref<InstanceType<typeof DailyGoalWidget> | null>(null)
 
 const levels: { key: Level; label: string }[] = [
   { key: 'debutant',      label: '🌱 Débutant' },
@@ -102,11 +107,12 @@ const levels: { key: Level; label: string }[] = [
 ]
 
 const modes = [
-  { key: 'quiz',       emoji: '🧠', label: 'QCM' },
-  { key: 'cards',      emoji: '🃏', label: 'Cartes' },
-  { key: 'fill-blank', emoji: '✏️',  label: 'Phrases' },
-  { key: 'listen',     emoji: '🎧', label: 'Écoute' },
-  { key: 'speak',      emoji: '🎙️', label: 'Prononciation' },
+  { key: 'quiz',             emoji: '🧠', label: 'QCM' },
+  { key: 'cards',            emoji: '🃏', label: 'Cartes' },
+  { key: 'fill-blank',       emoji: '✏️',  label: 'Phrases' },
+  { key: 'listen',           emoji: '🎧', label: 'Écoute' },
+  { key: 'speak',            emoji: '🎙️', label: 'Prononciation' },
+  { key: 'sentence-builder', emoji: '🧩', label: 'Reconstitution' },
 ]
 const currentMode = ref<string>('quiz')
 

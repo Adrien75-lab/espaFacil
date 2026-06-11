@@ -16,6 +16,23 @@
         <p class="email">{{ data.user.email }}</p>
       </div>
 
+      <!-- Objectif quotidien -->
+      <section class="section goal-section">
+        <h2>🎯 Objectif quotidien</h2>
+        <div class="goal-row">
+          <span class="goal-label">XP par jour :</span>
+          <div class="goal-options">
+            <button
+              v-for="opt in goalOptions"
+              :key="opt"
+              class="goal-opt"
+              :class="{ active: currentGoal === opt }"
+              @click="changeGoal(opt)"
+            >{{ opt }} XP</button>
+          </div>
+        </div>
+      </section>
+
       <!-- Chiffres clés -->
       <div class="stats-row">
         <div class="stat-card">
@@ -128,14 +145,22 @@
 import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { fetchDashboard, type DashboardData } from '@/api/dashboard'
+import { fetchToday, updateGoal } from '@/api/today'
 import { useAuthStore } from '@/stores/auth'
 
 const router = useRouter()
 const auth   = useAuthStore()
 
-const data    = ref<DashboardData | null>(null)
-const loading = ref(true)
-const todayStr = new Date().toISOString().slice(0, 10)
+const data        = ref<DashboardData | null>(null)
+const loading     = ref(true)
+const todayStr    = new Date().toISOString().slice(0, 10)
+const currentGoal = ref(50)
+const goalOptions = [20, 50, 100, 200]
+
+async function changeGoal(xp: number) {
+  currentGoal.value = xp
+  await updateGoal(xp)
+}
 
 const initials = computed(() => {
   if (!data.value) return '?'
@@ -189,7 +214,9 @@ function barHeight(xp: number): number {
 
 onMounted(async () => {
   if (!auth.user) { router.push('/login'); return }
-  data.value = await fetchDashboard()
+  const [dash, today] = await Promise.all([fetchDashboard(), fetchToday()])
+  data.value = dash
+  if (today) currentGoal.value = today.daily_goal
   loading.value = false
 })
 </script>
@@ -261,4 +288,12 @@ onMounted(async () => {
   padding: .1rem .4rem; font-size: .72rem; }
 
 .btn-secondary { background: #333; color: #ccc; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
+
+.goal-section { }
+.goal-row { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.goal-label { color: #888; font-size: .9rem; }
+.goal-options { display: flex; gap: .5rem; flex-wrap: wrap; }
+.goal-opt { background: #1e1e2e; border: 2px solid #333; border-radius: 20px;
+  color: #aaa; padding: .3rem .9rem; font-size: .85rem; cursor: pointer; transition: border-color .15s; }
+.goal-opt:hover, .goal-opt.active { border-color: #4f46e5; color: #a5b4fc; }
 </style>

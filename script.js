@@ -4033,6 +4033,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mot = document.getElementById('es-word-display').textContent;
     if (mot) lancerReconnaissance(mot, document.getElementById('btn-mic'));
   });
+
 });
 
 // =============================================
