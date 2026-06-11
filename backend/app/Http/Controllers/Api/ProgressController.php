@@ -40,7 +40,7 @@ class ProgressController extends Controller
             'language'  => 'required|string|size:2',
             'theme'     => 'required|string',
             'level'     => 'required|in:debutant,intermediaire,avance',
-            'mode'      => 'required|in:quiz,cards,fill-blank',
+            'mode'      => 'required|in:quiz,cards,fill-blank,listen,speak,sentence-builder,dictee,paires',
             'score'     => 'required|integer|min:0|max:100',
             'xp_gained' => 'required|integer|min:0',
             'correct'   => 'required|integer|min:0',

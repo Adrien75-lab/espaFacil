@@ -18,6 +18,7 @@ const router = createRouter({
     { path: '/difficult',       name: 'difficult',        component: () => import('@/views/DifficultView.vue') },
     { path: '/sentence-builder', name: 'sentence-builder', component: () => import('@/views/SentenceBuilderView.vue') },
     { path: '/dictee',           name: 'dictee',           component: () => import('@/views/DicteeView.vue') },
+    { path: '/paires',           name: 'paires',           component: () => import('@/views/PairesView.vue') },
   ]
 })
 
