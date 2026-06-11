@@ -22,7 +22,7 @@
           @click="startDialogue(s)"
         >
           <span class="sc-emoji">{{ s.emoji }}</span>
-          <span class="sc-title">{{ s.title }}</span>
+          <span class="sc-title">{{ s.title_fr }}</span>
         </button>
       </div>
     </div>
@@ -31,7 +31,7 @@
     <div v-else-if="!done" class="game-screen">
       <div class="game-header">
         <button class="btn-back" @click="current = null">← Scénarios</button>
-        <span class="mode-badge">💬 {{ current.emoji }} {{ current.title }}</span>
+        <span class="mode-badge">💬 {{ current.emoji }} {{ current.title_fr }}</span>
         <span class="counter">{{ choicesDone }} / {{ totalChoices }}</span>
       </div>
       <div class="progress-bar">
