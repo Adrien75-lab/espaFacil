@@ -89,7 +89,7 @@
 
       <button
         class="btn-start"
-        :disabled="currentMode !== 'dialogue' ? !store.currentTheme : !selectedScenario"
+        :disabled="currentMode === 'dialogue' ? !selectedScenario : NO_THEME_MODES.includes(currentMode) ? false : !store.currentTheme"
         @click="goMode"
       >▶ Commencer</button>
 
@@ -150,13 +150,19 @@ const modes = [
   { key: 'paires',           emoji: '🃏',   label: 'Paires' },
   { key: 'dialogue',         emoji: '💬',   label: 'Dialogue' },
   { key: 'anagram',          emoji: '🔀',   label: 'Anagramme' },
+  { key: 'survival',         emoji: '🆘',   label: 'Survie' },
 ]
+
+// Modes qui ne nécessitent pas de thème sélectionné
+const NO_THEME_MODES = ['dialogue', 'survival']
 
 onMounted(() => { if (!store.languages.length) store.loadLanguages() })
 
 function goMode() {
   if (currentMode.value === 'dialogue') {
     if (selectedScenario.value) router.push(`/dialogue?scenario=${selectedScenario.value}`)
+  } else if (currentMode.value === 'survival') {
+    router.push('/survival')
   } else if (store.currentTheme) {
     router.push('/' + currentMode.value)
   }
