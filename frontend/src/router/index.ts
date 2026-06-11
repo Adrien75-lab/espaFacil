@@ -19,6 +19,7 @@ const router = createRouter({
     { path: '/sentence-builder', name: 'sentence-builder', component: () => import('@/views/SentenceBuilderView.vue') },
     { path: '/dictee',           name: 'dictee',           component: () => import('@/views/DicteeView.vue') },
     { path: '/paires',           name: 'paires',           component: () => import('@/views/PairesView.vue') },
+    { path: '/dialogue',         name: 'dialogue',         component: () => import('@/views/DialogueView.vue') },
   ]
 })
 
