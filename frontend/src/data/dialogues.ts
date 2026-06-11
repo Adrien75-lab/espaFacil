@@ -14,7 +14,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       line('A', 'Son tres euros.', 'Ça fait trois euros.'),
       choice('Son tres euros.', 'Ça fait trois euros.', [{ text: 'Aquí tiene. Gracias.', fr: 'Voilà. Merci.' }, { text: 'No tengo hambre.', fr: 'Je n\'ai pas faim.' }, { text: 'Hace frío.', fr: 'Il fait froid.' }, { text: 'No hablo español.', fr: 'Je ne parle pas espagnol.' }], 0),
     ] },
-    { id: 'es-hotel', emoji: '🏨', title: 'En el hotel', title_fr: 'À l'hôtel', steps: [
+    { id: 'es-hotel', emoji: '🏨', title: 'En el hotel', title_fr: "À l'hôtel", steps: [
       line('B', 'Tengo una reserva a nombre de Dupont.', 'J\'ai une réservation au nom de Dupont.'),
       line('A', 'Habitación doble para dos noches.', 'Chambre double pour deux nuits.'),
       choice('¿Está correcto?', 'C\'est correct ?', [{ text: 'Sí. ¿A qué hora es el desayuno?', fr: 'Oui. À quelle heure est le petit-déjeuner ?' }, { text: 'Me gusta el fútbol.', fr: 'J\'aime le football.' }, { text: 'Hace calor aquí.', fr: 'Il fait chaud ici.' }, { text: 'No tengo reserva.', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -79,7 +79,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       line('A', 'That\'ll be four pounds fifty.', 'Ça fait quatre livres cinquante.'),
       choice('How much?', 'C\'est combien ?', [{ text: 'Here you go. Keep the change.', fr: 'Voilà. Gardez la monnaie.' }, { text: 'I don\'t understand.', fr: 'Je ne comprends pas.' }, { text: 'Where is the airport?', fr: 'Où est l\'aéroport ?' }, { text: 'It\'s very cold.', fr: 'Il fait très froid.' }], 0),
     ] },
-    { id: 'en-hotel', emoji: '🏨', title: 'Checking in', title_fr: 'À l'hôtel', steps: [
+    { id: 'en-hotel', emoji: '🏨', title: 'Checking in', title_fr: "À l'hôtel", steps: [
       line('B', 'Hello, I have a reservation under Martin.', 'Bonjour, j\'ai une réservation au nom de Martin.'),
       line('A', 'A double room for three nights.', 'Chambre double pour trois nuits.'),
       choice('Is that correct?', 'C\'est correct ?', [{ text: 'Yes, that\'s right. What time is breakfast?', fr: 'Oui. Le petit-déjeuner est à quelle heure ?' }, { text: 'I like football.', fr: 'J\'aime le football.' }, { text: 'It\'s hot in here.', fr: 'Il fait chaud ici.' }, { text: 'I don\'t have a reservation.', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -137,7 +137,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   de: [
-    { id: 'de-hotel', emoji: '🏨', title: 'Im Hotel', title_fr: 'À l'hôtel', steps: [
+    { id: 'de-hotel', emoji: '🏨', title: 'Im Hotel', title_fr: "À l'hôtel", steps: [
       line('B', 'Ich habe eine Reservierung auf den Namen Müller.', 'J\'ai une réservation au nom de Müller.'),
       line('A', 'Ein Doppelzimmer für zwei Nächte, stimmt das?', 'Chambre double pour deux nuits, c\'est bien ça ?'),
       choice('Stimmt das?', 'C\'est bien ça ?', [{ text: 'Ja, genau. Um wie viel Uhr gibt es Frühstück?', fr: 'Oui, exactement. À quelle heure est le petit-déjeuner ?' }, { text: 'Ich mag Fußball.', fr: 'J\'aime le football.' }, { text: 'Es ist heiß hier.', fr: 'Il fait chaud ici.' }, { text: 'Ich habe keine Reservierung.', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -202,7 +202,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   it: [
-    { id: 'it-hotel', emoji: '🏨', title: 'All\', title_fr: 'À l'hôtel'hotel', steps: [
+    { id: 'it-hotel', emoji: '🏨', title: 'All\'hotel', title_fr: "À l'hôtel", steps: [
       line('B', 'Ho una prenotazione a nome Rossi.', 'J\'ai une réservation au nom de Rossi.'),
       line('A', 'Camera doppia per due notti.', 'Chambre double pour deux nuits.'),
       choice('È corretto?', 'C\'est correct ?', [{ text: 'Sì, esatto. A che ora è la colazione?', fr: 'Oui, exactement. À quelle heure est le petit-déjeuner ?' }, { text: 'Mi piace il calcio.', fr: 'J\'aime le football.' }, { text: 'Fa caldo qui.', fr: 'Il fait chaud ici.' }, { text: 'Non ho la prenotazione.', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -267,7 +267,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   pt: [
-    { id: 'pt-hotel', emoji: '🏨', title: 'No hotel', title_fr: 'À l'hôtel', steps: [
+    { id: 'pt-hotel', emoji: '🏨', title: 'No hotel', title_fr: "À l'hôtel", steps: [
       line('B', 'Tenho uma reserva em nome de Silva.', 'J\'ai une réservation au nom de Silva.'),
       line('A', 'Quarto duplo por duas noites.', 'Chambre double pour deux nuits.'),
       choice('Está correto?', 'C\'est correct ?', [{ text: 'Sim, exatamente. A que horas é o café da manhã?', fr: 'Oui, exactement. Le petit-déjeuner est à quelle heure ?' }, { text: 'Eu gosto de futebol.', fr: 'J\'aime le football.' }, { text: 'Está quente aqui.', fr: 'Il fait chaud ici.' }, { text: 'Não tenho reserva.', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -332,7 +332,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   nl: [
-    { id: 'nl-hotel', emoji: '🏨', title: 'In het hotel', title_fr: 'À l'hôtel', steps: [
+    { id: 'nl-hotel', emoji: '🏨', title: 'In het hotel', title_fr: "À l'hôtel", steps: [
       line('B', 'Ik heb een reservering op naam van Jansen.', 'J\'ai une réservation au nom de Jansen.'),
       line('A', 'Een tweepersoonskamer voor twee nachten.', 'Chambre double pour deux nuits.'),
       choice('Klopt dat?', 'C\'est correct ?', [{ text: 'Ja, precies. Hoe laat is het ontbijt?', fr: 'Oui, exactement. Le petit-déjeuner est à quelle heure ?' }, { text: 'Ik hou van voetbal.', fr: 'J\'aime le football.' }, { text: 'Het is warm hier.', fr: 'Il fait chaud ici.' }, { text: 'Ik heb geen reservering.', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -397,7 +397,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   pl: [
-    { id: 'pl-hotel', emoji: '🏨', title: 'W hotelu', title_fr: 'À l'hôtel', steps: [
+    { id: 'pl-hotel', emoji: '🏨', title: 'W hotelu', title_fr: "À l'hôtel", steps: [
       line('B', 'Mam rezerwację na nazwisko Kowalski.', 'J\'ai une réservation au nom de Kowalski.'),
       line('A', 'Pokój dwuosobowy na dwie noce.', 'Chambre double pour deux nuits.'),
       choice('Czy to poprawne?', 'C\'est correct ?', [{ text: 'Tak, dokładnie. O której jest śniadanie?', fr: 'Oui, exactement. Le petit-déjeuner est à quelle heure ?' }, { text: 'Lubię piłkę nożną.', fr: 'J\'aime le football.' }, { text: 'Jest tu gorąco.', fr: 'Il fait chaud ici.' }, { text: 'Nie mam rezerwacji.', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -462,7 +462,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   tr: [
-    { id: 'tr-otel', emoji: '🏨', title: 'Otelde', title_fr: 'À l'hôtel', steps: [
+    { id: 'tr-otel', emoji: '🏨', title: 'Otelde', title_fr: "À l'hôtel", steps: [
       line('B', 'Yılmaz adına rezervasyonum var.', 'J\'ai une réservation au nom de Yılmaz.'),
       line('A', 'İki kişilik oda, iki gece.', 'Chambre double pour deux nuits.'),
       choice('Doğru mu?', 'C\'est correct ?', [{ text: 'Evet, aynen öyle. Kahvaltı saat kaçta?', fr: 'Oui, exactement. Le petit-déjeuner est à quelle heure ?' }, { text: 'Futbol seviyorum.', fr: 'J\'aime le football.' }, { text: 'Burası çok sıcak.', fr: 'Il fait très chaud ici.' }, { text: 'Rezervasyonum yok.', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -527,7 +527,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   ru: [
-    { id: 'ru-hotel', emoji: '🏨', title: 'В отеле', title_fr: 'À l'hôtel', steps: [
+    { id: 'ru-hotel', emoji: '🏨', title: 'В отеле', title_fr: "À l'hôtel", steps: [
       line('B', 'У меня бронь на имя Иванов.', 'J\'ai une réservation au nom d\'Ivanov.'),
       line('A', 'Двухместный номер на две ночи.', 'Chambre double pour deux nuits.'),
       choice('Всё верно?', 'C\'est correct ?', [{ text: 'Да, именно. В какое время завтрак?', fr: 'Oui, exactement. Le petit-déjeuner est à quelle heure ?' }, { text: 'Я люблю футбол.', fr: 'J\'aime le football.' }, { text: 'Здесь жарко.', fr: 'Il fait chaud ici.' }, { text: 'У меня нет брони.', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -592,7 +592,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   ja: [
-    { id: 'ja-hotel', emoji: '🏨', title: 'ホテルにて', title_fr: 'À l'hôtel', steps: [
+    { id: 'ja-hotel', emoji: '🏨', title: 'ホテルにて', title_fr: "À l'hôtel", steps: [
       line('B', '田中という名前で予約しています。', 'J\'ai une réservation au nom de Tanaka.'),
       line('A', 'ツインルーム、2泊ですね。', 'Chambre double pour deux nuits.'),
       choice('お間違いないですか？', 'C\'est bien ça ?', [{ text: 'はい、そうです。朝食は何時からですか？', fr: 'Oui, c\'est ça. Le petit-déjeuner est à quelle heure ?' }, { text: 'サッカーが好きです。', fr: 'J\'aime le football.' }, { text: 'ここは暑いですね。', fr: 'Il fait chaud ici.' }, { text: '予約していません。', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -657,7 +657,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   ko: [
-    { id: 'ko-hotel', emoji: '🏨', title: '호텔에서', title_fr: 'À l'hôtel', steps: [
+    { id: 'ko-hotel', emoji: '🏨', title: '호텔에서', title_fr: "À l'hôtel", steps: [
       line('B', '김이라는 이름으로 예약했습니다.', 'J\'ai une réservation au nom de Kim.'),
       line('A', '2인실 2박이시죠.', 'Chambre double pour deux nuits.'),
       choice('맞으신가요?', 'C\'est correct ?', [{ text: '네, 맞아요. 아침 식사는 몇 시에 시작하나요?', fr: 'Oui, c\'est ça. Le petit-déjeuner est à quelle heure ?' }, { text: '저는 축구를 좋아해요.', fr: 'J\'aime le football.' }, { text: '여기 더워요.', fr: 'Il fait chaud ici.' }, { text: '예약이 없어요.', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -722,7 +722,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   zh: [
-    { id: 'zh-hotel', emoji: '🏨', title: '在酒店', title_fr: 'À l'hôtel', steps: [
+    { id: 'zh-hotel', emoji: '🏨', title: '在酒店', title_fr: "À l'hôtel", steps: [
       line('B', '我用王先生的名字预订了房间。', 'J\'ai une réservation au nom de M. Wang.'),
       line('A', '双人间，住两晚，是吗？', 'Chambre double pour deux nuits ?'),
       choice('是这样吗？', 'C\'est bien ça ?', [{ text: '是的，就是这样。早餐是几点开始？', fr: 'Oui, c\'est ça. Le petit-déjeuner est à quelle heure ?' }, { text: '我喜欢足球。', fr: 'J\'aime le football.' }, { text: '这里很热。', fr: 'Il fait chaud ici.' }, { text: '我没有预订。', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -787,7 +787,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   ar: [
-    { id: 'ar-hotel', emoji: '🏨', title: 'في الفندق', title_fr: 'À l'hôtel', steps: [
+    { id: 'ar-hotel', emoji: '🏨', title: 'في الفندق', title_fr: "À l'hôtel", steps: [
       line('B', 'لدي حجز باسم أحمد.', 'J\'ai une réservation au nom d\'Ahmad.'),
       line('A', 'غرفة مزدوجة لليلتين.', 'Chambre double pour deux nuits.'),
       choice('هل هذا صحيح؟', 'C\'est correct ?', [{ text: 'نعم، بالضبط. في أي وقت يكون الإفطار؟', fr: 'Oui, exactement. Le petit-déjeuner est à quelle heure ?' }, { text: 'أنا أحب كرة القدم.', fr: 'J\'aime le football.' }, { text: 'الجو حار هنا.', fr: 'Il fait chaud ici.' }, { text: 'ليس لدي حجز.', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -852,7 +852,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   hi: [
-    { id: 'hi-hotel', emoji: '🏨', title: 'होटल में', title_fr: 'À l'hôtel', steps: [
+    { id: 'hi-hotel', emoji: '🏨', title: 'होटल में', title_fr: "À l'hôtel", steps: [
       line('B', 'शर्मा के नाम पर बुकिंग है।', 'J\'ai une réservation au nom de Sharma.'),
       line('A', 'दो रातों के लिए डबल रूम।', 'Chambre double pour deux nuits.'),
       choice('क्या यह सही है?', 'C\'est correct ?', [{ text: 'हाँ, बिल्कुल। नाश्ता किस समय होता है?', fr: 'Oui, exactement. Le petit-déjeuner est à quelle heure ?' }, { text: 'मुझे फुटबॉल पसंद है।', fr: 'J\'aime le football.' }, { text: 'यहाँ गर्मी है।', fr: 'Il fait chaud ici.' }, { text: 'मेरी कोई बुकिंग नहीं है।', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -917,5 +917,3 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
 }
-
-export default DIALOGUES
