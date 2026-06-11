@@ -113,6 +113,7 @@ const modes = [
   { key: 'listen',           emoji: '🎧', label: 'Écoute' },
   { key: 'speak',            emoji: '🎙️', label: 'Prononciation' },
   { key: 'sentence-builder', emoji: '🧩', label: 'Reconstitution' },
+  { key: 'dictee',           emoji: '🎧✍️', label: 'Dictée' },
 ]
 const currentMode = ref<string>('quiz')
 
