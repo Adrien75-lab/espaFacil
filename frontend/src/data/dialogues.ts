@@ -1,816 +1,549 @@
-export interface DialogueLine {
-  type: 'line'
-  speaker: 'A' | 'B'
-  text: string
-  fr: string
-}
-
-export interface DialogueChoice {
-  type: 'choice'
-  text: string
-  fr: string
-  options: { text: string; fr: string }[]
-  correctIndex: number
-}
-
+export interface DialogueLine { type: 'line'; speaker: 'A' | 'B'; text: string; fr: string }
+export interface DialogueChoice { type: 'choice'; text: string; fr: string; options: { text: string; fr: string }[]; correctIndex: number }
 export type DialogueStep = DialogueLine | DialogueChoice
+export interface Dialogue { id: string; emoji: string; title: string; steps: DialogueStep[] }
 
-export interface Dialogue {
-  id: string
-  emoji: string
-  title: string
-  steps: DialogueStep[]
-}
-
-const line = (speaker: 'A' | 'B', text: string, fr: string): DialogueLine =>
-  ({ type: 'line', speaker, text, fr })
-const choice = (text: string, fr: string, options: { text: string; fr: string }[], correctIndex: number): DialogueChoice =>
-  ({ type: 'choice', text, fr, options, correctIndex })
+const line = (speaker: 'A' | 'B', text: string, fr: string): DialogueLine => ({ type: 'line', speaker, text, fr })
+const choice = (text: string, fr: string, options: { text: string; fr: string }[], correctIndex: number): DialogueChoice => ({ type: 'choice', text, fr, options, correctIndex })
 
 export const DIALOGUES: Record<string, Dialogue[]> = {
-
   es: [
-    {
-      id: 'es-cafe', emoji: '☕', title: 'Au café',
-      steps: [
-        line('A', '¡Buenos días! ¿Qué desea tomar?', 'Bonjour ! Que désirez-vous prendre ?'),
-        choice('¿Qué desea tomar?', 'Que désirez-vous prendre ?', [
-          { text: 'Quiero un café con leche, por favor.', fr: 'Je voudrais un café au lait, s\'il vous plaît.' },
-          { text: 'Me llamo Carlos.', fr: 'Je m\'appelle Carlos.' },
-          { text: 'El baño está allí.', fr: 'Les toilettes sont là.' },
-          { text: 'Hasta luego.', fr: 'Au revoir.' },
-        ], 0),
-        line('A', 'Muy bien. ¿Algo más?', 'Très bien. Quelque chose d\'autre ?'),
-        choice('¿Algo más?', 'Autre chose ?', [
-          { text: 'Sí, una tostada también, por favor.', fr: 'Oui, un toast aussi, s\'il vous plaît.' },
-          { text: 'Me duele la cabeza.', fr: 'J\'ai mal à la tête.' },
-          { text: 'El tren sale a las tres.', fr: 'Le train part à trois heures.' },
-          { text: 'No tengo hambre.', fr: 'Je n\'ai pas faim.' },
-        ], 0),
-        line('A', 'Perfecto. Son cuatro euros con cincuenta.', 'Parfait. Ça fait quatre euros cinquante.'),
-        choice('Son cuatro euros con cincuenta.', 'Ça fait quatre euros cinquante.', [
-          { text: 'Aquí tiene. Gracias.', fr: 'Voilà. Merci.' },
-          { text: 'Hace mucho frío hoy.', fr: 'Il fait très froid aujourd\'hui.' },
-          { text: 'No hablo español.', fr: 'Je ne parle pas espagnol.' },
-          { text: '¿Dónde está el hotel?', fr: 'Où est l\'hôtel ?' },
-        ], 0),
-      ],
-    },
-    {
-      id: 'es-calle', emoji: '🗺️', title: 'Dans la rue',
-      steps: [
-        line('B', 'Perdona, ¿puedes ayudarme?', 'Excusez-moi, pouvez-vous m\'aider ?'),
-        line('A', 'Claro, ¿qué necesitas?', 'Bien sûr, qu\'est-ce qu\'il te faut ?'),
-        choice('¿Qué necesitas?', 'De quoi as-tu besoin ?', [
-          { text: '¿Sabes dónde está la estación de metro?', fr: 'Sais-tu où est la station de métro ?' },
-          { text: 'Tengo mucho calor.', fr: 'J\'ai très chaud.' },
-          { text: 'Me gusta tu camisa.', fr: 'J\'aime ta chemise.' },
-          { text: 'Estoy cansado.', fr: 'Je suis fatigué.' },
-        ], 0),
-        line('A', 'Sí. Sigue todo recto y gira a la izquierda.', 'Oui. Continue tout droit et tourne à gauche.'),
-        choice('¿Está muy lejos?', 'C\'est loin ?', [
-          { text: '¿Cuánto tiempo se tarda?', fr: 'Combien de temps faut-il ?' },
-          { text: 'Mi perro es muy simpático.', fr: 'Mon chien est très sympa.' },
-          { text: 'Llueve mucho en Madrid.', fr: 'Il pleut beaucoup à Madrid.' },
-          { text: 'Me llamo Ana.', fr: 'Je m\'appelle Ana.' },
-        ], 0),
-        line('A', 'Unos cinco minutos a pie.', 'Environ cinq minutes à pied.'),
-        choice('¿Entendiste?', 'Tu as compris ?', [
-          { text: 'Sí, muchas gracias. ¡Hasta luego!', fr: 'Oui, merci beaucoup. Au revoir !' },
-          { text: 'No me gusta caminar.', fr: 'Je n\'aime pas marcher.' },
-          { text: 'El metro es caro.', fr: 'Le métro est cher.' },
-          { text: 'No tengo tiempo.', fr: 'Je n\'ai pas le temps.' },
-        ], 0),
-      ],
-    },
+    { id: 'es-cafe', emoji: '☕', title: 'En el café', steps: [
+      line('A', '¡Buenos días! ¿Qué desea tomar?', 'Bonjour ! Que désirez-vous prendre ?'),
+      choice('¿Qué desea?', 'Que désirez-vous ?', [{ text: 'Quiero un café con leche, por favor.', fr: 'Je voudrais un café au lait, s.v.p.' }, { text: 'Me llamo Carlos.', fr: 'Je m\'appelle Carlos.' }, { text: 'El baño está allí.', fr: 'Les toilettes sont là.' }, { text: 'Hasta luego.', fr: 'Au revoir.' }], 0),
+      line('A', 'Son tres euros.', 'Ça fait trois euros.'),
+      choice('Son tres euros.', 'Ça fait trois euros.', [{ text: 'Aquí tiene. Gracias.', fr: 'Voilà. Merci.' }, { text: 'No tengo hambre.', fr: 'Je n\'ai pas faim.' }, { text: 'Hace frío.', fr: 'Il fait froid.' }, { text: 'No hablo español.', fr: 'Je ne parle pas espagnol.' }], 0),
+    ] },
+    { id: 'es-hotel', emoji: '🏨', title: 'En el hotel', steps: [
+      line('B', 'Tengo una reserva a nombre de Dupont.', 'J\'ai une réservation au nom de Dupont.'),
+      line('A', 'Habitación doble para dos noches.', 'Chambre double pour deux nuits.'),
+      choice('¿Está correcto?', 'C\'est correct ?', [{ text: 'Sí. ¿A qué hora es el desayuno?', fr: 'Oui. À quelle heure est le petit-déjeuner ?' }, { text: 'Me gusta el fútbol.', fr: 'J\'aime le football.' }, { text: 'Hace calor aquí.', fr: 'Il fait chaud ici.' }, { text: 'No tengo reserva.', fr: 'Je n\'ai pas de réservation.' }], 0),
+      line('A', 'El desayuno se sirve de siete a diez.', 'Le petit-déjeuner est servi de sept à dix heures.'),
+      choice('¿Me puede dar la llave?', 'La clé, s.v.p. ?', [{ text: '¿Me puede dar la llave, por favor?', fr: 'La clé, s.v.p. ?' }, { text: 'No me gusta el hotel.', fr: 'Je n\'aime pas l\'hôtel.' }, { text: 'Quiero una pizza.', fr: 'Je veux une pizza.' }, { text: 'El tren llega tarde.', fr: 'Le train est en retard.' }], 0),
+      line('A', 'Aquí tiene la llave. Habitación 304.', 'Voici la clé. Chambre 304.'),
+    ] },
+    { id: 'es-restaurante', emoji: '🍽️', title: 'En el restaurante', steps: [
+      line('A', 'Buenas noches. ¿Tienen reserva?', 'Bonsoir. Avez-vous une réservation ?'),
+      choice('¿Tienen reserva?', 'Avez-vous une réservation ?', [{ text: 'No, pero somos dos personas.', fr: 'Non, mais nous sommes deux.' }, { text: 'Me llamo María.', fr: 'Je m\'appelle María.' }, { text: 'El museo está cerrado.', fr: 'Le musée est fermé.' }, { text: 'Necesito un taxi.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
+      line('A', '¿Qué van a tomar?', 'Qu\'allez-vous prendre ?'),
+      choice('¿Cuál es el plato del día?', 'Quel est le plat du jour ?', [{ text: '¿Cuál es el plato del día?', fr: 'Quel est le plat du jour ?' }, { text: 'No me gusta la carne.', fr: 'Je n\'aime pas la viande.' }, { text: 'Quiero agua mineral.', fr: 'Je veux de l\'eau minérale.' }, { text: 'La cuenta, por favor.', fr: 'L\'addition, s.v.p.' }], 0),
+      line('A', 'El plato del día es paella. Muy bueno.', 'Le plat du jour est la paella. Très bon.'),
+      choice('¿Qué van a pedir?', 'Que commandez-vous ?', [{ text: 'Tomaré la paella y agua, por favor.', fr: 'Je prendrai la paella et de l\'eau, s.v.p.' }, { text: 'No me gusta el arroz.', fr: 'Je n\'aime pas le riz.' }, { text: 'Tengo alergia al pescado.', fr: 'Je suis allergique au poisson.' }, { text: 'El restaurante está lejos.', fr: 'Le restaurant est loin.' }], 0),
+    ] },
+    { id: 'es-taxi', emoji: '🚕', title: 'En el taxi', steps: [
+      line('B', 'Al aeropuerto, por favor.', 'À l\'aéroport, s.v.p.'),
+      line('A', '¿A qué terminal?', 'À quel terminal ?'),
+      choice('¿A qué terminal?', 'À quel terminal ?', [{ text: 'Terminal dos, vuelo a París.', fr: 'Terminal deux, vol pour Paris.' }, { text: 'No sé dónde estoy.', fr: 'Je ne sais pas où je suis.' }, { text: 'Me gusta Madrid.', fr: 'J\'aime Madrid.' }, { text: 'El hotel está cerca.', fr: 'L\'hôtel est près d\'ici.' }], 0),
+      line('A', 'Unos veinte minutos con este tráfico.', 'Environ vingt minutes avec ce trafic.'),
+      choice('¿Cuánto va a costar?', 'Combien ça va coûter ?', [{ text: '¿Cuánto va a costar aproximadamente?', fr: 'Combien approximativement ?' }, { text: 'No tengo prisa.', fr: 'Je ne suis pas pressé.' }, { text: 'Hay mucho tráfico.', fr: 'Il y a beaucoup de circulation.' }, { text: 'Prefiero el metro.', fr: 'Je préfère le métro.' }], 0),
+      line('A', 'Unos veinticinco euros.', 'Environ vingt-cinq euros.'),
+    ] },
+    { id: 'es-farmacia', emoji: '💊', title: 'En la farmacia', steps: [
+      line('B', 'Necesito algo para el dolor de cabeza.', 'J\'ai besoin de quelque chose contre le mal de tête.'),
+      line('A', '¿Tiene fiebre también?', 'Avez-vous aussi de la fièvre ?'),
+      choice('¿Tiene fiebre?', 'Avez-vous de la fièvre ?', [{ text: 'No, solo dolor de cabeza y estoy cansado.', fr: 'Non, juste mal à la tête et je suis fatigué.' }, { text: 'Me gusta el deporte.', fr: 'J\'aime le sport.' }, { text: 'El hospital está lejos.', fr: 'L\'hôpital est loin.' }, { text: 'No hablo español.', fr: 'Je ne parle pas espagnol.' }], 0),
+      line('A', 'Le recomiendo este ibuprofeno. Uno cada ocho horas.', 'Je vous recommande cet ibuprofène. Un toutes les huit heures.'),
+      choice('¿Necesita receta?', 'Faut-il une ordonnance ?', [{ text: '¿Necesita receta médica?', fr: 'Faut-il une ordonnance médicale ?' }, { text: 'No me gustan los medicamentos.', fr: 'Je n\'aime pas les médicaments.' }, { text: 'Tengo hambre.', fr: 'J\'ai faim.' }, { text: 'El médico está ocupado.', fr: 'Le médecin est occupé.' }], 0),
+      line('A', 'No, sin receta. Son cuatro euros.', 'Non, sans ordonnance. C\'est quatre euros.'),
+    ] },
+    { id: 'es-museo', emoji: '🏛️', title: 'En el museo', steps: [
+      line('B', 'Una entrada, por favor. ¿Cuánto cuesta?', 'Un billet, s.v.p. C\'est combien ?'),
+      line('A', 'Doce euros adultos, seis estudiantes.', 'Douze euros adultes, six pour les étudiants.'),
+      choice('¿Puedo tener el descuento?', 'Puis-je avoir la réduction ?', [{ text: 'Tengo carné de estudiante. ¿Puedo tener el descuento?', fr: 'J\'ai une carte étudiante. Puis-je avoir la réduction ?' }, { text: 'No me gustan los museos.', fr: 'Je n\'aime pas les musées.' }, { text: 'El cuadro es feo.', fr: 'Le tableau est laid.' }, { text: 'Quiero ir al zoo.', fr: 'Je veux aller au zoo.' }], 0),
+      line('A', 'Por supuesto. ¿Me muestra el carné?', 'Bien sûr. Montrez-moi votre carte.'),
+      choice('¿A qué hora cierra?', 'À quelle heure ferme-t-il ?', [{ text: 'Aquí tiene. ¿A qué hora cierra el museo?', fr: 'La voici. À quelle heure ferme le musée ?' }, { text: 'No tengo carné.', fr: 'Je n\'ai pas de carte.' }, { text: 'El museo es aburrido.', fr: 'Le musée est ennuyeux.' }, { text: 'Prefiero el teatro.', fr: 'Je préfère le théâtre.' }], 0),
+      line('A', 'Cerramos a las siete. ¡Disfrute la visita!', 'Nous fermons à dix-neuf heures. Bonne visite !'),
+    ] },
+    { id: 'es-compras', emoji: '🛒', title: 'De compras', steps: [
+      line('B', '¿Tienen esta camiseta en talla mediana?', 'Avez-vous ce t-shirt en taille medium ?'),
+      line('A', 'Sí, aquí tiene.', 'Oui, voici.'),
+      choice('¿Puedo probármela?', 'Puis-je l\'essayer ?', [{ text: '¿Puedo probármela?', fr: 'Puis-je l\'essayer ?' }, { text: 'No me gusta el color.', fr: 'Je n\'aime pas la couleur.' }, { text: 'Es muy cara.', fr: 'C\'est très cher.' }, { text: 'No tengo dinero.', fr: 'Je n\'ai pas d\'argent.' }], 0),
+      line('A', 'Los probadores están al fondo a la derecha.', 'Les cabines sont au fond à droite.'),
+      choice('Me la llevo.', 'Je la prends.', [{ text: 'Me la llevo. ¿Aceptan tarjeta?', fr: 'Je la prends. Acceptez-vous la carte ?' }, { text: 'Me queda pequeña.', fr: 'Elle est trop petite.' }, { text: 'El color no me gusta.', fr: 'Je n\'aime pas la couleur.' }, { text: 'Es demasiado cara.', fr: 'C\'est trop cher.' }], 0),
+      line('A', 'Sí, aceptamos tarjeta y efectivo.', 'Oui, nous acceptons la carte et les espèces.'),
+    ] },
+    { id: 'es-calle', emoji: '🗺️', title: 'Por las calles', steps: [
+      line('B', 'Perdona, ¿sabes dónde está la estación de metro?', 'Excusez-moi, où est la station de métro ?'),
+      line('A', 'Sigue todo recto y gira a la izquierda.', 'Continue tout droit et tourne à gauche.'),
+      choice('¿Está muy lejos?', 'C\'est loin ?', [{ text: '¿Cuánto tiempo se tarda?', fr: 'Combien de temps faut-il ?' }, { text: 'Me llamo Ana.', fr: 'Je m\'appelle Ana.' }, { text: 'Llueve mucho.', fr: 'Il pleut beaucoup.' }, { text: 'No me gusta caminar.', fr: 'Je n\'aime pas marcher.' }], 0),
+      line('A', 'Unos cinco minutos a pie.', 'Environ cinq minutes à pied.'),
+      choice('¿Entendiste?', 'Tu as compris ?', [{ text: 'Sí, muchas gracias. ¡Hasta luego!', fr: 'Oui, merci beaucoup. Au revoir !' }, { text: 'No me gusta caminar.', fr: 'Je n\'aime pas marcher.' }, { text: 'El metro es caro.', fr: 'Le métro est cher.' }, { text: 'No tengo tiempo.', fr: 'Je n\'ai pas le temps.' }], 0),
+    ] },
   ],
-
   en: [
-    {
-      id: 'en-cafe', emoji: '☕', title: 'At the café',
-      steps: [
-        line('A', 'Hi there! What can I get you?', 'Bonjour ! Qu\'est-ce que je vous sers ?'),
-        choice('What can I get you?', 'Qu\'est-ce que je vous sers ?', [
-          { text: 'Could I have a flat white, please?', fr: 'Je pourrais avoir un flat white, s\'il vous plaît ?' },
-          { text: 'I live in Paris.', fr: 'J\'habite à Paris.' },
-          { text: 'The bus is late.', fr: 'Le bus est en retard.' },
-          { text: 'Goodbye!', fr: 'Au revoir !' },
-        ], 0),
-        line('A', 'Sure! Anything to eat?', 'Bien sûr ! Quelque chose à manger ?'),
-        choice('Anything to eat?', 'Quelque chose à manger ?', [
-          { text: 'Yes, I\'ll have a croissant as well, please.', fr: 'Oui, je prendrai aussi un croissant, s\'il vous plaît.' },
-          { text: 'It\'s raining outside.', fr: 'Il pleut dehors.' },
-          { text: 'I need to call a doctor.', fr: 'J\'ai besoin d\'appeler un médecin.' },
-          { text: 'My name is Sophie.', fr: 'Je m\'appelle Sophie.' },
-        ], 0),
-        line('A', 'That\'ll be four pounds fifty, please.', 'Ça fait quatre livres cinquante, s\'il vous plaît.'),
-        choice('That\'ll be four fifty.', 'Ça fait quatre livres cinquante.', [
-          { text: 'Here you go. Keep the change.', fr: 'Voilà. Gardez la monnaie.' },
-          { text: 'I don\'t understand.', fr: 'Je ne comprends pas.' },
-          { text: 'Where is the airport?', fr: 'Où est l\'aéroport ?' },
-          { text: 'It\'s very cold today.', fr: 'Il fait très froid aujourd\'hui.' },
-        ], 0),
-      ],
-    },
-    {
-      id: 'en-street', emoji: '🗺️', title: 'Asking for directions',
-      steps: [
-        line('B', 'Excuse me, could you help me?', 'Excusez-moi, pourriez-vous m\'aider ?'),
-        line('A', 'Of course! What do you need?', 'Bien sûr ! De quoi avez-vous besoin ?'),
-        choice('What do you need?', 'De quoi avez-vous besoin ?', [
-          { text: 'Do you know where the nearest pharmacy is?', fr: 'Savez-vous où est la pharmacie la plus proche ?' },
-          { text: 'I love your jacket.', fr: 'J\'adore votre veste.' },
-          { text: 'It\'s a beautiful day.', fr: 'C\'est une belle journée.' },
-          { text: 'I\'m very tired.', fr: 'Je suis très fatigué.' },
-        ], 0),
-        line('A', 'Yes, go straight ahead and turn right at the traffic lights.', 'Oui, allez tout droit et tournez à droite aux feux.'),
-        choice('Is it far?', 'C\'est loin ?', [
-          { text: 'How long does it take to walk?', fr: 'Combien de temps faut-il pour y aller à pied ?' },
-          { text: 'I prefer taking the bus.', fr: 'Je préfère prendre le bus.' },
-          { text: 'The weather is nice.', fr: 'Le temps est agréable.' },
-          { text: 'I am a tourist.', fr: 'Je suis touriste.' },
-        ], 0),
-        line('A', 'About three minutes on foot.', 'Environ trois minutes à pied.'),
-        choice('Got it?', 'C\'est bon ?', [
-          { text: 'Perfect, thank you so much!', fr: 'Parfait, merci beaucoup !' },
-          { text: 'I don\'t like walking.', fr: 'Je n\'aime pas marcher.' },
-          { text: 'The pharmacy is closed.', fr: 'La pharmacie est fermée.' },
-          { text: 'I need a map.', fr: 'J\'ai besoin d\'une carte.' },
-        ], 0),
-      ],
-    },
+    { id: 'en-cafe', emoji: '☕', title: 'At the café', steps: [
+      line('A', 'Hi! What can I get you?', 'Bonjour ! Que puis-je vous servir ?'),
+      choice('What can I get you?', 'Que puis-je vous servir ?', [{ text: 'Could I have a flat white, please?', fr: 'Puis-je avoir un flat white, s.v.p. ?' }, { text: 'I live in London.', fr: 'J\'habite à Londres.' }, { text: 'The bus is late.', fr: 'Le bus est en retard.' }, { text: 'Goodbye!', fr: 'Au revoir !' }], 0),
+      line('A', 'Sure! Anything to eat?', 'Quelque chose à manger ?'),
+      choice('Anything to eat?', 'Quelque chose à manger ?', [{ text: 'Yes, I\'ll have a croissant as well, please.', fr: 'Oui, je prendrai aussi un croissant, s.v.p.' }, { text: 'It\'s raining outside.', fr: 'Il pleut dehors.' }, { text: 'I need a doctor.', fr: 'J\'ai besoin d\'un médecin.' }, { text: 'My name is Sophie.', fr: 'Je m\'appelle Sophie.' }], 0),
+      line('A', 'That\'ll be four pounds fifty.', 'Ça fait quatre livres cinquante.'),
+      choice('How much?', 'C\'est combien ?', [{ text: 'Here you go. Keep the change.', fr: 'Voilà. Gardez la monnaie.' }, { text: 'I don\'t understand.', fr: 'Je ne comprends pas.' }, { text: 'Where is the airport?', fr: 'Où est l\'aéroport ?' }, { text: 'It\'s very cold.', fr: 'Il fait très froid.' }], 0),
+    ] },
+    { id: 'en-hotel', emoji: '🏨', title: 'Checking in', steps: [
+      line('B', 'Hello, I have a reservation under Martin.', 'Bonjour, j\'ai une réservation au nom de Martin.'),
+      line('A', 'A double room for three nights.', 'Chambre double pour trois nuits.'),
+      choice('Is that correct?', 'C\'est correct ?', [{ text: 'Yes, that\'s right. What time is breakfast?', fr: 'Oui. Le petit-déjeuner est à quelle heure ?' }, { text: 'I like football.', fr: 'J\'aime le football.' }, { text: 'It\'s hot in here.', fr: 'Il fait chaud ici.' }, { text: 'I don\'t have a reservation.', fr: 'Je n\'ai pas de réservation.' }], 0),
+      line('A', 'Breakfast is served from seven to ten.', 'Le petit-déjeuner est de sept à dix heures.'),
+      choice('Could I have the key card?', 'Puis-je avoir la clé ?', [{ text: 'Could I have the key card, please?', fr: 'La clé, s.v.p. ?' }, { text: 'I don\'t like the hotel.', fr: 'Je n\'aime pas l\'hôtel.' }, { text: 'I want a pizza.', fr: 'Je veux une pizza.' }, { text: 'The train is late.', fr: 'Le train est en retard.' }], 0),
+      line('A', 'Here\'s your key card. Room 205, second floor.', 'Voici la clé. Chambre 205, deuxième étage.'),
+    ] },
+    { id: 'en-restaurant', emoji: '🍽️', title: 'At the restaurant', steps: [
+      line('A', 'Good evening. Do you have a reservation?', 'Bonsoir. Avez-vous une réservation ?'),
+      choice('Do you have a reservation?', 'Avez-vous une réservation ?', [{ text: 'No, but there are two of us.', fr: 'Non, mais nous sommes deux.' }, { text: 'My name is James.', fr: 'Je m\'appelle James.' }, { text: 'The museum is closed.', fr: 'Le musée est fermé.' }, { text: 'I need a taxi.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
+      line('A', 'No problem. Are you ready to order?', 'Pas de problème. Êtes-vous prêts ?'),
+      choice('What do you recommend?', 'Qu\'est-ce que vous recommandez ?', [{ text: 'What\'s today\'s special?', fr: 'Quel est le plat du jour ?' }, { text: 'I don\'t like meat.', fr: 'Je n\'aime pas la viande.' }, { text: 'I want mineral water.', fr: 'Je veux de l\'eau minérale.' }, { text: 'The bill, please.', fr: 'L\'addition, s.v.p.' }], 0),
+      line('A', 'Today\'s special is grilled salmon. Excellent.', 'Le plat du jour est le saumon grillé. Excellent.'),
+      choice('What will you order?', 'Que commandez-vous ?', [{ text: 'Perfect, I\'ll have the salmon and a glass of water.', fr: 'Parfait, je prendrai le saumon et un verre d\'eau.' }, { text: 'I don\'t like fish.', fr: 'Je n\'aime pas le poisson.' }, { text: 'The restaurant is far.', fr: 'Le restaurant est loin.' }, { text: 'I\'m allergic to nuts.', fr: 'Je suis allergique aux noix.' }], 0),
+    ] },
+    { id: 'en-taxi', emoji: '🚕', title: 'Taking a taxi', steps: [
+      line('B', 'To the train station, please.', 'À la gare, s.v.p.'),
+      line('A', 'Which station?', 'Quelle gare ?'),
+      choice('Which station?', 'Quelle gare ?', [{ text: 'King\'s Cross, please. I have a train at six.', fr: 'King\'s Cross, s.v.p. J\'ai un train à dix-huit heures.' }, { text: 'I don\'t know where I am.', fr: 'Je ne sais pas où je suis.' }, { text: 'I like London.', fr: 'J\'aime Londres.' }, { text: 'The hotel is nearby.', fr: 'L\'hôtel est près d\'ici.' }], 0),
+      line('A', 'About fifteen minutes from here.', 'Environ quinze minutes d\'ici.'),
+      choice('How much will it cost?', 'Combien ça va coûter ?', [{ text: 'How much do you think it\'ll be?', fr: 'Combien pensez-vous que ça coûtera ?' }, { text: 'I\'m not in a hurry.', fr: 'Je ne suis pas pressé.' }, { text: 'There\'s a lot of traffic.', fr: 'Il y a beaucoup de circulation.' }, { text: 'I prefer the tube.', fr: 'Je préfère le métro.' }], 0),
+      line('A', 'Around twelve pounds.', 'Environ douze livres.'),
+    ] },
+    { id: 'en-pharmacy', emoji: '💊', title: 'At the pharmacy', steps: [
+      line('B', 'Hi. I have a stomachache, do you have something?', 'Bonjour. J\'ai mal à l\'estomac, avez-vous quelque chose ?'),
+      line('A', 'How long have you had it?', 'Depuis combien de temps ?'),
+      choice('How long?', 'Depuis combien de temps ?', [{ text: 'Since this morning. I also feel a bit nauseous.', fr: 'Depuis ce matin. Je me sens aussi nauséeux.' }, { text: 'I like sports.', fr: 'J\'aime le sport.' }, { text: 'The hospital is far.', fr: 'L\'hôpital est loin.' }, { text: 'I don\'t speak English.', fr: 'Je ne parle pas anglais.' }], 0),
+      line('A', 'I\'d recommend this antacid. One tablet after each meal.', 'Je vous recommande cet antiacide. Un comprimé après chaque repas.'),
+      choice('Do I need a prescription?', 'Faut-il une ordonnance ?', [{ text: 'Is it available without a prescription?', fr: 'Est-ce disponible sans ordonnance ?' }, { text: 'I don\'t like medication.', fr: 'Je n\'aime pas les médicaments.' }, { text: 'I\'m hungry.', fr: 'J\'ai faim.' }, { text: 'The doctor is busy.', fr: 'Le médecin est occupé.' }], 0),
+      line('A', 'No prescription needed. That\'s six pounds fifty.', 'Pas d\'ordonnance nécessaire. C\'est six livres cinquante.'),
+    ] },
+    { id: 'en-museum', emoji: '🏛️', title: 'At the museum', steps: [
+      line('B', 'One adult ticket, please. How much is it?', 'Un billet adulte, s.v.p. C\'est combien ?'),
+      line('A', 'Twelve pounds. Students get in for eight.', 'Douze livres. Les étudiants: huit livres.'),
+      choice('Are there discounts?', 'Y a-t-il des réductions ?', [{ text: 'I\'m a student, can I get the discount?', fr: 'Je suis étudiant, puis-je avoir la réduction ?' }, { text: 'I don\'t like museums.', fr: 'Je n\'aime pas les musées.' }, { text: 'The painting is ugly.', fr: 'Le tableau est laid.' }, { text: 'I want to go to the zoo.', fr: 'Je veux aller au zoo.' }], 0),
+      line('A', 'Of course, I\'ll need to see your student ID.', 'Bien sûr, montrez-moi votre carte étudiante.'),
+      choice('What time does it close?', 'À quelle heure ferme-t-il ?', [{ text: 'Here it is. What time does the museum close?', fr: 'La voici. À quelle heure ferme le musée ?' }, { text: 'I don\'t have an ID.', fr: 'Je n\'ai pas de carte.' }, { text: 'The museum is boring.', fr: 'Le musée est ennuyeux.' }, { text: 'I prefer the theatre.', fr: 'Je préfère le théâtre.' }], 0),
+      line('A', 'We close at six. Enjoy your visit!', 'Nous fermons à dix-huit heures. Bonne visite !'),
+    ] },
+    { id: 'en-shopping', emoji: '🛒', title: 'Shopping', steps: [
+      line('B', 'Do you have this jumper in size large?', 'Avez-vous ce pull en taille grande ?'),
+      line('A', 'Let me check... Yes, here you go.', 'Laissez-moi vérifier... Oui, voici.'),
+      choice('Can I try it on?', 'Puis-je l\'essayer ?', [{ text: 'Can I try it on?', fr: 'Puis-je l\'essayer ?' }, { text: 'I don\'t like the colour.', fr: 'Je n\'aime pas la couleur.' }, { text: 'It\'s too expensive.', fr: 'C\'est trop cher.' }, { text: 'I don\'t have any cash.', fr: 'Je n\'ai pas d\'espèces.' }], 0),
+      line('A', 'Of course, fitting rooms are at the back on the left.', 'Les cabines sont au fond à gauche.'),
+      choice('I\'ll take it.', 'Je le prends.', [{ text: 'I\'ll take it. Do you accept card?', fr: 'Je le prends. Acceptez-vous la carte ?' }, { text: 'It doesn\'t fit.', fr: 'Ça ne me va pas.' }, { text: 'I don\'t like the colour.', fr: 'Je n\'aime pas la couleur.' }, { text: 'It\'s too expensive.', fr: 'C\'est trop cher.' }], 0),
+      line('A', 'Yes, we accept all major cards.', 'Oui, nous acceptons toutes les grandes cartes.'),
+    ] },
+    { id: 'en-street', emoji: '🗺️', title: 'Asking for directions', steps: [
+      line('B', 'Excuse me, could you help me?', 'Excusez-moi, pouvez-vous m\'aider ?'),
+      line('A', 'Of course! What do you need?', 'Bien sûr ! De quoi avez-vous besoin ?'),
+      choice('What do you need?', 'De quoi avez-vous besoin ?', [{ text: 'Do you know where the nearest pharmacy is?', fr: 'Savez-vous où est la pharmacie la plus proche ?' }, { text: 'I love your jacket.', fr: 'J\'adore votre veste.' }, { text: 'It\'s a beautiful day.', fr: 'C\'est une belle journée.' }, { text: 'I\'m very tired.', fr: 'Je suis très fatigué.' }], 0),
+      line('A', 'Yes, go straight ahead and turn right at the lights.', 'Oui, allez tout droit et tournez à droite aux feux.'),
+      choice('Is it far?', 'C\'est loin ?', [{ text: 'How long does it take on foot?', fr: 'Combien de temps à pied ?' }, { text: 'I prefer the bus.', fr: 'Je préfère le bus.' }, { text: 'It\'s raining.', fr: 'Il pleut.' }, { text: 'I\'m lost.', fr: 'Je suis perdu.' }], 0),
+      line('A', 'About ten minutes. You can\'t miss it.', 'Environ dix minutes. Vous ne pouvez pas le rater.'),
+    ] },
   ],
-
   de: [
-    {
-      id: 'de-cafe', emoji: '☕', title: 'Im Café',
-      steps: [
-        line('A', 'Guten Morgen! Was darf es sein?', 'Bonjour ! Que puis-je vous servir ?'),
-        choice('Was darf es sein?', 'Que puis-je vous servir ?', [
-          { text: 'Ich hätte gerne einen Kaffee, bitte.', fr: 'Je voudrais un café, s\'il vous plaît.' },
-          { text: 'Ich heiße Thomas.', fr: 'Je m\'appelle Thomas.' },
-          { text: 'Der Zug ist zu spät.', fr: 'Le train est en retard.' },
-          { text: 'Auf Wiedersehen!', fr: 'Au revoir !' },
-        ], 0),
-        line('A', 'Sehr gern. Möchten Sie auch etwas essen?', 'Volontiers. Voulez-vous aussi manger quelque chose ?'),
-        choice('Möchten Sie auch etwas essen?', 'Voulez-vous aussi manger quelque chose ?', [
-          { text: 'Ja, ein Stück Kuchen, bitte.', fr: 'Oui, un morceau de gâteau, s\'il vous plaît.' },
-          { text: 'Es ist heute sehr kalt.', fr: 'Il fait très froid aujourd\'hui.' },
-          { text: 'Wo ist die Toilette?', fr: 'Où sont les toilettes ?' },
-          { text: 'Ich bin müde.', fr: 'Je suis fatigué.' },
-        ], 0),
-        line('A', 'Das macht sechs Euro zwanzig.', 'Ça fait six euros vingt.'),
-        choice('Das macht sechs Euro zwanzig.', 'Ça fait six euros vingt.', [
-          { text: 'Hier, bitte. Stimmt so.', fr: 'Voilà. Gardez la monnaie.' },
-          { text: 'Ich spreche kein Deutsch.', fr: 'Je ne parle pas allemand.' },
-          { text: 'Das ist zu teuer.', fr: 'C\'est trop cher.' },
-          { text: 'Wo ist der Bahnhof?', fr: 'Où est la gare ?' },
-        ], 0),
-      ],
-    },
-    {
-      id: 'de-strasse', emoji: '🗺️', title: 'Auf der Straße',
-      steps: [
-        line('B', 'Entschuldigung, können Sie mir helfen?', 'Excusez-moi, pouvez-vous m\'aider ?'),
-        line('A', 'Ja, natürlich. Was brauchen Sie?', 'Oui, bien sûr. De quoi avez-vous besoin ?'),
-        choice('Was brauchen Sie?', 'De quoi avez-vous besoin ?', [
-          { text: 'Wo ist der nächste Supermarkt?', fr: 'Où est le supermarché le plus proche ?' },
-          { text: 'Ich liebe Deutschland.', fr: 'J\'adore l\'Allemagne.' },
-          { text: 'Das Wetter ist schön.', fr: 'Le temps est beau.' },
-          { text: 'Ich bin Tourist.', fr: 'Je suis touriste.' },
-        ], 0),
-        line('A', 'Gehen Sie geradeaus und dann links an der Ampel.', 'Allez tout droit puis à gauche aux feux.'),
-        choice('Wie weit ist das?', 'C\'est loin ?', [
-          { text: 'Wie lange dauert es zu Fuß?', fr: 'Combien de temps faut-il à pied ?' },
-          { text: 'Ich fahre lieber mit dem Bus.', fr: 'Je préfère prendre le bus.' },
-          { text: 'Das ist sehr interessant.', fr: 'C\'est très intéressant.' },
-          { text: 'Ich habe keine Zeit.', fr: 'Je n\'ai pas le temps.' },
-        ], 0),
-        line('A', 'Ungefähr fünf Minuten zu Fuß.', 'Environ cinq minutes à pied.'),
-        choice('Alles klar?', 'C\'est bon ?', [
-          { text: 'Vielen Dank! Auf Wiedersehen!', fr: 'Merci beaucoup ! Au revoir !' },
-          { text: 'Das ist zu weit.', fr: 'C\'est trop loin.' },
-          { text: 'Ich bin verloren.', fr: 'Je suis perdu.' },
-          { text: 'Ich verstehe nicht.', fr: 'Je ne comprends pas.' },
-        ], 0),
-      ],
-    },
+    { id: 'de-hotel', emoji: '🏨', title: 'Im Hotel', steps: [
+      line('B', 'Ich habe eine Reservierung auf den Namen Müller.', 'J\'ai une réservation au nom de Müller.'),
+      line('A', 'Ein Doppelzimmer für zwei Nächte, stimmt das?', 'Chambre double pour deux nuits, c\'est bien ça ?'),
+      choice('Stimmt das?', 'C\'est bien ça ?', [{ text: 'Ja, genau. Um wie viel Uhr gibt es Frühstück?', fr: 'Oui, exactement. À quelle heure est le petit-déjeuner ?' }, { text: 'Ich mag Fußball.', fr: 'J\'aime le football.' }, { text: 'Es ist heiß hier.', fr: 'Il fait chaud ici.' }, { text: 'Ich habe keine Reservierung.', fr: 'Je n\'ai pas de réservation.' }], 0),
+      line('A', 'Das Frühstück wird von sieben bis zehn serviert.', 'Le petit-déjeuner est servi de sept à dix heures.'),
+      choice('Kann ich bitte den Schlüssel haben?', 'Puis-je avoir la clé ?', [{ text: 'Kann ich bitte den Schlüssel haben?', fr: 'Puis-je avoir la clé, s.v.p. ?' }, { text: 'Ich mag das Hotel nicht.', fr: 'Je n\'aime pas l\'hôtel.' }, { text: 'Ich möchte eine Pizza.', fr: 'Je veux une pizza.' }, { text: 'Der Zug ist spät.', fr: 'Le train est en retard.' }], 0),
+      line('A', 'Hier ist Ihr Schlüssel. Zimmer 301, dritter Stock.', 'Voici votre clé. Chambre 301, troisième étage.'),
+    ] },
+    { id: 'de-restaurant', emoji: '🍽️', title: 'Im Restaurant', steps: [
+      line('A', 'Guten Abend. Haben Sie eine Reservierung?', 'Bonsoir. Avez-vous une réservation ?'),
+      choice('Haben Sie eine Reservierung?', 'Avez-vous une réservation ?', [{ text: 'Nein, aber wir sind zu zweit.', fr: 'Non, mais nous sommes deux.' }, { text: 'Ich heiße Thomas.', fr: 'Je m\'appelle Thomas.' }, { text: 'Das Museum ist geschlossen.', fr: 'Le musée est fermé.' }, { text: 'Ich brauche ein Taxi.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
+      line('A', 'Was möchten Sie bestellen?', 'Que souhaitez-vous commander ?'),
+      choice('Was empfehlen Sie?', 'Qu\'est-ce que vous recommandez ?', [{ text: 'Was ist das Tagesgericht?', fr: 'Quel est le plat du jour ?' }, { text: 'Ich mag kein Fleisch.', fr: 'Je n\'aime pas la viande.' }, { text: 'Ich möchte Mineralwasser.', fr: 'Je veux de l\'eau minérale.' }, { text: 'Die Rechnung, bitte.', fr: 'L\'addition, s.v.p.' }], 0),
+      line('A', 'Das Tagesgericht ist Schnitzel mit Kartoffeln.', 'Le plat du jour est l\'escalope avec des pommes de terre.'),
+      choice('Wie bezahlt man?', 'Comment paye-t-on ?', [{ text: 'Ich nehme das Schnitzel.', fr: 'Je prends l\'escalope.' }, { text: 'Ich mag kein Fleisch.', fr: 'Je n\'aime pas la viande.' }, { text: 'Das Restaurant ist weit.', fr: 'Le restaurant est loin.' }, { text: 'Ich bin allergisch gegen Nüsse.', fr: 'Je suis allergique aux noix.' }], 0),
+    ] },
+    { id: 'de-taxi', emoji: '🚕', title: 'Im Taxi', steps: [
+      line('B', 'Zum Hauptbahnhof, bitte.', 'À la gare centrale, s.v.p.'),
+      line('A', 'Welcher Bahnhof?', 'Quelle gare ?'),
+      choice('Welcher Bahnhof?', 'Quelle gare ?', [{ text: 'Hauptbahnhof, bitte. Ich habe einen Zug um achtzehn Uhr.', fr: 'Gare centrale, s.v.p. J\'ai un train à dix-huit heures.' }, { text: 'Ich weiß nicht, wo ich bin.', fr: 'Je ne sais pas où je suis.' }, { text: 'Ich mag Berlin.', fr: 'J\'aime Berlin.' }, { text: 'Das Hotel ist in der Nähe.', fr: 'L\'hôtel est près d\'ici.' }], 0),
+      line('A', 'Etwa zwanzig Minuten von hier.', 'Environ vingt minutes d\'ici.'),
+      choice('Was kostet das?', 'Combien ça coûte ?', [{ text: 'Was wird es ungefähr kosten?', fr: 'Combien ça coûtera approximativement ?' }, { text: 'Ich habe es nicht eilig.', fr: 'Je ne suis pas pressé.' }, { text: 'Es gibt viel Verkehr.', fr: 'Il y a beaucoup de circulation.' }, { text: 'Ich nehme lieber die U-Bahn.', fr: 'Je préfère le métro.' }], 0),
+      line('A', 'Ungefähr fünfzehn Euro.', 'Environ quinze euros.'),
+    ] },
+    { id: 'de-einkaufen', emoji: '🛒', title: 'Einkaufen', steps: [
+      line('B', 'Haben Sie dieses Hemd in Größe M?', 'Avez-vous cette chemise en taille M ?'),
+      line('A', 'Ja, hier bitte.', 'Oui, voici.'),
+      choice('Kann ich es anprobieren?', 'Puis-je l\'essayer ?', [{ text: 'Kann ich es anprobieren?', fr: 'Puis-je l\'essayer ?' }, { text: 'Ich mag die Farbe nicht.', fr: 'Je n\'aime pas la couleur.' }, { text: 'Es ist zu teuer.', fr: 'C\'est trop cher.' }, { text: 'Ich habe kein Geld.', fr: 'Je n\'ai pas d\'argent.' }], 0),
+      line('A', 'Die Umkleidekabinen sind hinten rechts.', 'Les cabines d\'essayage sont au fond à droite.'),
+      choice('Ich nehme es.', 'Je le prends.', [{ text: 'Ich nehme es. Akzeptieren Sie Karte?', fr: 'Je le prends. Acceptez-vous la carte ?' }, { text: 'Es passt nicht.', fr: 'Ça ne me va pas.' }, { text: 'Die Farbe gefällt mir nicht.', fr: 'Je n\'aime pas la couleur.' }, { text: 'Es ist zu teuer.', fr: 'C\'est trop cher.' }], 0),
+      line('A', 'Ja, wir akzeptieren alle gängigen Karten.', 'Oui, nous acceptons toutes les grandes cartes.'),
+    ] },
   ],
-
   it: [
-    {
-      id: 'it-cafe', emoji: '☕', title: 'Al bar',
-      steps: [
-        line('A', 'Buongiorno! Cosa prende?', 'Bonjour ! Qu\'est-ce que vous prenez ?'),
-        choice('Cosa prende?', 'Qu\'est-ce que vous prenez ?', [
-          { text: 'Vorrei un cappuccino, per favore.', fr: 'Je voudrais un cappuccino, s\'il vous plaît.' },
-          { text: 'Mi chiamo Marco.', fr: 'Je m\'appelle Marco.' },
-          { text: 'Dov\'è la stazione?', fr: 'Où est la gare ?' },
-          { text: 'Arrivederci!', fr: 'Au revoir !' },
-        ], 0),
-        line('A', 'Subito. Vuole anche qualcosa da mangiare?', 'Tout de suite. Voulez-vous aussi quelque chose à manger ?'),
-        choice('Vuole anche qualcosa da mangiare?', 'Voulez-vous aussi manger quelque chose ?', [
-          { text: 'Sì, un cornetto, grazie.', fr: 'Oui, un croissant, merci.' },
-          { text: 'Fa molto caldo oggi.', fr: 'Il fait très chaud aujourd\'hui.' },
-          { text: 'Il treno è in ritardo.', fr: 'Le train est en retard.' },
-          { text: 'Non ho fame.', fr: 'Je n\'ai pas faim.' },
-        ], 0),
-        line('A', 'Fanno tre euro e cinquanta.', 'Ça fait trois euros cinquante.'),
-        choice('Fanno tre euro e cinquanta.', 'Ça fait trois euros cinquante.', [
-          { text: 'Ecco a lei. Grazie mille!', fr: 'Voilà. Merci beaucoup !' },
-          { text: 'Non capisco l\'italiano.', fr: 'Je ne comprends pas l\'italien.' },
-          { text: 'È troppo caro.', fr: 'C\'est trop cher.' },
-          { text: 'Non ho soldi.', fr: 'Je n\'ai pas d\'argent.' },
-        ], 0),
-      ],
-    },
-    {
-      id: 'it-strada', emoji: '🗺️', title: 'Per strada',
-      steps: [
-        line('B', 'Scusi, mi può aiutare?', 'Excusez-moi, pouvez-vous m\'aider ?'),
-        line('A', 'Certo! Di cosa ha bisogno?', 'Bien sûr ! De quoi avez-vous besoin ?'),
-        choice('Di cosa ha bisogno?', 'De quoi avez-vous besoin ?', [
-          { text: 'Sa dov\'è la fermata del bus?', fr: 'Savez-vous où est l\'arrêt de bus ?' },
-          { text: 'Mi piace l\'Italia.', fr: 'J\'aime l\'Italie.' },
-          { text: 'Sono molto stanco.', fr: 'Je suis très fatigué.' },
-          { text: 'Il tempo è bello.', fr: 'Le temps est beau.' },
-        ], 0),
-        line('A', 'Sì, vada dritto e poi giri a destra.', 'Oui, allez tout droit puis tournez à droite.'),
-        choice('È lontano?', 'C\'est loin ?', [
-          { text: 'Quanto tempo ci vuole a piedi?', fr: 'Combien de temps faut-il à pied ?' },
-          { text: 'Preferisco il taxi.', fr: 'Je préfère le taxi.' },
-          { text: 'Non mi piace camminare.', fr: 'Je n\'aime pas marcher.' },
-          { text: 'Sono un turista.', fr: 'Je suis touriste.' },
-        ], 0),
-        line('A', 'Circa quattro minuti a piedi.', 'Environ quatre minutes à pied.'),
-        choice('Ha capito?', 'Vous avez compris ?', [
-          { text: 'Sì, grazie mille! Arrivederci!', fr: 'Oui, merci beaucoup ! Au revoir !' },
-          { text: 'È troppo lontano.', fr: 'C\'est trop loin.' },
-          { text: 'Non capisco.', fr: 'Je ne comprends pas.' },
-          { text: 'Ho bisogno di una mappa.', fr: 'J\'ai besoin d\'une carte.' },
-        ], 0),
-      ],
-    },
+    { id: 'it-hotel', emoji: '🏨', title: 'All\'hotel', steps: [
+      line('B', 'Ho una prenotazione a nome Rossi.', 'J\'ai une réservation au nom de Rossi.'),
+      line('A', 'Camera doppia per due notti.', 'Chambre double pour deux nuits.'),
+      choice('È corretto?', 'C\'est correct ?', [{ text: 'Sì, esatto. A che ora è la colazione?', fr: 'Oui, exactement. À quelle heure est le petit-déjeuner ?' }, { text: 'Mi piace il calcio.', fr: 'J\'aime le football.' }, { text: 'Fa caldo qui.', fr: 'Il fait chaud ici.' }, { text: 'Non ho la prenotazione.', fr: 'Je n\'ai pas de réservation.' }], 0),
+      line('A', 'La colazione è servita dalle sette alle dieci.', 'Le petit-déjeuner est de sept à dix heures.'),
+      choice('Può darmi la chiave?', 'Pouvez-vous me donner la clé ?', [{ text: 'Può darmi la chiave, per favore?', fr: 'La clé, s.v.p. ?' }, { text: 'Non mi piace l\'hotel.', fr: 'Je n\'aime pas l\'hôtel.' }, { text: 'Voglio una pizza.', fr: 'Je veux une pizza.' }, { text: 'Il treno è in ritardo.', fr: 'Le train est en retard.' }], 0),
+      line('A', 'Ecco la chiave. Camera 210, secondo piano.', 'Voici la clé. Chambre 210, deuxième étage.'),
+    ] },
+    { id: 'it-ristorante', emoji: '🍽️', title: 'Al ristorante', steps: [
+      line('A', 'Buonasera. Ha la prenotazione?', 'Bonsoir. Avez-vous une réservation ?'),
+      choice('Ha la prenotazione?', 'Avez-vous une réservation ?', [{ text: 'No, ma siamo in due.', fr: 'Non, mais nous sommes deux.' }, { text: 'Mi chiamo Marco.', fr: 'Je m\'appelle Marco.' }, { text: 'Il museo è chiuso.', fr: 'Le musée est fermé.' }, { text: 'Ho bisogno di un taxi.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
+      line('A', 'Cosa desidera ordinare?', 'Que souhaitez-vous commander ?'),
+      choice('Cosa consiglia?', 'Qu\'est-ce que vous recommandez ?', [{ text: 'Qual è il piatto del giorno?', fr: 'Quel est le plat du jour ?' }, { text: 'Non mi piace la carne.', fr: 'Je n\'aime pas la viande.' }, { text: 'Vorrei dell\'acqua minerale.', fr: 'Je voudrais de l\'eau minérale.' }, { text: 'Il conto, per favore.', fr: 'L\'addition, s.v.p.' }], 0),
+      line('A', 'Il piatto del giorno è risotto ai funghi.', 'Le plat du jour est le risotto aux champignons.'),
+      choice('Come si paga?', 'Comment paye-t-on ?', [{ text: 'Prendo il risotto.', fr: 'Je prends le risotto.' }, { text: 'Non mi piace il riso.', fr: 'Je n\'aime pas le riz.' }, { text: 'Il ristorante è lontano.', fr: 'Le restaurant est loin.' }, { text: 'Sono allergico ai crostacei.', fr: 'Je suis allergique aux crustacés.' }], 0),
+    ] },
+    { id: 'it-taxi', emoji: '🚕', title: 'In taxi', steps: [
+      line('B', 'All\'aeroporto, per favore.', 'À l\'aéroport, s.v.p.'),
+      line('A', 'Quale terminal?', 'Quel terminal ?'),
+      choice('Quale terminal?', 'Quel terminal ?', [{ text: 'Terminal uno, volo per Parigi.', fr: 'Terminal un, vol pour Paris.' }, { text: 'Non so dove sono.', fr: 'Je ne sais pas où je suis.' }, { text: 'Mi piace Roma.', fr: 'J\'aime Rome.' }, { text: 'L\'hotel è vicino.', fr: 'L\'hôtel est près d\'ici.' }], 0),
+      line('A', 'Circa venti minuti con questo traffico.', 'Environ vingt minutes avec ce trafic.'),
+      choice('Quanto costerà?', 'Combien ça coûtera ?', [{ text: 'Quanto costerà più o meno?', fr: 'Combien ça coûtera approximativement ?' }, { text: 'Non ho fretta.', fr: 'Je ne suis pas pressé.' }, { text: 'C\'è molto traffico.', fr: 'Il y a beaucoup de circulation.' }, { text: 'Preferisco la metropolitana.', fr: 'Je préfère le métro.' }], 0),
+      line('A', 'Circa venticinque euro.', 'Environ vingt-cinq euros.'),
+    ] },
+    { id: 'it-farmacia', emoji: '💊', title: 'In farmacia', steps: [
+      line('B', 'Ho mal di testa, ha qualcosa?', 'J\'ai mal à la tête, avez-vous quelque chose ?'),
+      line('A', 'Ha anche la febbre?', 'Avez-vous aussi de la fièvre ?'),
+      choice('Ha la febbre?', 'Avez-vous de la fièvre ?', [{ text: 'No, solo mal di testa e sono stanco.', fr: 'Non, juste mal à la tête et je suis fatigué.' }, { text: 'Mi piace lo sport.', fr: 'J\'aime le sport.' }, { text: 'L\'ospedale è lontano.', fr: 'L\'hôpital est loin.' }, { text: 'Non parlo italiano.', fr: 'Je ne parle pas italien.' }], 0),
+      line('A', 'Le consiglio questo ibuprofene. Uno ogni otto ore.', 'Je vous recommande cet ibuprofène. Un toutes les huit heures.'),
+      choice('Serve la ricetta?', 'Faut-il une ordonnance ?', [{ text: 'Serve la ricetta medica?', fr: 'Faut-il une ordonnance médicale ?' }, { text: 'Non mi piacciono i farmaci.', fr: 'Je n\'aime pas les médicaments.' }, { text: 'Ho fame.', fr: 'J\'ai faim.' }, { text: 'Il medico è occupato.', fr: 'Le médecin est occupé.' }], 0),
+      line('A', 'No, è senza ricetta. Sono quattro euro.', 'Non, sans ordonnance. C\'est quatre euros.'),
+    ] },
   ],
-
   pt: [
-    {
-      id: 'pt-cafe', emoji: '☕', title: 'No café',
-      steps: [
-        line('A', 'Bom dia! O que vai ser?', 'Bonjour ! Qu\'est-ce que ce sera ?'),
-        choice('O que vai ser?', 'Qu\'est-ce que ce sera ?', [
-          { text: 'Gostaria de um café, por favor.', fr: 'Je voudrais un café, s\'il vous plaît.' },
-          { text: 'Chamo-me João.', fr: 'Je m\'appelle João.' },
-          { text: 'O comboio está atrasado.', fr: 'Le train est en retard.' },
-          { text: 'Até logo!', fr: 'Au revoir !' },
-        ], 0),
-        line('A', 'Com certeza. Quer também alguma coisa para comer?', 'Bien sûr. Voulez-vous aussi quelque chose à manger ?'),
-        choice('Quer também alguma coisa para comer?', 'Voulez-vous aussi manger quelque chose ?', [
-          { text: 'Sim, um pastel de nata, por favor.', fr: 'Oui, un pastel de nata, s\'il vous plaît.' },
-          { text: 'Está muito calor hoje.', fr: 'Il fait très chaud aujourd\'hui.' },
-          { text: 'Não tenho fome.', fr: 'Je n\'ai pas faim.' },
-          { text: 'Onde é o hotel?', fr: 'Où est l\'hôtel ?' },
-        ], 0),
-        line('A', 'São dois euros e oitenta.', 'Ça fait deux euros quatre-vingts.'),
-        choice('São dois euros e oitenta.', 'Ça fait deux euros quatre-vingts.', [
-          { text: 'Aqui está. Obrigado!', fr: 'Voilà. Merci !' },
-          { text: 'Não falo português.', fr: 'Je ne parle pas portugais.' },
-          { text: 'É muito caro.', fr: 'C\'est trop cher.' },
-          { text: 'Não tenho dinheiro.', fr: 'Je n\'ai pas d\'argent.' },
-        ], 0),
-      ],
-    },
-    {
-      id: 'pt-rua', emoji: '🗺️', title: 'Na rua',
-      steps: [
-        line('B', 'Com licença, pode ajudar-me?', 'Excusez-moi, pouvez-vous m\'aider ?'),
-        line('A', 'Claro! Do que precisa?', 'Bien sûr ! De quoi avez-vous besoin ?'),
-        choice('Do que precisa?', 'De quoi avez-vous besoin ?', [
-          { text: 'Sabe onde fica o museu?', fr: 'Savez-vous où se trouve le musée ?' },
-          { text: 'Adoro Portugal.', fr: 'J\'adore le Portugal.' },
-          { text: 'Estou muito cansado.', fr: 'Je suis très fatigué.' },
-          { text: 'O tempo está bom.', fr: 'Le temps est beau.' },
-        ], 0),
-        line('A', 'Sim. Siga em frente e vire à esquerda.', 'Oui. Continuez tout droit et tournez à gauche.'),
-        choice('Fica longe?', 'C\'est loin ?', [
-          { text: 'Quanto tempo demora a pé?', fr: 'Combien de temps faut-il à pied ?' },
-          { text: 'Prefiro ir de táxi.', fr: 'Je préfère prendre un taxi.' },
-          { text: 'Não gosto de andar.', fr: 'Je n\'aime pas marcher.' },
-          { text: 'Sou turista.', fr: 'Je suis touriste.' },
-        ], 0),
-        line('A', 'Cerca de seis minutos a pé.', 'Environ six minutes à pied.'),
-        choice('Percebeu?', 'Vous avez compris ?', [
-          { text: 'Sim, muito obrigado! Até logo!', fr: 'Oui, merci beaucoup ! Au revoir !' },
-          { text: 'É demasiado longe.', fr: 'C\'est trop loin.' },
-          { text: 'Não percebi.', fr: 'Je n\'ai pas compris.' },
-          { text: 'Preciso de um mapa.', fr: 'J\'ai besoin d\'une carte.' },
-        ], 0),
-      ],
-    },
+    { id: 'pt-hotel', emoji: '🏨', title: 'No hotel', steps: [
+      line('B', 'Tenho uma reserva em nome de Silva.', 'J\'ai une réservation au nom de Silva.'),
+      line('A', 'Quarto duplo por duas noites.', 'Chambre double pour deux nuits.'),
+      choice('Está correto?', 'C\'est correct ?', [{ text: 'Sim, exatamente. A que horas é o café da manhã?', fr: 'Oui, exactement. Le petit-déjeuner est à quelle heure ?' }, { text: 'Eu gosto de futebol.', fr: 'J\'aime le football.' }, { text: 'Está quente aqui.', fr: 'Il fait chaud ici.' }, { text: 'Não tenho reserva.', fr: 'Je n\'ai pas de réservation.' }], 0),
+      line('A', 'O café da manhã é servido das sete às dez.', 'Le petit-déjeuner est de sept à dix heures.'),
+      choice('Pode me dar a chave?', 'Pouvez-vous me donner la clé ?', [{ text: 'Pode me dar a chave, por favor?', fr: 'La clé, s.v.p. ?' }, { text: 'Não gosto do hotel.', fr: 'Je n\'aime pas l\'hôtel.' }, { text: 'Quero uma pizza.', fr: 'Je veux une pizza.' }, { text: 'O trem está atrasado.', fr: 'Le train est en retard.' }], 0),
+      line('A', 'Aqui está a chave. Quarto 108, primeiro andar.', 'Voici la clé. Chambre 108, premier étage.'),
+    ] },
+    { id: 'pt-restaurante', emoji: '🍽️', title: 'No restaurante', steps: [
+      line('A', 'Boa noite. Tem reserva?', 'Bonsoir. Avez-vous une réservation ?'),
+      choice('Tem reserva?', 'Avez-vous une réservation ?', [{ text: 'Não, mas somos duas pessoas.', fr: 'Non, mais nous sommes deux.' }, { text: 'Meu nome é João.', fr: 'Je m\'appelle João.' }, { text: 'O museu está fechado.', fr: 'Le musée est fermé.' }, { text: 'Preciso de um táxi.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
+      line('A', 'O que vai querer?', 'Que souhaitez-vous ?'),
+      choice('Qual é o prato do dia?', 'Quel est le plat du jour ?', [{ text: 'Qual é o prato do dia?', fr: 'Quel est le plat du jour ?' }, { text: 'Não gosto de carne.', fr: 'Je n\'aime pas la viande.' }, { text: 'Quero água mineral.', fr: 'Je veux de l\'eau minérale.' }, { text: 'A conta, por favor.', fr: 'L\'addition, s.v.p.' }], 0),
+      line('A', 'O prato do dia é bacalhau com batatas.', 'Le plat du jour est la morue avec des pommes de terre.'),
+      choice('Como se paga?', 'Comment paye-t-on ?', [{ text: 'Vou pedir o bacalhau.', fr: 'Je vais prendre la morue.' }, { text: 'Não gosto de peixe.', fr: 'Je n\'aime pas le poisson.' }, { text: 'O restaurante é longe.', fr: 'Le restaurant est loin.' }, { text: 'Sou alérgico a frutos do mar.', fr: 'Je suis allergique aux fruits de mer.' }], 0),
+    ] },
+    { id: 'pt-taxi', emoji: '🚕', title: 'No táxi', steps: [
+      line('B', 'Para o aeroporto, por favor.', 'À l\'aéroport, s.v.p.'),
+      line('A', 'Qual terminal?', 'Quel terminal ?'),
+      choice('Qual terminal?', 'Quel terminal ?', [{ text: 'Terminal um, voo para Paris.', fr: 'Terminal un, vol pour Paris.' }, { text: 'Não sei onde estou.', fr: 'Je ne sais pas où je suis.' }, { text: 'Gosto de Lisboa.', fr: 'J\'aime Lisbonne.' }, { text: 'O hotel é perto.', fr: 'L\'hôtel est près d\'ici.' }], 0),
+      line('A', 'Cerca de vinte minutos com este trânsito.', 'Environ vingt minutes avec ce trafic.'),
+      choice('Quanto vai custar?', 'Combien ça va coûter ?', [{ text: 'Quanto vai custar aproximadamente?', fr: 'Combien approximativement ?' }, { text: 'Não tenho pressa.', fr: 'Je ne suis pas pressé.' }, { text: 'Há muito trânsito.', fr: 'Il y a beaucoup de circulation.' }, { text: 'Prefiro o metro.', fr: 'Je préfère le métro.' }], 0),
+      line('A', 'Cerca de vinte euros.', 'Environ vingt euros.'),
+    ] },
+    { id: 'pt-farmacia', emoji: '💊', title: 'Na farmácia', steps: [
+      line('B', 'Estou com dor de cabeça, tem alguma coisa?', 'J\'ai mal à la tête, avez-vous quelque chose ?'),
+      line('A', 'Tem febre também?', 'Avez-vous aussi de la fièvre ?'),
+      choice('Tem febre?', 'Avez-vous de la fièvre ?', [{ text: 'Não, só dor de cabeça e estou cansado.', fr: 'Non, juste mal à la tête et je suis fatigué.' }, { text: 'Gosto de esporte.', fr: 'J\'aime le sport.' }, { text: 'O hospital é longe.', fr: 'L\'hôpital est loin.' }, { text: 'Não falo português.', fr: 'Je ne parle pas portugais.' }], 0),
+      line('A', 'Recomendo este ibuprofeno. Um comprimido de oito em oito horas.', 'Je vous recommande cet ibuprofène. Un comprimé toutes les huit heures.'),
+      choice('Precisa de receita?', 'Faut-il une ordonnance ?', [{ text: 'Precisa de receita médica?', fr: 'Faut-il une ordonnance médicale ?' }, { text: 'Não gosto de remédios.', fr: 'Je n\'aime pas les médicaments.' }, { text: 'Estou com fome.', fr: 'J\'ai faim.' }, { text: 'O médico está ocupado.', fr: 'Le médecin est occupé.' }], 0),
+      line('A', 'Não, é sem receita. São quatro euros.', 'Non, sans ordonnance. C\'est quatre euros.'),
+    ] },
   ],
-
   nl: [
-    {
-      id: 'nl-cafe', emoji: '☕', title: 'In het café',
-      steps: [
-        line('A', 'Goedemorgen! Wat mag het zijn?', 'Bonjour ! Qu\'est-ce que ce sera ?'),
-        choice('Wat mag het zijn?', 'Qu\'est-ce que ce sera ?', [
-          { text: 'Ik wil graag een koffie, alstublieft.', fr: 'Je voudrais un café, s\'il vous plaît.' },
-          { text: 'Mijn naam is Jan.', fr: 'Je m\'appelle Jan.' },
-          { text: 'De trein is te laat.', fr: 'Le train est en retard.' },
-          { text: 'Tot ziens!', fr: 'Au revoir !' },
-        ], 0),
-        line('A', 'Natuurlijk. Wilt u ook iets eten?', 'Bien sûr. Voulez-vous aussi manger quelque chose ?'),
-        choice('Wilt u ook iets eten?', 'Voulez-vous aussi manger quelque chose ?', [
-          { text: 'Ja, een stuk appeltaart graag.', fr: 'Oui, une part de tarte aux pommes, s\'il vous plaît.' },
-          { text: 'Het is heel koud vandaag.', fr: 'Il fait très froid aujourd\'hui.' },
-          { text: 'Ik heb geen honger.', fr: 'Je n\'ai pas faim.' },
-          { text: 'Waar is het toilet?', fr: 'Où sont les toilettes ?' },
-        ], 0),
-        line('A', 'Dat is dan vijf euro tachtig.', 'Ça fait cinq euros quatre-vingts.'),
-        choice('Dat is dan vijf euro tachtig.', 'Ça fait cinq euros quatre-vingts.', [
-          { text: 'Alstublieft. Dank u wel!', fr: 'Voilà. Merci beaucoup !' },
-          { text: 'Ik spreek geen Nederlands.', fr: 'Je ne parle pas néerlandais.' },
-          { text: 'Dat is te duur.', fr: 'C\'est trop cher.' },
-          { text: 'Ik heb geen geld.', fr: 'Je n\'ai pas d\'argent.' },
-        ], 0),
-      ],
-    },
-    {
-      id: 'nl-straat', emoji: '🗺️', title: 'Op straat',
-      steps: [
-        line('B', 'Pardon, kunt u mij helpen?', 'Excusez-moi, pouvez-vous m\'aider ?'),
-        line('A', 'Ja, natuurlijk! Wat heeft u nodig?', 'Oui, bien sûr ! De quoi avez-vous besoin ?'),
-        choice('Wat heeft u nodig?', 'De quoi avez-vous besoin ?', [
-          { text: 'Weet u waar het treinstation is?', fr: 'Savez-vous où est la gare ?' },
-          { text: 'Ik hou van Nederland.', fr: 'J\'adore les Pays-Bas.' },
-          { text: 'Ik ben erg moe.', fr: 'Je suis très fatigué.' },
-          { text: 'Het weer is mooi.', fr: 'Le temps est beau.' },
-        ], 0),
-        line('A', 'Ja, ga rechtdoor en sla dan rechts af.', 'Oui, allez tout droit puis tournez à droite.'),
-        choice('Is het ver?', 'C\'est loin ?', [
-          { text: 'Hoe lang duurt het lopen?', fr: 'Combien de temps faut-il à pied ?' },
-          { text: 'Ik neem liever de bus.', fr: 'Je préfère prendre le bus.' },
-          { text: 'Ik ben een toerist.', fr: 'Je suis touriste.' },
-          { text: 'Ik houd niet van lopen.', fr: 'Je n\'aime pas marcher.' },
-        ], 0),
-        line('A', 'Ongeveer zeven minuten lopen.', 'Environ sept minutes à pied.'),
-        choice('Begrepen?', 'Vous avez compris ?', [
-          { text: 'Ja, heel erg bedankt! Tot ziens!', fr: 'Oui, merci beaucoup ! Au revoir !' },
-          { text: 'Het is te ver.', fr: 'C\'est trop loin.' },
-          { text: 'Ik begrijp het niet.', fr: 'Je ne comprends pas.' },
-          { text: 'Ik heb een kaart nodig.', fr: 'J\'ai besoin d\'une carte.' },
-        ], 0),
-      ],
-    },
+    { id: 'nl-hotel', emoji: '🏨', title: 'In het hotel', steps: [
+      line('B', 'Ik heb een reservering op naam van Jansen.', 'J\'ai une réservation au nom de Jansen.'),
+      line('A', 'Een tweepersoonskamer voor twee nachten.', 'Chambre double pour deux nuits.'),
+      choice('Klopt dat?', 'C\'est correct ?', [{ text: 'Ja, precies. Hoe laat is het ontbijt?', fr: 'Oui, exactement. Le petit-déjeuner est à quelle heure ?' }, { text: 'Ik hou van voetbal.', fr: 'J\'aime le football.' }, { text: 'Het is warm hier.', fr: 'Il fait chaud ici.' }, { text: 'Ik heb geen reservering.', fr: 'Je n\'ai pas de réservation.' }], 0),
+      line('A', 'Het ontbijt is van zeven tot tien uur.', 'Le petit-déjeuner est de sept à dix heures.'),
+      choice('Kunt u mij de sleutel geven?', 'Pouvez-vous me donner la clé ?', [{ text: 'Kunt u mij de sleutel geven, alstublieft?', fr: 'La clé, s.v.p. ?' }, { text: 'Ik hou niet van het hotel.', fr: 'Je n\'aime pas l\'hôtel.' }, { text: 'Ik wil een pizza.', fr: 'Je veux une pizza.' }, { text: 'De trein heeft vertraging.', fr: 'Le train est en retard.' }], 0),
+      line('A', 'Hier is uw sleutel. Kamer 112, eerste verdieping.', 'Voici votre clé. Chambre 112, premier étage.'),
+    ] },
+    { id: 'nl-restaurant', emoji: '🍽️', title: 'In het restaurant', steps: [
+      line('A', 'Goedenavond. Heeft u een reservering?', 'Bonsoir. Avez-vous une réservation ?'),
+      choice('Heeft u een reservering?', 'Avez-vous une réservation ?', [{ text: 'Nee, maar we zijn met zijn tweeën.', fr: 'Non, mais nous sommes deux.' }, { text: 'Ik heet Emma.', fr: 'Je m\'appelle Emma.' }, { text: 'Het museum is gesloten.', fr: 'Le musée est fermé.' }, { text: 'Ik heb een taxi nodig.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
+      line('A', 'Wat wilt u bestellen?', 'Que souhaitez-vous commander ?'),
+      choice('Wat raadt u aan?', 'Qu\'est-ce que vous recommandez ?', [{ text: 'Wat is het dagmenu?', fr: 'Quel est le menu du jour ?' }, { text: 'Ik hou niet van vlees.', fr: 'Je n\'aime pas la viande.' }, { text: 'Ik wil mineraalwater.', fr: 'Je veux de l\'eau minérale.' }, { text: 'De rekening, alstublieft.', fr: 'L\'addition, s.v.p.' }], 0),
+      line('A', 'Het dagmenu is stamppot met worst.', 'Le plat du jour est la purée avec de la saucisse.'),
+      choice('Hoe betaalt men?', 'Comment paye-t-on ?', [{ text: 'Ik neem het dagmenu.', fr: 'Je prends le menu du jour.' }, { text: 'Ik hou niet van worst.', fr: 'Je n\'aime pas la saucisse.' }, { text: 'Het restaurant is ver.', fr: 'Le restaurant est loin.' }, { text: 'Ik ben allergisch voor gluten.', fr: 'Je suis allergique au gluten.' }], 0),
+    ] },
+    { id: 'nl-taxi', emoji: '🚕', title: 'In de taxi', steps: [
+      line('B', 'Naar het vliegveld, alstublieft.', 'À l\'aéroport, s.v.p.'),
+      line('A', 'Welke terminal?', 'Quel terminal ?'),
+      choice('Welke terminal?', 'Quel terminal ?', [{ text: 'Terminal twee, vlucht naar Parijs.', fr: 'Terminal deux, vol pour Paris.' }, { text: 'Ik weet niet waar ik ben.', fr: 'Je ne sais pas où je suis.' }, { text: 'Ik hou van Amsterdam.', fr: 'J\'aime Amsterdam.' }, { text: 'Het hotel is dichtbij.', fr: 'L\'hôtel est près d\'ici.' }], 0),
+      line('A', 'Ongeveer twintig minuten met dit verkeer.', 'Environ vingt minutes avec ce trafic.'),
+      choice('Hoeveel kost het?', 'Combien ça coûte ?', [{ text: 'Hoeveel zal het ongeveer kosten?', fr: 'Combien approximativement ?' }, { text: 'Ik heb geen haast.', fr: 'Je ne suis pas pressé.' }, { text: 'Er is veel verkeer.', fr: 'Il y a beaucoup de circulation.' }, { text: 'Ik neem liever de tram.', fr: 'Je préfère prendre le tram.' }], 0),
+      line('A', 'Ongeveer vijfentwintig euro.', 'Environ vingt-cinq euros.'),
+    ] },
+    { id: 'nl-straat', emoji: '🗺️', title: 'Op straat', steps: [
+      line('B', 'Pardon, kunt u mij helpen?', 'Excusez-moi, pouvez-vous m\'aider ?'),
+      line('A', 'Natuurlijk! Wat heeft u nodig?', 'Bien sûr ! De quoi avez-vous besoin ?'),
+      choice('Wat heeft u nodig?', 'De quoi avez-vous besoin ?', [{ text: 'Weet u waar het dichtstbijzijnde postkantoor is?', fr: 'Savez-vous où est le bureau de poste le plus proche ?' }, { text: 'Ik hou van uw jas.', fr: 'J\'adore votre veste.' }, { text: 'Het is mooi weer.', fr: 'Il fait beau.' }, { text: 'Ik ben erg moe.', fr: 'Je suis très fatigué.' }], 0),
+      line('A', 'Ga rechtdoor en sla links af bij de verkeerslichten.', 'Allez tout droit et tournez à gauche aux feux.'),
+      choice('Is het ver?', 'C\'est loin ?', [{ text: 'Hoe lang duurt het lopen?', fr: 'Combien de temps à pied ?' }, { text: 'Ik neem liever de bus.', fr: 'Je préfère le bus.' }, { text: 'Het regent.', fr: 'Il pleut.' }, { text: 'Ik ben verdwaald.', fr: 'Je suis perdu.' }], 0),
+      line('A', 'Ongeveer vijf minuten. U kunt het niet missen.', 'Environ cinq minutes. Vous ne pouvez pas le rater.'),
+    ] },
   ],
-
   pl: [
-    {
-      id: 'pl-kawiarnia', emoji: '☕', title: 'W kawiarni',
-      steps: [
-        line('A', 'Dzień dobry! Czym mogę służyć?', 'Bonjour ! En quoi puis-je vous aider ?'),
-        choice('Czym mogę służyć?', 'En quoi puis-je vous aider ?', [
-          { text: 'Poproszę kawę z mlekiem.', fr: 'Je voudrais un café au lait, s\'il vous plaît.' },
-          { text: 'Mam na imię Marek.', fr: 'Je m\'appelle Marek.' },
-          { text: 'Pociąg się spóźnia.', fr: 'Le train est en retard.' },
-          { text: 'Do widzenia!', fr: 'Au revoir !' },
-        ], 0),
-        line('A', 'Oczywiście. Czy życzy sobie pan/pani coś do jedzenia?', 'Bien sûr. Voulez-vous aussi manger quelque chose ?'),
-        choice('Czy życzy sobie coś do jedzenia?', 'Voulez-vous manger quelque chose ?', [
-          { text: 'Tak, poproszę rogalika.', fr: 'Oui, je voudrais un croissant, s\'il vous plaît.' },
-          { text: 'Jest bardzo zimno dzisiaj.', fr: 'Il fait très froid aujourd\'hui.' },
-          { text: 'Nie jestem głodny.', fr: 'Je n\'ai pas faim.' },
-          { text: 'Gdzie jest toaleta?', fr: 'Où sont les toilettes ?' },
-        ], 0),
-        line('A', 'To będzie jedenaście złotych.', 'Ça fait onze zlotys.'),
-        choice('To będzie jedenaście złotych.', 'Ça fait onze zlotys.', [
-          { text: 'Proszę bardzo. Dziękuję!', fr: 'Voilà. Merci !' },
-          { text: 'Nie mówię po polsku.', fr: 'Je ne parle pas polonais.' },
-          { text: 'To za drogo.', fr: 'C\'est trop cher.' },
-          { text: 'Nie mam pieniędzy.', fr: 'Je n\'ai pas d\'argent.' },
-        ], 0),
-      ],
-    },
-    {
-      id: 'pl-ulica', emoji: '🗺️', title: 'Na ulicy',
-      steps: [
-        line('B', 'Przepraszam, czy może mi pan/pani pomóc?', 'Excusez-moi, pouvez-vous m\'aider ?'),
-        line('A', 'Oczywiście! Czego potrzebuje pan/pani?', 'Bien sûr ! De quoi avez-vous besoin ?'),
-        choice('Czego potrzebuje pan/pani?', 'De quoi avez-vous besoin ?', [
-          { text: 'Czy wie pan/pani, gdzie jest apteka?', fr: 'Savez-vous où est la pharmacie ?' },
-          { text: 'Lubię Polskę.', fr: 'J\'aime la Pologne.' },
-          { text: 'Jestem bardzo zmęczony.', fr: 'Je suis très fatigué.' },
-          { text: 'Ładna pogoda dzisiaj.', fr: 'Il fait beau aujourd\'hui.' },
-        ], 0),
-        line('A', 'Tak, proszę iść prosto, a potem skręcić w lewo.', 'Oui, allez tout droit puis tournez à gauche.'),
-        choice('Czy to daleko?', 'C\'est loin ?', [
-          { text: 'Ile czasu zajmie droga piechotą?', fr: 'Combien de temps faut-il à pied ?' },
-          { text: 'Wolę jechać autobusem.', fr: 'Je préfère prendre le bus.' },
-          { text: 'Jestem turystą.', fr: 'Je suis touriste.' },
-          { text: 'Nie lubię chodzić pieszo.', fr: 'Je n\'aime pas marcher.' },
-        ], 0),
-        line('A', 'Około pięciu minut pieszo.', 'Environ cinq minutes à pied.'),
-        choice('Rozumie pan/pani?', 'Vous avez compris ?', [
-          { text: 'Tak, bardzo dziękuję! Do widzenia!', fr: 'Oui, merci beaucoup ! Au revoir !' },
-          { text: 'To za daleko.', fr: 'C\'est trop loin.' },
-          { text: 'Nie rozumiem.', fr: 'Je ne comprends pas.' },
-          { text: 'Potrzebuję mapy.', fr: 'J\'ai besoin d\'une carte.' },
-        ], 0),
-      ],
-    },
+    { id: 'pl-hotel', emoji: '🏨', title: 'W hotelu', steps: [
+      line('B', 'Mam rezerwację na nazwisko Kowalski.', 'J\'ai une réservation au nom de Kowalski.'),
+      line('A', 'Pokój dwuosobowy na dwie noce.', 'Chambre double pour deux nuits.'),
+      choice('Czy to poprawne?', 'C\'est correct ?', [{ text: 'Tak, dokładnie. O której jest śniadanie?', fr: 'Oui, exactement. Le petit-déjeuner est à quelle heure ?' }, { text: 'Lubię piłkę nożną.', fr: 'J\'aime le football.' }, { text: 'Jest tu gorąco.', fr: 'Il fait chaud ici.' }, { text: 'Nie mam rezerwacji.', fr: 'Je n\'ai pas de réservation.' }], 0),
+      line('A', 'Śniadanie serwowane jest od siódmej do dziesiątej.', 'Le petit-déjeuner est de sept à dix heures.'),
+      choice('Czy mogę prosić o klucz?', 'Puis-je avoir la clé ?', [{ text: 'Czy mogę prosić o klucz?', fr: 'La clé, s.v.p. ?' }, { text: 'Nie lubię tego hotelu.', fr: 'Je n\'aime pas cet hôtel.' }, { text: 'Chcę pizzę.', fr: 'Je veux une pizza.' }, { text: 'Pociąg jest opóźniony.', fr: 'Le train est en retard.' }], 0),
+      line('A', 'Proszę, oto klucz. Pokój 203, drugie piętro.', 'Voici la clé. Chambre 203, deuxième étage.'),
+    ] },
+    { id: 'pl-restauracja', emoji: '🍽️', title: 'W restauracji', steps: [
+      line('A', 'Dobry wieczór. Czy mają Państwo rezerwację?', 'Bonsoir. Avez-vous une réservation ?'),
+      choice('Czy mają Państwo rezerwację?', 'Avez-vous une réservation ?', [{ text: 'Nie, ale jesteśmy we dwoje.', fr: 'Non, mais nous sommes deux.' }, { text: 'Mam na imię Anna.', fr: 'Je m\'appelle Anna.' }, { text: 'Muzeum jest zamknięte.', fr: 'Le musée est fermé.' }, { text: 'Potrzebuję taksówki.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
+      line('A', 'Co będą Państwo zamawiać?', 'Que souhaitez-vous commander ?'),
+      choice('Jakie jest danie dnia?', 'Quel est le plat du jour ?', [{ text: 'Jakie jest danie dnia?', fr: 'Quel est le plat du jour ?' }, { text: 'Nie lubię mięsa.', fr: 'Je n\'aime pas la viande.' }, { text: 'Chcę wodę mineralną.', fr: 'Je veux de l\'eau minérale.' }, { text: 'Rachunek, proszę.', fr: 'L\'addition, s.v.p.' }], 0),
+      line('A', 'Danie dnia to bigos z chlebem.', 'Le plat du jour est le bigos avec du pain.'),
+      choice('Jak się płaci?', 'Comment paye-t-on ?', [{ text: 'Poproszę bigos.', fr: 'Je prends le bigos, s.v.p.' }, { text: 'Nie lubię kapusty.', fr: 'Je n\'aime pas le chou.' }, { text: 'Restauracja jest daleko.', fr: 'Le restaurant est loin.' }, { text: 'Jestem uczulony na gluten.', fr: 'Je suis allergique au gluten.' }], 0),
+    ] },
+    { id: 'pl-taxi', emoji: '🚕', title: 'W taksówce', steps: [
+      line('B', 'Na lotnisko, proszę.', 'À l\'aéroport, s.v.p.'),
+      line('A', 'Który terminal?', 'Quel terminal ?'),
+      choice('Który terminal?', 'Quel terminal ?', [{ text: 'Terminal dwa, lot do Paryża.', fr: 'Terminal deux, vol pour Paris.' }, { text: 'Nie wiem gdzie jestem.', fr: 'Je ne sais pas où je suis.' }, { text: 'Lubię Warszawę.', fr: 'J\'aime Varsovie.' }, { text: 'Hotel jest blisko.', fr: 'L\'hôtel est près d\'ici.' }], 0),
+      line('A', 'Około dwudziestu minut przy tym ruchu.', 'Environ vingt minutes avec ce trafic.'),
+      choice('Ile to będzie kosztować?', 'Combien ça va coûter ?', [{ text: 'Ile to będzie mniej więcej kosztować?', fr: 'Combien approximativement ?' }, { text: 'Nie śpieszę się.', fr: 'Je ne suis pas pressé.' }, { text: 'Jest duży ruch.', fr: 'Il y a beaucoup de circulation.' }, { text: 'Wolę metro.', fr: 'Je préfère le métro.' }], 0),
+      line('A', 'Około trzydziestu złotych.', 'Environ trente zlotys.'),
+    ] },
+    { id: 'pl-ulica', emoji: '🗺️', title: 'Na ulicy', steps: [
+      line('B', 'Przepraszam, czy może mi Pan pomóc?', 'Excusez-moi, pouvez-vous m\'aider ?'),
+      line('A', 'Oczywiście! Czego potrzebujesz?', 'Bien sûr ! De quoi avez-vous besoin ?'),
+      choice('Czego potrzebujesz?', 'De quoi avez-vous besoin ?', [{ text: 'Czy wiesz gdzie jest najbliższa apteka?', fr: 'Sais-tu où est la pharmacie la plus proche ?' }, { text: 'Lubię twój płaszcz.', fr: 'J\'aime ton manteau.' }, { text: 'Ładna pogoda.', fr: 'Il fait beau.' }, { text: 'Jestem bardzo zmęczony.', fr: 'Je suis très fatigué.' }], 0),
+      line('A', 'Idź prosto i skręć w lewo przy świetle.', 'Allez tout droit et tournez à gauche aux feux.'),
+      choice('Czy to daleko?', 'C\'est loin ?', [{ text: 'Jak długo idzie się piechotą?', fr: 'Combien de temps à pied ?' }, { text: 'Wolę jechać autobusem.', fr: 'Je préfère le bus.' }, { text: 'Pada deszcz.', fr: 'Il pleut.' }, { text: 'Zgubiłem się.', fr: 'Je suis perdu.' }], 0),
+      line('A', 'Jakieś pięć minut. Nie sposób tego przeoczyć.', 'Environ cinq minutes. Vous ne pouvez pas le rater.'),
+    ] },
   ],
-
   tr: [
-    {
-      id: 'tr-kafe', emoji: '☕', title: 'Kafede',
-      steps: [
-        line('A', 'Günaydın! Ne istersiniz?', 'Bonjour ! Que désirez-vous ?'),
-        choice('Ne istersiniz?', 'Que désirez-vous ?', [
-          { text: 'Bir çay, lütfen.', fr: 'Un thé, s\'il vous plaît.' },
-          { text: 'Adım Mehmet.', fr: 'Je m\'appelle Mehmet.' },
-          { text: 'Tren geç kaldı.', fr: 'Le train est en retard.' },
-          { text: 'Güle güle!', fr: 'Au revoir !' },
-        ], 0),
-        line('A', 'Tabii. Bir şey yemek ister misiniz?', 'Bien sûr. Voulez-vous aussi manger quelque chose ?'),
-        choice('Bir şey yemek ister misiniz?', 'Voulez-vous aussi manger quelque chose ?', [
-          { text: 'Evet, bir simit de alayım.', fr: 'Oui, je vais aussi prendre un simit.' },
-          { text: 'Bugün çok soğuk.', fr: 'Il fait très froid aujourd\'hui.' },
-          { text: 'Acıkmadım.', fr: 'Je n\'ai pas faim.' },
-          { text: 'Tuvalet nerede?', fr: 'Où sont les toilettes ?' },
-        ], 0),
-        line('A', 'Toplam yirmi beş lira.', 'Au total vingt-cinq liras.'),
-        choice('Toplam yirmi beş lira.', 'Au total vingt-cinq liras.', [
-          { text: 'Buyurun. Teşekkür ederim!', fr: 'Voilà. Merci !' },
-          { text: 'Türkçe bilmiyorum.', fr: 'Je ne parle pas turc.' },
-          { text: 'Çok pahalı.', fr: 'C\'est trop cher.' },
-          { text: 'Param yok.', fr: 'Je n\'ai pas d\'argent.' },
-        ], 0),
-      ],
-    },
-    {
-      id: 'tr-sokak', emoji: '🗺️', title: 'Sokakta',
-      steps: [
-        line('B', 'Affedersiniz, yardım edebilir misiniz?', 'Excusez-moi, pouvez-vous m\'aider ?'),
-        line('A', 'Tabii ki! Ne lazım?', 'Bien sûr ! De quoi avez-vous besoin ?'),
-        choice('Ne lazım?', 'De quoi avez-vous besoin ?', [
-          { text: 'En yakın metro istasyonu nerede?', fr: 'Où est la station de métro la plus proche ?' },
-          { text: 'Türkiye\'yi seviyorum.', fr: 'J\'adore la Turquie.' },
-          { text: 'Çok yorgunum.', fr: 'Je suis très fatigué.' },
-          { text: 'Hava güzel.', fr: 'Il fait beau.' },
-        ], 0),
-        line('A', 'Evet, düz gidin ve sonra sola dönün.', 'Oui, allez tout droit puis tournez à gauche.'),
-        choice('Uzak mı?', 'C\'est loin ?', [
-          { text: 'Yürüyerek ne kadar sürer?', fr: 'Combien de temps faut-il à pied ?' },
-          { text: 'Otobüsü tercih ederim.', fr: 'Je préfère le bus.' },
-          { text: 'Turistim.', fr: 'Je suis touriste.' },
-          { text: 'Yürümekten hoşlanmam.', fr: 'Je n\'aime pas marcher.' },
-        ], 0),
-        line('A', 'Yürüyerek yaklaşık altı dakika.', 'Environ six minutes à pied.'),
-        choice('Anladınız mı?', 'Vous avez compris ?', [
-          { text: 'Evet, çok teşekkür ederim! Hoşça kalın!', fr: 'Oui, merci beaucoup ! Au revoir !' },
-          { text: 'Çok uzak.', fr: 'C\'est trop loin.' },
-          { text: 'Anlamadım.', fr: 'Je n\'ai pas compris.' },
-          { text: 'Haritaya ihtiyacım var.', fr: 'J\'ai besoin d\'une carte.' },
-        ], 0),
-      ],
-    },
+    { id: 'tr-otel', emoji: '🏨', title: 'Otelde', steps: [
+      line('B', 'Yılmaz adına rezervasyonum var.', 'J\'ai une réservation au nom de Yılmaz.'),
+      line('A', 'İki kişilik oda, iki gece.', 'Chambre double pour deux nuits.'),
+      choice('Doğru mu?', 'C\'est correct ?', [{ text: 'Evet, aynen öyle. Kahvaltı saat kaçta?', fr: 'Oui, exactement. Le petit-déjeuner est à quelle heure ?' }, { text: 'Futbol seviyorum.', fr: 'J\'aime le football.' }, { text: 'Burası çok sıcak.', fr: 'Il fait très chaud ici.' }, { text: 'Rezervasyonum yok.', fr: 'Je n\'ai pas de réservation.' }], 0),
+      line('A', 'Kahvaltı yediden ona kadar servis edilir.', 'Le petit-déjeuner est de sept à dix heures.'),
+      choice('Anahtarı alabilir miyim?', 'Puis-je avoir la clé ?', [{ text: 'Anahtarı alabilir miyim lütfen?', fr: 'La clé, s.v.p. ?' }, { text: 'Otel hoşuma gitmiyor.', fr: 'Je n\'aime pas l\'hôtel.' }, { text: 'Pizza istiyorum.', fr: 'Je veux une pizza.' }, { text: 'Tren gecikti.', fr: 'Le train est en retard.' }], 0),
+      line('A', 'İşte anahtarınız. 215 numaralı oda, ikinci kat.', 'Voici votre clé. Chambre 215, deuxième étage.'),
+    ] },
+    { id: 'tr-restoran', emoji: '🍽️', title: 'Restoranda', steps: [
+      line('A', 'İyi akşamlar. Rezervasyonunuz var mı?', 'Bonsoir. Avez-vous une réservation ?'),
+      choice('Rezervasyonunuz var mı?', 'Avez-vous une réservation ?', [{ text: 'Hayır, ama iki kişiyiz.', fr: 'Non, mais nous sommes deux.' }, { text: 'Adım Fatma.', fr: 'Je m\'appelle Fatma.' }, { text: 'Müze kapalı.', fr: 'Le musée est fermé.' }, { text: 'Taksiye ihtiyacım var.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
+      line('A', 'Ne sipariş etmek istersiniz?', 'Que souhaitez-vous commander ?'),
+      choice('Günün yemeği nedir?', 'Quel est le plat du jour ?', [{ text: 'Günün yemeği nedir?', fr: 'Quel est le plat du jour ?' }, { text: 'Et sevmiyorum.', fr: 'Je n\'aime pas la viande.' }, { text: 'Maden suyu istiyorum.', fr: 'Je veux de l\'eau minérale.' }, { text: 'Hesap lütfen.', fr: 'L\'addition, s.v.p.' }], 0),
+      line('A', 'Günün yemeği mercimek çorbası ve pilavdır.', 'Le plat du jour est la soupe de lentilles et le riz pilaf.'),
+      choice('Nasıl ödenir?', 'Comment paye-t-on ?', [{ text: 'Günün yemeğini alacağım.', fr: 'Je prends le plat du jour.' }, { text: 'Pirinç sevmiyorum.', fr: 'Je n\'aime pas le riz.' }, { text: 'Restoran uzak.', fr: 'Le restaurant est loin.' }, { text: 'Deniz ürünlerine alerjim var.', fr: 'Je suis allergique aux fruits de mer.' }], 0),
+    ] },
+    { id: 'tr-taksi', emoji: '🚕', title: 'Taksiye binmek', steps: [
+      line('B', 'Havalimanına lütfen.', 'À l\'aéroport, s.v.p.'),
+      line('A', 'Hangi terminal?', 'Quel terminal ?'),
+      choice('Hangi terminal?', 'Quel terminal ?', [{ text: 'İki numaralı terminal, Paris uçuşu.', fr: 'Terminal deux, vol pour Paris.' }, { text: 'Nerede olduğumu bilmiyorum.', fr: 'Je ne sais pas où je suis.' }, { text: 'İstanbul\'u seviyorum.', fr: 'J\'aime Istanbul.' }, { text: 'Otel yakın.', fr: 'L\'hôtel est près d\'ici.' }], 0),
+      line('A', 'Bu trafik ile yaklaşık yirmi dakika.', 'Environ vingt minutes avec ce trafic.'),
+      choice('Ne kadar tutar?', 'Combien ça coûte ?', [{ text: 'Yaklaşık ne kadar tutacak?', fr: 'Combien approximativement ?' }, { text: 'Aceleden değilim.', fr: 'Je ne suis pas pressé.' }, { text: 'Çok trafik var.', fr: 'Il y a beaucoup de circulation.' }, { text: 'Metroyu tercih ediyorum.', fr: 'Je préfère le métro.' }], 0),
+      line('A', 'Yaklaşık yüz elli lira.', 'Environ cent cinquante lires.'),
+    ] },
+    { id: 'tr-eczane', emoji: '💊', title: 'Eczanede', steps: [
+      line('B', 'Baş ağrısı için bir şeyiniz var mı?', 'Avez-vous quelque chose contre le mal de tête ?'),
+      line('A', 'Ateşiniz de var mı?', 'Avez-vous aussi de la fièvre ?'),
+      choice('Ateşiniz var mı?', 'Avez-vous de la fièvre ?', [{ text: 'Hayır, sadece baş ağrısı ve yorgunum.', fr: 'Non, juste mal à la tête et je suis fatigué.' }, { text: 'Spor yapıyorum.', fr: 'Je fais du sport.' }, { text: 'Hastane uzak.', fr: 'L\'hôpital est loin.' }, { text: 'Türkçe bilmiyorum.', fr: 'Je ne parle pas turc.' }], 0),
+      line('A', 'Bu ibuprofeni tavsiye ederim. Sekiz saatte bir bir tane alın.', 'Je vous recommande cet ibuprofène. Un toutes les huit heures.'),
+      choice('Reçete gerekiyor mu?', 'Faut-il une ordonnance ?', [{ text: 'Reçetesiz satılıyor mu?', fr: 'Est-ce vendu sans ordonnance ?' }, { text: 'İlaç sevmiyorum.', fr: 'Je n\'aime pas les médicaments.' }, { text: 'Açım.', fr: 'J\'ai faim.' }, { text: 'Doktor meşgul.', fr: 'Le médecin est occupé.' }], 0),
+      line('A', 'Hayır, reçetesiz. Kırk lira.', 'Non, sans ordonnance. Quarante lires.'),
+    ] },
   ],
-
   ru: [
-    {
-      id: 'ru-kafe', emoji: '☕', title: 'В кафе',
-      steps: [
-        line('A', 'Добрый день! Что будете заказывать?', 'Bonjour ! Que voulez-vous commander ?'),
-        choice('Что будете заказывать?', 'Que voulez-vous commander ?', [
-          { text: 'Один кофе, пожалуйста.', fr: 'Un café, s\'il vous plaît.' },
-          { text: 'Меня зовут Иван.', fr: 'Je m\'appelle Ivan.' },
-          { text: 'Поезд опаздывает.', fr: 'Le train est en retard.' },
-          { text: 'До свидания!', fr: 'Au revoir !' },
-        ], 0),
-        line('A', 'Хорошо. Желаете что-нибудь поесть?', 'Bien. Voulez-vous manger quelque chose ?'),
-        choice('Желаете что-нибудь поесть?', 'Voulez-vous manger quelque chose ?', [
-          { text: 'Да, пожалуйста, кусочек торта.', fr: 'Oui, un morceau de gâteau, s\'il vous plaît.' },
-          { text: 'Сегодня очень холодно.', fr: 'Il fait très froid aujourd\'hui.' },
-          { text: 'Я не голоден.', fr: 'Je n\'ai pas faim.' },
-          { text: 'Где туалет?', fr: 'Où sont les toilettes ?' },
-        ], 0),
-        line('A', 'С вас триста рублей.', 'Ça fait trois cents roubles.'),
-        choice('С вас триста рублей.', 'Ça fait trois cents roubles.', [
-          { text: 'Вот, пожалуйста. Спасибо!', fr: 'Voilà. Merci !' },
-          { text: 'Я не говорю по-русски.', fr: 'Je ne parle pas russe.' },
-          { text: 'Это слишком дорого.', fr: 'C\'est trop cher.' },
-          { text: 'У меня нет денег.', fr: 'Je n\'ai pas d\'argent.' },
-        ], 0),
-      ],
-    },
-    {
-      id: 'ru-ulitsa', emoji: '🗺️', title: 'На улице',
-      steps: [
-        line('B', 'Извините, вы не могли бы мне помочь?', 'Excusez-moi, pourriez-vous m\'aider ?'),
-        line('A', 'Конечно! Что вам нужно?', 'Bien sûr ! De quoi avez-vous besoin ?'),
-        choice('Что вам нужно?', 'De quoi avez-vous besoin ?', [
-          { text: 'Вы не знаете, где ближайшая аптека?', fr: 'Savez-vous où est la pharmacie la plus proche ?' },
-          { text: 'Мне нравится Россия.', fr: 'J\'aime la Russie.' },
-          { text: 'Я очень устал.', fr: 'Je suis très fatigué.' },
-          { text: 'Хорошая погода сегодня.', fr: 'Il fait beau aujourd\'hui.' },
-        ], 0),
-        line('A', 'Да, идите прямо, потом поверните налево.', 'Oui, allez tout droit puis tournez à gauche.'),
-        choice('Это далеко?', 'C\'est loin ?', [
-          { text: 'Сколько минут идти пешком?', fr: 'Combien de minutes à pied ?' },
-          { text: 'Я предпочитаю автобус.', fr: 'Je préfère le bus.' },
-          { text: 'Я турист.', fr: 'Je suis touriste.' },
-          { text: 'Я не люблю ходить пешком.', fr: 'Je n\'aime pas marcher.' },
-        ], 0),
-        line('A', 'Около пяти минут пешком.', 'Environ cinq minutes à pied.'),
-        choice('Понятно?', 'C\'est clair ?', [
-          { text: 'Да, большое спасибо! До свидания!', fr: 'Oui, merci beaucoup ! Au revoir !' },
-          { text: 'Это слишком далеко.', fr: 'C\'est trop loin.' },
-          { text: 'Я не понимаю.', fr: 'Je ne comprends pas.' },
-          { text: 'Мне нужна карта.', fr: 'J\'ai besoin d\'une carte.' },
-        ], 0),
-      ],
-    },
+    { id: 'ru-hotel', emoji: '🏨', title: 'В отеле', steps: [
+      line('B', 'У меня бронь на имя Иванов.', 'J\'ai une réservation au nom d\'Ivanov.'),
+      line('A', 'Двухместный номер на две ночи.', 'Chambre double pour deux nuits.'),
+      choice('Всё верно?', 'C\'est correct ?', [{ text: 'Да, именно. В какое время завтрак?', fr: 'Oui, exactement. Le petit-déjeuner est à quelle heure ?' }, { text: 'Я люблю футбол.', fr: 'J\'aime le football.' }, { text: 'Здесь жарко.', fr: 'Il fait chaud ici.' }, { text: 'У меня нет брони.', fr: 'Je n\'ai pas de réservation.' }], 0),
+      line('A', 'Завтрак подаётся с семи до десяти.', 'Le petit-déjeuner est de sept à dix heures.'),
+      choice('Можно получить ключ?', 'Puis-je avoir la clé ?', [{ text: 'Можно получить ключ, пожалуйста?', fr: 'La clé, s.v.p. ?' }, { text: 'Мне не нравится отель.', fr: 'Je n\'aime pas l\'hôtel.' }, { text: 'Хочу пиццу.', fr: 'Je veux une pizza.' }, { text: 'Поезд опаздывает.', fr: 'Le train est en retard.' }], 0),
+      line('A', 'Вот ваш ключ. Номер 305, третий этаж.', 'Voici votre clé. Chambre 305, troisième étage.'),
+    ] },
+    { id: 'ru-restoran', emoji: '🍽️', title: 'В ресторане', steps: [
+      line('A', 'Добрый вечер. У вас есть бронь?', 'Bonsoir. Avez-vous une réservation ?'),
+      choice('У вас есть бронь?', 'Avez-vous une réservation ?', [{ text: 'Нет, но нас двое.', fr: 'Non, mais nous sommes deux.' }, { text: 'Меня зовут Наташа.', fr: 'Je m\'appelle Natacha.' }, { text: 'Музей закрыт.', fr: 'Le musée est fermé.' }, { text: 'Мне нужно такси.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
+      line('A', 'Что будете заказывать?', 'Que souhaitez-vous commander ?'),
+      choice('Какое блюдо дня?', 'Quel est le plat du jour ?', [{ text: 'Какое блюдо дня?', fr: 'Quel est le plat du jour ?' }, { text: 'Я не ем мясо.', fr: 'Je ne mange pas de viande.' }, { text: 'Хочу минеральную воду.', fr: 'Je veux de l\'eau minérale.' }, { text: 'Счёт, пожалуйста.', fr: 'L\'addition, s.v.p.' }], 0),
+      line('A', 'Блюдо дня — борщ с хлебом.', 'Le plat du jour est le bortsch avec du pain.'),
+      choice('Как платить?', 'Comment paye-t-on ?', [{ text: 'Возьму борщ.', fr: 'Je prends le bortsch.' }, { text: 'Не люблю свёклу.', fr: 'Je n\'aime pas la betterave.' }, { text: 'Ресторан далеко.', fr: 'Le restaurant est loin.' }, { text: 'У меня аллергия на морепродукты.', fr: 'Je suis allergique aux fruits de mer.' }], 0),
+    ] },
+    { id: 'ru-taksi', emoji: '🚕', title: 'В такси', steps: [
+      line('B', 'В аэропорт, пожалуйста.', 'À l\'aéroport, s.v.p.'),
+      line('A', 'В какой терминал?', 'Quel terminal ?'),
+      choice('В какой терминал?', 'Quel terminal ?', [{ text: 'Терминал два, рейс в Париж.', fr: 'Terminal deux, vol pour Paris.' }, { text: 'Я не знаю где я.', fr: 'Je ne sais pas où je suis.' }, { text: 'Я люблю Москву.', fr: 'J\'aime Moscou.' }, { text: 'Отель рядом.', fr: 'L\'hôtel est près d\'ici.' }], 0),
+      line('A', 'Примерно двадцать минут с этими пробками.', 'Environ vingt minutes avec ce trafic.'),
+      choice('Сколько будет стоить?', 'Combien ça va coûter ?', [{ text: 'Сколько приблизительно?', fr: 'Combien approximativement ?' }, { text: 'Я не тороплюсь.', fr: 'Je ne suis pas pressé.' }, { text: 'Большие пробки.', fr: 'Il y a beaucoup de circulation.' }, { text: 'Предпочитаю метро.', fr: 'Je préfère le métro.' }], 0),
+      line('A', 'Около тысячи рублей.', 'Environ mille roubles.'),
+    ] },
+    { id: 'ru-apteka', emoji: '💊', title: 'В аптеке', steps: [
+      line('B', 'У меня болит голова, есть что-нибудь?', 'J\'ai mal à la tête, avez-vous quelque chose ?'),
+      line('A', 'У вас также есть температура?', 'Avez-vous aussi de la fièvre ?'),
+      choice('Есть температура?', 'Avez-vous de la fièvre ?', [{ text: 'Нет, только голова болит и я устал.', fr: 'Non, juste mal à la tête et je suis fatigué.' }, { text: 'Я занимаюсь спортом.', fr: 'Je fais du sport.' }, { text: 'Больница далеко.', fr: 'L\'hôpital est loin.' }, { text: 'Я не говорю по-русски.', fr: 'Je ne parle pas russe.' }], 0),
+      line('A', 'Рекомендую этот ибупрофен. По таблетке каждые восемь часов.', 'Je vous recommande cet ibuprofène. Un comprimé toutes les huit heures.'),
+      choice('Нужен рецепт?', 'Faut-il une ordonnance ?', [{ text: 'Это без рецепта?', fr: 'C\'est sans ordonnance ?' }, { text: 'Не люблю лекарства.', fr: 'Je n\'aime pas les médicaments.' }, { text: 'Я голоден.', fr: 'J\'ai faim.' }, { text: 'Врач занят.', fr: 'Le médecin est occupé.' }], 0),
+      line('A', 'Нет, без рецепта. Двести рублей.', 'Non, sans ordonnance. Deux cents roubles.'),
+    ] },
   ],
-
   ja: [
-    {
-      id: 'ja-kafe', emoji: '☕', title: 'カフェで',
-      steps: [
-        line('A', 'いらっしゃいませ！ご注文はお決まりですか？', 'Bienvenue ! Avez-vous choisi ?'),
-        choice('ご注文はお決まりですか？', 'Avez-vous choisi ?', [
-          { text: 'コーヒーをひとつお願いします。', fr: 'Un café, s\'il vous plaît.' },
-          { text: '私の名前は田中です。', fr: 'Je m\'appelle Tanaka.' },
-          { text: '電車が遅れています。', fr: 'Le train est en retard.' },
-          { text: 'さようなら！', fr: 'Au revoir !' },
-        ], 0),
-        line('A', 'かしこまりました。お食事はいかがですか？', 'Bien sûr. Souhaitez-vous aussi manger quelque chose ?'),
-        choice('お食事はいかがですか？', 'Souhaitez-vous manger quelque chose ?', [
-          { text: 'はい、クロワッサンもください。', fr: 'Oui, un croissant aussi, s\'il vous plaît.' },
-          { text: '今日はとても寒いです。', fr: 'Il fait très froid aujourd\'hui.' },
-          { text: 'お腹が空いていません。', fr: 'Je n\'ai pas faim.' },
-          { text: 'トイレはどこですか？', fr: 'Où sont les toilettes ?' },
-        ], 0),
-        line('A', '合計で八百円になります。', 'Ça fait huit cents yens au total.'),
-        choice('合計で八百円になります。', 'Ça fait huit cents yens.', [
-          { text: 'はい、どうぞ。ありがとうございます！', fr: 'Voilà. Merci !' },
-          { text: '日本語が話せません。', fr: 'Je ne parle pas japonais.' },
-          { text: '高すぎます。', fr: 'C\'est trop cher.' },
-          { text: 'お金がありません。', fr: 'Je n\'ai pas d\'argent.' },
-        ], 0),
-      ],
-    },
-    {
-      id: 'ja-michi', emoji: '🗺️', title: '道で',
-      steps: [
-        line('B', 'すみません、助けていただけますか？', 'Excusez-moi, pourriez-vous m\'aider ?'),
-        line('A', 'もちろんです！何かお困りですか？', 'Bien sûr ! En quoi puis-je vous aider ?'),
-        choice('何かお困りですか？', 'En quoi puis-je vous aider ?', [
-          { text: '一番近い駅はどこですか？', fr: 'Où est la station la plus proche ?' },
-          { text: '日本が好きです。', fr: 'J\'aime le Japon.' },
-          { text: 'とても疲れました。', fr: 'Je suis très fatigué.' },
-          { text: '今日はいい天気ですね。', fr: 'Il fait beau aujourd\'hui.' },
-        ], 0),
-        line('A', 'はい、まっすぐ行って、右に曲がってください。', 'Oui, allez tout droit puis tournez à droite.'),
-        choice('遠いですか？', 'C\'est loin ?', [
-          { text: '歩いて何分かかりますか？', fr: 'Combien de minutes à pied ?' },
-          { text: 'バスの方が好きです。', fr: 'Je préfère le bus.' },
-          { text: '私は観光客です。', fr: 'Je suis touriste.' },
-          { text: '歩くのが好きではありません。', fr: 'Je n\'aime pas marcher.' },
-        ], 0),
-        line('A', '歩いて約四分です。', 'Environ quatre minutes à pied.'),
-        choice('わかりましたか？', 'Vous avez compris ?', [
-          { text: 'はい、どうもありがとうございました！', fr: 'Oui, merci beaucoup ! Au revoir !' },
-          { text: '遠すぎます。', fr: 'C\'est trop loin.' },
-          { text: 'わかりません。', fr: 'Je ne comprends pas.' },
-          { text: '地図が必要です。', fr: 'J\'ai besoin d\'une carte.' },
-        ], 0),
-      ],
-    },
+    { id: 'ja-hotel', emoji: '🏨', title: 'ホテルにて', steps: [
+      line('B', '田中という名前で予約しています。', 'J\'ai une réservation au nom de Tanaka.'),
+      line('A', 'ツインルーム、2泊ですね。', 'Chambre double pour deux nuits.'),
+      choice('お間違いないですか？', 'C\'est bien ça ?', [{ text: 'はい、そうです。朝食は何時からですか？', fr: 'Oui, c\'est ça. Le petit-déjeuner est à quelle heure ?' }, { text: 'サッカーが好きです。', fr: 'J\'aime le football.' }, { text: 'ここは暑いですね。', fr: 'Il fait chaud ici.' }, { text: '予約していません。', fr: 'Je n\'ai pas de réservation.' }], 0),
+      line('A', '朝食は7時から10時まででございます。', 'Le petit-déjeuner est de sept à dix heures.'),
+      choice('鍵をいただけますか？', 'Puis-je avoir la clé ?', [{ text: '鍵をいただけますか？', fr: 'La clé, s.v.p. ?' }, { text: 'このホテルは好きではありません。', fr: 'Je n\'aime pas cet hôtel.' }, { text: 'ピザが食べたいです。', fr: 'Je veux une pizza.' }, { text: '電車が遅れています。', fr: 'Le train est en retard.' }], 0),
+      line('A', 'こちらが鍵です。305号室、3階でございます。', 'Voici votre clé. Chambre 305, troisième étage.'),
+    ] },
+    { id: 'ja-resutoran', emoji: '🍽️', title: 'レストランにて', steps: [
+      line('A', 'ご予約はございますか？', 'Avez-vous une réservation ?'),
+      choice('ご予約はございますか？', 'Avez-vous une réservation ?', [{ text: 'いいえ、2名です。', fr: 'Non, mais nous sommes deux.' }, { text: '田中と申します。', fr: 'Je m\'appelle Tanaka.' }, { text: '美術館は閉まっています。', fr: 'Le musée est fermé.' }, { text: 'タクシーが必要です。', fr: 'J\'ai besoin d\'un taxi.' }], 0),
+      line('A', 'ご注文はお決まりですか？', 'Êtes-vous prêts à commander ?'),
+      choice('本日のおすすめは何ですか？', 'Quel est le plat du jour ?', [{ text: '本日のおすすめは何ですか？', fr: 'Quel est le plat du jour ?' }, { text: '肉が好きではありません。', fr: 'Je n\'aime pas la viande.' }, { text: 'ミネラルウォーターをください。', fr: 'Je voudrais de l\'eau minérale.' }, { text: 'お会計をお願いします。', fr: 'L\'addition, s.v.p.' }], 0),
+      line('A', '本日のおすすめはラーメンです。', 'Le plat du jour est le ramen.'),
+      choice('どうやって払いますか？', 'Comment paye-t-on ?', [{ text: 'では、ラーメンをお願いします。', fr: 'Alors, je prends le ramen, s.v.p.' }, { text: '麺が好きではありません。', fr: 'Je n\'aime pas les nouilles.' }, { text: 'レストランは遠いです。', fr: 'Le restaurant est loin.' }, { text: '海鮮アレルギーがあります。', fr: 'Je suis allergique aux fruits de mer.' }], 0),
+    ] },
+    { id: 'ja-takushi', emoji: '🚕', title: 'タクシーにて', steps: [
+      line('B', '空港までお願いします。', 'À l\'aéroport, s.v.p.'),
+      line('A', '何ターミナルですか？', 'Quel terminal ?'),
+      choice('何ターミナルですか？', 'Quel terminal ?', [{ text: '第二ターミナル、パリ行きのフライトです。', fr: 'Terminal deux, vol pour Paris.' }, { text: 'どこにいるかわかりません。', fr: 'Je ne sais pas où je suis.' }, { text: '東京が好きです。', fr: 'J\'aime Tokyo.' }, { text: 'ホテルは近くにあります。', fr: 'L\'hôtel est près d\'ici.' }], 0),
+      line('A', 'この渋滞では約20分かかります。', 'Environ vingt minutes avec ce trafic.'),
+      choice('いくらかかりますか？', 'Combien ça va coûter ?', [{ text: 'だいたいいくらかかりますか？', fr: 'Combien approximativement ?' }, { text: '急いでいません。', fr: 'Je ne suis pas pressé.' }, { text: '渋滞がひどいですね。', fr: 'Il y a beaucoup de circulation.' }, { text: '地下鉄の方が好きです。', fr: 'Je préfère le métro.' }], 0),
+      line('A', 'だいたい3,000円くらいです。', 'Environ trois mille yens.'),
+    ] },
+    { id: 'ja-yakkyoku', emoji: '💊', title: '薬局にて', steps: [
+      line('B', '頭痛に効く薬はありますか？', 'Avez-vous quelque chose pour le mal de tête ?'),
+      line('A', '熱もありますか？', 'Avez-vous aussi de la fièvre ?'),
+      choice('熱もありますか？', 'Avez-vous de la fièvre ?', [{ text: 'いいえ、頭痛だけで疲れています。', fr: 'Non, juste mal à la tête et je suis fatigué.' }, { text: 'スポーツが好きです。', fr: 'J\'aime le sport.' }, { text: '病院は遠いです。', fr: 'L\'hôpital est loin.' }, { text: '日本語が話せません。', fr: 'Je ne parle pas japonais.' }], 0),
+      line('A', 'このイブプロフェンをお勧めします。8時間ごとに1錠飲んでください。', 'Je vous recommande cet ibuprofène. Un comprimé toutes les huit heures.'),
+      choice('処方箋は必要ですか？', 'Faut-il une ordonnance ?', [{ text: '処方箋なしで買えますか？', fr: 'Puis-je l\'acheter sans ordonnance ?' }, { text: '薬が好きではありません。', fr: 'Je n\'aime pas les médicaments.' }, { text: 'おなかがすいています。', fr: 'J\'ai faim.' }, { text: '医者は忙しいです。', fr: 'Le médecin est occupé.' }], 0),
+      line('A', 'はい、処方箋は不要です。500円になります。', 'Oui, sans ordonnance. C\'est cinq cents yens.'),
+    ] },
   ],
-
   ko: [
-    {
-      id: 'ko-kape', emoji: '☕', title: '카페에서',
-      steps: [
-        line('A', '어서 오세요! 무엇을 드릴까요?', 'Bienvenue ! Que puis-je vous servir ?'),
-        choice('무엇을 드릴까요?', 'Que puis-je vous servir ?', [
-          { text: '아메리카노 한 잔 주세요.', fr: 'Un americano, s\'il vous plaît.' },
-          { text: '제 이름은 민준이에요.', fr: 'Je m\'appelle Minjun.' },
-          { text: '기차가 늦었어요.', fr: 'Le train est en retard.' },
-          { text: '안녕히 가세요!', fr: 'Au revoir !' },
-        ], 0),
-        line('A', '네. 드실 것도 있으세요?', 'Oui. Voulez-vous aussi manger quelque chose ?'),
-        choice('드실 것도 있으세요?', 'Voulez-vous aussi manger quelque chose ?', [
-          { text: '네, 크루아상도 하나 주세요.', fr: 'Oui, un croissant aussi, s\'il vous plaît.' },
-          { text: '오늘 정말 추워요.', fr: 'Il fait vraiment froid aujourd\'hui.' },
-          { text: '배가 안 고파요.', fr: 'Je n\'ai pas faim.' },
-          { text: '화장실이 어디에 있어요?', fr: 'Où sont les toilettes ?' },
-        ], 0),
-        line('A', '총 오천 원입니다.', 'Ça fait cinq mille wons au total.'),
-        choice('총 오천 원입니다.', 'Ça fait cinq mille wons.', [
-          { text: '여기 있어요. 감사합니다!', fr: 'Voilà. Merci !' },
-          { text: '한국어를 못 해요.', fr: 'Je ne parle pas coréen.' },
-          { text: '너무 비싸요.', fr: 'C\'est trop cher.' },
-          { text: '돈이 없어요.', fr: 'Je n\'ai pas d\'argent.' },
-        ], 0),
-      ],
-    },
-    {
-      id: 'ko-geori', emoji: '🗺️', title: '길에서',
-      steps: [
-        line('B', '실례합니다, 도와주실 수 있어요?', 'Excusez-moi, pourriez-vous m\'aider ?'),
-        line('A', '물론이죠! 무엇이 필요하세요?', 'Bien sûr ! De quoi avez-vous besoin ?'),
-        choice('무엇이 필요하세요?', 'De quoi avez-vous besoin ?', [
-          { text: '가장 가까운 지하철역이 어디에 있어요?', fr: 'Où est la station de métro la plus proche ?' },
-          { text: '한국을 좋아해요.', fr: 'J\'aime la Corée.' },
-          { text: '많이 피곤해요.', fr: 'Je suis très fatigué.' },
-          { text: '오늘 날씨가 좋네요.', fr: 'Il fait beau aujourd\'hui.' },
-        ], 0),
-        line('A', '네, 직진하다가 왼쪽으로 돌아가세요.', 'Oui, allez tout droit puis tournez à gauche.'),
-        choice('멀어요?', 'C\'est loin ?', [
-          { text: '걸어서 몇 분 걸려요?', fr: 'Combien de minutes à pied ?' },
-          { text: '버스 타는 게 더 좋아요.', fr: 'Je préfère prendre le bus.' },
-          { text: '저는 관광객이에요.', fr: 'Je suis touriste.' },
-          { text: '걷는 것을 좋아하지 않아요.', fr: 'Je n\'aime pas marcher.' },
-        ], 0),
-        line('A', '걸어서 약 오 분이에요.', 'Environ cinq minutes à pied.'),
-        choice('이해했어요?', 'Vous avez compris ?', [
-          { text: '네, 정말 감사합니다! 안녕히 계세요!', fr: 'Oui, merci beaucoup ! Au revoir !' },
-          { text: '너무 멀어요.', fr: 'C\'est trop loin.' },
-          { text: '이해 못 했어요.', fr: 'Je n\'ai pas compris.' },
-          { text: '지도가 필요해요.', fr: 'J\'ai besoin d\'une carte.' },
-        ], 0),
-      ],
-    },
+    { id: 'ko-hotel', emoji: '🏨', title: '호텔에서', steps: [
+      line('B', '김이라는 이름으로 예약했습니다.', 'J\'ai une réservation au nom de Kim.'),
+      line('A', '2인실 2박이시죠.', 'Chambre double pour deux nuits.'),
+      choice('맞으신가요?', 'C\'est correct ?', [{ text: '네, 맞아요. 아침 식사는 몇 시에 시작하나요?', fr: 'Oui, c\'est ça. Le petit-déjeuner est à quelle heure ?' }, { text: '저는 축구를 좋아해요.', fr: 'J\'aime le football.' }, { text: '여기 더워요.', fr: 'Il fait chaud ici.' }, { text: '예약이 없어요.', fr: 'Je n\'ai pas de réservation.' }], 0),
+      line('A', '아침 식사는 7시부터 10시까지 제공됩니다.', 'Le petit-déjeuner est de sept à dix heures.'),
+      choice('열쇠를 주시겠어요?', 'Puis-je avoir la clé ?', [{ text: '열쇠를 주시겠어요?', fr: 'La clé, s.v.p. ?' }, { text: '이 호텔이 마음에 들지 않아요.', fr: 'Je n\'aime pas cet hôtel.' }, { text: '피자를 먹고 싶어요.', fr: 'Je veux une pizza.' }, { text: '기차가 늦었어요.', fr: 'Le train est en retard.' }], 0),
+      line('A', '여기 열쇠 드립니다. 305호실, 3층이에요.', 'Voici votre clé. Chambre 305, troisième étage.'),
+    ] },
+    { id: 'ko-restaurant', emoji: '🍽️', title: '식당에서', steps: [
+      line('A', '예약하셨나요?', 'Avez-vous une réservation ?'),
+      choice('예약하셨나요?', 'Avez-vous une réservation ?', [{ text: '아니요, 두 명이에요.', fr: 'Non, mais nous sommes deux.' }, { text: '제 이름은 미나예요.', fr: 'Je m\'appelle Mina.' }, { text: '박물관이 문을 닫았어요.', fr: 'Le musée est fermé.' }, { text: '택시가 필요해요.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
+      line('A', '무엇을 주문하시겠어요?', 'Que souhaitez-vous commander ?'),
+      choice('오늘의 메뉴는 뭐예요?', 'Quel est le plat du jour ?', [{ text: '오늘의 메뉴는 뭐예요?', fr: 'Quel est le plat du jour ?' }, { text: '저는 고기를 안 먹어요.', fr: 'Je ne mange pas de viande.' }, { text: '생수 주세요.', fr: 'Je voudrais de l\'eau minérale.' }, { text: '계산서 주세요.', fr: 'L\'addition, s.v.p.' }], 0),
+      line('A', '오늘의 메뉴는 비빔밥이에요.', 'Le plat du jour est le bibimbap.'),
+      choice('어떻게 계산하나요?', 'Comment paye-t-on ?', [{ text: '그럼 비빔밥으로 주세요.', fr: 'Je prends le bibimbap, s.v.p.' }, { text: '쌀을 좋아하지 않아요.', fr: 'Je n\'aime pas le riz.' }, { text: '식당이 멀어요.', fr: 'Le restaurant est loin.' }, { text: '해산물 알레르기가 있어요.', fr: 'Je suis allergique aux fruits de mer.' }], 0),
+    ] },
+    { id: 'ko-taxi', emoji: '🚕', title: '택시에서', steps: [
+      line('B', '공항으로 가주세요.', 'À l\'aéroport, s.v.p.'),
+      line('A', '몇 번 터미널이에요?', 'Quel terminal ?'),
+      choice('몇 번 터미널이에요?', 'Quel terminal ?', [{ text: '2터미널이요. 파리행 비행기예요.', fr: 'Terminal deux, vol pour Paris.' }, { text: '어디에 있는지 모르겠어요.', fr: 'Je ne sais pas où je suis.' }, { text: '서울을 좋아해요.', fr: 'J\'aime Séoul.' }, { text: '호텔이 가까워요.', fr: 'L\'hôtel est près d\'ici.' }], 0),
+      line('A', '이 교통 상황으로는 약 20분 걸려요.', 'Environ vingt minutes avec ce trafic.'),
+      choice('얼마나 나올까요?', 'Combien ça va coûter ?', [{ text: '대략 얼마 정도 나올까요?', fr: 'Combien approximativement ?' }, { text: '급하지 않아요.', fr: 'Je ne suis pas pressé.' }, { text: '교통이 많이 막혀요.', fr: 'Il y a beaucoup de circulation.' }, { text: '지하철을 더 좋아해요.', fr: 'Je préfère le métro.' }], 0),
+      line('A', '약 20,000원 정도예요.', 'Environ vingt mille wons.'),
+    ] },
+    { id: 'ko-yakguk', emoji: '💊', title: '약국에서', steps: [
+      line('B', '두통에 좋은 약 있나요?', 'Avez-vous quelque chose pour le mal de tête ?'),
+      line('A', '열도 있으신가요?', 'Avez-vous aussi de la fièvre ?'),
+      choice('열도 있으신가요?', 'Avez-vous de la fièvre ?', [{ text: '아니요, 두통만 있고 피곤해요.', fr: 'Non, juste mal à la tête et je suis fatigué.' }, { text: '저는 운동을 좋아해요.', fr: 'J\'aime le sport.' }, { text: '병원이 멀어요.', fr: 'L\'hôpital est loin.' }, { text: '한국어를 못 해요.', fr: 'Je ne parle pas coréen.' }], 0),
+      line('A', '이 이부프로펜을 추천해요. 8시간마다 한 알 드세요.', 'Je vous recommande cet ibuprofène. Un comprimé toutes les huit heures.'),
+      choice('처방전이 필요한가요?', 'Faut-il une ordonnance ?', [{ text: '처방전 없이 살 수 있나요?', fr: 'Puis-je l\'acheter sans ordonnance ?' }, { text: '약을 좋아하지 않아요.', fr: 'Je n\'aime pas les médicaments.' }, { text: '배가 고파요.', fr: 'J\'ai faim.' }, { text: '의사가 바빠요.', fr: 'Le médecin est occupé.' }], 0),
+      line('A', '네, 처방전 없어도 돼요. 3,000원입니다.', 'Oui, sans ordonnance. C\'est trois mille wons.'),
+    ] },
   ],
-
   zh: [
-    {
-      id: 'zh-kafei', emoji: '☕', title: '在咖啡馆',
-      steps: [
-        line('A', '你好！请问要点什么？', 'Bonjour ! Que désirez-vous commander ?'),
-        choice('请问要点什么？', 'Que désirez-vous commander ?', [
-          { text: '请给我一杯咖啡。', fr: 'Un café, s\'il vous plaît.' },
-          { text: '我叫李明。', fr: 'Je m\'appelle Li Ming.' },
-          { text: '火车晚点了。', fr: 'Le train est en retard.' },
-          { text: '再见！', fr: 'Au revoir !' },
-        ], 0),
-        line('A', '好的。您还需要吃点什么吗？', 'Bien. Voulez-vous aussi manger quelque chose ?'),
-        choice('您还需要吃点什么吗？', 'Voulez-vous aussi manger quelque chose ?', [
-          { text: '是的，再来一个可颂。', fr: 'Oui, un croissant aussi, s\'il vous plaît.' },
-          { text: '今天非常冷。', fr: 'Il fait très froid aujourd\'hui.' },
-          { text: '我不饿。', fr: 'Je n\'ai pas faim.' },
-          { text: '洗手间在哪里？', fr: 'Où sont les toilettes ?' },
-        ], 0),
-        line('A', '一共三十五元。', 'Ça fait trente-cinq yuans au total.'),
-        choice('一共三十五元。', 'Ça fait trente-cinq yuans.', [
-          { text: '给您。谢谢！', fr: 'Voilà. Merci !' },
-          { text: '我不会说中文。', fr: 'Je ne parle pas chinois.' },
-          { text: '太贵了。', fr: 'C\'est trop cher.' },
-          { text: '我没有钱。', fr: 'Je n\'ai pas d\'argent.' },
-        ], 0),
-      ],
-    },
-    {
-      id: 'zh-jietou', emoji: '🗺️', title: '在街上',
-      steps: [
-        line('B', '打扰一下，您能帮我吗？', 'Excusez-moi, pourriez-vous m\'aider ?'),
-        line('A', '当然可以！您需要什么？', 'Bien sûr ! De quoi avez-vous besoin ?'),
-        choice('您需要什么？', 'De quoi avez-vous besoin ?', [
-          { text: '请问最近的地铁站在哪里？', fr: 'Où est la station de métro la plus proche ?' },
-          { text: '我喜欢中国。', fr: 'J\'aime la Chine.' },
-          { text: '我很累。', fr: 'Je suis très fatigué.' },
-          { text: '今天天气很好。', fr: 'Il fait beau aujourd\'hui.' },
-        ], 0),
-        line('A', '一直走，然后左转。', 'Allez tout droit, puis tournez à gauche.'),
-        choice('远吗？', 'C\'est loin ?', [
-          { text: '步行需要多少分钟？', fr: 'Combien de minutes à pied ?' },
-          { text: '我更喜欢坐公共汽车。', fr: 'Je préfère le bus.' },
-          { text: '我是游客。', fr: 'Je suis touriste.' },
-          { text: '我不喜欢走路。', fr: 'Je n\'aime pas marcher.' },
-        ], 0),
-        line('A', '大约步行五分钟。', 'Environ cinq minutes à pied.'),
-        choice('明白了吗？', 'Vous avez compris ?', [
-          { text: '明白了，非常感谢！再见！', fr: 'Oui, merci beaucoup ! Au revoir !' },
-          { text: '太远了。', fr: 'C\'est trop loin.' },
-          { text: '我听不懂。', fr: 'Je ne comprends pas.' },
-          { text: '我需要一张地图。', fr: 'J\'ai besoin d\'une carte.' },
-        ], 0),
-      ],
-    },
+    { id: 'zh-hotel', emoji: '🏨', title: '在酒店', steps: [
+      line('B', '我用王先生的名字预订了房间。', 'J\'ai une réservation au nom de M. Wang.'),
+      line('A', '双人间，住两晚，是吗？', 'Chambre double pour deux nuits ?'),
+      choice('是这样吗？', 'C\'est bien ça ?', [{ text: '是的，就是这样。早餐是几点开始？', fr: 'Oui, c\'est ça. Le petit-déjeuner est à quelle heure ?' }, { text: '我喜欢足球。', fr: 'J\'aime le football.' }, { text: '这里很热。', fr: 'Il fait chaud ici.' }, { text: '我没有预订。', fr: 'Je n\'ai pas de réservation.' }], 0),
+      line('A', '早餐从七点到十点提供。', 'Le petit-déjeuner est de sept à dix heures.'),
+      choice('请给我房卡。', 'La clé, s.v.p. ?', [{ text: '请给我房卡，好吗？', fr: 'La clé, s.v.p. ?' }, { text: '我不喜欢这家酒店。', fr: 'Je n\'aime pas cet hôtel.' }, { text: '我想吃披萨。', fr: 'Je veux une pizza.' }, { text: '火车晚点了。', fr: 'Le train est en retard.' }], 0),
+      line('A', '这是您的房卡。305号房，三楼。', 'Voici votre clé. Chambre 305, troisième étage.'),
+    ] },
+    { id: 'zh-restaurant', emoji: '🍽️', title: '在餐厅', steps: [
+      line('A', '请问有预订吗？', 'Avez-vous une réservation ?'),
+      choice('请问有预订吗？', 'Avez-vous une réservation ?', [{ text: '没有，但我们有两个人。', fr: 'Non, mais nous sommes deux.' }, { text: '我叫小红。', fr: 'Je m\'appelle Xiaohong.' }, { text: '博物馆关门了。', fr: 'Le musée est fermé.' }, { text: '我需要出租车。', fr: 'J\'ai besoin d\'un taxi.' }], 0),
+      line('A', '您想点什么？', 'Que souhaitez-vous ?'),
+      choice('今天的特色菜是什么？', 'Quel est le plat du jour ?', [{ text: '今天的特色菜是什么？', fr: 'Quel est le plat du jour ?' }, { text: '我不吃肉。', fr: 'Je ne mange pas de viande.' }, { text: '我要矿泉水。', fr: 'Je voudrais de l\'eau minérale.' }, { text: '结账，谢谢。', fr: 'L\'addition, s.v.p.' }], 0),
+      line('A', '今日特色菜是北京烤鸭。', 'Le plat du jour est le canard laqué de Pékin.'),
+      choice('怎么付款？', 'Comment paye-t-on ?', [{ text: '好的，我要北京烤鸭。', fr: 'Bien, je prends le canard laqué.' }, { text: '我不喜欢鸭肉。', fr: 'Je n\'aime pas le canard.' }, { text: '餐厅很远。', fr: 'Le restaurant est loin.' }, { text: '我对海鲜过敏。', fr: 'Je suis allergique aux fruits de mer.' }], 0),
+    ] },
+    { id: 'zh-taxi', emoji: '🚕', title: '坐出租车', steps: [
+      line('B', '去机场，谢谢。', 'À l\'aéroport, s.v.p.'),
+      line('A', '哪个航站楼？', 'Quel terminal ?'),
+      choice('哪个航站楼？', 'Quel terminal ?', [{ text: '2号航站楼，去巴黎的航班。', fr: 'Terminal deux, vol pour Paris.' }, { text: '我不知道我在哪里。', fr: 'Je ne sais pas où je suis.' }, { text: '我喜欢北京。', fr: 'J\'aime Pékin.' }, { text: '酒店在附近。', fr: 'L\'hôtel est près d\'ici.' }], 0),
+      line('A', '这个交通大概要二十分钟。', 'Environ vingt minutes avec ce trafic.'),
+      choice('大概要多少钱？', 'Combien ça va coûter ?', [{ text: '大概要多少钱？', fr: 'Combien approximativement ?' }, { text: '我不着急。', fr: 'Je ne suis pas pressé.' }, { text: '堵车很严重。', fr: 'Il y a beaucoup de circulation.' }, { text: '我更喜欢地铁。', fr: 'Je préfère le métro.' }], 0),
+      line('A', '大概一百五十元左右。', 'Environ cent cinquante yuans.'),
+    ] },
+    { id: 'zh-yaodian', emoji: '💊', title: '在药店', steps: [
+      line('B', '我头疼，有什么药吗？', 'J\'ai mal à la tête, avez-vous quelque chose ?'),
+      line('A', '您也发烧吗？', 'Avez-vous aussi de la fièvre ?'),
+      choice('您发烧吗？', 'Avez-vous de la fièvre ?', [{ text: '不，只是头疼，而且我很累。', fr: 'Non, juste mal à la tête et je suis fatigué.' }, { text: '我喜欢运动。', fr: 'J\'aime le sport.' }, { text: '医院很远。', fr: 'L\'hôpital est loin.' }, { text: '我不会说中文。', fr: 'Je ne parle pas chinois.' }], 0),
+      line('A', '推荐您用这个布洛芬，每八小时吃一片。', 'Je vous recommande cet ibuprofène. Un comprimé toutes les huit heures.'),
+      choice('需要处方吗？', 'Faut-il une ordonnance ?', [{ text: '不需要处方就能买吗？', fr: 'Puis-je l\'acheter sans ordonnance ?' }, { text: '我不喜欢吃药。', fr: 'Je n\'aime pas les médicaments.' }, { text: '我饿了。', fr: 'J\'ai faim.' }, { text: '医生很忙。', fr: 'Le médecin est occupé.' }], 0),
+      line('A', '不需要处方，二十元。', 'Sans ordonnance. C\'est vingt yuans.'),
+    ] },
   ],
-
   ar: [
-    {
-      id: 'ar-maqha', emoji: '☕', title: 'في المقهى',
-      steps: [
-        line('A', 'صباح الخير! ماذا تريد أن تطلب؟', 'Bonjour ! Que voulez-vous commander ?'),
-        choice('ماذا تريد أن تطلب؟', 'Que voulez-vous commander ?', [
-          { text: 'أريد قهوة من فضلك.', fr: 'Je voudrais un café, s\'il vous plaît.' },
-          { text: 'اسمي محمد.', fr: 'Je m\'appelle Mohammed.' },
-          { text: 'القطار متأخر.', fr: 'Le train est en retard.' },
-          { text: 'مع السلامة!', fr: 'Au revoir !' },
-        ], 0),
-        line('A', 'بكل سرور. هل تريد أيضاً شيئاً تأكله؟', 'Avec plaisir. Voulez-vous aussi manger quelque chose ?'),
-        choice('هل تريد أيضاً شيئاً تأكله؟', 'Voulez-vous aussi manger quelque chose ?', [
-          { text: 'نعم، كرواسون من فضلك.', fr: 'Oui, un croissant s\'il vous plaît.' },
-          { text: 'الطقس بارد جداً اليوم.', fr: 'Il fait très froid aujourd\'hui.' },
-          { text: 'لست جائعاً.', fr: 'Je n\'ai pas faim.' },
-          { text: 'أين الحمام؟', fr: 'Où sont les toilettes ?' },
-        ], 0),
-        line('A', 'المجموع خمسة وعشرون درهماً.', 'Le total est de vingt-cinq dirhams.'),
-        choice('المجموع خمسة وعشرون درهماً.', 'Le total est de vingt-cinq dirhams.', [
-          { text: 'تفضل. شكراً جزيلاً!', fr: 'Voilà. Merci beaucoup !' },
-          { text: 'لا أتكلم العربية.', fr: 'Je ne parle pas arabe.' },
-          { text: 'هذا غالٍ جداً.', fr: 'C\'est trop cher.' },
-          { text: 'لا أملك نقوداً.', fr: 'Je n\'ai pas d\'argent.' },
-        ], 0),
-      ],
-    },
-    {
-      id: 'ar-sharia', emoji: '🗺️', title: 'في الشارع',
-      steps: [
-        line('B', 'عفواً، هل يمكنك مساعدتي؟', 'Excusez-moi, pouvez-vous m\'aider ?'),
-        line('A', 'بالتأكيد! ماذا تحتاج؟', 'Bien sûr ! De quoi avez-vous besoin ?'),
-        choice('ماذا تحتاج؟', 'De quoi avez-vous besoin ?', [
-          { text: 'هل تعرف أين أقرب محطة مترو؟', fr: 'Savez-vous où est la station de métro la plus proche ?' },
-          { text: 'أنا أحب العالم العربي.', fr: 'J\'aime le monde arabe.' },
-          { text: 'أنا متعب جداً.', fr: 'Je suis très fatigué.' },
-          { text: 'الجو جميل اليوم.', fr: 'Il fait beau aujourd\'hui.' },
-        ], 0),
-        line('A', 'نعم، اذهب مباشرة ثم اتجه يساراً.', 'Oui, allez tout droit puis tournez à gauche.'),
-        choice('هل هو بعيد؟', 'C\'est loin ?', [
-          { text: 'كم دقيقة مشياً؟', fr: 'Combien de minutes à pied ?' },
-          { text: 'أفضل أخذ الحافلة.', fr: 'Je préfère prendre le bus.' },
-          { text: 'أنا سائح.', fr: 'Je suis touriste.' },
-          { text: 'لا أحب المشي.', fr: 'Je n\'aime pas marcher.' },
-        ], 0),
-        line('A', 'حوالي خمس دقائق مشياً.', 'Environ cinq minutes à pied.'),
-        choice('هل فهمت؟', 'Vous avez compris ?', [
-          { text: 'نعم، شكراً جزيلاً! مع السلامة!', fr: 'Oui, merci beaucoup ! Au revoir !' },
-          { text: 'هذا بعيد جداً.', fr: 'C\'est trop loin.' },
-          { text: 'لم أفهم.', fr: 'Je n\'ai pas compris.' },
-          { text: 'أحتاج إلى خريطة.', fr: 'J\'ai besoin d\'une carte.' },
-        ], 0),
-      ],
-    },
+    { id: 'ar-hotel', emoji: '🏨', title: 'في الفندق', steps: [
+      line('B', 'لدي حجز باسم أحمد.', 'J\'ai une réservation au nom d\'Ahmad.'),
+      line('A', 'غرفة مزدوجة لليلتين.', 'Chambre double pour deux nuits.'),
+      choice('هل هذا صحيح؟', 'C\'est correct ?', [{ text: 'نعم، بالضبط. في أي وقت يكون الإفطار؟', fr: 'Oui, exactement. Le petit-déjeuner est à quelle heure ?' }, { text: 'أنا أحب كرة القدم.', fr: 'J\'aime le football.' }, { text: 'الجو حار هنا.', fr: 'Il fait chaud ici.' }, { text: 'ليس لدي حجز.', fr: 'Je n\'ai pas de réservation.' }], 0),
+      line('A', 'الإفطار يُقدَّم من الساعة السابعة حتى العاشرة.', 'Le petit-déjeuner est de sept à dix heures.'),
+      choice('هل يمكنني الحصول على المفتاح؟', 'Puis-je avoir la clé ?', [{ text: 'هل يمكنني الحصول على المفتاح من فضلك؟', fr: 'La clé, s.v.p. ?' }, { text: 'لا أحب هذا الفندق.', fr: 'Je n\'aime pas cet hôtel.' }, { text: 'أريد بيتزا.', fr: 'Je veux une pizza.' }, { text: 'القطار متأخر.', fr: 'Le train est en retard.' }], 0),
+      line('A', 'تفضل مفتاحك. الغرفة 205، الطابق الثاني.', 'Voici votre clé. Chambre 205, deuxième étage.'),
+    ] },
+    { id: 'ar-matam', emoji: '🍽️', title: 'في المطعم', steps: [
+      line('A', 'هل لديكم حجز؟', 'Avez-vous une réservation ?'),
+      choice('هل لديكم حجز؟', 'Avez-vous une réservation ?', [{ text: 'لا، لكننا شخصان.', fr: 'Non, mais nous sommes deux.' }, { text: 'اسمي فاطمة.', fr: 'Je m\'appelle Fatima.' }, { text: 'المتحف مغلق.', fr: 'Le musée est fermé.' }, { text: 'أحتاج سيارة أجرة.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
+      line('A', 'ماذا تريدون أن تطلبوا؟', 'Que souhaitez-vous commander ?'),
+      choice('ما هو طبق اليوم؟', 'Quel est le plat du jour ?', [{ text: 'ما هو طبق اليوم؟', fr: 'Quel est le plat du jour ?' }, { text: 'لا أحب اللحم.', fr: 'Je n\'aime pas la viande.' }, { text: 'أريد ماء معدنياً.', fr: 'Je veux de l\'eau minérale.' }, { text: 'الحساب من فضلك.', fr: 'L\'addition, s.v.p.' }], 0),
+      line('A', 'طبق اليوم هو كبسة الدجاج.', 'Le plat du jour est le kabsa au poulet.'),
+      choice('كيف يتم الدفع؟', 'Comment paye-t-on ?', [{ text: 'سآخذ الكبسة.', fr: 'Je prends le kabsa.' }, { text: 'لا أحب الأرز.', fr: 'Je n\'aime pas le riz.' }, { text: 'المطعم بعيد.', fr: 'Le restaurant est loin.' }, { text: 'لدي حساسية من المأكولات البحرية.', fr: 'Je suis allergique aux fruits de mer.' }], 0),
+    ] },
+    { id: 'ar-taxi', emoji: '🚕', title: 'في سيارة الأجرة', steps: [
+      line('B', 'إلى المطار من فضلك.', 'À l\'aéroport, s.v.p.'),
+      line('A', 'أي صالة؟', 'Quel terminal ?'),
+      choice('أي صالة؟', 'Quel terminal ?', [{ text: 'الصالة الثانية، رحلة إلى باريس.', fr: 'Terminal deux, vol pour Paris.' }, { text: 'لا أعرف أين أنا.', fr: 'Je ne sais pas où je suis.' }, { text: 'أحب الرياض.', fr: 'J\'aime Riyad.' }, { text: 'الفندق قريب.', fr: 'L\'hôtel est près d\'ici.' }], 0),
+      line('A', 'حوالي عشرين دقيقة مع هذه الزحمة.', 'Environ vingt minutes avec ce trafic.'),
+      choice('كم سيكلف؟', 'Combien ça va coûter ?', [{ text: 'كم سيكون تقريباً؟', fr: 'Combien approximativement ?' }, { text: 'أنا لست مستعجلاً.', fr: 'Je ne suis pas pressé.' }, { text: 'يوجد ازدحام كبير.', fr: 'Il y a beaucoup de circulation.' }, { text: 'أفضل المترو.', fr: 'Je préfère le métro.' }], 0),
+      line('A', 'حوالي خمسين ريالاً.', 'Environ cinquante riyals.'),
+    ] },
+    { id: 'ar-saydaliya', emoji: '💊', title: 'في الصيدلية', steps: [
+      line('B', 'أعاني من صداع، هل عندكم شيء؟', 'J\'ai mal à la tête, avez-vous quelque chose ?'),
+      line('A', 'هل عندك حمى أيضاً؟', 'Avez-vous aussi de la fièvre ?'),
+      choice('هل عندك حمى؟', 'Avez-vous de la fièvre ?', [{ text: 'لا، فقط صداع وأنا متعب.', fr: 'Non, juste mal à la tête et je suis fatigué.' }, { text: 'أنا أمارس الرياضة.', fr: 'Je fais du sport.' }, { text: 'المستشفى بعيد.', fr: 'L\'hôpital est loin.' }, { text: 'لا أتكلم العربية.', fr: 'Je ne parle pas arabe.' }], 0),
+      line('A', 'أنصحك بهذا الإيبوبروفين. حبة واحدة كل ثماني ساعات.', 'Je vous recommande cet ibuprofène. Un comprimé toutes les huit heures.'),
+      choice('هل يحتاج وصفة طبية؟', 'Faut-il une ordonnance ?', [{ text: 'هل يُباع بدون وصفة طبية؟', fr: 'Est-ce vendu sans ordonnance ?' }, { text: 'لا أحب الأدوية.', fr: 'Je n\'aime pas les médicaments.' }, { text: 'أنا جائع.', fr: 'J\'ai faim.' }, { text: 'الطبيب مشغول.', fr: 'Le médecin est occupé.' }], 0),
+      line('A', 'لا، بدون وصفة. عشرون ريالاً.', 'Non, sans ordonnance. Vingt riyals.'),
+    ] },
   ],
-
   hi: [
-    {
-      id: 'hi-cafe', emoji: '☕', title: 'कैफ़े में',
-      steps: [
-        line('A', 'नमस्ते! आप क्या लेंगे?', 'Bonjour ! Que prendrez-vous ?'),
-        choice('आप क्या लेंगे?', 'Que prendrez-vous ?', [
-          { text: 'एक चाय देना, कृपया।', fr: 'Un thé, s\'il vous plaît.' },
-          { text: 'मेरा नाम राज है।', fr: 'Je m\'appelle Raj.' },
-          { text: 'ट्रेन देर से आ रही है।', fr: 'Le train est en retard.' },
-          { text: 'अलविदा!', fr: 'Au revoir !' },
-        ], 0),
-        line('A', 'ज़रूर। कुछ खाना भी चाहिए?', 'Bien sûr. Voulez-vous aussi manger quelque chose ?'),
-        choice('कुछ खाना भी चाहिए?', 'Voulez-vous aussi manger quelque chose ?', [
-          { text: 'हाँ, एक समोसा भी दे दो।', fr: 'Oui, un samosa aussi, s\'il vous plaît.' },
-          { text: 'आज बहुत ठंड है।', fr: 'Il fait très froid aujourd\'hui.' },
-          { text: 'मुझे भूख नहीं है।', fr: 'Je n\'ai pas faim.' },
-          { text: 'टॉयलेट कहाँ है?', fr: 'Où sont les toilettes ?' },
-        ], 0),
-        line('A', 'कुल मिलाकर पचास रुपए होंगे।', 'Ça fait cinquante roupies au total.'),
-        choice('कुल मिलाकर पचास रुपए होंगे।', 'Ça fait cinquante roupies.', [
-          { text: 'लीजिए। बहुत धन्यवाद!', fr: 'Voilà. Merci beaucoup !' },
-          { text: 'मुझे हिंदी नहीं आती।', fr: 'Je ne parle pas hindi.' },
-          { text: 'यह बहुत महँगा है।', fr: 'C\'est trop cher.' },
-          { text: 'मेरे पास पैसे नहीं हैं।', fr: 'Je n\'ai pas d\'argent.' },
-        ], 0),
-      ],
-    },
-    {
-      id: 'hi-sadak', emoji: '🗺️', title: 'सड़क पर',
-      steps: [
-        line('B', 'माफ़ कीजिए, क्या आप मेरी मदद कर सकते हैं?', 'Excusez-moi, pouvez-vous m\'aider ?'),
-        line('A', 'ज़रूर! आपको क्या चाहिए?', 'Bien sûr ! De quoi avez-vous besoin ?'),
-        choice('आपको क्या चाहिए?', 'De quoi avez-vous besoin ?', [
-          { text: 'सबसे पास का मेट्रो स्टेशन कहाँ है?', fr: 'Où est la station de métro la plus proche ?' },
-          { text: 'मुझे भारत पसंद है।', fr: 'J\'aime l\'Inde.' },
-          { text: 'मैं बहुत थका हुआ हूँ।', fr: 'Je suis très fatigué.' },
-          { text: 'आज मौसम अच्छा है।', fr: 'Il fait beau aujourd\'hui.' },
-        ], 0),
-        line('A', 'हाँ, सीधे जाइए और फिर बाईं ओर मुड़ जाइए।', 'Oui, allez tout droit puis tournez à gauche.'),
-        choice('क्या यह दूर है?', 'C\'est loin ?', [
-          { text: 'पैदल चलने में कितना समय लगेगा?', fr: 'Combien de temps faut-il à pied ?' },
-          { text: 'मैं बस लेना पसंद करूँगा।', fr: 'Je préfère prendre le bus.' },
-          { text: 'मैं पर्यटक हूँ।', fr: 'Je suis touriste.' },
-          { text: 'मुझे चलना पसंद नहीं।', fr: 'Je n\'aime pas marcher.' },
-        ], 0),
-        line('A', 'पैदल लगभग पाँच मिनट।', 'Environ cinq minutes à pied.'),
-        choice('समझ गए?', 'Vous avez compris ?', [
-          { text: 'हाँ, बहुत-बहुत धन्यवाद! नमस्ते!', fr: 'Oui, merci beaucoup ! Au revoir !' },
-          { text: 'यह बहुत दूर है।', fr: 'C\'est trop loin.' },
-          { text: 'मुझे समझ नहीं आया।', fr: 'Je n\'ai pas compris.' },
-          { text: 'मुझे नक्शे की ज़रूरत है।', fr: 'J\'ai besoin d\'une carte.' },
-        ], 0),
-      ],
-    },
+    { id: 'hi-hotel', emoji: '🏨', title: 'होटल में', steps: [
+      line('B', 'शर्मा के नाम पर बुकिंग है।', 'J\'ai une réservation au nom de Sharma.'),
+      line('A', 'दो रातों के लिए डबल रूम।', 'Chambre double pour deux nuits.'),
+      choice('क्या यह सही है?', 'C\'est correct ?', [{ text: 'हाँ, बिल्कुल। नाश्ता किस समय होता है?', fr: 'Oui, exactement. Le petit-déjeuner est à quelle heure ?' }, { text: 'मुझे फुटबॉल पसंद है।', fr: 'J\'aime le football.' }, { text: 'यहाँ गर्मी है।', fr: 'Il fait chaud ici.' }, { text: 'मेरी कोई बुकिंग नहीं है।', fr: 'Je n\'ai pas de réservation.' }], 0),
+      line('A', 'नाश्ता सात से दस बजे तक परोसा जाता है।', 'Le petit-déjeuner est de sept à dix heures.'),
+      choice('चाबी मिल सकती है?', 'Puis-je avoir la clé ?', [{ text: 'क्या मुझे चाबी मिल सकती है, कृपया?', fr: 'La clé, s.v.p. ?' }, { text: 'मुझे यह होटल पसंद नहीं है।', fr: 'Je n\'aime pas cet hôtel.' }, { text: 'मुझे पिज्जा चाहिए।', fr: 'Je veux une pizza.' }, { text: 'ट्रेन देरी से है।', fr: 'Le train est en retard.' }], 0),
+      line('A', 'यह रही आपकी चाबी। कमरा 205, दूसरी मंजिल।', 'Voici votre clé. Chambre 205, deuxième étage.'),
+    ] },
+    { id: 'hi-restaurant', emoji: '🍽️', title: 'रेस्टोरेंट में', steps: [
+      line('A', 'क्या आपकी बुकिंग है?', 'Avez-vous une réservation ?'),
+      choice('क्या आपकी बुकिंग है?', 'Avez-vous une réservation ?', [{ text: 'नहीं, लेकिन हम दो लोग हैं।', fr: 'Non, mais nous sommes deux.' }, { text: 'मेरा नाम प्रिया है।', fr: 'Je m\'appelle Priya.' }, { text: 'संग्रहालय बंद है।', fr: 'Le musée est fermé.' }, { text: 'मुझे टैक्सी चाहिए।', fr: 'J\'ai besoin d\'un taxi.' }], 0),
+      line('A', 'आप क्या ऑर्डर करना चाहेंगे?', 'Que souhaitez-vous commander ?'),
+      choice('आज का विशेष क्या है?', 'Quel est le plat du jour ?', [{ text: 'आज का विशेष क्या है?', fr: 'Quel est le plat du jour ?' }, { text: 'मुझे मांस पसंद नहीं है।', fr: 'Je n\'aime pas la viande.' }, { text: 'मुझे मिनरल वाटर चाहिए।', fr: 'Je veux de l\'eau minérale.' }, { text: 'बिल, कृपया।', fr: 'L\'addition, s.v.p.' }], 0),
+      line('A', 'आज का विशेष दाल मखनी और नान है।', 'Le plat du jour est le dal makhani avec du naan.'),
+      choice('भुगतान कैसे होता है?', 'Comment paye-t-on ?', [{ text: 'बढ़िया, मैं दाल मखनी लूँगा।', fr: 'Parfait, je prends le dal makhani.' }, { text: 'मुझे दाल पसंद नहीं है।', fr: 'Je n\'aime pas les lentilles.' }, { text: 'रेस्टोरेंट दूर है।', fr: 'Le restaurant est loin.' }, { text: 'मुझे मूंगफली से एलर्जी है।', fr: 'Je suis allergique aux arachides.' }], 0),
+    ] },
+    { id: 'hi-taxi', emoji: '🚕', title: 'टैक्सी में', steps: [
+      line('B', 'एयरपोर्ट चलिए, कृपया।', 'À l\'aéroport, s.v.p.'),
+      line('A', 'कौन सा टर्मिनल?', 'Quel terminal ?'),
+      choice('कौन सा टर्मिनल?', 'Quel terminal ?', [{ text: 'टर्मिनल दो, पेरिस की फ्लाइट है।', fr: 'Terminal deux, vol pour Paris.' }, { text: 'मुझे नहीं पता मैं कहाँ हूँ।', fr: 'Je ne sais pas où je suis.' }, { text: 'मुझे दिल्ली पसंद है।', fr: 'J\'aime Delhi.' }, { text: 'होटल पास में है।', fr: 'L\'hôtel est près d\'ici.' }], 0),
+      line('A', 'इस ट्रैफिक में करीब बीस मिनट लगेंगे।', 'Environ vingt minutes avec ce trafic.'),
+      choice('कितना किराया होगा?', 'Combien ça va coûter ?', [{ text: 'लगभग कितना किराया होगा?', fr: 'Combien approximativement ?' }, { text: 'मुझे जल्दी नहीं है।', fr: 'Je ne suis pas pressé.' }, { text: 'बहुत ट्रैफिक है।', fr: 'Il y a beaucoup de circulation.' }, { text: 'मैं मेट्रो पसंद करता हूँ।', fr: 'Je préfère le métro.' }], 0),
+      line('A', 'करीब तीन सौ रुपये होंगे।', 'Environ trois cents roupies.'),
+    ] },
+    { id: 'hi-dawakhana', emoji: '💊', title: 'दवाखाने में', steps: [
+      line('B', 'सिर में दर्द है, कुछ है क्या?', 'J\'ai mal à la tête, avez-vous quelque chose ?'),
+      line('A', 'क्या बुखार भी है?', 'Avez-vous aussi de la fièvre ?'),
+      choice('क्या बुखार भी है?', 'Avez-vous de la fièvre ?', [{ text: 'नहीं, सिर्फ सिरदर्द है और थका हुआ हूँ।', fr: 'Non, juste mal à la tête et je suis fatigué.' }, { text: 'मुझे खेल पसंद है।', fr: 'J\'aime le sport.' }, { text: 'अस्पताल दूर है।', fr: 'L\'hôpital est loin.' }, { text: 'मैं हिंदी नहीं बोलता।', fr: 'Je ne parle pas hindi.' }], 0),
+      line('A', 'यह इबुप्रोफेन लीजिए। हर आठ घंटे में एक गोली लें।', 'Je vous recommande cet ibuprofène. Un comprimé toutes les huit heures.'),
+      choice('क्या पर्चे की जरूरत है?', 'Faut-il une ordonnance ?', [{ text: 'क्या यह बिना पर्चे के मिलती है?', fr: 'Puis-je l\'acheter sans ordonnance ?' }, { text: 'मुझे दवाएँ पसंद नहीं हैं।', fr: 'Je n\'aime pas les médicaments.' }, { text: 'मुझे भूख लगी है।', fr: 'J\'ai faim.' }, { text: 'डॉक्टर व्यस्त हैं।', fr: 'Le médecin est occupé.' }], 0),
+      line('A', 'नहीं, बिना पर्चे के मिलती है। पचास रुपये।', 'Non, sans ordonnance. Cinquante roupies.'),
+    ] },
   ],
-
 }
+
+export default DIALOGUES
