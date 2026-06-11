@@ -47,7 +47,10 @@
           :class="entry.speaker === 'A' ? 'entry-a' : 'entry-b'"
         >
           <div class="bubble" :dir="isRtl && entry.speaker !== 'B' ? 'rtl' : 'ltr'">
-            <span class="bubble-text">{{ entry.text }}</span>
+            <div class="bubble-top">
+              <span class="bubble-text">{{ entry.text }}</span>
+              <button class="tts-btn" @click.stop="speak(entry.text)" title="Écouter">🔊</button>
+            </div>
             <span class="bubble-fr">{{ entry.fr }}</span>
           </div>
         </div>
@@ -126,6 +129,22 @@ const selectedIndex = ref<number | null>(null)
 const langCode  = computed(() => store.currentLang?.code ?? '')
 const isRtl     = computed(() => store.currentLang?.is_rtl ?? false)
 const scenarios = computed(() => DIALOGUES[langCode.value] ?? [])
+
+// TTS — mapping code langue → BCP 47
+const LANG_BCP47: Record<string, string> = {
+  es: 'es-ES', en: 'en-US', de: 'de-DE', it: 'it-IT',
+  pt: 'pt-PT', nl: 'nl-NL', pl: 'pl-PL', tr: 'tr-TR',
+  ru: 'ru-RU', ja: 'ja-JP', ko: 'ko-KR', zh: 'zh-CN',
+  ar: 'ar-SA', hi: 'hi-IN',
+}
+
+function speak(text: string) {
+  if (!window.speechSynthesis) return
+  window.speechSynthesis.cancel()
+  const utt = new SpeechSynthesisUtterance(text)
+  utt.lang = LANG_BCP47[langCode.value] ?? langCode.value
+  window.speechSynthesis.speak(utt)
+}
 
 const currentStep = computed(() => {
   if (!current.value) return null
@@ -283,8 +302,15 @@ watch(done, (val) => {
   display: flex; flex-direction: column; gap: .15rem;
 }
 .entry-b .bubble { background: #1e3a5f; }
-.bubble-text { color: var(--text); font-size: .92rem; }
+.bubble-top  { display: flex; align-items: flex-start; gap: .4rem; }
+.bubble-text { color: var(--text); font-size: .92rem; flex: 1; }
 .bubble-fr   { color: var(--muted); font-size: .78rem; font-style: italic; }
+.tts-btn {
+  background: none; border: none; cursor: pointer; font-size: .85rem;
+  opacity: .45; padding: 0; line-height: 1; flex-shrink: 0; margin-top: .05rem;
+  transition: opacity .15s;
+}
+.tts-btn:hover { opacity: 1; }
 
 /* Choices */
 .choices { display: flex; flex-direction: column; gap: .5rem; margin-bottom: .75rem; }
