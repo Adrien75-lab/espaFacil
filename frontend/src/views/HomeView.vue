@@ -26,33 +26,8 @@
       <button class="btn-back" @click="store.currentLang = null">← Changer de langue</button>
       <h2><FlagIcon :lang="store.currentLang.code" :size="28" /> {{ store.currentLang.name }}</h2>
 
-      <p class="subtitle">Choisissez un thème</p>
-      <div class="theme-grid">
-        <button
-          v-for="theme in store.themes"
-          :key="theme.key"
-          class="theme-card"
-          :class="{ active: store.currentTheme?.key === theme.key }"
-          @click="store.selectTheme(theme.key)"
-        >
-          <span class="theme-emoji">{{ theme.emoji }}</span>
-          <span class="theme-name">{{ theme.name }}</span>
-        </button>
-      </div>
-
-      <div class="level-row">
-        <span class="label">Niveau :</span>
-        <button
-          v-for="lvl in levels"
-          :key="lvl.key"
-          class="btn-level"
-          :class="{ active: store.currentLevel === lvl.key }"
-          @click="store.setLevel(lvl.key)"
-        >{{ lvl.label }}</button>
-      </div>
-
-      <!-- Sélecteur de mode -->
-      <p class="subtitle" style="margin-top:1rem">Mode de jeu :</p>
+      <!-- Sélecteur de mode (en premier) -->
+      <p class="subtitle">Mode de jeu :</p>
       <div class="mode-row">
         <button
           v-for="m in modes"
@@ -66,9 +41,40 @@
         </button>
       </div>
 
+      <!-- Thème + niveau : masqués en mode Dialogue -->
+      <template v-if="currentMode !== 'dialogue'">
+        <p class="subtitle" style="margin-top:1rem">Choisissez un thème</p>
+        <div class="theme-grid">
+          <button
+            v-for="theme in store.themes"
+            :key="theme.key"
+            class="theme-card"
+            :class="{ active: store.currentTheme?.key === theme.key }"
+            @click="store.selectTheme(theme.key)"
+          >
+            <span class="theme-emoji">{{ theme.emoji }}</span>
+            <span class="theme-name">{{ theme.name }}</span>
+          </button>
+        </div>
+
+        <div class="level-row">
+          <span class="label">Niveau :</span>
+          <button
+            v-for="lvl in levels"
+            :key="lvl.key"
+            class="btn-level"
+            :class="{ active: store.currentLevel === lvl.key }"
+            @click="store.setLevel(lvl.key)"
+          >{{ lvl.label }}</button>
+        </div>
+      </template>
+
+      <!-- Info Dialogue -->
+      <p v-else class="dialogue-info">💬 Les scénarios sont indépendants du thème — lancez directement !</p>
+
       <button
         class="btn-start"
-        :disabled="!store.currentTheme"
+        :disabled="currentMode !== 'dialogue' && !store.currentTheme"
         @click="goMode"
       >▶ Commencer</button>
 
@@ -158,6 +164,7 @@ h2 { margin: 1rem 0 0.5rem; font-size: 1.4rem; }
 .btn-start:not(:disabled):hover { opacity: 0.88; }
 
 .btn-back { background: none; border: none; color: var(--muted); cursor: pointer; margin-bottom: 0.5rem; font-size: 0.9rem; }
+.dialogue-info { color: var(--muted2); font-size: 0.9rem; margin: 1rem 0 1.5rem; padding: 0.75rem 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; }
 .loader { margin-top: 2rem; color: var(--muted); }
 
 .mode-row { display: flex; gap: 0.75rem; justify-content: center; margin-bottom: 1.5rem; flex-wrap: wrap; }
