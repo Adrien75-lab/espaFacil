@@ -85,6 +85,14 @@ class DashboardController extends Controller
             ];
         })->sortByDesc('xp')->values();
 
+        // XP agrégé par mode (toutes langues)
+        $modeXp = [];
+        foreach ($stats as $s) {
+            foreach ($s->mode_xp ?? [] as $mode => $xp) {
+                $modeXp[$mode] = ($modeXp[$mode] ?? 0) + $xp;
+            }
+        }
+
         return response()->json([
             'user'           => ['name' => $user->name, 'email' => $user->email],
             'total_xp'       => $totalXp,
@@ -93,6 +101,7 @@ class DashboardController extends Controller
             'xp_history'     => $xpHistory,  // [{date, xp}] trié ASC
             'badges'         => $badges,
             'languages'      => $langStats,
+            'mode_xp'        => $modeXp,
         ]);
     }
 

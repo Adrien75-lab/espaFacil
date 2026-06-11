@@ -78,6 +78,11 @@ class ProgressController extends Controller
         krsort($hist);
         $stat->xp_history = array_slice($hist, 0, 30, true);
 
+        // XP par mode
+        $modeXp = $stat->mode_xp ?? [];
+        $modeXp[$data['mode']] = ($modeXp[$data['mode']] ?? 0) + $data['xp_gained'];
+        $stat->mode_xp = $modeXp;
+
         $stat->save();
 
         // --- Progress ---

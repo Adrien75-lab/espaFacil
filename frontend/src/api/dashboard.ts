@@ -5,6 +5,7 @@ export interface DashboardData {
   current_streak:  number
   xp_history:      Array<{ date: string; xp: number }>
   badges:          Array<{ key: string; language_id: number; unlocked_at: string }>
+  mode_xp:         Record<string, number>
   languages:       Array<{
     code:           string
     name:           string

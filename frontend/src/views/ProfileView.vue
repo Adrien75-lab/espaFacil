@@ -76,22 +76,54 @@
         </div>
       </section>
 
-      <!-- Calendrier de série (30 jours) -->
+      <!-- Heatmap 365 jours GitHub-style -->
       <section class="section">
-        <h2>📅 Activité</h2>
-        <div class="cal-grid">
-          <div
-            v-for="day in calendarDays"
-            :key="day.date"
-            class="cal-day"
-            :class="{
-              active: day.active,
-              today: day.date === todayStr,
-            }"
-            :title="day.date"
-          ></div>
+        <h2>📅 Activité — 12 derniers mois</h2>
+        <div class="heatmap-scroll">
+          <div class="heatmap-grid">
+            <div
+              v-for="day in heatmapDays"
+              :key="day.date"
+              class="hm-cell"
+              :class="['hm-' + day.level, { 'hm-today': day.date === todayStr }]"
+              :title="`${day.date} — ${day.xp} XP`"
+            ></div>
+          </div>
         </div>
-        <p class="cal-hint">● = jour actif · dernier mois</p>
+        <div class="hm-legend">
+          <span class="hm-legend-label">Moins</span>
+          <span class="hm-cell hm-0"></span>
+          <span class="hm-cell hm-1"></span>
+          <span class="hm-cell hm-2"></span>
+          <span class="hm-cell hm-3"></span>
+          <span class="hm-cell hm-4"></span>
+          <span class="hm-legend-label">Plus</span>
+        </div>
+      </section>
+
+      <!-- Radar chart compétences -->
+      <section class="section" v-if="data.total_xp > 0">
+        <h2>🕸️ Compétences</h2>
+        <div class="radar-wrap">
+          <svg viewBox="0 0 260 260" class="radar-svg">
+            <!-- Grilles -->
+            <polygon v-for="r in [0.25, 0.5, 0.75, 1]" :key="r"
+              :points="radarGrid(r)" fill="none" stroke="var(--border)" stroke-width="1"/>
+            <!-- Axes -->
+            <line v-for="a in radarAxes" :key="a.label"
+              x1="130" y1="130" :x2="a.x2" :y2="a.y2"
+              stroke="var(--border)" stroke-width="1"/>
+            <!-- Labels -->
+            <text v-for="a in radarAxes" :key="'l'+a.label"
+              :x="a.lx" :y="a.ly" text-anchor="middle" dominant-baseline="middle"
+              class="radar-label">{{ a.label }}</text>
+            <!-- Données -->
+            <polygon :points="radarData" fill="#6366f130" stroke="#6366f1" stroke-width="2"/>
+            <!-- Points -->
+            <circle v-for="(pt, i) in radarPoints" :key="i"
+              :cx="pt.x" :cy="pt.y" r="3" fill="#6366f1"/>
+          </svg>
+        </div>
       </section>
 
       <!-- Badges -->
@@ -189,22 +221,80 @@ const uniqueBadges = computed(() => {
   })
 })
 
-// Calendrier 30 jours
-const calendarDays = computed(() => {
+// Heatmap 365 jours
+const heatmapDays = computed(() => {
   if (!data.value) return []
+  // XP par jour (toutes langues fusionnées)
+  const xpByDay: Record<string, number> = {}
+  for (const entry of data.value.xp_history) {
+    xpByDay[entry.date] = (xpByDay[entry.date] ?? 0) + entry.xp
+  }
+  // On complète avec les activity_days des langues (jours sans xp_history)
   const allActive = new Set<string>()
   for (const l of data.value.languages) {
     for (const d of l.activity_days) allActive.add(d)
   }
+  const maxXp = Math.max(...Object.values(xpByDay), 1)
   const days = []
-  for (let i = 29; i >= 0; i--) {
+  for (let i = 364; i >= 0; i--) {
     const d = new Date()
     d.setDate(d.getDate() - i)
     const date = d.toISOString().slice(0, 10)
-    days.push({ date, active: allActive.has(date) })
+    const xp = xpByDay[date] ?? 0
+    let level = 0
+    if (xp > 0 || allActive.has(date)) {
+      level = xp === 0 ? 1 : xp < maxXp * 0.25 ? 1 : xp < maxXp * 0.5 ? 2 : xp < maxXp * 0.75 ? 3 : 4
+    }
+    days.push({ date, xp, level })
   }
   return days
 })
+
+// Radar chart — 6 axes groupés
+const RADAR_AXES = [
+  { label: 'Vocab',      modes: ['quiz', 'cards'] },
+  { label: 'Grammaire',  modes: ['fill-blank', 'sentence-builder', 'dictee'] },
+  { label: 'Écoute',     modes: ['listen'] },
+  { label: 'Parole',     modes: ['speak'] },
+  { label: 'Dialogue',   modes: ['dialogue'] },
+  { label: 'Jeux',       modes: ['anagram', 'paires'] },
+]
+const CX = 130, CY = 130, R = 90
+
+function axisPoint(i: number, total: number, radius: number) {
+  const angle = (Math.PI * 2 * i / total) - Math.PI / 2
+  return { x: CX + radius * Math.cos(angle), y: CY + radius * Math.sin(angle) }
+}
+
+const radarAxes = computed(() => {
+  return RADAR_AXES.map((a, i) => {
+    const outer = axisPoint(i, RADAR_AXES.length, R)
+    const label = axisPoint(i, RADAR_AXES.length, R + 22)
+    return { label: a.label, x2: outer.x, y2: outer.y, lx: label.x, ly: label.y }
+  })
+})
+
+function radarGrid(ratio: number) {
+  return RADAR_AXES.map((_, i) => {
+    const p = axisPoint(i, RADAR_AXES.length, R * ratio)
+    return `${p.x},${p.y}`
+  }).join(' ')
+}
+
+const radarPoints = computed(() => {
+  if (!data.value) return []
+  const modeXp = data.value.mode_xp ?? {}
+  const values = RADAR_AXES.map(a => a.modes.reduce((s, m) => s + (modeXp[m] ?? 0), 0))
+  const maxVal = Math.max(...values, 1)
+  return RADAR_AXES.map((_, i) => {
+    const ratio = values[i] / maxVal
+    return axisPoint(i, RADAR_AXES.length, R * ratio)
+  })
+})
+
+const radarData = computed(() =>
+  radarPoints.value.map(p => `${p.x},${p.y}`).join(' ')
+)
 
 // Hauteur barre XP (% du max)
 function barHeight(xp: number): number {
@@ -258,13 +348,29 @@ onMounted(async () => {
 .xp-bar.today { background: var(--accent); }
 .chart-labels { display: flex; justify-content: space-between; color: #555; font-size: .72rem; margin-top: .3rem; padding: 0 6px; }
 
-/* Calendrier */
-.cal-grid { display: grid; grid-template-columns: repeat(10, 1fr); gap: 4px; }
-@media (max-width: 400px) { .cal-grid { grid-template-columns: repeat(7, 1fr); } }
-.cal-day { aspect-ratio: 1; border-radius: 4px; background: var(--bg-card); transition: background .2s; }
-.cal-day.active { background: var(--accent); }
-.cal-day.today  { outline: 2px solid #a5b4fc; }
-.cal-hint { color: #444; font-size: .72rem; margin-top: .4rem; }
+/* Heatmap */
+.heatmap-scroll { overflow-x: auto; padding-bottom: .5rem; }
+.heatmap-grid {
+  display: grid;
+  grid-template-rows: repeat(7, 11px);
+  grid-auto-flow: column;
+  gap: 3px;
+  width: max-content;
+}
+.hm-cell { width: 11px; height: 11px; border-radius: 2px; }
+.hm-0 { background: var(--bg-card); }
+.hm-1 { background: #6366f130; }
+.hm-2 { background: #6366f160; }
+.hm-3 { background: #6366f190; }
+.hm-4 { background: #6366f1; }
+.hm-today { outline: 2px solid #a5b4fc; }
+.hm-legend { display: flex; align-items: center; gap: 4px; margin-top: .5rem; }
+.hm-legend-label { color: var(--muted); font-size: .7rem; }
+
+/* Radar */
+.radar-wrap { display: flex; justify-content: center; }
+.radar-svg { width: 240px; height: 240px; max-width: 100%; }
+.radar-label { font-size: 9px; fill: var(--muted2); }
 
 /* Badges */
 .empty-badges { color: #555; font-size: .9rem; }
