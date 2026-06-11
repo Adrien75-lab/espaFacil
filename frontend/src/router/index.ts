@@ -23,6 +23,7 @@ const router = createRouter({
     { path: '/anagram', name: 'anagram', component: () => import('@/views/AnagramView.vue') },
     { path: '/leaderboard', name: 'leaderboard', component: () => import('@/views/LeaderboardView.vue') },
     { path: '/survival',   name: 'survival',   component: () => import('@/views/SurvivalView.vue') },
+    { path: '/voyage',     name: 'voyage',     component: () => import('@/views/VoyageView.vue') },
   ]
 })
 

@@ -151,10 +151,11 @@ const modes = [
   { key: 'dialogue',         emoji: '💬',   label: 'Dialogue' },
   { key: 'anagram',          emoji: '🔀',   label: 'Anagramme' },
   { key: 'survival',         emoji: '🆘',   label: 'Survie' },
+  { key: 'voyage',           emoji: '✈️',   label: 'Voyage' },
 ]
 
 // Modes qui ne nécessitent pas de thème sélectionné
-const NO_THEME_MODES = ['dialogue', 'survival']
+const NO_THEME_MODES = ['dialogue', 'survival', 'voyage']
 
 onMounted(() => { if (!store.languages.length) store.loadLanguages() })
 
@@ -163,6 +164,8 @@ function goMode() {
     if (selectedScenario.value) router.push(`/dialogue?scenario=${selectedScenario.value}`)
   } else if (currentMode.value === 'survival') {
     router.push('/survival')
+  } else if (currentMode.value === 'voyage') {
+    router.push('/voyage')
   } else if (store.currentTheme) {
     router.push('/' + currentMode.value)
   }

@@ -16,9 +16,32 @@
     </div>
 
     <div v-else-if="done" class="results">
-      <div class="results-emoji">{{ score === total ? '🏆' : score >= total * 0.7 ? '🎉' : '💪' }}</div>
+      <div class="results-emoji">{{ avgSim >= 85 ? '🏆' : avgSim >= 60 ? '🎉' : '💪' }}</div>
       <h2>Session terminée !</h2>
-      <p class="score-text">{{ score }} / {{ total }} correctes</p>
+
+      <!-- Jauge score global -->
+      <div class="gauge-wrap">
+        <svg viewBox="0 0 120 70" class="gauge-svg">
+          <path d="M10,60 A50,50 0 0,1 110,60" fill="none" stroke="var(--border)" stroke-width="10" stroke-linecap="round"/>
+          <path d="M10,60 A50,50 0 0,1 110,60" fill="none"
+            :stroke="avgSim >= 80 ? '#22c55e' : avgSim >= 55 ? '#f59e0b' : '#ef4444'"
+            stroke-width="10" stroke-linecap="round"
+            :stroke-dasharray="`${avgSim * 1.571} 200`"/>
+          <text x="60" y="58" text-anchor="middle" class="gauge-pct">{{ avgSim }}%</text>
+          <text x="60" y="68" text-anchor="middle" class="gauge-label">score moyen</text>
+        </svg>
+      </div>
+
+      <!-- Détail par mot -->
+      <div class="word-results">
+        <div v-for="r in wordResults" :key="r.term" class="wr-row" :class="r.cls">
+          <span class="wr-icon">{{ r.sim >= 80 ? '✓' : r.sim >= 55 ? '~' : '✗' }}</span>
+          <span class="wr-term" :dir="store.currentLang?.is_rtl ? 'rtl' : 'ltr'">{{ r.term }}</span>
+          <span class="wr-heard" v-if="r.heard">→ «{{ r.heard }}»</span>
+          <span class="wr-sim">{{ r.sim }}%</span>
+        </div>
+      </div>
+
       <div class="results-actions">
         <button class="btn-primary" @click="restart">Recommencer</button>
         <button class="btn-secondary" @click="router.push('/')">Accueil</button>
@@ -62,9 +85,23 @@
           <span class="heard-label">J'ai entendu :</span>
           <span class="heard-text" :class="{ rtl: store.currentLang?.is_rtl }">« {{ heard }} »</span>
         </div>
+
+        <!-- Jauge similarité -->
+        <div v-if="answered" class="sim-gauge">
+          <div class="sim-bar">
+            <div class="sim-fill"
+              :class="isCorrect ? 'sim-ok' : similarity >= 60 ? 'sim-close' : 'sim-bad'"
+              :style="{ width: similarity + '%' }">
+            </div>
+          </div>
+          <span class="sim-pct"
+            :class="isCorrect ? 'sim-ok' : similarity >= 60 ? 'sim-close' : 'sim-bad'">
+            {{ similarity }}%
+          </span>
+        </div>
         <div v-if="answered" class="feedback" :class="isCorrect ? 'correct' : similarity >= 60 ? 'close' : 'wrong'">
           <span v-if="isCorrect">✓ Parfait !</span>
-          <span v-else-if="similarity >= 60">~ Presque ! ({{ similarity }}%)</span>
+          <span v-else-if="similarity >= 60">~ Presque !</span>
           <span v-else>✗ Attendu : <strong>{{ current.term }}</strong></span>
         </div>
       </div>
@@ -99,6 +136,8 @@ const router = useRouter()
 const SR = (window as any).SpeechRecognition ?? (window as any).webkitSpeechRecognition
 const supported = !!SR
 
+interface WordResult { term: string; heard: string | null; sim: number; cls: string }
+
 const cards     = ref<Word[]>([])
 const idx       = ref(0)
 const score     = ref(0)
@@ -108,12 +147,17 @@ const answered  = ref(false)
 const heard     = ref<string | null>(null)
 const similarity = ref(0)
 const micError  = ref(false)
+const wordResults = ref<WordResult[]>([])
 
 let recognition: any = null
 
 const total     = computed(() => cards.value.length)
 const current   = computed(() => cards.value[idx.value])
 const isCorrect = computed(() => similarity.value >= 80)
+const avgSim    = computed(() => {
+  if (!wordResults.value.length) return 0
+  return Math.round(wordResults.value.reduce((s, r) => s + r.sim, 0) / wordResults.value.length)
+})
 
 /** Normalise : minuscules, sans accents, sans ponctuation */
 function normalize(s: string): string {
@@ -173,6 +217,12 @@ function startRecognition() {
     recording.value = false
     const ok = best >= 80
     if (ok) score.value++
+    wordResults.value.push({
+      term: current.value.term,
+      heard: bestHeard,
+      sim: best,
+      cls: ok ? 'wr-ok' : best >= 55 ? 'wr-close' : 'wr-bad',
+    })
     if (auth.user && store.currentLang) postReview(current.value.id, store.currentLang.code, ok)
   }
 
@@ -192,6 +242,7 @@ function skip() {
   heard.value = null
   similarity.value = 0
   answered.value = true
+  wordResults.value.push({ term: current.value.term, heard: null, sim: 0, cls: 'wr-bad' })
   if (auth.user && store.currentLang) postReview(current.value.id, store.currentLang.code, false)
 }
 
@@ -216,6 +267,7 @@ function restart() {
   cards.value = [...cards.value].sort(() => Math.random() - 0.5)
   idx.value = 0; score.value = 0; answered.value = false
   heard.value = null; similarity.value = 0; done.value = false
+  wordResults.value = []
 }
 
 function stopAndQuit() {
@@ -226,13 +278,13 @@ function stopAndQuit() {
 watch(done, (val) => {
   if (!val || !auth.user || !store.currentLang || !store.currentTheme) return
   const t  = total.value
-  const xp = calcXp('fill-blank', score.value, t) // même barème que fill-blank (7 XP/correct)
+  const xp = calcXp('speak', score.value, t)
   postSession({
     language:  store.currentLang.code,
     theme:     store.currentTheme.key,
     level:     store.currentLevel,
-    mode:      'fill-blank',
-    score:     Math.round(score.value / t * 100),
+    mode:      'speak',
+    score:     avgSim.value,
     xp_gained: xp,
     correct:   score.value,
     total:     t,
@@ -303,10 +355,43 @@ onUnmounted(() => recognition?.abort())
   color: #666; padding: .5rem; font-size: .85rem; cursor: pointer; margin-top: .75rem; }
 .btn-skip:hover { border-color: #555; color: #999; }
 
-.results { text-align: center; padding: 3rem 1rem; }
+/* Jauge similarité inline */
+.sim-gauge { display: flex; align-items: center; gap: .75rem; margin-top: 1rem; }
+.sim-bar   { flex: 1; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
+.sim-fill  { height: 100%; border-radius: 4px; transition: width .5s ease; }
+.sim-ok    { background: #22c55e; color: #86efac; }
+.sim-close { background: #f59e0b; color: #fcd34d; }
+.sim-bad   { background: #ef4444; color: #fca5a5; }
+.sim-pct   { font-size: .85rem; font-weight: 700; min-width: 40px; text-align: right; }
+
+/* Résultats */
+.results { text-align: center; padding: 2rem 1rem; }
 .results-emoji { font-size: 4rem; margin-bottom: .5rem; }
-.score-text { font-size: 1.3rem; color: var(--muted2); margin: .5rem 0 2rem; }
-.results-actions { display: flex; gap: 1rem; justify-content: center; }
+.results-actions { display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem; }
+
+/* Jauge SVG */
+.gauge-wrap { display: flex; justify-content: center; margin: .5rem 0 1.25rem; }
+.gauge-svg  { width: 160px; }
+.gauge-pct  { font-size: 18px; font-weight: 800; fill: var(--text); }
+.gauge-label { font-size: 7px; fill: var(--muted); }
+
+/* Détail par mot */
+.word-results { display: flex; flex-direction: column; gap: .4rem; text-align: left; margin-bottom: .5rem; }
+.wr-row {
+  display: flex; align-items: center; gap: .6rem;
+  background: var(--bg-card); border-radius: 8px; padding: .5rem .8rem;
+  border-left: 3px solid transparent;
+}
+.wr-ok    { border-left-color: #22c55e; }
+.wr-close { border-left-color: #f59e0b; }
+.wr-bad   { border-left-color: #ef4444; }
+.wr-icon  { font-size: .9rem; font-weight: 700; min-width: 16px; }
+.wr-ok .wr-icon    { color: #86efac; }
+.wr-close .wr-icon { color: #fcd34d; }
+.wr-bad .wr-icon   { color: #fca5a5; }
+.wr-term  { font-weight: 600; color: var(--text); font-size: .9rem; flex: 1; }
+.wr-heard { color: var(--muted); font-size: .78rem; font-style: italic; flex: 1; }
+.wr-sim   { font-size: .8rem; font-weight: 700; color: var(--muted2); white-space: nowrap; }
 .btn-primary   { background: var(--accent); color: white; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
 .btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
 </style>
