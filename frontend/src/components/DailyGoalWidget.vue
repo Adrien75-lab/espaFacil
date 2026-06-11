@@ -91,23 +91,23 @@ async function changeGoal(xp: number) {
   await updateGoal(xp)
 }
 
-watch(() => data.value.goal_reached, (reached) => {
-  if (reached) {
-    showConfetti.value = true
-    setTimeout(() => { showConfetti.value = false }, 4000)
-  }
-})
+// Confetti géré uniquement dans load() pour éviter les doublons
 
 const emit = defineEmits<{ refresh: [] }>()
+
+const CONFETTI_KEY = 'lf-confetti-date'
 
 async function load() {
   const result = await fetchToday()
   if (result) {
     const wasReached = data.value.goal_reached
     data.value = result
-    // Déclenche confettis si on vient d'atteindre l'objectif
-    if (!wasReached && result.goal_reached) {
+    // Déclenche confettis seulement la première fois qu'on atteint l'objectif aujourd'hui
+    const today = new Date().toISOString().slice(0, 10)
+    const alreadyCelebrated = sessionStorage.getItem(CONFETTI_KEY) === today
+    if (!alreadyCelebrated && !wasReached && result.goal_reached) {
       showConfetti.value = true
+      sessionStorage.setItem(CONFETTI_KEY, today)
       setTimeout(() => { showConfetti.value = false }, 4000)
     }
   }

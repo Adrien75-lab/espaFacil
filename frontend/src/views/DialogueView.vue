@@ -4,7 +4,7 @@
     <!-- Sélection du scénario -->
     <div v-if="!current" class="scenario-list">
       <div class="list-header">
-        <button class="btn-back" @click="router.push('/')">← Quitter</button>
+        <button class="btn-back" @click="showQuit = true">← Quitter</button>
         <span class="mode-badge">💬 Mini-dialogue</span>
       </div>
       <h2>Choisissez un scénario</h2>
@@ -94,19 +94,23 @@
     </div>
 
   </div>
+    <ConfirmQuit v-if="showQuit" @cancel="showQuit = false" @confirm="router.push('/')" />
 </template>
 
 <script setup lang="ts">
-import { ref, computed, watch, nextTick } from 'vue'
-import { useRouter } from 'vue-router'
+import { ref, computed, watch, nextTick, onMounted } from 'vue'
+import ConfirmQuit from '@/components/ConfirmQuit.vue'
+import { useRouter, useRoute } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
 import { postSession, calcXp } from '@/api/progress'
 import { DIALOGUES, type Dialogue, type DialogueChoice } from '@/data/dialogues'
 
 const store  = useLangStore()
+const showQuit = ref(false)
 const auth   = useAuthStore()
 const router = useRouter()
+const route  = useRoute()
 
 const current       = ref<Dialogue | null>(null)
 const stepIndex     = ref(0)
@@ -167,6 +171,10 @@ function advanceLines() {
       break // stop at choice
     }
   }
+  // Trailing lines after last choice: trigger results
+  if (stepIndex.value >= d.steps.length) {
+    setTimeout(() => { done.value = true }, 300)
+  }
 }
 
 function pickChoice(i: number) {
@@ -205,6 +213,15 @@ function scrollChat() {
     if (chatLog.value) chatLog.value.scrollTop = chatLog.value.scrollHeight
   })
 }
+
+// Auto-start scenario passed from HomeView via query param
+onMounted(() => {
+  const id = route.query.scenario as string | undefined
+  if (id) {
+    const found = scenarios.value.find(s => s.id === id)
+    if (found) startDialogue(found)
+  }
+})
 
 // XP
 watch(done, (val) => {

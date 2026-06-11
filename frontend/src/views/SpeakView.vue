@@ -7,7 +7,7 @@
       <h2>Micro non disponible</h2>
       <p>Ton navigateur ne supporte pas la reconnaissance vocale.<br>
          Essaie Chrome (desktop ou Android).</p>
-      <button class="btn-secondary" @click="router.push('/')">← Retour</button>
+      <button class="btn-secondary" @click="showQuit = true">← Quitter</button>
     </div>
 
     <div v-else-if="!cards.length" class="empty">
@@ -77,10 +77,12 @@
       <button v-if="!answered" class="btn-skip" @click="skip">Passer →</button>
     </div>
   </div>
+    <ConfirmQuit v-if="showQuit" @cancel="showQuit = false" @confirm="router.push('/')" />
 </template>
 
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
+import ConfirmQuit from '@/components/ConfirmQuit.vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
@@ -89,6 +91,7 @@ import { postReview } from '@/api/reviews'
 import type { Word } from '@/types'
 
 const store  = useLangStore()
+const showQuit = ref(false)
 const auth   = useAuthStore()
 const router = useRouter()
 

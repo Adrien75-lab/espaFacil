@@ -19,7 +19,7 @@
 
     <div v-else class="game-screen">
       <div class="game-header">
-        <button class="btn-back" @click="router.push('/')">← Quitter</button>
+        <button class="btn-back" @click="showQuit = true">← Quitter</button>
         <span class="mode-badge">🃏 Paires</span>
         <span class="counter">{{ matchedCount }} / {{ pairsCount }} paires</span>
       </div>
@@ -51,7 +51,19 @@
       </div>
 
       <p class="mistakes-row">Erreurs : <strong>{{ mistakes }}</strong></p>
+
+      <!-- Récap paires trouvées -->
+      <div v-if="matchedPairs.length" class="matched-list">
+        <p class="matched-title">✅ Trouvés :</p>
+        <div v-for="p in matchedPairs" :key="p.id" class="matched-item">
+          <span class="matched-term">{{ p.term }}</span>
+          <span class="matched-sep">→</span>
+          <span class="matched-tr">{{ p.translation }}</span>
+        </div>
+      </div>
     </div>
+
+    <ConfirmQuit v-if="showQuit" @cancel="showQuit = false" @confirm="router.push('/')" />
   </div>
 </template>
 
@@ -82,6 +94,10 @@ const selected   = ref<Card | null>(null)
 const wrongPair  = ref<string[]>([])
 const mistakes   = ref(0)
 const done       = ref(false)
+const showQuit   = ref(false)
+
+interface MatchedPair { id: number; term: string; translation: string }
+const matchedPairs = ref<MatchedPair[]>([])
 
 const PAIR_COUNT = 8   // 8 pairs = 16 cards
 
@@ -120,6 +136,10 @@ function flip(card: Card) {
   if (prev.pairId === card.pairId) {
     // Match!
     prev.matched = card.matched = true
+    // Record the matched pair for the reveal list
+    const termCard = prev.type === 'term' ? prev : card
+    const trCard   = prev.type === 'translation' ? prev : card
+    matchedPairs.value.push({ id: prev.pairId, term: termCard.text, translation: trCard.text })
     if (matchedCount.value === pairsCount.value) {
       setTimeout(() => { done.value = true }, 400)
     }
@@ -139,6 +159,7 @@ function restart() {
   done.value     = false
   selected.value = null
   wrongPair.value = []
+  matchedPairs.value = []
   buildCards(pool.value)
 }
 
@@ -235,9 +256,4 @@ onMounted(async () => {
 
 /* Results */
 .results { text-align: center; padding: 3rem 1rem; }
-.results-emoji { font-size: 4rem; margin-bottom: .5rem; }
-.score-text { font-size: 1.2rem; color: var(--muted2); margin: .5rem 0 2rem; }
-.results-actions { display: flex; gap: 1rem; justify-content: center; }
-.btn-primary   { background: var(--accent); color: white; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
-.btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
-</style>
+.results-emoji

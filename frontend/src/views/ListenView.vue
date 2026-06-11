@@ -4,7 +4,7 @@
 
     <div v-else-if="!cards.length" class="empty">
       <p>Aucun mot disponible pour ce thème/niveau.</p>
-      <button class="btn-secondary" @click="router.push('/')">← Retour</button>
+      <button class="btn-secondary" @click="showQuit = true">← Retour</button>
     </div>
 
     <div v-else-if="done" class="results">
@@ -51,9 +51,12 @@
 
       <!-- Révélation après réponse -->
       <div v-if="answered" class="reveal">
-        <div class="reveal-term" :class="{ rtl: store.currentLang?.is_rtl }">
-          {{ current.term }}
-          <span v-if="current.transliteration" class="reveal-rom">· {{ current.transliteration }}</span>
+        <div class="reveal-pair">
+          <span class="reveal-term" :class="{ rtl: store.currentLang?.is_rtl }">
+            {{ current.term }}<span v-if="current.transliteration" class="reveal-rom"> · {{ current.transliteration }}</span>
+          </span>
+          <span class="reveal-arrow">→</span>
+          <span class="reveal-fr">{{ current.translation_fr }}</span>
         </div>
         <button class="btn-next" @click="next">
           {{ idx + 1 < total ? 'Suivant →' : 'Voir les résultats' }}
@@ -61,10 +64,12 @@
       </div>
     </div>
   </div>
+    <ConfirmQuit v-if="showQuit" @cancel="showQuit = false" @confirm="router.push('/')" />
 </template>
 
 <script setup lang="ts">
 import { ref, computed, onMounted, watch } from 'vue'
+import ConfirmQuit from '@/components/ConfirmQuit.vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
@@ -73,6 +78,7 @@ import { postReview } from '@/api/reviews'
 import type { Word } from '@/types'
 
 const store  = useLangStore()
+const showQuit = ref(false)
 const auth   = useAuthStore()
 const router = useRouter()
 
@@ -194,6 +200,10 @@ onMounted(async () => {
 .choice-btn.correct { border-color: #22c55e; background: #14532d40; color: #86efac; }
 .choice-btn.wrong   { border-color: #ef4444; background: #7f1d1d40; color: #fca5a5; }
 
+.reveal-pair { display: flex; align-items: center; justify-content: center; gap: .6rem; flex-wrap: wrap; margin-bottom: .75rem; }
+.reveal-term { font-weight: 700; color: var(--text); }
+.reveal-arrow { color: var(--muted); }
+.reveal-fr { color: #86efac; font-weight: 600; }
 .reveal { text-align: center; margin-top: .5rem; }
 .reveal-term { font-size: 1.6rem; font-weight: 700; color: var(--text); margin-bottom: 1rem; }
 .reveal-term.rtl { direction: rtl; }

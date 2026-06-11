@@ -23,7 +23,7 @@
     <!-- Carte active -->
     <div v-else class="card-screen">
       <div class="quiz-header">
-        <button class="btn-back" @click="router.push('/')">← Quitter</button>
+        <button class="btn-back" @click="showQuit = true">← Quitter</button>
         <span class="counter">{{ idx + 1 }} / {{ cards.length }}</span>
         <span class="score-badge">✓ {{ score }}</span>
       </div>
@@ -57,15 +57,24 @@
         >{{ choice }}</button>
       </div>
 
-      <button v-if="answered" class="btn-next" @click="next">
-        {{ idx + 1 < cards.length ? 'Suivant →' : 'Voir les résultats' }}
-      </button>
+      <div v-if="answered" class="reveal-block">
+        <div class="reveal-pair">
+          <span class="reveal-term" :class="{ rtl: store.currentLang?.is_rtl }">{{ current.term }}</span>
+          <span class="reveal-arrow">→</span>
+          <span class="reveal-fr">{{ current.translation_fr }}</span>
+        </div>
+        <button class="btn-next" @click="next">
+          {{ idx + 1 < cards.length ? 'Suivant →' : 'Voir les résultats' }}
+        </button>
+      </div>
     </div>
   </div>
+    <ConfirmQuit v-if="showQuit" @cancel="showQuit = false" @confirm="router.push('/')" />
 </template>
 
 <script setup lang="ts">
 import { ref, computed, onMounted, watch } from 'vue'
+import ConfirmQuit from '@/components/ConfirmQuit.vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
@@ -74,6 +83,7 @@ import { postReview } from '@/api/reviews'
 import type { Word } from '@/types'
 
 const store  = useLangStore()
+const showQuit = ref(false)
 const auth   = useAuthStore()
 const router = useRouter()
 
@@ -183,6 +193,11 @@ onMounted(async () => {
 .choice-btn { background: var(--bg-card); border: 2px solid #444; border-radius: 10px; padding: 0.75rem 1rem;
   color: #ddd; font-size: 1rem; cursor: pointer; text-align: left; transition: border-color .15s; }
 .choice-btn:not(:disabled):hover { border-color: var(--accent); }
+.reveal-block { margin-top: 1rem; }
+.reveal-pair { display: flex; align-items: center; justify-content: center; gap: .6rem; padding: .65rem 1rem; background: var(--bg-card); border: 1px solid #22c55e40; border-radius: 8px; margin-bottom: .75rem; flex-wrap: wrap; }
+.reveal-term { font-weight: 700; color: var(--text); }
+.reveal-arrow { color: var(--muted); }
+.reveal-fr { color: #86efac; font-weight: 600; }
 .choice-btn.correct { border-color: #22c55e; background: #14532d40; color: #86efac; }
 .choice-btn.wrong   { border-color: #ef4444; background: #7f1d1d40; color: #fca5a5; }
 .btn-next { width: 100%; background: var(--accent); color: white; border: none; border-radius: 8px;

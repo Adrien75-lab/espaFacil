@@ -14,7 +14,7 @@
 
     <div v-else-if="cards.length" class="quiz-screen">
       <div class="quiz-header">
-        <button class="btn-back" @click="router.push('/')">← Quitter</button>
+        <button class="btn-back" @click="showQuit = true">← Quitter</button>
         <span class="counter">{{ idx + 1 }} / {{ total }}</span>
         <span class="score-badge">✓ {{ score }}</span>
       </div>
@@ -77,8 +77,15 @@
       </div>
 
       <div v-if="answered" class="feedback-row">
-        <div class="feedback-text" :class="isCorrect ? 'correct' : 'wrong'">
-          {{ isCorrect ? '✓ Correct !' : `✗ C'était : ${current.term}` }}
+        <div>
+          <div class="feedback-text" :class="isCorrect ? 'correct' : 'wrong'">
+            {{ isCorrect ? '✓ Correct !' : `✗ C'était : ${current.term}` }}
+          </div>
+          <div class="reveal-pair">
+            <span class="reveal-term" :class="{ rtl: store.currentLang?.is_rtl }">{{ current.term }}</span>
+            <span class="reveal-arrow">→</span>
+            <span class="reveal-fr">{{ current.translation_fr }}</span>
+          </div>
         </div>
         <button class="btn-next" @click="next">Suivant →</button>
       </div>
@@ -89,10 +96,12 @@
       <button class="btn-secondary" @click="router.push('/')">← Retour</button>
     </div>
   </div>
+    <ConfirmQuit v-if="showQuit" @cancel="showQuit = false" @confirm="router.push('/')" />
 </template>
 
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
+import ConfirmQuit from '@/components/ConfirmQuit.vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
@@ -101,6 +110,7 @@ import { postReview } from '@/api/reviews'
 import type { Word } from '@/types'
 
 const store  = useLangStore()
+const showQuit = ref(false)
 const auth   = useAuthStore()
 const router = useRouter()
 
@@ -318,6 +328,10 @@ onUnmounted(() => document.removeEventListener('click', handleOutsideClick))
 .choice-btn.wrong   { background: #7f1d1d40; border-color: #ef4444; color: #fca5a5; }
 .choice-btn:disabled { cursor: default; }
 
+.reveal-pair { display: flex; align-items: center; gap: .4rem; margin-top: .3rem; flex-wrap: wrap; }
+.reveal-term { font-size: .85rem; font-weight: 700; color: var(--dim); }
+.reveal-arrow { font-size: .8rem; color: var(--muted); }
+.reveal-fr { font-size: .85rem; color: #86efac; font-weight: 600; }
 .feedback-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .feedback-text { font-size: 1rem; font-weight: 600; }
 .feedback-text.correct { color: #22c55e; }

@@ -69,12 +69,27 @@
         </div>
       </template>
 
-      <!-- Info Dialogue -->
-      <p v-else class="dialogue-info">💬 Les scénarios sont indépendants du thème — lancez directement !</p>
+      <!-- Sélection du scénario (mode dialogue uniquement) -->
+      <template v-else>
+        <p class="subtitle" style="margin-top:1rem">Choisissez un scénario</p>
+        <div v-if="dialogueScenarios.length" class="scenario-grid">
+          <button
+            v-for="sc in dialogueScenarios"
+            :key="sc.id"
+            class="scenario-card"
+            :class="{ active: selectedScenario === sc.id }"
+            @click="selectedScenario = sc.id"
+          >
+            <span class="sc-emoji">{{ sc.emoji }}</span>
+            <span class="sc-title">{{ sc.title }}</span>
+          </button>
+        </div>
+        <p v-else class="dialogue-info">⚠️ Aucun scénario disponible pour cette langue.</p>
+      </template>
 
       <button
         class="btn-start"
-        :disabled="currentMode !== 'dialogue' && !store.currentTheme"
+        :disabled="currentMode !== 'dialogue' ? !store.currentTheme : !selectedScenario"
         @click="goMode"
       >▶ Commencer</button>
 
@@ -94,18 +109,29 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
 import DailyGoalWidget from '@/components/DailyGoalWidget.vue'
 import FlagIcon from '@/components/FlagIcon.vue'
+import { DIALOGUES } from '@/data/dialogues'
 import type { Level } from '@/types'
 
 const store      = useLangStore()
 const auth       = useAuthStore()
 const router     = useRouter()
 const goalWidget = ref<InstanceType<typeof DailyGoalWidget> | null>(null)
+
+const selectedScenario = ref<string | null>(null)
+const currentMode      = ref<string>('quiz')
+
+const dialogueScenarios = computed(() =>
+  store.currentLang ? (DIALOGUES[store.currentLang.code] ?? []) : []
+)
+
+// Reset selected scenario when lang or mode changes
+watch([() => store.currentLang, currentMode], () => { selectedScenario.value = null })
 
 const levels: { key: Level; label: string }[] = [
   { key: 'debutant',      label: '🌱 Débutant' },
@@ -123,13 +149,17 @@ const modes = [
   { key: 'dictee',           emoji: '🎧✍️', label: 'Dictée' },
   { key: 'paires',           emoji: '🃏',   label: 'Paires' },
   { key: 'dialogue',         emoji: '💬',   label: 'Dialogue' },
+  { key: 'anagram',          emoji: '🔀',   label: 'Anagramme' },
 ]
-const currentMode = ref<string>('quiz')
 
 onMounted(() => { if (!store.languages.length) store.loadLanguages() })
 
 function goMode() {
-  if (store.currentTheme) router.push('/' + currentMode.value)
+  if (currentMode.value === 'dialogue') {
+    if (selectedScenario.value) router.push(`/dialogue?scenario=${selectedScenario.value}`)
+  } else if (store.currentTheme) {
+    router.push('/' + currentMode.value)
+  }
 }
 </script>
 
@@ -165,6 +195,13 @@ h2 { margin: 1rem 0 0.5rem; font-size: 1.4rem; }
 
 .btn-back { background: none; border: none; color: var(--muted); cursor: pointer; margin-bottom: 0.5rem; font-size: 0.9rem; }
 .dialogue-info { color: var(--muted2); font-size: 0.9rem; margin: 1rem 0 1.5rem; padding: 0.75rem 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; }
+
+.scenario-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 0.6rem; margin-bottom: 1.5rem; }
+.scenario-card { background: var(--bg-card); border: 2px solid var(--border); border-radius: 10px; padding: 0.75rem 0.5rem;
+  cursor: pointer; transition: border-color .2s; display: flex; flex-direction: column; align-items: center; gap: 0.3rem; }
+.scenario-card:hover, .scenario-card.active { border-color: #0ea5e9; background: var(--bg-hover); }
+.sc-emoji { font-size: 1.8rem; }
+.sc-title { font-size: 0.75rem; color: var(--dim); text-align: center; line-height: 1.3; }
 .loader { margin-top: 2rem; color: var(--muted); }
 
 .mode-row { display: flex; gap: 0.75rem; justify-content: center; margin-bottom: 1.5rem; flex-wrap: wrap; }

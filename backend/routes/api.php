@@ -9,6 +9,7 @@ use App\Http\Controllers\Api\GrammarController;
 use App\Http\Controllers\Api\DashboardController;
 use App\Http\Controllers\Api\TodayController;
 use App\Http\Controllers\Api\ReviewController;
+use App\Http\Controllers\Api\LeaderboardController;
 
 // Auth (SPA stateful via Sanctum cookie)
 Route::post('/register', [AuthController::class, 'register']);
@@ -34,6 +35,9 @@ Route::middleware('auth:sanctum')->prefix('me')->group(function () {
     Route::get('/reviews/due',         [ReviewController::class, 'due']);
     Route::get('/reviews/difficult',   [ReviewController::class, 'difficult']);
 });
+
+// Leaderboard — public, $request->user() resolved by Sanctum if cookie present
+Route::get('/leaderboard', [LeaderboardController::class, 'index']);
 
 // Public: catalogue
 Route::prefix('languages')->group(function () {

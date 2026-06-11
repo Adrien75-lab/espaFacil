@@ -15,7 +15,7 @@
     <div v-else-if="cards.length" class="quiz-screen">
       <!-- En-tête -->
       <div class="quiz-header">
-        <button class="btn-back" @click="router.push('/')">← Quitter</button>
+        <button class="btn-back" @click="showQuit = true">← Quitter</button>
         <span class="counter">{{ idx + 1 }} / {{ total }}</span>
         <span class="score-badge">✓ {{ score }}</span>
       </div>
@@ -88,10 +88,12 @@
       <button class="btn-secondary" @click="router.push('/')">← Retour</button>
     </div>
   </div>
+    <ConfirmQuit v-if="showQuit" @cancel="showQuit = false" @confirm="router.push('/')" />
 </template>
 
 <script setup lang="ts">
 import { ref, computed, onMounted, watch } from 'vue'
+import ConfirmQuit from '@/components/ConfirmQuit.vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
@@ -99,6 +101,7 @@ import { postSession, calcXp } from '@/api/progress'
 import type { Word } from '@/types'
 
 const store  = useLangStore()
+const showQuit = ref(false)
 const auth   = useAuthStore()
 const router = useRouter()
 
