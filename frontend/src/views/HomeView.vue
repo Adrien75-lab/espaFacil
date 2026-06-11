@@ -81,7 +81,7 @@
             @click="selectedScenario = sc.id"
           >
             <span class="sc-emoji">{{ sc.emoji }}</span>
-            <span class="sc-title">{{ sc.title }}</span>
+            <span class="sc-title">{{ sc.title_fr }}</span>
           </button>
         </div>
         <p v-else class="dialogue-info">⚠️ Aucun scénario disponible pour cette langue.</p>

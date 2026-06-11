@@ -1,20 +1,20 @@
 export interface DialogueLine { type: 'line'; speaker: 'A' | 'B'; text: string; fr: string }
 export interface DialogueChoice { type: 'choice'; text: string; fr: string; options: { text: string; fr: string }[]; correctIndex: number }
 export type DialogueStep = DialogueLine | DialogueChoice
-export interface Dialogue { id: string; emoji: string; title: string; steps: DialogueStep[] }
+export interface Dialogue { id: string; emoji: string; title: string; title_fr: string; steps: DialogueStep[] }
 
 const line = (speaker: 'A' | 'B', text: string, fr: string): DialogueLine => ({ type: 'line', speaker, text, fr })
 const choice = (text: string, fr: string, options: { text: string; fr: string }[], correctIndex: number): DialogueChoice => ({ type: 'choice', text, fr, options, correctIndex })
 
 export const DIALOGUES: Record<string, Dialogue[]> = {
   es: [
-    { id: 'es-cafe', emoji: '☕', title: 'En el café', steps: [
+    { id: 'es-cafe', emoji: '☕', title: 'En el café', title_fr: 'Au café', steps: [
       line('A', '¡Buenos días! ¿Qué desea tomar?', 'Bonjour ! Que désirez-vous prendre ?'),
       choice('¿Qué desea?', 'Que désirez-vous ?', [{ text: 'Quiero un café con leche, por favor.', fr: 'Je voudrais un café au lait, s.v.p.' }, { text: 'Me llamo Carlos.', fr: 'Je m\'appelle Carlos.' }, { text: 'El baño está allí.', fr: 'Les toilettes sont là.' }, { text: 'Hasta luego.', fr: 'Au revoir.' }], 0),
       line('A', 'Son tres euros.', 'Ça fait trois euros.'),
       choice('Son tres euros.', 'Ça fait trois euros.', [{ text: 'Aquí tiene. Gracias.', fr: 'Voilà. Merci.' }, { text: 'No tengo hambre.', fr: 'Je n\'ai pas faim.' }, { text: 'Hace frío.', fr: 'Il fait froid.' }, { text: 'No hablo español.', fr: 'Je ne parle pas espagnol.' }], 0),
     ] },
-    { id: 'es-hotel', emoji: '🏨', title: 'En el hotel', steps: [
+    { id: 'es-hotel', emoji: '🏨', title: 'En el hotel', title_fr: 'À l'hôtel', steps: [
       line('B', 'Tengo una reserva a nombre de Dupont.', 'J\'ai une réservation au nom de Dupont.'),
       line('A', 'Habitación doble para dos noches.', 'Chambre double pour deux nuits.'),
       choice('¿Está correcto?', 'C\'est correct ?', [{ text: 'Sí. ¿A qué hora es el desayuno?', fr: 'Oui. À quelle heure est le petit-déjeuner ?' }, { text: 'Me gusta el fútbol.', fr: 'J\'aime le football.' }, { text: 'Hace calor aquí.', fr: 'Il fait chaud ici.' }, { text: 'No tengo reserva.', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -22,7 +22,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('¿Me puede dar la llave?', 'La clé, s.v.p. ?', [{ text: '¿Me puede dar la llave, por favor?', fr: 'La clé, s.v.p. ?' }, { text: 'No me gusta el hotel.', fr: 'Je n\'aime pas l\'hôtel.' }, { text: 'Quiero una pizza.', fr: 'Je veux une pizza.' }, { text: 'El tren llega tarde.', fr: 'Le train est en retard.' }], 0),
       line('A', 'Aquí tiene la llave. Habitación 304.', 'Voici la clé. Chambre 304.'),
     ] },
-    { id: 'es-restaurante', emoji: '🍽️', title: 'En el restaurante', steps: [
+    { id: 'es-restaurante', emoji: '🍽️', title: 'En el restaurante', title_fr: 'Au restaurant', steps: [
       line('A', 'Buenas noches. ¿Tienen reserva?', 'Bonsoir. Avez-vous une réservation ?'),
       choice('¿Tienen reserva?', 'Avez-vous une réservation ?', [{ text: 'No, pero somos dos personas.', fr: 'Non, mais nous sommes deux.' }, { text: 'Me llamo María.', fr: 'Je m\'appelle María.' }, { text: 'El museo está cerrado.', fr: 'Le musée est fermé.' }, { text: 'Necesito un taxi.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
       line('A', '¿Qué van a tomar?', 'Qu\'allez-vous prendre ?'),
@@ -30,7 +30,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       line('A', 'El plato del día es paella. Muy bueno.', 'Le plat du jour est la paella. Très bon.'),
       choice('¿Qué van a pedir?', 'Que commandez-vous ?', [{ text: 'Tomaré la paella y agua, por favor.', fr: 'Je prendrai la paella et de l\'eau, s.v.p.' }, { text: 'No me gusta el arroz.', fr: 'Je n\'aime pas le riz.' }, { text: 'Tengo alergia al pescado.', fr: 'Je suis allergique au poisson.' }, { text: 'El restaurante está lejos.', fr: 'Le restaurant est loin.' }], 0),
     ] },
-    { id: 'es-taxi', emoji: '🚕', title: 'En el taxi', steps: [
+    { id: 'es-taxi', emoji: '🚕', title: 'En el taxi', title_fr: 'En taxi', steps: [
       line('B', 'Al aeropuerto, por favor.', 'À l\'aéroport, s.v.p.'),
       line('A', '¿A qué terminal?', 'À quel terminal ?'),
       choice('¿A qué terminal?', 'À quel terminal ?', [{ text: 'Terminal dos, vuelo a París.', fr: 'Terminal deux, vol pour Paris.' }, { text: 'No sé dónde estoy.', fr: 'Je ne sais pas où je suis.' }, { text: 'Me gusta Madrid.', fr: 'J\'aime Madrid.' }, { text: 'El hotel está cerca.', fr: 'L\'hôtel est près d\'ici.' }], 0),
@@ -38,7 +38,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('¿Cuánto va a costar?', 'Combien ça va coûter ?', [{ text: '¿Cuánto va a costar aproximadamente?', fr: 'Combien approximativement ?' }, { text: 'No tengo prisa.', fr: 'Je ne suis pas pressé.' }, { text: 'Hay mucho tráfico.', fr: 'Il y a beaucoup de circulation.' }, { text: 'Prefiero el metro.', fr: 'Je préfère le métro.' }], 0),
       line('A', 'Unos veinticinco euros.', 'Environ vingt-cinq euros.'),
     ] },
-    { id: 'es-farmacia', emoji: '💊', title: 'En la farmacia', steps: [
+    { id: 'es-farmacia', emoji: '💊', title: 'En la farmacia', title_fr: 'À la pharmacie', steps: [
       line('B', 'Necesito algo para el dolor de cabeza.', 'J\'ai besoin de quelque chose contre le mal de tête.'),
       line('A', '¿Tiene fiebre también?', 'Avez-vous aussi de la fièvre ?'),
       choice('¿Tiene fiebre?', 'Avez-vous de la fièvre ?', [{ text: 'No, solo dolor de cabeza y estoy cansado.', fr: 'Non, juste mal à la tête et je suis fatigué.' }, { text: 'Me gusta el deporte.', fr: 'J\'aime le sport.' }, { text: 'El hospital está lejos.', fr: 'L\'hôpital est loin.' }, { text: 'No hablo español.', fr: 'Je ne parle pas espagnol.' }], 0),
@@ -46,7 +46,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('¿Necesita receta?', 'Faut-il une ordonnance ?', [{ text: '¿Necesita receta médica?', fr: 'Faut-il une ordonnance médicale ?' }, { text: 'No me gustan los medicamentos.', fr: 'Je n\'aime pas les médicaments.' }, { text: 'Tengo hambre.', fr: 'J\'ai faim.' }, { text: 'El médico está ocupado.', fr: 'Le médecin est occupé.' }], 0),
       line('A', 'No, sin receta. Son cuatro euros.', 'Non, sans ordonnance. C\'est quatre euros.'),
     ] },
-    { id: 'es-museo', emoji: '🏛️', title: 'En el museo', steps: [
+    { id: 'es-museo', emoji: '🏛️', title: 'En el museo', title_fr: 'Au musée', steps: [
       line('B', 'Una entrada, por favor. ¿Cuánto cuesta?', 'Un billet, s.v.p. C\'est combien ?'),
       line('A', 'Doce euros adultos, seis estudiantes.', 'Douze euros adultes, six pour les étudiants.'),
       choice('¿Puedo tener el descuento?', 'Puis-je avoir la réduction ?', [{ text: 'Tengo carné de estudiante. ¿Puedo tener el descuento?', fr: 'J\'ai une carte étudiante. Puis-je avoir la réduction ?' }, { text: 'No me gustan los museos.', fr: 'Je n\'aime pas les musées.' }, { text: 'El cuadro es feo.', fr: 'Le tableau est laid.' }, { text: 'Quiero ir al zoo.', fr: 'Je veux aller au zoo.' }], 0),
@@ -54,7 +54,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('¿A qué hora cierra?', 'À quelle heure ferme-t-il ?', [{ text: 'Aquí tiene. ¿A qué hora cierra el museo?', fr: 'La voici. À quelle heure ferme le musée ?' }, { text: 'No tengo carné.', fr: 'Je n\'ai pas de carte.' }, { text: 'El museo es aburrido.', fr: 'Le musée est ennuyeux.' }, { text: 'Prefiero el teatro.', fr: 'Je préfère le théâtre.' }], 0),
       line('A', 'Cerramos a las siete. ¡Disfrute la visita!', 'Nous fermons à dix-neuf heures. Bonne visite !'),
     ] },
-    { id: 'es-compras', emoji: '🛒', title: 'De compras', steps: [
+    { id: 'es-compras', emoji: '🛒', title: 'De compras', title_fr: 'De compras', steps: [
       line('B', '¿Tienen esta camiseta en talla mediana?', 'Avez-vous ce t-shirt en taille medium ?'),
       line('A', 'Sí, aquí tiene.', 'Oui, voici.'),
       choice('¿Puedo probármela?', 'Puis-je l\'essayer ?', [{ text: '¿Puedo probármela?', fr: 'Puis-je l\'essayer ?' }, { text: 'No me gusta el color.', fr: 'Je n\'aime pas la couleur.' }, { text: 'Es muy cara.', fr: 'C\'est très cher.' }, { text: 'No tengo dinero.', fr: 'Je n\'ai pas d\'argent.' }], 0),
@@ -62,7 +62,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Me la llevo.', 'Je la prends.', [{ text: 'Me la llevo. ¿Aceptan tarjeta?', fr: 'Je la prends. Acceptez-vous la carte ?' }, { text: 'Me queda pequeña.', fr: 'Elle est trop petite.' }, { text: 'El color no me gusta.', fr: 'Je n\'aime pas la couleur.' }, { text: 'Es demasiado cara.', fr: 'C\'est trop cher.' }], 0),
       line('A', 'Sí, aceptamos tarjeta y efectivo.', 'Oui, nous acceptons la carte et les espèces.'),
     ] },
-    { id: 'es-calle', emoji: '🗺️', title: 'Por las calles', steps: [
+    { id: 'es-calle', emoji: '🗺️', title: 'Por las calles', title_fr: 'Por las calles', steps: [
       line('B', 'Perdona, ¿sabes dónde está la estación de metro?', 'Excusez-moi, où est la station de métro ?'),
       line('A', 'Sigue todo recto y gira a la izquierda.', 'Continue tout droit et tourne à gauche.'),
       choice('¿Está muy lejos?', 'C\'est loin ?', [{ text: '¿Cuánto tiempo se tarda?', fr: 'Combien de temps faut-il ?' }, { text: 'Me llamo Ana.', fr: 'Je m\'appelle Ana.' }, { text: 'Llueve mucho.', fr: 'Il pleut beaucoup.' }, { text: 'No me gusta caminar.', fr: 'Je n\'aime pas marcher.' }], 0),
@@ -71,7 +71,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   en: [
-    { id: 'en-cafe', emoji: '☕', title: 'At the café', steps: [
+    { id: 'en-cafe', emoji: '☕', title: 'At the café', title_fr: 'Au café', steps: [
       line('A', 'Hi! What can I get you?', 'Bonjour ! Que puis-je vous servir ?'),
       choice('What can I get you?', 'Que puis-je vous servir ?', [{ text: 'Could I have a flat white, please?', fr: 'Puis-je avoir un flat white, s.v.p. ?' }, { text: 'I live in London.', fr: 'J\'habite à Londres.' }, { text: 'The bus is late.', fr: 'Le bus est en retard.' }, { text: 'Goodbye!', fr: 'Au revoir !' }], 0),
       line('A', 'Sure! Anything to eat?', 'Quelque chose à manger ?'),
@@ -79,7 +79,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       line('A', 'That\'ll be four pounds fifty.', 'Ça fait quatre livres cinquante.'),
       choice('How much?', 'C\'est combien ?', [{ text: 'Here you go. Keep the change.', fr: 'Voilà. Gardez la monnaie.' }, { text: 'I don\'t understand.', fr: 'Je ne comprends pas.' }, { text: 'Where is the airport?', fr: 'Où est l\'aéroport ?' }, { text: 'It\'s very cold.', fr: 'Il fait très froid.' }], 0),
     ] },
-    { id: 'en-hotel', emoji: '🏨', title: 'Checking in', steps: [
+    { id: 'en-hotel', emoji: '🏨', title: 'Checking in', title_fr: 'À l'hôtel', steps: [
       line('B', 'Hello, I have a reservation under Martin.', 'Bonjour, j\'ai une réservation au nom de Martin.'),
       line('A', 'A double room for three nights.', 'Chambre double pour trois nuits.'),
       choice('Is that correct?', 'C\'est correct ?', [{ text: 'Yes, that\'s right. What time is breakfast?', fr: 'Oui. Le petit-déjeuner est à quelle heure ?' }, { text: 'I like football.', fr: 'J\'aime le football.' }, { text: 'It\'s hot in here.', fr: 'Il fait chaud ici.' }, { text: 'I don\'t have a reservation.', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -87,7 +87,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Could I have the key card?', 'Puis-je avoir la clé ?', [{ text: 'Could I have the key card, please?', fr: 'La clé, s.v.p. ?' }, { text: 'I don\'t like the hotel.', fr: 'Je n\'aime pas l\'hôtel.' }, { text: 'I want a pizza.', fr: 'Je veux une pizza.' }, { text: 'The train is late.', fr: 'Le train est en retard.' }], 0),
       line('A', 'Here\'s your key card. Room 205, second floor.', 'Voici la clé. Chambre 205, deuxième étage.'),
     ] },
-    { id: 'en-restaurant', emoji: '🍽️', title: 'At the restaurant', steps: [
+    { id: 'en-restaurant', emoji: '🍽️', title: 'At the restaurant', title_fr: 'Au restaurant', steps: [
       line('A', 'Good evening. Do you have a reservation?', 'Bonsoir. Avez-vous une réservation ?'),
       choice('Do you have a reservation?', 'Avez-vous une réservation ?', [{ text: 'No, but there are two of us.', fr: 'Non, mais nous sommes deux.' }, { text: 'My name is James.', fr: 'Je m\'appelle James.' }, { text: 'The museum is closed.', fr: 'Le musée est fermé.' }, { text: 'I need a taxi.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
       line('A', 'No problem. Are you ready to order?', 'Pas de problème. Êtes-vous prêts ?'),
@@ -95,7 +95,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       line('A', 'Today\'s special is grilled salmon. Excellent.', 'Le plat du jour est le saumon grillé. Excellent.'),
       choice('What will you order?', 'Que commandez-vous ?', [{ text: 'Perfect, I\'ll have the salmon and a glass of water.', fr: 'Parfait, je prendrai le saumon et un verre d\'eau.' }, { text: 'I don\'t like fish.', fr: 'Je n\'aime pas le poisson.' }, { text: 'The restaurant is far.', fr: 'Le restaurant est loin.' }, { text: 'I\'m allergic to nuts.', fr: 'Je suis allergique aux noix.' }], 0),
     ] },
-    { id: 'en-taxi', emoji: '🚕', title: 'Taking a taxi', steps: [
+    { id: 'en-taxi', emoji: '🚕', title: 'Taking a taxi', title_fr: 'En taxi', steps: [
       line('B', 'To the train station, please.', 'À la gare, s.v.p.'),
       line('A', 'Which station?', 'Quelle gare ?'),
       choice('Which station?', 'Quelle gare ?', [{ text: 'King\'s Cross, please. I have a train at six.', fr: 'King\'s Cross, s.v.p. J\'ai un train à dix-huit heures.' }, { text: 'I don\'t know where I am.', fr: 'Je ne sais pas où je suis.' }, { text: 'I like London.', fr: 'J\'aime Londres.' }, { text: 'The hotel is nearby.', fr: 'L\'hôtel est près d\'ici.' }], 0),
@@ -103,7 +103,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('How much will it cost?', 'Combien ça va coûter ?', [{ text: 'How much do you think it\'ll be?', fr: 'Combien pensez-vous que ça coûtera ?' }, { text: 'I\'m not in a hurry.', fr: 'Je ne suis pas pressé.' }, { text: 'There\'s a lot of traffic.', fr: 'Il y a beaucoup de circulation.' }, { text: 'I prefer the tube.', fr: 'Je préfère le métro.' }], 0),
       line('A', 'Around twelve pounds.', 'Environ douze livres.'),
     ] },
-    { id: 'en-pharmacy', emoji: '💊', title: 'At the pharmacy', steps: [
+    { id: 'en-pharmacy', emoji: '💊', title: 'At the pharmacy', title_fr: 'À la pharmacie', steps: [
       line('B', 'Hi. I have a stomachache, do you have something?', 'Bonjour. J\'ai mal à l\'estomac, avez-vous quelque chose ?'),
       line('A', 'How long have you had it?', 'Depuis combien de temps ?'),
       choice('How long?', 'Depuis combien de temps ?', [{ text: 'Since this morning. I also feel a bit nauseous.', fr: 'Depuis ce matin. Je me sens aussi nauséeux.' }, { text: 'I like sports.', fr: 'J\'aime le sport.' }, { text: 'The hospital is far.', fr: 'L\'hôpital est loin.' }, { text: 'I don\'t speak English.', fr: 'Je ne parle pas anglais.' }], 0),
@@ -111,7 +111,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Do I need a prescription?', 'Faut-il une ordonnance ?', [{ text: 'Is it available without a prescription?', fr: 'Est-ce disponible sans ordonnance ?' }, { text: 'I don\'t like medication.', fr: 'Je n\'aime pas les médicaments.' }, { text: 'I\'m hungry.', fr: 'J\'ai faim.' }, { text: 'The doctor is busy.', fr: 'Le médecin est occupé.' }], 0),
       line('A', 'No prescription needed. That\'s six pounds fifty.', 'Pas d\'ordonnance nécessaire. C\'est six livres cinquante.'),
     ] },
-    { id: 'en-museum', emoji: '🏛️', title: 'At the museum', steps: [
+    { id: 'en-museum', emoji: '🏛️', title: 'At the museum', title_fr: 'Au musée', steps: [
       line('B', 'One adult ticket, please. How much is it?', 'Un billet adulte, s.v.p. C\'est combien ?'),
       line('A', 'Twelve pounds. Students get in for eight.', 'Douze livres. Les étudiants: huit livres.'),
       choice('Are there discounts?', 'Y a-t-il des réductions ?', [{ text: 'I\'m a student, can I get the discount?', fr: 'Je suis étudiant, puis-je avoir la réduction ?' }, { text: 'I don\'t like museums.', fr: 'Je n\'aime pas les musées.' }, { text: 'The painting is ugly.', fr: 'Le tableau est laid.' }, { text: 'I want to go to the zoo.', fr: 'Je veux aller au zoo.' }], 0),
@@ -119,7 +119,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('What time does it close?', 'À quelle heure ferme-t-il ?', [{ text: 'Here it is. What time does the museum close?', fr: 'La voici. À quelle heure ferme le musée ?' }, { text: 'I don\'t have an ID.', fr: 'Je n\'ai pas de carte.' }, { text: 'The museum is boring.', fr: 'Le musée est ennuyeux.' }, { text: 'I prefer the theatre.', fr: 'Je préfère le théâtre.' }], 0),
       line('A', 'We close at six. Enjoy your visit!', 'Nous fermons à dix-huit heures. Bonne visite !'),
     ] },
-    { id: 'en-shopping', emoji: '🛒', title: 'Shopping', steps: [
+    { id: 'en-shopping', emoji: '🛒', title: 'Shopping', title_fr: 'En boutique', steps: [
       line('B', 'Do you have this jumper in size large?', 'Avez-vous ce pull en taille grande ?'),
       line('A', 'Let me check... Yes, here you go.', 'Laissez-moi vérifier... Oui, voici.'),
       choice('Can I try it on?', 'Puis-je l\'essayer ?', [{ text: 'Can I try it on?', fr: 'Puis-je l\'essayer ?' }, { text: 'I don\'t like the colour.', fr: 'Je n\'aime pas la couleur.' }, { text: 'It\'s too expensive.', fr: 'C\'est trop cher.' }, { text: 'I don\'t have any cash.', fr: 'Je n\'ai pas d\'espèces.' }], 0),
@@ -127,7 +127,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('I\'ll take it.', 'Je le prends.', [{ text: 'I\'ll take it. Do you accept card?', fr: 'Je le prends. Acceptez-vous la carte ?' }, { text: 'It doesn\'t fit.', fr: 'Ça ne me va pas.' }, { text: 'I don\'t like the colour.', fr: 'Je n\'aime pas la couleur.' }, { text: 'It\'s too expensive.', fr: 'C\'est trop cher.' }], 0),
       line('A', 'Yes, we accept all major cards.', 'Oui, nous acceptons toutes les grandes cartes.'),
     ] },
-    { id: 'en-street', emoji: '🗺️', title: 'Asking for directions', steps: [
+    { id: 'en-street', emoji: '🗺️', title: 'Asking for directions', title_fr: 'Asking for directions', steps: [
       line('B', 'Excuse me, could you help me?', 'Excusez-moi, pouvez-vous m\'aider ?'),
       line('A', 'Of course! What do you need?', 'Bien sûr ! De quoi avez-vous besoin ?'),
       choice('What do you need?', 'De quoi avez-vous besoin ?', [{ text: 'Do you know where the nearest pharmacy is?', fr: 'Savez-vous où est la pharmacie la plus proche ?' }, { text: 'I love your jacket.', fr: 'J\'adore votre veste.' }, { text: 'It\'s a beautiful day.', fr: 'C\'est une belle journée.' }, { text: 'I\'m very tired.', fr: 'Je suis très fatigué.' }], 0),
@@ -137,7 +137,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   de: [
-    { id: 'de-hotel', emoji: '🏨', title: 'Im Hotel', steps: [
+    { id: 'de-hotel', emoji: '🏨', title: 'Im Hotel', title_fr: 'À l'hôtel', steps: [
       line('B', 'Ich habe eine Reservierung auf den Namen Müller.', 'J\'ai une réservation au nom de Müller.'),
       line('A', 'Ein Doppelzimmer für zwei Nächte, stimmt das?', 'Chambre double pour deux nuits, c\'est bien ça ?'),
       choice('Stimmt das?', 'C\'est bien ça ?', [{ text: 'Ja, genau. Um wie viel Uhr gibt es Frühstück?', fr: 'Oui, exactement. À quelle heure est le petit-déjeuner ?' }, { text: 'Ich mag Fußball.', fr: 'J\'aime le football.' }, { text: 'Es ist heiß hier.', fr: 'Il fait chaud ici.' }, { text: 'Ich habe keine Reservierung.', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -145,7 +145,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Kann ich bitte den Schlüssel haben?', 'Puis-je avoir la clé ?', [{ text: 'Kann ich bitte den Schlüssel haben?', fr: 'Puis-je avoir la clé, s.v.p. ?' }, { text: 'Ich mag das Hotel nicht.', fr: 'Je n\'aime pas l\'hôtel.' }, { text: 'Ich möchte eine Pizza.', fr: 'Je veux une pizza.' }, { text: 'Der Zug ist spät.', fr: 'Le train est en retard.' }], 0),
       line('A', 'Hier ist Ihr Schlüssel. Zimmer 301, dritter Stock.', 'Voici votre clé. Chambre 301, troisième étage.'),
     ] },
-    { id: 'de-restaurant', emoji: '🍽️', title: 'Im Restaurant', steps: [
+    { id: 'de-restaurant', emoji: '🍽️', title: 'Im Restaurant', title_fr: 'Au restaurant', steps: [
       line('A', 'Guten Abend. Haben Sie eine Reservierung?', 'Bonsoir. Avez-vous une réservation ?'),
       choice('Haben Sie eine Reservierung?', 'Avez-vous une réservation ?', [{ text: 'Nein, aber wir sind zu zweit.', fr: 'Non, mais nous sommes deux.' }, { text: 'Ich heiße Thomas.', fr: 'Je m\'appelle Thomas.' }, { text: 'Das Museum ist geschlossen.', fr: 'Le musée est fermé.' }, { text: 'Ich brauche ein Taxi.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
       line('A', 'Was möchten Sie bestellen?', 'Que souhaitez-vous commander ?'),
@@ -153,7 +153,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       line('A', 'Das Tagesgericht ist Schnitzel mit Kartoffeln.', 'Le plat du jour est l\'escalope avec des pommes de terre.'),
       choice('Wie bezahlt man?', 'Comment paye-t-on ?', [{ text: 'Ich nehme das Schnitzel.', fr: 'Je prends l\'escalope.' }, { text: 'Ich mag kein Fleisch.', fr: 'Je n\'aime pas la viande.' }, { text: 'Das Restaurant ist weit.', fr: 'Le restaurant est loin.' }, { text: 'Ich bin allergisch gegen Nüsse.', fr: 'Je suis allergique aux noix.' }], 0),
     ] },
-    { id: 'de-taxi', emoji: '🚕', title: 'Im Taxi', steps: [
+    { id: 'de-taxi', emoji: '🚕', title: 'Im Taxi', title_fr: 'En taxi', steps: [
       line('B', 'Zum Hauptbahnhof, bitte.', 'À la gare centrale, s.v.p.'),
       line('A', 'Welcher Bahnhof?', 'Quelle gare ?'),
       choice('Welcher Bahnhof?', 'Quelle gare ?', [{ text: 'Hauptbahnhof, bitte. Ich habe einen Zug um achtzehn Uhr.', fr: 'Gare centrale, s.v.p. J\'ai un train à dix-huit heures.' }, { text: 'Ich weiß nicht, wo ich bin.', fr: 'Je ne sais pas où je suis.' }, { text: 'Ich mag Berlin.', fr: 'J\'aime Berlin.' }, { text: 'Das Hotel ist in der Nähe.', fr: 'L\'hôtel est près d\'ici.' }], 0),
@@ -161,7 +161,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Was kostet das?', 'Combien ça coûte ?', [{ text: 'Was wird es ungefähr kosten?', fr: 'Combien ça coûtera approximativement ?' }, { text: 'Ich habe es nicht eilig.', fr: 'Je ne suis pas pressé.' }, { text: 'Es gibt viel Verkehr.', fr: 'Il y a beaucoup de circulation.' }, { text: 'Ich nehme lieber die U-Bahn.', fr: 'Je préfère le métro.' }], 0),
       line('A', 'Ungefähr fünfzehn Euro.', 'Environ quinze euros.'),
     ] },
-    { id: 'de-einkaufen', emoji: '🛒', title: 'Einkaufen', steps: [
+    { id: 'de-einkaufen', emoji: '🛒', title: 'Einkaufen', title_fr: 'En boutique', steps: [
       line('B', 'Haben Sie dieses Hemd in Größe M?', 'Avez-vous cette chemise en taille M ?'),
       line('A', 'Ja, hier bitte.', 'Oui, voici.'),
       choice('Kann ich es anprobieren?', 'Puis-je l\'essayer ?', [{ text: 'Kann ich es anprobieren?', fr: 'Puis-je l\'essayer ?' }, { text: 'Ich mag die Farbe nicht.', fr: 'Je n\'aime pas la couleur.' }, { text: 'Es ist zu teuer.', fr: 'C\'est trop cher.' }, { text: 'Ich habe kein Geld.', fr: 'Je n\'ai pas d\'argent.' }], 0),
@@ -169,14 +169,14 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Ich nehme es.', 'Je le prends.', [{ text: 'Ich nehme es. Akzeptieren Sie Karte?', fr: 'Je le prends. Acceptez-vous la carte ?' }, { text: 'Es passt nicht.', fr: 'Ça ne me va pas.' }, { text: 'Die Farbe gefällt mir nicht.', fr: 'Je n\'aime pas la couleur.' }, { text: 'Es ist zu teuer.', fr: 'C\'est trop cher.' }], 0),
       line('A', 'Ja, wir akzeptieren alle gängigen Karten.', 'Oui, nous acceptons toutes les grandes cartes.'),
     ] },
-    { id: 'de-cafe', emoji: '☕', title: 'Im Café', steps: [
+    { id: 'de-cafe', emoji: '☕', title: 'Im Café', title_fr: 'Au café', steps: [
       line('A', 'Guten Tag! Was darf ich Ihnen bringen?', 'Bonjour ! Que puis-je vous apporter ?'),
       choice('Was möchten Sie trinken?', 'Que souhaitez-vous boire ?', [{ text: 'Einen Kaffee und ein Stück Kuchen, bitte.', fr: 'Un café et une part de gâteau, s.v.p.' }, { text: 'Ich spreche kein Deutsch.', fr: 'Je ne parle pas allemand.' }, { text: 'Wo ist das Hotel?', fr: 'Où est l\'hôtel ?' }, { text: 'Ich suche den Bahnhof.', fr: 'Je cherche la gare.' }], 0),
       line('A', 'Möchten Sie Milch und Zucker?', 'Souhaitez-vous du lait et du sucre ?'),
       choice('Milch oder schwarz?', 'Avec du lait ou noir ?', [{ text: 'Mit Milch, aber ohne Zucker, bitte.', fr: 'Avec du lait mais sans sucre, s.v.p.' }, { text: 'Nein danke, ich mag keinen Kaffee.', fr: 'Non merci, je n\'aime pas le café.' }, { text: 'Wo ist die Toilette?', fr: 'Où sont les toilettes ?' }, { text: 'Der Zug fährt ab.', fr: 'Le train part.' }], 0),
       line('A', 'Das macht vier Euro fünfzig.', 'Ça fait quatre euros cinquante.'),
     ] },
-    { id: 'de-apotheke', emoji: '💊', title: 'In der Apotheke', steps: [
+    { id: 'de-apotheke', emoji: '💊', title: 'In der Apotheke', title_fr: 'À la pharmacie', steps: [
       line('B', 'Guten Tag. Ich habe Kopfschmerzen.', 'Bonjour. J\'ai des maux de tête.'),
       line('A', 'Haben Sie Fieber oder andere Symptome?', 'Avez-vous de la fièvre ou d\'autres symptômes ?'),
       choice('Welche Symptome haben Sie?', 'Quels symptômes avez-vous ?', [{ text: 'Nur Kopfschmerzen und etwas Müdigkeit.', fr: 'Seulement des maux de tête et un peu de fatigue.' }, { text: 'Ich suche ein Restaurant.', fr: 'Je cherche un restaurant.' }, { text: 'Mein Zug fährt um neun.', fr: 'Mon train part à neuf heures.' }, { text: 'Ich habe keine Kopfschmerzen.', fr: 'Je n\'ai pas de maux de tête.' }], 0),
@@ -184,7 +184,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Wie oft soll ich sie nehmen?', 'Combien de fois dois-je les prendre ?', [{ text: 'Wie oft soll ich sie einnehmen?', fr: 'Combien de fois dois-je les prendre ?' }, { text: 'Wie viel kostet das?', fr: 'Combien ça coûte ?' }, { text: 'Wo ist die nächste Apotheke?', fr: 'Où est la pharmacie la plus proche ?' }, { text: 'Ich mag keine Tabletten.', fr: 'Je n\'aime pas les comprimés.' }], 0),
       line('A', 'Zweimal täglich nach dem Essen.', 'Deux fois par jour après les repas.'),
     ] },
-    { id: 'de-strasse', emoji: '🗺️', title: 'Nach dem Weg fragen', steps: [
+    { id: 'de-strasse', emoji: '🗺️', title: 'Nach dem Weg fragen', title_fr: 'Dans la rue', steps: [
       line('B', 'Entschuldigung, wie komme ich zum Bahnhof?', 'Excusez-moi, comment puis-je aller à la gare ?'),
       line('A', 'Gehen Sie geradeaus, dann die zweite Straße links.', 'Allez tout droit, puis la deuxième rue à gauche.'),
       choice('Ist es weit?', 'C\'est loin ?', [{ text: 'Ist es weit von hier?', fr: 'Est-ce loin d\'ici ?' }, { text: 'Ich suche ein Taxi.', fr: 'Je cherche un taxi.' }, { text: 'Wo ist das Museum?', fr: 'Où est le musée ?' }, { text: 'Danke, ich kenne den Weg.', fr: 'Merci, je connais le chemin.' }], 0),
@@ -192,7 +192,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Gibt es eine U-Bahn?', 'Y a-t-il un métro ?', [{ text: 'Gibt es eine U-Bahn in der Nähe?', fr: 'Y a-t-il un métro à proximité ?' }, { text: 'Ich nehme immer ein Taxi.', fr: 'Je prends toujours un taxi.' }, { text: 'Das Wetter ist schön heute.', fr: 'Il fait beau aujourd\'hui.' }, { text: 'Ich fahre mit dem Bus.', fr: 'Je prends le bus.' }], 0),
       line('A', 'Ja, die Haltestelle ist gleich um die Ecke.', 'Oui, la station est juste au coin de la rue.'),
     ] },
-    { id: 'de-museum', emoji: '🏛️', title: 'Im Museum', steps: [
+    { id: 'de-museum', emoji: '🏛️', title: 'Im Museum', title_fr: 'Au musée', steps: [
       line('B', 'Guten Tag. Was kostet der Eintritt?', 'Bonjour. Combien coûte l\'entrée ?'),
       line('A', 'Zehn Euro für Erwachsene, fünf für Studenten.', 'Dix euros pour les adultes, cinq pour les étudiants.'),
       choice('Haben Sie Ermäßigungen?', 'Avez-vous des réductions ?', [{ text: 'Ich bin Student. Habe ich eine Ermäßigung?', fr: 'Je suis étudiant. Ai-je une réduction ?' }, { text: 'Das Museum ist zu teuer.', fr: 'Le musée est trop cher.' }, { text: 'Wann öffnet das Museum?', fr: 'À quelle heure ouvre le musée ?' }, { text: 'Ich mag kein Museum.', fr: 'Je n\'aime pas les musées.' }], 0),
@@ -202,7 +202,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   it: [
-    { id: 'it-hotel', emoji: '🏨', title: 'All\'hotel', steps: [
+    { id: 'it-hotel', emoji: '🏨', title: 'All\', title_fr: 'À l'hôtel'hotel', steps: [
       line('B', 'Ho una prenotazione a nome Rossi.', 'J\'ai une réservation au nom de Rossi.'),
       line('A', 'Camera doppia per due notti.', 'Chambre double pour deux nuits.'),
       choice('È corretto?', 'C\'est correct ?', [{ text: 'Sì, esatto. A che ora è la colazione?', fr: 'Oui, exactement. À quelle heure est le petit-déjeuner ?' }, { text: 'Mi piace il calcio.', fr: 'J\'aime le football.' }, { text: 'Fa caldo qui.', fr: 'Il fait chaud ici.' }, { text: 'Non ho la prenotazione.', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -210,7 +210,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Può darmi la chiave?', 'Pouvez-vous me donner la clé ?', [{ text: 'Può darmi la chiave, per favore?', fr: 'La clé, s.v.p. ?' }, { text: 'Non mi piace l\'hotel.', fr: 'Je n\'aime pas l\'hôtel.' }, { text: 'Voglio una pizza.', fr: 'Je veux une pizza.' }, { text: 'Il treno è in ritardo.', fr: 'Le train est en retard.' }], 0),
       line('A', 'Ecco la chiave. Camera 210, secondo piano.', 'Voici la clé. Chambre 210, deuxième étage.'),
     ] },
-    { id: 'it-ristorante', emoji: '🍽️', title: 'Al ristorante', steps: [
+    { id: 'it-ristorante', emoji: '🍽️', title: 'Al ristorante', title_fr: 'Au restaurant', steps: [
       line('A', 'Buonasera. Ha la prenotazione?', 'Bonsoir. Avez-vous une réservation ?'),
       choice('Ha la prenotazione?', 'Avez-vous une réservation ?', [{ text: 'No, ma siamo in due.', fr: 'Non, mais nous sommes deux.' }, { text: 'Mi chiamo Marco.', fr: 'Je m\'appelle Marco.' }, { text: 'Il museo è chiuso.', fr: 'Le musée est fermé.' }, { text: 'Ho bisogno di un taxi.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
       line('A', 'Cosa desidera ordinare?', 'Que souhaitez-vous commander ?'),
@@ -218,7 +218,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       line('A', 'Il piatto del giorno è risotto ai funghi.', 'Le plat du jour est le risotto aux champignons.'),
       choice('Come si paga?', 'Comment paye-t-on ?', [{ text: 'Prendo il risotto.', fr: 'Je prends le risotto.' }, { text: 'Non mi piace il riso.', fr: 'Je n\'aime pas le riz.' }, { text: 'Il ristorante è lontano.', fr: 'Le restaurant est loin.' }, { text: 'Sono allergico ai crostacei.', fr: 'Je suis allergique aux crustacés.' }], 0),
     ] },
-    { id: 'it-taxi', emoji: '🚕', title: 'In taxi', steps: [
+    { id: 'it-taxi', emoji: '🚕', title: 'In taxi', title_fr: 'En taxi', steps: [
       line('B', 'All\'aeroporto, per favore.', 'À l\'aéroport, s.v.p.'),
       line('A', 'Quale terminal?', 'Quel terminal ?'),
       choice('Quale terminal?', 'Quel terminal ?', [{ text: 'Terminal uno, volo per Parigi.', fr: 'Terminal un, vol pour Paris.' }, { text: 'Non so dove sono.', fr: 'Je ne sais pas où je suis.' }, { text: 'Mi piace Roma.', fr: 'J\'aime Rome.' }, { text: 'L\'hotel è vicino.', fr: 'L\'hôtel est près d\'ici.' }], 0),
@@ -226,7 +226,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Quanto costerà?', 'Combien ça coûtera ?', [{ text: 'Quanto costerà più o meno?', fr: 'Combien ça coûtera approximativement ?' }, { text: 'Non ho fretta.', fr: 'Je ne suis pas pressé.' }, { text: 'C\'è molto traffico.', fr: 'Il y a beaucoup de circulation.' }, { text: 'Preferisco la metropolitana.', fr: 'Je préfère le métro.' }], 0),
       line('A', 'Circa venticinque euro.', 'Environ vingt-cinq euros.'),
     ] },
-    { id: 'it-farmacia', emoji: '💊', title: 'In farmacia', steps: [
+    { id: 'it-farmacia', emoji: '💊', title: 'In farmacia', title_fr: 'À la pharmacie', steps: [
       line('B', 'Ho mal di testa, ha qualcosa?', 'J\'ai mal à la tête, avez-vous quelque chose ?'),
       line('A', 'Ha anche la febbre?', 'Avez-vous aussi de la fièvre ?'),
       choice('Ha la febbre?', 'Avez-vous de la fièvre ?', [{ text: 'No, solo mal di testa e sono stanco.', fr: 'Non, juste mal à la tête et je suis fatigué.' }, { text: 'Mi piace lo sport.', fr: 'J\'aime le sport.' }, { text: 'L\'ospedale è lontano.', fr: 'L\'hôpital est loin.' }, { text: 'Non parlo italiano.', fr: 'Je ne parle pas italien.' }], 0),
@@ -234,14 +234,14 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Serve la ricetta?', 'Faut-il une ordonnance ?', [{ text: 'Serve la ricetta medica?', fr: 'Faut-il une ordonnance médicale ?' }, { text: 'Non mi piacciono i farmaci.', fr: 'Je n\'aime pas les médicaments.' }, { text: 'Ho fame.', fr: 'J\'ai faim.' }, { text: 'Il medico è occupato.', fr: 'Le médecin est occupé.' }], 0),
       line('A', 'No, è senza ricetta. Sono quattro euro.', 'Non, sans ordonnance. C\'est quatre euros.'),
     ] },
-    { id: 'it-caffe', emoji: '☕', title: 'Al caffè', steps: [
+    { id: 'it-caffe', emoji: '☕', title: 'Al caffè', title_fr: 'Au café', steps: [
       line('A', 'Buongiorno! Cosa desidera?', 'Bonjour ! Que désirez-vous ?'),
       choice('Cosa prende?', 'Qu\'allez-vous prendre ?', [{ text: 'Un cappuccino e un cornetto, per favore.', fr: 'Un cappuccino et un croissant, s.v.p.' }, { text: 'Non parlo italiano.', fr: 'Je ne parle pas italien.' }, { text: 'Dov\'è la stazione?', fr: 'Où est la gare ?' }, { text: 'Cerco un taxi.', fr: 'Je cherche un taxi.' }], 0),
       line('A', 'Vuole zucchero?', 'Voulez-vous du sucre ?'),
       choice('Con o senza zucchero?', 'Avec ou sans sucre ?', [{ text: 'No grazie, senza zucchero.', fr: 'Non merci, sans sucre.' }, { text: 'Sì, tanto zucchero.', fr: 'Oui, beaucoup de sucre.' }, { text: 'Preferisco il tè.', fr: 'Je préfère le thé.' }, { text: 'Non ho fame.', fr: 'Je n\'ai pas faim.' }], 0),
       line('A', 'Tutto insieme fa tre euro.', 'Tout ensemble ça fait trois euros.'),
     ] },
-    { id: 'it-strada', emoji: '🗺️', title: 'Chiedere la strada', steps: [
+    { id: 'it-strada', emoji: '🗺️', title: 'Chiedere la strada', title_fr: 'Dans la rue', steps: [
       line('B', 'Scusi, sa dove si trova il Colosseo?', 'Excusez-moi, savez-vous où se trouve le Colisée ?'),
       line('A', 'Sì, vada dritto e poi giri a destra.', 'Oui, allez tout droit puis tournez à droite.'),
       choice('Quanto è lontano?', 'C\'est loin ?', [{ text: 'Quanti minuti a piedi ci vogliono?', fr: 'Combien de minutes faut-il à pied ?' }, { text: 'Preferisco prendere il taxi.', fr: 'Je préfère prendre le taxi.' }, { text: 'Non conosco la città.', fr: 'Je ne connais pas la ville.' }, { text: 'Sono già stato al Colosseo.', fr: 'Je suis déjà allé au Colisée.' }], 0),
@@ -249,7 +249,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('C\'è un autobus?', 'Y a-t-il un bus ?', [{ text: 'C\'è un autobus diretto?', fr: 'Y a-t-il un bus direct ?' }, { text: 'Non prendo mai l\'autobus.', fr: 'Je ne prends jamais le bus.' }, { text: 'Preferisco camminare.', fr: 'Je préfère marcher.' }, { text: 'La fermata è lontana.', fr: 'L\'arrêt est loin.' }], 0),
       line('A', 'Sì, il 64 passa ogni dieci minuti.', 'Oui, le 64 passe toutes les dix minutes.'),
     ] },
-    { id: 'it-museo', emoji: '🏛️', title: 'Al museo', steps: [
+    { id: 'it-museo', emoji: '🏛️', title: 'Al museo', title_fr: 'Au musée', steps: [
       line('B', 'Buongiorno. Quanto costa il biglietto?', 'Bonjour. Combien coûte le billet ?'),
       line('A', 'Dodici euro intero, sei ridotto per studenti.', 'Douze euros plein tarif, six réduit pour étudiants.'),
       choice('Sconto studenti?', 'Réduction étudiants ?', [{ text: 'Ho la carta studenti. È valida qui?', fr: 'J\'ai la carte étudiante. Est-elle valide ici ?' }, { text: 'Il museo è troppo caro.', fr: 'Le musée est trop cher.' }, { text: 'Non mi piacciono i musei.', fr: 'Je n\'aime pas les musées.' }, { text: 'A che ora chiude?', fr: 'À quelle heure ferme-t-il ?' }], 0),
@@ -257,7 +257,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Posso fotografare?', 'Puis-je photographier ?', [{ text: 'È permesso fotografare?', fr: 'Est-il permis de photographier ?' }, { text: 'Non ho una macchina fotografica.', fr: 'Je n\'ai pas d\'appareil photo.' }, { text: 'Dove è l\'uscita?', fr: 'Où est la sortie ?' }, { text: 'Il museo chiude presto.', fr: 'Le musée ferme bientôt.' }], 0),
       line('A', 'Solo al piano terra, non al piano superiore.', 'Seulement au rez-de-chaussée, pas à l\'étage supérieur.'),
     ] },
-    { id: 'it-negozio', emoji: '🛒', title: 'Al negozio', steps: [
+    { id: 'it-negozio', emoji: '🛒', title: 'Al negozio', title_fr: 'En boutique', steps: [
       line('B', 'Buongiorno. Sto cercando una maglietta.', 'Bonjour. Je cherche un t-shirt.'),
       line('A', 'Che taglia porta?', 'Quelle taille faites-vous ?'),
       choice('Che taglia cerca?', 'Quelle taille cherchez-vous ?', [{ text: 'Taglia media, per favore.', fr: 'Taille moyenne, s.v.p.' }, { text: 'Non conosco la mia taglia.', fr: 'Je ne connais pas ma taille.' }, { text: 'Non mi piacciono le magliette.', fr: 'Je n\'aime pas les t-shirts.' }, { text: 'Cerco un cappotto.', fr: 'Je cherche un manteau.' }], 0),
@@ -267,7 +267,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   pt: [
-    { id: 'pt-hotel', emoji: '🏨', title: 'No hotel', steps: [
+    { id: 'pt-hotel', emoji: '🏨', title: 'No hotel', title_fr: 'À l'hôtel', steps: [
       line('B', 'Tenho uma reserva em nome de Silva.', 'J\'ai une réservation au nom de Silva.'),
       line('A', 'Quarto duplo por duas noites.', 'Chambre double pour deux nuits.'),
       choice('Está correto?', 'C\'est correct ?', [{ text: 'Sim, exatamente. A que horas é o café da manhã?', fr: 'Oui, exactement. Le petit-déjeuner est à quelle heure ?' }, { text: 'Eu gosto de futebol.', fr: 'J\'aime le football.' }, { text: 'Está quente aqui.', fr: 'Il fait chaud ici.' }, { text: 'Não tenho reserva.', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -275,7 +275,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Pode me dar a chave?', 'Pouvez-vous me donner la clé ?', [{ text: 'Pode me dar a chave, por favor?', fr: 'La clé, s.v.p. ?' }, { text: 'Não gosto do hotel.', fr: 'Je n\'aime pas l\'hôtel.' }, { text: 'Quero uma pizza.', fr: 'Je veux une pizza.' }, { text: 'O trem está atrasado.', fr: 'Le train est en retard.' }], 0),
       line('A', 'Aqui está a chave. Quarto 108, primeiro andar.', 'Voici la clé. Chambre 108, premier étage.'),
     ] },
-    { id: 'pt-restaurante', emoji: '🍽️', title: 'No restaurante', steps: [
+    { id: 'pt-restaurante', emoji: '🍽️', title: 'No restaurante', title_fr: 'Au restaurant', steps: [
       line('A', 'Boa noite. Tem reserva?', 'Bonsoir. Avez-vous une réservation ?'),
       choice('Tem reserva?', 'Avez-vous une réservation ?', [{ text: 'Não, mas somos duas pessoas.', fr: 'Non, mais nous sommes deux.' }, { text: 'Meu nome é João.', fr: 'Je m\'appelle João.' }, { text: 'O museu está fechado.', fr: 'Le musée est fermé.' }, { text: 'Preciso de um táxi.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
       line('A', 'O que vai querer?', 'Que souhaitez-vous ?'),
@@ -283,7 +283,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       line('A', 'O prato do dia é bacalhau com batatas.', 'Le plat du jour est la morue avec des pommes de terre.'),
       choice('Como se paga?', 'Comment paye-t-on ?', [{ text: 'Vou pedir o bacalhau.', fr: 'Je vais prendre la morue.' }, { text: 'Não gosto de peixe.', fr: 'Je n\'aime pas le poisson.' }, { text: 'O restaurante é longe.', fr: 'Le restaurant est loin.' }, { text: 'Sou alérgico a frutos do mar.', fr: 'Je suis allergique aux fruits de mer.' }], 0),
     ] },
-    { id: 'pt-taxi', emoji: '🚕', title: 'No táxi', steps: [
+    { id: 'pt-taxi', emoji: '🚕', title: 'No táxi', title_fr: 'En taxi', steps: [
       line('B', 'Para o aeroporto, por favor.', 'À l\'aéroport, s.v.p.'),
       line('A', 'Qual terminal?', 'Quel terminal ?'),
       choice('Qual terminal?', 'Quel terminal ?', [{ text: 'Terminal um, voo para Paris.', fr: 'Terminal un, vol pour Paris.' }, { text: 'Não sei onde estou.', fr: 'Je ne sais pas où je suis.' }, { text: 'Gosto de Lisboa.', fr: 'J\'aime Lisbonne.' }, { text: 'O hotel é perto.', fr: 'L\'hôtel est près d\'ici.' }], 0),
@@ -291,7 +291,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Quanto vai custar?', 'Combien ça va coûter ?', [{ text: 'Quanto vai custar aproximadamente?', fr: 'Combien approximativement ?' }, { text: 'Não tenho pressa.', fr: 'Je ne suis pas pressé.' }, { text: 'Há muito trânsito.', fr: 'Il y a beaucoup de circulation.' }, { text: 'Prefiro o metro.', fr: 'Je préfère le métro.' }], 0),
       line('A', 'Cerca de vinte euros.', 'Environ vingt euros.'),
     ] },
-    { id: 'pt-farmacia', emoji: '💊', title: 'Na farmácia', steps: [
+    { id: 'pt-farmacia', emoji: '💊', title: 'Na farmácia', title_fr: 'À la pharmacie', steps: [
       line('B', 'Estou com dor de cabeça, tem alguma coisa?', 'J\'ai mal à la tête, avez-vous quelque chose ?'),
       line('A', 'Tem febre também?', 'Avez-vous aussi de la fièvre ?'),
       choice('Tem febre?', 'Avez-vous de la fièvre ?', [{ text: 'Não, só dor de cabeça e estou cansado.', fr: 'Non, juste mal à la tête et je suis fatigué.' }, { text: 'Gosto de esporte.', fr: 'J\'aime le sport.' }, { text: 'O hospital é longe.', fr: 'L\'hôpital est loin.' }, { text: 'Não falo português.', fr: 'Je ne parle pas portugais.' }], 0),
@@ -299,14 +299,14 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Precisa de receita?', 'Faut-il une ordonnance ?', [{ text: 'Precisa de receita médica?', fr: 'Faut-il une ordonnance médicale ?' }, { text: 'Não gosto de remédios.', fr: 'Je n\'aime pas les médicaments.' }, { text: 'Estou com fome.', fr: 'J\'ai faim.' }, { text: 'O médico está ocupado.', fr: 'Le médecin est occupé.' }], 0),
       line('A', 'Não, é sem receita. São quatro euros.', 'Non, sans ordonnance. C\'est quatre euros.'),
     ] },
-    { id: 'pt-cafe', emoji: '☕', title: 'No café', steps: [
+    { id: 'pt-cafe', emoji: '☕', title: 'No café', title_fr: 'Au café', steps: [
       line('A', 'Bom dia! O que vai querer?', 'Bonjour ! Que désirez-vous ?'),
       choice('O que deseja?', 'Que désirez-vous ?', [{ text: 'Um café com leite e uma torrada, por favor.', fr: 'Un café au lait et une toast, s.v.p.' }, { text: 'Não falo português.', fr: 'Je ne parle pas portugais.' }, { text: 'Onde é a estação?', fr: 'Où est la gare ?' }, { text: 'Preciso de um táxi.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
       line('A', 'Quer açúcar?', 'Voulez-vous du sucre ?'),
       choice('Com açúcar?', 'Avec du sucre ?', [{ text: 'Sim, um pacotinho só, obrigado.', fr: 'Oui, un petit sachet seulement, merci.' }, { text: 'Não gosto de café.', fr: 'Je n\'aime pas le café.' }, { text: 'Prefiro chá.', fr: 'Je préfère le thé.' }, { text: 'Sem nada, obrigado.', fr: 'Rien, merci.' }], 0),
       line('A', 'São dois euros e cinquenta.', 'Ça fait deux euros cinquante.'),
     ] },
-    { id: 'pt-rua', emoji: '🗺️', title: 'Pedindo direções', steps: [
+    { id: 'pt-rua', emoji: '🗺️', title: 'Pedindo direções', title_fr: 'Dans la rue', steps: [
       line('B', 'Com licença, sabe onde fica a estação?', 'Pardon, savez-vous où se trouve la gare ?'),
       line('A', 'Sim, siga em frente e vire à esquerda.', 'Oui, allez tout droit et tournez à gauche.'),
       choice('É longe?', 'C\'est loin ?', [{ text: 'É longe daqui?', fr: 'C\'est loin d\'ici ?' }, { text: 'Prefiro apanhar um táxi.', fr: 'Je préfère prendre un taxi.' }, { text: 'Já conheço o caminho.', fr: 'Je connais déjà le chemin.' }, { text: 'Vou de autocarro.', fr: 'Je vais en bus.' }], 0),
@@ -314,7 +314,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Há autocarro?', 'Y a-t-il un bus ?', [{ text: 'Há um autocarro para a estação?', fr: 'Y a-t-il un bus pour la gare ?' }, { text: 'Não gosto de autocarros.', fr: 'Je n\'aime pas les bus.' }, { text: 'Prefiro andar a pé.', fr: 'Je préfère marcher.' }, { text: 'O táxi é mais rápido.', fr: 'Le taxi est plus rapide.' }], 0),
       line('A', 'Sim, o 15 para mesmo aqui em frente.', 'Oui, le 15 s\'arrête juste en face.'),
     ] },
-    { id: 'pt-museu', emoji: '🏛️', title: 'No museu', steps: [
+    { id: 'pt-museu', emoji: '🏛️', title: 'No museu', title_fr: 'Au musée', steps: [
       line('B', 'Boa tarde. Quanto custa a entrada?', 'Bonjour. Combien coûte l\'entrée ?'),
       line('A', 'Dez euros por adulto, grátis para menores de doze.', 'Dix euros par adulte, gratuit pour les moins de douze ans.'),
       choice('Desconto estudante?', 'Réduction étudiant ?', [{ text: 'Existe desconto para estudantes?', fr: 'Y a-t-il une réduction pour étudiants ?' }, { text: 'O museu é muito caro.', fr: 'Le musée est très cher.' }, { text: 'Não gosto de museus.', fr: 'Je n\'aime pas les musées.' }, { text: 'A que horas abre?', fr: 'À quelle heure ouvre-t-il ?' }], 0),
@@ -322,7 +322,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('A que horas fecha?', 'À quelle heure ferme-t-il ?', [{ text: 'A que horas fecha o museu?', fr: 'À quelle heure ferme le musée ?' }, { text: 'Já é tarde.', fr: 'Il est déjà tard.' }, { text: 'Quero sair agora.', fr: 'Je veux partir maintenant.' }, { text: 'O museu é pequeno.', fr: 'Le musée est petit.' }], 0),
       line('A', 'Às dezoito horas todos os dias.', 'À dix-huit heures tous les jours.'),
     ] },
-    { id: 'pt-loja', emoji: '🛒', title: 'Na loja', steps: [
+    { id: 'pt-loja', emoji: '🛒', title: 'Na loja', title_fr: 'En boutique', steps: [
       line('B', 'Boa tarde. Estou à procura de um casaco.', 'Bonjour. Je cherche un manteau.'),
       line('A', 'Que tamanho usa?', 'Quelle taille faites-vous ?'),
       choice('Que tamanho precisa?', 'Quelle taille vous faut-il ?', [{ text: 'Tamanho médio, por favor.', fr: 'Taille moyenne, s.v.p.' }, { text: 'Não sei a minha medida.', fr: 'Je ne connais pas ma taille.' }, { text: 'Não preciso de casaco.', fr: 'Je n\'ai pas besoin d\'un manteau.' }, { text: 'Quero uma camisa.', fr: 'Je veux une chemise.' }], 0),
@@ -332,7 +332,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   nl: [
-    { id: 'nl-hotel', emoji: '🏨', title: 'In het hotel', steps: [
+    { id: 'nl-hotel', emoji: '🏨', title: 'In het hotel', title_fr: 'À l'hôtel', steps: [
       line('B', 'Ik heb een reservering op naam van Jansen.', 'J\'ai une réservation au nom de Jansen.'),
       line('A', 'Een tweepersoonskamer voor twee nachten.', 'Chambre double pour deux nuits.'),
       choice('Klopt dat?', 'C\'est correct ?', [{ text: 'Ja, precies. Hoe laat is het ontbijt?', fr: 'Oui, exactement. Le petit-déjeuner est à quelle heure ?' }, { text: 'Ik hou van voetbal.', fr: 'J\'aime le football.' }, { text: 'Het is warm hier.', fr: 'Il fait chaud ici.' }, { text: 'Ik heb geen reservering.', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -340,7 +340,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Kunt u mij de sleutel geven?', 'Pouvez-vous me donner la clé ?', [{ text: 'Kunt u mij de sleutel geven, alstublieft?', fr: 'La clé, s.v.p. ?' }, { text: 'Ik hou niet van het hotel.', fr: 'Je n\'aime pas l\'hôtel.' }, { text: 'Ik wil een pizza.', fr: 'Je veux une pizza.' }, { text: 'De trein heeft vertraging.', fr: 'Le train est en retard.' }], 0),
       line('A', 'Hier is uw sleutel. Kamer 112, eerste verdieping.', 'Voici votre clé. Chambre 112, premier étage.'),
     ] },
-    { id: 'nl-restaurant', emoji: '🍽️', title: 'In het restaurant', steps: [
+    { id: 'nl-restaurant', emoji: '🍽️', title: 'In het restaurant', title_fr: 'Au restaurant', steps: [
       line('A', 'Goedenavond. Heeft u een reservering?', 'Bonsoir. Avez-vous une réservation ?'),
       choice('Heeft u een reservering?', 'Avez-vous une réservation ?', [{ text: 'Nee, maar we zijn met zijn tweeën.', fr: 'Non, mais nous sommes deux.' }, { text: 'Ik heet Emma.', fr: 'Je m\'appelle Emma.' }, { text: 'Het museum is gesloten.', fr: 'Le musée est fermé.' }, { text: 'Ik heb een taxi nodig.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
       line('A', 'Wat wilt u bestellen?', 'Que souhaitez-vous commander ?'),
@@ -348,7 +348,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       line('A', 'Het dagmenu is stamppot met worst.', 'Le plat du jour est la purée avec de la saucisse.'),
       choice('Hoe betaalt men?', 'Comment paye-t-on ?', [{ text: 'Ik neem het dagmenu.', fr: 'Je prends le menu du jour.' }, { text: 'Ik hou niet van worst.', fr: 'Je n\'aime pas la saucisse.' }, { text: 'Het restaurant is ver.', fr: 'Le restaurant est loin.' }, { text: 'Ik ben allergisch voor gluten.', fr: 'Je suis allergique au gluten.' }], 0),
     ] },
-    { id: 'nl-taxi', emoji: '🚕', title: 'In de taxi', steps: [
+    { id: 'nl-taxi', emoji: '🚕', title: 'In de taxi', title_fr: 'En taxi', steps: [
       line('B', 'Naar het vliegveld, alstublieft.', 'À l\'aéroport, s.v.p.'),
       line('A', 'Welke terminal?', 'Quel terminal ?'),
       choice('Welke terminal?', 'Quel terminal ?', [{ text: 'Terminal twee, vlucht naar Parijs.', fr: 'Terminal deux, vol pour Paris.' }, { text: 'Ik weet niet waar ik ben.', fr: 'Je ne sais pas où je suis.' }, { text: 'Ik hou van Amsterdam.', fr: 'J\'aime Amsterdam.' }, { text: 'Het hotel is dichtbij.', fr: 'L\'hôtel est près d\'ici.' }], 0),
@@ -356,7 +356,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Hoeveel kost het?', 'Combien ça coûte ?', [{ text: 'Hoeveel zal het ongeveer kosten?', fr: 'Combien approximativement ?' }, { text: 'Ik heb geen haast.', fr: 'Je ne suis pas pressé.' }, { text: 'Er is veel verkeer.', fr: 'Il y a beaucoup de circulation.' }, { text: 'Ik neem liever de tram.', fr: 'Je préfère prendre le tram.' }], 0),
       line('A', 'Ongeveer vijfentwintig euro.', 'Environ vingt-cinq euros.'),
     ] },
-    { id: 'nl-straat', emoji: '🗺️', title: 'Op straat', steps: [
+    { id: 'nl-straat', emoji: '🗺️', title: 'Op straat', title_fr: 'Dans la rue', steps: [
       line('B', 'Pardon, kunt u mij helpen?', 'Excusez-moi, pouvez-vous m\'aider ?'),
       line('A', 'Natuurlijk! Wat heeft u nodig?', 'Bien sûr ! De quoi avez-vous besoin ?'),
       choice('Wat heeft u nodig?', 'De quoi avez-vous besoin ?', [{ text: 'Weet u waar het dichtstbijzijnde postkantoor is?', fr: 'Savez-vous où est le bureau de poste le plus proche ?' }, { text: 'Ik hou van uw jas.', fr: 'J\'adore votre veste.' }, { text: 'Het is mooi weer.', fr: 'Il fait beau.' }, { text: 'Ik ben erg moe.', fr: 'Je suis très fatigué.' }], 0),
@@ -364,14 +364,14 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Is het ver?', 'C\'est loin ?', [{ text: 'Hoe lang duurt het lopen?', fr: 'Combien de temps à pied ?' }, { text: 'Ik neem liever de bus.', fr: 'Je préfère le bus.' }, { text: 'Het regent.', fr: 'Il pleut.' }, { text: 'Ik ben verdwaald.', fr: 'Je suis perdu.' }], 0),
       line('A', 'Ongeveer vijf minuten. U kunt het niet missen.', 'Environ cinq minutes. Vous ne pouvez pas le rater.'),
     ] },
-    { id: 'nl-cafe', emoji: '☕', title: 'In het café', steps: [
+    { id: 'nl-cafe', emoji: '☕', title: 'In het café', title_fr: 'Au café', steps: [
       line('A', 'Goedemiddag! Wat mag het zijn?', 'Bonjour ! Que puis-je faire pour vous ?'),
       choice('Wat wilt u drinken?', 'Que voulez-vous boire ?', [{ text: 'Een koffie met melk en een croissant, alstublieft.', fr: 'Un café au lait et un croissant, s.v.p.' }, { text: 'Ik spreek geen Nederlands.', fr: 'Je ne parle pas néerlandais.' }, { text: 'Waar is het station?', fr: 'Où est la gare ?' }, { text: 'Ik zoek een taxi.', fr: 'Je cherche un taxi.' }], 0),
       line('A', 'Wilt u suiker?', 'Voulez-vous du sucre ?'),
       choice('Met of zonder suiker?', 'Avec ou sans sucre ?', [{ text: 'Met melk maar zonder suiker, graag.', fr: 'Avec du lait mais sans sucre, s.v.p.' }, { text: 'Ik drink geen koffie.', fr: 'Je ne bois pas de café.' }, { text: 'Ik wil thee.', fr: 'Je veux du thé.' }, { text: 'Nee, dank u wel.', fr: 'Non merci.' }], 0),
       line('A', 'Dat is dan drie euro tachtig.', 'Ça fait trois euros quatre-vingt.'),
     ] },
-    { id: 'nl-apotheek', emoji: '💊', title: 'Bij de apotheek', steps: [
+    { id: 'nl-apotheek', emoji: '💊', title: 'Bij de apotheek', title_fr: 'À la pharmacie', steps: [
       line('B', 'Goedendag. Ik heb hoofdpijn.', 'Bonjour. J\'ai mal à la tête.'),
       line('A', 'Heeft u koorts of andere klachten?', 'Avez-vous de la fièvre ou d\'autres symptômes ?'),
       choice('Welke klachten heeft u?', 'Quels symptômes avez-vous ?', [{ text: 'Alleen hoofdpijn en wat vermoeidheid.', fr: 'Seulement des maux de tête et un peu de fatigue.' }, { text: 'Ik zoek een restaurant.', fr: 'Je cherche un restaurant.' }, { text: 'Mijn trein vertrekt om negen uur.', fr: 'Mon train part à neuf heures.' }, { text: 'Ik heb geen pijn.', fr: 'Je n\'ai pas mal.' }], 0),
@@ -379,7 +379,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Hoe vaak innemen?', 'Combien de fois prendre ?', [{ text: 'Hoe vaak moet ik ze innemen?', fr: 'Combien de fois dois-je les prendre ?' }, { text: 'Hoeveel kosten ze?', fr: 'Combien coûtent-ils ?' }, { text: 'Ik slik geen tabletten.', fr: 'Je ne prends pas de comprimés.' }, { text: 'Heeft u iets anders?', fr: 'Avez-vous autre chose ?' }], 0),
       line('A', 'Tweemaal daags na de maaltijd.', 'Deux fois par jour après les repas.'),
     ] },
-    { id: 'nl-museum', emoji: '🏛️', title: 'In het museum', steps: [
+    { id: 'nl-museum', emoji: '🏛️', title: 'In het museum', title_fr: 'Au musée', steps: [
       line('B', 'Goedemiddag. Wat kost de toegang?', 'Bonjour. Combien coûte l\'entrée ?'),
       line('A', 'Twaalf euro voor volwassenen, zes voor studenten.', 'Douze euros pour les adultes, six pour les étudiants.'),
       choice('Studentenkorting?', 'Réduction étudiants ?', [{ text: 'Ik ben student. Heb ik korting?', fr: 'Je suis étudiant. Ai-je une réduction ?' }, { text: 'Het museum is te duur.', fr: 'Le musée est trop cher.' }, { text: 'Ik ga liever naar buiten.', fr: 'Je préfère aller dehors.' }, { text: 'Hoe laat gaat het open?', fr: 'À quelle heure ouvre-t-il ?' }], 0),
@@ -387,7 +387,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Mag ik foto\'s nemen?', 'Puis-je prendre des photos ?', [{ text: 'Mag ik foto\'s nemen in het museum?', fr: 'Puis-je prendre des photos dans le musée ?' }, { text: 'Ik heb geen camera.', fr: 'Je n\'ai pas d\'appareil photo.' }, { text: 'Waar is de uitgang?', fr: 'Où est la sortie ?' }, { text: 'Het museum sluit snel.', fr: 'Le musée ferme bientôt.' }], 0),
       line('A', 'Op de begane grond mag het, daarboven niet.', 'Au rez-de-chaussée oui, pas au-dessus.'),
     ] },
-    { id: 'nl-winkel', emoji: '🛒', title: 'In de winkel', steps: [
+    { id: 'nl-winkel', emoji: '🛒', title: 'In de winkel', title_fr: 'En boutique', steps: [
       line('B', 'Goedemiddag. Ik zoek een jas.', 'Bonjour. Je cherche une veste.'),
       line('A', 'Welke maat heeft u?', 'Quelle taille faites-vous ?'),
       choice('Welke maat zoekt u?', 'Quelle taille cherchez-vous ?', [{ text: 'Maat medium, alstublieft.', fr: 'Taille medium, s.v.p.' }, { text: 'Ik weet mijn maat niet.', fr: 'Je ne connais pas ma taille.' }, { text: 'Ik zoek een broek.', fr: 'Je cherche un pantalon.' }, { text: 'Ik heb geen jas nodig.', fr: 'Je n\'ai pas besoin d\'une veste.' }], 0),
@@ -397,7 +397,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   pl: [
-    { id: 'pl-hotel', emoji: '🏨', title: 'W hotelu', steps: [
+    { id: 'pl-hotel', emoji: '🏨', title: 'W hotelu', title_fr: 'À l'hôtel', steps: [
       line('B', 'Mam rezerwację na nazwisko Kowalski.', 'J\'ai une réservation au nom de Kowalski.'),
       line('A', 'Pokój dwuosobowy na dwie noce.', 'Chambre double pour deux nuits.'),
       choice('Czy to poprawne?', 'C\'est correct ?', [{ text: 'Tak, dokładnie. O której jest śniadanie?', fr: 'Oui, exactement. Le petit-déjeuner est à quelle heure ?' }, { text: 'Lubię piłkę nożną.', fr: 'J\'aime le football.' }, { text: 'Jest tu gorąco.', fr: 'Il fait chaud ici.' }, { text: 'Nie mam rezerwacji.', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -405,7 +405,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Czy mogę prosić o klucz?', 'Puis-je avoir la clé ?', [{ text: 'Czy mogę prosić o klucz?', fr: 'La clé, s.v.p. ?' }, { text: 'Nie lubię tego hotelu.', fr: 'Je n\'aime pas cet hôtel.' }, { text: 'Chcę pizzę.', fr: 'Je veux une pizza.' }, { text: 'Pociąg jest opóźniony.', fr: 'Le train est en retard.' }], 0),
       line('A', 'Proszę, oto klucz. Pokój 203, drugie piętro.', 'Voici la clé. Chambre 203, deuxième étage.'),
     ] },
-    { id: 'pl-restauracja', emoji: '🍽️', title: 'W restauracji', steps: [
+    { id: 'pl-restauracja', emoji: '🍽️', title: 'W restauracji', title_fr: 'Au restaurant', steps: [
       line('A', 'Dobry wieczór. Czy mają Państwo rezerwację?', 'Bonsoir. Avez-vous une réservation ?'),
       choice('Czy mają Państwo rezerwację?', 'Avez-vous une réservation ?', [{ text: 'Nie, ale jesteśmy we dwoje.', fr: 'Non, mais nous sommes deux.' }, { text: 'Mam na imię Anna.', fr: 'Je m\'appelle Anna.' }, { text: 'Muzeum jest zamknięte.', fr: 'Le musée est fermé.' }, { text: 'Potrzebuję taksówki.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
       line('A', 'Co będą Państwo zamawiać?', 'Que souhaitez-vous commander ?'),
@@ -413,7 +413,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       line('A', 'Danie dnia to bigos z chlebem.', 'Le plat du jour est le bigos avec du pain.'),
       choice('Jak się płaci?', 'Comment paye-t-on ?', [{ text: 'Poproszę bigos.', fr: 'Je prends le bigos, s.v.p.' }, { text: 'Nie lubię kapusty.', fr: 'Je n\'aime pas le chou.' }, { text: 'Restauracja jest daleko.', fr: 'Le restaurant est loin.' }, { text: 'Jestem uczulony na gluten.', fr: 'Je suis allergique au gluten.' }], 0),
     ] },
-    { id: 'pl-taxi', emoji: '🚕', title: 'W taksówce', steps: [
+    { id: 'pl-taxi', emoji: '🚕', title: 'W taksówce', title_fr: 'En taxi', steps: [
       line('B', 'Na lotnisko, proszę.', 'À l\'aéroport, s.v.p.'),
       line('A', 'Który terminal?', 'Quel terminal ?'),
       choice('Który terminal?', 'Quel terminal ?', [{ text: 'Terminal dwa, lot do Paryża.', fr: 'Terminal deux, vol pour Paris.' }, { text: 'Nie wiem gdzie jestem.', fr: 'Je ne sais pas où je suis.' }, { text: 'Lubię Warszawę.', fr: 'J\'aime Varsovie.' }, { text: 'Hotel jest blisko.', fr: 'L\'hôtel est près d\'ici.' }], 0),
@@ -421,7 +421,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Ile to będzie kosztować?', 'Combien ça va coûter ?', [{ text: 'Ile to będzie mniej więcej kosztować?', fr: 'Combien approximativement ?' }, { text: 'Nie śpieszę się.', fr: 'Je ne suis pas pressé.' }, { text: 'Jest duży ruch.', fr: 'Il y a beaucoup de circulation.' }, { text: 'Wolę metro.', fr: 'Je préfère le métro.' }], 0),
       line('A', 'Około trzydziestu złotych.', 'Environ trente zlotys.'),
     ] },
-    { id: 'pl-ulica', emoji: '🗺️', title: 'Na ulicy', steps: [
+    { id: 'pl-ulica', emoji: '🗺️', title: 'Na ulicy', title_fr: 'Dans la rue', steps: [
       line('B', 'Przepraszam, czy może mi Pan pomóc?', 'Excusez-moi, pouvez-vous m\'aider ?'),
       line('A', 'Oczywiście! Czego potrzebujesz?', 'Bien sûr ! De quoi avez-vous besoin ?'),
       choice('Czego potrzebujesz?', 'De quoi avez-vous besoin ?', [{ text: 'Czy wiesz gdzie jest najbliższa apteka?', fr: 'Sais-tu où est la pharmacie la plus proche ?' }, { text: 'Lubię twój płaszcz.', fr: 'J\'aime ton manteau.' }, { text: 'Ładna pogoda.', fr: 'Il fait beau.' }, { text: 'Jestem bardzo zmęczony.', fr: 'Je suis très fatigué.' }], 0),
@@ -429,14 +429,14 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Czy to daleko?', 'C\'est loin ?', [{ text: 'Jak długo idzie się piechotą?', fr: 'Combien de temps à pied ?' }, { text: 'Wolę jechać autobusem.', fr: 'Je préfère le bus.' }, { text: 'Pada deszcz.', fr: 'Il pleut.' }, { text: 'Zgubiłem się.', fr: 'Je suis perdu.' }], 0),
       line('A', 'Jakieś pięć minut. Nie sposób tego przeoczyć.', 'Environ cinq minutes. Vous ne pouvez pas le rater.'),
     ] },
-    { id: 'pl-kawiarnia', emoji: '☕', title: 'W kawiarni', steps: [
+    { id: 'pl-kawiarnia', emoji: '☕', title: 'W kawiarni', title_fr: 'Au café', steps: [
       line('A', 'Dzień dobry! W czym mogę pomóc?', 'Bonjour ! Comment puis-je vous aider ?'),
       choice('Co chce pan/pani zamówić?', 'Que souhaitez-vous commander ?', [{ text: 'Poproszę kawę z mlekiem i rogalika.', fr: 'Je voudrais un café au lait et un croissant, s.v.p.' }, { text: 'Nie mówię po polsku.', fr: 'Je ne parle pas polonais.' }, { text: 'Gdzie jest stacja?', fr: 'Où est la gare ?' }, { text: 'Szukam taksówki.', fr: 'Je cherche un taxi.' }], 0),
       line('A', 'Czy chce pan/pani cukier?', 'Souhaitez-vous du sucre ?'),
       choice('Z cukrem czy bez?', 'Avec ou sans sucre ?', [{ text: 'Z mlekiem, ale bez cukru, dziękuję.', fr: 'Avec du lait mais sans sucre, merci.' }, { text: 'Nie piję kawy.', fr: 'Je ne bois pas de café.' }, { text: 'Wolę herbatę.', fr: 'Je préfère le thé.' }, { text: 'Nie, dziękuję.', fr: 'Non merci.' }], 0),
       line('A', 'To będzie dziesięć złotych.', 'Ça fera dix zlotys.'),
     ] },
-    { id: 'pl-apteka', emoji: '💊', title: 'W aptece', steps: [
+    { id: 'pl-apteka', emoji: '💊', title: 'W aptece', title_fr: 'À la pharmacie', steps: [
       line('B', 'Dzień dobry. Boli mnie głowa.', 'Bonjour. J\'ai mal à la tête.'),
       line('A', 'Czy ma pan/pani gorączkę lub inne objawy?', 'Avez-vous de la fièvre ou d\'autres symptômes ?'),
       choice('Jakie ma pan/pani objawy?', 'Quels symptômes avez-vous ?', [{ text: 'Tylko ból głowy i trochę zmęczenia.', fr: 'Seulement des maux de tête et un peu de fatigue.' }, { text: 'Szukam restauracji.', fr: 'Je cherche un restaurant.' }, { text: 'Mój pociąg odjeżdża o dziewiątej.', fr: 'Mon train part à neuf heures.' }, { text: 'Czuję się dobrze.', fr: 'Je me sens bien.' }], 0),
@@ -444,7 +444,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Jak często brać?', 'Combien de fois prendre ?', [{ text: 'Jak często mam je brać?', fr: 'Combien de fois dois-je les prendre ?' }, { text: 'Ile to kosztuje?', fr: 'Combien ça coûte ?' }, { text: 'Nie lubię tabletek.', fr: 'Je n\'aime pas les comprimés.' }, { text: 'Mam już leki.', fr: 'J\'ai déjà des médicaments.' }], 0),
       line('A', 'Dwa razy dziennie po posiłku.', 'Deux fois par jour après les repas.'),
     ] },
-    { id: 'pl-muzeum', emoji: '🏛️', title: 'W muzeum', steps: [
+    { id: 'pl-muzeum', emoji: '🏛️', title: 'W muzeum', title_fr: 'Au musée', steps: [
       line('B', 'Dzień dobry. Ile kosztuje wstęp?', 'Bonjour. Combien coûte l\'entrée ?'),
       line('A', 'Dwanaście złotych normalny, sześć ulgowy.', 'Douze zlotys plein tarif, six réduit.'),
       choice('Czy jest zniżka?', 'Y a-t-il une réduction ?', [{ text: 'Jestem studentem. Czy mam zniżkę?', fr: 'Je suis étudiant. Ai-je une réduction ?' }, { text: 'Muzeum jest za drogie.', fr: 'Le musée est trop cher.' }, { text: 'Nie lubię muzeów.', fr: 'Je n\'aime pas les musées.' }, { text: 'O której otwierają?', fr: 'À quelle heure ouvre-t-il ?' }], 0),
@@ -452,7 +452,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Czy wolno fotografować?', 'Peut-on photographier ?', [{ text: 'Czy wolno tu fotografować?', fr: 'Est-il permis de photographier ici ?' }, { text: 'Nie mam aparatu.', fr: 'Je n\'ai pas d\'appareil photo.' }, { text: 'Gdzie jest wyjście?', fr: 'Où est la sortie ?' }, { text: 'Muzeum jest zamknięte.', fr: 'Le musée est fermé.' }], 0),
       line('A', 'Na parterze tak, na piętrze nie.', 'Au rez-de-chaussée oui, à l\'étage non.'),
     ] },
-    { id: 'pl-sklep', emoji: '🛒', title: 'W sklepie', steps: [
+    { id: 'pl-sklep', emoji: '🛒', title: 'W sklepie', title_fr: 'En boutique', steps: [
       line('B', 'Dzień dobry. Szukam kurtki.', 'Bonjour. Je cherche une veste.'),
       line('A', 'Jaki rozmiar?', 'Quelle taille ?'),
       choice('Jakiego rozmiaru szuka pan/pani?', 'Quelle taille cherchez-vous ?', [{ text: 'Rozmiar M, proszę.', fr: 'Taille M, s.v.p.' }, { text: 'Nie znam swojego rozmiaru.', fr: 'Je ne connais pas ma taille.' }, { text: 'Szukam spodni.', fr: 'Je cherche un pantalon.' }, { text: 'Nie potrzebuję kurtki.', fr: 'Je n\'ai pas besoin de veste.' }], 0),
@@ -462,7 +462,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   tr: [
-    { id: 'tr-otel', emoji: '🏨', title: 'Otelde', steps: [
+    { id: 'tr-otel', emoji: '🏨', title: 'Otelde', title_fr: 'À l'hôtel', steps: [
       line('B', 'Yılmaz adına rezervasyonum var.', 'J\'ai une réservation au nom de Yılmaz.'),
       line('A', 'İki kişilik oda, iki gece.', 'Chambre double pour deux nuits.'),
       choice('Doğru mu?', 'C\'est correct ?', [{ text: 'Evet, aynen öyle. Kahvaltı saat kaçta?', fr: 'Oui, exactement. Le petit-déjeuner est à quelle heure ?' }, { text: 'Futbol seviyorum.', fr: 'J\'aime le football.' }, { text: 'Burası çok sıcak.', fr: 'Il fait très chaud ici.' }, { text: 'Rezervasyonum yok.', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -470,7 +470,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Anahtarı alabilir miyim?', 'Puis-je avoir la clé ?', [{ text: 'Anahtarı alabilir miyim lütfen?', fr: 'La clé, s.v.p. ?' }, { text: 'Otel hoşuma gitmiyor.', fr: 'Je n\'aime pas l\'hôtel.' }, { text: 'Pizza istiyorum.', fr: 'Je veux une pizza.' }, { text: 'Tren gecikti.', fr: 'Le train est en retard.' }], 0),
       line('A', 'İşte anahtarınız. 215 numaralı oda, ikinci kat.', 'Voici votre clé. Chambre 215, deuxième étage.'),
     ] },
-    { id: 'tr-restoran', emoji: '🍽️', title: 'Restoranda', steps: [
+    { id: 'tr-restoran', emoji: '🍽️', title: 'Restoranda', title_fr: 'Au restaurant', steps: [
       line('A', 'İyi akşamlar. Rezervasyonunuz var mı?', 'Bonsoir. Avez-vous une réservation ?'),
       choice('Rezervasyonunuz var mı?', 'Avez-vous une réservation ?', [{ text: 'Hayır, ama iki kişiyiz.', fr: 'Non, mais nous sommes deux.' }, { text: 'Adım Fatma.', fr: 'Je m\'appelle Fatma.' }, { text: 'Müze kapalı.', fr: 'Le musée est fermé.' }, { text: 'Taksiye ihtiyacım var.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
       line('A', 'Ne sipariş etmek istersiniz?', 'Que souhaitez-vous commander ?'),
@@ -478,7 +478,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       line('A', 'Günün yemeği mercimek çorbası ve pilavdır.', 'Le plat du jour est la soupe de lentilles et le riz pilaf.'),
       choice('Nasıl ödenir?', 'Comment paye-t-on ?', [{ text: 'Günün yemeğini alacağım.', fr: 'Je prends le plat du jour.' }, { text: 'Pirinç sevmiyorum.', fr: 'Je n\'aime pas le riz.' }, { text: 'Restoran uzak.', fr: 'Le restaurant est loin.' }, { text: 'Deniz ürünlerine alerjim var.', fr: 'Je suis allergique aux fruits de mer.' }], 0),
     ] },
-    { id: 'tr-taksi', emoji: '🚕', title: 'Taksiye binmek', steps: [
+    { id: 'tr-taksi', emoji: '🚕', title: 'Taksiye binmek', title_fr: 'En taxi', steps: [
       line('B', 'Havalimanına lütfen.', 'À l\'aéroport, s.v.p.'),
       line('A', 'Hangi terminal?', 'Quel terminal ?'),
       choice('Hangi terminal?', 'Quel terminal ?', [{ text: 'İki numaralı terminal, Paris uçuşu.', fr: 'Terminal deux, vol pour Paris.' }, { text: 'Nerede olduğumu bilmiyorum.', fr: 'Je ne sais pas où je suis.' }, { text: 'İstanbul\'u seviyorum.', fr: 'J\'aime Istanbul.' }, { text: 'Otel yakın.', fr: 'L\'hôtel est près d\'ici.' }], 0),
@@ -486,7 +486,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Ne kadar tutar?', 'Combien ça coûte ?', [{ text: 'Yaklaşık ne kadar tutacak?', fr: 'Combien approximativement ?' }, { text: 'Aceleden değilim.', fr: 'Je ne suis pas pressé.' }, { text: 'Çok trafik var.', fr: 'Il y a beaucoup de circulation.' }, { text: 'Metroyu tercih ediyorum.', fr: 'Je préfère le métro.' }], 0),
       line('A', 'Yaklaşık yüz elli lira.', 'Environ cent cinquante lires.'),
     ] },
-    { id: 'tr-eczane', emoji: '💊', title: 'Eczanede', steps: [
+    { id: 'tr-eczane', emoji: '💊', title: 'Eczanede', title_fr: 'À la pharmacie', steps: [
       line('B', 'Baş ağrısı için bir şeyiniz var mı?', 'Avez-vous quelque chose contre le mal de tête ?'),
       line('A', 'Ateşiniz de var mı?', 'Avez-vous aussi de la fièvre ?'),
       choice('Ateşiniz var mı?', 'Avez-vous de la fièvre ?', [{ text: 'Hayır, sadece baş ağrısı ve yorgunum.', fr: 'Non, juste mal à la tête et je suis fatigué.' }, { text: 'Spor yapıyorum.', fr: 'Je fais du sport.' }, { text: 'Hastane uzak.', fr: 'L\'hôpital est loin.' }, { text: 'Türkçe bilmiyorum.', fr: 'Je ne parle pas turc.' }], 0),
@@ -494,14 +494,14 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Reçete gerekiyor mu?', 'Faut-il une ordonnance ?', [{ text: 'Reçetesiz satılıyor mu?', fr: 'Est-ce vendu sans ordonnance ?' }, { text: 'İlaç sevmiyorum.', fr: 'Je n\'aime pas les médicaments.' }, { text: 'Açım.', fr: 'J\'ai faim.' }, { text: 'Doktor meşgul.', fr: 'Le médecin est occupé.' }], 0),
       line('A', 'Hayır, reçetesiz. Kırk lira.', 'Non, sans ordonnance. Quarante lires.'),
     ] },
-    { id: 'tr-kafe', emoji: '☕', title: 'Kafede', steps: [
+    { id: 'tr-kafe', emoji: '☕', title: 'Kafede', title_fr: 'Au café', steps: [
       line('A', 'Merhaba! Ne alırsınız?', 'Bonjour ! Que prendrez-vous ?'),
       choice('Ne içmek istersiniz?', 'Que souhaitez-vous boire ?', [{ text: 'Bir Türk kahvesi ve bir börek, lütfen.', fr: 'Un café turc et un börek, s.v.p.' }, { text: 'Türkçe bilmiyorum.', fr: 'Je ne parle pas turc.' }, { text: 'İstasyon nerede?', fr: 'Où est la gare ?' }, { text: 'Taksi arıyorum.', fr: 'Je cherche un taxi.' }], 0),
       line('A', 'Şekerli mi şekersiz mi?', 'Avec ou sans sucre ?'),
       choice('Şeker ister misiniz?', 'Voulez-vous du sucre ?', [{ text: 'Az şekerli olsun, teşekkürler.', fr: 'Peu sucré, merci.' }, { text: 'Kahve sevmiyorum.', fr: 'Je n\'aime pas le café.' }, { text: 'Çay tercih ederim.', fr: 'Je préfère le thé.' }, { text: 'Şeker istemiyorum.', fr: 'Je ne veux pas de sucre.' }], 0),
       line('A', 'Yirmi beş lira olacak.', 'Ça fera vingt-cinq lires.'),
     ] },
-    { id: 'tr-yol', emoji: '🗺️', title: 'Yol sormak', steps: [
+    { id: 'tr-yol', emoji: '🗺️', title: 'Yol sormak', title_fr: 'Dans la rue', steps: [
       line('B', 'Affedersiniz, istasyona nasıl gidebilirim?', 'Excusez-moi, comment puis-je aller à la gare ?'),
       line('A', 'Düz gidin, sonra sola dönün.', 'Allez tout droit, puis tournez à gauche.'),
       choice('Uzak mı?', 'C\'est loin ?', [{ text: 'Buradan uzak mı?', fr: 'Est-ce loin d\'ici ?' }, { text: 'Taksi tercih ederim.', fr: 'Je préfère le taxi.' }, { text: 'Yolu biliyorum.', fr: 'Je connais le chemin.' }, { text: 'Otobüse bineceğim.', fr: 'Je vais prendre le bus.' }], 0),
@@ -509,7 +509,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Otobüs var mı?', 'Y a-t-il un bus ?', [{ text: 'Yakında otobüs durağı var mı?', fr: 'Y a-t-il un arrêt de bus à proximité ?' }, { text: 'Otobüs sevmiyorum.', fr: 'Je n\'aime pas le bus.' }, { text: 'Yürümeyi tercih ederim.', fr: 'Je préfère marcher.' }, { text: 'Taksi daha hızlı.', fr: 'Le taxi est plus rapide.' }], 0),
       line('A', 'Evet, köşede bir durak var.', 'Oui, il y a un arrêt au coin de la rue.'),
     ] },
-    { id: 'tr-muze', emoji: '🏛️', title: 'Müzede', steps: [
+    { id: 'tr-muze', emoji: '🏛️', title: 'Müzede', title_fr: 'Au musée', steps: [
       line('B', 'Merhaba. Giriş ücreti ne kadar?', 'Bonjour. Combien coûte l\'entrée ?'),
       line('A', 'Yetişkinler için yüz lira, öğrenciler için elli.', 'Cent lires pour les adultes, cinquante pour les étudiants.'),
       choice('İndirim var mı?', 'Y a-t-il une réduction ?', [{ text: 'Öğrenci olarak indirim alabilir miyim?', fr: 'Puis-je avoir une réduction en tant qu\'étudiant ?' }, { text: 'Müze çok pahalı.', fr: 'Le musée est trop cher.' }, { text: 'Müzeyi sevmiyorum.', fr: 'Je n\'aime pas les musées.' }, { text: 'Saat kaçta açılıyor?', fr: 'À quelle heure ouvre-t-il ?' }], 0),
@@ -517,7 +517,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Fotoğraf çekebilir miyim?', 'Puis-je prendre des photos ?', [{ text: 'Burada fotoğraf çekebilir miyim?', fr: 'Puis-je prendre des photos ici ?' }, { text: 'Fotoğraf makinam yok.', fr: 'Je n\'ai pas d\'appareil photo.' }, { text: 'Çıkış nerede?', fr: 'Où est la sortie ?' }, { text: 'Müze kapanıyor.', fr: 'Le musée ferme.' }], 0),
       line('A', 'Zemin katta evet, üst katta hayır.', 'Au rez-de-chaussée oui, à l\'étage non.'),
     ] },
-    { id: 'tr-alisveris', emoji: '🛒', title: 'Alışverişte', steps: [
+    { id: 'tr-alisveris', emoji: '🛒', title: 'Alışverişte', title_fr: 'En boutique', steps: [
       line('B', 'Merhaba. Bir ceket arıyorum.', 'Bonjour. Je cherche une veste.'),
       line('A', 'Kaç beden giyiyorsunuz?', 'Quelle taille faites-vous ?'),
       choice('Kaç beden istiyorsunuz?', 'Quelle taille cherchez-vous ?', [{ text: 'Orta beden olsun, lütfen.', fr: 'Taille moyenne, s.v.p.' }, { text: 'Bedenimi bilmiyorum.', fr: 'Je ne connais pas ma taille.' }, { text: 'Pantolon arıyorum.', fr: 'Je cherche un pantalon.' }, { text: 'Cekete ihtiyacım yok.', fr: 'Je n\'ai pas besoin de veste.' }], 0),
@@ -527,7 +527,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   ru: [
-    { id: 'ru-hotel', emoji: '🏨', title: 'В отеле', steps: [
+    { id: 'ru-hotel', emoji: '🏨', title: 'В отеле', title_fr: 'À l'hôtel', steps: [
       line('B', 'У меня бронь на имя Иванов.', 'J\'ai une réservation au nom d\'Ivanov.'),
       line('A', 'Двухместный номер на две ночи.', 'Chambre double pour deux nuits.'),
       choice('Всё верно?', 'C\'est correct ?', [{ text: 'Да, именно. В какое время завтрак?', fr: 'Oui, exactement. Le petit-déjeuner est à quelle heure ?' }, { text: 'Я люблю футбол.', fr: 'J\'aime le football.' }, { text: 'Здесь жарко.', fr: 'Il fait chaud ici.' }, { text: 'У меня нет брони.', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -535,7 +535,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Можно получить ключ?', 'Puis-je avoir la clé ?', [{ text: 'Можно получить ключ, пожалуйста?', fr: 'La clé, s.v.p. ?' }, { text: 'Мне не нравится отель.', fr: 'Je n\'aime pas l\'hôtel.' }, { text: 'Хочу пиццу.', fr: 'Je veux une pizza.' }, { text: 'Поезд опаздывает.', fr: 'Le train est en retard.' }], 0),
       line('A', 'Вот ваш ключ. Номер 305, третий этаж.', 'Voici votre clé. Chambre 305, troisième étage.'),
     ] },
-    { id: 'ru-restoran', emoji: '🍽️', title: 'В ресторане', steps: [
+    { id: 'ru-restoran', emoji: '🍽️', title: 'В ресторане', title_fr: 'Au restaurant', steps: [
       line('A', 'Добрый вечер. У вас есть бронь?', 'Bonsoir. Avez-vous une réservation ?'),
       choice('У вас есть бронь?', 'Avez-vous une réservation ?', [{ text: 'Нет, но нас двое.', fr: 'Non, mais nous sommes deux.' }, { text: 'Меня зовут Наташа.', fr: 'Je m\'appelle Natacha.' }, { text: 'Музей закрыт.', fr: 'Le musée est fermé.' }, { text: 'Мне нужно такси.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
       line('A', 'Что будете заказывать?', 'Que souhaitez-vous commander ?'),
@@ -543,7 +543,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       line('A', 'Блюдо дня — борщ с хлебом.', 'Le plat du jour est le bortsch avec du pain.'),
       choice('Как платить?', 'Comment paye-t-on ?', [{ text: 'Возьму борщ.', fr: 'Je prends le bortsch.' }, { text: 'Не люблю свёклу.', fr: 'Je n\'aime pas la betterave.' }, { text: 'Ресторан далеко.', fr: 'Le restaurant est loin.' }, { text: 'У меня аллергия на морепродукты.', fr: 'Je suis allergique aux fruits de mer.' }], 0),
     ] },
-    { id: 'ru-taksi', emoji: '🚕', title: 'В такси', steps: [
+    { id: 'ru-taksi', emoji: '🚕', title: 'В такси', title_fr: 'En taxi', steps: [
       line('B', 'В аэропорт, пожалуйста.', 'À l\'aéroport, s.v.p.'),
       line('A', 'В какой терминал?', 'Quel terminal ?'),
       choice('В какой терминал?', 'Quel terminal ?', [{ text: 'Терминал два, рейс в Париж.', fr: 'Terminal deux, vol pour Paris.' }, { text: 'Я не знаю где я.', fr: 'Je ne sais pas où je suis.' }, { text: 'Я люблю Москву.', fr: 'J\'aime Moscou.' }, { text: 'Отель рядом.', fr: 'L\'hôtel est près d\'ici.' }], 0),
@@ -551,7 +551,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Сколько будет стоить?', 'Combien ça va coûter ?', [{ text: 'Сколько приблизительно?', fr: 'Combien approximativement ?' }, { text: 'Я не тороплюсь.', fr: 'Je ne suis pas pressé.' }, { text: 'Большие пробки.', fr: 'Il y a beaucoup de circulation.' }, { text: 'Предпочитаю метро.', fr: 'Je préfère le métro.' }], 0),
       line('A', 'Около тысячи рублей.', 'Environ mille roubles.'),
     ] },
-    { id: 'ru-apteka', emoji: '💊', title: 'В аптеке', steps: [
+    { id: 'ru-apteka', emoji: '💊', title: 'В аптеке', title_fr: 'À la pharmacie', steps: [
       line('B', 'У меня болит голова, есть что-нибудь?', 'J\'ai mal à la tête, avez-vous quelque chose ?'),
       line('A', 'У вас также есть температура?', 'Avez-vous aussi de la fièvre ?'),
       choice('Есть температура?', 'Avez-vous de la fièvre ?', [{ text: 'Нет, только голова болит и я устал.', fr: 'Non, juste mal à la tête et je suis fatigué.' }, { text: 'Я занимаюсь спортом.', fr: 'Je fais du sport.' }, { text: 'Больница далеко.', fr: 'L\'hôpital est loin.' }, { text: 'Я не говорю по-русски.', fr: 'Je ne parle pas russe.' }], 0),
@@ -559,14 +559,14 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Нужен рецепт?', 'Faut-il une ordonnance ?', [{ text: 'Это без рецепта?', fr: 'C\'est sans ordonnance ?' }, { text: 'Не люблю лекарства.', fr: 'Je n\'aime pas les médicaments.' }, { text: 'Я голоден.', fr: 'J\'ai faim.' }, { text: 'Врач занят.', fr: 'Le médecin est occupé.' }], 0),
       line('A', 'Нет, без рецепта. Двести рублей.', 'Non, sans ordonnance. Deux cents roubles.'),
     ] },
-    { id: 'ru-kafe', emoji: '☕', title: 'В кафе', steps: [
+    { id: 'ru-kafe', emoji: '☕', title: 'В кафе', title_fr: 'Au café', steps: [
       line('A', 'Добрый день! Что будете заказывать?', 'Bonjour ! Que souhaitez-vous commander ?'),
       choice('Что вы хотите выпить?', 'Que souhaitez-vous boire ?', [{ text: 'Кофе с молоком и круассан, пожалуйста.', fr: 'Un café au lait et un croissant, s.v.p.' }, { text: 'Я не говорю по-русски.', fr: 'Je ne parle pas russe.' }, { text: 'Где находится вокзал?', fr: 'Où se trouve la gare ?' }, { text: 'Мне нужно такси.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
       line('A', 'Вам сахар?', 'Du sucre ?'),
       choice('С сахаром или без?', 'Avec ou sans sucre ?', [{ text: 'С молоком, но без сахара, спасибо.', fr: 'Avec du lait mais sans sucre, merci.' }, { text: 'Я не пью кофе.', fr: 'Je ne bois pas de café.' }, { text: 'Предпочитаю чай.', fr: 'Je préfère le thé.' }, { text: 'Нет, спасибо.', fr: 'Non merci.' }], 0),
       line('A', 'С вас двести рублей.', 'Ça fait deux cents roubles.'),
     ] },
-    { id: 'ru-ulica', emoji: '🗺️', title: 'На улице', steps: [
+    { id: 'ru-ulica', emoji: '🗺️', title: 'На улице', title_fr: 'Dans la rue', steps: [
       line('B', 'Извините, как пройти к вокзалу?', 'Excusez-moi, comment aller à la gare ?'),
       line('A', 'Идите прямо, потом поверните налево.', 'Allez tout droit, puis tournez à gauche.'),
       choice('Это далеко?', 'C\'est loin ?', [{ text: 'Это далеко отсюда?', fr: 'Est-ce loin d\'ici ?' }, { text: 'Я предпочитаю такси.', fr: 'Je préfère le taxi.' }, { text: 'Я знаю дорогу.', fr: 'Je connais le chemin.' }, { text: 'Я поеду на автобусе.', fr: 'Je vais prendre le bus.' }], 0),
@@ -574,7 +574,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Есть ли метро рядом?', 'Y a-t-il un métro à proximité ?', [{ text: 'Здесь есть станция метро?', fr: 'Y a-t-il une station de métro ici ?' }, { text: 'Я не люблю метро.', fr: 'Je n\'aime pas le métro.' }, { text: 'Лучше пойду пешком.', fr: 'Je préfère marcher.' }, { text: 'Такси быстрее.', fr: 'Le taxi est plus rapide.' }], 0),
       line('A', 'Да, станция прямо за углом.', 'Oui, la station est juste au coin de la rue.'),
     ] },
-    { id: 'ru-muzej', emoji: '🏛️', title: 'В музее', steps: [
+    { id: 'ru-muzej', emoji: '🏛️', title: 'В музее', title_fr: 'Au musée', steps: [
       line('B', 'Добрый день. Сколько стоит билет?', 'Bonjour. Combien coûte le billet ?'),
       line('A', 'Пятьсот рублей для взрослых, двести пятьдесят для студентов.', 'Cinq cents roubles pour les adultes, deux cent cinquante pour les étudiants.'),
       choice('Есть скидка для студентов?', 'Y a-t-il une réduction étudiants ?', [{ text: 'Я студент. Есть ли для меня скидка?', fr: 'Je suis étudiant. Y a-t-il une réduction pour moi ?' }, { text: 'Музей слишком дорогой.', fr: 'Le musée est trop cher.' }, { text: 'Я не люблю музеи.', fr: 'Je n\'aime pas les musées.' }, { text: 'Когда открывается музей?', fr: 'Quand le musée ouvre-t-il ?' }], 0),
@@ -582,7 +582,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Можно фотографировать?', 'Peut-on photographier ?', [{ text: 'Можно здесь фотографировать?', fr: 'Peut-on photographier ici ?' }, { text: 'У меня нет фотоаппарата.', fr: 'Je n\'ai pas d\'appareil photo.' }, { text: 'Где выход?', fr: 'Où est la sortie ?' }, { text: 'Музей скоро закроется.', fr: 'Le musée va bientôt fermer.' }], 0),
       line('A', 'На первом этаже да, выше нельзя.', 'Au rez-de-chaussée oui, pas au-dessus.'),
     ] },
-    { id: 'ru-magazin', emoji: '🛒', title: 'В магазине', steps: [
+    { id: 'ru-magazin', emoji: '🛒', title: 'В магазине', title_fr: 'En boutique', steps: [
       line('B', 'Здравствуйте. Я ищу куртку.', 'Bonjour. Je cherche une veste.'),
       line('A', 'Какой размер вам нужен?', 'Quelle taille vous faut-il ?'),
       choice('Какой размер ищете?', 'Quelle taille cherchez-vous ?', [{ text: 'Средний размер, пожалуйста.', fr: 'Taille moyenne, s.v.p.' }, { text: 'Я не знаю свой размер.', fr: 'Je ne connais pas ma taille.' }, { text: 'Ищу брюки.', fr: 'Je cherche un pantalon.' }, { text: 'Мне не нужна куртка.', fr: 'Je n\'ai pas besoin de veste.' }], 0),
@@ -592,7 +592,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   ja: [
-    { id: 'ja-hotel', emoji: '🏨', title: 'ホテルにて', steps: [
+    { id: 'ja-hotel', emoji: '🏨', title: 'ホテルにて', title_fr: 'À l'hôtel', steps: [
       line('B', '田中という名前で予約しています。', 'J\'ai une réservation au nom de Tanaka.'),
       line('A', 'ツインルーム、2泊ですね。', 'Chambre double pour deux nuits.'),
       choice('お間違いないですか？', 'C\'est bien ça ?', [{ text: 'はい、そうです。朝食は何時からですか？', fr: 'Oui, c\'est ça. Le petit-déjeuner est à quelle heure ?' }, { text: 'サッカーが好きです。', fr: 'J\'aime le football.' }, { text: 'ここは暑いですね。', fr: 'Il fait chaud ici.' }, { text: '予約していません。', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -600,7 +600,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('鍵をいただけますか？', 'Puis-je avoir la clé ?', [{ text: '鍵をいただけますか？', fr: 'La clé, s.v.p. ?' }, { text: 'このホテルは好きではありません。', fr: 'Je n\'aime pas cet hôtel.' }, { text: 'ピザが食べたいです。', fr: 'Je veux une pizza.' }, { text: '電車が遅れています。', fr: 'Le train est en retard.' }], 0),
       line('A', 'こちらが鍵です。305号室、3階でございます。', 'Voici votre clé. Chambre 305, troisième étage.'),
     ] },
-    { id: 'ja-resutoran', emoji: '🍽️', title: 'レストランにて', steps: [
+    { id: 'ja-resutoran', emoji: '🍽️', title: 'レストランにて', title_fr: 'Au restaurant', steps: [
       line('A', 'ご予約はございますか？', 'Avez-vous une réservation ?'),
       choice('ご予約はございますか？', 'Avez-vous une réservation ?', [{ text: 'いいえ、2名です。', fr: 'Non, mais nous sommes deux.' }, { text: '田中と申します。', fr: 'Je m\'appelle Tanaka.' }, { text: '美術館は閉まっています。', fr: 'Le musée est fermé.' }, { text: 'タクシーが必要です。', fr: 'J\'ai besoin d\'un taxi.' }], 0),
       line('A', 'ご注文はお決まりですか？', 'Êtes-vous prêts à commander ?'),
@@ -608,7 +608,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       line('A', '本日のおすすめはラーメンです。', 'Le plat du jour est le ramen.'),
       choice('どうやって払いますか？', 'Comment paye-t-on ?', [{ text: 'では、ラーメンをお願いします。', fr: 'Alors, je prends le ramen, s.v.p.' }, { text: '麺が好きではありません。', fr: 'Je n\'aime pas les nouilles.' }, { text: 'レストランは遠いです。', fr: 'Le restaurant est loin.' }, { text: '海鮮アレルギーがあります。', fr: 'Je suis allergique aux fruits de mer.' }], 0),
     ] },
-    { id: 'ja-takushi', emoji: '🚕', title: 'タクシーにて', steps: [
+    { id: 'ja-takushi', emoji: '🚕', title: 'タクシーにて', title_fr: 'En taxi', steps: [
       line('B', '空港までお願いします。', 'À l\'aéroport, s.v.p.'),
       line('A', '何ターミナルですか？', 'Quel terminal ?'),
       choice('何ターミナルですか？', 'Quel terminal ?', [{ text: '第二ターミナル、パリ行きのフライトです。', fr: 'Terminal deux, vol pour Paris.' }, { text: 'どこにいるかわかりません。', fr: 'Je ne sais pas où je suis.' }, { text: '東京が好きです。', fr: 'J\'aime Tokyo.' }, { text: 'ホテルは近くにあります。', fr: 'L\'hôtel est près d\'ici.' }], 0),
@@ -616,7 +616,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('いくらかかりますか？', 'Combien ça va coûter ?', [{ text: 'だいたいいくらかかりますか？', fr: 'Combien approximativement ?' }, { text: '急いでいません。', fr: 'Je ne suis pas pressé.' }, { text: '渋滞がひどいですね。', fr: 'Il y a beaucoup de circulation.' }, { text: '地下鉄の方が好きです。', fr: 'Je préfère le métro.' }], 0),
       line('A', 'だいたい3,000円くらいです。', 'Environ trois mille yens.'),
     ] },
-    { id: 'ja-yakkyoku', emoji: '💊', title: '薬局にて', steps: [
+    { id: 'ja-yakkyoku', emoji: '💊', title: '薬局にて', title_fr: 'À la pharmacie', steps: [
       line('B', '頭痛に効く薬はありますか？', 'Avez-vous quelque chose pour le mal de tête ?'),
       line('A', '熱もありますか？', 'Avez-vous aussi de la fièvre ?'),
       choice('熱もありますか？', 'Avez-vous de la fièvre ?', [{ text: 'いいえ、頭痛だけで疲れています。', fr: 'Non, juste mal à la tête et je suis fatigué.' }, { text: 'スポーツが好きです。', fr: 'J\'aime le sport.' }, { text: '病院は遠いです。', fr: 'L\'hôpital est loin.' }, { text: '日本語が話せません。', fr: 'Je ne parle pas japonais.' }], 0),
@@ -624,14 +624,14 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('処方箋は必要ですか？', 'Faut-il une ordonnance ?', [{ text: '処方箋なしで買えますか？', fr: 'Puis-je l\'acheter sans ordonnance ?' }, { text: '薬が好きではありません。', fr: 'Je n\'aime pas les médicaments.' }, { text: 'おなかがすいています。', fr: 'J\'ai faim.' }, { text: '医者は忙しいです。', fr: 'Le médecin est occupé.' }], 0),
       line('A', 'はい、処方箋は不要です。500円になります。', 'Oui, sans ordonnance. C\'est cinq cents yens.'),
     ] },
-    { id: 'ja-kafe', emoji: '☕', title: 'カフェにて', steps: [
+    { id: 'ja-kafe', emoji: '☕', title: 'カフェにて', title_fr: 'Au café', steps: [
       line('A', 'いらっしゃいませ！ご注文はお決まりですか？', 'Bienvenue ! Avez-vous choisi ?'),
       choice('何を飲みますか？', 'Que souhaitez-vous boire ?', [{ text: 'カフェラテとクロワッサンをください。', fr: 'Un café latte et un croissant, s.v.p.' }, { text: '日本語が話せません。', fr: 'Je ne parle pas japonais.' }, { text: '駅はどこですか？', fr: 'Où est la gare ?' }, { text: 'タクシーを探しています。', fr: 'Je cherche un taxi.' }], 0),
       line('A', 'お砂糖はいかがですか？', 'Désirez-vous du sucre ?'),
       choice('砂糖は必要ですか？', 'Avez-vous besoin de sucre ?', [{ text: 'ミルクはお願いしますが、砂糖は結構です。', fr: 'Du lait s.v.p., mais pas de sucre.' }, { text: 'コーヒーが飲めません。', fr: 'Je ne peux pas boire de café.' }, { text: 'お茶が好きです。', fr: 'J\'aime le thé.' }, { text: 'いいえ、けっこうです。', fr: 'Non merci.' }], 0),
       line('A', '六百円になります。', 'Ça fait six cents yens.'),
     ] },
-    { id: 'ja-michi', emoji: '🗺️', title: '道を尋ねる', steps: [
+    { id: 'ja-michi', emoji: '🗺️', title: '道を尋ねる', title_fr: 'Dans la rue', steps: [
       line('B', 'すみません、駅へはどうやって行けばいいですか？', 'Excusez-moi, comment puis-je aller à la gare ?'),
       line('A', 'まっすぐ行って、次の角を左に曲がってください。', 'Allez tout droit et tournez à gauche au prochain coin.'),
       choice('遠いですか？', 'C\'est loin ?', [{ text: 'ここから遠いですか？', fr: 'Est-ce loin d\'ici ?' }, { text: 'タクシーを使います。', fr: 'Je vais prendre un taxi.' }, { text: '道がわかります。', fr: 'Je connais le chemin.' }, { text: 'バスに乗ります。', fr: 'Je vais prendre le bus.' }], 0),
@@ -639,7 +639,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('地下鉄はありますか？', 'Y a-t-il un métro ?', [{ text: '近くに地下鉄の駅はありますか？', fr: 'Y a-t-il une station de métro à proximité ?' }, { text: '地下鉄は好きではありません。', fr: 'Je n\'aime pas le métro.' }, { text: '歩いた方がいいです。', fr: 'Il vaut mieux marcher.' }, { text: 'タクシーの方が速いです。', fr: 'Le taxi est plus rapide.' }], 0),
       line('A', 'はい、角を曲がったところに駅があります。', 'Oui, il y a une station au coin de la rue.'),
     ] },
-    { id: 'ja-bijutsukan', emoji: '🏛️', title: '博物館にて', steps: [
+    { id: 'ja-bijutsukan', emoji: '🏛️', title: '博物館にて', title_fr: 'Au musée', steps: [
       line('B', 'こんにちは。入場料はいくらですか？', 'Bonjour. Combien coûte l\'entrée ?'),
       line('A', '大人は千五百円、学生は八百円です。', 'Mille cinq cents yens pour les adultes, huit cents pour les étudiants.'),
       choice('学生割引はありますか？', 'Y a-t-il une réduction étudiants ?', [{ text: '学生ですが、割引はありますか？', fr: 'Je suis étudiant, y a-t-il une réduction ?' }, { text: '博物館は高すぎます。', fr: 'Le musée est trop cher.' }, { text: '博物館は好きではありません。', fr: 'Je n\'aime pas les musées.' }, { text: '何時に開きますか？', fr: 'À quelle heure ouvre-t-il ?' }], 0),
@@ -647,7 +647,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('写真を撮ってもいいですか？', 'Puis-je prendre des photos ?', [{ text: '館内で写真を撮ってもいいですか？', fr: 'Puis-je prendre des photos à l\'intérieur ?' }, { text: 'カメラを持っていません。', fr: 'Je n\'ai pas d\'appareil photo.' }, { text: '出口はどこですか？', fr: 'Où est la sortie ?' }, { text: '博物館はもうすぐ閉まります。', fr: 'Le musée va bientôt fermer.' }], 0),
       line('A', '一階はよいですが、二階はお断りしています。', 'Au rez-de-chaussée oui, au deuxième étage non.'),
     ] },
-    { id: 'ja-kaimono', emoji: '🛒', title: '買い物にて', steps: [
+    { id: 'ja-kaimono', emoji: '🛒', title: '買い物にて', title_fr: 'En boutique', steps: [
       line('B', 'こんにちは。ジャケットを探しているのですが。', 'Bonjour. Je cherche une veste.'),
       line('A', 'サイズはいくつですか？', 'Quelle taille faites-vous ?'),
       choice('何サイズをお探しですか？', 'Quelle taille cherchez-vous ?', [{ text: 'Mサイズをお願いします。', fr: 'Taille M, s.v.p.' }, { text: 'サイズがわかりません。', fr: 'Je ne connais pas ma taille.' }, { text: 'ズボンを探しています。', fr: 'Je cherche un pantalon.' }, { text: 'ジャケットは要りません。', fr: 'Je n\'ai pas besoin de veste.' }], 0),
@@ -657,7 +657,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   ko: [
-    { id: 'ko-hotel', emoji: '🏨', title: '호텔에서', steps: [
+    { id: 'ko-hotel', emoji: '🏨', title: '호텔에서', title_fr: 'À l'hôtel', steps: [
       line('B', '김이라는 이름으로 예약했습니다.', 'J\'ai une réservation au nom de Kim.'),
       line('A', '2인실 2박이시죠.', 'Chambre double pour deux nuits.'),
       choice('맞으신가요?', 'C\'est correct ?', [{ text: '네, 맞아요. 아침 식사는 몇 시에 시작하나요?', fr: 'Oui, c\'est ça. Le petit-déjeuner est à quelle heure ?' }, { text: '저는 축구를 좋아해요.', fr: 'J\'aime le football.' }, { text: '여기 더워요.', fr: 'Il fait chaud ici.' }, { text: '예약이 없어요.', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -665,7 +665,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('열쇠를 주시겠어요?', 'Puis-je avoir la clé ?', [{ text: '열쇠를 주시겠어요?', fr: 'La clé, s.v.p. ?' }, { text: '이 호텔이 마음에 들지 않아요.', fr: 'Je n\'aime pas cet hôtel.' }, { text: '피자를 먹고 싶어요.', fr: 'Je veux une pizza.' }, { text: '기차가 늦었어요.', fr: 'Le train est en retard.' }], 0),
       line('A', '여기 열쇠 드립니다. 305호실, 3층이에요.', 'Voici votre clé. Chambre 305, troisième étage.'),
     ] },
-    { id: 'ko-restaurant', emoji: '🍽️', title: '식당에서', steps: [
+    { id: 'ko-restaurant', emoji: '🍽️', title: '식당에서', title_fr: 'Au restaurant', steps: [
       line('A', '예약하셨나요?', 'Avez-vous une réservation ?'),
       choice('예약하셨나요?', 'Avez-vous une réservation ?', [{ text: '아니요, 두 명이에요.', fr: 'Non, mais nous sommes deux.' }, { text: '제 이름은 미나예요.', fr: 'Je m\'appelle Mina.' }, { text: '박물관이 문을 닫았어요.', fr: 'Le musée est fermé.' }, { text: '택시가 필요해요.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
       line('A', '무엇을 주문하시겠어요?', 'Que souhaitez-vous commander ?'),
@@ -673,7 +673,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       line('A', '오늘의 메뉴는 비빔밥이에요.', 'Le plat du jour est le bibimbap.'),
       choice('어떻게 계산하나요?', 'Comment paye-t-on ?', [{ text: '그럼 비빔밥으로 주세요.', fr: 'Je prends le bibimbap, s.v.p.' }, { text: '쌀을 좋아하지 않아요.', fr: 'Je n\'aime pas le riz.' }, { text: '식당이 멀어요.', fr: 'Le restaurant est loin.' }, { text: '해산물 알레르기가 있어요.', fr: 'Je suis allergique aux fruits de mer.' }], 0),
     ] },
-    { id: 'ko-taxi', emoji: '🚕', title: '택시에서', steps: [
+    { id: 'ko-taxi', emoji: '🚕', title: '택시에서', title_fr: 'En taxi', steps: [
       line('B', '공항으로 가주세요.', 'À l\'aéroport, s.v.p.'),
       line('A', '몇 번 터미널이에요?', 'Quel terminal ?'),
       choice('몇 번 터미널이에요?', 'Quel terminal ?', [{ text: '2터미널이요. 파리행 비행기예요.', fr: 'Terminal deux, vol pour Paris.' }, { text: '어디에 있는지 모르겠어요.', fr: 'Je ne sais pas où je suis.' }, { text: '서울을 좋아해요.', fr: 'J\'aime Séoul.' }, { text: '호텔이 가까워요.', fr: 'L\'hôtel est près d\'ici.' }], 0),
@@ -681,7 +681,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('얼마나 나올까요?', 'Combien ça va coûter ?', [{ text: '대략 얼마 정도 나올까요?', fr: 'Combien approximativement ?' }, { text: '급하지 않아요.', fr: 'Je ne suis pas pressé.' }, { text: '교통이 많이 막혀요.', fr: 'Il y a beaucoup de circulation.' }, { text: '지하철을 더 좋아해요.', fr: 'Je préfère le métro.' }], 0),
       line('A', '약 20,000원 정도예요.', 'Environ vingt mille wons.'),
     ] },
-    { id: 'ko-yakguk', emoji: '💊', title: '약국에서', steps: [
+    { id: 'ko-yakguk', emoji: '💊', title: '약국에서', title_fr: 'À la pharmacie', steps: [
       line('B', '두통에 좋은 약 있나요?', 'Avez-vous quelque chose pour le mal de tête ?'),
       line('A', '열도 있으신가요?', 'Avez-vous aussi de la fièvre ?'),
       choice('열도 있으신가요?', 'Avez-vous de la fièvre ?', [{ text: '아니요, 두통만 있고 피곤해요.', fr: 'Non, juste mal à la tête et je suis fatigué.' }, { text: '저는 운동을 좋아해요.', fr: 'J\'aime le sport.' }, { text: '병원이 멀어요.', fr: 'L\'hôpital est loin.' }, { text: '한국어를 못 해요.', fr: 'Je ne parle pas coréen.' }], 0),
@@ -689,14 +689,14 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('처방전이 필요한가요?', 'Faut-il une ordonnance ?', [{ text: '처방전 없이 살 수 있나요?', fr: 'Puis-je l\'acheter sans ordonnance ?' }, { text: '약을 좋아하지 않아요.', fr: 'Je n\'aime pas les médicaments.' }, { text: '배가 고파요.', fr: 'J\'ai faim.' }, { text: '의사가 바빠요.', fr: 'Le médecin est occupé.' }], 0),
       line('A', '네, 처방전 없어도 돼요. 3,000원입니다.', 'Oui, sans ordonnance. C\'est trois mille wons.'),
     ] },
-    { id: 'ko-cafe', emoji: '☕', title: '카페에서', steps: [
+    { id: 'ko-cafe', emoji: '☕', title: '카페에서', title_fr: 'Au café', steps: [
       line('A', '어서 오세요! 주문하시겠어요?', 'Bienvenue ! Souhaitez-vous commander ?'),
       choice('무엇을 드시겠어요?', 'Que souhaitez-vous ?', [{ text: '카페라테 한 잔과 크루아상 주세요.', fr: 'Un café latte et un croissant, s.v.p.' }, { text: '한국어를 못해요.', fr: 'Je ne parle pas coréen.' }, { text: '역이 어디에 있어요?', fr: 'Où est la gare ?' }, { text: '택시를 찾고 있어요.', fr: 'Je cherche un taxi.' }], 0),
       line('A', '설탕 드릴까요?', 'Voulez-vous du sucre ?'),
       choice('설탕 필요하세요?', 'Avez-vous besoin de sucre ?', [{ text: '우유는 넣어주세요. 설탕은 괜찮아요.', fr: 'Du lait s.v.p., mais pas de sucre.' }, { text: '커피를 안 마셔요.', fr: 'Je ne bois pas de café.' }, { text: '차를 좋아해요.', fr: 'J\'aime le thé.' }, { text: '아니요, 괜찮아요.', fr: 'Non merci.' }], 0),
       line('A', '오천 원입니다.', 'Ça fait cinq mille wons.'),
     ] },
-    { id: 'ko-gil', emoji: '🗺️', title: '길 묻기', steps: [
+    { id: 'ko-gil', emoji: '🗺️', title: '길 묻기', title_fr: 'Dans la rue', steps: [
       line('B', '실례합니다, 역에 어떻게 가나요?', 'Excusez-moi, comment puis-je aller à la gare ?'),
       line('A', '직진하다가 왼쪽으로 꺾으세요.', 'Allez tout droit puis tournez à gauche.'),
       choice('멀어요?', 'C\'est loin ?', [{ text: '여기서 멀어요?', fr: 'Est-ce loin d\'ici ?' }, { text: '택시를 탈게요.', fr: 'Je vais prendre un taxi.' }, { text: '길을 알아요.', fr: 'Je connais le chemin.' }, { text: '버스를 탈게요.', fr: 'Je vais prendre le bus.' }], 0),
@@ -704,7 +704,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('지하철이 있나요?', 'Y a-t-il un métro ?', [{ text: '근처에 지하철역이 있나요?', fr: 'Y a-t-il une station de métro à proximité ?' }, { text: '지하철을 안 좋아해요.', fr: 'Je n\'aime pas le métro.' }, { text: '걷는 게 좋아요.', fr: 'Je préfère marcher.' }, { text: '택시가 더 빨라요.', fr: 'Le taxi est plus rapide.' }], 0),
       line('A', '네, 모퉁이 바로 지나서 역이 있어요.', 'Oui, la station est juste après le coin de la rue.'),
     ] },
-    { id: 'ko-museum', emoji: '🏛️', title: '박물관에서', steps: [
+    { id: 'ko-museum', emoji: '🏛️', title: '박물관에서', title_fr: 'Au musée', steps: [
       line('B', '안녕하세요. 입장료가 얼마예요?', 'Bonjour. Combien coûte l\'entrée ?'),
       line('A', '어른은 만 원, 학생은 오천 원이에요.', 'Dix mille wons pour les adultes, cinq mille pour les étudiants.'),
       choice('학생 할인이 있나요?', 'Y a-t-il une réduction étudiants ?', [{ text: '학생인데 할인받을 수 있나요?', fr: 'Je suis étudiant, puis-je avoir une réduction ?' }, { text: '너무 비싸요.', fr: 'C\'est trop cher.' }, { text: '박물관을 안 좋아해요.', fr: 'Je n\'aime pas les musées.' }, { text: '몇 시에 열어요?', fr: 'À quelle heure ouvre-t-il ?' }], 0),
@@ -712,7 +712,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('사진을 찍어도 돼요?', 'Puis-je prendre des photos ?', [{ text: '안에서 사진 찍어도 되나요?', fr: 'Puis-je prendre des photos à l\'intérieur ?' }, { text: '카메라가 없어요.', fr: 'Je n\'ai pas d\'appareil photo.' }, { text: '출구가 어디예요?', fr: 'Où est la sortie ?' }, { text: '박물관이 곧 닫아요.', fr: 'Le musée ferme bientôt.' }], 0),
       line('A', '1층은 되는데 윗층은 안 돼요.', 'Au rez-de-chaussée oui, pas aux étages supérieurs.'),
     ] },
-    { id: 'ko-shopping', emoji: '🛒', title: '쇼핑에서', steps: [
+    { id: 'ko-shopping', emoji: '🛒', title: '쇼핑에서', title_fr: 'En boutique', steps: [
       line('B', '안녕하세요. 자켓을 찾고 있어요.', 'Bonjour. Je cherche une veste.'),
       line('A', '어떤 사이즈 찾으세요?', 'Quelle taille cherchez-vous ?'),
       choice('사이즈가 어떻게 되세요?', 'Quelle taille faites-vous ?', [{ text: 'M 사이즈 주세요.', fr: 'Taille M, s.v.p.' }, { text: '사이즈를 몰라요.', fr: 'Je ne connais pas ma taille.' }, { text: '바지를 찾고 있어요.', fr: 'Je cherche un pantalon.' }, { text: '자켓이 필요 없어요.', fr: 'Je n\'ai pas besoin de veste.' }], 0),
@@ -722,7 +722,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   zh: [
-    { id: 'zh-hotel', emoji: '🏨', title: '在酒店', steps: [
+    { id: 'zh-hotel', emoji: '🏨', title: '在酒店', title_fr: 'À l'hôtel', steps: [
       line('B', '我用王先生的名字预订了房间。', 'J\'ai une réservation au nom de M. Wang.'),
       line('A', '双人间，住两晚，是吗？', 'Chambre double pour deux nuits ?'),
       choice('是这样吗？', 'C\'est bien ça ?', [{ text: '是的，就是这样。早餐是几点开始？', fr: 'Oui, c\'est ça. Le petit-déjeuner est à quelle heure ?' }, { text: '我喜欢足球。', fr: 'J\'aime le football.' }, { text: '这里很热。', fr: 'Il fait chaud ici.' }, { text: '我没有预订。', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -730,7 +730,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('请给我房卡。', 'La clé, s.v.p. ?', [{ text: '请给我房卡，好吗？', fr: 'La clé, s.v.p. ?' }, { text: '我不喜欢这家酒店。', fr: 'Je n\'aime pas cet hôtel.' }, { text: '我想吃披萨。', fr: 'Je veux une pizza.' }, { text: '火车晚点了。', fr: 'Le train est en retard.' }], 0),
       line('A', '这是您的房卡。305号房，三楼。', 'Voici votre clé. Chambre 305, troisième étage.'),
     ] },
-    { id: 'zh-restaurant', emoji: '🍽️', title: '在餐厅', steps: [
+    { id: 'zh-restaurant', emoji: '🍽️', title: '在餐厅', title_fr: 'Au restaurant', steps: [
       line('A', '请问有预订吗？', 'Avez-vous une réservation ?'),
       choice('请问有预订吗？', 'Avez-vous une réservation ?', [{ text: '没有，但我们有两个人。', fr: 'Non, mais nous sommes deux.' }, { text: '我叫小红。', fr: 'Je m\'appelle Xiaohong.' }, { text: '博物馆关门了。', fr: 'Le musée est fermé.' }, { text: '我需要出租车。', fr: 'J\'ai besoin d\'un taxi.' }], 0),
       line('A', '您想点什么？', 'Que souhaitez-vous ?'),
@@ -738,7 +738,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       line('A', '今日特色菜是北京烤鸭。', 'Le plat du jour est le canard laqué de Pékin.'),
       choice('怎么付款？', 'Comment paye-t-on ?', [{ text: '好的，我要北京烤鸭。', fr: 'Bien, je prends le canard laqué.' }, { text: '我不喜欢鸭肉。', fr: 'Je n\'aime pas le canard.' }, { text: '餐厅很远。', fr: 'Le restaurant est loin.' }, { text: '我对海鲜过敏。', fr: 'Je suis allergique aux fruits de mer.' }], 0),
     ] },
-    { id: 'zh-taxi', emoji: '🚕', title: '坐出租车', steps: [
+    { id: 'zh-taxi', emoji: '🚕', title: '坐出租车', title_fr: 'En taxi', steps: [
       line('B', '去机场，谢谢。', 'À l\'aéroport, s.v.p.'),
       line('A', '哪个航站楼？', 'Quel terminal ?'),
       choice('哪个航站楼？', 'Quel terminal ?', [{ text: '2号航站楼，去巴黎的航班。', fr: 'Terminal deux, vol pour Paris.' }, { text: '我不知道我在哪里。', fr: 'Je ne sais pas où je suis.' }, { text: '我喜欢北京。', fr: 'J\'aime Pékin.' }, { text: '酒店在附近。', fr: 'L\'hôtel est près d\'ici.' }], 0),
@@ -746,7 +746,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('大概要多少钱？', 'Combien ça va coûter ?', [{ text: '大概要多少钱？', fr: 'Combien approximativement ?' }, { text: '我不着急。', fr: 'Je ne suis pas pressé.' }, { text: '堵车很严重。', fr: 'Il y a beaucoup de circulation.' }, { text: '我更喜欢地铁。', fr: 'Je préfère le métro.' }], 0),
       line('A', '大概一百五十元左右。', 'Environ cent cinquante yuans.'),
     ] },
-    { id: 'zh-yaodian', emoji: '💊', title: '在药店', steps: [
+    { id: 'zh-yaodian', emoji: '💊', title: '在药店', title_fr: 'À la pharmacie', steps: [
       line('B', '我头疼，有什么药吗？', 'J\'ai mal à la tête, avez-vous quelque chose ?'),
       line('A', '您也发烧吗？', 'Avez-vous aussi de la fièvre ?'),
       choice('您发烧吗？', 'Avez-vous de la fièvre ?', [{ text: '不，只是头疼，而且我很累。', fr: 'Non, juste mal à la tête et je suis fatigué.' }, { text: '我喜欢运动。', fr: 'J\'aime le sport.' }, { text: '医院很远。', fr: 'L\'hôpital est loin.' }, { text: '我不会说中文。', fr: 'Je ne parle pas chinois.' }], 0),
@@ -754,14 +754,14 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('需要处方吗？', 'Faut-il une ordonnance ?', [{ text: '不需要处方就能买吗？', fr: 'Puis-je l\'acheter sans ordonnance ?' }, { text: '我不喜欢吃药。', fr: 'Je n\'aime pas les médicaments.' }, { text: '我饿了。', fr: 'J\'ai faim.' }, { text: '医生很忙。', fr: 'Le médecin est occupé.' }], 0),
       line('A', '不需要处方，二十元。', 'Sans ordonnance. C\'est vingt yuans.'),
     ] },
-    { id: 'zh-kafei', emoji: '☕', title: '在咖啡馆', steps: [
+    { id: 'zh-kafei', emoji: '☕', title: '在咖啡馆', title_fr: 'Au café', steps: [
       line('A', '欢迎光临！请问您要点什么？', 'Bienvenue ! Que souhaitez-vous commander ?'),
       choice('您想喝什么？', 'Que souhaitez-vous boire ?', [{ text: '请给我一杯拿铁和一个可颂面包。', fr: 'Un café latte et un croissant, s.v.p.' }, { text: '我不会说中文。', fr: 'Je ne parle pas chinois.' }, { text: '火车站在哪里？', fr: 'Où est la gare ?' }, { text: '我在找出租车。', fr: 'Je cherche un taxi.' }], 0),
       line('A', '需要加糖吗？', 'Voulez-vous du sucre ?'),
       choice('要糖吗？', 'Voulez-vous du sucre ?', [{ text: '加牛奶，不加糖，谢谢。', fr: 'Avec du lait mais sans sucre, merci.' }, { text: '我不喝咖啡。', fr: 'Je ne bois pas de café.' }, { text: '我喜欢喝茶。', fr: 'J\'aime le thé.' }, { text: '不用，谢谢。', fr: 'Non merci.' }], 0),
       line('A', '一共三十元。', 'Ça fait trente yuans.'),
     ] },
-    { id: 'zh-wenlu', emoji: '🗺️', title: '问路', steps: [
+    { id: 'zh-wenlu', emoji: '🗺️', title: '问路', title_fr: 'Dans la rue', steps: [
       line('B', '打扰一下，请问火车站怎么走？', 'Excusez-moi, comment puis-je aller à la gare ?'),
       line('A', '一直走，然后向左转。', 'Allez tout droit, puis tournez à gauche.'),
       choice('远吗？', 'C\'est loin ?', [{ text: '从这里远吗？', fr: 'Est-ce loin d\'ici ?' }, { text: '我打算坐出租车。', fr: 'Je vais prendre un taxi.' }, { text: '我知道路。', fr: 'Je connais le chemin.' }, { text: '我坐公共汽车。', fr: 'Je vais prendre le bus.' }], 0),
@@ -769,7 +769,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('有地铁吗？', 'Y a-t-il un métro ?', [{ text: '附近有地铁站吗？', fr: 'Y a-t-il une station de métro à proximité ?' }, { text: '我不喜欢地铁。', fr: 'Je n\'aime pas le métro.' }, { text: '我更喜欢走路。', fr: 'Je préfère marcher.' }, { text: '出租车更快。', fr: 'Le taxi est plus rapide.' }], 0),
       line('A', '有，地铁站就在拐角处。', 'Oui, la station de métro est juste au coin de la rue.'),
     ] },
-    { id: 'zh-bowuguan', emoji: '🏛️', title: '在博物馆', steps: [
+    { id: 'zh-bowuguan', emoji: '🏛️', title: '在博物馆', title_fr: 'Au musée', steps: [
       line('B', '您好。请问门票多少钱？', 'Bonjour. Combien coûte le billet ?'),
       line('A', '成人票八十元，学生票四十元。', 'Quatre-vingts yuans pour les adultes, quarante pour les étudiants.'),
       choice('有学生折扣吗？', 'Y a-t-il une réduction étudiants ?', [{ text: '我是学生，有折扣吗？', fr: 'Je suis étudiant, y a-t-il une réduction ?' }, { text: '博物馆太贵了。', fr: 'Le musée est trop cher.' }, { text: '我不喜欢博物馆。', fr: 'Je n\'aime pas les musées.' }, { text: '几点开门？', fr: 'À quelle heure ouvre-t-il ?' }], 0),
@@ -777,7 +777,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('可以拍照吗？', 'Peut-on prendre des photos ?', [{ text: '馆内可以拍照吗？', fr: 'Peut-on prendre des photos à l\'intérieur ?' }, { text: '我没有相机。', fr: 'Je n\'ai pas d\'appareil photo.' }, { text: '出口在哪里？', fr: 'Où est la sortie ?' }, { text: '博物馆快关门了。', fr: 'Le musée va bientôt fermer.' }], 0),
       line('A', '一楼可以，二楼不可以。', 'Au rez-de-chaussée oui, au deuxième étage non.'),
     ] },
-    { id: 'zh-gouwu', emoji: '🛒', title: '购物', steps: [
+    { id: 'zh-gouwu', emoji: '🛒', title: '购物', title_fr: 'En boutique', steps: [
       line('B', '您好，我在找一件夹克。', 'Bonjour. Je cherche une veste.'),
       line('A', '您穿多大号？', 'Quelle taille faites-vous ?'),
       choice('您需要什么尺码？', 'Quelle taille cherchez-vous ?', [{ text: '中号，谢谢。', fr: 'Taille moyenne, merci.' }, { text: '我不知道我的尺码。', fr: 'Je ne connais pas ma taille.' }, { text: '我在找裤子。', fr: 'Je cherche un pantalon.' }, { text: '我不需要夹克。', fr: 'Je n\'ai pas besoin de veste.' }], 0),
@@ -787,7 +787,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   ar: [
-    { id: 'ar-hotel', emoji: '🏨', title: 'في الفندق', steps: [
+    { id: 'ar-hotel', emoji: '🏨', title: 'في الفندق', title_fr: 'À l'hôtel', steps: [
       line('B', 'لدي حجز باسم أحمد.', 'J\'ai une réservation au nom d\'Ahmad.'),
       line('A', 'غرفة مزدوجة لليلتين.', 'Chambre double pour deux nuits.'),
       choice('هل هذا صحيح؟', 'C\'est correct ?', [{ text: 'نعم، بالضبط. في أي وقت يكون الإفطار؟', fr: 'Oui, exactement. Le petit-déjeuner est à quelle heure ?' }, { text: 'أنا أحب كرة القدم.', fr: 'J\'aime le football.' }, { text: 'الجو حار هنا.', fr: 'Il fait chaud ici.' }, { text: 'ليس لدي حجز.', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -795,7 +795,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('هل يمكنني الحصول على المفتاح؟', 'Puis-je avoir la clé ?', [{ text: 'هل يمكنني الحصول على المفتاح من فضلك؟', fr: 'La clé, s.v.p. ?' }, { text: 'لا أحب هذا الفندق.', fr: 'Je n\'aime pas cet hôtel.' }, { text: 'أريد بيتزا.', fr: 'Je veux une pizza.' }, { text: 'القطار متأخر.', fr: 'Le train est en retard.' }], 0),
       line('A', 'تفضل مفتاحك. الغرفة 205، الطابق الثاني.', 'Voici votre clé. Chambre 205, deuxième étage.'),
     ] },
-    { id: 'ar-matam', emoji: '🍽️', title: 'في المطعم', steps: [
+    { id: 'ar-matam', emoji: '🍽️', title: 'في المطعم', title_fr: 'Au restaurant', steps: [
       line('A', 'هل لديكم حجز؟', 'Avez-vous une réservation ?'),
       choice('هل لديكم حجز؟', 'Avez-vous une réservation ?', [{ text: 'لا، لكننا شخصان.', fr: 'Non, mais nous sommes deux.' }, { text: 'اسمي فاطمة.', fr: 'Je m\'appelle Fatima.' }, { text: 'المتحف مغلق.', fr: 'Le musée est fermé.' }, { text: 'أحتاج سيارة أجرة.', fr: 'J\'ai besoin d\'un taxi.' }], 0),
       line('A', 'ماذا تريدون أن تطلبوا؟', 'Que souhaitez-vous commander ?'),
@@ -803,7 +803,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       line('A', 'طبق اليوم هو كبسة الدجاج.', 'Le plat du jour est le kabsa au poulet.'),
       choice('كيف يتم الدفع؟', 'Comment paye-t-on ?', [{ text: 'سآخذ الكبسة.', fr: 'Je prends le kabsa.' }, { text: 'لا أحب الأرز.', fr: 'Je n\'aime pas le riz.' }, { text: 'المطعم بعيد.', fr: 'Le restaurant est loin.' }, { text: 'لدي حساسية من المأكولات البحرية.', fr: 'Je suis allergique aux fruits de mer.' }], 0),
     ] },
-    { id: 'ar-taxi', emoji: '🚕', title: 'في سيارة الأجرة', steps: [
+    { id: 'ar-taxi', emoji: '🚕', title: 'في سيارة الأجرة', title_fr: 'En taxi', steps: [
       line('B', 'إلى المطار من فضلك.', 'À l\'aéroport, s.v.p.'),
       line('A', 'أي صالة؟', 'Quel terminal ?'),
       choice('أي صالة؟', 'Quel terminal ?', [{ text: 'الصالة الثانية، رحلة إلى باريس.', fr: 'Terminal deux, vol pour Paris.' }, { text: 'لا أعرف أين أنا.', fr: 'Je ne sais pas où je suis.' }, { text: 'أحب الرياض.', fr: 'J\'aime Riyad.' }, { text: 'الفندق قريب.', fr: 'L\'hôtel est près d\'ici.' }], 0),
@@ -811,7 +811,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('كم سيكلف؟', 'Combien ça va coûter ?', [{ text: 'كم سيكون تقريباً؟', fr: 'Combien approximativement ?' }, { text: 'أنا لست مستعجلاً.', fr: 'Je ne suis pas pressé.' }, { text: 'يوجد ازدحام كبير.', fr: 'Il y a beaucoup de circulation.' }, { text: 'أفضل المترو.', fr: 'Je préfère le métro.' }], 0),
       line('A', 'حوالي خمسين ريالاً.', 'Environ cinquante riyals.'),
     ] },
-    { id: 'ar-saydaliya', emoji: '💊', title: 'في الصيدلية', steps: [
+    { id: 'ar-saydaliya', emoji: '💊', title: 'في الصيدلية', title_fr: 'À la pharmacie', steps: [
       line('B', 'أعاني من صداع، هل عندكم شيء؟', 'J\'ai mal à la tête, avez-vous quelque chose ?'),
       line('A', 'هل عندك حمى أيضاً؟', 'Avez-vous aussi de la fièvre ?'),
       choice('هل عندك حمى؟', 'Avez-vous de la fièvre ?', [{ text: 'لا، فقط صداع وأنا متعب.', fr: 'Non, juste mal à la tête et je suis fatigué.' }, { text: 'أنا أمارس الرياضة.', fr: 'Je fais du sport.' }, { text: 'المستشفى بعيد.', fr: 'L\'hôpital est loin.' }, { text: 'لا أتكلم العربية.', fr: 'Je ne parle pas arabe.' }], 0),
@@ -819,14 +819,14 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('هل يحتاج وصفة طبية؟', 'Faut-il une ordonnance ?', [{ text: 'هل يُباع بدون وصفة طبية؟', fr: 'Est-ce vendu sans ordonnance ?' }, { text: 'لا أحب الأدوية.', fr: 'Je n\'aime pas les médicaments.' }, { text: 'أنا جائع.', fr: 'J\'ai faim.' }, { text: 'الطبيب مشغول.', fr: 'Le médecin est occupé.' }], 0),
       line('A', 'لا، بدون وصفة. عشرون ريالاً.', 'Non, sans ordonnance. Vingt riyals.'),
     ] },
-    { id: 'ar-maqha', emoji: '☕', title: 'في المقهى', steps: [
+    { id: 'ar-maqha', emoji: '☕', title: 'في المقهى', title_fr: 'Au café', steps: [
       line('A', 'أهلاً وسهلاً! ماذا تريد أن تطلب؟', 'Bienvenue ! Que souhaitez-vous commander ?'),
       choice('ماذا تريد أن تشرب؟', 'Que souhaitez-vous boire ?', [{ text: 'قهوة بالحليب وكرواسان من فضلك.', fr: 'Un café au lait et un croissant, s.v.p.' }, { text: 'لا أتحدث العربية.', fr: 'Je ne parle pas arabe.' }, { text: 'أين المحطة؟', fr: 'Où est la gare ?' }, { text: 'أبحث عن سيارة أجرة.', fr: 'Je cherche un taxi.' }], 0),
       line('A', 'هل تريد سكراً؟', 'Voulez-vous du sucre ?'),
       choice('مع أو بدون سكر؟', 'Avec ou sans sucre ?', [{ text: 'مع الحليب بدون سكر، شكراً.', fr: 'Avec du lait mais sans sucre, merci.' }, { text: 'لا أشرب القهوة.', fr: 'Je ne bois pas de café.' }, { text: 'أفضّل الشاي.', fr: 'Je préfère le thé.' }, { text: 'لا، شكراً.', fr: 'Non merci.' }], 0),
       line('A', 'المجموع خمسة وعشرون درهماً.', 'Le total est vingt-cinq dirhams.'),
     ] },
-    { id: 'ar-ittijahat', emoji: '🗺️', title: 'طلب الاتجاهات', steps: [
+    { id: 'ar-ittijahat', emoji: '🗺️', title: 'طلب الاتجاهات', title_fr: 'Dans la rue', steps: [
       line('B', 'عفواً، كيف أصل إلى المحطة؟', 'Excusez-moi, comment puis-je aller à la gare ?'),
       line('A', 'اذهب مباشرة ثم انعطف يساراً.', 'Allez tout droit puis tournez à gauche.'),
       choice('هل هي بعيدة؟', 'C\'est loin ?', [{ text: 'هل هي بعيدة من هنا؟', fr: 'Est-ce loin d\'ici ?' }, { text: 'أفضّل سيارة الأجرة.', fr: 'Je préfère le taxi.' }, { text: 'أعرف الطريق.', fr: 'Je connais le chemin.' }, { text: 'سأركب الحافلة.', fr: 'Je vais prendre le bus.' }], 0),
@@ -834,7 +834,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('هل هناك مترو؟', 'Y a-t-il un métro ?', [{ text: 'هل هناك محطة مترو قريبة؟', fr: 'Y a-t-il une station de métro à proximité ?' }, { text: 'لا أحب المترو.', fr: 'Je n\'aime pas le métro.' }, { text: 'أفضّل المشي.', fr: 'Je préfère marcher.' }, { text: 'سيارة الأجرة أسرع.', fr: 'Le taxi est plus rapide.' }], 0),
       line('A', 'نعم، المحطة على بعد خطوات من هنا.', 'Oui, la station est à quelques pas d\'ici.'),
     ] },
-    { id: 'ar-mathaf', emoji: '🏛️', title: 'في المتحف', steps: [
+    { id: 'ar-mathaf', emoji: '🏛️', title: 'في المتحف', title_fr: 'Au musée', steps: [
       line('B', 'مرحباً. كم تكلف تذكرة الدخول؟', 'Bonjour. Combien coûte le billet d\'entrée ?'),
       line('A', 'خمسون درهماً للبالغين، وعشرون للطلاب.', 'Cinquante dirhams pour les adultes, vingt pour les étudiants.'),
       choice('هل هناك خصم للطلاب؟', 'Y a-t-il une réduction étudiants ?', [{ text: 'أنا طالب، هل يوجد خصم لي؟', fr: 'Je suis étudiant, y a-t-il une réduction pour moi ?' }, { text: 'المتحف غالٍ جداً.', fr: 'Le musée est trop cher.' }, { text: 'لا أحب المتاحف.', fr: 'Je n\'aime pas les musées.' }, { text: 'متى يفتح المتحف؟', fr: 'Quand le musée ouvre-t-il ?' }], 0),
@@ -842,7 +842,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('هل يمكنني التصوير؟', 'Puis-je prendre des photos ?', [{ text: 'هل يمكنني التصوير داخل المتحف؟', fr: 'Puis-je prendre des photos à l\'intérieur du musée ?' }, { text: 'ليس معي كاميرا.', fr: 'Je n\'ai pas d\'appareil photo.' }, { text: 'أين المخرج؟', fr: 'Où est la sortie ?' }, { text: 'المتحف سيغلق قريباً.', fr: 'Le musée va bientôt fermer.' }], 0),
       line('A', 'في الطابق الأرضي نعم، في الطابق العلوي لا.', 'Au rez-de-chaussée oui, à l\'étage supérieur non.'),
     ] },
-    { id: 'ar-tasawwuq', emoji: '🛒', title: 'في المتجر', steps: [
+    { id: 'ar-tasawwuq', emoji: '🛒', title: 'في المتجر', title_fr: 'En boutique', steps: [
       line('B', 'مرحباً. أبحث عن جاكيت.', 'Bonjour. Je cherche une veste.'),
       line('A', 'ما هو مقاسك؟', 'Quelle taille faites-vous ?'),
       choice('ما المقاس الذي تحتاجه؟', 'Quelle taille cherchez-vous ?', [{ text: 'مقاس وسط من فضلك.', fr: 'Taille moyenne, s.v.p.' }, { text: 'لا أعرف مقاسي.', fr: 'Je ne connais pas ma taille.' }, { text: 'أبحث عن بنطال.', fr: 'Je cherche un pantalon.' }, { text: 'لا أحتاج جاكيت.', fr: 'Je n\'ai pas besoin de veste.' }], 0),
@@ -852,7 +852,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
     ] },
   ],
   hi: [
-    { id: 'hi-hotel', emoji: '🏨', title: 'होटल में', steps: [
+    { id: 'hi-hotel', emoji: '🏨', title: 'होटल में', title_fr: 'À l'hôtel', steps: [
       line('B', 'शर्मा के नाम पर बुकिंग है।', 'J\'ai une réservation au nom de Sharma.'),
       line('A', 'दो रातों के लिए डबल रूम।', 'Chambre double pour deux nuits.'),
       choice('क्या यह सही है?', 'C\'est correct ?', [{ text: 'हाँ, बिल्कुल। नाश्ता किस समय होता है?', fr: 'Oui, exactement. Le petit-déjeuner est à quelle heure ?' }, { text: 'मुझे फुटबॉल पसंद है।', fr: 'J\'aime le football.' }, { text: 'यहाँ गर्मी है।', fr: 'Il fait chaud ici.' }, { text: 'मेरी कोई बुकिंग नहीं है।', fr: 'Je n\'ai pas de réservation.' }], 0),
@@ -860,7 +860,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('चाबी मिल सकती है?', 'Puis-je avoir la clé ?', [{ text: 'क्या मुझे चाबी मिल सकती है, कृपया?', fr: 'La clé, s.v.p. ?' }, { text: 'मुझे यह होटल पसंद नहीं है।', fr: 'Je n\'aime pas cet hôtel.' }, { text: 'मुझे पिज्जा चाहिए।', fr: 'Je veux une pizza.' }, { text: 'ट्रेन देरी से है।', fr: 'Le train est en retard.' }], 0),
       line('A', 'यह रही आपकी चाबी। कमरा 205, दूसरी मंजिल।', 'Voici votre clé. Chambre 205, deuxième étage.'),
     ] },
-    { id: 'hi-restaurant', emoji: '🍽️', title: 'रेस्टोरेंट में', steps: [
+    { id: 'hi-restaurant', emoji: '🍽️', title: 'रेस्टोरेंट में', title_fr: 'Au restaurant', steps: [
       line('A', 'क्या आपकी बुकिंग है?', 'Avez-vous une réservation ?'),
       choice('क्या आपकी बुकिंग है?', 'Avez-vous une réservation ?', [{ text: 'नहीं, लेकिन हम दो लोग हैं।', fr: 'Non, mais nous sommes deux.' }, { text: 'मेरा नाम प्रिया है।', fr: 'Je m\'appelle Priya.' }, { text: 'संग्रहालय बंद है।', fr: 'Le musée est fermé.' }, { text: 'मुझे टैक्सी चाहिए।', fr: 'J\'ai besoin d\'un taxi.' }], 0),
       line('A', 'आप क्या ऑर्डर करना चाहेंगे?', 'Que souhaitez-vous commander ?'),
@@ -868,7 +868,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       line('A', 'आज का विशेष दाल मखनी और नान है।', 'Le plat du jour est le dal makhani avec du naan.'),
       choice('भुगतान कैसे होता है?', 'Comment paye-t-on ?', [{ text: 'बढ़िया, मैं दाल मखनी लूँगा।', fr: 'Parfait, je prends le dal makhani.' }, { text: 'मुझे दाल पसंद नहीं है।', fr: 'Je n\'aime pas les lentilles.' }, { text: 'रेस्टोरेंट दूर है।', fr: 'Le restaurant est loin.' }, { text: 'मुझे मूंगफली से एलर्जी है।', fr: 'Je suis allergique aux arachides.' }], 0),
     ] },
-    { id: 'hi-taxi', emoji: '🚕', title: 'टैक्सी में', steps: [
+    { id: 'hi-taxi', emoji: '🚕', title: 'टैक्सी में', title_fr: 'En taxi', steps: [
       line('B', 'एयरपोर्ट चलिए, कृपया।', 'À l\'aéroport, s.v.p.'),
       line('A', 'कौन सा टर्मिनल?', 'Quel terminal ?'),
       choice('कौन सा टर्मिनल?', 'Quel terminal ?', [{ text: 'टर्मिनल दो, पेरिस की फ्लाइट है।', fr: 'Terminal deux, vol pour Paris.' }, { text: 'मुझे नहीं पता मैं कहाँ हूँ।', fr: 'Je ne sais pas où je suis.' }, { text: 'मुझे दिल्ली पसंद है।', fr: 'J\'aime Delhi.' }, { text: 'होटल पास में है।', fr: 'L\'hôtel est près d\'ici.' }], 0),
@@ -876,7 +876,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('कितना किराया होगा?', 'Combien ça va coûter ?', [{ text: 'लगभग कितना किराया होगा?', fr: 'Combien approximativement ?' }, { text: 'मुझे जल्दी नहीं है।', fr: 'Je ne suis pas pressé.' }, { text: 'बहुत ट्रैफिक है।', fr: 'Il y a beaucoup de circulation.' }, { text: 'मैं मेट्रो पसंद करता हूँ।', fr: 'Je préfère le métro.' }], 0),
       line('A', 'करीब तीन सौ रुपये होंगे।', 'Environ trois cents roupies.'),
     ] },
-    { id: 'hi-dawakhana', emoji: '💊', title: 'दवाखाने में', steps: [
+    { id: 'hi-dawakhana', emoji: '💊', title: 'दवाखाने में', title_fr: 'À la pharmacie', steps: [
       line('B', 'सिर में दर्द है, कुछ है क्या?', 'J\'ai mal à la tête, avez-vous quelque chose ?'),
       line('A', 'क्या बुखार भी है?', 'Avez-vous aussi de la fièvre ?'),
       choice('क्या बुखार भी है?', 'Avez-vous de la fièvre ?', [{ text: 'नहीं, सिर्फ सिरदर्द है और थका हुआ हूँ।', fr: 'Non, juste mal à la tête et je suis fatigué.' }, { text: 'मुझे खेल पसंद है।', fr: 'J\'aime le sport.' }, { text: 'अस्पताल दूर है।', fr: 'L\'hôpital est loin.' }, { text: 'मैं हिंदी नहीं बोलता।', fr: 'Je ne parle pas hindi.' }], 0),
@@ -884,14 +884,14 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('क्या पर्चे की जरूरत है?', 'Faut-il une ordonnance ?', [{ text: 'क्या यह बिना पर्चे के मिलती है?', fr: 'Puis-je l\'acheter sans ordonnance ?' }, { text: 'मुझे दवाएँ पसंद नहीं हैं।', fr: 'Je n\'aime pas les médicaments.' }, { text: 'मुझे भूख लगी है।', fr: 'J\'ai faim.' }, { text: 'डॉक्टर व्यस्त हैं।', fr: 'Le médecin est occupé.' }], 0),
       line('A', 'नहीं, बिना पर्चे के मिलती है। पचास रुपये।', 'Non, sans ordonnance. Cinquante roupies.'),
     ] },
-    { id: 'hi-cafe', emoji: '☕', title: 'कैफे में', steps: [
+    { id: 'hi-cafe', emoji: '☕', title: 'कैफे में', title_fr: 'Au café', steps: [
       line('A', 'नमस्ते! आप क्या लेंगे?', 'Bonjour ! Que prendrez-vous ?'),
       choice('आप क्या पीना चाहेंगे?', 'Que souhaitez-vous boire ?', [{ text: 'एक कॉफी और एक क्रोइसां, कृपया।', fr: 'Un café et un croissant, s.v.p.' }, { text: 'मुझे हिंदी नहीं आती।', fr: 'Je ne parle pas hindi.' }, { text: 'स्टेशन कहाँ है?', fr: 'Où est la gare ?' }, { text: 'मुझे टैक्सी चाहिए।', fr: 'J\'ai besoin d\'un taxi.' }], 0),
       line('A', 'क्या आप चीनी लेंगे?', 'Voulez-vous du sucre ?'),
       choice('चीनी चाहिए?', 'Voulez-vous du sucre ?', [{ text: 'दूध हाँ, चीनी नहीं। धन्यवाद।', fr: 'Du lait oui, sans sucre. Merci.' }, { text: 'मुझे कॉफी पसंद नहीं।', fr: 'Je n\'aime pas le café.' }, { text: 'मैं चाय पसंद करता हूँ।', fr: 'Je préfère le thé.' }, { text: 'नहीं, धन्यवाद।', fr: 'Non merci.' }], 0),
       line('A', 'कुल मिलाकर डेढ़ सौ रुपये होंगे।', 'Ça fera cent cinquante roupies.'),
     ] },
-    { id: 'hi-rasta', emoji: '🗺️', title: 'रास्ता पूछना', steps: [
+    { id: 'hi-rasta', emoji: '🗺️', title: 'रास्ता पूछना', title_fr: 'Dans la rue', steps: [
       line('B', 'माफ़ कीजिए, स्टेशन कैसे जाएँ?', 'Excusez-moi, comment puis-je aller à la gare ?'),
       line('A', 'सीधे जाइए, फिर बाएँ मुड़िए।', 'Allez tout droit, puis tournez à gauche.'),
       choice('क्या यह दूर है?', 'C\'est loin ?', [{ text: 'क्या यहाँ से दूर है?', fr: 'Est-ce loin d\'ici ?' }, { text: 'मैं टैक्सी लेना पसंद करूँगा।', fr: 'Je préfère prendre un taxi.' }, { text: 'मुझे रास्ता पता है।', fr: 'Je connais le chemin.' }, { text: 'मैं बस लूँगा।', fr: 'Je vais prendre le bus.' }], 0),
@@ -899,7 +899,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('क्या मेट्रो है?', 'Y a-t-il un métro ?', [{ text: 'क्या पास में मेट्रो स्टेशन है?', fr: 'Y a-t-il une station de métro à proximité ?' }, { text: 'मुझे मेट्रो पसंद नहीं।', fr: 'Je n\'aime pas le métro.' }, { text: 'मैं पैदल जाना पसंद करता हूँ।', fr: 'Je préfère marcher.' }, { text: 'टैक्सी तेज़ है।', fr: 'Le taxi est plus rapide.' }], 0),
       line('A', 'हाँ, मोड़ के पास ही स्टेशन है।', 'Oui, la station est juste après le virage.'),
     ] },
-    { id: 'hi-museum', emoji: '🏛️', title: 'संग्रहालय में', steps: [
+    { id: 'hi-museum', emoji: '🏛️', title: 'संग्रहालय में', title_fr: 'Au musée', steps: [
       line('B', 'नमस्ते। टिकट कितने का है?', 'Bonjour. Combien coûte le billet ?'),
       line('A', 'वयस्कों के लिए एक सौ रुपये, छात्रों के लिए पचास।', 'Cent roupies pour les adultes, cinquante pour les étudiants.'),
       choice('क्या छात्र छूट है?', 'Y a-t-il une réduction étudiants ?', [{ text: 'मैं छात्र हूँ, क्या मुझे छूट मिलेगी?', fr: 'Je suis étudiant, puis-je avoir une réduction ?' }, { text: 'संग्रहालय बहुत महँगा है।', fr: 'Le musée est trop cher.' }, { text: 'मुझे संग्रहालय पसंद नहीं।', fr: 'Je n\'aime pas les musées.' }, { text: 'यह कब खुलता है?', fr: 'À quelle heure ouvre-t-il ?' }], 0),
@@ -907,7 +907,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('क्या फ़ोटो ले सकते हैं?', 'Peut-on photographier ?', [{ text: 'क्या अंदर फ़ोटो लेना ठीक है?', fr: 'Est-il permis de photographier à l\'intérieur ?' }, { text: 'मेरे पास कैमरा नहीं है।', fr: 'Je n\'ai pas d\'appareil photo.' }, { text: 'बाहर निकलना कहाँ है?', fr: 'Où est la sortie ?' }, { text: 'संग्रहालय जल्द बंद होगा।', fr: 'Le musée va bientôt fermer.' }], 0),
       line('A', 'भूतल पर हाँ, ऊपरी मंजिल पर नहीं।', 'Au rez-de-chaussée oui, à l\'étage supérieur non.'),
     ] },
-    { id: 'hi-dukan', emoji: '🛒', title: 'दुकान में', steps: [
+    { id: 'hi-dukan', emoji: '🛒', title: 'दुकान में', title_fr: 'En boutique', steps: [
       line('B', 'नमस्ते। मुझे एक जैकेट चाहिए।', 'Bonjour. Je cherche une veste.'),
       line('A', 'आपका साइज़ क्या है?', 'Quelle taille faites-vous ?'),
       choice('कौन सा साइज़ चाहिए?', 'Quelle taille cherchez-vous ?', [{ text: 'मीडियम साइज़ दीजिए, कृपया।', fr: 'Taille medium, s.v.p.' }, { text: 'मुझे अपना साइज़ नहीं पता।', fr: 'Je ne connais pas ma taille.' }, { text: 'मुझे पैंट चाहिए।', fr: 'Je cherche un pantalon.' }, { text: 'मुझे जैकेट नहीं चाहिए।', fr: 'Je n\'ai pas besoin de veste.' }], 0),
