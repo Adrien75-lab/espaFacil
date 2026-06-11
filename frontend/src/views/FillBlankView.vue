@@ -247,17 +247,17 @@ onUnmounted(() => document.removeEventListener('click', handleOutsideClick))
 
 <style scoped>
 .fill { max-width: 560px; margin: 0 auto; padding: 1.5rem 1rem; }
-.loader { text-align: center; color: #888; margin-top: 4rem; }
+.loader { text-align: center; color: var(--muted); margin-top: 4rem; }
 .quiz-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: .75rem; }
-.btn-back { background: none; border: none; color: #888; cursor: pointer; font-size: .9rem; }
-.counter { color: #aaa; font-size: .9rem; }
+.btn-back { background: none; border: none; color: var(--muted); cursor: pointer; font-size: .9rem; }
+.counter { color: var(--muted2); font-size: .9rem; }
 .score-badge { background: #22c55e20; color: #22c55e; padding: .2rem .6rem; border-radius: 20px; font-size: .85rem; }
-.progress-bar { height: 6px; background: #333; border-radius: 3px; margin-bottom: 1.5rem; }
-.progress-fill { height: 100%; background: #4f46e5; border-radius: 3px; transition: width .3s; }
+.progress-bar { height: 6px; background: var(--border); border-radius: 3px; margin-bottom: 1.5rem; }
+.progress-fill { height: 100%; background: var(--accent); border-radius: 3px; transition: width .3s; }
 
 /* Sentence box */
 .sentence-box { font-size: 1.2rem; color: #ddd; line-height: 2.2;
-  background: #1e1e2e; border-radius: 12px; padding: 1.25rem 1rem;
+  background: var(--bg-card); border-radius: 12px; padding: 1.25rem 1rem;
   margin-bottom: .5rem; text-align: center; word-break: break-word; }
 .sentence-box.rtl { direction: rtl; }
 
@@ -270,10 +270,10 @@ onUnmounted(() => document.removeEventListener('click', handleOutsideClick))
   cursor: pointer;
   transition: color .15s;
 }
-.token-gloss:hover { color: #fff; }
+.token-gloss:hover { color: var(--text); }
 .token-blank .blank {
-  color: #4f46e5; font-weight: 700; letter-spacing: 2px;
-  border-bottom: 2px solid #4f46e5; padding: 0 2px;
+  color: var(--accent); font-weight: 700; letter-spacing: 2px;
+  border-bottom: 2px solid var(--accent); padding: 0 2px;
 }
 
 /* Popover */
@@ -283,7 +283,7 @@ onUnmounted(() => document.removeEventListener('click', handleOutsideClick))
   left: 50%;
   transform: translateX(-50%);
   background: #2d2b55;
-  border: 1px solid #4f46e5;
+  border: 1px solid var(--accent);
   border-radius: 6px;
   padding: .3rem .6rem;
   font-size: .78rem;
@@ -298,22 +298,22 @@ onUnmounted(() => document.removeEventListener('click', handleOutsideClick))
   position: absolute;
   top: 100%; left: 50%; transform: translateX(-50%);
   border: 5px solid transparent;
-  border-top-color: #4f46e5;
+  border-top-color: var(--accent);
 }
 
 .gloss-hint { text-align: center; color: #555; font-size: .78rem; margin-bottom: .75rem; }
 
 .word-actions { display: flex; justify-content: center; gap: .5rem; margin-bottom: .5rem; }
 .btn-icon { background: none; border: 2px solid #444; border-radius: 50%; width: 36px; height: 36px; font-size: 1rem; cursor: pointer; }
-.btn-icon:hover { border-color: #4f46e5; }
+.btn-icon:hover { border-color: var(--accent); }
 .clue-box { text-align: center; background: #2a2000; border: 2px solid #b87a00; border-radius: 8px;
   padding: .4rem 1rem; color: #f5d080; font-size: .85rem; margin-bottom: .5rem; }
 .rom-hint { text-align: center; color: #666; font-style: italic; font-size: .85rem; margin-bottom: .75rem; }
 
 .choices { display: flex; flex-direction: column; gap: .65rem; margin-bottom: 1rem; }
-.choice-btn { background: #1e1e2e; border: 2px solid #444; border-radius: 10px;
+.choice-btn { background: var(--bg-card); border: 2px solid #444; border-radius: 10px;
   color: #ddd; padding: .75rem 1rem; font-size: 1rem; cursor: pointer; text-align: center; transition: border-color .15s; }
-.choice-btn:hover:not(:disabled) { border-color: #4f46e5; color: #fff; }
+.choice-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--text); }
 .choice-btn.correct { background: #14532d40; border-color: #22c55e; color: #86efac; }
 .choice-btn.wrong   { background: #7f1d1d40; border-color: #ef4444; color: #fca5a5; }
 .choice-btn:disabled { cursor: default; }
@@ -322,13 +322,13 @@ onUnmounted(() => document.removeEventListener('click', handleOutsideClick))
 .feedback-text { font-size: 1rem; font-weight: 600; }
 .feedback-text.correct { color: #22c55e; }
 .feedback-text.wrong   { color: #ef4444; }
-.btn-next { background: #4f46e5; color: white; border: none; border-radius: 8px; padding: .6rem 1.4rem; font-size: .95rem; cursor: pointer; }
+.btn-next { background: var(--accent); color: white; border: none; border-radius: 8px; padding: .6rem 1.4rem; font-size: .95rem; cursor: pointer; }
 
-.no-sentences { text-align: center; padding: 3rem 1rem; color: #888; }
+.no-sentences { text-align: center; padding: 3rem 1rem; color: var(--muted); }
 .results { text-align: center; padding: 2rem 1rem; }
 .results-emoji { font-size: 3.5rem; margin-bottom: .5rem; }
-.score-text { font-size: 1.3rem; color: #aaa; margin: .5rem 0 1.5rem; }
+.score-text { font-size: 1.3rem; color: var(--muted2); margin: .5rem 0 1.5rem; }
 .results-actions { display: flex; gap: 1rem; justify-content: center; }
-.btn-primary  { background: #4f46e5; color: white; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
-.btn-secondary { background: #333; color: #ccc; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
+.btn-primary  { background: var(--accent); color: white; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
+.btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
 </style>

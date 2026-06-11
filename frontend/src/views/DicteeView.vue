@@ -231,27 +231,27 @@ onMounted(async () => {
 
 <style scoped>
 .dictee { max-width: 560px; margin: 0 auto; padding: 1.5rem 1rem; }
-.loader { text-align: center; color: #888; margin-top: 4rem; }
-.empty  { text-align: center; padding: 3rem 1rem; color: #888; }
+.loader { text-align: center; color: var(--muted); margin-top: 4rem; }
+.empty  { text-align: center; padding: 3rem 1rem; color: var(--muted); }
 
 .quiz-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: .75rem; }
-.btn-back  { background: none; border: none; color: #888; cursor: pointer; font-size: .9rem; }
+.btn-back  { background: none; border: none; color: var(--muted); cursor: pointer; font-size: .9rem; }
 .mode-badge { background: #f59e0b20; color: #fbbf24; padding: .2rem .7rem; border-radius: 20px; font-size: .8rem; }
-.counter   { color: #aaa; font-size: .9rem; }
+.counter   { color: var(--muted2); font-size: .9rem; }
 
-.progress-bar  { height: 6px; background: #333; border-radius: 3px; margin-bottom: 1.5rem; }
+.progress-bar  { height: 6px; background: var(--border); border-radius: 3px; margin-bottom: 1.5rem; }
 .progress-fill { height: 100%; background: #f59e0b; border-radius: 3px; transition: width .3s; }
 
 /* Hint FR */
 .fr-hint { display: flex; align-items: center; gap: .6rem;
-  background: #1e1e2e; border: 2px solid #4f46e5; border-radius: 10px;
+  background: var(--bg-card); border: 2px solid var(--accent); border-radius: 10px;
   padding: .75rem 1rem; margin-bottom: 1.25rem; }
 .fr-flag { font-size: 1.2rem; }
 .fr-text { font-weight: 700; color: #a5b4fc; font-size: 1rem; }
 
 /* Audio */
 .audio-zone { text-align: center; margin-bottom: 1.25rem; }
-.listen-hint { color: #aaa; font-size: .88rem; margin-bottom: .75rem; }
+.listen-hint { color: var(--muted2); font-size: .88rem; margin-bottom: .75rem; }
 .play-row { display: flex; gap: .75rem; justify-content: center; }
 .play-btn {
   background: #0ea5e920; border: 2px solid #0ea5e9; border-radius: 50px;
@@ -267,8 +267,8 @@ onMounted(async () => {
 .input-wrap { display: flex; gap: .6rem; margin-bottom: .75rem; }
 .dictee-input {
   flex: 1; padding: .75rem 1rem;
-  background: #1e1e2e; border: 2px solid #333; border-radius: 10px;
-  color: #e2e8f0; font-size: 1rem; outline: none;
+  background: var(--bg-card); border: 2px solid var(--border); border-radius: 10px;
+  color: var(--text); font-size: 1rem; outline: none;
   transition: border-color .2s;
 }
 .dictee-input:focus { border-color: #f59e0b; }
@@ -276,7 +276,7 @@ onMounted(async () => {
 .dictee-input.input-wrong   { border-color: #ef4444; background: #7f1d1d20; }
 .dictee-input:disabled { opacity: .75; cursor: default; }
 .btn-validate {
-  background: #f59e0b; color: #0f0f1a; border: none; border-radius: 10px;
+  background: #f59e0b; color: var(--bg-app); border: none; border-radius: 10px;
   padding: .75rem 1.25rem; font-size: .95rem; font-weight: 700; cursor: pointer;
   transition: opacity .15s; white-space: nowrap;
 }
@@ -285,8 +285,8 @@ onMounted(async () => {
 
 /* Indices */
 .hint-row { display: flex; gap: .6rem; margin-bottom: .5rem; }
-.btn-hint { background: none; border: 1px solid #333; border-radius: 8px;
-  color: #888; padding: .35rem .9rem; font-size: .82rem; cursor: pointer;
+.btn-hint { background: none; border: 1px solid var(--border); border-radius: 8px;
+  color: var(--muted); padding: .35rem .9rem; font-size: .82rem; cursor: pointer;
   transition: border-color .15s; }
 .btn-hint:not(:disabled):hover { border-color: #f59e0b; color: #fbbf24; }
 .btn-hint:disabled { opacity: .35; cursor: default; }
@@ -305,15 +305,15 @@ onMounted(async () => {
 .fb-label { font-weight: 700; font-size: .95rem; }
 .fb-correct .fb-label { color: #86efac; }
 .fb-wrong   .fb-label { color: #fca5a5; }
-.fb-answer { color: #e2e8f0; font-size: 1rem; margin-top: .25rem; font-style: italic; }
-.btn-next { background: #f59e0b; color: #0f0f1a; border: none; border-radius: 8px;
+.fb-answer { color: var(--text); font-size: 1rem; margin-top: .25rem; font-style: italic; }
+.btn-next { background: #f59e0b; color: var(--bg-app); border: none; border-radius: 8px;
   padding: .6rem 1.4rem; font-size: .9rem; font-weight: 700; cursor: pointer; white-space: nowrap; }
 
 /* Résultats */
 .results { text-align: center; padding: 3rem 1rem; }
 .results-emoji { font-size: 4rem; margin-bottom: .5rem; }
-.score-text { font-size: 1.3rem; color: #aaa; margin: .5rem 0 2rem; }
+.score-text { font-size: 1.3rem; color: var(--muted2); margin: .5rem 0 2rem; }
 .results-actions { display: flex; gap: 1rem; justify-content: center; }
-.btn-primary   { background: #4f46e5; color: white; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
-.btn-secondary { background: #333; color: #ccc; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
+.btn-primary   { background: var(--accent); color: white; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
+.btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
 </style>

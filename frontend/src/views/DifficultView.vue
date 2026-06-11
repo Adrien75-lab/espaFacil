@@ -149,34 +149,34 @@ onMounted(async () => {
 
 <style scoped>
 .review { max-width: 560px; margin: 0 auto; padding: 1.5rem 1rem; }
-.loader { text-align: center; color: #888; margin-top: 4rem; }
+.loader { text-align: center; color: var(--muted); margin-top: 4rem; }
 .empty { text-align: center; padding: 3rem 1rem; }
 .empty-icon { font-size: 3rem; margin-bottom: .5rem; }
-.empty h2 { color: #fff; margin-bottom: .5rem; }
-.empty p  { color: #888; margin-bottom: 1.5rem; }
+.empty h2 { color: var(--text); margin-bottom: .5rem; }
+.empty p  { color: var(--muted); margin-bottom: 1.5rem; }
 .quiz-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: .75rem; }
-.btn-back { background: none; border: none; color: #888; cursor: pointer; font-size: .9rem; }
+.btn-back { background: none; border: none; color: var(--muted); cursor: pointer; font-size: .9rem; }
 .mode-badge { background: #ef444420; color: #fca5a5; padding: .2rem .7rem; border-radius: 20px; font-size: .8rem; }
-.counter { color: #aaa; font-size: .9rem; }
-.progress-bar { height: 6px; background: #333; border-radius: 3px; margin-bottom: 1.5rem; }
+.counter { color: var(--muted2); font-size: .9rem; }
+.progress-bar { height: 6px; background: var(--border); border-radius: 3px; margin-bottom: 1.5rem; }
 .progress-fill { height: 100%; background: #ef4444; border-radius: 3px; transition: width .3s; }
-.question { text-align: center; color: #aaa; margin-bottom: 1rem; }
+.question { text-align: center; color: var(--muted2); margin-bottom: 1rem; }
 .word-block { text-align: center; margin-bottom: 1.5rem; }
-.word-term { font-size: 2rem; font-weight: 700; color: #fff; }
+.word-term { font-size: 2rem; font-weight: 700; color: var(--text); }
 .word-term.rtl { direction: rtl; }
-.word-rom  { color: #888; font-size: .95rem; margin-top: .25rem; font-style: italic; }
+.word-rom  { color: var(--muted); font-size: .95rem; margin-top: .25rem; font-style: italic; }
 .word-actions { display: flex; justify-content: center; gap: .5rem; margin-top: .5rem; }
 .btn-icon { background: none; border: 2px solid #444; border-radius: 50%; width: 36px; height: 36px; font-size: 1rem; cursor: pointer; }
 .btn-icon:hover { border-color: #ef4444; }
 .srs-stats { margin-top: .6rem; display: flex; align-items: center; justify-content: center; gap: .4rem; font-size: .82rem; }
 .srs-wrong { color: #ef4444; font-weight: 600; }
 .srs-sep   { color: #555; }
-.srs-seen  { color: #888; }
+.srs-seen  { color: var(--muted); }
 .srs-rate  { background: #ef444420; color: #fca5a5; border-radius: 10px; padding: .1rem .5rem; }
 .clue-box { margin-top: .6rem; background: #2a2000; border: 2px solid #b87a00; border-radius: 8px;
   padding: .3rem .8rem; color: #f5d080; font-size: .85rem; display: inline-block; }
 .choices { display: flex; flex-direction: column; gap: .6rem; margin-bottom: 1.25rem; }
-.choice-btn { background: #1e1e2e; border: 2px solid #444; border-radius: 10px; padding: .75rem 1rem;
+.choice-btn { background: var(--bg-card); border: 2px solid #444; border-radius: 10px; padding: .75rem 1rem;
   color: #ddd; font-size: 1rem; cursor: pointer; text-align: left; transition: border-color .15s; }
 .choice-btn:not(:disabled):hover { border-color: #ef4444; }
 .choice-btn.correct { border-color: #22c55e; background: #14532d40; color: #86efac; }
@@ -186,8 +186,8 @@ onMounted(async () => {
 .btn-next:hover { opacity: .88; }
 .results { text-align: center; padding: 3rem 1rem; }
 .results-emoji { font-size: 4rem; margin-bottom: .5rem; }
-.score-text { font-size: 1.3rem; color: #aaa; margin: .5rem 0 2rem; }
+.score-text { font-size: 1.3rem; color: var(--muted2); margin: .5rem 0 2rem; }
 .results-actions { display: flex; gap: 1rem; justify-content: center; }
-.btn-primary   { background: #4f46e5; color: white; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
-.btn-secondary { background: #333; color: #ccc; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
+.btn-primary   { background: var(--accent); color: white; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
+.btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
 </style>

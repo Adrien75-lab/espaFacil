@@ -171,18 +171,18 @@ onMounted(async () => {
 
 <style scoped>
 .paires { max-width: 680px; margin: 0 auto; padding: 1.5rem 1rem; }
-.loader { text-align: center; color: #888; margin-top: 4rem; }
-.empty  { text-align: center; padding: 3rem 1rem; color: #888; }
+.loader { text-align: center; color: var(--muted); margin-top: 4rem; }
+.empty  { text-align: center; padding: 3rem 1rem; color: var(--muted); }
 
 .game-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: .75rem; }
-.btn-back  { background: none; border: none; color: #888; cursor: pointer; font-size: .9rem; }
+.btn-back  { background: none; border: none; color: var(--muted); cursor: pointer; font-size: .9rem; }
 .mode-badge { background: #7c3aed20; color: #c4b5fd; padding: .2rem .7rem; border-radius: 20px; font-size: .8rem; }
-.counter   { color: #aaa; font-size: .9rem; }
+.counter   { color: var(--muted2); font-size: .9rem; }
 
-.progress-bar  { height: 6px; background: #333; border-radius: 3px; margin-bottom: 1rem; }
+.progress-bar  { height: 6px; background: var(--border); border-radius: 3px; margin-bottom: 1rem; }
 .progress-fill { height: 100%; background: #7c3aed; border-radius: 3px; transition: width .4s; }
 
-.instruction { text-align: center; color: #888; font-size: .88rem; margin-bottom: 1.25rem; }
+.instruction { text-align: center; color: var(--muted); font-size: .88rem; margin-bottom: 1.25rem; }
 
 /* Grid */
 .grid { display: grid; gap: .6rem; }
@@ -193,10 +193,10 @@ onMounted(async () => {
 .card {
   position: relative;
   aspect-ratio: 1.6;
-  border: 2px solid #333;
+  border: 2px solid var(--border);
   border-radius: 10px;
   cursor: pointer;
-  background: #1e1e2e;
+  background: var(--bg-card);
   transition: border-color .15s, transform .15s;
   overflow: hidden;
   padding: 0;
@@ -213,7 +213,7 @@ onMounted(async () => {
   transition: opacity .2s;
 }
 .card-front { color: #555; font-size: 1.4rem; opacity: 1; }
-.card-back  { color: #e2e8f0; opacity: 0; }
+.card-back  { color: var(--text); opacity: 0; }
 
 .card.flipped .card-front,
 .card.matched .card-front { opacity: 0; }
@@ -230,14 +230,14 @@ onMounted(async () => {
   75%     { transform: translateX(4px); }
 }
 
-.mistakes-row { text-align: center; color: #888; font-size: .88rem; margin-top: 1rem; }
+.mistakes-row { text-align: center; color: var(--muted); font-size: .88rem; margin-top: 1rem; }
 .mistakes-row strong { color: #fca5a5; }
 
 /* Results */
 .results { text-align: center; padding: 3rem 1rem; }
 .results-emoji { font-size: 4rem; margin-bottom: .5rem; }
-.score-text { font-size: 1.2rem; color: #aaa; margin: .5rem 0 2rem; }
+.score-text { font-size: 1.2rem; color: var(--muted2); margin: .5rem 0 2rem; }
 .results-actions { display: flex; gap: 1rem; justify-content: center; }
-.btn-primary   { background: #4f46e5; color: white; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
-.btn-secondary { background: #333; color: #ccc; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
+.btn-primary   { background: var(--accent); color: white; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
+.btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
 </style>

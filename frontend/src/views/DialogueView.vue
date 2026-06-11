@@ -228,25 +228,25 @@ watch(done, (val) => {
 
 /* Header */
 .list-header, .game-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: .75rem; }
-.btn-back   { background: none; border: none; color: #888; cursor: pointer; font-size: .9rem; }
+.btn-back   { background: none; border: none; color: var(--muted); cursor: pointer; font-size: .9rem; }
 .mode-badge { background: #0ea5e920; color: #38bdf8; padding: .2rem .7rem; border-radius: 20px; font-size: .8rem; }
-.counter    { color: #aaa; font-size: .9rem; }
+.counter    { color: var(--muted2); font-size: .9rem; }
 
 .scenario-list h2 { text-align: center; margin: 1rem 0 1.25rem; }
 
 /* Scenarios */
 .scenario-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: .75rem; }
 .scenario-card {
-  background: #1e1e2e; border: 2px solid #333; border-radius: 12px;
+  background: var(--bg-card); border: 2px solid var(--border); border-radius: 12px;
   padding: 1.5rem 1rem; cursor: pointer; display: flex; flex-direction: column;
   align-items: center; gap: .5rem; transition: border-color .2s, transform .15s;
 }
 .scenario-card:hover { border-color: #0ea5e9; transform: translateY(-2px); }
 .sc-emoji  { font-size: 2.2rem; }
-.sc-title  { color: #ccc; font-size: .9rem; font-weight: 600; text-align: center; }
+.sc-title  { color: var(--dim); font-size: .9rem; font-weight: 600; text-align: center; }
 
 /* Progress */
-.progress-bar  { height: 6px; background: #333; border-radius: 3px; margin-bottom: 1rem; }
+.progress-bar  { height: 6px; background: var(--border); border-radius: 3px; margin-bottom: 1rem; }
 .progress-fill { height: 100%; background: #0ea5e9; border-radius: 3px; transition: width .4s; }
 
 /* Chat log */
@@ -254,7 +254,7 @@ watch(done, (val) => {
   max-height: 340px; overflow-y: auto;
   display: flex; flex-direction: column; gap: .5rem;
   margin-bottom: 1rem; padding: .5rem;
-  background: #131320; border-radius: 12px; border: 1px solid #2a2a3e;
+  background: #131320; border-radius: 12px; border: 1px solid var(--bg-hover);
 }
 .chat-entry { display: flex; }
 .entry-a { justify-content: flex-start; }
@@ -262,26 +262,26 @@ watch(done, (val) => {
 
 .bubble {
   max-width: 75%;
-  background: #1e1e2e; border-radius: 12px; padding: .6rem .9rem;
+  background: var(--bg-card); border-radius: 12px; padding: .6rem .9rem;
   display: flex; flex-direction: column; gap: .15rem;
 }
 .entry-b .bubble { background: #1e3a5f; }
-.bubble-text { color: #e2e8f0; font-size: .92rem; }
-.bubble-fr   { color: #888; font-size: .78rem; font-style: italic; }
+.bubble-text { color: var(--text); font-size: .92rem; }
+.bubble-fr   { color: var(--muted); font-size: .78rem; font-style: italic; }
 
 /* Choices */
 .choices { display: flex; flex-direction: column; gap: .5rem; margin-bottom: .75rem; }
-.choice-label { color: #aaa; font-size: .82rem; margin-bottom: .25rem; }
+.choice-label { color: var(--muted2); font-size: .82rem; margin-bottom: .25rem; }
 
 .choice-btn {
-  background: #1e1e2e; border: 2px solid #333; border-radius: 10px;
+  background: var(--bg-card); border: 2px solid var(--border); border-radius: 10px;
   padding: .65rem 1rem; cursor: pointer; text-align: left;
   display: flex; flex-direction: column; gap: .15rem;
   transition: border-color .15s;
 }
 .choice-btn:not(:disabled):hover { border-color: #0ea5e9; background: #1a2a3a; }
 .choice-btn:disabled { cursor: default; }
-.opt-text { color: #e2e8f0; font-size: .92rem; }
+.opt-text { color: var(--text); font-size: .92rem; }
 .opt-fr   { color: #666; font-size: .78rem; font-style: italic; }
 
 .opt-correct { border-color: #22c55e !important; background: #14532d20 !important; }
@@ -303,9 +303,9 @@ watch(done, (val) => {
 /* Results */
 .results { text-align: center; padding: 3rem 1rem; }
 .results-emoji { font-size: 4rem; margin-bottom: .5rem; }
-.score-text { font-size: 1.2rem; color: #aaa; margin: .5rem 0 2rem; }
+.score-text { font-size: 1.2rem; color: var(--muted2); margin: .5rem 0 2rem; }
 .results-actions { display: flex; gap: .75rem; justify-content: center; flex-wrap: wrap; }
-.btn-primary   { background: #4f46e5; color: white; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
-.btn-secondary { background: #333; color: #ccc; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
-.empty { text-align: center; color: #888; padding: 2rem; }
+.btn-primary   { background: var(--accent); color: white; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
+.btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
+.empty { text-align: center; color: var(--muted); padding: 2rem; }
 </style>
