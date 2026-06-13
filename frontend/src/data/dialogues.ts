@@ -54,7 +54,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('¿A qué hora cierra?', 'À quelle heure ferme-t-il ?', [{ text: 'Aquí tiene. ¿A qué hora cierra el museo?', fr: 'La voici. À quelle heure ferme le musée ?' }, { text: 'No tengo carné.', fr: 'Je n\'ai pas de carte.' }, { text: 'El museo es aburrido.', fr: 'Le musée est ennuyeux.' }, { text: 'Prefiero el teatro.', fr: 'Je préfère le théâtre.' }], 0),
       line('A', 'Cerramos a las siete. ¡Disfrute la visita!', 'Nous fermons à dix-neuf heures. Bonne visite !'),
     ] },
-    { id: 'es-compras', emoji: '🛒', title: 'De compras', title_fr: 'De compras', steps: [
+    { id: 'es-compras', emoji: '🛒', title: 'De compras', title_fr: 'En boutique', steps: [
       line('B', '¿Tienen esta camiseta en talla mediana?', 'Avez-vous ce t-shirt en taille medium ?'),
       line('A', 'Sí, aquí tiene.', 'Oui, voici.'),
       choice('¿Puedo probármela?', 'Puis-je l\'essayer ?', [{ text: '¿Puedo probármela?', fr: 'Puis-je l\'essayer ?' }, { text: 'No me gusta el color.', fr: 'Je n\'aime pas la couleur.' }, { text: 'Es muy cara.', fr: 'C\'est très cher.' }, { text: 'No tengo dinero.', fr: 'Je n\'ai pas d\'argent.' }], 0),
@@ -62,7 +62,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('Me la llevo.', 'Je la prends.', [{ text: 'Me la llevo. ¿Aceptan tarjeta?', fr: 'Je la prends. Acceptez-vous la carte ?' }, { text: 'Me queda pequeña.', fr: 'Elle est trop petite.' }, { text: 'El color no me gusta.', fr: 'Je n\'aime pas la couleur.' }, { text: 'Es demasiado cara.', fr: 'C\'est trop cher.' }], 0),
       line('A', 'Sí, aceptamos tarjeta y efectivo.', 'Oui, nous acceptons la carte et les espèces.'),
     ] },
-    { id: 'es-calle', emoji: '🗺️', title: 'Por las calles', title_fr: 'Por las calles', steps: [
+    { id: 'es-calle', emoji: '🗺️', title: 'Por las calles', title_fr: 'Dans la rue', steps: [
       line('B', 'Perdona, ¿sabes dónde está la estación de metro?', 'Excusez-moi, où est la station de métro ?'),
       line('A', 'Sigue todo recto y gira a la izquierda.', 'Continue tout droit et tourne à gauche.'),
       choice('¿Está muy lejos?', 'C\'est loin ?', [{ text: '¿Cuánto tiempo se tarda?', fr: 'Combien de temps faut-il ?' }, { text: 'Me llamo Ana.', fr: 'Je m\'appelle Ana.' }, { text: 'Llueve mucho.', fr: 'Il pleut beaucoup.' }, { text: 'No me gusta caminar.', fr: 'Je n\'aime pas marcher.' }], 0),
@@ -127,7 +127,7 @@ export const DIALOGUES: Record<string, Dialogue[]> = {
       choice('I\'ll take it.', 'Je le prends.', [{ text: 'I\'ll take it. Do you accept card?', fr: 'Je le prends. Acceptez-vous la carte ?' }, { text: 'It doesn\'t fit.', fr: 'Ça ne me va pas.' }, { text: 'I don\'t like the colour.', fr: 'Je n\'aime pas la couleur.' }, { text: 'It\'s too expensive.', fr: 'C\'est trop cher.' }], 0),
       line('A', 'Yes, we accept all major cards.', 'Oui, nous acceptons toutes les grandes cartes.'),
     ] },
-    { id: 'en-street', emoji: '🗺️', title: 'Asking for directions', title_fr: 'Asking for directions', steps: [
+    { id: 'en-street', emoji: '🗺️', title: 'Asking for directions', title_fr: 'Dans la rue', steps: [
       line('B', 'Excuse me, could you help me?', 'Excusez-moi, pouvez-vous m\'aider ?'),
       line('A', 'Of course! What do you need?', 'Bien sûr ! De quoi avez-vous besoin ?'),
       choice('What do you need?', 'De quoi avez-vous besoin ?', [{ text: 'Do you know where the nearest pharmacy is?', fr: 'Savez-vous où est la pharmacie la plus proche ?' }, { text: 'I love your jacket.', fr: 'J\'adore votre veste.' }, { text: 'It\'s a beautiful day.', fr: 'C\'est une belle journée.' }, { text: 'I\'m very tired.', fr: 'Je suis très fatigué.' }], 0),

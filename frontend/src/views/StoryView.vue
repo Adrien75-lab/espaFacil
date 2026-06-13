@@ -56,7 +56,7 @@
               v-for="(tok, j) in sent"
               :key="j"
               class="word-wrap"
-            ><span
+            >{{ j > 0 && !tok.punct ? ' ' : '' }}<span
                 v-if="!tok.punct"
                 class="word"
                 :class="{ highlighted: activeWord?.sentIdx === i && activeWord?.tokIdx === j }"
@@ -140,6 +140,11 @@
 
     <!-- Résultats -->
     <div v-else-if="phase === 'results'" class="results">
+      <Teleport to="body">
+        <div v-if="showConfetti" class="confetti-container" aria-hidden="true">
+          <div v-for="n in 50" :key="n" class="confetto" :style="confettoStyle(n)"></div>
+        </div>
+      </Teleport>
       <div class="results-emoji">{{ qcmScore === questions.length ? '🏆' : qcmScore >= Math.ceil(questions.length * 0.67) ? '🎉' : '💪' }}</div>
       <h2>Histoire terminée !</h2>
       <p class="score-text">{{ qcmScore }} / {{ questions.length }} bonnes réponses</p>
@@ -195,6 +200,20 @@ const qcmAnswered    = ref(false)
 const qcmLastCorrect = ref(false)
 const qcmScore       = ref(0)
 const qcmSelected    = ref<number | null>(null)
+const showConfetti   = ref(false)
+
+function confettoStyle(n: number) {
+  const colors = ['#8b5cf6','#22c55e','#f59e0b','#ec4899','#0ea5e9','#a855f7']
+  return {
+    left:              Math.random() * 100 + 'vw',
+    background:        colors[n % colors.length],
+    animationDelay:    (Math.random() * 1.5) + 's',
+    animationDuration: (1.5 + Math.random() * 1.5) + 's',
+    width:             (6 + Math.random() * 8) + 'px',
+    height:            (6 + Math.random() * 8) + 'px',
+    borderRadius:      Math.random() > 0.5 ? '50%' : '2px',
+  }
+}
 
 const langCode = computed(() => store.currentLang?.code ?? '')
 
@@ -311,6 +330,10 @@ function pickQcm(i: number) {
 function nextQcm() {
   if (qcmIndex.value + 1 >= questions.value.length) {
     phase.value = 'results'
+    if (qcmScore.value >= Math.ceil(questions.value.length * 0.67)) {
+      showConfetti.value = true
+      setTimeout(() => { showConfetti.value = false }, 4000)
+    }
     if (auth.user && store.currentLang) {
       const xp = calcXp('stories', qcmScore.value, questions.value.length)
       postSession({
@@ -464,5 +487,4 @@ function nextQcm() {
 .results-actions { display: flex; gap: .75rem; justify-content: center; flex-wrap: wrap; }
 .btn-primary   { background: var(--accent); color: white; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
 .btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
-.empty { text-align: center; color: var(--muted); padding: 2rem; }
-</style>
+.empty { text-align: center; color: var(
