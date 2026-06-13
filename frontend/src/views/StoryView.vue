@@ -1,369 +1,468 @@
 <template>
-  <div class="story-wrap" @click="closePopup">
-    <Teleport to="body">
-      <ConfirmQuit v-if="showQuit" @cancel="showQuit = false" @confirm="router.push('/')" />
-    </Teleport>
+  <div class="story-view">
 
-    <!-- Header -->
-    <div class="story-header">
-      <button class="btn-quit" @click.stop="showQuit = true">✕</button>
-      <div class="lang-info">
-        <FlagIcon v-if="store.currentLang" :lang="store.currentLang.code" :size="20" />
-        <span>{{ store.currentLang?.name ?? '—' }}</span>
+    <!-- Chargement -->
+    <div v-if="loading" class="loading-state">
+      <div class="spinner"></div>
+      <p>Chargement des histoires…</p>
+    </div>
+
+    <!-- Sélection de l'histoire -->
+    <div v-else-if="phase === 'list'" class="story-list">
+      <div class="list-header">
+        <button class="btn-back" @click="showQuit = true">← Quitter</button>
+        <span class="mode-badge">📖 Histoires</span>
       </div>
-      <div class="xp-badge" v-if="totalXpGained > 0">+{{ totalXpGained }} XP</div>
-    </div>
+      <h2>Choisissez une histoire</h2>
 
-    <!-- Instruction -->
-    <p class="hint">Appuyez sur un mot pour voir sa traduction 👇</p>
+      <div v-if="!stories.length" class="empty">
+        <p>Aucune histoire disponible pour cette langue.</p>
+        <button class="btn-secondary" @click="router.push('/')">← Retour</button>
+      </div>
 
-    <!-- Story tabs -->
-    <div class="story-tabs">
-      <button
-        v-for="(s, i) in stories"
-        :key="s.id"
-        class="story-tab"
-        :class="{ active: currentIdx === i, done: readStatus[i] }"
-        @click.stop="selectStory(i)"
-      >
-        {{ s.emoji }} {{ s.title_fr }}
-        <span v-if="readStatus[i]" class="check">✓</span>
-      </button>
-    </div>
-
-    <!-- Story body -->
-    <div v-if="currentStory" class="story-body">
-      <template v-for="(tok, i) in currentStory.tokens" :key="i">
-        <!-- Mot cliquable -->
-        <span
-          v-if="!tok.punct"
-          class="word"
-          :class="{ highlighted: activeIdx === i }"
-          @click.stop="onWordClick(tok, i, $event)"
-        >{{ tok.text }}</span>
-        <!-- Ponctuation non cliquable -->
-        <span v-else class="punct">{{ tok.text }}</span>
-        <!-- Espace après chaque mot (pas après ponctuation) -->
-        <span v-if="!tok.punct" class="sp"> </span>
-      </template>
-    </div>
-
-    <!-- Bouton lire -->
-    <div class="story-footer">
-      <template v-if="!readStatus[currentIdx]">
-        <button class="btn-read" @click.stop="markRead">✅ J'ai lu cette histoire</button>
-      </template>
-      <div v-else class="read-msg">✅ Histoire lue !</div>
-
-      <div v-if="allRead" class="all-done">
-        🎉 Bravo ! Toutes les histoires terminées&nbsp;!
-        <br><span class="xp-total">+{{ totalXpGained }} XP gagnés</span>
+      <div v-else class="story-grid">
+        <button
+          v-for="s in stories"
+          :key="s.id"
+          class="story-card"
+          @click="startStory(s)"
+        >
+          <span class="card-emoji">{{ s.emoji }}</span>
+          <span class="card-title">{{ s.title_fr }}</span>
+          <span class="card-lang">{{ langCode.toUpperCase() }}</span>
+        </button>
       </div>
     </div>
 
-    <!-- Popup traduction (Teleport pour éviter z-index) -->
-    <Teleport to="body">
-      <Transition name="pop">
+    <!-- Lecture avec animation phrase par phrase -->
+    <div v-else-if="phase === 'read'" class="read-screen">
+      <div class="game-header">
+        <button class="btn-back" @click="phase = 'list'">← Histoires</button>
+        <span class="mode-badge">📖 {{ currentStory?.emoji }} {{ currentStory?.title_fr }}</span>
+        <span class="counter">{{ revealedSentences }} / {{ sentences.length }}</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" :style="{ width: (revealedSentences / Math.max(sentences.length,1) * 100) + '%' }"></div>
+      </div>
+
+      <div class="story-text" ref="storyEl">
+        <TransitionGroup name="sentence-fade" tag="div" class="sentences-wrap">
+          <p
+            v-for="(sent, i) in visibleSentences"
+            :key="i"
+            class="sentence"
+          >
+            <span
+              v-for="(tok, j) in sent"
+              :key="j"
+              class="word-wrap"
+            ><span
+                v-if="!tok.punct"
+                class="word"
+                :class="{ highlighted: activeWord?.sentIdx === i && activeWord?.tokIdx === j }"
+                @click.stop="openWord(tok, i, j, $event)"
+              >{{ tok.text }}</span><span
+                v-else
+                class="punct"
+              >{{ tok.text }}</span></span>
+          </p>
+        </TransitionGroup>
+
+        <button
+          v-if="revealedSentences < sentences.length && !revealing"
+          class="btn-continue"
+          @click="revealNextSentence"
+        >
+          Continuer ▶
+        </button>
+
+        <div v-if="revealedSentences >= sentences.length && !revealing" class="read-done">
+          <button class="btn-qcm" @click="startQcm">
+            Répondre aux questions →
+          </button>
+        </div>
+      </div>
+
+      <Teleport to="body">
+        <div v-if="popup" class="popup-overlay" @click="closePopup"></div>
         <div
           v-if="popup"
           class="word-popup"
-          :style="popupStyle"
+          :style="{ top: popup.y + 'px', left: popup.x + 'px' }"
           @click.stop
         >
-          <div class="popup-word">{{ popup.text }}</div>
-          <div class="popup-arrow">→</div>
-          <div class="popup-fr">{{ popup.fr }}</div>
-          <button class="popup-tts" @click="speak(popup.text)" title="Écouter">🔊</button>
+          <span class="popup-text">{{ popup.text }}</span>
+          <span class="popup-arrow">→</span>
+          <span class="popup-fr">{{ popup.fr }}</span>
+          <button class="popup-tts" @click="speakWord(popup.text)" title="Écouter">🔊</button>
+        </div>
+      </Teleport>
+    </div>
+
+    <!-- QCM compréhension -->
+    <div v-else-if="phase === 'qcm'" class="qcm-screen">
+      <div class="game-header">
+        <button class="btn-back" @click="phase = 'read'">← Relire</button>
+        <span class="mode-badge">📖 Compréhension</span>
+        <span class="counter">{{ qcmIndex + 1 }} / {{ questions.length }}</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill qcm-fill" :style="{ width: ((qcmIndex + (qcmAnswered ? 1 : 0)) / questions.length * 100) + '%' }"></div>
+      </div>
+
+      <Transition name="question-slide" mode="out-in">
+        <div :key="qcmIndex" class="question-card">
+          <p class="question-text">{{ questions[qcmIndex]?.question_fr }}</p>
+          <div class="options-list">
+            <button
+              v-for="(opt, i) in questions[qcmIndex]?.options"
+              :key="i"
+              class="opt-btn"
+              :class="qcmResult(i)"
+              :disabled="qcmAnswered"
+              @click="pickQcm(i)"
+            >
+              <span class="opt-letter">{{ ['A','B','C','D'][i] }}</span>
+              <span class="opt-label">{{ opt.text }}</span>
+            </button>
+          </div>
+          <div v-if="qcmAnswered" class="qcm-next-row">
+            <div class="feedback-inline" :class="qcmLastCorrect ? 'fb-ok' : 'fb-ko'">
+              {{ qcmLastCorrect ? '✓ Correct !' : '✗ Incorrect' }}
+            </div>
+            <button class="btn-next" @click="nextQcm">
+              {{ qcmIndex + 1 >= questions.length ? 'Voir les résultats' : 'Suivant →' }}
+            </button>
+          </div>
         </div>
       </Transition>
-    </Teleport>
+    </div>
+
+    <!-- Résultats -->
+    <div v-else-if="phase === 'results'" class="results">
+      <div class="results-emoji">{{ qcmScore === questions.length ? '🏆' : qcmScore >= Math.ceil(questions.length * 0.67) ? '🎉' : '💪' }}</div>
+      <h2>Histoire terminée !</h2>
+      <p class="score-text">{{ qcmScore }} / {{ questions.length }} bonnes réponses</p>
+      <div class="results-actions">
+        <button class="btn-primary" @click="startStory(currentStory!)">Relire</button>
+        <button class="btn-secondary" @click="phase = 'list'">Autres histoires</button>
+        <button class="btn-secondary" @click="router.push('/')">Accueil</button>
+      </div>
+    </div>
+
   </div>
+
+  <ConfirmQuit v-if="showQuit" @cancel="showQuit = false" @confirm="router.push('/')" />
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onBeforeUnmount, watch } from 'vue'
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
+import ConfirmQuit from '@/components/ConfirmQuit.vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
-import ConfirmQuit from '@/components/ConfirmQuit.vue'
-import FlagIcon from '@/components/FlagIcon.vue'
-import { STORIES, type StoryToken } from '@/data/stories'
+import { useAuthStore } from '@/stores/auth'
 import { postSession, calcXp } from '@/api/progress'
 
-const router = useRouter()
-const store  = useLangStore()
-
-const showQuit   = ref(false)
-const currentIdx = ref(0)
-const activeIdx  = ref<number | null>(null)
-const readStatus = ref<boolean[]>([false, false, false])
-const totalXpGained = ref(0)
-
-// Popup
-const popup      = ref<StoryToken | null>(null)
-const popupStyle = ref<Record<string, string>>({})
-
-const BCP47: Record<string, string> = {
-  es:'es-ES', en:'en-US', de:'de-DE', it:'it-IT', pt:'pt-PT', nl:'nl-NL',
-  pl:'pl-PL', tr:'tr-TR', ru:'ru-RU', ja:'ja-JP', ko:'ko-KR', zh:'zh-CN',
-  ar:'ar-SA', hi:'hi-IN',
+interface StoryToken  { text: string; fr?: string; punct?: boolean }
+interface QcmOption   { text: string }
+interface QcmQuestion { question_fr: string; options: QcmOption[]; correctIndex: number }
+interface Story {
+  id: string; emoji: string; title_fr: string
+  tokens: StoryToken[]; questions: QcmQuestion[]
 }
 
-const langCode = computed(() => store.currentLang?.code ?? 'es')
-const stories  = computed(() => STORIES[langCode.value] ?? STORIES['es'])
-const currentStory = computed(() => stories.value[currentIdx.value] ?? null)
-const allRead = computed(() => readStatus.value.every(Boolean))
+const store    = useLangStore()
+const auth     = useAuthStore()
+const router   = useRouter()
+const showQuit = ref(false)
 
-function selectStory(i: number) {
-  currentIdx.value = i
-  closePopup()
+const loading      = ref(true)
+const stories      = ref<Story[]>([])
+const currentStory = ref<Story | null>(null)
+const phase        = ref<'list' | 'read' | 'qcm' | 'results'>('list')
+const storyEl      = ref<HTMLElement | null>(null)
+
+const sentences         = ref<StoryToken[][]>([])
+const revealedSentences = ref(0)
+const revealing         = ref(false)
+const activeWord        = ref<{ sentIdx: number; tokIdx: number } | null>(null)
+const popup             = ref<{ text: string; fr: string; x: number; y: number } | null>(null)
+const visibleSentences  = computed(() => sentences.value.slice(0, revealedSentences.value))
+
+const questions      = ref<QcmQuestion[]>([])
+const qcmIndex       = ref(0)
+const qcmAnswered    = ref(false)
+const qcmLastCorrect = ref(false)
+const qcmScore       = ref(0)
+const qcmSelected    = ref<number | null>(null)
+
+const langCode = computed(() => store.currentLang?.code ?? '')
+
+const LANG_BCP47: Record<string, string> = {
+  es: 'es-ES', en: 'en-US', de: 'de-DE', it: 'it-IT',
+  pt: 'pt-PT', nl: 'nl-NL', pl: 'pl-PL', tr: 'tr-TR',
+  ru: 'ru-RU', ja: 'ja-JP', ko: 'ko-KR', zh: 'zh-CN',
+  ar: 'ar-SA', hi: 'hi-IN',
 }
 
-function onWordClick(tok: StoryToken, idx: number, e: MouseEvent) {
-  if (!tok.fr) return
-  activeIdx.value = idx
-  popup.value = tok
-
-  // Positionner le popup près du clic, en restant dans la fenêtre
-  const x = Math.min(e.clientX, window.innerWidth - 200)
-  const y = e.clientY - 80
-  popupStyle.value = {
-    left: `${x}px`,
-    top: `${y < 10 ? e.clientY + 20 : y}px`,
-  }
-}
-
-function closePopup() {
-  popup.value = null
-  activeIdx.value = null
-}
-
-function speak(text: string) {
-  if (!('speechSynthesis' in window)) return
+function speakWord(text: string) {
+  if (!window.speechSynthesis) return
   window.speechSynthesis.cancel()
-  const utt  = new SpeechSynthesisUtterance(text)
-  utt.lang   = BCP47[langCode.value] ?? 'es-ES'
-  utt.rate   = 0.85
+  const utt = new SpeechSynthesisUtterance(text)
+  utt.lang = LANG_BCP47[langCode.value] ?? langCode.value
   window.speechSynthesis.speak(utt)
 }
 
-async function markRead() {
-  if (readStatus.value[currentIdx.value]) return
-  readStatus.value[currentIdx.value] = true
+async function loadStories() {
+  loading.value = true
+  try {
+    const res = await fetch(`/api/stories?lang=${langCode.value}`)
+    if (res.ok) stories.value = await res.json()
+  } catch { /* réseau indispo */ }
+  loading.value = false
+}
 
-  // XP pour cette histoire
-  const storyXp = calcXp('stories', 1, 1)
-  totalXpGained.value += storyXp
-
-  await postSession({
-    language:  langCode.value,
-    theme:     'story',
-    level:     'intermediaire',
-    mode:      'stories',
-    score:     100,
-    xp_gained: storyXp,
-    correct:   1,
-    total:     1,
-  })
-
-  // Passer à la suivante si disponible
-  if (currentIdx.value < stories.value.length - 1 && !readStatus.value[currentIdx.value + 1]) {
-    setTimeout(() => { currentIdx.value++ }, 800)
+function tokenizeIntoSentences(tokens: StoryToken[]): StoryToken[][] {
+  const result: StoryToken[][] = []
+  let current: StoryToken[] = []
+  for (const tok of tokens) {
+    current.push(tok)
+    if (tok.punct && /^[.!?]$/.test(tok.text)) {
+      result.push(current)
+      current = []
+    }
   }
+  if (current.length) result.push(current)
+  return result
 }
 
-// Réinitialiser si la langue change
-watch(langCode, () => {
-  currentIdx.value = 0
-  readStatus.value = [false, false, false]
-  totalXpGained.value = 0
-  closePopup()
+function startStory(s: Story) {
+  currentStory.value      = s
+  sentences.value         = tokenizeIntoSentences(s.tokens)
+  revealedSentences.value = 0
+  revealing.value         = false
+  popup.value             = null
+  activeWord.value        = null
+  qcmScore.value          = 0
+  qcmIndex.value          = 0
+  qcmAnswered.value       = false
+  qcmSelected.value       = null
+  questions.value         = s.questions
+  phase.value             = 'read'
+  revealNextSentence()
+}
+
+async function revealNextSentence() {
+  if (revealedSentences.value >= sentences.value.length) return
+  revealing.value = true
+  revealedSentences.value++
+  await new Promise<void>(r => setTimeout(r, 80))
+  revealing.value = false
+  scrollStory()
+}
+
+function scrollStory() {
+  setTimeout(() => {
+    if (storyEl.value) storyEl.value.scrollTop = storyEl.value.scrollHeight
+  }, 50)
+}
+
+function openWord(tok: StoryToken, si: number, ti: number, ev: MouseEvent) {
+  if (!tok.fr) return
+  activeWord.value = { sentIdx: si, tokIdx: ti }
+  const pw = 220
+  const x = Math.min(ev.clientX, window.innerWidth - pw - 8)
+  const y = ev.clientY - 70
+  popup.value = { text: tok.text, fr: tok.fr, x, y }
+}
+
+function closePopup() { popup.value = null; activeWord.value = null }
+
+onMounted(async () => {
+  await loadStories()
+  document.addEventListener('click', closePopup)
 })
+onBeforeUnmount(() => document.removeEventListener('click', closePopup))
 
-// Fermer popup sur Escape
-function onKeydown(e: KeyboardEvent) {
-  if (e.key === 'Escape') closePopup()
+function startQcm() {
+  qcmIndex.value    = 0
+  qcmScore.value    = 0
+  qcmAnswered.value = false
+  qcmSelected.value = null
+  phase.value       = 'qcm'
 }
-onMounted(() => document.addEventListener('keydown', onKeydown))
-onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
+
+function qcmResult(i: number) {
+  if (!qcmAnswered.value || qcmSelected.value === null) return ''
+  if (i === questions.value[qcmIndex.value]?.correctIndex) return 'opt-correct'
+  if (i === qcmSelected.value) return 'opt-wrong'
+  return ''
+}
+
+function pickQcm(i: number) {
+  if (qcmAnswered.value) return
+  qcmSelected.value    = i
+  qcmAnswered.value    = true
+  const ok = i === questions.value[qcmIndex.value]?.correctIndex
+  qcmLastCorrect.value = ok
+  if (ok) qcmScore.value++
+}
+
+function nextQcm() {
+  if (qcmIndex.value + 1 >= questions.value.length) {
+    phase.value = 'results'
+    if (auth.user && store.currentLang) {
+      const xp = calcXp('stories', qcmScore.value, questions.value.length)
+      postSession({
+        language:  store.currentLang.code,
+        theme:     store.currentTheme?.key ?? 'general',
+        level:     store.currentLevel,
+        mode:      'stories',
+        score:     Math.round(qcmScore.value / Math.max(questions.value.length, 1) * 100),
+        xp_gained: xp,
+        correct:   qcmScore.value,
+        total:     questions.value.length,
+      })
+    }
+    return
+  }
+  qcmIndex.value++
+  qcmAnswered.value = false
+  qcmSelected.value = null
+}
 </script>
 
 <style scoped>
-.story-wrap {
-  max-width: 680px;
-  margin: 0 auto;
-  padding: 1.25rem 1rem 3rem;
-  min-height: 100vh;
-}
+.story-view { max-width: 680px; margin: 0 auto; padding: 1.5rem 1rem; }
 
-.story-header {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 0.75rem;
+.loading-state { text-align: center; padding: 4rem 1rem; color: var(--muted); }
+.spinner {
+  width: 36px; height: 36px; border: 3px solid var(--border);
+  border-top-color: #8b5cf6; border-radius: 50%;
+  animation: spin .7s linear infinite; margin: 0 auto 1rem;
 }
-.btn-quit {
-  background: none;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  color: var(--muted);
-  cursor: pointer;
-  padding: 0.3rem 0.6rem;
-  font-size: 0.85rem;
-}
-.btn-quit:hover { color: var(--text); border-color: var(--text); }
-.lang-info {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  color: var(--dim);
-  font-size: 0.9rem;
-  flex: 1;
-}
-.xp-badge {
-  background: var(--accent);
-  color: white;
-  border-radius: 20px;
-  padding: 0.2rem 0.75rem;
-  font-size: 0.82rem;
-  font-weight: 700;
-}
+@keyframes spin { to { transform: rotate(360deg); } }
 
-.hint {
-  color: var(--muted);
-  font-size: 0.82rem;
-  margin: 0 0 1rem;
-  text-align: center;
+.list-header, .game-header {
+  display: flex; align-items: center; justify-content: space-between; margin-bottom: .75rem;
 }
+.btn-back   { background: none; border: none; color: var(--muted); cursor: pointer; font-size: .9rem; }
+.mode-badge { background: #8b5cf620; color: #a78bfa; padding: .2rem .7rem; border-radius: 20px; font-size: .8rem; }
+.counter    { color: var(--muted2); font-size: .9rem; }
 
-/* Story tabs */
-.story-tabs {
-  display: flex;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
-  flex-wrap: wrap;
+.story-list h2 { text-align: center; margin: 1rem 0 1.25rem; }
+.story-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: .75rem;
 }
-.story-tab {
-  background: var(--bg-card);
-  border: 2px solid var(--border);
-  border-radius: 10px;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  font-size: 0.88rem;
-  color: var(--dim);
-  transition: border-color .15s, color .15s;
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
+.story-card {
+  background: var(--bg-card); border: 2px solid var(--border); border-radius: 12px;
+  padding: 1.5rem 1rem; cursor: pointer; display: flex; flex-direction: column;
+  align-items: center; gap: .5rem; transition: border-color .2s, transform .15s;
 }
-.story-tab:hover { border-color: var(--accent); color: var(--text); }
-.story-tab.active { border-color: var(--accent); color: var(--text); background: var(--bg-hover); }
-.story-tab.done { border-color: #22c55e; color: #22c55e; }
-.check { font-weight: 700; }
+.story-card:hover { border-color: #8b5cf6; transform: translateY(-2px); }
+.card-emoji { font-size: 2.4rem; }
+.card-title { color: var(--dim); font-size: .9rem; font-weight: 600; text-align: center; }
+.card-lang  { background: var(--border); color: var(--muted2); padding: .1rem .5rem; border-radius: 10px; font-size: .7rem; }
 
-/* Story body */
-.story-body {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 1.5rem 1.75rem;
-  font-size: 1.15rem;
-  line-height: 2.1;
-  color: var(--text);
-  margin-bottom: 1.5rem;
-  direction: ltr; /* RTL languages: override in JS if needed */
-}
+.progress-bar  { height: 6px; background: var(--border); border-radius: 3px; margin-bottom: 1rem; }
+.progress-fill { height: 100%; background: #8b5cf6; border-radius: 3px; transition: width .4s; }
+.qcm-fill      { background: #f59e0b; }
 
-/* Mots cliquables */
+.story-text {
+  background: #131320; border-radius: 14px; border: 1px solid var(--bg-hover);
+  padding: 1.25rem 1.5rem; max-height: 420px; overflow-y: auto;
+  line-height: 2; font-size: 1.05rem;
+}
+.sentences-wrap { }
+.sentence { margin: 0 0 .3rem; display: block; }
+.word-wrap { display: inline; }
 .word {
-  cursor: pointer;
-  border-bottom: 2px solid transparent;
-  border-radius: 3px;
-  padding: 0.05rem 0.15rem;
-  transition: background .12s, border-color .12s;
-  display: inline;
+  cursor: pointer; display: inline;
+  border-bottom: 1px dashed transparent;
+  transition: border-color .15s, color .15s;
 }
-.word:hover {
-  background: color-mix(in srgb, var(--accent) 15%, transparent);
-  border-bottom-color: var(--accent);
-}
-.word.highlighted {
-  background: color-mix(in srgb, var(--accent) 25%, transparent);
-  border-bottom-color: var(--accent);
-}
+.word:hover         { border-bottom-color: #8b5cf6; color: #c4b5fd; }
+.word.highlighted   { border-bottom-color: #a78bfa; color: #c4b5fd; }
+.punct { display: inline; }
 
-.punct { color: var(--dim); display: inline; }
-.sp { display: inline; }
+.sentence-fade-enter-active { transition: opacity .45s ease, transform .45s ease; }
+.sentence-fade-enter-from   { opacity: 0; transform: translateY(8px); }
 
-/* Footer */
-.story-footer { text-align: center; }
-.btn-read {
-  background: var(--accent);
-  color: white;
-  border: none;
-  border-radius: 10px;
-  padding: 0.75rem 2rem;
-  font-size: 1rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: opacity .2s;
+.btn-continue {
+  display: block; margin: 1.25rem auto 0;
+  background: #8b5cf6; color: white; border: none; border-radius: 8px;
+  padding: .6rem 1.8rem; font-size: .95rem; font-weight: 700; cursor: pointer;
+  transition: background .15s;
 }
-.btn-read:hover { opacity: 0.85; }
-.read-msg { color: #22c55e; font-weight: 600; font-size: 1rem; }
+.btn-continue:hover { background: #7c3aed; }
 
-.all-done {
-  margin-top: 1.25rem;
-  background: color-mix(in srgb, #22c55e 10%, var(--bg-card));
-  border: 2px solid #22c55e;
-  border-radius: 12px;
-  padding: 1rem 1.5rem;
-  font-size: 1rem;
-  color: var(--text);
-  line-height: 1.6;
+.read-done { text-align: center; margin-top: 1.5rem; }
+.btn-qcm {
+  background: #f59e0b; color: #1a1a1a; border: none; border-radius: 8px;
+  padding: .7rem 2rem; font-size: 1rem; font-weight: 700; cursor: pointer;
+  transition: background .15s;
 }
-.xp-total { color: #22c55e; font-weight: 700; font-size: 1.1rem; }
+.btn-qcm:hover { background: #d97706; }
 
-/* Popup flottant */
+.popup-overlay { position: fixed; inset: 0; z-index: 99; }
 .word-popup {
-  position: fixed;
-  z-index: 9999;
-  background: var(--bg-card);
-  border: 2px solid var(--accent);
-  border-radius: 12px;
-  padding: 0.6rem 0.9rem;
-  box-shadow: 0 8px 24px rgba(0,0,0,.3);
-  min-width: 160px;
-  max-width: 220px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  pointer-events: auto;
+  position: fixed; z-index: 100;
+  background: #1e1b4b; border: 1px solid #4c1d95; border-radius: 10px;
+  padding: .55rem 1rem; display: flex; align-items: center; gap: .5rem;
+  box-shadow: 0 8px 24px #00000060; pointer-events: auto; white-space: nowrap;
 }
-.popup-word {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--accent);
-  word-break: break-word;
-}
-.popup-arrow { font-size: 0.75rem; color: var(--muted); line-height: 1; }
-.popup-fr {
-  font-size: 0.95rem;
-  color: var(--text);
-  font-style: italic;
-}
-.popup-tts {
-  align-self: flex-end;
-  background: none;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1rem;
-  padding: 0.2rem 0.5rem;
-  margin-top: 0.2rem;
-  transition: background .12s;
-}
-.popup-tts:hover { background: var(--bg-hover); }
+.popup-text { color: #c4b5fd; font-weight: 700; font-size: .95rem; }
+.popup-arrow { color: #6d28d9; }
+.popup-fr   { color: #e2e8f0; font-size: .9rem; }
+.popup-tts  { background: none; border: none; cursor: pointer; font-size: .9rem; padding: 0; opacity: .6; transition: opacity .15s; }
+.popup-tts:hover { opacity: 1; }
 
-/* Transition popup */
-.pop-enter-active, .pop-leave-active { transition: opacity .12s, transform .12s; }
-.pop-enter-from, .pop-leave-to { opacity: 0; transform: scale(0.9) translateY(4px); }
+.qcm-screen { }
+.question-card { background: var(--bg-card); border-radius: 14px; border: 1px solid var(--border); padding: 1.5rem; }
+.question-text { font-size: 1.05rem; font-weight: 600; margin-bottom: 1.25rem; color: var(--text); line-height: 1.5; }
+
+.options-list { display: flex; flex-direction: column; gap: .55rem; }
+.opt-btn {
+  background: var(--bg-card); border: 2px solid var(--border); border-radius: 10px;
+  padding: .7rem 1rem; cursor: pointer; text-align: left;
+  display: flex; align-items: center; gap: .75rem;
+  transition: border-color .15s, background .15s;
+}
+.opt-btn:not(:disabled):hover { border-color: #8b5cf6; background: #1a1230; }
+.opt-btn:disabled { cursor: default; }
+.opt-letter {
+  width: 26px; height: 26px; border-radius: 50%; background: var(--border);
+  color: var(--muted2); font-size: .8rem; font-weight: 700;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.opt-label  { color: var(--text); font-size: .92rem; }
+.opt-correct { border-color: #22c55e !important; background: #14532d20 !important; }
+.opt-wrong   { border-color: #ef4444 !important; background: #7f1d1d20 !important; }
+.opt-correct .opt-letter { background: #22c55e; color: white; }
+.opt-wrong   .opt-letter { background: #ef4444; color: white; }
+.opt-correct .opt-label  { color: #86efac; }
+.opt-wrong   .opt-label  { color: #fca5a5; }
+
+.question-slide-enter-active { transition: opacity .3s ease, transform .3s ease; }
+.question-slide-leave-active { transition: opacity .2s ease, transform .2s ease; }
+.question-slide-enter-from   { opacity: 0; transform: translateX(20px); }
+.question-slide-leave-to     { opacity: 0; transform: translateX(-20px); }
+
+.qcm-next-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1.25rem; flex-wrap: wrap; }
+.feedback-inline { font-weight: 700; font-size: .95rem; }
+.fb-ok { color: #86efac; }
+.fb-ko { color: #fca5a5; }
+.btn-next {
+  background: #0ea5e9; color: white; border: none; border-radius: 8px;
+  padding: .6rem 1.4rem; font-size: .9rem; font-weight: 700; cursor: pointer;
+  white-space: nowrap; margin-left: auto;
+}
+
+.results { text-align: center; padding: 3rem 1rem; }
+.results-emoji { font-size: 4rem; margin-bottom: .5rem; }
+.score-text { font-size: 1.2rem; color: var(--muted2); margin: .5rem 0 2rem; }
+.results-actions { display: flex; gap: .75rem; justify-content: center; flex-wrap: wrap; }
+.btn-primary   { background: var(--accent); color: white; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
+.btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
+.empty { text-align: center; color: var(--muted); padding: 2rem; }
 </style>

@@ -1,8 +1,14 @@
 <template>
   <div class="dialogue">
 
+    <!-- Chargement -->
+    <div v-if="loading" class="loading-state">
+      <div class="spinner"></div>
+      <p>Chargement des dialogues…</p>
+    </div>
+
     <!-- Sélection du scénario -->
-    <div v-if="!current" class="scenario-list">
+    <div v-else-if="!current" class="scenario-list">
       <div class="list-header">
         <button class="btn-back" @click="showQuit = true">← Quitter</button>
         <span class="mode-badge">💬 Mini-dialogue</span>
@@ -35,43 +41,47 @@
         <span class="counter">{{ choicesDone }} / {{ totalChoices }}</span>
       </div>
       <div class="progress-bar">
-        <div class="progress-fill" :style="{ width: (choicesDone / totalChoices * 100) + '%' }"></div>
+        <div class="progress-fill" :style="{ width: (choicesDone / Math.max(totalChoices, 1) * 100) + '%' }"></div>
       </div>
 
-      <!-- Historique des lignes -->
+      <!-- Chat log avec animations -->
       <div class="chat-log" ref="chatLog">
-        <div
-          v-for="(entry, i) in log"
-          :key="i"
-          class="chat-entry"
-          :class="entry.speaker === 'A' ? 'entry-a' : 'entry-b'"
-        >
-          <div class="bubble" :dir="isRtl && entry.speaker !== 'B' ? 'rtl' : 'ltr'">
-            <div class="bubble-top">
-              <span class="bubble-text">{{ entry.text }}</span>
-              <button class="tts-btn" @click.stop="speak(entry.text)" title="Écouter">🔊</button>
+        <TransitionGroup name="bubble-fade" tag="div" class="chat-entries">
+          <div
+            v-for="(entry, i) in log"
+            :key="i"
+            class="chat-entry"
+            :class="entry.speaker === 'A' ? 'entry-a' : 'entry-b'"
+          >
+            <div class="bubble" :dir="isRtl && entry.speaker !== 'B' ? 'rtl' : 'ltr'">
+              <div class="bubble-top">
+                <span class="bubble-text">{{ entry.text }}</span>
+                <button class="tts-btn" @click.stop="speak(entry.text)" title="Écouter">🔊</button>
+              </div>
+              <span class="bubble-fr">{{ entry.fr }}</span>
             </div>
-            <span class="bubble-fr">{{ entry.fr }}</span>
           </div>
-        </div>
+        </TransitionGroup>
       </div>
 
       <!-- Choix MCQ -->
-      <div v-if="currentStep?.type === 'choice'" class="choices">
-        <p class="choice-label">Quelle est la bonne réponse ?</p>
-        <button
-          v-for="(opt, i) in currentStep.options"
-          :key="i"
-          class="choice-btn"
-          :class="choiceResult(i)"
-          :disabled="choiceAnswered"
-          @click="pickChoice(i)"
-          :dir="isRtl ? 'rtl' : 'ltr'"
-        >
-          <span class="opt-text">{{ opt.text }}</span>
-          <span class="opt-fr">{{ opt.fr }}</span>
-        </button>
-      </div>
+      <Transition name="choices-fade">
+        <div v-if="currentStep?.type === 'choice' && !revealingLines" class="choices">
+          <p class="choice-label">Quelle est la bonne réponse ?</p>
+          <button
+            v-for="(opt, i) in currentStep.options"
+            :key="i"
+            class="choice-btn"
+            :class="choiceResult(i)"
+            :disabled="choiceAnswered"
+            @click="pickChoice(i)"
+            :dir="isRtl ? 'rtl' : 'ltr'"
+          >
+            <span class="opt-text">{{ opt.text }}</span>
+            <span class="opt-fr">{{ opt.fr }}</span>
+          </button>
+        </div>
+      </Transition>
 
       <!-- Bouton suivant (après réponse) -->
       <div v-if="choiceAnswered" class="next-row">
@@ -79,7 +89,7 @@
           {{ lastCorrect ? '✓ Correct !' : '✗ Incorrect' }}
         </div>
         <button class="btn-next" @click="advance">
-          {{ stepIndex + 1 >= current.steps.length ? 'Résultats' : 'Suivant →' }}
+          {{ stepIndex + 1 >= (current?.steps.length ?? 0) ? 'Résultats' : 'Suivant →' }}
         </button>
       </div>
     </div>
@@ -97,7 +107,7 @@
     </div>
 
   </div>
-    <ConfirmQuit v-if="showQuit" @cancel="showQuit = false" @confirm="router.push('/')" />
+  <ConfirmQuit v-if="showQuit" @cancel="showQuit = false" @confirm="router.push('/')" />
 </template>
 
 <script setup lang="ts">
@@ -107,14 +117,29 @@ import { useRouter, useRoute } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
 import { postSession, calcXp } from '@/api/progress'
-import { DIALOGUES, type Dialogue, type DialogueChoice } from '@/data/dialogues'
 
-const store  = useLangStore()
+// ─── Types ────────────────────────────────────────────────────────────────────
+
+interface DialogueOption { text: string; fr: string }
+interface DialogueLine   { type: 'line';   speaker: 'A' | 'B'; text: string; fr: string }
+interface DialogueChoice { type: 'choice'; text: string; fr: string; options: DialogueOption[]; correctIndex: number }
+type DialogueStep = DialogueLine | DialogueChoice
+
+interface Dialogue {
+  id: string; emoji: string; title: string; title_fr: string
+  steps: DialogueStep[]
+}
+
+// ─── State ────────────────────────────────────────────────────────────────────
+
+const store    = useLangStore()
+const auth     = useAuthStore()
+const router   = useRouter()
+const route    = useRoute()
 const showQuit = ref(false)
-const auth   = useAuthStore()
-const router = useRouter()
-const route  = useRoute()
 
+const loading       = ref(true)
+const scenarios     = ref<Dialogue[]>([])
 const current       = ref<Dialogue | null>(null)
 const stepIndex     = ref(0)
 const log           = ref<{ speaker: 'A' | 'B'; text: string; fr: string }[]>([])
@@ -125,12 +150,13 @@ const score         = ref(0)
 const done          = ref(false)
 const chatLog       = ref<HTMLElement | null>(null)
 const selectedIndex = ref<number | null>(null)
+const revealingLines = ref(false)
 
-const langCode  = computed(() => store.currentLang?.code ?? '')
-const isRtl     = computed(() => store.currentLang?.is_rtl ?? false)
-const scenarios = computed(() => DIALOGUES[langCode.value] ?? [])
+const langCode = computed(() => store.currentLang?.code ?? '')
+const isRtl    = computed(() => store.currentLang?.is_rtl ?? false)
 
-// TTS — mapping code langue → BCP 47
+// ─── BCP47 TTS ────────────────────────────────────────────────────────────────
+
 const LANG_BCP47: Record<string, string> = {
   es: 'es-ES', en: 'en-US', de: 'de-DE', it: 'it-IT',
   pt: 'pt-PT', nl: 'nl-NL', pl: 'pl-PL', tr: 'tr-TR',
@@ -146,15 +172,24 @@ function speak(text: string) {
   window.speechSynthesis.speak(utt)
 }
 
-const currentStep = computed(() => {
-  if (!current.value) return null
-  return current.value.steps[stepIndex.value] ?? null
-})
+// ─── API ──────────────────────────────────────────────────────────────────────
 
-const totalChoices = computed(() => {
-  if (!current.value) return 0
-  return current.value.steps.filter(s => s.type === 'choice').length
-})
+async function loadDialogues() {
+  loading.value = true
+  try {
+    const res = await fetch(`/api/dialogues?lang=${langCode.value}`)
+    if (res.ok) scenarios.value = await res.json()
+  } catch { /* réseau indispo — liste vide */ }
+  loading.value = false
+}
+
+// ─── Computed ─────────────────────────────────────────────────────────────────
+
+const currentStep = computed(() => current.value?.steps[stepIndex.value] ?? null)
+
+const totalChoices = computed(() =>
+  current.value?.steps.filter(s => s.type === 'choice').length ?? 0
+)
 
 function choiceResult(i: number) {
   if (!choiceAnswered.value || selectedIndex.value === null) return ''
@@ -164,36 +199,48 @@ function choiceResult(i: number) {
   return ''
 }
 
+// ─── Logique dialogue ─────────────────────────────────────────────────────────
+
 function startDialogue(d: Dialogue) {
-  current.value     = d
-  stepIndex.value   = 0
-  log.value         = []
+  current.value       = d
+  stepIndex.value     = 0
+  log.value           = []
   choiceAnswered.value = false
-  choicesDone.value = 0
-  score.value       = 0
-  done.value        = false
+  choicesDone.value   = 0
+  score.value         = 0
+  done.value          = false
   selectedIndex.value = null
-  // Auto-advance through leading lines
-  advanceLines()
+  revealLines()
 }
 
-function advanceLines() {
+/** Révèle les lignes de dialogue une par une avec un délai (animation Duolingo) */
+async function revealLines() {
   const d = current.value
   if (!d) return
+  revealingLines.value = true
+
   while (stepIndex.value < d.steps.length) {
     const step = d.steps[stepIndex.value]
-    if (step.type === 'line') {
-      log.value.push({ speaker: step.speaker, text: step.text, fr: step.fr })
-      stepIndex.value++
-      scrollChat()
-    } else {
-      break // stop at choice
-    }
+    if (step.type !== 'line') break
+
+    log.value.push({ speaker: step.speaker, text: step.text, fr: step.fr })
+    stepIndex.value++
+    scrollChat()
+
+    // Pause entre les bulles pour l'effet Duolingo
+    await delay(520)
   }
-  // Trailing lines after last choice: trigger results
+
+  revealingLines.value = false
+
   if (stepIndex.value >= d.steps.length) {
-    setTimeout(() => { done.value = true }, 300)
+    await delay(300)
+    done.value = true
   }
+}
+
+function delay(ms: number) {
+  return new Promise<void>(r => setTimeout(r, ms))
 }
 
 function pickChoice(i: number) {
@@ -205,13 +252,12 @@ function pickChoice(i: number) {
   const ok = i === step.correctIndex
   lastCorrect.value = ok
   if (ok) score.value++
-  // Add the chosen answer to the log
   const opt = step.options[i]
   log.value.push({ speaker: 'B', text: opt.text, fr: opt.fr })
   scrollChat()
 }
 
-function advance() {
+async function advance() {
   if (!current.value) return
   stepIndex.value++
   choiceAnswered.value = false
@@ -220,7 +266,7 @@ function advance() {
     done.value = true
     return
   }
-  advanceLines()
+  await revealLines()
 }
 
 function restartCurrent() {
@@ -233,8 +279,10 @@ function scrollChat() {
   })
 }
 
-// Auto-start scenario passed from HomeView via query param
-onMounted(() => {
+// ─── Lifecycle ────────────────────────────────────────────────────────────────
+
+onMounted(async () => {
+  await loadDialogues()
   const id = route.query.scenario as string | undefined
   if (id) {
     const found = scenarios.value.find(s => s.id === id)
@@ -242,16 +290,17 @@ onMounted(() => {
   }
 })
 
-// XP
+// ─── XP ───────────────────────────────────────────────────────────────────────
+
 watch(done, (val) => {
-  if (!val || !auth.user || !store.currentLang || !store.currentTheme) return
+  if (!val || !auth.user || !store.currentLang) return
   const xp = calcXp('dialogue', score.value, totalChoices.value)
   postSession({
     language:  store.currentLang.code,
-    theme:     store.currentTheme.key,
+    theme:     store.currentTheme?.key ?? 'general',
     level:     store.currentLevel,
     mode:      'dialogue',
-    score:     Math.round(score.value / totalChoices.value * 100),
+    score:     Math.round(score.value / Math.max(totalChoices.value, 1) * 100),
     xp_gained: xp,
     correct:   score.value,
     total:     totalChoices.value,
@@ -261,6 +310,15 @@ watch(done, (val) => {
 
 <style scoped>
 .dialogue { max-width: 620px; margin: 0 auto; padding: 1.5rem 1rem; }
+
+/* Chargement */
+.loading-state { text-align: center; padding: 4rem 1rem; color: var(--muted); }
+.spinner {
+  width: 36px; height: 36px; border: 3px solid var(--border);
+  border-top-color: #0ea5e9; border-radius: 50%;
+  animation: spin .7s linear infinite; margin: 0 auto 1rem;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
 
 /* Header */
 .list-header, .game-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: .75rem; }
@@ -288,10 +346,11 @@ watch(done, (val) => {
 /* Chat log */
 .chat-log {
   max-height: 340px; overflow-y: auto;
-  display: flex; flex-direction: column; gap: .5rem;
   margin-bottom: 1rem; padding: .5rem;
   background: #131320; border-radius: 12px; border: 1px solid var(--bg-hover);
 }
+.chat-entries { display: flex; flex-direction: column; gap: .5rem; }
+
 .chat-entry { display: flex; }
 .entry-a { justify-content: flex-start; }
 .entry-b { justify-content: flex-end; }
@@ -312,6 +371,15 @@ watch(done, (val) => {
 }
 .tts-btn:hover { opacity: 1; }
 
+/* Animation bulles (Duolingo style) */
+.bubble-fade-enter-active {
+  transition: opacity .35s ease, transform .35s ease;
+}
+.bubble-fade-enter-from {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
 /* Choices */
 .choices { display: flex; flex-direction: column; gap: .5rem; margin-bottom: .75rem; }
 .choice-label { color: var(--muted2); font-size: .82rem; margin-bottom: .25rem; }
@@ -331,6 +399,10 @@ watch(done, (val) => {
 .opt-wrong   { border-color: #ef4444 !important; background: #7f1d1d20 !important; }
 .opt-correct .opt-text { color: #86efac; }
 .opt-wrong   .opt-text { color: #fca5a5; }
+
+/* Animation choices */
+.choices-fade-enter-active { transition: opacity .3s ease, transform .3s ease; }
+.choices-fade-enter-from   { opacity: 0; transform: translateY(8px); }
 
 /* Next row */
 .next-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }

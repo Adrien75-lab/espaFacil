@@ -10,6 +10,8 @@ use App\Http\Controllers\Api\DashboardController;
 use App\Http\Controllers\Api\TodayController;
 use App\Http\Controllers\Api\ReviewController;
 use App\Http\Controllers\Api\LeaderboardController;
+use App\Http\Controllers\Api\DialogueController;
+use App\Http\Controllers\Api\StoryController;
 
 // Auth (SPA stateful via Sanctum cookie)
 Route::post('/register', [AuthController::class, 'register']);
@@ -38,6 +40,10 @@ Route::middleware('auth:sanctum')->prefix('me')->group(function () {
 
 // Leaderboard — public, $request->user() resolved by Sanctum if cookie present
 Route::get('/leaderboard', [LeaderboardController::class, 'index']);
+
+// Contenu public : dialogues et histoires
+Route::get('/dialogues', [DialogueController::class, 'index']);
+Route::get('/stories',   [StoryController::class,   'index']);
 
 // Public: catalogue
 Route::prefix('languages')->group(function () {

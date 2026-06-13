@@ -9,6 +9,8 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             LinguaFacilSeeder::class,
+            DialogueSeeder::class,
+            StorySeeder::class,
         ]);
     }
 }
