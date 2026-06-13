@@ -41,8 +41,8 @@
         </button>
       </div>
 
-      <!-- Thème + niveau : masqués en mode Dialogue -->
-      <template v-if="currentMode !== 'dialogue'">
+      <!-- Thème + niveau : masqués pour les modes sans thème -->
+      <template v-if="!NO_THEME_MODES.includes(currentMode)">
         <p class="subtitle" style="margin-top:1rem">Choisissez un thème</p>
         <div class="theme-grid">
           <button
@@ -70,7 +70,7 @@
       </template>
 
       <!-- Sélection du scénario (mode dialogue uniquement) -->
-      <template v-else>
+      <template v-else-if="currentMode === 'dialogue'">
         <p class="subtitle" style="margin-top:1rem">Choisissez un scénario</p>
         <div v-if="dialogueScenarios.length" class="scenario-grid">
           <button
