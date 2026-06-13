@@ -218,9 +218,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>24,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'école ?','options'=>'[{"text":"En retard"},{"text":"Tôt"},{"text":"À midi"},{"text":"Le soir"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que fait le personnage en classe ?','options'=>'[{"text":"Il dort"},{"text":"Il joue"},{"text":"Il ouvre son cahier et écoute"},{"text":"Il mange"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage à la fin de la journée ?','options'=>'[{"text":"Il reste à l\'école"},{"text":"Il va au parc"},{"text":"Il range ses affaires et rentre"},{"text":"Il attend ses parents"}]','correct_index'=>2],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -255,9 +255,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>18,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Où le personnage choisit-il de s\'asseoir ?','options'=>'[{"text":"Au bar"},{"text":"En terrasse"},{"text":"Près de la fenêtre"},{"text":"Dans un coin sombre"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que recommande le serveur ?','options'=>'[{"text":"La spécialité de la maison"},{"text":"Le plat du jour"},{"text":"Le dessert"},{"text":"Une boisson"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage après le repas ?','options'=>'[{"text":"Déçu"},{"text":"Encore affamé"},{"text":"Malade"},{"text":"Satisfait"}]','correct_index'=>3],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -290,9 +290,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>16,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Que montre le personnage au contrôle ?','options'=>'[{"text":"Son billet"},{"text":"Sa valise"},{"text":"Son passeport"},{"text":"Sa carte d\'embarquement"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Où le personnage attend-il son vol ?','options'=>'[{"text":"Dans un taxi"},{"text":"Dans la salle d\'embarquement"},{"text":"À l\'entrée de l\'aéroport"},{"text":"Dans un restaurant"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
         ]);
 
         // ── EN ──
@@ -479,9 +479,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>15,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'école ?','options'=>'[{"text":"En retard"},{"text":"Tôt"},{"text":"À midi"},{"text":"Le soir"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que fait le personnage en classe ?','options'=>'[{"text":"Il dort"},{"text":"Il joue"},{"text":"Il ouvre son cahier et écoute"},{"text":"Il mange"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage à la fin de la journée ?','options'=>'[{"text":"Il reste à l\'école"},{"text":"Il va au parc"},{"text":"Il range ses affaires et rentre"},{"text":"Il attend ses parents"}]','correct_index'=>2],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -514,9 +514,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>16,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Où le personnage choisit-il de s\'asseoir ?','options'=>'[{"text":"Au bar"},{"text":"En terrasse"},{"text":"Près de la fenêtre"},{"text":"Dans un coin sombre"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que recommande le serveur ?','options'=>'[{"text":"La spécialité de la maison"},{"text":"Le plat du jour"},{"text":"Le dessert"},{"text":"Une boisson"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage après le repas ?','options'=>'[{"text":"Déçu"},{"text":"Encore affamé"},{"text":"Malade"},{"text":"Satisfait"}]','correct_index'=>3],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -549,9 +549,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>16,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Que montre le personnage au contrôle ?','options'=>'[{"text":"Son billet"},{"text":"Sa valise"},{"text":"Son passeport"},{"text":"Sa carte d\'embarquement"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Où le personnage attend-il son vol ?','options'=>'[{"text":"Dans un taxi"},{"text":"Dans la salle d\'embarquement"},{"text":"À l\'entrée de l\'aéroport"},{"text":"Dans un restaurant"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
         ]);
 
         // ── DE ──
@@ -735,9 +735,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>15,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'école ?','options'=>'[{"text":"En retard"},{"text":"Tôt"},{"text":"À midi"},{"text":"Le soir"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que fait le personnage en classe ?','options'=>'[{"text":"Il dort"},{"text":"Il joue"},{"text":"Il ouvre son cahier et écoute"},{"text":"Il mange"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage à la fin de la journée ?','options'=>'[{"text":"Il reste à l\'école"},{"text":"Il va au parc"},{"text":"Il range ses affaires et rentre"},{"text":"Il attend ses parents"}]','correct_index'=>2],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -770,9 +770,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>16,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Où le personnage choisit-il de s\'asseoir ?','options'=>'[{"text":"Au bar"},{"text":"En terrasse"},{"text":"Près de la fenêtre"},{"text":"Dans un coin sombre"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que recommande le serveur ?','options'=>'[{"text":"La spécialité de la maison"},{"text":"Le plat du jour"},{"text":"Le dessert"},{"text":"Une boisson"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage après le repas ?','options'=>'[{"text":"Déçu"},{"text":"Encore affamé"},{"text":"Malade"},{"text":"Satisfait"}]','correct_index'=>3],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -804,9 +804,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>15,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Que montre le personnage au contrôle ?','options'=>'[{"text":"Son billet"},{"text":"Sa valise"},{"text":"Son passeport"},{"text":"Sa carte d\'embarquement"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Où le personnage attend-il son vol ?','options'=>'[{"text":"Dans un taxi"},{"text":"Dans la salle d\'embarquement"},{"text":"À l\'entrée de l\'aéroport"},{"text":"Dans un restaurant"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
         ]);
 
         // ── IT ──
@@ -985,9 +985,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>15,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'école ?','options'=>'[{"text":"En retard"},{"text":"Tôt"},{"text":"À midi"},{"text":"Le soir"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que fait le personnage en classe ?','options'=>'[{"text":"Il dort"},{"text":"Il joue"},{"text":"Il ouvre son cahier et écoute"},{"text":"Il mange"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage à la fin de la journée ?','options'=>'[{"text":"Il reste à l\'école"},{"text":"Il va au parc"},{"text":"Il range ses affaires et rentre"},{"text":"Il attend ses parents"}]','correct_index'=>2],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -1020,9 +1020,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>16,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Où le personnage choisit-il de s\'asseoir ?','options'=>'[{"text":"Au bar"},{"text":"En terrasse"},{"text":"Près de la fenêtre"},{"text":"Dans un coin sombre"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que recommande le serveur ?','options'=>'[{"text":"La spécialité de la maison"},{"text":"Le plat du jour"},{"text":"Le dessert"},{"text":"Une boisson"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage après le repas ?','options'=>'[{"text":"Déçu"},{"text":"Encore affamé"},{"text":"Malade"},{"text":"Satisfait"}]','correct_index'=>3],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -1055,9 +1055,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>16,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Que montre le personnage au contrôle ?','options'=>'[{"text":"Son billet"},{"text":"Sa valise"},{"text":"Son passeport"},{"text":"Sa carte d\'embarquement"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Où le personnage attend-il son vol ?','options'=>'[{"text":"Dans un taxi"},{"text":"Dans la salle d\'embarquement"},{"text":"À l\'entrée de l\'aéroport"},{"text":"Dans un restaurant"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
         ]);
 
         // ── PT ──
@@ -1233,9 +1233,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>14,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'école ?','options'=>'[{"text":"En retard"},{"text":"Tôt"},{"text":"À midi"},{"text":"Le soir"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que fait le personnage en classe ?','options'=>'[{"text":"Il dort"},{"text":"Il joue"},{"text":"Il ouvre son cahier et écoute"},{"text":"Il mange"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage à la fin de la journée ?','options'=>'[{"text":"Il reste à l\'école"},{"text":"Il va au parc"},{"text":"Il range ses affaires et rentre"},{"text":"Il attend ses parents"}]','correct_index'=>2],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -1267,9 +1267,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>15,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Où le personnage choisit-il de s\'asseoir ?','options'=>'[{"text":"Au bar"},{"text":"En terrasse"},{"text":"Près de la fenêtre"},{"text":"Dans un coin sombre"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que recommande le serveur ?','options'=>'[{"text":"La spécialité de la maison"},{"text":"Le plat du jour"},{"text":"Le dessert"},{"text":"Une boisson"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage après le repas ?','options'=>'[{"text":"Déçu"},{"text":"Encore affamé"},{"text":"Malade"},{"text":"Satisfait"}]','correct_index'=>3],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -1302,9 +1302,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>16,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Que montre le personnage au contrôle ?','options'=>'[{"text":"Son billet"},{"text":"Sa valise"},{"text":"Son passeport"},{"text":"Sa carte d\'embarquement"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Où le personnage attend-il son vol ?','options'=>'[{"text":"Dans un taxi"},{"text":"Dans la salle d\'embarquement"},{"text":"À l\'entrée de l\'aéroport"},{"text":"Dans un restaurant"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
         ]);
 
         // ── NL ──
@@ -1490,9 +1490,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>13,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'école ?','options'=>'[{"text":"En retard"},{"text":"Tôt"},{"text":"À midi"},{"text":"Le soir"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que fait le personnage en classe ?','options'=>'[{"text":"Il dort"},{"text":"Il joue"},{"text":"Il ouvre son cahier et écoute"},{"text":"Il mange"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage à la fin de la journée ?','options'=>'[{"text":"Il reste à l\'école"},{"text":"Il va au parc"},{"text":"Il range ses affaires et rentre"},{"text":"Il attend ses parents"}]','correct_index'=>2],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -1523,9 +1523,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>14,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Où le personnage choisit-il de s\'asseoir ?','options'=>'[{"text":"Au bar"},{"text":"En terrasse"},{"text":"Près de la fenêtre"},{"text":"Dans un coin sombre"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que recommande le serveur ?','options'=>'[{"text":"La spécialité de la maison"},{"text":"Le plat du jour"},{"text":"Le dessert"},{"text":"Une boisson"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage après le repas ?','options'=>'[{"text":"Déçu"},{"text":"Encore affamé"},{"text":"Malade"},{"text":"Satisfait"}]','correct_index'=>3],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -1557,9 +1557,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>15,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Que montre le personnage au contrôle ?','options'=>'[{"text":"Son billet"},{"text":"Sa valise"},{"text":"Son passeport"},{"text":"Sa carte d\'embarquement"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Où le personnage attend-il son vol ?','options'=>'[{"text":"Dans un taxi"},{"text":"Dans la salle d\'embarquement"},{"text":"À l\'entrée de l\'aéroport"},{"text":"Dans un restaurant"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
         ]);
 
         // ── PL ──
@@ -1727,9 +1727,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>14,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'école ?','options'=>'[{"text":"En retard"},{"text":"Tôt"},{"text":"À midi"},{"text":"Le soir"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que fait le personnage en classe ?','options'=>'[{"text":"Il dort"},{"text":"Il joue"},{"text":"Il ouvre son cahier et écoute"},{"text":"Il mange"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage à la fin de la journée ?','options'=>'[{"text":"Il reste à l\'école"},{"text":"Il va au parc"},{"text":"Il range ses affaires et rentre"},{"text":"Il attend ses parents"}]','correct_index'=>2],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -1761,9 +1761,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>15,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Où le personnage choisit-il de s\'asseoir ?','options'=>'[{"text":"Au bar"},{"text":"En terrasse"},{"text":"Près de la fenêtre"},{"text":"Dans un coin sombre"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que recommande le serveur ?','options'=>'[{"text":"La spécialité de la maison"},{"text":"Le plat du jour"},{"text":"Le dessert"},{"text":"Une boisson"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage après le repas ?','options'=>'[{"text":"Déçu"},{"text":"Encore affamé"},{"text":"Malade"},{"text":"Satisfait"}]','correct_index'=>3],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -1793,9 +1793,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>13,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Que montre le personnage au contrôle ?','options'=>'[{"text":"Son billet"},{"text":"Sa valise"},{"text":"Son passeport"},{"text":"Sa carte d\'embarquement"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Où le personnage attend-il son vol ?','options'=>'[{"text":"Dans un taxi"},{"text":"Dans la salle d\'embarquement"},{"text":"À l\'entrée de l\'aéroport"},{"text":"Dans un restaurant"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
         ]);
 
         // ── TR ──
@@ -1955,9 +1955,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>13,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'école ?','options'=>'[{"text":"En retard"},{"text":"Tôt"},{"text":"À midi"},{"text":"Le soir"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que fait le personnage en classe ?','options'=>'[{"text":"Il dort"},{"text":"Il joue"},{"text":"Il ouvre son cahier et écoute"},{"text":"Il mange"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage à la fin de la journée ?','options'=>'[{"text":"Il reste à l\'école"},{"text":"Il va au parc"},{"text":"Il range ses affaires et rentre"},{"text":"Il attend ses parents"}]','correct_index'=>2],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -1986,9 +1986,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>12,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Où le personnage choisit-il de s\'asseoir ?','options'=>'[{"text":"Au bar"},{"text":"En terrasse"},{"text":"Près de la fenêtre"},{"text":"Dans un coin sombre"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que recommande le serveur ?','options'=>'[{"text":"La spécialité de la maison"},{"text":"Le plat du jour"},{"text":"Le dessert"},{"text":"Une boisson"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage après le repas ?','options'=>'[{"text":"Déçu"},{"text":"Encore affamé"},{"text":"Malade"},{"text":"Satisfait"}]','correct_index'=>3],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -2018,9 +2018,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>13,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Que montre le personnage au contrôle ?','options'=>'[{"text":"Son billet"},{"text":"Sa valise"},{"text":"Son passeport"},{"text":"Sa carte d\'embarquement"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Où le personnage attend-il son vol ?','options'=>'[{"text":"Dans un taxi"},{"text":"Dans la salle d\'embarquement"},{"text":"À l\'entrée de l\'aéroport"},{"text":"Dans un restaurant"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
         ]);
 
         // ── RU ──
@@ -2188,9 +2188,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>14,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'école ?','options'=>'[{"text":"En retard"},{"text":"Tôt"},{"text":"À midi"},{"text":"Le soir"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que fait le personnage en classe ?','options'=>'[{"text":"Il dort"},{"text":"Il joue"},{"text":"Il ouvre son cahier et écoute"},{"text":"Il mange"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage à la fin de la journée ?','options'=>'[{"text":"Il reste à l\'école"},{"text":"Il va au parc"},{"text":"Il range ses affaires et rentre"},{"text":"Il attend ses parents"}]','correct_index'=>2],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -2221,9 +2221,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>14,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Où le personnage choisit-il de s\'asseoir ?','options'=>'[{"text":"Au bar"},{"text":"En terrasse"},{"text":"Près de la fenêtre"},{"text":"Dans un coin sombre"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que recommande le serveur ?','options'=>'[{"text":"La spécialité de la maison"},{"text":"Le plat du jour"},{"text":"Le dessert"},{"text":"Une boisson"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage après le repas ?','options'=>'[{"text":"Déçu"},{"text":"Encore affamé"},{"text":"Malade"},{"text":"Satisfait"}]','correct_index'=>3],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -2253,9 +2253,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>13,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Que montre le personnage au contrôle ?','options'=>'[{"text":"Son billet"},{"text":"Sa valise"},{"text":"Son passeport"},{"text":"Sa carte d\'embarquement"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Où le personnage attend-il son vol ?','options'=>'[{"text":"Dans un taxi"},{"text":"Dans la salle d\'embarquement"},{"text":"À l\'entrée de l\'aéroport"},{"text":"Dans un restaurant"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
         ]);
 
         // ── JA ──
@@ -2424,9 +2424,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>11,'text'=>'。','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'école ?','options'=>'[{"text":"En retard"},{"text":"Tôt"},{"text":"À midi"},{"text":"Le soir"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que fait le personnage en classe ?','options'=>'[{"text":"Il dort"},{"text":"Il joue"},{"text":"Il ouvre son cahier et écoute"},{"text":"Il mange"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage à la fin de la journée ?','options'=>'[{"text":"Il reste à l\'école"},{"text":"Il va au parc"},{"text":"Il range ses affaires et rentre"},{"text":"Il attend ses parents"}]','correct_index'=>2],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -2455,9 +2455,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>12,'text'=>'。','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Où le personnage choisit-il de s\'asseoir ?','options'=>'[{"text":"Au bar"},{"text":"En terrasse"},{"text":"Près de la fenêtre"},{"text":"Dans un coin sombre"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que recommande le serveur ?','options'=>'[{"text":"La spécialité de la maison"},{"text":"Le plat du jour"},{"text":"Le dessert"},{"text":"Une boisson"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage après le repas ?','options'=>'[{"text":"Déçu"},{"text":"Encore affamé"},{"text":"Malade"},{"text":"Satisfait"}]','correct_index'=>3],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -2486,9 +2486,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>12,'text'=>'。','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Que montre le personnage au contrôle ?','options'=>'[{"text":"Son billet"},{"text":"Sa valise"},{"text":"Son passeport"},{"text":"Sa carte d\'embarquement"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Où le personnage attend-il son vol ?','options'=>'[{"text":"Dans un taxi"},{"text":"Dans la salle d\'embarquement"},{"text":"À l\'entrée de l\'aéroport"},{"text":"Dans un restaurant"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
         ]);
 
         // ── KO ──
@@ -2640,9 +2640,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>12,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'école ?','options'=>'[{"text":"En retard"},{"text":"Tôt"},{"text":"À midi"},{"text":"Le soir"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que fait le personnage en classe ?','options'=>'[{"text":"Il dort"},{"text":"Il joue"},{"text":"Il ouvre son cahier et écoute"},{"text":"Il mange"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage à la fin de la journée ?','options'=>'[{"text":"Il reste à l\'école"},{"text":"Il va au parc"},{"text":"Il range ses affaires et rentre"},{"text":"Il attend ses parents"}]','correct_index'=>2],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -2671,9 +2671,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>12,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Où le personnage choisit-il de s\'asseoir ?','options'=>'[{"text":"Au bar"},{"text":"En terrasse"},{"text":"Près de la fenêtre"},{"text":"Dans un coin sombre"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que recommande le serveur ?','options'=>'[{"text":"La spécialité de la maison"},{"text":"Le plat du jour"},{"text":"Le dessert"},{"text":"Une boisson"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage après le repas ?','options'=>'[{"text":"Déçu"},{"text":"Encore affamé"},{"text":"Malade"},{"text":"Satisfait"}]','correct_index'=>3],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -2702,9 +2702,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>12,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Que montre le personnage au contrôle ?','options'=>'[{"text":"Son billet"},{"text":"Sa valise"},{"text":"Son passeport"},{"text":"Sa carte d\'embarquement"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Où le personnage attend-il son vol ?','options'=>'[{"text":"Dans un taxi"},{"text":"Dans la salle d\'embarquement"},{"text":"À l\'entrée de l\'aéroport"},{"text":"Dans un restaurant"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
         ]);
 
         // ── ZH ──
@@ -2858,9 +2858,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>10,'text'=>'。','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'école ?','options'=>'[{"text":"En retard"},{"text":"Tôt"},{"text":"À midi"},{"text":"Le soir"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que fait le personnage en classe ?','options'=>'[{"text":"Il dort"},{"text":"Il joue"},{"text":"Il ouvre son cahier et écoute"},{"text":"Il mange"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage à la fin de la journée ?','options'=>'[{"text":"Il reste à l\'école"},{"text":"Il va au parc"},{"text":"Il range ses affaires et rentre"},{"text":"Il attend ses parents"}]','correct_index'=>2],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -2888,9 +2888,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>11,'text'=>'。','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Où est-ce que le personnage s\'assoit ?','options'=>'[{"text":"Près de la fenêtre"},{"text":"Au bar"},{"text":"Dehors en terrasse"},{"text":"Dans le couloir"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que commande le personnage ?','options'=>'[{"text":"Un thé et un gâteau"},{"text":"Un café et un croissant"},{"text":"Un jus d\'orange"},{"text":"Rien, il repart"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le serveur accueille-t-il le client ?','options'=>'[{"text":"Il est en colère"},{"text":"Il ignore le client"},{"text":"Il arrive et sourit"},{"text":"Il est absent"}]','correct_index'=>2],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -2919,9 +2919,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>12,'text'=>'。','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Que montre le personnage au contrôle ?','options'=>'[{"text":"Son billet"},{"text":"Sa valise"},{"text":"Son passeport"},{"text":"Sa carte d\'embarquement"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Où le personnage attend-il son vol ?','options'=>'[{"text":"Dans un taxi"},{"text":"Dans la salle d\'embarquement"},{"text":"À l\'entrée de l\'aéroport"},{"text":"Dans un restaurant"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
         ]);
 
         // ── AR ──
@@ -3077,9 +3077,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>13,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'école ?','options'=>'[{"text":"En retard"},{"text":"Tôt"},{"text":"À midi"},{"text":"Le soir"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que fait le personnage en classe ?','options'=>'[{"text":"Il dort"},{"text":"Il joue"},{"text":"Il ouvre son cahier et écoute"},{"text":"Il mange"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage à la fin de la journée ?','options'=>'[{"text":"Il reste à l\'école"},{"text":"Il va au parc"},{"text":"Il range ses affaires et rentre"},{"text":"Il attend ses parents"}]','correct_index'=>2],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -3109,9 +3109,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>13,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Où le personnage choisit-il de s\'asseoir ?','options'=>'[{"text":"Au bar"},{"text":"En terrasse"},{"text":"Près de la fenêtre"},{"text":"Dans un coin sombre"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que recommande le serveur ?','options'=>'[{"text":"La spécialité de la maison"},{"text":"Le plat du jour"},{"text":"Le dessert"},{"text":"Une boisson"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage après le repas ?','options'=>'[{"text":"Déçu"},{"text":"Encore affamé"},{"text":"Malade"},{"text":"Satisfait"}]','correct_index'=>3],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -3141,9 +3141,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>13,'text'=>'.','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Que montre le personnage au contrôle ?','options'=>'[{"text":"Son billet"},{"text":"Sa valise"},{"text":"Son passeport"},{"text":"Sa carte d\'embarquement"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Où le personnage attend-il son vol ?','options'=>'[{"text":"Dans un taxi"},{"text":"Dans la salle d\'embarquement"},{"text":"À l\'entrée de l\'aéroport"},{"text":"Dans un restaurant"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
         ]);
 
         // ── HI ──
@@ -3309,9 +3309,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>12,'text'=>'।','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'école ?','options'=>'[{"text":"En retard"},{"text":"Tôt"},{"text":"À midi"},{"text":"Le soir"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que fait le personnage en classe ?','options'=>'[{"text":"Il dort"},{"text":"Il joue"},{"text":"Il ouvre son cahier et écoute"},{"text":"Il mange"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage à la fin de la journée ?','options'=>'[{"text":"Il reste à l\'école"},{"text":"Il va au parc"},{"text":"Il range ses affaires et rentre"},{"text":"Il attend ses parents"}]','correct_index'=>2],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -3340,9 +3340,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>12,'text'=>'।','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Où le personnage choisit-il de s\'asseoir ?','options'=>'[{"text":"Au bar"},{"text":"En terrasse"},{"text":"Près de la fenêtre"},{"text":"Dans un coin sombre"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que recommande le serveur ?','options'=>'[{"text":"La spécialité de la maison"},{"text":"Le plat du jour"},{"text":"Le dessert"},{"text":"Une boisson"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage après le repas ?','options'=>'[{"text":"Déçu"},{"text":"Encore affamé"},{"text":"Malade"},{"text":"Satisfait"}]','correct_index'=>3],
         ]);
 
         $story = DB::table('stories')->insertGetId([
@@ -3371,9 +3371,9 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>12,'text'=>'।','fr'=>'','is_punct'=>true],
         ]);
         DB::table('story_questions')->insert([
-            ['story_id'=>$story,'position'=>0,'question_fr'=>'À quel moment le personnage va-t-il au marché ?','options'=>'[{"text":"Le soir"},{"text":"Le week-end"},{"text":"Chaque matin"},{"text":"Le midi"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'est-ce que le personnage n\'achète PAS ?','options'=>'[{"text":"Des fruits"},{"text":"Des légumes"},{"text":"Du poisson"},{"text":"Du pain"}]','correct_index'=>2],
-            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment le personnage rentre-t-il chez lui ?','options'=>'[{"text":"En colère"},{"text":"Triste"},{"text":"Pressé"},{"text":"Content(e)"}]','correct_index'=>3],
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Que montre le personnage au contrôle ?','options'=>'[{"text":"Son billet"},{"text":"Sa valise"},{"text":"Son passeport"},{"text":"Sa carte d\'embarquement"}]','correct_index'=>2],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Où le personnage attend-il son vol ?','options'=>'[{"text":"Dans un taxi"},{"text":"Dans la salle d\'embarquement"},{"text":"À l\'entrée de l\'aéroport"},{"text":"Dans un restaurant"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
         ]);
 
     }

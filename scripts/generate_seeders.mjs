@@ -144,17 +144,129 @@ const QUESTIONS = {
       correct_index: 3,
     },
   ],
+  ecole: [
+    {
+      question_fr: 'Quand le personnage arrive-t-il à l\'école ?',
+      options: [
+        { text: 'En retard' },
+        { text: 'Tôt' },
+        { text: 'À midi' },
+        { text: 'Le soir' },
+      ],
+      correct_index: 1,
+    },
+    {
+      question_fr: 'Que fait le personnage en classe ?',
+      options: [
+        { text: 'Il dort' },
+        { text: 'Il joue' },
+        { text: 'Il ouvre son cahier et écoute' },
+        { text: 'Il mange' },
+      ],
+      correct_index: 2,
+    },
+    {
+      question_fr: 'Que fait le personnage à la fin de la journée ?',
+      options: [
+        { text: 'Il reste à l\'école' },
+        { text: 'Il va au parc' },
+        { text: 'Il range ses affaires et rentre' },
+        { text: 'Il attend ses parents' },
+      ],
+      correct_index: 2,
+    },
+  ],
+  restaurant2: [
+    {
+      question_fr: 'Où le personnage choisit-il de s\'asseoir ?',
+      options: [
+        { text: 'Au bar' },
+        { text: 'En terrasse' },
+        { text: 'Près de la fenêtre' },
+        { text: 'Dans un coin sombre' },
+      ],
+      correct_index: 2,
+    },
+    {
+      question_fr: 'Que recommande le serveur ?',
+      options: [
+        { text: 'La spécialité de la maison' },
+        { text: 'Le plat du jour' },
+        { text: 'Le dessert' },
+        { text: 'Une boisson' },
+      ],
+      correct_index: 1,
+    },
+    {
+      question_fr: 'Comment se sent le personnage après le repas ?',
+      options: [
+        { text: 'Déçu' },
+        { text: 'Encore affamé' },
+        { text: 'Malade' },
+        { text: 'Satisfait' },
+      ],
+      correct_index: 3,
+    },
+  ],
+  aeroport: [
+    {
+      question_fr: 'Que montre le personnage au contrôle ?',
+      options: [
+        { text: 'Son billet' },
+        { text: 'Sa valise' },
+        { text: 'Son passeport' },
+        { text: 'Sa carte d\'embarquement' },
+      ],
+      correct_index: 2,
+    },
+    {
+      question_fr: 'Où le personnage attend-il son vol ?',
+      options: [
+        { text: 'Dans un taxi' },
+        { text: 'Dans la salle d\'embarquement' },
+        { text: 'À l\'entrée de l\'aéroport' },
+        { text: 'Dans un restaurant' },
+      ],
+      correct_index: 1,
+    },
+    {
+      question_fr: 'Quand l\'avion décolle-t-il ?',
+      options: [
+        { text: 'Avec du retard' },
+        { text: 'En avance' },
+        { text: 'À l\'heure' },
+        { text: 'Le lendemain' },
+      ],
+      correct_index: 2,
+    },
+  ],
 }
 
 function getQuestions(storyKey) {
   const k = storyKey.toLowerCase()
   if (k.includes('cafe') || k.includes('kafe') || k.includes('kissa') ||
-      k.includes('cofee') || k.includes('kaffe'))
+      k.includes('cofee') || k.includes('kaffe') || k.includes('canting') || k.includes('kissa'))
     return QUESTIONS.cafe
   if (k.includes('parc') || k.includes('park') || k.includes('kouen') ||
       k.includes('gongwon') || k.includes('gongyuan') || k.includes('hadiqua') ||
       k.includes('parque') || k.includes('parco'))
     return QUESTIONS.parc
+  if (k.includes('school') || k.includes('schule') || k.includes('scuola') ||
+      k.includes('escola') || k.includes('ecole') || k.includes('szkola') ||
+      k.includes('okul') || k.includes('shkola') || k.includes('gakko') ||
+      k.includes('hakgyo') || k.includes('xuexiao') || k.includes('madrasa') ||
+      k.includes('vidyalay') || k.includes('escuela'))
+    return QUESTIONS.ecole
+  if (k.includes('restaurant') || k.includes('restoran') || k.includes('ristorante') ||
+      k.includes('restaurante') || k.includes('restauracja') || k.includes('sikdang') ||
+      k.includes('matam') || k.includes('resutoran') || k.includes('canting'))
+    return QUESTIONS.restaurant2
+  if (k.includes('airport') || k.includes('aeroport') || k.includes('aeropuerto') ||
+      k.includes('flughafen') || k.includes('aeroporto') || k.includes('luchthaven') ||
+      k.includes('lotnisko') || k.includes('havalimani') || k.includes('kuko') ||
+      k.includes('gonghang') || k.includes('jichang') || k.includes('matar') ||
+      k.includes('havai'))
+    return QUESTIONS.aeroport
   return QUESTIONS.marche
 }
 
