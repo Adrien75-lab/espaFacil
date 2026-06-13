@@ -27,6 +27,7 @@ const router = createRouter({
     { path: '/stories',      name: 'stories',      component: () => import('@/views/StoryView.vue') },
     { path: '/conjugaison',  name: 'conjugaison',  component: () => import('@/views/ConjugationView.vue') },
     { path: '/traduction',   name: 'traduction',   component: () => import('@/views/TranslationView.vue') },
+    { path: '/devinette',    name: 'devinette',    component: () => import('@/views/DevinetteView.vue') },
   ]
 })
 
