@@ -24,7 +24,8 @@ const router = createRouter({
     { path: '/leaderboard', name: 'leaderboard', component: () => import('@/views/LeaderboardView.vue') },
     { path: '/survival',   name: 'survival',   component: () => import('@/views/SurvivalView.vue') },
     { path: '/voyage',     name: 'voyage',     component: () => import('@/views/VoyageView.vue') },
-    { path: '/stories',    name: 'stories',    component: () => import('@/views/StoryView.vue') },
+    { path: '/stories',      name: 'stories',      component: () => import('@/views/StoryView.vue') },
+    { path: '/conjugaison',  name: 'conjugaison',  component: () => import('@/views/ConjugationView.vue') },
   ]
 })
 
