@@ -154,6 +154,7 @@ const modes = [
   { key: 'voyage',           emoji: '✈️',   label: 'Voyage' },
   { key: 'stories',          emoji: '📖',   label: 'Histoires' },
   { key: 'conjugaison',      emoji: '🔀',   label: 'Conjugaison' },
+  { key: 'traduction',       emoji: '✍️',   label: 'Traduction' },
 ]
 
 // Modes qui ne nécessitent pas de thème sélectionné
@@ -172,6 +173,8 @@ function goMode() {
     router.push('/stories')
   } else if (currentMode.value === 'conjugaison') {
     router.push('/conjugaison')
+  } else if (currentMode.value === 'traduction') {
+    router.push('/traduction')
   } else if (store.currentTheme) {
     router.push('/' + currentMode.value)
   }
