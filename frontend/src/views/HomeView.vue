@@ -152,10 +152,11 @@ const modes = [
   { key: 'anagram',          emoji: '🔀',   label: 'Anagramme' },
   { key: 'survival',         emoji: '🆘',   label: 'Survie' },
   { key: 'voyage',           emoji: '✈️',   label: 'Voyage' },
+  { key: 'stories',          emoji: '📖',   label: 'Histoires' },
 ]
 
 // Modes qui ne nécessitent pas de thème sélectionné
-const NO_THEME_MODES = ['dialogue', 'survival', 'voyage']
+const NO_THEME_MODES = ['dialogue', 'survival', 'voyage', 'stories']
 
 onMounted(() => { if (!store.languages.length) store.loadLanguages() })
 
@@ -166,6 +167,8 @@ function goMode() {
     router.push('/survival')
   } else if (currentMode.value === 'voyage') {
     router.push('/voyage')
+  } else if (currentMode.value === 'stories') {
+    router.push('/stories')
   } else if (store.currentTheme) {
     router.push('/' + currentMode.value)
   }
