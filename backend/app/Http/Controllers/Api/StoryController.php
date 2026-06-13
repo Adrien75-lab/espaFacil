@@ -14,16 +14,23 @@ class StoryController extends Controller
      */
     public function index(Request $request): JsonResponse
     {
-        $lang = $request->query('lang', 'es');
+        $lang  = $request->query('lang', 'es');
+        $level = $request->query('level');
 
-        $stories = Story::with(['tokens', 'questions'])
-            ->where('lang', $lang)
-            ->orderBy('sort_order')
+        $query = Story::with(['tokens', 'questions'])
+            ->where('lang', $lang);
+
+        if ($level !== null) {
+            $query->where('level', (int) $level);
+        }
+
+        $stories = $query->orderBy('sort_order')
             ->get()
             ->map(fn($s) => [
                 'id'        => $s->story_key,
                 'emoji'     => $s->emoji,
                 'title_fr'  => $s->title_fr,
+                'level'     => $s->level,
                 'tokens'    => $s->tokens->map(fn($t) => array_filter([
                     'text'   => $t->text,
                     'fr'     => $t->fr,

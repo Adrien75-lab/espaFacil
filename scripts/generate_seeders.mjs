@@ -263,6 +263,7 @@ function generateStorySeeder(stories) {
       L.push(`            'story_key'  => '${esc(story.id)}',`)
       L.push(`            'emoji'      => '${esc(story.emoji)}',`)
       L.push(`            'title_fr'   => '${esc(story.title_fr)}',`)
+      L.push(`            'level'      => ${story.level ?? 1},`)
       L.push(`            'sort_order' => ${sortOrder},`)
       L.push(`            'created_at' => $now,`)
       L.push(`            'updated_at' => $now,`)

@@ -15,14 +15,25 @@
       </div>
       <h2>Choisissez une histoire</h2>
 
-      <div v-if="!stories.length" class="empty">
-        <p>Aucune histoire disponible pour cette langue.</p>
-        <button class="btn-secondary" @click="router.push('/')">← Retour</button>
+      <div class="level-tabs">
+        <button
+          v-for="lvl in [1, 2, 3]"
+          :key="lvl"
+          class="level-tab"
+          :class="{ active: selectedLevel === lvl }"
+          @click="selectedLevel = lvl"
+        >
+          {{ lvl === 1 ? '⭐ Débutant' : lvl === 2 ? '⭐⭐ Intermédiaire' : '⭐⭐⭐ Avancé' }}
+        </button>
+      </div>
+
+      <div v-if="!filteredStories.length" class="empty">
+        <p>Aucune histoire disponible pour ce niveau.</p>
       </div>
 
       <div v-else class="story-grid">
         <button
-          v-for="s in stories"
+          v-for="s in filteredStories"
           :key="s.id"
           class="story-card"
           @click="startStory(s)"
@@ -172,7 +183,7 @@ interface StoryToken  { text: string; fr?: string; punct?: boolean }
 interface QcmOption   { text: string }
 interface QcmQuestion { question_fr: string; options: QcmOption[]; correctIndex: number }
 interface Story {
-  id: string; emoji: string; title_fr: string
+  id: string; emoji: string; title_fr: string; level?: number
   tokens: StoryToken[]; questions: QcmQuestion[]
 }
 
@@ -181,9 +192,11 @@ const auth     = useAuthStore()
 const router   = useRouter()
 const showQuit = ref(false)
 
-const loading      = ref(true)
-const stories      = ref<Story[]>([])
-const currentStory = ref<Story | null>(null)
+const loading       = ref(true)
+const stories       = ref<Story[]>([])
+const selectedLevel = ref(1)
+const filteredStories = computed(() => stories.value.filter(s => (s.level ?? 1) === selectedLevel.value))
+const currentStory  = ref<Story | null>(null)
 const phase        = ref<'list' | 'read' | 'qcm' | 'results'>('list')
 const storyEl      = ref<HTMLElement | null>(null)
 
@@ -278,6 +291,12 @@ async function revealNextSentence() {
   await new Promise<void>(r => setTimeout(r, 80))
   revealing.value = false
   scrollStory()
+  // Lecture automatique de la phrase révélée
+  const sent = sentences.value[revealedSentences.value - 1]
+  if (sent) {
+    const text = sent.filter(t => !t.punct).map(t => t.text).join(' ')
+    speakWord(text)
+  }
 }
 
 function scrollStory() {
@@ -373,7 +392,21 @@ function nextQcm() {
 .mode-badge { background: #8b5cf620; color: #a78bfa; padding: .2rem .7rem; border-radius: 20px; font-size: .8rem; }
 .counter    { color: var(--muted2); font-size: .9rem; }
 
-.story-list h2 { text-align: center; margin: 1rem 0 1.25rem; }
+.story-list h2 { text-align: center; margin: 1rem 0 1rem; }
+
+.level-tabs {
+  display: flex; justify-content: center; gap: .5rem; margin-bottom: 1.25rem; flex-wrap: wrap;
+}
+.level-tab {
+  padding: .4rem 1rem; border-radius: 20px; border: 2px solid var(--border);
+  background: transparent; color: var(--dim); cursor: pointer; font-size: .85rem;
+  transition: all .2s;
+}
+.level-tab.active {
+  border-color: #8b5cf6; background: #8b5cf620; color: #8b5cf6; font-weight: 600;
+}
+.level-tab:hover:not(.active) { border-color: var(--muted2); }
+
 .story-grid {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: .75rem;
 }
@@ -487,4 +520,20 @@ function nextQcm() {
 .results-actions { display: flex; gap: .75rem; justify-content: center; flex-wrap: wrap; }
 .btn-primary   { background: var(--accent); color: white; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
 .btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
-.empty { text-align: center; color: var(
+.empty { text-align: center; color: var(--muted); padding: 2rem; }
+
+/* Confettis */
+.confetti-container {
+  position: fixed; top: 0; left: 0; width: 100vw; height: 0;
+  pointer-events: none; z-index: 9999; overflow: visible;
+}
+.confetto {
+  position: absolute; top: -10px;
+  animation: fall linear forwards;
+}
+@keyframes fall {
+  0%   { transform: translateY(0) rotate(0deg); opacity: 1; }
+  80%  { opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+</style>

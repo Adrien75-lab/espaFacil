@@ -8,6 +8,7 @@ export interface Story {
   id: string
   emoji: string
   title_fr: string
+  level: 1 | 2 | 3
   tokens: StoryToken[]
 }
 
@@ -19,6 +20,7 @@ export const STORIES: Record<string, Story[]> = {
   es: [
     {
       id: 'cafe', emoji: '☕', title_fr: 'Au café',
+      level: 1,
       tokens: [
         w('Lucía','Lucie'), w('entra','entre'), w('en','dans'), w('la','la'), w('cafetería','cafétéria'), p('.'),
         w('Se','elle'), w('sienta','s\'assoit'), w('en','à'), w('una','une'), w('mesa','table'), w('junto','près'), w('a','de'), w('la','la'), w('ventana','fenêtre'), p('.'),
@@ -29,6 +31,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'parque', emoji: '🌳', title_fr: 'Le parc',
+      level: 1,
       tokens: [
         w('Carlos','Carlos'), w('pasea','se promène'), w('por','dans'), w('el','le'), w('parque','parc'), w('con','avec'), w('su','son'), w('perro','chien'), p('.'),
         w('Los','les'), w('niños','enfants'), w('juegan','jouent'), w('en','dans'), w('la','la'), w('hierba','herbe'), p('.'),
@@ -38,6 +41,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'mercado', emoji: '🛒', title_fr: 'Au marché',
+      level: 1,
       tokens: [
         w('Ana','Ana'), w('va','va'), w('al','au'), w('mercado','marché'), w('cada','chaque'), w('mañana','matin'), p('.'),
         w('Compra','elle achète'), w('frutas','fruits'), p(','), w('verduras','légumes'), w('y','et'), w('pan','pain'), w('fresco','frais'), p('.'),
@@ -50,6 +54,7 @@ export const STORIES: Record<string, Story[]> = {
   en: [
     {
       id: 'cafe', emoji: '☕', title_fr: 'Au café',
+      level: 1,
       tokens: [
         w('Sofia','Sofia'), w('walks','entre'), w('into','dans'), w('the','le'), w('café','café'), p('.'),
         w('She','elle'), w('sits','s\'assoit'), w('at','à'), w('a','une'), w('table','table'), w('by','près de'), w('the','la'), w('window','fenêtre'), p('.'),
@@ -60,6 +65,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'park', emoji: '🌳', title_fr: 'Le parc',
+      level: 1,
       tokens: [
         w('Tom','Tom'), w('walks','se promène'), w('in','dans'), w('the','le'), w('park','parc'), w('with','avec'), w('his','son'), w('dog','chien'), p('.'),
         w('Children','des enfants'), w('play','jouent'), w('on','dans'), w('the','la'), w('grass','herbe'), p('.'),
@@ -69,6 +75,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'market', emoji: '🛒', title_fr: 'Au marché',
+      level: 1,
       tokens: [
         w('Anna','Anna'), w('goes','va'), w('to','au'), w('the','le'), w('market','marché'), w('every','chaque'), w('morning','matin'), p('.'),
         w('She','elle'), w('buys','achète'), w('fruits','fruits'), p(','), w('vegetables','légumes'), w('and','et'), w('fresh','frais'), w('bread','pain'), p('.'),
@@ -81,6 +88,7 @@ export const STORIES: Record<string, Story[]> = {
   de: [
     {
       id: 'cafe', emoji: '☕', title_fr: 'Au café',
+      level: 1,
       tokens: [
         w('Maria','Maria'), w('betritt','entre dans'), w('das','le'), w('Café','café'), p('.'),
         w('Sie','elle'), w('setzt sich','s\'assoit'), w('an','à'), w('einen','une'), w('Tisch','table'), w('am','près de la'), w('Fenster','fenêtre'), p('.'),
@@ -91,6 +99,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'park', emoji: '🌳', title_fr: 'Le parc',
+      level: 1,
       tokens: [
         w('Felix','Felix'), w('spaziert','se promène'), w('im','dans le'), w('Park','parc'), w('mit','avec'), w('seinem','son'), w('Hund','chien'), p('.'),
         w('Kinder','des enfants'), w('spielen','jouent'), w('auf','dans'), w('dem','la'), w('Rasen','herbe'), p('.'),
@@ -100,6 +109,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'markt', emoji: '🛒', title_fr: 'Au marché',
+      level: 1,
       tokens: [
         w('Laura','Laura'), w('geht','va'), w('jeden','chaque'), w('Morgen','matin'), w('auf','au'), w('den','le'), w('Markt','marché'), p('.'),
         w('Sie','elle'), w('kauft','achète'), w('Obst','fruits'), p(','), w('Gemüse','légumes'), w('und','et'), w('frisches','frais'), w('Brot','pain'), p('.'),
@@ -112,6 +122,7 @@ export const STORIES: Record<string, Story[]> = {
   it: [
     {
       id: 'cafe', emoji: '☕', title_fr: 'Au café',
+      level: 1,
       tokens: [
         w('Giulia','Giulia'), w('entra','entre dans'), w('nel','dans le'), w('bar','café'), p('.'),
         w('Si siede','elle s\'assoit'), w('a','à'), w('un','une'), w('tavolo','table'), w('vicino','près de'), w('alla','la'), w('finestra','fenêtre'), p('.'),
@@ -122,6 +133,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'parco', emoji: '🌳', title_fr: 'Le parc',
+      level: 1,
       tokens: [
         w('Marco','Marco'), w('passeggia','se promène'), w('nel','dans le'), w('parco','parc'), w('con','avec'), w('il suo','son'), w('cane','chien'), p('.'),
         w('I bambini','les enfants'), w('giocano','jouent'), w('sull\'erba','dans l\'herbe'), p('.'),
@@ -131,6 +143,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'mercato', emoji: '🛒', title_fr: 'Au marché',
+      level: 1,
       tokens: [
         w('Sofia','Sofia'), w('va','va'), w('al','au'), w('mercato','marché'), w('ogni','chaque'), w('mattina','matin'), p('.'),
         w('Compra','elle achète'), w('frutta','fruits'), p(','), w('verdura','légumes'), w('e','et'), w('pane','pain'), w('fresco','frais'), p('.'),
@@ -143,6 +156,7 @@ export const STORIES: Record<string, Story[]> = {
   pt: [
     {
       id: 'cafe', emoji: '☕', title_fr: 'Au café',
+      level: 1,
       tokens: [
         w('Mariana','Mariana'), w('entra','entre dans'), w('no','dans le'), w('café','café'), p('.'),
         w('Ela','elle'), w('senta','s\'assoit'), w('numa','à une'), w('mesa','table'), w('perto','près de'), w('da','la'), w('janela','fenêtre'), p('.'),
@@ -153,6 +167,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'parque', emoji: '🌳', title_fr: 'Le parc',
+      level: 1,
       tokens: [
         w('Pedro','Pedro'), w('passeia','se promène'), w('no','dans le'), w('parque','parc'), w('com','avec'), w('o seu','son'), w('cão','chien'), p('.'),
         w('As crianças','les enfants'), w('brincam','jouent'), w('na','dans la'), w('relva','herbe'), p('.'),
@@ -162,6 +177,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'mercado', emoji: '🛒', title_fr: 'Au marché',
+      level: 1,
       tokens: [
         w('Ana','Ana'), w('vai','va'), w('ao','au'), w('mercado','marché'), w('todas as manhãs','chaque matin'), p('.'),
         w('Compra','elle achète'), w('frutas','fruits'), p(','), w('legumes','légumes'), w('e','et'), w('pão','pain'), w('fresco','frais'), p('.'),
@@ -174,6 +190,7 @@ export const STORIES: Record<string, Story[]> = {
   nl: [
     {
       id: 'cafe', emoji: '☕', title_fr: 'Au café',
+      level: 1,
       tokens: [
         w('Emma','Emma'), w('stapt','entre'), w('het','le'), w('café','café'), w('binnen','dans'), p('.'),
         w('Ze','elle'), w('gaat','va'), w('zitten','s\'asseoir'), w('aan','à'), w('een','une'), w('tafel','table'), w('bij','près de'), w('het','la'), w('raam','fenêtre'), p('.'),
@@ -184,6 +201,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'park', emoji: '🌳', title_fr: 'Le parc',
+      level: 1,
       tokens: [
         w('Lars','Lars'), w('wandelt','se promène'), w('in','dans'), w('het','le'), w('park','parc'), w('met','avec'), w('zijn','son'), w('hond','chien'), p('.'),
         w('Kinderen','des enfants'), w('spelen','jouent'), w('op','dans'), w('het','la'), w('gras','herbe'), p('.'),
@@ -193,6 +211,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'markt', emoji: '🛒', title_fr: 'Au marché',
+      level: 1,
       tokens: [
         w('Lena','Lena'), w('gaat','va'), w('elke','chaque'), w('ochtend','matin'), w('naar','au'), w('de','le'), w('markt','marché'), p('.'),
         w('Ze','elle'), w('koopt','achète'), w('fruit','fruits'), p(','), w('groenten','légumes'), w('en','et'), w('vers','frais'), w('brood','pain'), p('.'),
@@ -205,6 +224,7 @@ export const STORIES: Record<string, Story[]> = {
   pl: [
     {
       id: 'cafe', emoji: '☕', title_fr: 'Au café',
+      level: 1,
       tokens: [
         w('Kasia','Kasia'), w('wchodzi','entre dans'), w('do','dans le'), w('kawiarni','café'), p('.'),
         w('Siada','elle s\'assoit'), w('przy','à'), w('stoliku','table'), w('przy','près de'), w('oknie','fenêtre'), p('.'),
@@ -215,6 +235,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'park', emoji: '🌳', title_fr: 'Le parc',
+      level: 1,
       tokens: [
         w('Marek','Marek'), w('spaceruje','se promène'), w('w','dans'), w('parku','parc'), w('z','avec'), w('psem','chien'), p('.'),
         w('Dzieci','les enfants'), w('bawią się','jouent'), w('na','dans la'), w('trawie','herbe'), p('.'),
@@ -224,6 +245,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'rynek', emoji: '🛒', title_fr: 'Au marché',
+      level: 1,
       tokens: [
         w('Ania','Ania'), w('chodzi','va'), w('na','au'), w('rynek','marché'), w('każdego','chaque'), w('ranka','matin'), p('.'),
         w('Kupuje','elle achète'), w('owoce','fruits'), p(','), w('warzywa','légumes'), w('i','et'), w('świeży','frais'), w('chleb','pain'), p('.'),
@@ -236,6 +258,7 @@ export const STORIES: Record<string, Story[]> = {
   tr: [
     {
       id: 'kafe', emoji: '☕', title_fr: 'Au café',
+      level: 1,
       tokens: [
         w('Ayşe','Ayşe'), w('kafeye','dans le café'), w('girer','entre'), p('.'),
         w('Pencere','fenêtre'), w('kenarındaki','près de la'), w('bir masaya','une table'), w('oturur','s\'assoit'), p('.'),
@@ -246,6 +269,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'park', emoji: '🌳', title_fr: 'Le parc',
+      level: 1,
       tokens: [
         w('Can','Can'), w('köpeğiyle','avec son chien'), w('parkta','dans le parc'), w('yürür','se promène'), p('.'),
         w('Çocuklar','les enfants'), w('çimenlerde','dans l\'herbe'), w('oynar','jouent'), p('.'),
@@ -255,6 +279,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'pazar', emoji: '🛒', title_fr: 'Au marché',
+      level: 1,
       tokens: [
         w('Fatma','Fatma'), w('her sabah','chaque matin'), w('pazara','au marché'), w('gider','va'), p('.'),
         w('Meyve','fruits'), p(','), w('sebze','légumes'), w('ve','et'), w('taze','frais'), w('ekmek','pain'), w('alır','achète'), p('.'),
@@ -267,6 +292,7 @@ export const STORIES: Record<string, Story[]> = {
   ru: [
     {
       id: 'cafe', emoji: '☕', title_fr: 'Au café',
+      level: 1,
       tokens: [
         w('Маша','Masha'), w('входит','entre dans'), w('в','dans'), w('кафе','café'), p('.'),
         w('Она','elle'), w('садится','s\'assoit'), w('за столик','à une table'), w('у','près de'), w('окна','fenêtre'), p('.'),
@@ -277,6 +303,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'park', emoji: '🌳', title_fr: 'Le parc',
+      level: 1,
       tokens: [
         w('Антон','Anton'), w('гуляет','se promène'), w('в','dans'), w('парке','parc'), w('с','avec'), w('собакой','chien'), p('.'),
         w('Дети','les enfants'), w('играют','jouent'), w('на','dans la'), w('траве','herbe'), p('.'),
@@ -286,6 +313,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'rynok', emoji: '🛒', title_fr: 'Au marché',
+      level: 1,
       tokens: [
         w('Наташа','Natasha'), w('ходит','va'), w('на','au'), w('рынок','marché'), w('каждое','chaque'), w('утро','matin'), p('.'),
         w('Она','elle'), w('покупает','achète'), w('фрукты','fruits'), p(','), w('овощи','légumes'), w('и','et'), w('свежий','frais'), w('хлеб','pain'), p('.'),
@@ -298,6 +326,7 @@ export const STORIES: Record<string, Story[]> = {
   ja: [
     {
       id: 'cafe', emoji: '☕', title_fr: 'Au café',
+      level: 1,
       tokens: [
         w('さくら','Sakura'), w('は','(sujet)'), w('カフェ','café'), w('に','(direction)'), w('入ります','entre dans'), p('。'),
         w('窓','fenêtre'), w('の近く','près de'), w('の','(particule)'), w('テーブル','table'), w('に','à'), w('座ります','s\'assoit'), p('。'),
@@ -308,6 +337,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'kouen', emoji: '🌳', title_fr: 'Le parc',
+      level: 1,
       tokens: [
         w('けんじ','Kenji'), w('は','(sujet)'), w('犬','chien'), w('と','avec'), w('公園','parc'), w('を','(objet)'), w('散歩します','se promène'), p('。'),
         w('子どもたち','les enfants'), w('が','(sujet)'), w('芝生','herbe'), w('で','dans'), w('遊んでいます','jouent'), p('。'),
@@ -317,6 +347,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'ichiba', emoji: '🛒', title_fr: 'Au marché',
+      level: 1,
       tokens: [
         w('はなこ','Hanako'), w('は','(particule)'), w('毎朝','chaque matin'), w('市場','marché'), w('に','(direction)'), w('行きます','va'), p('。'),
         w('くだもの','fruits'), w('と','et'), w('やさい','légumes'), w('と','et'), w('新鮮な','frais'), w('パン','pain'), w('を','(objet)'), w('買います','achète'), p('。'),
@@ -329,6 +360,7 @@ export const STORIES: Record<string, Story[]> = {
   ko: [
     {
       id: 'cafe', emoji: '☕', title_fr: 'Au café',
+      level: 1,
       tokens: [
         w('지민','Jimin'), w('이','(sujet)'), w('카페에','dans le café'), w('들어갑니다','entre'), p('.'),
         w('창가','près de la fenêtre'), w('테이블에','à la table'), w('앉습니다','s\'assoit'), p('.'),
@@ -339,6 +371,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'gongwon', emoji: '🌳', title_fr: 'Le parc',
+      level: 1,
       tokens: [
         w('준호','Junho'), w('는','(particule)'), w('강아지와','avec son chien'), w('공원에서','dans le parc'), w('산책합니다','se promène'), p('.'),
         w('아이들이','les enfants'), w('잔디밭에서','dans l\'herbe'), w('놀고 있습니다','jouent'), p('.'),
@@ -348,6 +381,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'sijang', emoji: '🛒', title_fr: 'Au marché',
+      level: 1,
       tokens: [
         w('수진','Sujin'), w('은','(particule)'), w('매일 아침','chaque matin'), w('시장에','au marché'), w('갑니다','va'), p('.'),
         w('과일','fruits'), p(','), w('채소','légumes'), w('와','et'), w('신선한','frais'), w('빵을','pain'), w('삽니다','achète'), p('.'),
@@ -360,6 +394,7 @@ export const STORIES: Record<string, Story[]> = {
   zh: [
     {
       id: 'cafe', emoji: '☕', title_fr: 'Au café',
+      level: 1,
       tokens: [
         w('小红','Xiaohong'), w('走进','entre dans'), w('咖啡馆','café'), p('。'),
         w('她','elle'), w('坐在','s\'assoit à'), w('靠窗','près de la fenêtre'), w('的桌子旁','côté de la table'), p('。'),
@@ -370,6 +405,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'gongyuan', emoji: '🌳', title_fr: 'Le parc',
+      level: 1,
       tokens: [
         w('明明','Mingming'), w('带着','avec'), w('他的狗','son chien'), w('在','dans'), w('公园','parc'), w('散步','se promène'), p('。'),
         w('孩子们','les enfants'), w('在','dans'), w('草地上','l\'herbe'), w('玩耍','jouent'), p('。'),
@@ -379,6 +415,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'shichang', emoji: '🛒', title_fr: 'Au marché',
+      level: 1,
       tokens: [
         w('小芳','Xiaofang'), w('每天早上','chaque matin'), w('去','va'), w('市场','marché'), p('。'),
         w('她','elle'), w('买','achète'), w('水果','fruits'), p('，'), w('蔬菜','légumes'), w('和','et'), w('新鲜','frais'), w('面包','pain'), p('。'),
@@ -391,6 +428,7 @@ export const STORIES: Record<string, Story[]> = {
   ar: [
     {
       id: 'cafe', emoji: '☕', title_fr: 'Au café',
+      level: 1,
       tokens: [
         w('سارة','Sara'), w('تدخل','entre dans'), w('المقهى','café'), p('.'),
         w('تجلس','elle s\'assoit'), w('على','à'), w('طاولة','table'), w('بجانب','près de'), w('النافذة','fenêtre'), p('.'),
@@ -401,6 +439,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'hadiqua', emoji: '🌳', title_fr: 'Le parc',
+      level: 1,
       tokens: [
         w('أحمد','Ahmed'), w('يتنزه','se promène'), w('في','dans'), w('الحديقة','parc'), w('مع','avec'), w('كلبه','son chien'), p('.'),
         w('الأطفال','les enfants'), w('يلعبون','jouent'), w('على','dans'), w('العشب','herbe'), p('.'),
@@ -410,6 +449,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'souq', emoji: '🛒', title_fr: 'Au marché',
+      level: 1,
       tokens: [
         w('فاطمة','Fatima'), w('تذهب','va'), w('إلى','au'), w('السوق','marché'), w('كل صباح','chaque matin'), p('.'),
         w('تشتري','elle achète'), w('فواكه','fruits'), p(','), w('خضروات','légumes'), w('وخبز','et pain'), w('طازج','frais'), p('.'),
@@ -422,6 +462,7 @@ export const STORIES: Record<string, Story[]> = {
   hi: [
     {
       id: 'cafe', emoji: '☕', title_fr: 'Au café',
+      level: 1,
       tokens: [
         w('प्रिया','Priya'), w('कैफे','café'), w('में','dans'), w('आती है','entre'), p('।'),
         w('वह','elle'), w('खिड़की','fenêtre'), w('के पास','près de'), w('एक मेज','une table'), w('पर','à'), w('बैठती है','s\'assoit'), p('।'),
@@ -432,6 +473,7 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'park', emoji: '🌳', title_fr: 'Le parc',
+      level: 1,
       tokens: [
         w('रोहन','Rohan'), w('अपने कुत्ते','son chien'), w('के साथ','avec'), w('पार्क','parc'), w('में','dans'), w('घूमता है','se promène'), p('।'),
         w('बच्चे','les enfants'), w('घास','herbe'), w('पर','dans la'), w('खेलते हैं','jouent'), p('।'),
@@ -441,13 +483,950 @@ export const STORIES: Record<string, Story[]> = {
     },
     {
       id: 'bazaar', emoji: '🛒', title_fr: 'Au marché',
+      level: 1,
       tokens: [
         w('अनीता','Anita'), w('हर सुबह','chaque matin'), w('बाज़ार','marché'), w('जाती है','va au'), p('।'),
         w('वह','elle'), w('फल','fruits'), p(','), w('सब्जियाँ','légumes'), w('और','et'), w('ताज़ी','frais'), w('रोटी','pain'), w('खरीदती है','achète'), p('।'),
         w('विक्रेता','le vendeur'), w('उसे','lui'), w('सबसे लाल','les plus rouges'), w('सेब','pommes'), w('देता है','donne'), p('।'),
         w('अनीता','Anita'), w('खुश होकर','contente'), w('घर','chez elle'), w('लौटती है','rentre'), p('।'),
+    
       ]
     },
   ],
 
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// HISTOIRES NIVEAU 2 & 3
+// ═══════════════════════════════════════════════════════════════════════════
+
+const STORIES_EXTRA: Record<string, Story[]> = {
+  es: [
+    {
+      id: 'escuela', emoji: '📚', title_fr: "À l'école", level: 2,
+      tokens: [
+        w('Sofía','Sofia'),
+        w('llega','arrive'),
+        w('a','à'),
+        w('la','la'),
+        w('escuela',"l'école"),
+        w('temprano','tôt'),
+        p('.'),
+        w('Saluda','elle salue'),
+        w('a','à'),
+        w('su','sa'),
+        w('profesora','professeure'),
+        p('.'),
+        w('Abre','elle ouvre'),
+        w('su','son'),
+        w('cuaderno','cahier'),
+        w('y','et'),
+        w('escucha','écoute'),
+        w('la lección','la leçon'),
+        p('.'),
+        w('Al final','à la fin'),
+        w('recoge','elle range'),
+        w('sus cosas','ses affaires'),
+        w('y','et'),
+        w('vuelve a casa','rentre'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'restaurante2', emoji: '🍽️', title_fr: 'Au restaurant', level: 2,
+      tokens: [
+        w('Miguel','Miguel'),
+        w('entra','entre dans'),
+        w('el restaurante','le restaurant'),
+        w('hambriento','affamé'),
+        p('.'),
+        w('Elige','il choisit'),
+        w('una mesa','une table'),
+        w('junto a la ventana','près de la fenêtre'),
+        p('.'),
+        w('El camarero','le serveur'),
+        w('recomienda','recommande'),
+        w('el plato del día','le plat du jour'),
+        p('.'),
+        w('Miguel','Miguel'),
+        w('pide','commande'),
+        w('la paella','la paella'),
+        w('y queda','et est'),
+        w('satisfecho','satisfait'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'aeropuerto', emoji: '✈️', title_fr: "À l'aéroport", level: 3,
+      tokens: [
+        w('Laura','Laura'),
+        w('llega','arrive'),
+        w('al aeropuerto',"à l\'aéroport"),
+        w('con su maleta','avec sa valise'),
+        p('.'),
+        w('Muestra','elle montre'),
+        w('su pasaporte','son passeport'),
+        w('en el control','au contrôle'),
+        p('.'),
+        w('Espera','elle attend'),
+        w('su vuelo','son vol'),
+        w('en la sala de embarque',"dans la salle d'embarquement"),
+        p('.'),
+        w('El avión',"l'avion"),
+        w('despega','décolle'),
+        w('puntualmente','ponctuellement'),
+        p('.'),
+      ]
+    }
+  ,
+  ],
+
+  en: [
+    {
+      id: 'school', emoji: '📚', title_fr: "À l'école", level: 2,
+      tokens: [
+        w('Emma','Emma'),
+        w('arrives','arrive'),
+        w('at school',"à l'école"),
+        w('early','tôt'),
+        p('.'),
+        w('She greets','elle salue'),
+        w('her teacher','sa professeure'),
+        p('.'),
+        w('She opens','elle ouvre'),
+        w('her notebook','son cahier'),
+        w('and listens','et écoute'),
+        p('.'),
+        w('At the end','à la fin'),
+        w('she packs her things','elle range ses affaires'),
+        w('and goes home','et rentre'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'restaurant2', emoji: '🍽️', title_fr: 'Au restaurant', level: 2,
+      tokens: [
+        w('Tom','Tom'),
+        w('enters','entre dans'),
+        w('the restaurant','le restaurant'),
+        w('hungry','affamé'),
+        p('.'),
+        w('He chooses','il choisit'),
+        w('a table','une table'),
+        w('by the window','près de la fenêtre'),
+        p('.'),
+        w('The waiter','le serveur'),
+        w('recommends','recommande'),
+        w('the dish of the day','le plat du jour'),
+        p('.'),
+        w('Tom orders','Tom commande'),
+        w('the fish','le poisson'),
+        w('and feels satisfied','et est satisfait'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'airport', emoji: '✈️', title_fr: "À l'aéroport", level: 3,
+      tokens: [
+        w('Sarah','Sarah'),
+        w('arrives','arrive'),
+        w('at the airport',"à l'aéroport"),
+        w('with her suitcase','avec sa valise'),
+        p('.'),
+        w('She shows','elle montre'),
+        w('her passport','son passeport'),
+        w('at security','au contrôle'),
+        p('.'),
+        w('She waits','elle attend'),
+        w('for her flight','son vol'),
+        w('in the lounge',"dans la salle d'attente"),
+        p('.'),
+        w('The plane',"l'avion"),
+        w('takes off','décolle'),
+        w('on time',"à l\'heure"),
+        p('.'),
+      ]
+    }
+  ,
+  ],
+
+  de: [
+    {
+      id: 'schule', emoji: '📚', title_fr: "À l'école", level: 2,
+      tokens: [
+        w('Emma','Emma'),
+        w('kommt','arrive'),
+        w('früh','tôt'),
+        w('in die Schule',"à l'école"),
+        p('.'),
+        w('Sie begrüßt','elle salue'),
+        w('ihre Lehrerin','sa professeure'),
+        p('.'),
+        w('Sie öffnet','elle ouvre'),
+        w('ihr Heft','son cahier'),
+        w('und hört zu','et écoute'),
+        p('.'),
+        w('Am Ende','à la fin'),
+        w('packt sie ihre Sachen','elle range ses affaires'),
+        w('und geht nach Hause','et rentre'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'restaurant2', emoji: '🍽️', title_fr: 'Au restaurant', level: 2,
+      tokens: [
+        w('Max','Max'),
+        w('betritt','entre dans'),
+        w('das Restaurant','le restaurant'),
+        w('hungrig','affamé'),
+        p('.'),
+        w('Er wählt','il choisit'),
+        w('einen Tisch','une table'),
+        w('am Fenster','près de la fenêtre'),
+        p('.'),
+        w('Der Kellner','le serveur'),
+        w('empfiehlt','recommande'),
+        w('das Tagesgericht','le plat du jour'),
+        p('.'),
+        w('Max bestellt','Max commande'),
+        w('den Fisch','le poisson'),
+        w('und ist zufrieden','et est satisfait'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'flughafen', emoji: '✈️', title_fr: "À l'aéroport", level: 3,
+      tokens: [
+        w('Julia','Julia'),
+        w('kommt','arrive'),
+        w('mit ihrem Koffer','avec sa valise'),
+        w('am Flughafen',"à l'aéroport"),
+        w('an',''),
+        p('.'),
+        w('Sie zeigt','elle montre'),
+        w('ihren Pass','son passeport'),
+        w('beim Sicherheitscheck','au contrôle'),
+        p('.'),
+        w('Sie wartet','elle attend'),
+        w('in der Abflughalle',"dans la salle d'embarquement"),
+        p('.'),
+        w('Das Flugzeug',"l'avion"),
+        w('hebt pünktlich ab',"décolle à l\'heure"),
+        p('.'),
+      ]
+    }
+  ,
+  ],
+
+  it: [
+    {
+      id: 'scuola', emoji: '📚', title_fr: "À l'école", level: 2,
+      tokens: [
+        w('Emma','Emma'),
+        w('arriva','arrive'),
+        w('a scuola',"à l'école"),
+        w('presto','tôt'),
+        p('.'),
+        w('Saluta','elle salue'),
+        w('la sua professoressa','sa professeure'),
+        p('.'),
+        w('Apre','elle ouvre'),
+        w('il suo quaderno','son cahier'),
+        w('e ascolta la lezione','et écoute la leçon'),
+        p('.'),
+        w('Alla fine','à la fin'),
+        w('mette via le sue cose','elle range ses affaires'),
+        w('e torna a casa','et rentre'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'ristorante2', emoji: '🍽️', title_fr: 'Au restaurant', level: 2,
+      tokens: [
+        w('Marco','Marco'),
+        w('entra','entre dans'),
+        w('nel ristorante','le restaurant'),
+        w('affamato','affamé'),
+        p('.'),
+        w('Sceglie','il choisit'),
+        w('un tavolo','une table'),
+        w('vicino alla finestra','près de la fenêtre'),
+        p('.'),
+        w('Il cameriere','le serveur'),
+        w('consiglia','recommande'),
+        w('il piatto del giorno','le plat du jour'),
+        p('.'),
+        w('Marco ordina','Marco commande'),
+        w('la pasta','les pâtes'),
+        w('ed è soddisfatto','et est satisfait'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'aeroporto', emoji: '✈️', title_fr: "À l'aéroport", level: 3,
+      tokens: [
+        w('Sofia','Sofia'),
+        w('arriva','arrive'),
+        w("all'aeroporto","à l'aéroport"),
+        w('con la sua valigia','avec sa valise'),
+        p('.'),
+        w('Mostra','elle montre'),
+        w('il passaporto','son passeport'),
+        w('al controllo','au contrôle'),
+        p('.'),
+        w('Aspetta','elle attend'),
+        w('il volo','son vol'),
+        w("nella sala d'attesa","dans la salle d'attente"),
+        p('.'),
+        w("L'aereo","l'avion"),
+        w('decolla','décolle'),
+        w('puntuale',"à l\'heure"),
+        p('.'),
+      ]
+    }
+  ,
+  ],
+
+  pt: [
+    {
+      id: 'escola', emoji: '📚', title_fr: "À l'école", level: 2,
+      tokens: [
+        w('Ana','Ana'),
+        w('chega','arrive'),
+        w('à escola',"à l'école"),
+        w('cedo','tôt'),
+        p('.'),
+        w('Ela cumprimenta','elle salue'),
+        w('a sua professora','sa professeure'),
+        p('.'),
+        w('Ela abre o seu caderno','elle ouvre son cahier'),
+        w('e ouve','et écoute'),
+        p('.'),
+        w('No fim','à la fin'),
+        w('ela arruma as suas coisas','elle range ses affaires'),
+        w('e volta a casa','et rentre'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'restaurante2', emoji: '🍽️', title_fr: 'Au restaurant', level: 2,
+      tokens: [
+        w('João','João'),
+        w('entra','entre dans'),
+        w('no restaurante','le restaurant'),
+        w('com fome','affamé'),
+        p('.'),
+        w('Escolhe','il choisit'),
+        w('uma mesa','une table'),
+        w('perto da janela','près de la fenêtre'),
+        p('.'),
+        w('O empregado','le serveur'),
+        w('recomenda','recommande'),
+        w('o prato do dia','le plat du jour'),
+        p('.'),
+        w('João pede o peixe','João commande le poisson'),
+        w('e fica satisfeito','et est satisfait'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'aeroporto2', emoji: '✈️', title_fr: "À l'aéroport", level: 3,
+      tokens: [
+        w('Maria','Maria'),
+        w('chega','arrive'),
+        w('ao aeroporto',"à l'aéroport"),
+        w('com a mala','avec sa valise'),
+        p('.'),
+        w('Mostra','elle montre'),
+        w('o passaporte','son passeport'),
+        w('no controlo','au contrôle'),
+        p('.'),
+        w('Espera','elle attend'),
+        w('o voo','son vol'),
+        w('na sala de embarque',"dans la salle d'embarquement"),
+        p('.'),
+        w('O avião',"l'avion"),
+        w('descola','décolle'),
+        w('pontualmente','ponctuellement'),
+        p('.'),
+      ]
+    }
+  ,
+  ],
+
+  nl: [
+    {
+      id: 'school', emoji: '📚', title_fr: "À l'école", level: 2,
+      tokens: [
+        w('Emma','Emma'),
+        w('komt vroeg','arrive tôt'),
+        w('op school aan',"à l'école"),
+        p('.'),
+        w('Ze begroet','elle salue'),
+        w('haar lerares','sa professeure'),
+        p('.'),
+        w('Ze opent haar schrift','elle ouvre son cahier'),
+        w('en luistert','et écoute'),
+        p('.'),
+        w('Aan het einde','à la fin'),
+        w('pakt ze haar spullen','elle range ses affaires'),
+        w('en gaat naar huis','et rentre'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'restaurant2', emoji: '🍽️', title_fr: 'Au restaurant', level: 2,
+      tokens: [
+        w('Pieter','Pieter'),
+        w('stapt het restaurant in','entre dans le restaurant'),
+        w('hongerig','affamé'),
+        p('.'),
+        w('Hij kiest','il choisit'),
+        w('een tafel','une table'),
+        w('bij het raam','près de la fenêtre'),
+        p('.'),
+        w('De ober','le serveur'),
+        w('beveelt het dagmenu aan','recommande le plat du jour'),
+        p('.'),
+        w('Pieter bestelt','Pieter commande'),
+        w('de vis','le poisson'),
+        w('en is tevreden','et est satisfait'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'luchthaven', emoji: '✈️', title_fr: "À l'aéroport", level: 3,
+      tokens: [
+        w('Sophie','Sophie'),
+        w('komt aan','arrive'),
+        w('op de luchthaven',"à l'aéroport"),
+        w('met haar koffer','avec sa valise'),
+        p('.'),
+        w('Ze toont','elle montre'),
+        w('haar paspoort','son passeport'),
+        w('bij de controle','au contrôle'),
+        p('.'),
+        w('Ze wacht','elle attend'),
+        w('op haar vlucht','son vol'),
+        w('in de vertrekhal',"dans la salle d'embarquement"),
+        p('.'),
+        w('Het vliegtuig',"l'avion"),
+        w('vertrekt stipt op tijd',"décolle à l\'heure"),
+        p('.'),
+      ]
+    }
+  ,
+  ],
+
+  pl: [
+    {
+      id: 'szkola', emoji: '📚', title_fr: "À l'école", level: 2,
+      tokens: [
+        w('Ania','Ania'),
+        w('przybywa','arrive'),
+        w('do szkoły',"à l'école"),
+        w('wcześnie','tôt'),
+        p('.'),
+        w('Wita','elle salue'),
+        w('swoją nauczycielkę','sa professeure'),
+        p('.'),
+        w('Otwiera zeszyt','elle ouvre son cahier'),
+        w('i słucha lekcji','et écoute la leçon'),
+        p('.'),
+        w('Na końcu','à la fin'),
+        w('pakuje rzeczy','elle range ses affaires'),
+        w('i wraca do domu','et rentre'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'restauracja2', emoji: '🍽️', title_fr: 'Au restaurant', level: 2,
+      tokens: [
+        w('Piotr','Piotr'),
+        w('wchodzi','entre dans'),
+        w('do restauracji','le restaurant'),
+        w('głodny','affamé'),
+        p('.'),
+        w('Wybiera','il choisit'),
+        w('stolik','une table'),
+        w('przy oknie','près de la fenêtre'),
+        p('.'),
+        w('Kelner','le serveur'),
+        w('poleca','recommande'),
+        w('danie dnia','le plat du jour'),
+        p('.'),
+        w('Piotr zamawia rybę','Piotr commande le poisson'),
+        w('i jest zadowolony','et est satisfait'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'lotnisko', emoji: '✈️', title_fr: "À l'aéroport", level: 3,
+      tokens: [
+        w('Kasia','Kasia'),
+        w('przybywa','arrive'),
+        w('na lotnisko',"à l'aéroport"),
+        w('z walizką','avec sa valise'),
+        p('.'),
+        w('Pokazuje paszport','elle montre son passeport'),
+        w('na kontroli','au contrôle'),
+        p('.'),
+        w('Czeka na lot','elle attend son vol'),
+        w('w hali odlotów',"dans la salle d'embarquement"),
+        p('.'),
+        w('Samolot',"l'avion"),
+        w('startuje punktualnie',"décolle à l\'heure"),
+        p('.'),
+      ]
+    }
+  ,
+  ],
+
+  tr: [
+    {
+      id: 'okul', emoji: '📚', title_fr: "À l'école", level: 2,
+      tokens: [
+        w('Ayşe','Ayşe'),
+        w('okula',"à l'école"),
+        w('erken','tôt'),
+        w('geliyor','arrive'),
+        p('.'),
+        w('Öğretmenini selamlıyor','elle salue sa professeure'),
+        p('.'),
+        w('Defterini açıyor','elle ouvre son cahier'),
+        w('ve dersi dinliyor','et écoute la leçon'),
+        p('.'),
+        w('Sonunda','à la fin'),
+        w('eşyalarını topluyor','elle range ses affaires'),
+        w('ve eve dönüyor','et rentre'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'restoran2', emoji: '🍽️', title_fr: 'Au restaurant', level: 2,
+      tokens: [
+        w('Mehmet','Mehmet'),
+        w('restorana giriyor','entre dans le restaurant'),
+        w('aç olarak','affamé'),
+        p('.'),
+        w('Pencere yanında','près de la fenêtre'),
+        w('bir masa seçiyor','il choisit une table'),
+        p('.'),
+        w('Garson','le serveur'),
+        w('günün yemeğini öneriyor','recommande le plat du jour'),
+        p('.'),
+        w('Mehmet balığı sipariş ediyor','Mehmet commande le poisson'),
+        w('ve memnun kalıyor','et est satisfait'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'havalimani', emoji: '✈️', title_fr: "À l'aéroport", level: 3,
+      tokens: [
+        w('Zeynep','Zeynep'),
+        w('bavuluyla','avec sa valise'),
+        w('havalimanına',"à l'aéroport"),
+        w('geliyor','arrive'),
+        p('.'),
+        w('Pasaportunu','son passeport'),
+        w('kontrolde gösteriyor','elle montre au contrôle'),
+        p('.'),
+        w('Uçuşunu bekliyor','elle attend son vol'),
+        w('bekleme salonunda',"dans la salle d'attente"),
+        p('.'),
+        w("l'avion","l'avion"),
+        w('zamanında kalkıyor',"décolle à l\'heure"),
+        p('.'),
+      ]
+    }
+  ,
+  ],
+
+  ru: [
+    {
+      id: 'shkola', emoji: '📚', title_fr: "À l'école", level: 2,
+      tokens: [
+        w('Аня','Ania'),
+        w('приходит','arrive'),
+        w('в школу',"à l'école"),
+        w('рано','tôt'),
+        p('.'),
+        w('Она здоровается','elle salue'),
+        w('с учительницей','sa professeure'),
+        p('.'),
+        w('Она открывает тетрадь','elle ouvre son cahier'),
+        w('и слушает урок','et écoute la leçon'),
+        p('.'),
+        w('В конце','à la fin'),
+        w('она собирает вещи','elle range ses affaires'),
+        w('и идёт домой','et rentre'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'restoran2', emoji: '🍽️', title_fr: 'Au restaurant', level: 2,
+      tokens: [
+        w('Иван','Ivan'),
+        w('входит','entre dans'),
+        w('в ресторан','le restaurant'),
+        w('голодный','affamé'),
+        p('.'),
+        w('Он выбирает','il choisit'),
+        w('столик у окна','une table près de la fenêtre'),
+        p('.'),
+        w('Официант','le serveur'),
+        w('рекомендует','recommande'),
+        w('блюдо дня','le plat du jour'),
+        p('.'),
+        w('Иван заказывает рыбу','Ivan commande le poisson'),
+        w('и остаётся доволен','et est satisfait'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'aeroport', emoji: '✈️', title_fr: "À l'aéroport", level: 3,
+      tokens: [
+        w('Катя','Katia'),
+        w('приезжает','arrive'),
+        w('в аэропорт',"à l'aéroport"),
+        w('с чемоданом','avec sa valise'),
+        p('.'),
+        w('Она показывает паспорт','elle montre son passeport'),
+        w('на контроле','au contrôle'),
+        p('.'),
+        w('Она ждёт рейс','elle attend son vol'),
+        w('в зале ожидания',"dans la salle d'attente"),
+        p('.'),
+        w('Самолёт',"l'avion"),
+        w('взлетает вовремя',"décolle à l\'heure"),
+        p('.'),
+      ]
+    }
+  ,
+  ],
+
+  ja: [
+    {
+      id: 'gakko', emoji: '📚', title_fr: "À l'école", level: 2,
+      tokens: [
+        w('エマは','Emma'),
+        w('早く','tôt'),
+        w('学校に来ます',"arrive à l'école"),
+        p('。'),
+        w('先生に挨拶します','elle salue sa professeure'),
+        p('。'),
+        w('ノートを開いて','elle ouvre son cahier'),
+        w('授業を聞きます','et écoute la leçon'),
+        p('。'),
+        w('最後に','à la fin'),
+        w('荷物をまとめて帰ります','elle range ses affaires et rentre'),
+        p('。'),
+      ]
+    }
+  ,
+    {
+      id: 'resutoran2', emoji: '🍽️', title_fr: 'Au restaurant', level: 2,
+      tokens: [
+        w('ケンは','Ken'),
+        w('お腹が空いて','affamé'),
+        w('レストランに入ります','entre dans le restaurant'),
+        p('。'),
+        w('窓の近く','près de la fenêtre'),
+        w('のテーブルを選びます','il choisit une table'),
+        p('。'),
+        w('ウェイターは','le serveur'),
+        w('日替わり定食を勧めます','recommande le plat du jour'),
+        p('。'),
+        w('ケンは魚を注文して','Ken commande le poisson'),
+        w('満足します','et est satisfait'),
+        p('。'),
+      ]
+    }
+  ,
+    {
+      id: 'kuko', emoji: '✈️', title_fr: "À l'aéroport", level: 3,
+      tokens: [
+        w('サラは','Sarah'),
+        w('スーツケースを持って','avec sa valise'),
+        w('空港に着きます',"arrive à l'aéroport"),
+        p('。'),
+        w('セキュリティで','au contrôle'),
+        w('パスポートを見せます','elle montre son passeport'),
+        p('。'),
+        w('搭乗ゲートで',"dans la salle d'embarquement"),
+        w('フライトを待ちます','elle attend son vol'),
+        p('。'),
+        w('飛行機は',"l'avion"),
+        w('時間通りに飛び立ちます',"décolle à l\'heure"),
+        p('。'),
+      ]
+    }
+  ,
+  ],
+
+  ko: [
+    {
+      id: 'hakgyo', emoji: '📚', title_fr: "À l'école", level: 2,
+      tokens: [
+        w('에마는','Emma'),
+        w('일찍',"arrive tôt à l'école"),
+        w('학교에 도착합니다',''),
+        p('.'),
+        w('선생님께 인사합니다','elle salue sa professeure'),
+        p('.'),
+        w('공책을 열고','elle ouvre son cahier'),
+        w('수업을 듣습니다','et écoute la leçon'),
+        p('.'),
+        w('마지막에','à la fin'),
+        w('짐을 챙겨서','elle range ses affaires'),
+        w('집으로 돌아갑니다','et rentre'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'sikdang2', emoji: '🍽️', title_fr: 'Au restaurant', level: 2,
+      tokens: [
+        w('준호는','Jun-ho'),
+        w('배가 고파서','affamé'),
+        w('식당에 들어갑니다','entre dans le restaurant'),
+        p('.'),
+        w('창문 옆','près de la fenêtre'),
+        w('자리를 고릅니다','il choisit une table'),
+        p('.'),
+        w('웨이터가','le serveur'),
+        w('오늘의 요리를 추천합니다','recommande le plat du jour'),
+        p('.'),
+        w('준호는 생선을 주문하고','Jun-ho commande le poisson'),
+        w('만족합니다','et est satisfait'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'gonghang', emoji: '✈️', title_fr: "À l'aéroport", level: 3,
+      tokens: [
+        w('수아는','Su-a'),
+        w('캐리어를 들고','avec sa valise'),
+        w('공항에 도착합니다',"arrive à l'aéroport"),
+        p('.'),
+        w('보안검색대에서','au contrôle'),
+        w('여권을 보여줍니다','elle montre son passeport'),
+        p('.'),
+        w('탑승 대기실에서',"dans la salle d'embarquement"),
+        w('비행기를 기다립니다','elle attend son vol'),
+        p('.'),
+        w('비행기가',"l'avion"),
+        w('정시에 출발합니다',"décolle à l\'heure"),
+        p('.'),
+      ]
+    }
+  ,
+  ],
+
+  zh: [
+    {
+      id: 'xuexiao', emoji: '📚', title_fr: "À l'école", level: 2,
+      tokens: [
+        w('艾玛','Emma'),
+        w('早早到达学校',"arrive tôt à l'école"),
+        p('。'),
+        w('她向老师问好','elle salue sa professeure'),
+        p('。'),
+        w('她打开笔记本','elle ouvre son cahier'),
+        w('认真听课','et écoute la leçon'),
+        p('。'),
+        w('最后','à la fin'),
+        w('她收拾东西回家了','elle range ses affaires et rentre'),
+        p('。'),
+      ]
+    }
+  ,
+    {
+      id: 'canting2', emoji: '🍽️', title_fr: 'Au restaurant', level: 2,
+      tokens: [
+        w('小明','Xiaoming'),
+        w('饿着走进餐厅','entre dans le restaurant affamé'),
+        p('。'),
+        w('他选了','il choisit'),
+        w('一张靠窗的桌子','une table près de la fenêtre'),
+        p('。'),
+        w('服务员推荐','le serveur recommande'),
+        w('今日特餐','le plat du jour'),
+        p('。'),
+        w('小明点了鱼','Xiaoming commande le poisson'),
+        w('很满意','et est satisfait'),
+        p('。'),
+      ]
+    }
+  ,
+    {
+      id: 'jichang', emoji: '✈️', title_fr: "À l'aéroport", level: 3,
+      tokens: [
+        w('小红','Xiaohong'),
+        w('带着行李箱','avec sa valise'),
+        w('到了机场',"arrive à l'aéroport"),
+        p('。'),
+        w('她在安检处','au contrôle'),
+        w('出示护照','elle montre son passeport'),
+        p('。'),
+        w('她在候机室',"dans la salle d'embarquement"),
+        w('等候航班','elle attend son vol'),
+        p('。'),
+        w('飞机',"l'avion"),
+        w('准时起飞',"décolle à l\'heure"),
+        p('。'),
+      ]
+    }
+  ,
+  ],
+
+  ar: [
+    {
+      id: 'madrasa', emoji: '📚', title_fr: "À l'école", level: 2,
+      tokens: [
+        w('أمل','Amal'),
+        w('تصل','arrive'),
+        w('إلى المدرسة',"à l'école"),
+        w('مبكرة','tôt'),
+        p('.'),
+        w('تحيي معلمتها','elle salue sa professeure'),
+        p('.'),
+        w('تفتح دفترها','elle ouvre son cahier'),
+        w('وتستمع للدرس','et écoute la leçon'),
+        p('.'),
+        w('في النهاية','à la fin'),
+        w('تجمع أشياءها','elle range ses affaires'),
+        w('وتعود إلى البيت','et rentre'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'matam2', emoji: '🍽️', title_fr: 'Au restaurant', level: 2,
+      tokens: [
+        w('محمد','Mohammed'),
+        w('يدخل','entre dans'),
+        w('المطعم','le restaurant'),
+        w('جائعاً','affamé'),
+        p('.'),
+        w('يختار','il choisit'),
+        w('طاولة قرب النافذة','une table près de la fenêtre'),
+        p('.'),
+        w('النادل','le serveur'),
+        w('يوصي بطبق اليوم','recommande le plat du jour'),
+        p('.'),
+        w('محمد يطلب السمك','Mohammed commande le poisson'),
+        w('ويشعر بالرضا','et est satisfait'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'matar', emoji: '✈️', title_fr: "À l'aéroport", level: 3,
+      tokens: [
+        w('سارة','Sarah'),
+        w('تصل','arrive'),
+        w('إلى المطار',"à l'aéroport"),
+        w('بحقيبتها','avec sa valise'),
+        p('.'),
+        w('تُري جواز سفرها','elle montre son passeport'),
+        w('عند الجمارك','au contrôle'),
+        p('.'),
+        w('تنتظر رحلتها','elle attend son vol'),
+        w('في صالة الانتظار',"dans la salle d'attente"),
+        p('.'),
+        w('الطائرة',"l'avion"),
+        w('تقلع في الموعد',"décolle à l\'heure"),
+        p('.'),
+      ]
+    }
+  ,
+  ],
+
+  hi: [
+    {
+      id: 'vidyalay', emoji: '📚', title_fr: "À l'école", level: 2,
+      tokens: [
+        w('आया','Aya'),
+        w('जल्दी',"arrive tôt à l'école"),
+        w('विद्यालय पहुँचती है',''),
+        p('।'),
+        w('वह अपनी अध्यापिका को नमस्ते करती है','elle salue sa professeure'),
+        p('।'),
+        w('वह अपनी कॉपी खोलती है','elle ouvre son cahier'),
+        w('और पाठ सुनती है','et écoute la leçon'),
+        p('।'),
+        w('अंत में','à la fin'),
+        w('वह अपना सामान उठाती है','elle range ses affaires'),
+        w('और घर लौटती है','et rentre'),
+        p('।'),
+      ]
+    }
+  ,
+    {
+      id: 'restaurant2', emoji: '🍽️', title_fr: 'Au restaurant', level: 2,
+      tokens: [
+        w('राज','Raj'),
+        w('भूखा','affamé'),
+        w('रेस्तराँ में जाता है','entre dans le restaurant'),
+        p('।'),
+        w('वह खिड़की के पास','près de la fenêtre'),
+        w('एक मेज चुनता है','il choisit une table'),
+        p('।'),
+        w('वेटर','le serveur'),
+        w('आज का खाना सुझाता है','recommande le plat du jour'),
+        p('।'),
+        w('राज मछली माँगता है','Raj commande le poisson'),
+        w('और खुश होता है','et est satisfait'),
+        p('।'),
+      ]
+    }
+  ,
+    {
+      id: 'havai_adda', emoji: '✈️', title_fr: "À l'aéroport", level: 3,
+      tokens: [
+        w('प्रिया','Priya'),
+        w('अपने सूटकेस के साथ','avec sa valise'),
+        w('हवाई अड्डे पहुँचती है',"arrive à l'aéroport"),
+        p('।'),
+        w('वह जाँच पर','au contrôle'),
+        w('अपना पासपोर्ट दिखाती है','elle montre son passeport'),
+        p('।'),
+        w('वह प्रतीक्षा कक्ष में',"dans la salle d'attente"),
+        w('अपनी उड़ान का इंतज़ार करती है','elle attend son vol'),
+        p('।'),
+        w('हवाई जहाज',"l'avion"),
+        w('समय पर उड़ान भरता है',"décolle à l\'heure"),
+        p('।'),
+      ]
+    }
+  ,
+  ],
+
+}
+
+// Fusionner avec STORIES
+for (const lang in STORIES_EXTRA) {
+  if (STORIES[lang]) {
+    STORIES[lang].push(...STORIES_EXTRA[lang])
+  }
 }
