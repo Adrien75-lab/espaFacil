@@ -35,8 +35,38 @@
       <button
         class="btn-start"
         :disabled="selectedVerbIdx === null || !selectedTense"
-        @click="startQuiz"
-      >▶ Commencer</button>
+        @click="phase = 'fiche'"
+      >📖 Voir la fiche</button>
+    </template>
+
+    <!-- ── Phase FICHE DE RÉVISION ── -->
+    <template v-else-if="phase === 'fiche'">
+      <button class="btn-back" @click="phase = 'select'">← Modifier</button>
+
+      <div class="fiche-header">
+        <h2 class="fiche-verb">{{ currentVerb.infinitive }}</h2>
+        <span class="fiche-fr">{{ currentVerb.translation }}</span>
+        <span class="fiche-tense-badge">{{ selectedTense }}</span>
+      </div>
+
+      <div class="fiche-table">
+        <div
+          v-for="entry in currentTenseEntries"
+          :key="entry.pronoun"
+          class="fiche-row"
+        >
+          <span class="fiche-pronoun">{{ entry.pronoun }}</span>
+          <span class="fiche-arrow">→</span>
+          <span class="fiche-form">{{ entry.form }}</span>
+        </div>
+      </div>
+
+      <p class="fiche-tip">💡 Mémorisez ces formes, puis testez-vous !</p>
+
+      <div class="fiche-actions">
+        <button class="btn-start" @click="startQuiz">🧠 Je me teste !</button>
+        <button class="btn-other-tense" @click="phase = 'select'">Changer de verbe / temps</button>
+      </div>
     </template>
 
     <!-- ── Phase QUIZ ── -->
@@ -46,6 +76,7 @@
       <div class="quiz-header">
         <div class="verb-badge">{{ currentVerb.infinitive }} <span class="verb-fr-sm">({{ currentVerb.translation }})</span></div>
         <div class="tense-badge">{{ selectedTense }}</div>
+        <button class="btn-fiche-link" @click="phase = 'fiche'">📖 Revoir la fiche</button>
       </div>
 
       <div class="progress-bar">
@@ -69,7 +100,7 @@
           v-model="userInput"
           class="conj-input"
           type="text"
-          placeholder="Saisissez la forme conjuguée…"
+          placeholder="Forme conjuguée…"
           autocomplete="off"
           autocorrect="off"
           spellcheck="false"
@@ -99,7 +130,7 @@
 
       <div class="result-actions">
         <button class="btn-replay" @click="restartSame">🔁 Rejouer</button>
-        <button class="btn-back2" @click="phase = 'select'">← Changer de verbe</button>
+        <button class="btn-back2" @click="phase = 'fiche'">📖 Revoir la fiche</button>
         <button class="btn-home" @click="router.push('/')">🏠 Accueil</button>
       </div>
     </template>
@@ -114,15 +145,14 @@ import { CONJUGATIONS } from '@/data/conjugations'
 import ConfirmQuit from '@/components/ConfirmQuit.vue'
 import { postSession, calcXp } from '@/api/progress'
 
-const router  = useRouter()
-const store   = useLangStore()
+const router   = useRouter()
+const store    = useLangStore()
 const showQuit = ref(false)
 
 const langCode = computed(() => store.currentLang?.code ?? 'es')
 const langName = computed(() => store.currentLang?.name ?? 'Espagnol')
 const verbs    = computed(() => CONJUGATIONS[langCode.value] ?? CONJUGATIONS['es'])
 
-// Collect all tense names from the first verb (they're consistent per language)
 const tenseNames = computed(() => {
   const v = verbs.value[0]
   return v ? Object.keys(v.tenses) : []
@@ -135,7 +165,6 @@ const selectedTense   = ref<string>('')
 const currentVerb = computed(() =>
   selectedVerbIdx.value !== null ? verbs.value[selectedVerbIdx.value] : verbs.value[0]
 )
-
 const currentTenseEntries = computed(() =>
   selectedTense.value && currentVerb.value
     ? (currentVerb.value.tenses[selectedTense.value] ?? [])
@@ -143,7 +172,7 @@ const currentTenseEntries = computed(() =>
 )
 
 // ─── quiz state ───
-type Phase = 'select' | 'quiz' | 'result'
+type Phase = 'select' | 'fiche' | 'quiz' | 'result'
 const phase        = ref<Phase>('select')
 const currentIdx   = ref(0)
 const userInput    = ref('')
@@ -155,21 +184,20 @@ interface Answer { pronoun: string; userAnswer: string; correctAnswer: string; c
 const answers = ref<Answer[]>([])
 const score   = ref(0)
 
-const totalItems    = computed(() => currentTenseEntries.value.length)
-const currentEntry  = computed(() => currentTenseEntries.value[currentIdx.value] ?? { pronoun: '', form: '' })
+const totalItems   = computed(() => currentTenseEntries.value.length)
+const currentEntry = computed(() => currentTenseEntries.value[currentIdx.value] ?? { pronoun: '', form: '' })
 
 const resultMessage = computed(() => {
   const pct = totalItems.value ? score.value / totalItems.value : 0
-  if (pct === 1) return 'Parfait ! Vous maîtrisez ce verbe.'
-  if (pct >= 0.8) return 'Très bien ! Quelques petites erreurs.'
-  if (pct >= 0.5) return 'Pas mal ! Continuez à pratiquer.'
-  return 'Courage ! La pratique régulière fera la différence.'
+  if (pct === 1)    return 'Parfait ! Vous maîtrisez ce verbe.'
+  if (pct >= 0.8)   return 'Très bien ! Quelques petites erreurs.'
+  if (pct >= 0.5)   return 'Pas mal ! Continuez à pratiquer.'
+  return 'Courage ! Repassez la fiche et réessayez.'
 })
 
 function startQuiz() {
-  if (selectedVerbIdx.value === null || !selectedTense.value) return
-  answers.value  = []
-  score.value    = 0
+  answers.value    = []
+  score.value      = 0
   currentIdx.value = 0
   userInput.value  = ''
   showCorrection.value = false
@@ -183,18 +211,13 @@ function normalize(s: string) {
 
 function validate() {
   if (showCorrection.value) return
-  const entry = currentEntry.value
+  const entry   = currentEntry.value
   const correct = normalize(userInput.value) === normalize(entry.form)
 
-  answers.value.push({
-    pronoun: entry.pronoun,
-    userAnswer: userInput.value.trim(),
-    correctAnswer: entry.form,
-    correct,
-  })
+  answers.value.push({ pronoun: entry.pronoun, userAnswer: userInput.value.trim(), correctAnswer: entry.form, correct })
   if (correct) score.value++
 
-  lastCorrect.value = correct
+  lastCorrect.value    = correct
   showCorrection.value = true
 
   setTimeout(() => {
@@ -218,10 +241,10 @@ async function finishQuiz() {
 }
 
 function restartSame() {
-  answers.value = []
-  score.value = 0
+  answers.value    = []
+  score.value      = 0
   currentIdx.value = 0
-  userInput.value = ''
+  userInput.value  = ''
   showCorrection.value = false
   phase.value = 'quiz'
   nextTick(() => inputRef.value?.focus())
@@ -231,7 +254,7 @@ function restartSame() {
 <style scoped>
 .conj-wrap { max-width: 640px; margin: 0 auto; padding: 2rem 1rem; }
 
-.btn-back  { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 0.9rem; margin-bottom: 1rem; }
+.btn-back  { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 0.9rem; margin-bottom: 1rem; display: block; }
 .btn-quit  { background: none; border: 1px solid var(--border); border-radius: 6px; color: var(--muted); cursor: pointer; font-size: 0.82rem; padding: 0.3rem 0.75rem; float: right; }
 
 h1 { font-size: 1.6rem; margin-bottom: 1rem; }
@@ -252,15 +275,40 @@ h1 { font-size: 1.6rem; margin-bottom: 1rem; }
 .tense-btn:hover, .tense-btn.active { border-color: var(--accent); color: var(--text); background: var(--bg-hover); }
 
 .btn-start { background: var(--accent); color: white; border: none; border-radius: 8px;
-  padding: 0.75rem 2.5rem; font-size: 1.05rem; font-weight: 700; cursor: pointer; transition: opacity .2s; margin-top: 0.5rem; }
+  padding: 0.75rem 2rem; font-size: 1rem; font-weight: 700; cursor: pointer; transition: opacity .2s; }
 .btn-start:disabled { opacity: 0.4; cursor: not-allowed; }
 .btn-start:not(:disabled):hover { opacity: 0.88; }
 
-/* Quiz */
-.quiz-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; flex-wrap: wrap; }
-.verb-badge  { background: var(--accent); color: white; border-radius: 8px; padding: 0.4rem 0.9rem; font-weight: 700; font-size: 1.05rem; }
-.verb-fr-sm  { font-weight: 400; opacity: 0.85; font-size: 0.9rem; }
-.tense-badge { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 0.35rem 0.8rem; color: var(--muted); font-size: 0.88rem; }
+/* ── Fiche de révision ── */
+.fiche-header { display: flex; align-items: baseline; gap: 0.75rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.fiche-verb   { font-size: 1.8rem; font-weight: 800; color: var(--text); margin: 0; }
+.fiche-fr     { font-size: 1rem; color: var(--muted); }
+.fiche-tense-badge { background: var(--accent); color: white; border-radius: 6px; padding: 0.2rem 0.7rem; font-size: 0.85rem; font-weight: 600; }
+
+.fiche-table { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;
+  overflow: hidden; margin-bottom: 1.25rem; }
+.fiche-row { display: flex; align-items: center; gap: 1rem; padding: 0.75rem 1.25rem;
+  border-bottom: 1px solid var(--border); }
+.fiche-row:last-child { border-bottom: none; }
+.fiche-row:nth-child(odd)  { background: var(--bg-hover); }
+.fiche-pronoun { font-weight: 700; color: var(--text); min-width: 110px; font-size: 1rem; }
+.fiche-arrow   { color: var(--muted); }
+.fiche-form    { font-size: 1.1rem; color: var(--accent); font-weight: 600; }
+
+.fiche-tip { text-align: center; color: var(--muted); font-size: 0.88rem; margin-bottom: 1.25rem; }
+.fiche-actions { display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap; }
+.btn-other-tense { background: none; border: 1px solid var(--border); border-radius: 8px; color: var(--muted);
+  padding: 0.65rem 1.2rem; cursor: pointer; font-size: 0.88rem; }
+.btn-other-tense:hover { border-color: var(--accent); color: var(--text); }
+
+/* ── Quiz ── */
+.quiz-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.verb-badge      { background: var(--accent); color: white; border-radius: 8px; padding: 0.4rem 0.9rem; font-weight: 700; font-size: 1rem; }
+.verb-fr-sm      { font-weight: 400; opacity: 0.85; font-size: 0.88rem; }
+.tense-badge     { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 0.35rem 0.8rem; color: var(--muted); font-size: 0.85rem; }
+.btn-fiche-link  { margin-left: auto; background: none; border: 1px solid var(--border); border-radius: 6px;
+  color: var(--muted); cursor: pointer; font-size: 0.82rem; padding: 0.3rem 0.75rem; }
+.btn-fiche-link:hover { border-color: var(--accent); color: var(--text); }
 
 .progress-bar  { background: var(--border); border-radius: 4px; height: 6px; margin-bottom: 0.25rem; overflow: hidden; }
 .progress-fill { background: var(--accent); height: 100%; border-radius: 4px; transition: width .3s; }
@@ -276,20 +324,19 @@ h1 { font-size: 1.6rem; margin-bottom: 1rem; }
   background: var(--bg-card); color: var(--text); font-size: 1rem; outline: none; transition: border-color .2s; }
 .conj-input:focus { border-color: var(--accent); }
 .btn-validate { background: var(--accent); color: white; border: none; border-radius: 8px;
-  padding: 0.7rem 1.4rem; font-size: 0.95rem; font-weight: 700; cursor: pointer; white-space: nowrap; }
+  padding: 0.7rem 1.4rem; font-size: 0.95rem; font-weight: 700; cursor: pointer; }
 .btn-validate:hover { opacity: 0.88; }
 
 .correction-box { padding: 1rem 1.5rem; border-radius: 10px; font-size: 1.1rem; text-align: center; }
 .correction-box.correct { background: #16a34a22; border: 2px solid #16a34a; color: #4ade80; }
 .correction-box.wrong   { background: #ef444422; border: 2px solid #ef4444; color: #fca5a5; }
 
-/* Result */
+/* ── Résultat ── */
 .result-title { font-size: 2rem; text-align: center; margin-bottom: 0.5rem; }
 .result-sub   { text-align: center; color: var(--muted); margin-bottom: 1.5rem; }
 
 .result-table { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.5rem; }
-.result-row   { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0.75rem;
-  border-radius: 8px; font-size: 0.92rem; }
+.result-row   { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0.75rem; border-radius: 8px; font-size: 0.92rem; }
 .result-row.ok { background: #16a34a15; }
 .result-row.ko { background: #ef444415; }
 .r-pron    { font-weight: 600; color: var(--text); min-width: 100px; }
