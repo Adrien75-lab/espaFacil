@@ -35,4 +35,23 @@ class ContentCatalogTest extends TestCase
             'conjugaisons' => ['conjugations.json', 14, 'infinitive'],
         ];
     }
+
+    public function test_dialogue_expansions_have_twelve_scenarios_for_every_language(): void
+    {
+        $path = dirname(__DIR__, 2).'/database/data/dialogue_expansions.json';
+        $catalog = json_decode(file_get_contents($path), true, flags: JSON_THROW_ON_ERROR);
+
+        $this->assertCount(12, $catalog['scenarios']);
+        $this->assertCount(14, $catalog['languages']);
+
+        foreach ($catalog['languages'] as $content) {
+            $this->assertCount(12, $content['titles']);
+            $this->assertCount(12, $content['prompts']);
+            $this->assertCount(12, $content['responses']);
+            $this->assertNotEmpty($content['followUpPrompt']);
+            $this->assertNotEmpty($content['followUpResponse']);
+            $this->assertNotEmpty($content['closingPrompt']);
+            $this->assertNotEmpty($content['closingResponse']);
+        }
+    }
 }
