@@ -2,9 +2,13 @@
 
 namespace App\Http\Resources;
 
+use App\Models\GrammarTip;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
+/**
+ * @mixin GrammarTip
+ */
 class GrammarTipResource extends JsonResource
 {
     public function toArray(Request $request): array
