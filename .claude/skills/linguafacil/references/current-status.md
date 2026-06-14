@@ -1,13 +1,13 @@
 # État courant de LinguaFacil
 
-Dernière vérification : 14 juin 2026, après la fusion de la PR GitHub no 2 (PHPStan/PHPMD), de la PR no 3 (phase 27, dialogues), de la PR no 4 (UX modes/thèmes/niveaux sans contenu), de la PR no 5 (page d'accueil marketing + mode démo) et de la PR no 6 (phase 28 partielle, histoires) dans `master`.
+Dernière vérification : 14 juin 2026, après la fusion de la PR GitHub no 2 (PHPStan/PHPMD), de la PR no 3 (phase 27, dialogues), de la PR no 4 (UX modes/thèmes/niveaux sans contenu), de la PR no 5 (page d'accueil marketing + mode démo), de la PR no 6 (phase 28 partielle, histoires) et de la PR no 7 (indices manquants, espagnol) dans `master`.
 
 ## Dépôt
 
 - Chemin : `C:\Users\adric\Claude\Projects\Website-Project`
 - Dépôt GitHub : `Adrien75-lab/espaFacil`
 - Branche stable locale et distante : `master`
-- Commit stable observé : `582c56f Merge pull request #6 (phase 28 partielle, histoires)`
+- Commit stable observé : `7deeed0 Ajout des indices (clue) manquants pour 160 mots espagnols (phase 26)` (PR #7).
 - `AGENTS.md` et `CLAUDE.md` sont désormais suivis et présents sur `master`.
 - Convention de branches : `claude/YYYY-MM-DD-nom` pour le travail réalisé par Claude (Claude Code), `codex/YYYY-MM-DD-nom` pour Codex. Permet de distinguer rapidement qui a produit quelle branche.
 
@@ -15,8 +15,8 @@ Dernière vérification : 14 juin 2026, après la fusion de la PR GitHub no 2 (P
 
 ### `master`
 
-- Pointe sur `582c56f` lors du dernier relevé.
-- Contient les phases jusqu'à la phase 26, la refonte R1-R5, PHPStan/Larastan et PHPMD (PR no 2), la phase 27 - dialogues enrichis (PR no 3, 280 dialogues, 20 par langue x 14 langues), le correctif UX modes/thèmes/niveaux sans contenu (PR no 4), la nouvelle page d'accueil marketing + mode démo (PR no 5), ainsi que la phase 28 partielle - enrichissement des histoires (PR no 6, 42 nouvelles histoires, 9 par langue x 14 langues).
+- Pointe sur `7deeed0` lors du dernier relevé.
+- Contient les phases jusqu'à la phase 26, la refonte R1-R5, PHPStan/Larastan et PHPMD (PR no 2), la phase 27 - dialogues enrichis (PR no 3, 280 dialogues, 20 par langue x 14 langues), le correctif UX modes/thèmes/niveaux sans contenu (PR no 4), la nouvelle page d'accueil marketing + mode démo (PR no 5), la phase 28 partielle - enrichissement des histoires (PR no 6, 42 nouvelles histoires, 9 par langue x 14 langues), ainsi que le correctif des indices (clue) manquants pour les 160 mots espagnols des thèmes de la phase 26 (PR no 7).
 - Contient les skills `.claude/skills/linguafacil` et `.claude/skills/feature-delivery-workflow`, ainsi que `AGENTS.md`/`CLAUDE.md`.
 - `composer analyse` et `composer mess-detect` sont disponibles (voir détails ci-dessous).
 
@@ -137,10 +137,25 @@ cd backend
 php artisan db:seed --class=StorySeeder
 ```
 
+## Correctif des indices (clue) manquants - espagnol (PR no 7)
+
+- Constat (14 juin 2026) : le bouton indice (💡) du mode Traduction n'affichait rien pour de nombreux mots (ex. "dinero" en espagnol). Diagnostic : pas une régression de code (`TranslationView.vue` inchangé depuis la phase 24), mais un trou de contenu de la phase 26 - les 20 thèmes ajoutés alors (`banque, cuisine, culture, ecole, emotions, environnement, fetes, geographie, heure, loisirs, musique, nature, nombres, professions, sante, shopping, technologie, travail, vetements, voyage`) n'avaient jamais reçu de champ `clue`.
+- Ampleur totale estimée : environ 2170 mots sans `clue` sur ces 20 thèmes, toutes langues confondues (~155-160 par langue x 14 langues).
+- PR no 7 (branche `claude/2026-06-14-clue-es`, fusionnée en `7deeed0`) : traite uniquement l'espagnol (160 mots), avec une courte définition en français pour chacun, dans `backend/database/data/linguafacil.json`.
+- Vérifié : `php artisan db:seed --class=LinguaFacilSeeder` (14 langs, 433 thèmes, 6380 mots, 48 grammar tips), `php artisan test` (6/6, 436 assertions), vérification API du champ `clue` pour le thème "banque" (es).
+- Reste à faire : compléter les ~2010 mots restants pour les 13 autres langues (~155-158 chacune), langue par langue, dans des PR séparées (même approche que pour l'espagnol).
+
+## Branche en attente de recette : `claude/2026-06-14-phase-28-suite`
+
+- Ajoute 1 histoire niveau 1 supplémentaire par langue ("À la boulangerie" 🥖, id `boulangerie`), portant chaque langue de 9 à 10 histoires (4 niveau 1, 3 niveau 2, 3 niveau 3).
+- Commit `18eb643`, poussée mais PR non créée : une recette a été présentée à Adrien, qui n'a pas encore donné son accord ("Recette validée") - il a été interrompu par la demande urgente sur les indices manquants (PR no 7).
+- À reprendre : obtenir la validation d'Adrien, puis créer la PR, CI verte, fusion, mise à jour de ce document.
+
 ## Prochaine phase prévue
 
-- Reste à ajouter environ 1 histoire par niveau et par langue pour atteindre l'objectif historique de ~10 histoires/niveau/langue (phase 28 suite, ou phase 29).
-- Créer la nouvelle branche depuis `master` à jour : `claude/YYYY-MM-DD-nom` (Claude) ou `codex/YYYY-MM-DD-nom` (Codex).
+- Compléter les indices (`clue`) manquants pour les 13 langues restantes (voir section ci-dessus), langue par langue.
+- Finaliser la branche `claude/2026-06-14-phase-28-suite` (histoire "boulangerie", en attente de recette validée).
+- Créer toute nouvelle branche depuis `master` à jour : `claude/YYYY-MM-DD-nom` (Claude) ou `codex/YYYY-MM-DD-nom` (Codex).
 - Ne commence pas l'i18n sans accord explicite d'Adrien.
 
 ## Phase prévue (après la 28) : migration SQLite vers PostgreSQL
