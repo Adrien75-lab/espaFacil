@@ -1,132 +1,148 @@
 <template>
   <div class="home">
-    <h1>🌍 LinguaFacil</h1>
+    <!-- Visiteur non connecté : page d'accueil marketing -->
+    <LandingHero v-if="isGuest && showLanding" @start-demo="startDemo" />
 
-    <!-- Objectif quotidien (si connecté) -->
-    <DailyGoalWidget v-if="auth.user" ref="goalWidget" />
-
-    <!-- Langue non choisie : grille des 14 langues -->
-    <template v-if="!store.currentLang">
-      <p class="subtitle">Choisissez une langue</p>
-      <div class="lang-grid">
-        <button
-          v-for="lang in store.languages"
-          :key="lang.code"
-          class="lang-card"
-          @click="store.selectLanguage(lang.code)"
-        >
-          <FlagIcon :lang="lang.code" :size="36" />
-          <span class="lang-name">{{ lang.name }}</span>
-        </button>
-      </div>
-    </template>
-
-    <!-- Langue choisie : thèmes + niveau + bouton -->
     <template v-else>
-      <button class="btn-back" @click="store.currentLang = null">← Changer de langue</button>
-      <h2><FlagIcon :lang="store.currentLang.code" :size="28" /> {{ store.currentLang.name }}</h2>
+      <h1>🌍 LinguaFacil</h1>
 
-      <!-- Sélecteur de mode (en premier) -->
-      <p class="subtitle">Mode de jeu :</p>
-      <div class="mode-row">
+      <!-- Objectif quotidien (si connecté) -->
+      <DailyGoalWidget v-if="auth.user" ref="goalWidget" />
+
+      <!-- Bandeau mode démo (visiteur non connecté) -->
+      <div v-if="isGuest" class="demo-banner">
+        🔓 Mode démo — l'espagnol, le niveau débutant et les modes QCM/Cartes sont disponibles sans compte.
+        <RouterLink to="/register" class="demo-link">Inscrivez-vous gratuitement</RouterLink> pour tout débloquer.
+      </div>
+
+      <!-- Langue non choisie : grille des 14 langues -->
+      <template v-if="!store.currentLang">
+        <p class="subtitle">Choisissez une langue</p>
+        <div class="lang-grid">
+          <button
+            v-for="lang in store.languages"
+            :key="lang.code"
+            class="lang-card"
+            :class="{ locked: isGuestLangLocked(lang.code) }"
+            :title="isGuestLangLocked(lang.code) ? '🔒 Inscrivez-vous gratuitement pour débloquer cette langue' : ''"
+            @click="onLangClick(lang)"
+          >
+            <FlagIcon :lang="lang.code" :size="36" />
+            <span class="lang-name">{{ lang.name }}</span>
+            <span v-if="isGuestLangLocked(lang.code)" class="lock-badge">🔒</span>
+          </button>
+        </div>
+      </template>
+
+      <!-- Langue choisie : thèmes + niveau + bouton -->
+      <template v-else>
+        <button class="btn-back" @click="store.currentLang = null">← Changer de langue</button>
+        <h2><FlagIcon :lang="store.currentLang.code" :size="28" /> {{ store.currentLang.name }}</h2>
+
+        <!-- Sélecteur de mode (en premier) -->
+        <p class="subtitle">Mode de jeu :</p>
+        <div class="mode-row">
+          <button
+            v-for="m in modes"
+            :key="m.key"
+            class="mode-btn"
+            :class="{ active: currentMode === m.key, unavailable: !modeAvailable(m.key), locked: isGuestModeLocked(m.key) }"
+            :disabled="!modeAvailable(m.key)"
+            :title="isGuestModeLocked(m.key) ? '🔒 Inscrivez-vous gratuitement pour débloquer ce mode' : modeAvailable(m.key) ? '' : 'Aucun contenu disponible pour ce thème et ce niveau'"
+            @click="onModeClick(m.key)"
+          >
+            <span>{{ m.emoji }}</span>
+            <span>{{ m.label }}</span>
+            <span v-if="isGuestModeLocked(m.key)" class="lock-badge">🔒</span>
+          </button>
+        </div>
+
+        <!-- Thème + niveau : masqués pour les modes sans thème -->
+        <template v-if="!NO_THEME_MODES.includes(currentMode)">
+          <p class="subtitle" style="margin-top:1rem">Choisissez un thème</p>
+          <div class="theme-grid">
+            <button
+              v-for="theme in store.themes"
+              :key="theme.key"
+              class="theme-card"
+              :class="{ active: store.currentTheme?.key === theme.key, unavailable: !themeAvailable(theme) }"
+              :disabled="!themeAvailable(theme)"
+              :title="themeAvailable(theme) ? '' : 'Aucun contenu disponible pour ce mode et ce niveau'"
+              @click="store.selectTheme(theme.key)"
+            >
+              <span class="theme-emoji">{{ theme.emoji }}</span>
+              <span class="theme-name">{{ theme.name }}</span>
+            </button>
+          </div>
+
+          <div class="level-row">
+            <span class="label">Niveau :</span>
+            <button
+              v-for="lvl in levels"
+              :key="lvl.key"
+              class="btn-level"
+              :class="{ active: store.currentLevel === lvl.key, unavailable: !levelAvailable(lvl.key), locked: isGuestLevelLocked(lvl.key) }"
+              :disabled="!levelAvailable(lvl.key)"
+              :title="isGuestLevelLocked(lvl.key) ? '🔒 Inscrivez-vous gratuitement pour débloquer ce niveau' : levelAvailable(lvl.key) ? '' : 'Aucun contenu disponible pour ce mode et ce thème'"
+              @click="onLevelClick(lvl.key)"
+            >{{ lvl.label }}<span v-if="isGuestLevelLocked(lvl.key)" class="lock-badge">🔒</span></button>
+          </div>
+
+          <p v-if="store.currentTheme && !modeAvailable(currentMode)" class="dialogue-info">
+            ⚠️ Aucun contenu disponible pour ce mode avec ce thème et ce niveau. Essayez un autre thème, niveau ou mode.
+          </p>
+        </template>
+
+        <!-- Sélection du scénario (mode dialogue uniquement) -->
+        <template v-else-if="currentMode === 'dialogue'">
+          <p class="subtitle" style="margin-top:1rem">Choisissez un scénario</p>
+          <div v-if="dialogueScenarios.length" class="scenario-grid">
+            <button
+              v-for="sc in dialogueScenarios"
+              :key="sc.id"
+              class="scenario-card"
+              :class="{ active: selectedScenario === sc.id }"
+              @click="selectedScenario = sc.id"
+            >
+              <span class="sc-emoji">{{ sc.emoji }}</span>
+              <span class="sc-title">{{ sc.title_fr }}</span>
+            </button>
+          </div>
+          <p v-else class="dialogue-info">⚠️ Aucun scénario disponible pour cette langue.</p>
+        </template>
+
         <button
-          v-for="m in modes"
-          :key="m.key"
-          class="mode-btn"
-          :class="{ active: currentMode === m.key, unavailable: !modeAvailable(m.key) }"
-          :disabled="!modeAvailable(m.key)"
-          :title="modeAvailable(m.key) ? '' : 'Aucun contenu disponible pour ce thème et ce niveau'"
-          @click="currentMode = m.key"
-        >
-          <span>{{ m.emoji }}</span>
-          <span>{{ m.label }}</span>
-        </button>
-      </div>
+          class="btn-start"
+          :disabled="currentMode === 'dialogue' ? !selectedScenario : NO_THEME_MODES.includes(currentMode) ? false : !store.currentTheme || !modeAvailable(currentMode)"
+          @click="goMode"
+        >▶ Commencer</button>
 
-      <!-- Thème + niveau : masqués pour les modes sans thème -->
-      <template v-if="!NO_THEME_MODES.includes(currentMode)">
-        <p class="subtitle" style="margin-top:1rem">Choisissez un thème</p>
-        <div class="theme-grid">
-          <button
-            v-for="theme in store.themes"
-            :key="theme.key"
-            class="theme-card"
-            :class="{ active: store.currentTheme?.key === theme.key, unavailable: !themeAvailable(theme) }"
-            :disabled="!themeAvailable(theme)"
-            :title="themeAvailable(theme) ? '' : 'Aucun contenu disponible pour ce mode et ce niveau'"
-            @click="store.selectTheme(theme.key)"
-          >
-            <span class="theme-emoji">{{ theme.emoji }}</span>
-            <span class="theme-name">{{ theme.name }}</span>
+        <!-- SRS : visible uniquement si connecté -->
+        <div v-if="auth.user" class="srs-row">
+          <button class="srs-btn review-btn" @click="router.push('/review')">
+            🔁 Révision SRS
+          </button>
+          <button class="srs-btn difficult-btn" @click="router.push('/difficult')">
+            🔥 Mots difficiles
           </button>
         </div>
-
-        <div class="level-row">
-          <span class="label">Niveau :</span>
-          <button
-            v-for="lvl in levels"
-            :key="lvl.key"
-            class="btn-level"
-            :class="{ active: store.currentLevel === lvl.key, unavailable: !levelAvailable(lvl.key) }"
-            :disabled="!levelAvailable(lvl.key)"
-            :title="levelAvailable(lvl.key) ? '' : 'Aucun contenu disponible pour ce mode et ce thème'"
-            @click="store.setLevel(lvl.key)"
-          >{{ lvl.label }}</button>
-        </div>
-
-        <p v-if="store.currentTheme && !modeAvailable(currentMode)" class="dialogue-info">
-          ⚠️ Aucun contenu disponible pour ce mode avec ce thème et ce niveau. Essayez un autre thème, niveau ou mode.
-        </p>
       </template>
 
-      <!-- Sélection du scénario (mode dialogue uniquement) -->
-      <template v-else-if="currentMode === 'dialogue'">
-        <p class="subtitle" style="margin-top:1rem">Choisissez un scénario</p>
-        <div v-if="dialogueScenarios.length" class="scenario-grid">
-          <button
-            v-for="sc in dialogueScenarios"
-            :key="sc.id"
-            class="scenario-card"
-            :class="{ active: selectedScenario === sc.id }"
-            @click="selectedScenario = sc.id"
-          >
-            <span class="sc-emoji">{{ sc.emoji }}</span>
-            <span class="sc-title">{{ sc.title_fr }}</span>
-          </button>
-        </div>
-        <p v-else class="dialogue-info">⚠️ Aucun scénario disponible pour cette langue.</p>
-      </template>
-
-      <button
-        class="btn-start"
-        :disabled="currentMode === 'dialogue' ? !selectedScenario : NO_THEME_MODES.includes(currentMode) ? false : !store.currentTheme || !modeAvailable(currentMode)"
-        @click="goMode"
-      >▶ Commencer</button>
-
-      <!-- SRS : visible uniquement si connecté -->
-      <div v-if="auth.user" class="srs-row">
-        <button class="srs-btn review-btn" @click="router.push('/review')">
-          🔁 Révision SRS
-        </button>
-        <button class="srs-btn difficult-btn" @click="router.push('/difficult')">
-          🔥 Mots difficiles
-        </button>
-      </div>
+      <div v-if="store.loading" class="loader">Chargement…</div>
     </template>
-
-    <div v-if="store.loading" class="loader">Chargement…</div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, watch } from 'vue'
-import { useRouter } from 'vue-router'
+import { ref, computed, onMounted, watch } from 'vue'
+import { useRouter, RouterLink } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
 import DailyGoalWidget from '@/components/DailyGoalWidget.vue'
 import FlagIcon from '@/components/FlagIcon.vue'
+import LandingHero from '@/components/LandingHero.vue'
 import { getDialogues } from '@/api/content'
-import type { Dialogue, Level, Theme, ThemeLevelStats } from '@/types'
+import type { Dialogue, Language, Level, Theme, ThemeLevelStats } from '@/types'
 
 const store      = useLangStore()
 const auth       = useAuthStore()
@@ -135,6 +151,59 @@ const goalWidget = ref<InstanceType<typeof DailyGoalWidget> | null>(null)
 
 const selectedScenario = ref<string | null>(null)
 const currentMode      = ref<string>('quiz')
+
+// Page d'accueil marketing pour les visiteurs non connectés
+const DEMO_KEY = 'lf_demo_started'
+const DEMO_LANG = 'es'
+const DEMO_LEVEL: Level = 'debutant'
+const DEMO_MODES = ['quiz', 'cards']
+
+const isGuest      = computed(() => !auth.user)
+const demoStarted  = ref(!!localStorage.getItem(DEMO_KEY))
+const showLanding  = computed(() => !demoStarted.value)
+
+function startDemo() {
+  localStorage.setItem(DEMO_KEY, '1')
+  demoStarted.value = true
+}
+
+function isGuestLangLocked(code: string): boolean {
+  return isGuest.value && code !== DEMO_LANG
+}
+
+function isGuestModeLocked(modeKey: string): boolean {
+  return isGuest.value && !DEMO_MODES.includes(modeKey)
+}
+
+function isGuestLevelLocked(level: Level): boolean {
+  return isGuest.value && level !== DEMO_LEVEL
+}
+
+function onLangClick(lang: Language) {
+  if (isGuestLangLocked(lang.code)) { router.push('/register'); return }
+  store.selectLanguage(lang.code)
+}
+
+function onModeClick(modeKey: string) {
+  if (isGuestModeLocked(modeKey)) { router.push('/register'); return }
+  currentMode.value = modeKey
+}
+
+function onLevelClick(level: Level) {
+  if (isGuestLevelLocked(level)) { router.push('/register'); return }
+  store.setLevel(level)
+}
+
+// Une fois l'état de connexion connu, ramène les visiteurs non connectés
+// sur la combinaison de démo (langue/niveau) si une session précédente a laissé d'autres valeurs
+let authChecked = false
+watch(() => auth.loading, (loading) => {
+  if (loading || authChecked) return
+  authChecked = true
+  if (!isGuest.value) return
+  if (store.currentLevel !== DEMO_LEVEL) store.setLevel(DEMO_LEVEL)
+  if (store.currentLang && store.currentLang.code !== DEMO_LANG) store.currentLang = null
+})
 
 const dialogueScenarios = ref<Dialogue[]>([])
 
@@ -243,6 +312,14 @@ h2 { margin: 1rem 0 0.5rem; font-size: 1.4rem; }
 
 .unavailable { opacity: 0.35; cursor: not-allowed; }
 .unavailable:hover { border-color: var(--border) !important; background: none !important; transform: none !important; }
+
+.locked { position: relative; opacity: 0.55; }
+.locked:hover { border-color: #f59e0b !important; }
+.lock-badge { position: absolute; top: 4px; right: 6px; font-size: 0.85rem; }
+
+.demo-banner { color: var(--muted2); font-size: 0.9rem; margin: 0 0 1.25rem; padding: 0.75rem 1rem;
+  background: var(--bg-card); border: 1px solid #f59e0b; border-radius: 8px; }
+.demo-link { color: #f59e0b; font-weight: 600; }
 
 .theme-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 0.6rem; margin-bottom: 1.5rem; }
 .theme-card { background: var(--bg-card); border: 2px solid var(--border); border-radius: 10px; padding: 0.75rem 0.5rem;
