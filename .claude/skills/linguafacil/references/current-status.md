@@ -1,21 +1,21 @@
 # État courant de LinguaFacil
 
-Dernière vérification : 14 juin 2026, après la fusion de la PR GitHub no 2 (PHPStan/PHPMD) et de la PR no 3 (phase 27, dialogues) dans `master`.
+Dernière vérification : 14 juin 2026, après la fusion de la PR GitHub no 2 (PHPStan/PHPMD), de la PR no 3 (phase 27, dialogues) et de la PR no 4 (UX modes/thèmes/niveaux sans contenu) dans `master`.
 
 ## Dépôt
 
 - Chemin : `C:\Users\adric\Claude\Projects\Website-Project`
 - Dépôt GitHub : `Adrien75-lab/espaFacil`
 - Branche stable locale et distante : `master`
-- Commit stable observé : `9a6bad78 Merge pull request #3 from Adrien75-lab/codex/2026-06-14-phase-27-dialogues`
+- Commit stable observé : `ce1c834 Merge pull request #4 (UX : désactiver les modes/thèmes/niveaux sans contenu disponible)`
 - `AGENTS.md` et `CLAUDE.md` sont désormais suivis et présents sur `master`.
 
 ## Branches importantes
 
 ### `master`
 
-- Pointe sur `9a6bad78` lors du dernier relevé.
-- Contient les phases jusqu'à la phase 26, la refonte R1-R5, PHPStan/Larastan et PHPMD (PR no 2), ainsi que la phase 27 - dialogues enrichis (PR no 3, 280 dialogues, 20 par langue x 14 langues).
+- Pointe sur `ce1c834` lors du dernier relevé.
+- Contient les phases jusqu'à la phase 26, la refonte R1-R5, PHPStan/Larastan et PHPMD (PR no 2), la phase 27 - dialogues enrichis (PR no 3, 280 dialogues, 20 par langue x 14 langues), ainsi que le correctif UX modes/thèmes/niveaux sans contenu (PR no 4).
 - Contient les skills `.claude/skills/linguafacil` et `.claude/skills/feature-delivery-workflow`, ainsi que `AGENTS.md`/`CLAUDE.md`.
 - `composer analyse` et `composer mess-detect` sont disponibles (voir détails ci-dessous).
 
@@ -68,6 +68,7 @@ Dernière vérification : 14 juin 2026, après la fusion de la PR GitHub no 2 (P
 - R1-R5 : refonte qualité et architecture, intégrée à `master`.
 - Qualité backend (PHPStan/Larastan + PHPMD) : intégrée à `master` via la PR no 2.
 - Phase 27 : enrichissement des dialogues, intégrée à `master` via la PR no 3.
+- Correctif UX modes/thèmes/niveaux sans contenu (hors numérotation de phase), intégré à `master` via la PR no 4.
 
 ## Phase 27 en détail
 
@@ -90,6 +91,17 @@ git pull
 cd backend
 php artisan db:seed --class=DialogueSeeder
 ```
+
+## Correctif UX : modes/thèmes/niveaux sans contenu
+
+- Constat : pour environ 17 thèmes sur 30 (toutes langues), les phrases d'exemple manquent pour certains niveaux, ce qui menait les modes "Phrases" (`fill-blank`) et "Reconstitution" (`sentence-builder`) vers une page vide "Aucune phrase d'exemple disponible pour ce thème/niveau.".
+- Correctif livré via la PR no 4 (branche `codex/2026-06-14-empty-modes-ux`, fusionnée en `ce1c834`) :
+  - `LanguageController::themes()` renvoie désormais, par thème, des compteurs par niveau (`words`, `with_example`) via `withCount`.
+  - `ThemeResource` expose ces compteurs dans un champ `stats` (`debutant`/`intermediaire`/`avance`).
+  - `frontend/src/types/index.ts` : nouvelle interface `ThemeLevelStats`, `Theme.stats` optionnel.
+  - `HomeView.vue` : les boutons de mode, de thème et de niveau sont grisés/désactivés (et le bouton "Commencer" aussi) quand la combinaison n'a pas de contenu adapté, avec un message d'avertissement explicite.
+- Ne génère aucun contenu : le manque de phrases d'exemple sur certains thèmes/niveaux reste un sujet ouvert, à traiter séparément si souhaité (génération de contenu, pas UX).
+- Aucune migration nécessaire.
 
 ## Prochaine phase prévue
 
