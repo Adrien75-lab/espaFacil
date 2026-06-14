@@ -48,6 +48,10 @@ class ContentCatalogTest extends TestCase
             $this->assertCount(12, $content['titles']);
             $this->assertCount(12, $content['prompts']);
             $this->assertCount(12, $content['responses']);
+            $this->assertNotEmpty($content['followUpPrompt']);
+            $this->assertNotEmpty($content['followUpResponse']);
+            $this->assertNotEmpty($content['closingPrompt']);
+            $this->assertNotEmpty($content['closingResponse']);
         }
     }
 }

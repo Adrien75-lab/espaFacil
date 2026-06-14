@@ -90,7 +90,10 @@
       "Court sur les côtés, s’il vous plaît.",
       "Deux places pour la séance de vingt heures."
     ],
-    "thanks": "Parfait, merci."
+    "followUpPrompt": "Avez-vous besoin d’autre chose ?",
+    "followUpResponse": "Non, c’est tout, merci.",
+    "closingPrompt": "Bonne journée !",
+    "closingResponse": "À vous aussi, au revoir."
   },
   "languages": {
     "es": {
@@ -136,7 +139,10 @@
         "Corto a los lados, por favor.",
         "Dos entradas para la sesión de ocho."
       ],
-      "thanks": "Perfecto, gracias."
+      "followUpPrompt": "¿Necesita algo más?",
+      "followUpResponse": "No, eso es todo, gracias.",
+      "closingPrompt": "¡Que tenga un buen día!",
+      "closingResponse": "Igualmente, hasta luego."
     },
     "en": {
       "titles": [
@@ -181,7 +187,10 @@
         "Short on the sides, please.",
         "Two tickets for the eight o’clock showing."
       ],
-      "thanks": "Perfect, thank you."
+      "followUpPrompt": "Do you need anything else?",
+      "followUpResponse": "No, that's all, thank you.",
+      "closingPrompt": "Have a nice day!",
+      "closingResponse": "You too, goodbye."
     },
     "de": {
       "titles": [
@@ -226,7 +235,10 @@
         "An den Seiten kurz, bitte.",
         "Zwei Karten für die Vorstellung um acht."
       ],
-      "thanks": "Perfekt, danke."
+      "followUpPrompt": "Brauchen Sie noch etwas?",
+      "followUpResponse": "Nein, das ist alles, danke.",
+      "closingPrompt": "Einen schönen Tag noch!",
+      "closingResponse": "Ihnen auch, auf Wiedersehen."
     },
     "it": {
       "titles": [
@@ -271,7 +283,10 @@
         "Corti ai lati, per favore.",
         "Due biglietti per lo spettacolo delle otto."
       ],
-      "thanks": "Perfetto, grazie."
+      "followUpPrompt": "Ha bisogno di altro?",
+      "followUpResponse": "No, è tutto, grazie.",
+      "closingPrompt": "Buona giornata!",
+      "closingResponse": "Anche a lei, arrivederci."
     },
     "pt": {
       "titles": [
@@ -316,7 +331,10 @@
         "Curto dos lados, por favor.",
         "Dois bilhetes para a sessão das oito."
       ],
-      "thanks": "Perfeito, obrigado."
+      "followUpPrompt": "Precisa de mais alguma coisa?",
+      "followUpResponse": "Não, é tudo, obrigado.",
+      "closingPrompt": "Tenha um bom dia!",
+      "closingResponse": "Igualmente, até logo."
     },
     "nl": {
       "titles": [
@@ -361,7 +379,10 @@
         "Kort aan de zijkanten, alstublieft.",
         "Twee kaartjes voor de voorstelling van acht uur."
       ],
-      "thanks": "Perfect, dank u."
+      "followUpPrompt": "Heeft u nog iets nodig?",
+      "followUpResponse": "Nee, dat is alles, dank u.",
+      "closingPrompt": "Nog een fijne dag!",
+      "closingResponse": "U ook, tot ziens."
     },
     "pl": {
       "titles": [
@@ -406,7 +427,10 @@
         "Krótko po bokach, proszę.",
         "Dwa bilety na seans o ósmej."
       ],
-      "thanks": "Doskonale, dziękuję."
+      "followUpPrompt": "Czy potrzebuje pan czegoś jeszcze?",
+      "followUpResponse": "Nie, to wszystko, dziękuję.",
+      "closingPrompt": "Miłego dnia!",
+      "closingResponse": "Wzajemnie, do widzenia."
     },
     "tr": {
       "titles": [
@@ -451,7 +475,10 @@
         "Yanlar kısa olsun, lütfen.",
         "Saat sekiz seansı için iki bilet."
       ],
-      "thanks": "Mükemmel, teşekkürler."
+      "followUpPrompt": "Başka bir şeye ihtiyacınız var mı?",
+      "followUpResponse": "Hayır, hepsi bu, teşekkürler.",
+      "closingPrompt": "İyi günler!",
+      "closingResponse": "Size de, hoşça kalın."
     },
     "ru": {
       "titles": [
@@ -496,7 +523,10 @@
         "Покороче по бокам, пожалуйста.",
         "Два билета на сеанс в восемь."
       ],
-      "thanks": "Отлично, спасибо."
+      "followUpPrompt": "Вам нужно что-нибудь ещё?",
+      "followUpResponse": "Нет, это всё, спасибо.",
+      "closingPrompt": "Хорошего дня!",
+      "closingResponse": "И вам, до свидания."
     },
     "ja": {
       "titles": [
@@ -541,7 +571,10 @@
         "横を短くしてください。",
         "8時の回を2枚ください。"
       ],
-      "thanks": "分かりました。ありがとうございます。"
+      "followUpPrompt": "ほかに何か必要ですか。",
+      "followUpResponse": "いいえ、以上です。ありがとうございます。",
+      "closingPrompt": "良い一日を。",
+      "closingResponse": "あなたも。さようなら。"
     },
     "ko": {
       "titles": [
@@ -586,7 +619,10 @@
         "옆은 짧게 잘라 주세요.",
         "8시 상영표 두 장 주세요."
       ],
-      "thanks": "좋습니다, 감사합니다."
+      "followUpPrompt": "다른 것이 필요하세요?",
+      "followUpResponse": "아니요, 그게 전부예요. 감사합니다.",
+      "closingPrompt": "좋은 하루 보내세요!",
+      "closingResponse": "당신도요. 안녕히 계세요."
     },
     "zh": {
       "titles": [
@@ -631,7 +667,10 @@
         "两边剪短一点，谢谢。",
         "两张晚上八点的票。"
       ],
-      "thanks": "好的，谢谢。"
+      "followUpPrompt": "您还需要别的吗？",
+      "followUpResponse": "不用了，就这些，谢谢。",
+      "closingPrompt": "祝您今天愉快！",
+      "closingResponse": "您也是，再见。"
     },
     "ar": {
       "titles": [
@@ -676,7 +715,10 @@
         "قصير من الجانبين، من فضلك.",
         "تذكرتان لعرض الساعة الثامنة."
       ],
-      "thanks": "ممتاز، شكراً."
+      "followUpPrompt": "هل تحتاج إلى شيء آخر؟",
+      "followUpResponse": "لا، هذا كل شيء، شكراً.",
+      "closingPrompt": "أتمنى لك يوماً سعيداً!",
+      "closingResponse": "ولك أيضاً، إلى اللقاء."
     },
     "hi": {
       "titles": [
@@ -721,7 +763,10 @@
         "किनारों से छोटे, कृपया।",
         "आठ बजे के शो के दो टिकट।"
       ],
-      "thanks": "बहुत अच्छा, धन्यवाद।"
+      "followUpPrompt": "क्या आपको कुछ और चाहिए?",
+      "followUpResponse": "नहीं, बस इतना ही, धन्यवाद।",
+      "closingPrompt": "आपका दिन शुभ हो!",
+      "closingResponse": "आपका भी, अलविदा।"
     }
   }
 }

@@ -92,21 +92,16 @@ class DialogueSeeder extends Seeder
         foreach ($expansions['languages'] as $lang => $content) {
             foreach ($scenarios as $index => [$slug, $emoji, $titleFr]) {
                 $distractorIndexes = [($index + 3) % 12, ($index + 6) % 12, ($index + 9) % 12];
-                $options = [[
-                    'text' => $content['responses'][$index],
-                    'fr' => $french['responses'][$index],
-                ]];
-
-                foreach ($distractorIndexes as $distractorIndex) {
-                    $options[] = [
+                $distractors = array_map(
+                    fn (int $distractorIndex) => [
                         'text' => $content['responses'][$distractorIndex],
                         'fr' => $french['responses'][$distractorIndex],
-                    ];
-                }
-
-                $correctIndex = $index % 4;
-                $correctOption = array_shift($options);
-                array_splice($options, $correctIndex, 0, [$correctOption]);
+                    ],
+                    $distractorIndexes,
+                );
+                $mainCorrectIndex = $index % 4;
+                $followUpCorrectIndex = ($index + 1) % 4;
+                $closingCorrectIndex = ($index + 2) % 4;
 
                 $expanded[$lang][] = [
                     'id' => $lang.'-'.$slug,
@@ -124,14 +119,49 @@ class DialogueSeeder extends Seeder
                             'type' => 'choice',
                             'text' => $content['prompts'][$index],
                             'fr' => $french['prompts'][$index],
-                            'options' => $options,
-                            'correctIndex' => $correctIndex,
+                            'options' => $this->buildOptions(
+                                $content['responses'][$index],
+                                $french['responses'][$index],
+                                $distractors,
+                                $mainCorrectIndex,
+                            ),
+                            'correctIndex' => $mainCorrectIndex,
                         ],
                         [
                             'type' => 'line',
                             'speaker' => 'A',
-                            'text' => $content['thanks'],
-                            'fr' => $french['thanks'],
+                            'text' => $content['followUpPrompt'],
+                            'fr' => $french['followUpPrompt'],
+                        ],
+                        [
+                            'type' => 'choice',
+                            'text' => $content['followUpPrompt'],
+                            'fr' => $french['followUpPrompt'],
+                            'options' => $this->buildOptions(
+                                $content['followUpResponse'],
+                                $french['followUpResponse'],
+                                $distractors,
+                                $followUpCorrectIndex,
+                            ),
+                            'correctIndex' => $followUpCorrectIndex,
+                        ],
+                        [
+                            'type' => 'line',
+                            'speaker' => 'A',
+                            'text' => $content['closingPrompt'],
+                            'fr' => $french['closingPrompt'],
+                        ],
+                        [
+                            'type' => 'choice',
+                            'text' => $content['closingPrompt'],
+                            'fr' => $french['closingPrompt'],
+                            'options' => $this->buildOptions(
+                                $content['closingResponse'],
+                                $french['closingResponse'],
+                                $distractors,
+                                $closingCorrectIndex,
+                            ),
+                            'correctIndex' => $closingCorrectIndex,
                         ],
                     ],
                 ];
@@ -139,5 +169,20 @@ class DialogueSeeder extends Seeder
         }
 
         return $expanded;
+    }
+
+    private function buildOptions(
+        string $correctText,
+        string $correctFrench,
+        array $distractors,
+        int $correctIndex,
+    ): array {
+        $options = $distractors;
+        array_splice($options, $correctIndex, 0, [[
+            'text' => $correctText,
+            'fr' => $correctFrench,
+        ]]);
+
+        return $options;
     }
 }
