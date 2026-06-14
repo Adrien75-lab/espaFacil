@@ -295,6 +295,96 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
         ]);
 
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'es',
+            'story_key'  => 'hotel',
+            'emoji'      => '🏨',
+            'title_fr'   => 'À l\'hôtel',
+            'level'      => 2,
+            'sort_order' => 6,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Carla','fr'=>'Carla','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'llega al hotel por la noche','fr'=>'arrive à l\'hôtel le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'La recepcionista','fr'=>'La réceptionniste','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'sonríe y le da la llave','fr'=>'sourit et lui donne la clé','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'Sube a su habitación','fr'=>'elle monte dans sa chambre','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'y abre su maleta','fr'=>'et ouvre sa valise','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'Por la noche','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'duerme bien','fr'=>'elle dort bien','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'hôtel ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À midi"},{"text":"La nuit"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que lui donne la réceptionniste ?','options'=>'[{"text":"Un café"},{"text":"La clé de sa chambre"},{"text":"Un plan de la ville"},{"text":"Son passeport"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage le soir ?','options'=>'[{"text":"Il sort"},{"text":"Il dort bien"},{"text":"Il appelle un ami"},{"text":"Il range sa valise"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'es',
+            'story_key'  => 'plage',
+            'emoji'      => '🏖️',
+            'title_fr'   => 'Une journée à la plage',
+            'level'      => 3,
+            'sort_order' => 7,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Carla','fr'=>'Carla','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'camina hasta la playa con sus amigos','fr'=>'marche jusqu\'à la plage avec ses amis','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'El sol brilla','fr'=>'le soleil brille','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'y el mar está calmado','fr'=>'et la mer est calme','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'Nadan en el agua','fr'=>'ils nagent dans l\'eau','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'y juegan con la pelota','fr'=>'et jouent avec le ballon','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'Por la noche','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'miran juntos la puesta de sol','fr'=>'ils regardent ensemble le coucher de soleil','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il à la plage ?','options'=>'[{"text":"Seul(e)"},{"text":"Avec ses amis"},{"text":"Avec ses parents"},{"text":"Avec son chien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Comment est la mer ?','options'=>'[{"text":"Agitée"},{"text":"Calme"},{"text":"Gelée"},{"text":"Sale"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que font-ils le soir ?','options'=>'[{"text":"Ils rentrent en courant"},{"text":"Ils regardent le coucher de soleil"},{"text":"Ils dorment sur la plage"},{"text":"Ils pêchent"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'es',
+            'story_key'  => 'cinema',
+            'emoji'      => '🎬',
+            'title_fr'   => 'Au cinéma',
+            'level'      => 3,
+            'sort_order' => 8,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Carla','fr'=>'Carla','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'va al cine con su hermano','fr'=>'va au cinéma avec son frère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Compran entradas','fr'=>'ils achètent des billets','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'y palomitas','fr'=>'et du pop-corn','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'La película empieza','fr'=>'le film commence','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'y todos se callan','fr'=>'et tout le monde se tait','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'Al final','fr'=>'à la fin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'el público aplaude','fr'=>'le public applaudit','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il au cinéma ?','options'=>'[{"text":"Avec son frère"},{"text":"Seul(e)"},{"text":"Avec ses parents"},{"text":"Avec une amie"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'achètent-ils ?','options'=>'[{"text":"Des bonbons seulement"},{"text":"Des billets et du pop-corn"},{"text":"Rien"},{"text":"Des boissons seulement"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
+        ]);
+
         // ── EN ──
         $story = DB::table('stories')->insertGetId([
             'lang'       => 'en',
@@ -554,6 +644,96 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
         ]);
 
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'en',
+            'story_key'  => 'hotel',
+            'emoji'      => '🏨',
+            'title_fr'   => 'À l\'hôtel',
+            'level'      => 2,
+            'sort_order' => 6,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Anna','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'arrives at the hotel in the evening','fr'=>'arrive à l\'hôtel le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'The receptionist','fr'=>'La réceptionniste','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'smiles and gives her the key','fr'=>'sourit et lui donne la clé','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'She goes up to her room','fr'=>'elle monte dans sa chambre','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'and opens her suitcase','fr'=>'et ouvre sa valise','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'At night','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'she sleeps well','fr'=>'elle dort bien','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'hôtel ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À midi"},{"text":"La nuit"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que lui donne la réceptionniste ?','options'=>'[{"text":"Un café"},{"text":"La clé de sa chambre"},{"text":"Un plan de la ville"},{"text":"Son passeport"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage le soir ?','options'=>'[{"text":"Il sort"},{"text":"Il dort bien"},{"text":"Il appelle un ami"},{"text":"Il range sa valise"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'en',
+            'story_key'  => 'plage',
+            'emoji'      => '🏖️',
+            'title_fr'   => 'Une journée à la plage',
+            'level'      => 3,
+            'sort_order' => 7,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Anna','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'walks to the beach with her friends','fr'=>'marche jusqu\'à la plage avec ses amis','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'The sun shines','fr'=>'le soleil brille','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'and the sea is calm','fr'=>'et la mer est calme','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'They swim in the water','fr'=>'ils nagent dans l\'eau','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'and play with the ball','fr'=>'et jouent avec le ballon','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'In the evening','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'they watch the sunset together','fr'=>'ils regardent ensemble le coucher de soleil','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il à la plage ?','options'=>'[{"text":"Seul(e)"},{"text":"Avec ses amis"},{"text":"Avec ses parents"},{"text":"Avec son chien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Comment est la mer ?','options'=>'[{"text":"Agitée"},{"text":"Calme"},{"text":"Gelée"},{"text":"Sale"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que font-ils le soir ?','options'=>'[{"text":"Ils rentrent en courant"},{"text":"Ils regardent le coucher de soleil"},{"text":"Ils dorment sur la plage"},{"text":"Ils pêchent"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'en',
+            'story_key'  => 'cinema',
+            'emoji'      => '🎬',
+            'title_fr'   => 'Au cinéma',
+            'level'      => 3,
+            'sort_order' => 8,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Anna','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'goes to the cinema with her brother','fr'=>'va au cinéma avec son frère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'They buy tickets','fr'=>'ils achètent des billets','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'and popcorn','fr'=>'et du pop-corn','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'The film starts','fr'=>'le film commence','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'and everyone goes quiet','fr'=>'et tout le monde se tait','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'At the end','fr'=>'à la fin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'the audience applauds','fr'=>'le public applaudit','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il au cinéma ?','options'=>'[{"text":"Avec son frère"},{"text":"Seul(e)"},{"text":"Avec ses parents"},{"text":"Avec une amie"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'achètent-ils ?','options'=>'[{"text":"Des bonbons seulement"},{"text":"Des billets et du pop-corn"},{"text":"Rien"},{"text":"Des boissons seulement"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
+        ]);
+
         // ── DE ──
         $story = DB::table('stories')->insertGetId([
             'lang'       => 'de',
@@ -809,6 +989,96 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
         ]);
 
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'de',
+            'story_key'  => 'hotel',
+            'emoji'      => '🏨',
+            'title_fr'   => 'À l\'hôtel',
+            'level'      => 2,
+            'sort_order' => 6,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Anna','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'kommt abends im Hotel an','fr'=>'arrive le soir à l\'hôtel','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Die Rezeptionistin','fr'=>'La réceptionniste','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'lächelt und gibt ihr den Schlüssel','fr'=>'sourit et lui donne la clé','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'Sie geht in ihr Zimmer','fr'=>'elle monte dans sa chambre','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'und öffnet ihren Koffer','fr'=>'et ouvre sa valise','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'Abends','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'schläft sie gut','fr'=>'elle dort bien','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'hôtel ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À midi"},{"text":"La nuit"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que lui donne la réceptionniste ?','options'=>'[{"text":"Un café"},{"text":"La clé de sa chambre"},{"text":"Un plan de la ville"},{"text":"Son passeport"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage le soir ?','options'=>'[{"text":"Il sort"},{"text":"Il dort bien"},{"text":"Il appelle un ami"},{"text":"Il range sa valise"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'de',
+            'story_key'  => 'plage',
+            'emoji'      => '🏖️',
+            'title_fr'   => 'Une journée à la plage',
+            'level'      => 3,
+            'sort_order' => 7,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Anna','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'geht mit ihren Freunden zum Strand','fr'=>'marche jusqu\'à la plage avec ses amis','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Die Sonne scheint','fr'=>'le soleil brille','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'und das Meer ist ruhig','fr'=>'et la mer est calme','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'Sie schwimmen im Wasser','fr'=>'ils nagent dans l\'eau','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'und spielen mit dem Ball','fr'=>'et jouent avec le ballon','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'Abends','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'schauen sie gemeinsam den Sonnenuntergang an','fr'=>'ils regardent ensemble le coucher de soleil','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il à la plage ?','options'=>'[{"text":"Seul(e)"},{"text":"Avec ses amis"},{"text":"Avec ses parents"},{"text":"Avec son chien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Comment est la mer ?','options'=>'[{"text":"Agitée"},{"text":"Calme"},{"text":"Gelée"},{"text":"Sale"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que font-ils le soir ?','options'=>'[{"text":"Ils rentrent en courant"},{"text":"Ils regardent le coucher de soleil"},{"text":"Ils dorment sur la plage"},{"text":"Ils pêchent"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'de',
+            'story_key'  => 'cinema',
+            'emoji'      => '🎬',
+            'title_fr'   => 'Au cinéma',
+            'level'      => 3,
+            'sort_order' => 8,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Anna','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'geht mit ihrem Bruder ins Kino','fr'=>'va au cinéma avec son frère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Sie kaufen Karten','fr'=>'ils achètent des billets','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'und Popcorn','fr'=>'et du pop-corn','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'Der Film beginnt','fr'=>'le film commence','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'und alle werden still','fr'=>'et tout le monde se tait','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'Am Ende','fr'=>'à la fin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'applaudiert das Publikum','fr'=>'le public applaudit','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il au cinéma ?','options'=>'[{"text":"Avec son frère"},{"text":"Seul(e)"},{"text":"Avec ses parents"},{"text":"Avec une amie"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'achètent-ils ?','options'=>'[{"text":"Des bonbons seulement"},{"text":"Des billets et du pop-corn"},{"text":"Rien"},{"text":"Des boissons seulement"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
+        ]);
+
         // ── IT ──
         $story = DB::table('stories')->insertGetId([
             'lang'       => 'it',
@@ -1060,6 +1330,96 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
         ]);
 
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'it',
+            'story_key'  => 'hotel',
+            'emoji'      => '🏨',
+            'title_fr'   => 'À l\'hôtel',
+            'level'      => 2,
+            'sort_order' => 6,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Anna','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'arriva in albergo di sera','fr'=>'arrive à l\'hôtel le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'La receptionist','fr'=>'La réceptionniste','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'sorride e le dà la chiave','fr'=>'sourit et lui donne la clé','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'Sale in camera sua','fr'=>'elle monte dans sa chambre','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'e apre la valigia','fr'=>'et ouvre sa valise','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'Di sera','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'dorme bene','fr'=>'elle dort bien','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'hôtel ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À midi"},{"text":"La nuit"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que lui donne la réceptionniste ?','options'=>'[{"text":"Un café"},{"text":"La clé de sa chambre"},{"text":"Un plan de la ville"},{"text":"Son passeport"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage le soir ?','options'=>'[{"text":"Il sort"},{"text":"Il dort bien"},{"text":"Il appelle un ami"},{"text":"Il range sa valise"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'it',
+            'story_key'  => 'plage',
+            'emoji'      => '🏖️',
+            'title_fr'   => 'Une journée à la plage',
+            'level'      => 3,
+            'sort_order' => 7,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Anna','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'cammina fino alla spiaggia con i suoi amici','fr'=>'marche jusqu\'à la plage avec ses amis','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Il sole splende','fr'=>'le soleil brille','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'e il mare è calmo','fr'=>'et la mer est calme','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'Nuotano nell\'acqua','fr'=>'ils nagent dans l\'eau','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'e giocano con il pallone','fr'=>'et jouent avec le ballon','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'Di sera','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'guardano insieme il tramonto','fr'=>'ils regardent ensemble le coucher de soleil','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il à la plage ?','options'=>'[{"text":"Seul(e)"},{"text":"Avec ses amis"},{"text":"Avec ses parents"},{"text":"Avec son chien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Comment est la mer ?','options'=>'[{"text":"Agitée"},{"text":"Calme"},{"text":"Gelée"},{"text":"Sale"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que font-ils le soir ?','options'=>'[{"text":"Ils rentrent en courant"},{"text":"Ils regardent le coucher de soleil"},{"text":"Ils dorment sur la plage"},{"text":"Ils pêchent"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'it',
+            'story_key'  => 'cinema',
+            'emoji'      => '🎬',
+            'title_fr'   => 'Au cinéma',
+            'level'      => 3,
+            'sort_order' => 8,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Anna','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'va al cinema con suo fratello','fr'=>'va au cinéma avec son frère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Comprano i biglietti','fr'=>'ils achètent des billets','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'e i popcorn','fr'=>'et du pop-corn','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'Il film inizia','fr'=>'le film commence','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'e tutti fanno silenzio','fr'=>'et tout le monde se tait','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'Alla fine','fr'=>'à la fin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'il pubblico applaude','fr'=>'le public applaudit','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il au cinéma ?','options'=>'[{"text":"Avec son frère"},{"text":"Seul(e)"},{"text":"Avec ses parents"},{"text":"Avec une amie"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'achètent-ils ?','options'=>'[{"text":"Des bonbons seulement"},{"text":"Des billets et du pop-corn"},{"text":"Rien"},{"text":"Des boissons seulement"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
+        ]);
+
         // ── PT ──
         $story = DB::table('stories')->insertGetId([
             'lang'       => 'pt',
@@ -1305,6 +1665,96 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>0,'question_fr'=>'Que montre le personnage au contrôle ?','options'=>'[{"text":"Son billet"},{"text":"Sa valise"},{"text":"Son passeport"},{"text":"Sa carte d\'embarquement"}]','correct_index'=>2],
             ['story_id'=>$story,'position'=>1,'question_fr'=>'Où le personnage attend-il son vol ?','options'=>'[{"text":"Dans un taxi"},{"text":"Dans la salle d\'embarquement"},{"text":"À l\'entrée de l\'aéroport"},{"text":"Dans un restaurant"}]','correct_index'=>1],
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'pt',
+            'story_key'  => 'hotel',
+            'emoji'      => '🏨',
+            'title_fr'   => 'À l\'hôtel',
+            'level'      => 2,
+            'sort_order' => 6,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Ana','fr'=>'Ana','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'chega ao hotel à noite','fr'=>'arrive à l\'hôtel le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'A recepcionista','fr'=>'La réceptionniste','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'sorri e dá-lhe a chave','fr'=>'sourit et lui donne la clé','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'Ela sobe ao seu quarto','fr'=>'elle monte dans sa chambre','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'e abre a mala','fr'=>'et ouvre sa valise','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'À noite','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'ela dorme bem','fr'=>'elle dort bien','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'hôtel ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À midi"},{"text":"La nuit"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que lui donne la réceptionniste ?','options'=>'[{"text":"Un café"},{"text":"La clé de sa chambre"},{"text":"Un plan de la ville"},{"text":"Son passeport"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage le soir ?','options'=>'[{"text":"Il sort"},{"text":"Il dort bien"},{"text":"Il appelle un ami"},{"text":"Il range sa valise"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'pt',
+            'story_key'  => 'plage',
+            'emoji'      => '🏖️',
+            'title_fr'   => 'Une journée à la plage',
+            'level'      => 3,
+            'sort_order' => 7,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Ana','fr'=>'Ana','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'caminha até à praia com os amigos','fr'=>'marche jusqu\'à la plage avec ses amis','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'O sol brilha','fr'=>'le soleil brille','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'e o mar está calmo','fr'=>'et la mer est calme','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'Eles nadam na água','fr'=>'ils nagent dans l\'eau','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'e jogam à bola','fr'=>'et jouent avec le ballon','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'À noite','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'veem juntos o pôr do sol','fr'=>'ils regardent ensemble le coucher de soleil','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il à la plage ?','options'=>'[{"text":"Seul(e)"},{"text":"Avec ses amis"},{"text":"Avec ses parents"},{"text":"Avec son chien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Comment est la mer ?','options'=>'[{"text":"Agitée"},{"text":"Calme"},{"text":"Gelée"},{"text":"Sale"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que font-ils le soir ?','options'=>'[{"text":"Ils rentrent en courant"},{"text":"Ils regardent le coucher de soleil"},{"text":"Ils dorment sur la plage"},{"text":"Ils pêchent"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'pt',
+            'story_key'  => 'cinema',
+            'emoji'      => '🎬',
+            'title_fr'   => 'Au cinéma',
+            'level'      => 3,
+            'sort_order' => 8,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Ana','fr'=>'Ana','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'vai ao cinema com o irmão','fr'=>'va au cinéma avec son frère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Compram bilhetes','fr'=>'ils achètent des billets','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'e pipocas','fr'=>'et du pop-corn','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'O filme começa','fr'=>'le film commence','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'e todos ficam em silêncio','fr'=>'et tout le monde se tait','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'No fim','fr'=>'à la fin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'o público aplaude','fr'=>'le public applaudit','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il au cinéma ?','options'=>'[{"text":"Avec son frère"},{"text":"Seul(e)"},{"text":"Avec ses parents"},{"text":"Avec une amie"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'achètent-ils ?','options'=>'[{"text":"Des bonbons seulement"},{"text":"Des billets et du pop-corn"},{"text":"Rien"},{"text":"Des boissons seulement"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
         ]);
 
         // ── NL ──
@@ -1562,6 +2012,96 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
         ]);
 
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'nl',
+            'story_key'  => 'hotel',
+            'emoji'      => '🏨',
+            'title_fr'   => 'À l\'hôtel',
+            'level'      => 2,
+            'sort_order' => 6,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Anna','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'komt \'s avonds aan in het hotel','fr'=>'arrive le soir à l\'hôtel','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'De receptioniste','fr'=>'La réceptionniste','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'glimlacht en geeft haar de sleutel','fr'=>'sourit et lui donne la clé','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'Ze gaat naar haar kamer','fr'=>'elle monte dans sa chambre','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'en opent haar koffer','fr'=>'et ouvre sa valise','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'\'s Avonds','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'slaapt ze goed','fr'=>'elle dort bien','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'hôtel ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À midi"},{"text":"La nuit"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que lui donne la réceptionniste ?','options'=>'[{"text":"Un café"},{"text":"La clé de sa chambre"},{"text":"Un plan de la ville"},{"text":"Son passeport"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage le soir ?','options'=>'[{"text":"Il sort"},{"text":"Il dort bien"},{"text":"Il appelle un ami"},{"text":"Il range sa valise"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'nl',
+            'story_key'  => 'plage',
+            'emoji'      => '🏖️',
+            'title_fr'   => 'Une journée à la plage',
+            'level'      => 3,
+            'sort_order' => 7,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Anna','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'loopt met haar vrienden naar het strand','fr'=>'marche jusqu\'à la plage avec ses amis','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'De zon schijnt','fr'=>'le soleil brille','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'en de zee is rustig','fr'=>'et la mer est calme','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'Ze zwemmen in het water','fr'=>'ils nagent dans l\'eau','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'en spelen met de bal','fr'=>'et jouent avec le ballon','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'\'s Avonds','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'kijken ze samen naar de zonsondergang','fr'=>'ils regardent ensemble le coucher de soleil','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il à la plage ?','options'=>'[{"text":"Seul(e)"},{"text":"Avec ses amis"},{"text":"Avec ses parents"},{"text":"Avec son chien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Comment est la mer ?','options'=>'[{"text":"Agitée"},{"text":"Calme"},{"text":"Gelée"},{"text":"Sale"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que font-ils le soir ?','options'=>'[{"text":"Ils rentrent en courant"},{"text":"Ils regardent le coucher de soleil"},{"text":"Ils dorment sur la plage"},{"text":"Ils pêchent"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'nl',
+            'story_key'  => 'cinema',
+            'emoji'      => '🎬',
+            'title_fr'   => 'Au cinéma',
+            'level'      => 3,
+            'sort_order' => 8,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Anna','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'gaat met haar broer naar de bioscoop','fr'=>'va au cinéma avec son frère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Ze kopen kaartjes','fr'=>'ils achètent des billets','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'en popcorn','fr'=>'et du pop-corn','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'De film begint','fr'=>'le film commence','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'en iedereen wordt stil','fr'=>'et tout le monde se tait','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'Aan het einde','fr'=>'à la fin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'applaudisseert het publiek','fr'=>'le public applaudit','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il au cinéma ?','options'=>'[{"text":"Avec son frère"},{"text":"Seul(e)"},{"text":"Avec ses parents"},{"text":"Avec une amie"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'achètent-ils ?','options'=>'[{"text":"Des bonbons seulement"},{"text":"Des billets et du pop-corn"},{"text":"Rien"},{"text":"Des boissons seulement"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
+        ]);
+
         // ── PL ──
         $story = DB::table('stories')->insertGetId([
             'lang'       => 'pl',
@@ -1798,6 +2338,96 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
         ]);
 
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'pl',
+            'story_key'  => 'hotel',
+            'emoji'      => '🏨',
+            'title_fr'   => 'À l\'hôtel',
+            'level'      => 2,
+            'sort_order' => 6,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Anna','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'przyjeżdża do hotelu wieczorem','fr'=>'arrive le soir à l\'hôtel','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Recepcjonistka','fr'=>'La réceptionniste','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'uśmiecha się i daje jej klucz','fr'=>'sourit et lui donne la clé','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'Idzie do swojego pokoju','fr'=>'elle monte dans sa chambre','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'i otwiera walizkę','fr'=>'et ouvre sa valise','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'Wieczorem','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'śpi dobrze','fr'=>'elle dort bien','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'hôtel ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À midi"},{"text":"La nuit"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que lui donne la réceptionniste ?','options'=>'[{"text":"Un café"},{"text":"La clé de sa chambre"},{"text":"Un plan de la ville"},{"text":"Son passeport"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage le soir ?','options'=>'[{"text":"Il sort"},{"text":"Il dort bien"},{"text":"Il appelle un ami"},{"text":"Il range sa valise"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'pl',
+            'story_key'  => 'plage',
+            'emoji'      => '🏖️',
+            'title_fr'   => 'Une journée à la plage',
+            'level'      => 3,
+            'sort_order' => 7,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Anna','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'idzie na plażę z przyjaciółmi','fr'=>'marche jusqu\'à la plage avec ses amis','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Słońce świeci','fr'=>'le soleil brille','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'a morze jest spokojne','fr'=>'et la mer est calme','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'Pływają w wodzie','fr'=>'ils nagent dans l\'eau','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'i grają piłką','fr'=>'et jouent avec le ballon','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'Wieczorem','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'razem patrzą na zachód słońca','fr'=>'ils regardent ensemble le coucher de soleil','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il à la plage ?','options'=>'[{"text":"Seul(e)"},{"text":"Avec ses amis"},{"text":"Avec ses parents"},{"text":"Avec son chien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Comment est la mer ?','options'=>'[{"text":"Agitée"},{"text":"Calme"},{"text":"Gelée"},{"text":"Sale"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que font-ils le soir ?','options'=>'[{"text":"Ils rentrent en courant"},{"text":"Ils regardent le coucher de soleil"},{"text":"Ils dorment sur la plage"},{"text":"Ils pêchent"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'pl',
+            'story_key'  => 'cinema',
+            'emoji'      => '🎬',
+            'title_fr'   => 'Au cinéma',
+            'level'      => 3,
+            'sort_order' => 8,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Anna','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'idzie do kina z bratem','fr'=>'va au cinéma avec son frère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Kupują bilety','fr'=>'ils achètent des billets','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'i popcorn','fr'=>'et du pop-corn','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'Film zaczyna się','fr'=>'le film commence','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'a wszyscy się uciszają','fr'=>'et tout le monde se tait','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'Na końcu','fr'=>'à la fin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'publiczność bije brawo','fr'=>'le public applaudit','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il au cinéma ?','options'=>'[{"text":"Avec son frère"},{"text":"Seul(e)"},{"text":"Avec ses parents"},{"text":"Avec une amie"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'achètent-ils ?','options'=>'[{"text":"Des bonbons seulement"},{"text":"Des billets et du pop-corn"},{"text":"Rien"},{"text":"Des boissons seulement"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
+        ]);
+
         // ── TR ──
         $story = DB::table('stories')->insertGetId([
             'lang'       => 'tr',
@@ -2021,6 +2651,96 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>0,'question_fr'=>'Que montre le personnage au contrôle ?','options'=>'[{"text":"Son billet"},{"text":"Sa valise"},{"text":"Son passeport"},{"text":"Sa carte d\'embarquement"}]','correct_index'=>2],
             ['story_id'=>$story,'position'=>1,'question_fr'=>'Où le personnage attend-il son vol ?','options'=>'[{"text":"Dans un taxi"},{"text":"Dans la salle d\'embarquement"},{"text":"À l\'entrée de l\'aéroport"},{"text":"Dans un restaurant"}]','correct_index'=>1],
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'tr',
+            'story_key'  => 'hotel',
+            'emoji'      => '🏨',
+            'title_fr'   => 'À l\'hôtel',
+            'level'      => 2,
+            'sort_order' => 6,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Ayşe','fr'=>'Ayşe','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'akşam otele varıyor','fr'=>'arrive le soir à l\'hôtel','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Resepsiyonist','fr'=>'La réceptionniste','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'gülümsüyor ve ona anahtarı veriyor','fr'=>'sourit et lui donne la clé','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'Odasına çıkıyor','fr'=>'elle monte dans sa chambre','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'ve valizini açıyor','fr'=>'et ouvre sa valise','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'Akşam','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'iyi uyuyor','fr'=>'elle dort bien','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'hôtel ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À midi"},{"text":"La nuit"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que lui donne la réceptionniste ?','options'=>'[{"text":"Un café"},{"text":"La clé de sa chambre"},{"text":"Un plan de la ville"},{"text":"Son passeport"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage le soir ?','options'=>'[{"text":"Il sort"},{"text":"Il dort bien"},{"text":"Il appelle un ami"},{"text":"Il range sa valise"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'tr',
+            'story_key'  => 'plage',
+            'emoji'      => '🏖️',
+            'title_fr'   => 'Une journée à la plage',
+            'level'      => 3,
+            'sort_order' => 7,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Ayşe','fr'=>'Ayşe','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'arkadaşlarıyla sahile yürüyor','fr'=>'marche jusqu\'à la plage avec ses amis','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Güneş parlıyor','fr'=>'le soleil brille','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'ve deniz sakin','fr'=>'et la mer est calme','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'Suda yüzüyorlar','fr'=>'ils nagent dans l\'eau','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'ve topla oynuyorlar','fr'=>'et jouent avec le ballon','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'Akşam','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'birlikte gün batımını izliyorlar','fr'=>'ils regardent ensemble le coucher de soleil','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il à la plage ?','options'=>'[{"text":"Seul(e)"},{"text":"Avec ses amis"},{"text":"Avec ses parents"},{"text":"Avec son chien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Comment est la mer ?','options'=>'[{"text":"Agitée"},{"text":"Calme"},{"text":"Gelée"},{"text":"Sale"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que font-ils le soir ?','options'=>'[{"text":"Ils rentrent en courant"},{"text":"Ils regardent le coucher de soleil"},{"text":"Ils dorment sur la plage"},{"text":"Ils pêchent"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'tr',
+            'story_key'  => 'cinema',
+            'emoji'      => '🎬',
+            'title_fr'   => 'Au cinéma',
+            'level'      => 3,
+            'sort_order' => 8,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Ayşe','fr'=>'Ayşe','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'kardeşiyle sinemaya gidiyor','fr'=>'va au cinéma avec son frère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Bilet alıyorlar','fr'=>'ils achètent des billets','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'ve patlamış mısır','fr'=>'et du pop-corn','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'Film başlıyor','fr'=>'le film commence','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'ve herkes susuyor','fr'=>'et tout le monde se tait','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'Sonunda','fr'=>'à la fin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'izleyiciler alkışlıyor','fr'=>'le public applaudit','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il au cinéma ?','options'=>'[{"text":"Avec son frère"},{"text":"Seul(e)"},{"text":"Avec ses parents"},{"text":"Avec une amie"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'achètent-ils ?','options'=>'[{"text":"Des bonbons seulement"},{"text":"Des billets et du pop-corn"},{"text":"Rien"},{"text":"Des boissons seulement"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
         ]);
 
         // ── RU ──
@@ -2258,6 +2978,96 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
         ]);
 
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'ru',
+            'story_key'  => 'hotel',
+            'emoji'      => '🏨',
+            'title_fr'   => 'À l\'hôtel',
+            'level'      => 2,
+            'sort_order' => 6,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Аня','fr'=>'Ania','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'приезжает в отель вечером','fr'=>'arrive le soir à l\'hôtel','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Администратор','fr'=>'La réceptionniste','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'улыбается и даёт ей ключ','fr'=>'sourit et lui donne la clé','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'Она поднимается в свой номер','fr'=>'elle monte dans sa chambre','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'и открывает чемодан','fr'=>'et ouvre sa valise','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'Вечером','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'она хорошо спит','fr'=>'elle dort bien','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'hôtel ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À midi"},{"text":"La nuit"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que lui donne la réceptionniste ?','options'=>'[{"text":"Un café"},{"text":"La clé de sa chambre"},{"text":"Un plan de la ville"},{"text":"Son passeport"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage le soir ?','options'=>'[{"text":"Il sort"},{"text":"Il dort bien"},{"text":"Il appelle un ami"},{"text":"Il range sa valise"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'ru',
+            'story_key'  => 'plage',
+            'emoji'      => '🏖️',
+            'title_fr'   => 'Une journée à la plage',
+            'level'      => 3,
+            'sort_order' => 7,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Аня','fr'=>'Ania','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'идёт на пляж с друзьями','fr'=>'marche jusqu\'à la plage avec ses amis','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Солнце светит','fr'=>'le soleil brille','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'а море спокойное','fr'=>'et la mer est calme','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'Они плавают в воде','fr'=>'ils nagent dans l\'eau','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'и играют с мячом','fr'=>'et jouent avec le ballon','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'Вечером','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'они вместе смотрят закат','fr'=>'ils regardent ensemble le coucher de soleil','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il à la plage ?','options'=>'[{"text":"Seul(e)"},{"text":"Avec ses amis"},{"text":"Avec ses parents"},{"text":"Avec son chien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Comment est la mer ?','options'=>'[{"text":"Agitée"},{"text":"Calme"},{"text":"Gelée"},{"text":"Sale"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que font-ils le soir ?','options'=>'[{"text":"Ils rentrent en courant"},{"text":"Ils regardent le coucher de soleil"},{"text":"Ils dorment sur la plage"},{"text":"Ils pêchent"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'ru',
+            'story_key'  => 'cinema',
+            'emoji'      => '🎬',
+            'title_fr'   => 'Au cinéma',
+            'level'      => 3,
+            'sort_order' => 8,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Аня','fr'=>'Ania','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'идёт в кино с братом','fr'=>'va au cinéma avec son frère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Они покупают билеты','fr'=>'ils achètent des billets','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'и попкорн','fr'=>'et du pop-corn','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'Фильм начинается','fr'=>'le film commence','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'и все замолкают','fr'=>'et tout le monde se tait','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'В конце','fr'=>'à la fin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'зрители аплодируют','fr'=>'le public applaudit','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il au cinéma ?','options'=>'[{"text":"Avec son frère"},{"text":"Seul(e)"},{"text":"Avec ses parents"},{"text":"Avec une amie"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'achètent-ils ?','options'=>'[{"text":"Des bonbons seulement"},{"text":"Des billets et du pop-corn"},{"text":"Rien"},{"text":"Des boissons seulement"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
+        ]);
+
         // ── JA ──
         $story = DB::table('stories')->insertGetId([
             'lang'       => 'ja',
@@ -2491,6 +3301,96 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
         ]);
 
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'ja',
+            'story_key'  => 'hotel',
+            'emoji'      => '🏨',
+            'title_fr'   => 'À l\'hôtel',
+            'level'      => 2,
+            'sort_order' => 6,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'アナは','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'夜にホテルに着きます','fr'=>'arrive le soir à l\'hôtel','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'受付の人は','fr'=>'La réceptionniste','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'笑顔で鍵を渡します','fr'=>'sourit et donne la clé','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'彼女は部屋に上がって','fr'=>'elle monte dans sa chambre','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'スーツケースを開けます','fr'=>'et ouvre sa valise','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'夜は','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'よく眠ります','fr'=>'elle dort bien','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'。','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'hôtel ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À midi"},{"text":"La nuit"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que lui donne la réceptionniste ?','options'=>'[{"text":"Un café"},{"text":"La clé de sa chambre"},{"text":"Un plan de la ville"},{"text":"Son passeport"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage le soir ?','options'=>'[{"text":"Il sort"},{"text":"Il dort bien"},{"text":"Il appelle un ami"},{"text":"Il range sa valise"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'ja',
+            'story_key'  => 'plage',
+            'emoji'      => '🏖️',
+            'title_fr'   => 'Une journée à la plage',
+            'level'      => 3,
+            'sort_order' => 7,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'アナは','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'友達とビーチまで歩きます','fr'=>'marche jusqu\'à la plage avec ses amis','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'太陽が輝いて','fr'=>'le soleil brille','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'海は静かです','fr'=>'et la mer est calme','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'彼らは水の中で泳いで','fr'=>'ils nagent dans l\'eau','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'ボールで遊びます','fr'=>'et jouent avec le ballon','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'夜は','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'一緒に夕日を見ます','fr'=>'ils regardent ensemble le coucher de soleil','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'。','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il à la plage ?','options'=>'[{"text":"Seul(e)"},{"text":"Avec ses amis"},{"text":"Avec ses parents"},{"text":"Avec son chien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Comment est la mer ?','options'=>'[{"text":"Agitée"},{"text":"Calme"},{"text":"Gelée"},{"text":"Sale"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que font-ils le soir ?','options'=>'[{"text":"Ils rentrent en courant"},{"text":"Ils regardent le coucher de soleil"},{"text":"Ils dorment sur la plage"},{"text":"Ils pêchent"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'ja',
+            'story_key'  => 'cinema',
+            'emoji'      => '🎬',
+            'title_fr'   => 'Au cinéma',
+            'level'      => 3,
+            'sort_order' => 8,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'アナは','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'兄と映画館に行きます','fr'=>'va au cinéma avec son frère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'チケットを買って','fr'=>'ils achètent des billets','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'ポップコーンも買います','fr'=>'et du pop-corn','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'映画が始まって','fr'=>'le film commence','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'みんな静かになります','fr'=>'et tout le monde se tait','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'最後に','fr'=>'à la fin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'観客は拍手します','fr'=>'le public applaudit','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'。','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il au cinéma ?','options'=>'[{"text":"Avec son frère"},{"text":"Seul(e)"},{"text":"Avec ses parents"},{"text":"Avec une amie"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'achètent-ils ?','options'=>'[{"text":"Des bonbons seulement"},{"text":"Des billets et du pop-corn"},{"text":"Rien"},{"text":"Des boissons seulement"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
+        ]);
+
         // ── KO ──
         $story = DB::table('stories')->insertGetId([
             'lang'       => 'ko',
@@ -2705,6 +3605,96 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>0,'question_fr'=>'Que montre le personnage au contrôle ?','options'=>'[{"text":"Son billet"},{"text":"Sa valise"},{"text":"Son passeport"},{"text":"Sa carte d\'embarquement"}]','correct_index'=>2],
             ['story_id'=>$story,'position'=>1,'question_fr'=>'Où le personnage attend-il son vol ?','options'=>'[{"text":"Dans un taxi"},{"text":"Dans la salle d\'embarquement"},{"text":"À l\'entrée de l\'aéroport"},{"text":"Dans un restaurant"}]','correct_index'=>1],
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'ko',
+            'story_key'  => 'hotel',
+            'emoji'      => '🏨',
+            'title_fr'   => 'À l\'hôtel',
+            'level'      => 2,
+            'sort_order' => 6,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'안나는','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'저녁에 호텔에 도착합니다','fr'=>'arrive le soir à l\'hôtel','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'안내원은','fr'=>'La réceptionniste','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'웃으면서 열쇠를 줍니다','fr'=>'sourit et donne la clé','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'그녀는 방으로 올라가서','fr'=>'elle monte dans sa chambre','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'가방을 엽니다','fr'=>'et ouvre sa valise','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'저녁에','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'그녀는 잘 잡니다','fr'=>'elle dort bien','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'hôtel ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À midi"},{"text":"La nuit"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que lui donne la réceptionniste ?','options'=>'[{"text":"Un café"},{"text":"La clé de sa chambre"},{"text":"Un plan de la ville"},{"text":"Son passeport"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage le soir ?','options'=>'[{"text":"Il sort"},{"text":"Il dort bien"},{"text":"Il appelle un ami"},{"text":"Il range sa valise"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'ko',
+            'story_key'  => 'plage',
+            'emoji'      => '🏖️',
+            'title_fr'   => 'Une journée à la plage',
+            'level'      => 3,
+            'sort_order' => 7,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'안나는','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'친구들과 해변까지 걸어갑니다','fr'=>'marche jusqu\'à la plage avec ses amis','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'해가 빛나고','fr'=>'le soleil brille','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'바다는 잔잔합니다','fr'=>'et la mer est calme','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'그들은 물에서 수영하고','fr'=>'ils nagent dans l\'eau','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'공놀이를 합니다','fr'=>'et jouent avec le ballon','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'저녁에','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'함께 일몰을 봅니다','fr'=>'ils regardent ensemble le coucher de soleil','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il à la plage ?','options'=>'[{"text":"Seul(e)"},{"text":"Avec ses amis"},{"text":"Avec ses parents"},{"text":"Avec son chien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Comment est la mer ?','options'=>'[{"text":"Agitée"},{"text":"Calme"},{"text":"Gelée"},{"text":"Sale"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que font-ils le soir ?','options'=>'[{"text":"Ils rentrent en courant"},{"text":"Ils regardent le coucher de soleil"},{"text":"Ils dorment sur la plage"},{"text":"Ils pêchent"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'ko',
+            'story_key'  => 'cinema',
+            'emoji'      => '🎬',
+            'title_fr'   => 'Au cinéma',
+            'level'      => 3,
+            'sort_order' => 8,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'안나는','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'동생과 영화관에 갑니다','fr'=>'va au cinéma avec son frère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'그들은 티켓을 사고','fr'=>'ils achètent des billets','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'팝콘도 삽니다','fr'=>'et du pop-corn','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'영화가 시작되고','fr'=>'le film commence','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'모두 조용해집니다','fr'=>'et tout le monde se tait','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'마지막에','fr'=>'à la fin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'관객들이 박수를 칩니다','fr'=>'le public applaudit','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il au cinéma ?','options'=>'[{"text":"Avec son frère"},{"text":"Seul(e)"},{"text":"Avec ses parents"},{"text":"Avec une amie"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'achètent-ils ?','options'=>'[{"text":"Des bonbons seulement"},{"text":"Des billets et du pop-corn"},{"text":"Rien"},{"text":"Des boissons seulement"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
         ]);
 
         // ── ZH ──
@@ -2922,6 +3912,96 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>0,'question_fr'=>'Que montre le personnage au contrôle ?','options'=>'[{"text":"Son billet"},{"text":"Sa valise"},{"text":"Son passeport"},{"text":"Sa carte d\'embarquement"}]','correct_index'=>2],
             ['story_id'=>$story,'position'=>1,'question_fr'=>'Où le personnage attend-il son vol ?','options'=>'[{"text":"Dans un taxi"},{"text":"Dans la salle d\'embarquement"},{"text":"À l\'entrée de l\'aéroport"},{"text":"Dans un restaurant"}]','correct_index'=>1],
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'zh',
+            'story_key'  => 'hotel',
+            'emoji'      => '🏨',
+            'title_fr'   => 'À l\'hôtel',
+            'level'      => 2,
+            'sort_order' => 6,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'安娜','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'晚上到达酒店','fr'=>'arrive le soir à l\'hôtel','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'接待员','fr'=>'La réceptionniste','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'微笑着把钥匙给她','fr'=>'sourit et lui donne la clé','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'她上楼到房间','fr'=>'elle monte dans sa chambre','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'打开行李箱','fr'=>'et ouvre sa valise','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'晚上','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'她睡得很好','fr'=>'elle dort bien','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'。','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'hôtel ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À midi"},{"text":"La nuit"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que lui donne la réceptionniste ?','options'=>'[{"text":"Un café"},{"text":"La clé de sa chambre"},{"text":"Un plan de la ville"},{"text":"Son passeport"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage le soir ?','options'=>'[{"text":"Il sort"},{"text":"Il dort bien"},{"text":"Il appelle un ami"},{"text":"Il range sa valise"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'zh',
+            'story_key'  => 'plage',
+            'emoji'      => '🏖️',
+            'title_fr'   => 'Une journée à la plage',
+            'level'      => 3,
+            'sort_order' => 7,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'安娜','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'和朋友们走到海滩','fr'=>'marche jusqu\'à la plage avec ses amis','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'太阳照耀着','fr'=>'le soleil brille','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'大海很平静','fr'=>'et la mer est calme','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'他们在水里游泳','fr'=>'ils nagent dans l\'eau','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'一起玩球','fr'=>'et jouent avec le ballon','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'晚上','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'他们一起看日落','fr'=>'ils regardent ensemble le coucher de soleil','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'。','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il à la plage ?','options'=>'[{"text":"Seul(e)"},{"text":"Avec ses amis"},{"text":"Avec ses parents"},{"text":"Avec son chien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Comment est la mer ?','options'=>'[{"text":"Agitée"},{"text":"Calme"},{"text":"Gelée"},{"text":"Sale"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que font-ils le soir ?','options'=>'[{"text":"Ils rentrent en courant"},{"text":"Ils regardent le coucher de soleil"},{"text":"Ils dorment sur la plage"},{"text":"Ils pêchent"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'zh',
+            'story_key'  => 'cinema',
+            'emoji'      => '🎬',
+            'title_fr'   => 'Au cinéma',
+            'level'      => 3,
+            'sort_order' => 8,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'安娜','fr'=>'Anna','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'和弟弟去电影院','fr'=>'va au cinéma avec son frère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'他们买票','fr'=>'ils achètent des billets','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'还买爆米花','fr'=>'et du pop-corn','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'电影开始了','fr'=>'le film commence','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'大家都安静下来','fr'=>'et tout le monde se tait','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'最后','fr'=>'à la fin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'观众们鼓掌','fr'=>'le public applaudit','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'。','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il au cinéma ?','options'=>'[{"text":"Avec son frère"},{"text":"Seul(e)"},{"text":"Avec ses parents"},{"text":"Avec une amie"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'achètent-ils ?','options'=>'[{"text":"Des bonbons seulement"},{"text":"Des billets et du pop-corn"},{"text":"Rien"},{"text":"Des boissons seulement"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
         ]);
 
         // ── AR ──
@@ -3144,6 +4224,96 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>0,'question_fr'=>'Que montre le personnage au contrôle ?','options'=>'[{"text":"Son billet"},{"text":"Sa valise"},{"text":"Son passeport"},{"text":"Sa carte d\'embarquement"}]','correct_index'=>2],
             ['story_id'=>$story,'position'=>1,'question_fr'=>'Où le personnage attend-il son vol ?','options'=>'[{"text":"Dans un taxi"},{"text":"Dans la salle d\'embarquement"},{"text":"À l\'entrée de l\'aéroport"},{"text":"Dans un restaurant"}]','correct_index'=>1],
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'ar',
+            'story_key'  => 'hotel',
+            'emoji'      => '🏨',
+            'title_fr'   => 'À l\'hôtel',
+            'level'      => 2,
+            'sort_order' => 6,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'سارة','fr'=>'Sarah','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'تصل إلى الفندق مساءً','fr'=>'arrive le soir à l\'hôtel','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'موظفة الاستقبال','fr'=>'La réceptionniste','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'تبتسم وتعطيها المفتاح','fr'=>'sourit et lui donne la clé','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'تصعد إلى غرفتها','fr'=>'elle monte dans sa chambre','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'وتفتح حقيبتها','fr'=>'et ouvre sa valise','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'في المساء','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'تنام جيداً','fr'=>'elle dort bien','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'hôtel ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À midi"},{"text":"La nuit"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que lui donne la réceptionniste ?','options'=>'[{"text":"Un café"},{"text":"La clé de sa chambre"},{"text":"Un plan de la ville"},{"text":"Son passeport"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage le soir ?','options'=>'[{"text":"Il sort"},{"text":"Il dort bien"},{"text":"Il appelle un ami"},{"text":"Il range sa valise"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'ar',
+            'story_key'  => 'plage',
+            'emoji'      => '🏖️',
+            'title_fr'   => 'Une journée à la plage',
+            'level'      => 3,
+            'sort_order' => 7,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'سارة','fr'=>'Sarah','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'تمشي إلى الشاطئ مع صديقاتها','fr'=>'marche jusqu\'à la plage avec ses amis','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'الشمس تشرق','fr'=>'le soleil brille','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'والبحر هادئ','fr'=>'et la mer est calme','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'يسبحون في الماء','fr'=>'ils nagent dans l\'eau','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'ويلعبون بالكرة','fr'=>'et jouent avec le ballon','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'في المساء','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'يشاهدون غروب الشمس معاً','fr'=>'ils regardent ensemble le coucher de soleil','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il à la plage ?','options'=>'[{"text":"Seul(e)"},{"text":"Avec ses amis"},{"text":"Avec ses parents"},{"text":"Avec son chien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Comment est la mer ?','options'=>'[{"text":"Agitée"},{"text":"Calme"},{"text":"Gelée"},{"text":"Sale"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que font-ils le soir ?','options'=>'[{"text":"Ils rentrent en courant"},{"text":"Ils regardent le coucher de soleil"},{"text":"Ils dorment sur la plage"},{"text":"Ils pêchent"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'ar',
+            'story_key'  => 'cinema',
+            'emoji'      => '🎬',
+            'title_fr'   => 'Au cinéma',
+            'level'      => 3,
+            'sort_order' => 8,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'سارة','fr'=>'Sarah','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'تذهب إلى السينما مع أخيها','fr'=>'va au cinéma avec son frère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'يشتريان التذاكر','fr'=>'ils achètent des billets','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'والفشار','fr'=>'et du pop-corn','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'الفيلم يبدأ','fr'=>'le film commence','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'ويصمت الجميع','fr'=>'et tout le monde se tait','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'في النهاية','fr'=>'à la fin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'يصفّق الجمهور','fr'=>'le public applaudit','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il au cinéma ?','options'=>'[{"text":"Avec son frère"},{"text":"Seul(e)"},{"text":"Avec ses parents"},{"text":"Avec une amie"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'achètent-ils ?','options'=>'[{"text":"Des bonbons seulement"},{"text":"Des billets et du pop-corn"},{"text":"Rien"},{"text":"Des boissons seulement"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
         ]);
 
         // ── HI ──
@@ -3374,6 +4544,96 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>0,'question_fr'=>'Que montre le personnage au contrôle ?','options'=>'[{"text":"Son billet"},{"text":"Sa valise"},{"text":"Son passeport"},{"text":"Sa carte d\'embarquement"}]','correct_index'=>2],
             ['story_id'=>$story,'position'=>1,'question_fr'=>'Où le personnage attend-il son vol ?','options'=>'[{"text":"Dans un taxi"},{"text":"Dans la salle d\'embarquement"},{"text":"À l\'entrée de l\'aéroport"},{"text":"Dans un restaurant"}]','correct_index'=>1],
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Quand l\'avion décolle-t-il ?','options'=>'[{"text":"Avec du retard"},{"text":"En avance"},{"text":"À l\'heure"},{"text":"Le lendemain"}]','correct_index'=>2],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'hi',
+            'story_key'  => 'hotel',
+            'emoji'      => '🏨',
+            'title_fr'   => 'À l\'hôtel',
+            'level'      => 2,
+            'sort_order' => 6,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'सारा','fr'=>'Sara','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'शाम को होटल पहुँचती है','fr'=>'arrive le soir à l\'hôtel','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'।','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'रिसेप्शनिस्ट','fr'=>'La réceptionniste','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'मुस्कुराकर उसे चाबी देती है','fr'=>'sourit et lui donne la clé','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'।','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'वह अपने कमरे में जाती है','fr'=>'elle monte dans sa chambre','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'और सूटकेस खोलती है','fr'=>'et ouvre sa valise','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'।','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'शाम को','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'वह अच्छी नींद सोती है','fr'=>'elle dort bien','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'।','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage arrive-t-il à l\'hôtel ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À midi"},{"text":"La nuit"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que lui donne la réceptionniste ?','options'=>'[{"text":"Un café"},{"text":"La clé de sa chambre"},{"text":"Un plan de la ville"},{"text":"Son passeport"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que fait le personnage le soir ?','options'=>'[{"text":"Il sort"},{"text":"Il dort bien"},{"text":"Il appelle un ami"},{"text":"Il range sa valise"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'hi',
+            'story_key'  => 'plage',
+            'emoji'      => '🏖️',
+            'title_fr'   => 'Une journée à la plage',
+            'level'      => 3,
+            'sort_order' => 7,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'सारा','fr'=>'Sara','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'अपने दोस्तों के साथ समुद्र तट तक जाती है','fr'=>'marche jusqu\'à la plage avec ses amis','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'।','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'सूरज चमकता है','fr'=>'le soleil brille','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'और समुद्र शांत है','fr'=>'et la mer est calme','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'।','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'वे पानी में तैरते हैं','fr'=>'ils nagent dans l\'eau','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'और गेंद से खेलते हैं','fr'=>'et jouent avec le ballon','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'।','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'शाम को','fr'=>'le soir','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'वे साथ सूर्यास्त देखते हैं','fr'=>'ils regardent ensemble le coucher de soleil','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'।','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il à la plage ?','options'=>'[{"text":"Seul(e)"},{"text":"Avec ses amis"},{"text":"Avec ses parents"},{"text":"Avec son chien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Comment est la mer ?','options'=>'[{"text":"Agitée"},{"text":"Calme"},{"text":"Gelée"},{"text":"Sale"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Que font-ils le soir ?','options'=>'[{"text":"Ils rentrent en courant"},{"text":"Ils regardent le coucher de soleil"},{"text":"Ils dorment sur la plage"},{"text":"Ils pêchent"}]','correct_index'=>1],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'hi',
+            'story_key'  => 'cinema',
+            'emoji'      => '🎬',
+            'title_fr'   => 'Au cinéma',
+            'level'      => 3,
+            'sort_order' => 8,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'सारा','fr'=>'Sara','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'अपने भाई के साथ सिनेमा जाती है','fr'=>'va au cinéma avec son frère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'।','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'वे टिकट खरीदते हैं','fr'=>'ils achètent des billets','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'और पॉपकॉर्न भी','fr'=>'et du pop-corn','is_punct'=>false],
+            ['story_id'=>$story,'position'=>5,'text'=>'।','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>6,'text'=>'फ़िल्म शुरू होती है','fr'=>'le film commence','is_punct'=>false],
+            ['story_id'=>$story,'position'=>7,'text'=>'और सब चुप हो जाते हैं','fr'=>'et tout le monde se tait','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'।','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>9,'text'=>'अंत में','fr'=>'à la fin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>10,'text'=>'दर्शक तालियाँ बजाते हैं','fr'=>'le public applaudit','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'।','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il au cinéma ?','options'=>'[{"text":"Avec son frère"},{"text":"Seul(e)"},{"text":"Avec ses parents"},{"text":"Avec une amie"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'achètent-ils ?','options'=>'[{"text":"Des bonbons seulement"},{"text":"Des billets et du pop-corn"},{"text":"Rien"},{"text":"Des boissons seulement"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
         ]);
 
     }
