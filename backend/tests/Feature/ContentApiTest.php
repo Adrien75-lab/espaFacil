@@ -17,8 +17,11 @@ class ContentApiTest extends TestCase
 
         $this->getJson('/api/dialogues?lang=es')
             ->assertOk()
-            ->assertJsonCount(8)
+            ->assertJsonCount(20)
             ->assertJsonPath('0.id', 'es-cafe')
+            ->assertJsonPath('8.id', 'es-airport')
+            ->assertJsonPath('8.steps.1.type', 'choice')
+            ->assertJsonPath('8.steps.1.options.0.text', 'Está en la primera planta.')
             ->assertJsonStructure(['*' => ['id', 'emoji', 'title', 'title_fr', 'steps']]);
     }
 
@@ -38,7 +41,7 @@ class ContentApiTest extends TestCase
         $this->seed([DialogueSeeder::class, ConjugationSeeder::class]);
         $this->seed([DialogueSeeder::class, ConjugationSeeder::class]);
 
-        $this->assertDatabaseCount('dialogues', 112);
+        $this->assertDatabaseCount('dialogues', 280);
         $this->assertDatabaseCount('conjugation_verbs', 84);
         $this->assertDatabaseCount('conjugation_forms', 1512);
     }
