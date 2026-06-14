@@ -53,6 +53,9 @@
         "analyse": [
             "phpstan analyse"
         ],
+        "mess-detect": [
+            "tools/phpmd/vendor/bin/phpmd app,routes text phpmd.xml.dist"
+        ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
