@@ -1,0 +1,23 @@
+{
+  "skill_name": "feature-delivery-workflow",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "La fonctionnalité est codée et les tests passent. Dis-moi précisément comment la tester avant de faire la PR.",
+      "expected_output": "Une fiche de recette complète avec branche, commandes, migration/seeder, scénarios et résultats attendus, sans créer la PR.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "J'ai trouvé un bug pendant la recette : le score final affiche 1 au lieu de 3. Que fais-tu ?",
+      "expected_output": "Correction sur la même branche, test de non-régression, nouveau push et retour à l'état Prête pour recette.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Tout est conforme, recette validée. Ouvre la pull request vers master.",
+      "expected_output": "Vérifications finales, création de la PR structurée, suivi de la CI, sans fusion automatique non autorisée.",
+      "files": []
+    }
+  ]
+}
