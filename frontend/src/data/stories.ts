@@ -581,6 +581,60 @@ const STORIES_EXTRA: Record<string, Story[]> = {
       ]
     }
   ,
+    {
+      id: 'hotel', emoji: '🏨', title_fr: "À l'hôtel", level: 2,
+      tokens: [
+        w('Carla','Carla'),
+        w('llega al hotel por la noche',"arrive à l'hôtel le soir"),
+        p('.'),
+        w('La recepcionista','La réceptionniste'),
+        w('sonríe y le da la llave','sourit et lui donne la clé'),
+        p('.'),
+        w('Sube a su habitación','elle monte dans sa chambre'),
+        w('y abre su maleta','et ouvre sa valise'),
+        p('.'),
+        w('Por la noche','le soir'),
+        w('duerme bien','elle dort bien'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'plage', emoji: '🏖️', title_fr: 'Une journée à la plage', level: 3,
+      tokens: [
+        w('Carla','Carla'),
+        w('camina hasta la playa con sus amigos',"marche jusqu'à la plage avec ses amis"),
+        p('.'),
+        w('El sol brilla','le soleil brille'),
+        w('y el mar está calmado','et la mer est calme'),
+        p('.'),
+        w('Nadan en el agua',"ils nagent dans l'eau"),
+        w('y juegan con la pelota','et jouent avec le ballon'),
+        p('.'),
+        w('Por la noche','le soir'),
+        w('miran juntos la puesta de sol','ils regardent ensemble le coucher de soleil'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'cinema', emoji: '🎬', title_fr: 'Au cinéma', level: 3,
+      tokens: [
+        w('Carla','Carla'),
+        w('va al cine con su hermano','va au cinéma avec son frère'),
+        p('.'),
+        w('Compran entradas','ils achètent des billets'),
+        w('y palomitas','et du pop-corn'),
+        p('.'),
+        w('La película empieza','le film commence'),
+        w('y todos se callan','et tout le monde se tait'),
+        p('.'),
+        w('Al final','à la fin'),
+        w('el público aplaude','le public applaudit'),
+        p('.'),
+      ]
+    }
+  ,
   ],
 
   en: [
@@ -652,6 +706,60 @@ const STORIES_EXTRA: Record<string, Story[]> = {
       ]
     }
   ,
+    {
+      id: 'hotel', emoji: '🏨', title_fr: "À l'hôtel", level: 2,
+      tokens: [
+        w('Anna','Anna'),
+        w('arrives at the hotel in the evening',"arrive à l'hôtel le soir"),
+        p('.'),
+        w('The receptionist','La réceptionniste'),
+        w('smiles and gives her the key','sourit et lui donne la clé'),
+        p('.'),
+        w('She goes up to her room','elle monte dans sa chambre'),
+        w('and opens her suitcase','et ouvre sa valise'),
+        p('.'),
+        w('At night','le soir'),
+        w('she sleeps well','elle dort bien'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'plage', emoji: '🏖️', title_fr: 'Une journée à la plage', level: 3,
+      tokens: [
+        w('Anna','Anna'),
+        w('walks to the beach with her friends',"marche jusqu'à la plage avec ses amis"),
+        p('.'),
+        w('The sun shines','le soleil brille'),
+        w('and the sea is calm','et la mer est calme'),
+        p('.'),
+        w('They swim in the water',"ils nagent dans l'eau"),
+        w('and play with the ball','et jouent avec le ballon'),
+        p('.'),
+        w('In the evening','le soir'),
+        w('they watch the sunset together','ils regardent ensemble le coucher de soleil'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'cinema', emoji: '🎬', title_fr: 'Au cinéma', level: 3,
+      tokens: [
+        w('Anna','Anna'),
+        w('goes to the cinema with her brother','va au cinéma avec son frère'),
+        p('.'),
+        w('They buy tickets','ils achètent des billets'),
+        w('and popcorn','et du pop-corn'),
+        p('.'),
+        w('The film starts','le film commence'),
+        w('and everyone goes quiet','et tout le monde se tait'),
+        p('.'),
+        w('At the end','à la fin'),
+        w('the audience applauds','le public applaudit'),
+        p('.'),
+      ]
+    }
+  ,
   ],
 
   de: [
@@ -718,6 +826,60 @@ const STORIES_EXTRA: Record<string, Story[]> = {
         p('.'),
         w('Das Flugzeug',"l'avion"),
         w('hebt pünktlich ab',"décolle à l\'heure"),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'hotel', emoji: '🏨', title_fr: "À l'hôtel", level: 2,
+      tokens: [
+        w('Anna','Anna'),
+        w('kommt abends im Hotel an','arrive le soir à l\'hôtel'),
+        p('.'),
+        w('Die Rezeptionistin','La réceptionniste'),
+        w('lächelt und gibt ihr den Schlüssel','sourit et lui donne la clé'),
+        p('.'),
+        w('Sie geht in ihr Zimmer','elle monte dans sa chambre'),
+        w('und öffnet ihren Koffer','et ouvre sa valise'),
+        p('.'),
+        w('Abends','le soir'),
+        w('schläft sie gut','elle dort bien'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'plage', emoji: '🏖️', title_fr: 'Une journée à la plage', level: 3,
+      tokens: [
+        w('Anna','Anna'),
+        w('geht mit ihren Freunden zum Strand',"marche jusqu'à la plage avec ses amis"),
+        p('.'),
+        w('Die Sonne scheint','le soleil brille'),
+        w('und das Meer ist ruhig','et la mer est calme'),
+        p('.'),
+        w('Sie schwimmen im Wasser',"ils nagent dans l'eau"),
+        w('und spielen mit dem Ball','et jouent avec le ballon'),
+        p('.'),
+        w('Abends','le soir'),
+        w('schauen sie gemeinsam den Sonnenuntergang an','ils regardent ensemble le coucher de soleil'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'cinema', emoji: '🎬', title_fr: 'Au cinéma', level: 3,
+      tokens: [
+        w('Anna','Anna'),
+        w('geht mit ihrem Bruder ins Kino','va au cinéma avec son frère'),
+        p('.'),
+        w('Sie kaufen Karten','ils achètent des billets'),
+        w('und Popcorn','et du pop-corn'),
+        p('.'),
+        w('Der Film beginnt','le film commence'),
+        w('und alle werden still','et tout le monde se tait'),
+        p('.'),
+        w('Am Ende','à la fin'),
+        w('applaudiert das Publikum','le public applaudit'),
         p('.'),
       ]
     }
@@ -793,6 +955,60 @@ const STORIES_EXTRA: Record<string, Story[]> = {
       ]
     }
   ,
+    {
+      id: 'hotel', emoji: '🏨', title_fr: "À l'hôtel", level: 2,
+      tokens: [
+        w('Anna','Anna'),
+        w('arriva in albergo di sera',"arrive à l'hôtel le soir"),
+        p('.'),
+        w('La receptionist','La réceptionniste'),
+        w('sorride e le dà la chiave','sourit et lui donne la clé'),
+        p('.'),
+        w('Sale in camera sua','elle monte dans sa chambre'),
+        w('e apre la valigia','et ouvre sa valise'),
+        p('.'),
+        w('Di sera','le soir'),
+        w('dorme bene','elle dort bien'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'plage', emoji: '🏖️', title_fr: 'Une journée à la plage', level: 3,
+      tokens: [
+        w('Anna','Anna'),
+        w('cammina fino alla spiaggia con i suoi amici',"marche jusqu'à la plage avec ses amis"),
+        p('.'),
+        w('Il sole splende','le soleil brille'),
+        w('e il mare è calmo','et la mer est calme'),
+        p('.'),
+        w("Nuotano nell'acqua","ils nagent dans l'eau"),
+        w('e giocano con il pallone','et jouent avec le ballon'),
+        p('.'),
+        w('Di sera','le soir'),
+        w('guardano insieme il tramonto','ils regardent ensemble le coucher de soleil'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'cinema', emoji: '🎬', title_fr: 'Au cinéma', level: 3,
+      tokens: [
+        w('Anna','Anna'),
+        w('va al cinema con suo fratello','va au cinéma avec son frère'),
+        p('.'),
+        w('Comprano i biglietti','ils achètent des billets'),
+        w('e i popcorn','et du pop-corn'),
+        p('.'),
+        w('Il film inizia','le film commence'),
+        w('e tutti fanno silenzio','et tout le monde se tait'),
+        p('.'),
+        w('Alla fine','à la fin'),
+        w('il pubblico applaude','le public applaudit'),
+        p('.'),
+      ]
+    }
+  ,
   ],
 
   pt: [
@@ -858,6 +1074,60 @@ const STORIES_EXTRA: Record<string, Story[]> = {
         w('O avião',"l'avion"),
         w('descola','décolle'),
         w('pontualmente','ponctuellement'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'hotel', emoji: '🏨', title_fr: "À l'hôtel", level: 2,
+      tokens: [
+        w('Ana','Ana'),
+        w('chega ao hotel à noite',"arrive à l'hôtel le soir"),
+        p('.'),
+        w('A recepcionista','La réceptionniste'),
+        w('sorri e dá-lhe a chave','sourit et lui donne la clé'),
+        p('.'),
+        w('Ela sobe ao seu quarto','elle monte dans sa chambre'),
+        w('e abre a mala','et ouvre sa valise'),
+        p('.'),
+        w('À noite','le soir'),
+        w('ela dorme bem','elle dort bien'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'plage', emoji: '🏖️', title_fr: 'Une journée à la plage', level: 3,
+      tokens: [
+        w('Ana','Ana'),
+        w('caminha até à praia com os amigos',"marche jusqu'à la plage avec ses amis"),
+        p('.'),
+        w('O sol brilha','le soleil brille'),
+        w('e o mar está calmo','et la mer est calme'),
+        p('.'),
+        w('Eles nadam na água',"ils nagent dans l'eau"),
+        w('e jogam à bola','et jouent avec le ballon'),
+        p('.'),
+        w('À noite','le soir'),
+        w('veem juntos o pôr do sol','ils regardent ensemble le coucher de soleil'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'cinema', emoji: '🎬', title_fr: 'Au cinéma', level: 3,
+      tokens: [
+        w('Ana','Ana'),
+        w('vai ao cinema com o irmão','va au cinéma avec son frère'),
+        p('.'),
+        w('Compram bilhetes','ils achètent des billets'),
+        w('e pipocas','et du pop-corn'),
+        p('.'),
+        w('O filme começa','le film commence'),
+        w('e todos ficam em silêncio','et tout le monde se tait'),
+        p('.'),
+        w('No fim','à la fin'),
+        w('o público aplaude','le public applaudit'),
         p('.'),
       ]
     }
@@ -928,6 +1198,60 @@ const STORIES_EXTRA: Record<string, Story[]> = {
       ]
     }
   ,
+    {
+      id: 'hotel', emoji: '🏨', title_fr: "À l'hôtel", level: 2,
+      tokens: [
+        w('Anna','Anna'),
+        w("komt 's avonds aan in het hotel","arrive le soir à l'hôtel"),
+        p('.'),
+        w('De receptioniste','La réceptionniste'),
+        w('glimlacht en geeft haar de sleutel','sourit et lui donne la clé'),
+        p('.'),
+        w('Ze gaat naar haar kamer','elle monte dans sa chambre'),
+        w('en opent haar koffer','et ouvre sa valise'),
+        p('.'),
+        w("'s Avonds",'le soir'),
+        w('slaapt ze goed','elle dort bien'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'plage', emoji: '🏖️', title_fr: 'Une journée à la plage', level: 3,
+      tokens: [
+        w('Anna','Anna'),
+        w('loopt met haar vrienden naar het strand',"marche jusqu'à la plage avec ses amis"),
+        p('.'),
+        w('De zon schijnt','le soleil brille'),
+        w('en de zee is rustig','et la mer est calme'),
+        p('.'),
+        w('Ze zwemmen in het water',"ils nagent dans l'eau"),
+        w('en spelen met de bal','et jouent avec le ballon'),
+        p('.'),
+        w("'s Avonds",'le soir'),
+        w('kijken ze samen naar de zonsondergang','ils regardent ensemble le coucher de soleil'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'cinema', emoji: '🎬', title_fr: 'Au cinéma', level: 3,
+      tokens: [
+        w('Anna','Anna'),
+        w('gaat met haar broer naar de bioscoop','va au cinéma avec son frère'),
+        p('.'),
+        w('Ze kopen kaartjes','ils achètent des billets'),
+        w('en popcorn','et du pop-corn'),
+        p('.'),
+        w('De film begint','le film commence'),
+        w('en iedereen wordt stil','et tout le monde se tait'),
+        p('.'),
+        w('Aan het einde','à la fin'),
+        w('applaudisseert het publiek','le public applaudit'),
+        p('.'),
+      ]
+    }
+  ,
   ],
 
   pl: [
@@ -994,6 +1318,60 @@ const STORIES_EXTRA: Record<string, Story[]> = {
       ]
     }
   ,
+    {
+      id: 'hotel', emoji: '🏨', title_fr: "À l'hôtel", level: 2,
+      tokens: [
+        w('Anna','Anna'),
+        w('przyjeżdża do hotelu wieczorem','arrive le soir à l\'hôtel'),
+        p('.'),
+        w('Recepcjonistka','La réceptionniste'),
+        w('uśmiecha się i daje jej klucz','sourit et lui donne la clé'),
+        p('.'),
+        w('Idzie do swojego pokoju','elle monte dans sa chambre'),
+        w('i otwiera walizkę','et ouvre sa valise'),
+        p('.'),
+        w('Wieczorem','le soir'),
+        w('śpi dobrze','elle dort bien'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'plage', emoji: '🏖️', title_fr: 'Une journée à la plage', level: 3,
+      tokens: [
+        w('Anna','Anna'),
+        w('idzie na plażę z przyjaciółmi',"marche jusqu'à la plage avec ses amis"),
+        p('.'),
+        w('Słońce świeci','le soleil brille'),
+        w('a morze jest spokojne','et la mer est calme'),
+        p('.'),
+        w('Pływają w wodzie',"ils nagent dans l'eau"),
+        w('i grają piłką','et jouent avec le ballon'),
+        p('.'),
+        w('Wieczorem','le soir'),
+        w('razem patrzą na zachód słońca','ils regardent ensemble le coucher de soleil'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'cinema', emoji: '🎬', title_fr: 'Au cinéma', level: 3,
+      tokens: [
+        w('Anna','Anna'),
+        w('idzie do kina z bratem','va au cinéma avec son frère'),
+        p('.'),
+        w('Kupują bilety','ils achètent des billets'),
+        w('i popcorn','et du pop-corn'),
+        p('.'),
+        w('Film zaczyna się','le film commence'),
+        w('a wszyscy się uciszają','et tout le monde se tait'),
+        p('.'),
+        w('Na końcu','à la fin'),
+        w('publiczność bije brawo','le public applaudit'),
+        p('.'),
+      ]
+    }
+  ,
   ],
 
   tr: [
@@ -1052,6 +1430,60 @@ const STORIES_EXTRA: Record<string, Story[]> = {
         p('.'),
         w("l'avion","l'avion"),
         w('zamanında kalkıyor',"décolle à l\'heure"),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'hotel', emoji: '🏨', title_fr: "À l'hôtel", level: 2,
+      tokens: [
+        w('Ayşe','Ayşe'),
+        w('akşam otele varıyor','arrive le soir à l\'hôtel'),
+        p('.'),
+        w('Resepsiyonist','La réceptionniste'),
+        w('gülümsüyor ve ona anahtarı veriyor','sourit et lui donne la clé'),
+        p('.'),
+        w('Odasına çıkıyor','elle monte dans sa chambre'),
+        w('ve valizini açıyor','et ouvre sa valise'),
+        p('.'),
+        w('Akşam','le soir'),
+        w('iyi uyuyor','elle dort bien'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'plage', emoji: '🏖️', title_fr: 'Une journée à la plage', level: 3,
+      tokens: [
+        w('Ayşe','Ayşe'),
+        w('arkadaşlarıyla sahile yürüyor',"marche jusqu'à la plage avec ses amis"),
+        p('.'),
+        w('Güneş parlıyor','le soleil brille'),
+        w('ve deniz sakin','et la mer est calme'),
+        p('.'),
+        w('Suda yüzüyorlar',"ils nagent dans l'eau"),
+        w('ve topla oynuyorlar','et jouent avec le ballon'),
+        p('.'),
+        w('Akşam','le soir'),
+        w('birlikte gün batımını izliyorlar','ils regardent ensemble le coucher de soleil'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'cinema', emoji: '🎬', title_fr: 'Au cinéma', level: 3,
+      tokens: [
+        w('Ayşe','Ayşe'),
+        w('kardeşiyle sinemaya gidiyor','va au cinéma avec son frère'),
+        p('.'),
+        w('Bilet alıyorlar','ils achètent des billets'),
+        w('ve patlamış mısır','et du pop-corn'),
+        p('.'),
+        w('Film başlıyor','le film commence'),
+        w('ve herkes susuyor','et tout le monde se tait'),
+        p('.'),
+        w('Sonunda','à la fin'),
+        w('izleyiciler alkışlıyor','le public applaudit'),
         p('.'),
       ]
     }
@@ -1121,6 +1553,60 @@ const STORIES_EXTRA: Record<string, Story[]> = {
       ]
     }
   ,
+    {
+      id: 'hotel', emoji: '🏨', title_fr: "À l'hôtel", level: 2,
+      tokens: [
+        w('Аня','Ania'),
+        w('приезжает в отель вечером','arrive le soir à l\'hôtel'),
+        p('.'),
+        w('Администратор','La réceptionniste'),
+        w('улыбается и даёт ей ключ','sourit et lui donne la clé'),
+        p('.'),
+        w('Она поднимается в свой номер','elle monte dans sa chambre'),
+        w('и открывает чемодан','et ouvre sa valise'),
+        p('.'),
+        w('Вечером','le soir'),
+        w('она хорошо спит','elle dort bien'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'plage', emoji: '🏖️', title_fr: 'Une journée à la plage', level: 3,
+      tokens: [
+        w('Аня','Ania'),
+        w('идёт на пляж с друзьями',"marche jusqu'à la plage avec ses amis"),
+        p('.'),
+        w('Солнце светит','le soleil brille'),
+        w('а море спокойное','et la mer est calme'),
+        p('.'),
+        w('Они плавают в воде',"ils nagent dans l'eau"),
+        w('и играют с мячом','et jouent avec le ballon'),
+        p('.'),
+        w('Вечером','le soir'),
+        w('они вместе смотрят закат','ils regardent ensemble le coucher de soleil'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'cinema', emoji: '🎬', title_fr: 'Au cinéma', level: 3,
+      tokens: [
+        w('Аня','Ania'),
+        w('идёт в кино с братом','va au cinéma avec son frère'),
+        p('.'),
+        w('Они покупают билеты','ils achètent des billets'),
+        w('и попкорн','et du pop-corn'),
+        p('.'),
+        w('Фильм начинается','le film commence'),
+        w('и все замолкают','et tout le monde se tait'),
+        p('.'),
+        w('В конце','à la fin'),
+        w('зрители аплодируют','le public applaudit'),
+        p('.'),
+      ]
+    }
+  ,
   ],
 
   ja: [
@@ -1176,6 +1662,60 @@ const STORIES_EXTRA: Record<string, Story[]> = {
         p('。'),
         w('飛行機は',"l'avion"),
         w('時間通りに飛び立ちます',"décolle à l\'heure"),
+        p('。'),
+      ]
+    }
+  ,
+    {
+      id: 'hotel', emoji: '🏨', title_fr: "À l'hôtel", level: 2,
+      tokens: [
+        w('アナは','Anna'),
+        w('夜にホテルに着きます','arrive le soir à l\'hôtel'),
+        p('。'),
+        w('受付の人は','La réceptionniste'),
+        w('笑顔で鍵を渡します','sourit et donne la clé'),
+        p('。'),
+        w('彼女は部屋に上がって','elle monte dans sa chambre'),
+        w('スーツケースを開けます','et ouvre sa valise'),
+        p('。'),
+        w('夜は','le soir'),
+        w('よく眠ります','elle dort bien'),
+        p('。'),
+      ]
+    }
+  ,
+    {
+      id: 'plage', emoji: '🏖️', title_fr: 'Une journée à la plage', level: 3,
+      tokens: [
+        w('アナは','Anna'),
+        w('友達とビーチまで歩きます',"marche jusqu'à la plage avec ses amis"),
+        p('。'),
+        w('太陽が輝いて','le soleil brille'),
+        w('海は静かです','et la mer est calme'),
+        p('。'),
+        w('彼らは水の中で泳いで',"ils nagent dans l'eau"),
+        w('ボールで遊びます','et jouent avec le ballon'),
+        p('。'),
+        w('夜は','le soir'),
+        w('一緒に夕日を見ます','ils regardent ensemble le coucher de soleil'),
+        p('。'),
+      ]
+    }
+  ,
+    {
+      id: 'cinema', emoji: '🎬', title_fr: 'Au cinéma', level: 3,
+      tokens: [
+        w('アナは','Anna'),
+        w('兄と映画館に行きます','va au cinéma avec son frère'),
+        p('。'),
+        w('チケットを買って','ils achètent des billets'),
+        w('ポップコーンも買います','et du pop-corn'),
+        p('。'),
+        w('映画が始まって','le film commence'),
+        w('みんな静かになります','et tout le monde se tait'),
+        p('。'),
+        w('最後に','à la fin'),
+        w('観客は拍手します','le public applaudit'),
         p('。'),
       ]
     }
@@ -1240,6 +1780,60 @@ const STORIES_EXTRA: Record<string, Story[]> = {
       ]
     }
   ,
+    {
+      id: 'hotel', emoji: '🏨', title_fr: "À l'hôtel", level: 2,
+      tokens: [
+        w('안나는','Anna'),
+        w('저녁에 호텔에 도착합니다','arrive le soir à l\'hôtel'),
+        p('.'),
+        w('안내원은','La réceptionniste'),
+        w('웃으면서 열쇠를 줍니다','sourit et donne la clé'),
+        p('.'),
+        w('그녀는 방으로 올라가서','elle monte dans sa chambre'),
+        w('가방을 엽니다','et ouvre sa valise'),
+        p('.'),
+        w('저녁에','le soir'),
+        w('그녀는 잘 잡니다','elle dort bien'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'plage', emoji: '🏖️', title_fr: 'Une journée à la plage', level: 3,
+      tokens: [
+        w('안나는','Anna'),
+        w('친구들과 해변까지 걸어갑니다',"marche jusqu'à la plage avec ses amis"),
+        p('.'),
+        w('해가 빛나고','le soleil brille'),
+        w('바다는 잔잔합니다','et la mer est calme'),
+        p('.'),
+        w('그들은 물에서 수영하고',"ils nagent dans l'eau"),
+        w('공놀이를 합니다','et jouent avec le ballon'),
+        p('.'),
+        w('저녁에','le soir'),
+        w('함께 일몰을 봅니다','ils regardent ensemble le coucher de soleil'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'cinema', emoji: '🎬', title_fr: 'Au cinéma', level: 3,
+      tokens: [
+        w('안나는','Anna'),
+        w('동생과 영화관에 갑니다','va au cinéma avec son frère'),
+        p('.'),
+        w('그들은 티켓을 사고','ils achètent des billets'),
+        w('팝콘도 삽니다','et du pop-corn'),
+        p('.'),
+        w('영화가 시작되고','le film commence'),
+        w('모두 조용해집니다','et tout le monde se tait'),
+        p('.'),
+        w('마지막에','à la fin'),
+        w('관객들이 박수를 칩니다','le public applaudit'),
+        p('.'),
+      ]
+    }
+  ,
   ],
 
   zh: [
@@ -1293,6 +1887,60 @@ const STORIES_EXTRA: Record<string, Story[]> = {
         p('。'),
         w('飞机',"l'avion"),
         w('准时起飞',"décolle à l\'heure"),
+        p('。'),
+      ]
+    }
+  ,
+    {
+      id: 'hotel', emoji: '🏨', title_fr: "À l'hôtel", level: 2,
+      tokens: [
+        w('安娜','Anna'),
+        w('晚上到达酒店','arrive le soir à l\'hôtel'),
+        p('。'),
+        w('接待员','La réceptionniste'),
+        w('微笑着把钥匙给她','sourit et lui donne la clé'),
+        p('。'),
+        w('她上楼到房间','elle monte dans sa chambre'),
+        w('打开行李箱','et ouvre sa valise'),
+        p('。'),
+        w('晚上','le soir'),
+        w('她睡得很好','elle dort bien'),
+        p('。'),
+      ]
+    }
+  ,
+    {
+      id: 'plage', emoji: '🏖️', title_fr: 'Une journée à la plage', level: 3,
+      tokens: [
+        w('安娜','Anna'),
+        w('和朋友们走到海滩',"marche jusqu'à la plage avec ses amis"),
+        p('。'),
+        w('太阳照耀着','le soleil brille'),
+        w('大海很平静','et la mer est calme'),
+        p('。'),
+        w('他们在水里游泳',"ils nagent dans l'eau"),
+        w('一起玩球','et jouent avec le ballon'),
+        p('。'),
+        w('晚上','le soir'),
+        w('他们一起看日落','ils regardent ensemble le coucher de soleil'),
+        p('。'),
+      ]
+    }
+  ,
+    {
+      id: 'cinema', emoji: '🎬', title_fr: 'Au cinéma', level: 3,
+      tokens: [
+        w('安娜','Anna'),
+        w('和弟弟去电影院','va au cinéma avec son frère'),
+        p('。'),
+        w('他们买票','ils achètent des billets'),
+        w('还买爆米花','et du pop-corn'),
+        p('。'),
+        w('电影开始了','le film commence'),
+        w('大家都安静下来','et tout le monde se tait'),
+        p('。'),
+        w('最后','à la fin'),
+        w('观众们鼓掌','le public applaudit'),
         p('。'),
       ]
     }
@@ -1360,6 +2008,60 @@ const STORIES_EXTRA: Record<string, Story[]> = {
       ]
     }
   ,
+    {
+      id: 'hotel', emoji: '🏨', title_fr: "À l'hôtel", level: 2,
+      tokens: [
+        w('سارة','Sarah'),
+        w('تصل إلى الفندق مساءً','arrive le soir à l\'hôtel'),
+        p('.'),
+        w('موظفة الاستقبال','La réceptionniste'),
+        w('تبتسم وتعطيها المفتاح','sourit et lui donne la clé'),
+        p('.'),
+        w('تصعد إلى غرفتها','elle monte dans sa chambre'),
+        w('وتفتح حقيبتها','et ouvre sa valise'),
+        p('.'),
+        w('في المساء','le soir'),
+        w('تنام جيداً','elle dort bien'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'plage', emoji: '🏖️', title_fr: 'Une journée à la plage', level: 3,
+      tokens: [
+        w('سارة','Sarah'),
+        w('تمشي إلى الشاطئ مع صديقاتها',"marche jusqu'à la plage avec ses amis"),
+        p('.'),
+        w('الشمس تشرق','le soleil brille'),
+        w('والبحر هادئ','et la mer est calme'),
+        p('.'),
+        w('يسبحون في الماء',"ils nagent dans l'eau"),
+        w('ويلعبون بالكرة','et jouent avec le ballon'),
+        p('.'),
+        w('في المساء','le soir'),
+        w('يشاهدون غروب الشمس معاً','ils regardent ensemble le coucher de soleil'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'cinema', emoji: '🎬', title_fr: 'Au cinéma', level: 3,
+      tokens: [
+        w('سارة','Sarah'),
+        w('تذهب إلى السينما مع أخيها','va au cinéma avec son frère'),
+        p('.'),
+        w('يشتريان التذاكر','ils achètent des billets'),
+        w('والفشار','et du pop-corn'),
+        p('.'),
+        w('الفيلم يبدأ','le film commence'),
+        w('ويصمت الجميع','et tout le monde se tait'),
+        p('.'),
+        w('في النهاية','à la fin'),
+        w('يصفّق الجمهور','le public applaudit'),
+        p('.'),
+      ]
+    }
+  ,
   ],
 
   hi: [
@@ -1416,6 +2118,60 @@ const STORIES_EXTRA: Record<string, Story[]> = {
         p('।'),
         w('हवाई जहाज',"l'avion"),
         w('समय पर उड़ान भरता है',"décolle à l\'heure"),
+        p('।'),
+      ]
+    }
+  ,
+    {
+      id: 'hotel', emoji: '🏨', title_fr: "À l'hôtel", level: 2,
+      tokens: [
+        w('सारा','Sara'),
+        w('शाम को होटल पहुँचती है','arrive le soir à l\'hôtel'),
+        p('।'),
+        w('रिसेप्शनिस्ट','La réceptionniste'),
+        w('मुस्कुराकर उसे चाबी देती है','sourit et lui donne la clé'),
+        p('।'),
+        w('वह अपने कमरे में जाती है','elle monte dans sa chambre'),
+        w('और सूटकेस खोलती है','et ouvre sa valise'),
+        p('।'),
+        w('शाम को','le soir'),
+        w('वह अच्छी नींद सोती है','elle dort bien'),
+        p('।'),
+      ]
+    }
+  ,
+    {
+      id: 'plage', emoji: '🏖️', title_fr: 'Une journée à la plage', level: 3,
+      tokens: [
+        w('सारा','Sara'),
+        w('अपने दोस्तों के साथ समुद्र तट तक जाती है',"marche jusqu'à la plage avec ses amis"),
+        p('।'),
+        w('सूरज चमकता है','le soleil brille'),
+        w('और समुद्र शांत है','et la mer est calme'),
+        p('।'),
+        w('वे पानी में तैरते हैं',"ils nagent dans l'eau"),
+        w('और गेंद से खेलते हैं','et jouent avec le ballon'),
+        p('।'),
+        w('शाम को','le soir'),
+        w('वे साथ सूर्यास्त देखते हैं','ils regardent ensemble le coucher de soleil'),
+        p('।'),
+      ]
+    }
+  ,
+    {
+      id: 'cinema', emoji: '🎬', title_fr: 'Au cinéma', level: 3,
+      tokens: [
+        w('सारा','Sara'),
+        w('अपने भाई के साथ सिनेमा जाती है','va au cinéma avec son frère'),
+        p('।'),
+        w('वे टिकट खरीदते हैं','ils achètent des billets'),
+        w('और पॉपकॉर्न भी','et du pop-corn'),
+        p('।'),
+        w('फ़िल्म शुरू होती है','le film commence'),
+        w('और सब चुप हो जाते हैं','et tout le monde se tait'),
+        p('।'),
+        w('अंत में','à la fin'),
+        w('दर्शक तालियाँ बजाते हैं','le public applaudit'),
         p('।'),
       ]
     }

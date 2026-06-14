@@ -240,10 +240,109 @@ const QUESTIONS = {
       correct_index: 2,
     },
   ],
+  hotel: [
+    {
+      question_fr: 'Quand le personnage arrive-t-il à l\'hôtel ?',
+      options: [
+        { text: 'Le matin' },
+        { text: 'Le soir' },
+        { text: 'À midi' },
+        { text: 'La nuit' },
+      ],
+      correct_index: 1,
+    },
+    {
+      question_fr: 'Que lui donne la réceptionniste ?',
+      options: [
+        { text: 'Un café' },
+        { text: 'La clé de sa chambre' },
+        { text: 'Un plan de la ville' },
+        { text: 'Son passeport' },
+      ],
+      correct_index: 1,
+    },
+    {
+      question_fr: 'Que fait le personnage le soir ?',
+      options: [
+        { text: 'Il sort' },
+        { text: 'Il dort bien' },
+        { text: 'Il appelle un ami' },
+        { text: 'Il range sa valise' },
+      ],
+      correct_index: 1,
+    },
+  ],
+  plage: [
+    {
+      question_fr: 'Avec qui le personnage va-t-il à la plage ?',
+      options: [
+        { text: 'Seul(e)' },
+        { text: 'Avec ses amis' },
+        { text: 'Avec ses parents' },
+        { text: 'Avec son chien' },
+      ],
+      correct_index: 1,
+    },
+    {
+      question_fr: 'Comment est la mer ?',
+      options: [
+        { text: 'Agitée' },
+        { text: 'Calme' },
+        { text: 'Gelée' },
+        { text: 'Sale' },
+      ],
+      correct_index: 1,
+    },
+    {
+      question_fr: 'Que font-ils le soir ?',
+      options: [
+        { text: 'Ils rentrent en courant' },
+        { text: 'Ils regardent le coucher de soleil' },
+        { text: 'Ils dorment sur la plage' },
+        { text: 'Ils pêchent' },
+      ],
+      correct_index: 1,
+    },
+  ],
+  cinema: [
+    {
+      question_fr: 'Avec qui le personnage va-t-il au cinéma ?',
+      options: [
+        { text: 'Avec son frère' },
+        { text: 'Seul(e)' },
+        { text: 'Avec ses parents' },
+        { text: 'Avec une amie' },
+      ],
+      correct_index: 0,
+    },
+    {
+      question_fr: 'Qu\'achètent-ils ?',
+      options: [
+        { text: 'Des bonbons seulement' },
+        { text: 'Des billets et du pop-corn' },
+        { text: 'Rien' },
+        { text: 'Des boissons seulement' },
+      ],
+      correct_index: 1,
+    },
+    {
+      question_fr: 'Comment réagit le public à la fin du film ?',
+      options: [
+        { text: 'Il applaudit' },
+        { text: 'Il sort en silence' },
+        { text: 'Il proteste' },
+        { text: 'Il rit' },
+      ],
+      correct_index: 0,
+    },
+  ],
 }
 
 function getQuestions(storyKey) {
   const k = storyKey.toLowerCase()
+  if (k === 'hotel') return QUESTIONS.hotel
+  if (k === 'plage') return QUESTIONS.plage
+  if (k === 'cinema') return QUESTIONS.cinema
   if (k.includes('cafe') || k.includes('kafe') || k.includes('kissa') ||
       k.includes('cofee') || k.includes('kaffe') || k.includes('canting') || k.includes('kissa'))
     return QUESTIONS.cafe
