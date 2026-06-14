@@ -1,22 +1,23 @@
 # État courant de LinguaFacil
 
-Dernière vérification : 14 juin 2026, après le correctif des dialogues de la phase 27 et l'ajout de PHPStan/PHPMD sur `claude/optimistic-mendel-yqz0h4`.
+Dernière vérification : 14 juin 2026, après la fusion de la PR GitHub no 2 (PHPStan/PHPMD) dans `master`.
 
 ## Dépôt
 
 - Chemin : `C:\Users\adric\Claude\Projects\Website-Project`
 - Dépôt GitHub : `Adrien75-lab/espaFacil`
 - Branche stable locale et distante : `master`
-- Commit stable observé : `ad16b2c refactor: structure application et qualité R1-R5`
-- `AGENTS.md` est actuellement un fichier local non suivi. Ne l'ajoute pas à un commit sans demande explicite.
+- Commit stable observé : `334bd10 Merge pull request #2 from Adrien75-lab/claude/optimistic-mendel-yqz0h4`
+- `AGENTS.md` et `CLAUDE.md` sont désormais suivis et présents sur `master`.
 
 ## Branches importantes
 
 ### `master`
 
-- Pointe sur `ad16b2c` lors du dernier relevé.
-- Contient les phases jusqu'à la phase 26.
-- Contient la refonte R1-R5 fusionnée via la PR GitHub no 1.
+- Pointe sur `334bd10` lors du dernier relevé.
+- Contient les phases jusqu'à la phase 26, la refonte R1-R5, ainsi que PHPStan/Larastan et PHPMD (PR no 2).
+- Contient les skills `.claude/skills/linguafacil` et `.claude/skills/feature-delivery-workflow`, ainsi que `AGENTS.md`/`CLAUDE.md`.
+- `composer analyse` et `composer mess-detect` sont disponibles (voir détails ci-dessous).
 
 ### `codex/refactor-r1-r5`
 
@@ -25,34 +26,31 @@ Dernière vérification : 14 juin 2026, après le correctif des dialogues de la 
 
 ### `codex/2026-06-14-phase-27-dialogues`
 
-- Branche de travail active lors du dernier relevé.
-- Basée sur `master` après R1-R5.
+- Branche de travail pour la phase 27, toujours **non fusionnée** et **sans PR** lors du dernier relevé (7 commits de retard sur `master`, 4 commits d'avance : `b8d62d3`, `6eca10b`, `2e54447`, `30c036e`).
 - `b8d62d3` : ajout de 12 scénarios par langue.
 - `6eca10b` : correction pédagogique, chaque nouveau scénario contient désormais 3 QCM au lieu d'un seul.
-- Contient aussi les deux skills `.claude/skills/linguafacil` et `.claude/skills/feature-delivery-workflow`, ainsi que `AGENTS.md`/`CLAUDE.md`.
-- Branche poussée sur `origin` mais pas encore fusionnée dans `master` lors du dernier relevé.
-- Avant de poursuivre, vérifier si une PR a depuis été créée ou fusionnée.
+- `2e54447`/`30c036e` : ajout des skills et du workflow (désormais redondants avec `master`, qui les a déjà via la PR no 2).
+- Avant de poursuivre une nouvelle phase fonctionnelle (28) : rebaser cette branche sur `master` à jour (ou la recréer depuis `master`), faire la recette, ouvrir une PR, et la fusionner.
 
 ### `claude/optimistic-mendel-yqz0h4`
 
-- Branche basée sur `master` (`ad16b2c`), créée pour une amélioration qualité indépendante de la phase 28.
-- Aucun changement fonctionnel ni de base de données.
-- PHPStan/Larastan installés et configurés :
-  - `larastan/larastan ^3.0` en dépendance dev de `backend/composer.json`.
-  - `backend/phpstan.neon.dist` : niveau 5, analyse `app`, `routes`, `database/seeders`.
-  - Script `composer analyse` ; étape ajoutée dans `.github/workflows/ci.yml`.
-  - Tous les modèles Eloquent ont reçu des blocs `@property` et des génériques de relation (`@return HasMany<X, $this>` / `@return BelongsTo<X, $this>`).
-  - Les Resources (`WordResource`, `ThemeResource`, `LanguageResource`, `GrammarTipResource`) ont un `@mixin` vers leur modèle.
-  - Bug corrigé : `mode_xp` sur `UserStat` n'avait pas de cast `array`.
-  - Comparaisons strictes `=== 1` sur `diffInDays()` (float) corrigées par un cast `(int)` dans `DashboardController`, `ProgressController`, `TodayController`.
-  - `composer analyse` → 0 erreur ; `php artisan test` → 5/5 ; `vendor/bin/pint --test` → OK.
-- PHPMD installé et configuré :
-  - Isolé dans `backend/tools/phpmd/` (son propre `composer.json`/`composer.lock`, `vendor` non versionné) car PHPMD 2.x est incompatible avec Symfony 8 (Laravel 13).
-  - `backend/phpmd.xml.dist` : règles `codesize`, `design`, `naming` (sans `ShortVariable`), `unusedcode` (sans `UnusedFormalParameter`), périmètre `app` et `routes` (les seeders de données sont exclus).
-  - Script `composer mess-detect` ; étape ajoutée dans la CI (avec `composer install` dans `tools/phpmd` au préalable).
-  - `composer mess-detect` → 0 violation sur `app`/`routes`.
-- A reçu une copie des deux skills (`linguafacil`, `feature-delivery-workflow`) et de `AGENTS.md`/`CLAUDE.md` depuis `codex/2026-06-14-phase-27-dialogues`, en attendant la fusion de cette dernière dans `master`.
-- Avant de repartir sur la phase 28 : fusionner (ou rebaser sur) cette branche pour récupérer la configuration PHPStan/PHPMD, sinon `composer analyse` et `composer mess-detect` n'existeront pas encore.
+- Branche qualité (PHPStan/Larastan + PHPMD), **fusionnée dans `master` via la PR no 2** (commit de fusion `334bd10`). Conservée mais n'a plus besoin d'être réutilisée.
+- Détails de la configuration (désormais sur `master`) :
+  - PHPStan/Larastan :
+    - `larastan/larastan ^3.0` en dépendance dev de `backend/composer.json`.
+    - `backend/phpstan.neon.dist` : niveau 5, analyse `app`, `routes`, `database/seeders`.
+    - Script `composer analyse` (avec `--memory-limit=512M` pour éviter les crashs avec un `php.ini` par défaut à 128M) ; étape ajoutée dans `.github/workflows/ci.yml`.
+    - Tous les modèles Eloquent ont reçu des blocs `@property` et des génériques de relation (`@return HasMany<X, $this>` / `@return BelongsTo<X, $this>`).
+    - Les Resources (`WordResource`, `ThemeResource`, `LanguageResource`, `GrammarTipResource`) ont un `@mixin` vers leur modèle.
+    - Bug corrigé : `mode_xp` sur `UserStat` n'avait pas de cast `array`.
+    - Comparaisons strictes `=== 1` sur `diffInDays()` (float) corrigées par un cast `(int)` dans `DashboardController`, `ProgressController`, `TodayController`.
+    - `composer analyse` → 0 erreur ; `php artisan test` → 5/5 ; `vendor/bin/pint --test` → 2 échecs préexistants sur `StorySeeder.php`/`LinguaFacilSeeder.php` (déjà présents sur `master` avant cette PR, hors périmètre).
+  - PHPMD :
+    - Isolé dans `backend/tools/phpmd/` (son propre `composer.json`/`composer.lock`, `vendor` non versionné) car PHPMD 2.x est incompatible avec Symfony 8 (Laravel 13).
+    - `backend/phpmd.xml.dist` : règles `codesize`, `design`, `naming` (sans `ShortVariable`), `unusedcode` (sans `UnusedFormalParameter`), périmètre `app` et `routes` (les seeders de données sont exclus).
+    - Script `composer mess-detect` ; étape ajoutée dans la CI (avec `composer install` dans `tools/phpmd` au préalable).
+    - `composer mess-detect` → 0 violation sur `app`/`routes`.
+  - Correctif compatibilité : `composer.json` fixe `config.platform.php` à `8.3.0` et `composer.lock` reverrouillé (Symfony 7.4.x au lieu de 8.1.0) pour rester compatible avec `"php": "^8.3"`.
 
 ## Phases fonctionnelles récentes
 
@@ -71,7 +69,8 @@ Dernière vérification : 14 juin 2026, après le correctif des dialogues de la 
   - Catalogue principal dans `backend/database/data/linguafacil.json`.
   - Le seeder a été rendu idempotent et supprime les tables dans l'ordre inverse des clés étrangères.
 - R1-R5 : refonte qualité et architecture, intégrée à `master`.
-- Phase 27 : enrichissement des dialogues, en attente de fusion lors du dernier relevé.
+- Qualité backend (PHPStan/Larastan + PHPMD) : intégrée à `master` via la PR no 2.
+- Phase 27 : enrichissement des dialogues, toujours en attente de PR et de fusion.
 
 ## Phase 27 en détail
 
@@ -102,6 +101,26 @@ php artisan db:seed --class=DialogueSeeder
 - Avant de commencer : vérifier que la phase 27 a été testée, qu'une PR existe ou est fusionnée, puis créer une nouvelle branche depuis `master` à jour :
   `codex/YYYY-MM-DD-phase-28-histoires`.
 - Ne commence pas l'i18n sans accord explicite d'Adrien.
+
+## Phase prévue (après la 28) : migration SQLite vers PostgreSQL
+
+Cadrée le 14 juin 2026, à ne démarrer qu'après accord explicite d'Adrien sur le moment.
+
+- Objectif : passer la base de données du projet de SQLite à PostgreSQL pour se rapprocher d'un environnement de production réaliste, sans changement fonctionnel.
+- Périmètre inclus :
+  - configuration Laravel pour PostgreSQL (`.env`, `config/database.php`, driver `pgsql`) ;
+  - audit de toutes les migrations, modèles, seeders et requêtes brutes pour les éléments spécifiques à SQLite (types de colonnes, fonctions de date, JSON/casts, contraintes uniques, auto-increment) ;
+  - mise à jour de la CI pour faire tourner les tests contre PostgreSQL (service Docker dans `ci.yml`) ;
+  - documentation pour lancer PostgreSQL en local ;
+  - exécution complète de toutes les migrations et de tous les seeders contre PostgreSQL, et de la suite de tests.
+- Hors périmètre : aucune nouvelle fonctionnalité, aucune migration de données de production (projet en développement), suppression du support SQLite à décider au cadrage final.
+- Critères d'acceptation :
+  - `php artisan migrate:fresh --seed` fonctionne sans erreur sur PostgreSQL ;
+  - `php artisan test` passe entièrement sur PostgreSQL ;
+  - l'application fonctionne normalement en local avec PostgreSQL ;
+  - CI verte avec PostgreSQL comme base de test.
+- Risques : PostgreSQL requis en local/CI (Docker), typage strict de Postgres pouvant révéler des bugs latents masqués par SQLite (à corriger).
+- À traiter sur une branche dédiée, indépendante des phases fonctionnelles.
 
 ## Points de vigilance
 
