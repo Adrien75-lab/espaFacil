@@ -33,7 +33,9 @@
           v-for="m in modes"
           :key="m.key"
           class="mode-btn"
-          :class="{ active: currentMode === m.key }"
+          :class="{ active: currentMode === m.key, unavailable: !modeAvailable(m.key) }"
+          :disabled="!modeAvailable(m.key)"
+          :title="modeAvailable(m.key) ? '' : 'Aucun contenu disponible pour ce thème et ce niveau'"
           @click="currentMode = m.key"
         >
           <span>{{ m.emoji }}</span>
@@ -49,7 +51,9 @@
             v-for="theme in store.themes"
             :key="theme.key"
             class="theme-card"
-            :class="{ active: store.currentTheme?.key === theme.key }"
+            :class="{ active: store.currentTheme?.key === theme.key, unavailable: !themeAvailable(theme) }"
+            :disabled="!themeAvailable(theme)"
+            :title="themeAvailable(theme) ? '' : 'Aucun contenu disponible pour ce mode et ce niveau'"
             @click="store.selectTheme(theme.key)"
           >
             <span class="theme-emoji">{{ theme.emoji }}</span>
@@ -63,10 +67,16 @@
             v-for="lvl in levels"
             :key="lvl.key"
             class="btn-level"
-            :class="{ active: store.currentLevel === lvl.key }"
+            :class="{ active: store.currentLevel === lvl.key, unavailable: !levelAvailable(lvl.key) }"
+            :disabled="!levelAvailable(lvl.key)"
+            :title="levelAvailable(lvl.key) ? '' : 'Aucun contenu disponible pour ce mode et ce thème'"
             @click="store.setLevel(lvl.key)"
           >{{ lvl.label }}</button>
         </div>
+
+        <p v-if="store.currentTheme && !modeAvailable(currentMode)" class="dialogue-info">
+          ⚠️ Aucun contenu disponible pour ce mode avec ce thème et ce niveau. Essayez un autre thème, niveau ou mode.
+        </p>
       </template>
 
       <!-- Sélection du scénario (mode dialogue uniquement) -->
@@ -89,7 +99,7 @@
 
       <button
         class="btn-start"
-        :disabled="currentMode === 'dialogue' ? !selectedScenario : NO_THEME_MODES.includes(currentMode) ? false : !store.currentTheme"
+        :disabled="currentMode === 'dialogue' ? !selectedScenario : NO_THEME_MODES.includes(currentMode) ? false : !store.currentTheme || !modeAvailable(currentMode)"
         @click="goMode"
       >▶ Commencer</button>
 
@@ -116,7 +126,7 @@ import { useAuthStore } from '@/stores/auth'
 import DailyGoalWidget from '@/components/DailyGoalWidget.vue'
 import FlagIcon from '@/components/FlagIcon.vue'
 import { getDialogues } from '@/api/content'
-import type { Dialogue, Level } from '@/types'
+import type { Dialogue, Level, Theme, ThemeLevelStats } from '@/types'
 
 const store      = useLangStore()
 const auth       = useAuthStore()
@@ -169,6 +179,33 @@ const modes = [
 // Modes qui ne nécessitent pas de thème sélectionné
 const NO_THEME_MODES = ['dialogue', 'survival', 'voyage', 'stories', 'conjugaison']
 
+// Modes qui exploitent les phrases d'exemple plutôt que le vocabulaire brut
+const EXAMPLE_MODES = ['fill-blank', 'sentence-builder']
+
+// Indique si des statistiques de thème couvrent le besoin du mode pour un niveau donné
+function statsSatisfyMode(stats: ThemeLevelStats | undefined, modeKey: string): boolean {
+  if (!stats) return true
+  return EXAMPLE_MODES.includes(modeKey) ? stats.with_example > 0 : stats.words > 0
+}
+
+// Un mode est disponible si le thème/niveau courants ont du contenu adapté
+function modeAvailable(modeKey: string): boolean {
+  if (NO_THEME_MODES.includes(modeKey)) return true
+  return statsSatisfyMode(store.currentTheme?.stats?.[store.currentLevel], modeKey)
+}
+
+// Un thème est disponible s'il a du contenu adapté au mode/niveau courants
+function themeAvailable(theme: Theme): boolean {
+  if (NO_THEME_MODES.includes(currentMode.value)) return true
+  return statsSatisfyMode(theme.stats?.[store.currentLevel], currentMode.value)
+}
+
+// Un niveau est disponible si le thème courant a du contenu adapté au mode/niveau
+function levelAvailable(level: Level): boolean {
+  if (NO_THEME_MODES.includes(currentMode.value)) return true
+  return statsSatisfyMode(store.currentTheme?.stats?.[level], currentMode.value)
+}
+
 onMounted(() => { if (!store.languages.length) store.loadLanguages() })
 
 function goMode() {
@@ -203,6 +240,9 @@ h2 { margin: 1rem 0 0.5rem; font-size: 1.4rem; }
   cursor: pointer; transition: border-color .2s, transform .15s; display: flex; flex-direction: column; align-items: center; gap: 0.4rem; }
 .lang-card:hover { border-color: var(--accent); transform: translateY(-2px); }
 .lang-name { font-size: 0.85rem; color: var(--dim); }
+
+.unavailable { opacity: 0.35; cursor: not-allowed; }
+.unavailable:hover { border-color: var(--border) !important; background: none !important; transform: none !important; }
 
 .theme-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 0.6rem; margin-bottom: 1.5rem; }
 .theme-card { background: var(--bg-card); border: 2px solid var(--border); border-radius: 10px; padding: 0.75rem 0.5rem;
