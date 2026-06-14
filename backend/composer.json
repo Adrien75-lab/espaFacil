@@ -51,7 +51,7 @@
             "@php artisan test"
         ],
         "analyse": [
-            "phpstan analyse"
+            "phpstan analyse --memory-limit=512M"
         ],
         "mess-detect": [
             "tools/phpmd/vendor/bin/phpmd app,routes text phpmd.xml.dist"
