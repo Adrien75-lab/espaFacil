@@ -109,14 +109,14 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, watch } from 'vue'
+import { ref, onMounted, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
 import DailyGoalWidget from '@/components/DailyGoalWidget.vue'
 import FlagIcon from '@/components/FlagIcon.vue'
-import { DIALOGUES } from '@/data/dialogues'
-import type { Level } from '@/types'
+import { getDialogues } from '@/api/content'
+import type { Dialogue, Level } from '@/types'
 
 const store      = useLangStore()
 const auth       = useAuthStore()
@@ -126,12 +126,20 @@ const goalWidget = ref<InstanceType<typeof DailyGoalWidget> | null>(null)
 const selectedScenario = ref<string | null>(null)
 const currentMode      = ref<string>('quiz')
 
-const dialogueScenarios = computed(() =>
-  store.currentLang ? (DIALOGUES[store.currentLang.code] ?? []) : []
-)
+const dialogueScenarios = ref<Dialogue[]>([])
 
 // Reset selected scenario when lang or mode changes
-watch([() => store.currentLang, currentMode], () => { selectedScenario.value = null })
+watch([() => store.currentLang?.code, currentMode], async ([lang, mode]) => {
+  selectedScenario.value = null
+  dialogueScenarios.value = []
+  if (lang && mode === 'dialogue') {
+    try {
+      dialogueScenarios.value = await getDialogues(lang)
+    } catch {
+      dialogueScenarios.value = []
+    }
+  }
+}, { immediate: true })
 
 const levels: { key: Level; label: string }[] = [
   { key: 'debutant',      label: '🌱 Débutant' },

@@ -46,7 +46,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, watch } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { fetchToday, updateGoal, type TodayData } from '@/api/today'
 
 const data = ref<TodayData>({
@@ -92,8 +92,6 @@ async function changeGoal(xp: number) {
 }
 
 // Confetti géré uniquement dans load() pour éviter les doublons
-
-const emit = defineEmits<{ refresh: [] }>()
 
 const CONFETTI_KEY = 'lf-confetti-date'
 

@@ -88,7 +88,7 @@
       <button class="btn-secondary" @click="router.push('/')">← Retour</button>
     </div>
   </div>
-    <ConfirmQuit v-if="showQuit" @cancel="showQuit = false" @confirm="router.push('/')" />
+  <ConfirmQuit v-if="showQuit" @cancel="showQuit = false" @confirm="router.push('/')" />
 </template>
 
 <script setup lang="ts">
@@ -96,14 +96,14 @@ import { ref, computed, onMounted, watch } from 'vue'
 import ConfirmQuit from '@/components/ConfirmQuit.vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
-import { useAuthStore } from '@/stores/auth'
-import { postSession, calcXp } from '@/api/progress'
+import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import type { Word } from '@/types'
+import { speakText } from '@/utils/speech'
 
 const store  = useLangStore()
 const showQuit = ref(false)
-const auth   = useAuthStore()
 const router = useRouter()
+const { recordSession } = useSessionRecorder()
 
 // ── Types ────────────────────────────────────────────────────────────────────
 interface Token { uid: string; display: string; value: string }
@@ -215,26 +215,12 @@ function restart() {
 
 // ── TTS ───────────────────────────────────────────────────────────────────────
 function speak() {
-  const u = new SpeechSynthesisUtterance(current.value.example_sentence ?? current.value.term)
-  u.lang = store.currentLang?.voice_locale ?? 'fr-FR'
-  speechSynthesis.speak(u)
+  speakText(current.value.example_sentence ?? current.value.term, store.currentLang?.voice_locale ?? 'fr-FR')
 }
 
 // ── XP save ───────────────────────────────────────────────────────────────────
 watch(done, (val) => {
-  if (!val || !auth.user || !store.currentLang || !store.currentTheme) return
-  const t  = total.value
-  const xp = calcXp('sentence-builder', score.value, t)
-  postSession({
-    language:  store.currentLang.code,
-    theme:     store.currentTheme.key,
-    level:     store.currentLevel,
-    mode:      'sentence-builder',
-    score:     Math.round(score.value / t * 100),
-    xp_gained: xp,
-    correct:   score.value,
-    total:     t,
-  })
+  if (val) void recordSession('sentence-builder', score.value, total.value)
 })
 
 // ── Mount ─────────────────────────────────────────────────────────────────────

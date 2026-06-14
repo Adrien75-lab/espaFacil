@@ -68,14 +68,14 @@
               :key="j"
               class="word-wrap"
             >{{ j > 0 && !tok.punct ? ' ' : '' }}<span
-                v-if="!tok.punct"
-                class="word"
-                :class="{ highlighted: activeWord?.sentIdx === i && activeWord?.tokIdx === j }"
-                @click.stop="openWord(tok, i, j, $event)"
-              >{{ tok.text }}</span><span
-                v-else
-                class="punct"
-              >{{ tok.text }}</span></span>
+              v-if="!tok.punct"
+              class="word"
+              :class="{ highlighted: activeWord?.sentIdx === i && activeWord?.tokIdx === j }"
+              @click.stop="openWord(tok, i, j, $event)"
+            >{{ tok.text }}</span><span
+              v-else
+              class="punct"
+            >{{ tok.text }}</span></span>
           </p>
         </TransitionGroup>
 
@@ -176,8 +176,7 @@ import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import ConfirmQuit from '@/components/ConfirmQuit.vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
-import { useAuthStore } from '@/stores/auth'
-import { postSession, calcXp } from '@/api/progress'
+import { useSessionRecorder } from '@/composables/useSessionRecorder'
 
 interface StoryToken  { text: string; fr?: string; punct?: boolean }
 interface QcmOption   { text: string }
@@ -188,9 +187,9 @@ interface Story {
 }
 
 const store    = useLangStore()
-const auth     = useAuthStore()
 const router   = useRouter()
 const showQuit = ref(false)
+const { recordSession } = useSessionRecorder()
 
 const loading       = ref(true)
 const stories       = ref<Story[]>([])
@@ -353,19 +352,7 @@ function nextQcm() {
       showConfetti.value = true
       setTimeout(() => { showConfetti.value = false }, 4000)
     }
-    if (auth.user && store.currentLang) {
-      const xp = calcXp('stories', qcmScore.value, questions.value.length)
-      postSession({
-        language:  store.currentLang.code,
-        theme:     store.currentTheme?.key ?? 'general',
-        level:     store.currentLevel,
-        mode:      'stories',
-        score:     Math.round(qcmScore.value / Math.max(questions.value.length, 1) * 100),
-        xp_gained: xp,
-        correct:   qcmScore.value,
-        total:     questions.value.length,
-      })
-    }
+    void recordSession('stories', qcmScore.value, questions.value.length, 'general')
     return
   }
   qcmIndex.value++

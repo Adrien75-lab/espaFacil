@@ -71,13 +71,12 @@
 import { ref, computed, onMounted, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
-import { useAuthStore } from '@/stores/auth'
-import { postSession, calcXp } from '@/api/progress'
+import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import type { Word } from '@/types'
 
 const store  = useLangStore()
-const auth   = useAuthStore()
 const router = useRouter()
+const { recordSession } = useSessionRecorder()
 
 interface Card {
   uid:     string   // unique per card instance
@@ -165,22 +164,12 @@ function restart() {
 
 // XP when done
 watch(done, (val) => {
-  if (!val || !auth.user || !store.currentLang || !store.currentTheme) return
+  if (!val) return
   const total  = pairsCount.value
   const errors = mistakes.value
   // Treat "correct" inversely to mistakes: max correct = total, lose 1 per mistake
   const correct = Math.max(0, total - errors)
-  const xp = calcXp('paires', correct, total)
-  postSession({
-    language:  store.currentLang.code,
-    theme:     store.currentTheme.key,
-    level:     store.currentLevel,
-    mode:      'paires',
-    score:     Math.round(correct / total * 100),
-    xp_gained: xp,
-    correct,
-    total,
-  })
+  void recordSession('paires', correct, total)
 })
 
 onMounted(async () => {
@@ -256,4 +245,23 @@ onMounted(async () => {
 
 /* Results */
 .results { text-align: center; padding: 3rem 1rem; }
-.results-emoji
+.results-emoji { font-size: 3rem; margin-bottom: .5rem; }
+.score-text { color: var(--muted); margin-bottom: 1.5rem; }
+.results-actions { display: flex; justify-content: center; gap: .75rem; flex-wrap: wrap; }
+.btn-primary, .btn-secondary { border-radius: 8px; padding: .65rem 1.4rem; font-weight: 700; cursor: pointer; }
+.btn-primary { background: var(--accent); color: white; border: 0; }
+.btn-secondary { background: var(--bg-card); color: var(--text); border: 2px solid var(--border); }
+
+.matched-list { margin: 1.25rem auto 0; max-width: 480px; }
+.matched-title { color: var(--muted); font-size: .88rem; margin-bottom: .5rem; }
+.matched-item { display: flex; align-items: center; justify-content: center; gap: .5rem; padding: .3rem; font-size: .88rem; }
+.matched-term { color: var(--text); font-weight: 700; }
+.matched-sep { color: var(--muted); }
+.matched-tr { color: #4ade80; }
+
+@media (max-width: 560px) {
+  .grid.cols-3, .grid.cols-4 { grid-template-columns: repeat(2, 1fr); }
+  .game-header { gap: .5rem; }
+  .mode-badge { display: none; }
+}
+</style>

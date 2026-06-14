@@ -107,21 +107,29 @@
         <div class="radar-wrap">
           <svg viewBox="0 0 260 260" class="radar-svg">
             <!-- Grilles -->
-            <polygon v-for="r in [0.25, 0.5, 0.75, 1]" :key="r"
-              :points="radarGrid(r)" fill="none" stroke="var(--border)" stroke-width="1"/>
+            <polygon
+              v-for="r in [0.25, 0.5, 0.75, 1]" :key="r"
+              :points="radarGrid(r)" fill="none" stroke="var(--border)" stroke-width="1"
+            />
             <!-- Axes -->
-            <line v-for="a in radarAxes" :key="a.label"
+            <line
+              v-for="a in radarAxes" :key="a.label"
               x1="130" y1="130" :x2="a.x2" :y2="a.y2"
-              stroke="var(--border)" stroke-width="1"/>
+              stroke="var(--border)" stroke-width="1"
+            />
             <!-- Labels -->
-            <text v-for="a in radarAxes" :key="'l'+a.label"
+            <text
+              v-for="a in radarAxes" :key="'l'+a.label"
               :x="a.lx" :y="a.ly" text-anchor="middle" dominant-baseline="middle"
-              class="radar-label">{{ a.label }}</text>
+              class="radar-label"
+            >{{ a.label }}</text>
             <!-- Données -->
-            <polygon :points="radarData" fill="#6366f130" stroke="#6366f1" stroke-width="2"/>
+            <polygon :points="radarData" fill="#6366f130" stroke="#6366f1" stroke-width="2" />
             <!-- Points -->
-            <circle v-for="(pt, i) in radarPoints" :key="i"
-              :cx="pt.x" :cy="pt.y" r="3" fill="#6366f1"/>
+            <circle
+              v-for="(pt, i) in radarPoints" :key="i"
+              :cx="pt.x" :cy="pt.y" r="3" fill="#6366f1"
+            />
           </svg>
         </div>
       </section>

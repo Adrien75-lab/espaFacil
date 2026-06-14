@@ -6,7 +6,7 @@
       <div class="unsupported-icon">🎙️</div>
       <h2>Micro non disponible</h2>
       <p>Ton navigateur ne supporte pas la reconnaissance vocale.<br>
-         Essaie Chrome (desktop ou Android).</p>
+        Essaie Chrome (desktop ou Android).</p>
       <button class="btn-secondary" @click="showQuit = true">← Quitter</button>
     </div>
 
@@ -22,11 +22,13 @@
       <!-- Jauge score global -->
       <div class="gauge-wrap">
         <svg viewBox="0 0 120 70" class="gauge-svg">
-          <path d="M10,60 A50,50 0 0,1 110,60" fill="none" stroke="var(--border)" stroke-width="10" stroke-linecap="round"/>
-          <path d="M10,60 A50,50 0 0,1 110,60" fill="none"
+          <path d="M10,60 A50,50 0 0,1 110,60" fill="none" stroke="var(--border)" stroke-width="10" stroke-linecap="round" />
+          <path
+            d="M10,60 A50,50 0 0,1 110,60" fill="none"
             :stroke="avgSim >= 80 ? '#22c55e' : avgSim >= 55 ? '#f59e0b' : '#ef4444'"
             stroke-width="10" stroke-linecap="round"
-            :stroke-dasharray="`${avgSim * 1.571} 200`"/>
+            :stroke-dasharray="`${avgSim * 1.571} 200`"
+          />
           <text x="60" y="58" text-anchor="middle" class="gauge-pct">{{ avgSim }}%</text>
           <text x="60" y="68" text-anchor="middle" class="gauge-label">score moyen</text>
         </svg>
@@ -89,13 +91,17 @@
         <!-- Jauge similarité -->
         <div v-if="answered" class="sim-gauge">
           <div class="sim-bar">
-            <div class="sim-fill"
+            <div
+              class="sim-fill"
               :class="isCorrect ? 'sim-ok' : similarity >= 60 ? 'sim-close' : 'sim-bad'"
-              :style="{ width: similarity + '%' }">
+              :style="{ width: similarity + '%' }"
+            >
             </div>
           </div>
-          <span class="sim-pct"
-            :class="isCorrect ? 'sim-ok' : similarity >= 60 ? 'sim-close' : 'sim-bad'">
+          <span
+            class="sim-pct"
+            :class="isCorrect ? 'sim-ok' : similarity >= 60 ? 'sim-close' : 'sim-bad'"
+          >
             {{ similarity }}%
           </span>
         </div>
@@ -114,7 +120,7 @@
       <button v-if="!answered" class="btn-skip" @click="skip">Passer →</button>
     </div>
   </div>
-    <ConfirmQuit v-if="showQuit" @cancel="showQuit = false" @confirm="router.push('/')" />
+  <ConfirmQuit v-if="showQuit" @cancel="showQuit = false" @confirm="router.push('/')" />
 </template>
 
 <script setup lang="ts">
@@ -123,14 +129,16 @@ import ConfirmQuit from '@/components/ConfirmQuit.vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
-import { postSession, calcXp } from '@/api/progress'
+import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { postReview } from '@/api/reviews'
+import { normalizeText, similarity as textSimilarity } from '@/utils/textMatching'
 import type { Word } from '@/types'
 
 const store  = useLangStore()
 const showQuit = ref(false)
 const auth   = useAuthStore()
 const router = useRouter()
+const { recordSession } = useSessionRecorder()
 
 // SpeechRecognition — préfixe webkit pour Chrome/Safari mobile
 const SR = (window as any).SpeechRecognition ?? (window as any).webkitSpeechRecognition
@@ -159,33 +167,6 @@ const avgSim    = computed(() => {
   return Math.round(wordResults.value.reduce((s, r) => s + r.sim, 0) / wordResults.value.length)
 })
 
-/** Normalise : minuscules, sans accents, sans ponctuation */
-function normalize(s: string): string {
-  return s
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .replace(/[^a-z0-9Ѐ-ӿ一-鿿぀-ヿ가-힯؀-ۿ\s]/g, '')
-    .trim()
-}
-
-/** Distance de Levenshtein → similarité % */
-function levenshteinSimilarity(a: string, b: string): number {
-  if (!a || !b) return 0
-  if (a === b) return 100
-  const la = a.length, lb = b.length
-  const dp: number[][] = Array.from({ length: la + 1 }, (_, i) =>
-    Array.from({ length: lb + 1 }, (_, j) => (i === 0 ? j : j === 0 ? i : 0))
-  )
-  for (let i = 1; i <= la; i++)
-    for (let j = 1; j <= lb; j++)
-      dp[i][j] = a[i-1] === b[j-1]
-        ? dp[i-1][j-1]
-        : 1 + Math.min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1])
-  const dist = dp[la][lb]
-  return Math.round((1 - dist / Math.max(la, lb)) * 100)
-}
-
 function startRecognition() {
   if (!SR || recording.value) return
   micError.value = false
@@ -203,12 +184,12 @@ function startRecognition() {
     for (let i = 0; i < e.results[0].length; i++) {
       results.push(e.results[0][i].transcript)
     }
-    const target = normalize(current.value.term)
+    const target = normalizeText(current.value.term)
     // Prend le meilleur score parmi les alternatives
     let best = 0
     let bestHeard = results[0]
     for (const r of results) {
-      const sim = levenshteinSimilarity(normalize(r), target)
+      const sim = Math.round(textSimilarity(r, target) * 100)
       if (sim > best) { best = sim; bestHeard = r }
     }
     heard.value = bestHeard
@@ -276,19 +257,7 @@ function stopAndQuit() {
 }
 
 watch(done, (val) => {
-  if (!val || !auth.user || !store.currentLang || !store.currentTheme) return
-  const t  = total.value
-  const xp = calcXp('speak', score.value, t)
-  postSession({
-    language:  store.currentLang.code,
-    theme:     store.currentTheme.key,
-    level:     store.currentLevel,
-    mode:      'speak',
-    score:     avgSim.value,
-    xp_gained: xp,
-    correct:   score.value,
-    total:     t,
-  })
+  if (val) void recordSession('speak', score.value, total.value)
 })
 
 onMounted(async () => {

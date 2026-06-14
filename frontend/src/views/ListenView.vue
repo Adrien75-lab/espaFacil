@@ -64,7 +64,7 @@
       </div>
     </div>
   </div>
-    <ConfirmQuit v-if="showQuit" @cancel="showQuit = false" @confirm="router.push('/')" />
+  <ConfirmQuit v-if="showQuit" @cancel="showQuit = false" @confirm="router.push('/')" />
 </template>
 
 <script setup lang="ts">
@@ -73,7 +73,7 @@ import ConfirmQuit from '@/components/ConfirmQuit.vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
-import { postSession, calcXp } from '@/api/progress'
+import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { postReview } from '@/api/reviews'
 import type { Word } from '@/types'
 
@@ -81,6 +81,7 @@ const store  = useLangStore()
 const showQuit = ref(false)
 const auth   = useAuthStore()
 const router = useRouter()
+const { recordSession } = useSessionRecorder()
 
 const cards    = ref<Word[]>([])
 const idx      = ref(0)
@@ -148,19 +149,7 @@ function restart() {
 }
 
 watch(done, (val) => {
-  if (!val || !auth.user || !store.currentLang || !store.currentTheme) return
-  const t  = total.value
-  const xp = calcXp('quiz', score.value, t) // même barème que quiz
-  postSession({
-    language:  store.currentLang.code,
-    theme:     store.currentTheme.key,
-    level:     store.currentLevel,
-    mode:      'quiz',
-    score:     Math.round(score.value / t * 100),
-    xp_gained: xp,
-    correct:   score.value,
-    total:     t,
-  })
+  if (val) void recordSession('listen', score.value, total.value)
 })
 
 onMounted(async () => {

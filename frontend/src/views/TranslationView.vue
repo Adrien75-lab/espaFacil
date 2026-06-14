@@ -12,10 +12,11 @@
     </div>
 
     <!-- Session terminée -->
-    <div v-else-if="done" class="results">
-      <div class="results-emoji">{{ score === cards.length ? '🏆' : score >= cards.length * 0.7 ? '🎉' : '💪' }}</div>
-      <h2>Session terminée !</h2>
-      <p class="score-text">{{ score }} / {{ cards.length }} correctes</p>
+    <ExerciseResults
+      v-else-if="done"
+      :emoji="score === cards.length ? '🏆' : score >= cards.length * 0.7 ? '🎉' : '💪'"
+      :score-label="`${score} / ${cards.length} correctes`"
+    >
       <div class="result-list">
         <div
           v-for="(r, i) in results"
@@ -30,23 +31,16 @@
           <span v-if="r.status !== 'correct'" class="r-correct">{{ r.correctAnswer }}</span>
         </div>
       </div>
-      <div class="results-actions">
+      <template #actions>
         <button class="btn-primary" @click="restart">🔁 Recommencer</button>
         <button class="btn-secondary" @click="router.push('/')">🏠 Accueil</button>
-      </div>
-    </div>
+      </template>
+    </ExerciseResults>
 
     <!-- Carte active -->
     <div v-else class="card-screen">
-      <div class="quiz-header">
-        <button class="btn-back" @click="showQuit = true">← Quitter</button>
-        <span class="mode-label">✍️ Traduction</span>
-        <span class="counter">{{ idx + 1 }} / {{ cards.length }}</span>
-      </div>
-
-      <div class="progress-bar">
-        <div class="progress-fill" :style="{ width: (idx / cards.length * 100) + '%' }"></div>
-      </div>
+      <ExerciseHeader label="✍️ Traduction" :current="idx + 1" :total="cards.length" @quit="showQuit = true" />
+      <ExerciseProgress :current="idx" :total="cards.length" />
 
       <!-- Mot à traduire -->
       <div class="word-block">
@@ -100,14 +94,20 @@ import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
 import ConfirmQuit from '@/components/ConfirmQuit.vue'
-import { postSession, calcXp } from '@/api/progress'
+import ExerciseHeader from '@/components/exercise/ExerciseHeader.vue'
+import ExerciseProgress from '@/components/exercise/ExerciseProgress.vue'
+import ExerciseResults from '@/components/exercise/ExerciseResults.vue'
 import { postReview } from '@/api/reviews'
+import { useSessionRecorder } from '@/composables/useSessionRecorder'
+import { evaluateAnswer } from '@/utils/textMatching'
+import { speakText } from '@/utils/speech'
 import type { Word } from '@/types'
 
 const store    = useLangStore()
 const auth     = useAuthStore()
 const router   = useRouter()
 const showQuit = ref(false)
+const { recordSession } = useSessionRecorder()
 
 // ─── données ───
 const cards     = ref<Word[]>([])
@@ -130,25 +130,6 @@ interface Result {
 }
 const results = ref<Result[]>([])
 
-// ─── Levenshtein ───
-function levenshtein(a: string, b: string): number {
-  const m = a.length, n = b.length
-  const dp: number[][] = Array.from({ length: m + 1 }, (_, i) =>
-    Array.from({ length: n + 1 }, (_, j) => (i === 0 ? j : j === 0 ? i : 0))
-  )
-  for (let i = 1; i <= m; i++)
-    for (let j = 1; j <= n; j++)
-      dp[i][j] = a[i - 1] === b[j - 1]
-        ? dp[i - 1][j - 1]
-        : 1 + Math.min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1])
-  return dp[m][n]
-}
-
-function normalize(s: string) {
-  return s.trim().toLowerCase()
-    .normalize('NFD').replace(/[̀-ͯ]/g, '') // strip accents for comparison
-}
-
 // ─── feedback ───
 const feedbackStatus = ref<'correct' | 'close' | 'wrong'>('correct')
 const feedbackMsg    = ref('')
@@ -156,21 +137,14 @@ const feedbackMsg    = ref('')
 function validate() {
   if (answered.value || !userInput.value.trim()) return
 
-  const user    = normalize(userInput.value)
-  const correct = normalize(current.value.translation_fr)
-  const dist    = levenshtein(user, correct)
-
-  let status: 'correct' | 'close' | 'wrong'
-  if (dist === 0) {
-    status = 'correct'
+  const status = evaluateAnswer(userInput.value, current.value.translation_fr)
+  if (status === 'correct') {
     feedbackMsg.value = 'Parfait !'
     score.value++
-  } else if (dist <= 2 && user.length >= 3) {
-    status = 'close'
+  } else if (status === 'close') {
     feedbackMsg.value = `Presque ! (faute de frappe ?)`
-    score.value++  // compté comme correct
+    score.value++
   } else {
-    status = 'wrong'
     feedbackMsg.value = 'Incorrect'
   }
 
@@ -210,25 +184,11 @@ function restart() {
 }
 
 function speak() {
-  const utter = new SpeechSynthesisUtterance(current.value.term)
-  utter.lang = store.currentLang?.voice_locale ?? 'fr-FR'
-  speechSynthesis.speak(utter)
+  speakText(current.value.term, store.currentLang?.voice_locale ?? 'fr-FR')
 }
 
 watch(done, (val) => {
-  if (!val || !auth.user || !store.currentLang || !store.currentTheme) return
-  const total = cards.value.length
-  const xp    = calcXp('quiz', score.value, total)
-  postSession({
-    language:  store.currentLang.code,
-    theme:     store.currentTheme.key,
-    level:     store.currentLevel,
-    mode:      'quiz',
-    score:     Math.round(score.value / total * 100),
-    xp_gained: xp,
-    correct:   score.value,
-    total,
-  })
+  if (val) void recordSession('traduction', score.value, cards.value.length)
 })
 
 onMounted(async () => {
@@ -242,13 +202,6 @@ onMounted(async () => {
 .transl-wrap { max-width: 560px; margin: 0 auto; padding: 1.5rem 1rem; }
 .loader, .empty { text-align: center; color: var(--muted); margin-top: 4rem; }
 .btn-back { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 0.9rem; }
-
-.quiz-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem; }
-.mode-label  { color: var(--muted2); font-size: 0.88rem; }
-.counter     { color: var(--muted2); font-size: 0.9rem; }
-
-.progress-bar  { height: 6px; background: var(--border); border-radius: 3px; margin-bottom: 1.5rem; overflow: hidden; }
-.progress-fill { height: 100%; background: var(--accent); border-radius: 3px; transition: width .3s; }
 
 .word-block  { text-align: center; margin-bottom: 1.25rem; }
 .word-term   { font-size: 2.2rem; font-weight: 700; color: var(--text); }
@@ -288,11 +241,6 @@ onMounted(async () => {
 .btn-next:hover { opacity: 0.88; }
 
 /* Résultats */
-.results { text-align: center; }
-.results-emoji { font-size: 3rem; margin-bottom: 0.5rem; }
-h2 { margin-bottom: 0.25rem; }
-.score-text { color: var(--muted); margin-bottom: 1.25rem; }
-
 .result-list { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 1.5rem; text-align: left; }
 .result-row  { display: flex; align-items: center; gap: 0.5rem; padding: 0.45rem 0.75rem;
   border-radius: 8px; font-size: 0.88rem; flex-wrap: wrap; }
@@ -304,7 +252,6 @@ h2 { margin-bottom: 0.25rem; }
 .r-icon    { }
 .r-correct { color: #4ade80; font-weight: 600; }
 
-.results-actions { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-top: 0.5rem; }
 .btn-primary   { background: var(--accent); color: white; border: none; border-radius: 8px;
   padding: 0.65rem 1.5rem; font-weight: 700; cursor: pointer; }
 .btn-secondary { background: var(--bg-card); border: 2px solid var(--border); color: var(--dim);

@@ -16,7 +16,7 @@ class TodayController extends Controller
      */
     public function index(Request $request): JsonResponse
     {
-        $user  = $request->user();
+        $user = $request->user();
         $today = Carbon::today()->toDateString();
 
         $stats = UserStat::where('user_id', $user->id)->get();
@@ -34,11 +34,11 @@ class TodayController extends Controller
         $goal = $user->daily_goal_xp ?? 50;
 
         return response()->json([
-            'xp_today'      => $xpToday,
-            'daily_goal'    => $goal,
-            'goal_reached'  => $xpToday >= $goal,
-            'streak'        => $currentStreak,
-            'played_today'  => $xpToday > 0,
+            'xp_today' => $xpToday,
+            'daily_goal' => $goal,
+            'goal_reached' => $xpToday >= $goal,
+            'streak' => $currentStreak,
+            'played_today' => $xpToday > 0,
         ]);
     }
 
@@ -59,18 +59,27 @@ class TodayController extends Controller
 
     private function computeStreak(array $days): int
     {
-        if (empty($days)) return 0;
-        $today     = Carbon::today()->toDateString();
+        if (empty($days)) {
+            return 0;
+        }
+        $today = Carbon::today()->toDateString();
         $yesterday = Carbon::yesterday()->toDateString();
-        $latest    = end($days);
-        if ($latest !== $today && $latest !== $yesterday) return 0;
-        $streak  = 1;
+        $latest = end($days);
+        if ($latest !== $today && $latest !== $yesterday) {
+            return 0;
+        }
+        $streak = 1;
         $current = Carbon::parse($latest);
         for ($i = count($days) - 2; $i >= 0; $i--) {
             $prev = Carbon::parse($days[$i]);
-            if ($current->diffInDays($prev) === 1) { $streak++; $current = $prev; }
-            else break;
+            if ($current->diffInDays($prev) === 1) {
+                $streak++;
+                $current = $prev;
+            } else {
+                break;
+            }
         }
+
         return $streak;
     }
 }

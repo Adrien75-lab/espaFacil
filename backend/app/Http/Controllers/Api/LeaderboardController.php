@@ -22,16 +22,16 @@ class LeaderboardController extends Controller
             ->limit(20)
             ->get()
             ->map(fn ($row, $i) => [
-                'rank'     => $i + 1,
-                'id'       => $row->id,
-                'name'     => $row->name,
+                'rank' => $i + 1,
+                'id' => $row->id,
+                'name' => $row->name,
                 'total_xp' => (int) $row->total_xp,
             ]);
 
         // Rank of the authenticated user (if any)
         $myRank = null;
-        $myXp   = null;
-        $user   = $request->user();
+        $myXp = null;
+        $user = $request->user();
 
         if ($user) {
             $myXp = (int) UserStat::where('user_id', $user->id)->sum('xp');
@@ -48,8 +48,8 @@ class LeaderboardController extends Controller
 
         return response()->json([
             'leaderboard' => $top,
-            'my_rank'     => $myRank,
-            'my_xp'       => $myXp,
+            'my_rank' => $myRank,
+            'my_xp' => $myXp,
         ]);
     }
 }

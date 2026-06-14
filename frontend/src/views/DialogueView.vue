@@ -120,28 +120,17 @@ import { ref, computed, watch, nextTick, onMounted } from 'vue'
 import ConfirmQuit from '@/components/ConfirmQuit.vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
-import { useAuthStore } from '@/stores/auth'
-import { postSession, calcXp } from '@/api/progress'
-
-// ─── Types ────────────────────────────────────────────────────────────────────
-
-interface DialogueOption { text: string; fr: string }
-interface DialogueLine   { type: 'line';   speaker: 'A' | 'B'; text: string; fr: string }
-interface DialogueChoice { type: 'choice'; text: string; fr: string; options: DialogueOption[]; correctIndex: number }
-type DialogueStep = DialogueLine | DialogueChoice
-
-interface Dialogue {
-  id: string; emoji: string; title: string; title_fr: string
-  steps: DialogueStep[]
-}
+import { useSessionRecorder } from '@/composables/useSessionRecorder'
+import { getDialogues } from '@/api/content'
+import type { Dialogue, DialogueChoice } from '@/types'
 
 // ─── State ────────────────────────────────────────────────────────────────────
 
 const store    = useLangStore()
-const auth     = useAuthStore()
 const router   = useRouter()
 const route    = useRoute()
 const showQuit = ref(false)
+const { recordSession } = useSessionRecorder()
 
 const loading       = ref(true)
 const scenarios     = ref<Dialogue[]>([])
@@ -196,8 +185,7 @@ function speak(text: string) {
 async function loadDialogues() {
   loading.value = true
   try {
-    const res = await fetch(`/api/dialogues?lang=${langCode.value}`)
-    if (res.ok) scenarios.value = await res.json()
+    scenarios.value = await getDialogues(langCode.value)
   } catch { /* réseau indispo — liste vide */ }
   loading.value = false
 }
@@ -318,18 +306,7 @@ watch(done, (val) => {
     showConfetti.value = true
     setTimeout(() => { showConfetti.value = false }, 4000)
   }
-  if (!auth.user || !store.currentLang) return
-  const xp = calcXp('dialogue', score.value, totalChoices.value)
-  postSession({
-    language:  store.currentLang.code,
-    theme:     store.currentTheme?.key ?? 'general',
-    level:     store.currentLevel,
-    mode:      'dialogue',
-    score:     Math.round(score.value / Math.max(totalChoices.value, 1) * 100),
-    xp_gained: xp,
-    correct:   score.value,
-    total:     totalChoices.value,
-  })
+  void recordSession('dialogue', score.value, totalChoices.value, 'general')
 })
 </script>
 

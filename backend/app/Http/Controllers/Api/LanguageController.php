@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
@@ -18,14 +19,20 @@ class LanguageController extends Controller
     public function show(string $code): LanguageResource|JsonResponse
     {
         $lang = Language::with('themes')->where('code', $code)->first();
-        if (!$lang) return response()->json(['error' => 'Language not found'], 404);
+        if (! $lang) {
+            return response()->json(['error' => 'Language not found'], 404);
+        }
+
         return new LanguageResource($lang);
     }
 
     public function themes(string $code): AnonymousResourceCollection|JsonResponse
     {
         $lang = Language::where('code', $code)->first();
-        if (!$lang) return response()->json(['error' => 'Language not found'], 404);
+        if (! $lang) {
+            return response()->json(['error' => 'Language not found'], 404);
+        }
+
         return ThemeResource::collection($lang->themes);
     }
 }

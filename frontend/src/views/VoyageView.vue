@@ -181,9 +181,6 @@ const ALL_TASKS: Task[] = [
 // Phases du programme selon le nb de jours
 const phases = computed(() => {
   const d = daysLeft.value
-  const total = trip.value
-    ? Math.ceil((new Date(trip.value.departureDate + 'T00:00:00').getTime() - new Date(trip.value.departureDate + 'T00:00:00').setDate(1)) / 86400000)
-    : 30
 
   return [
     {

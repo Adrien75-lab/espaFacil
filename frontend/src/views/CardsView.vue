@@ -66,14 +66,16 @@ import { ref, computed, onMounted, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
-import { postSession, calcXp } from '@/api/progress'
+import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { postReview } from '@/api/reviews'
 import ConfirmQuit from '@/components/ConfirmQuit.vue'
+import { speakText } from '@/utils/speech'
 import type { Word } from '@/types'
 
 const store  = useLangStore()
 const auth   = useAuthStore()
 const router = useRouter()
+const { recordSession } = useSessionRecorder()
 
 const cards    = ref<Word[]>([])
 const showQuit = ref(false)
@@ -107,25 +109,11 @@ function restart() {
 }
 
 function speak() {
-  const u = new SpeechSynthesisUtterance(current.value.term)
-  u.lang = store.currentLang?.voice_locale ?? 'fr-FR'
-  speechSynthesis.speak(u)
+  speakText(current.value.term, store.currentLang?.voice_locale ?? 'fr-FR')
 }
 
 watch(done, (val) => {
-  if (!val || !auth.user || !store.currentLang || !store.currentTheme) return
-  const t  = total.value
-  const xp = calcXp('cards', known.value, t)
-  postSession({
-    language:  store.currentLang.code,
-    theme:     store.currentTheme.key,
-    level:     store.currentLevel,
-    mode:      'cards',
-    score:     Math.round(known.value / t * 100),
-    xp_gained: xp,
-    correct:   known.value,
-    total:     t,
-  })
+  if (val) void recordSession('cards', known.value, total.value)
 })
 
 onMounted(async () => {

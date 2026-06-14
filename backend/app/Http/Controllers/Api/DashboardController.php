@@ -25,7 +25,7 @@ class DashboardController extends Controller
             ->where('user_id', $user->id)
             ->get();
 
-        $totalXp       = $stats->sum('xp');
+        $totalXp = $stats->sum('xp');
         $totalSessions = $stats->sum('sessions');
 
         // XP history agrégée (toutes langues, 30 jours)
@@ -51,8 +51,8 @@ class DashboardController extends Controller
         $badges = UserBadge::where('user_id', $user->id)
             ->select('badge_key', 'language_id', 'unlocked_at')
             ->get()
-            ->map(fn($b) => [
-                'key'         => $b->badge_key,
+            ->map(fn ($b) => [
+                'key' => $b->badge_key,
                 'language_id' => $b->language_id,
                 'unlocked_at' => $b->unlocked_at,
             ]);
@@ -71,17 +71,18 @@ class DashboardController extends Controller
         // --- Par langue ---
         $langStats = $stats->map(function ($s) use ($srsStats) {
             $srs = $srsStats->firstWhere('language_code', $s->language->code);
+
             return [
-                'code'          => $s->language->code,
-                'name'          => $s->language->name,
-                'flag'          => $s->language->flag,
-                'xp'            => $s->xp,
-                'sessions'      => $s->sessions,
-                'max_serie'     => $s->max_serie,
-                'current_streak'=> $this->computeStreak($s->activity_days ?? []),
+                'code' => $s->language->code,
+                'name' => $s->language->name,
+                'flag' => $s->language->flag,
+                'xp' => $s->xp,
+                'sessions' => $s->sessions,
+                'max_serie' => $s->max_serie,
+                'current_streak' => $this->computeStreak($s->activity_days ?? []),
                 'activity_days' => $s->activity_days ?? [],
-                'srs_due'       => $srs?->due_count ?? 0,
-                'srs_total'     => $srs?->total_words ?? 0,
+                'srs_due' => $srs?->due_count ?? 0,
+                'srs_total' => $srs?->total_words ?? 0,
             ];
         })->sortByDesc('xp')->values();
 
@@ -94,26 +95,30 @@ class DashboardController extends Controller
         }
 
         return response()->json([
-            'user'           => ['name' => $user->name, 'email' => $user->email],
-            'total_xp'       => $totalXp,
+            'user' => ['name' => $user->name, 'email' => $user->email],
+            'total_xp' => $totalXp,
             'total_sessions' => $totalSessions,
             'current_streak' => $currentStreak,
-            'xp_history'     => $xpHistory,  // [{date, xp}] trié ASC
-            'badges'         => $badges,
-            'languages'      => $langStats,
-            'mode_xp'        => $modeXp,
+            'xp_history' => $xpHistory,  // [{date, xp}] trié ASC
+            'badges' => $badges,
+            'languages' => $langStats,
+            'mode_xp' => $modeXp,
         ]);
     }
 
     private function computeStreak(array $days): int
     {
-        if (empty($days)) return 0;
-        $today     = Carbon::today()->toDateString();
+        if (empty($days)) {
+            return 0;
+        }
+        $today = Carbon::today()->toDateString();
         $yesterday = Carbon::yesterday()->toDateString();
-        $latest    = end($days);
-        if ($latest !== $today && $latest !== $yesterday) return 0;
+        $latest = end($days);
+        if ($latest !== $today && $latest !== $yesterday) {
+            return 0;
+        }
 
-        $streak  = 1;
+        $streak = 1;
         $current = Carbon::parse($latest);
         for ($i = count($days) - 2; $i >= 0; $i--) {
             $prev = Carbon::parse($days[$i]);
@@ -124,6 +129,7 @@ class DashboardController extends Controller
                 break;
             }
         }
+
         return $streak;
     }
 
@@ -135,6 +141,7 @@ class DashboardController extends Controller
             $date = Carbon::today()->subDays($i)->toDateString();
             $result[] = ['date' => $date, 'xp' => $hist[$date] ?? 0];
         }
+
         return $result;
     }
 }

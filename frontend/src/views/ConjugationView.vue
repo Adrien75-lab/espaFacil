@@ -3,7 +3,9 @@
     <ConfirmQuit v-if="showQuit" @cancel="showQuit = false" @confirm="router.push('/')" />
 
     <!-- ── Phase SÉLECTION ── -->
-    <template v-if="phase === 'select'">
+    <div v-if="loading" class="loader">Chargement…</div>
+
+    <template v-else-if="phase === 'select'">
       <button class="btn-back" @click="router.push('/')">← Retour</button>
       <h1>🔀 Conjugaison — {{ langName }}</h1>
 
@@ -138,20 +140,24 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, nextTick } from 'vue'
+import { ref, computed, nextTick, onMounted, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
-import { CONJUGATIONS } from '@/data/conjugations'
 import ConfirmQuit from '@/components/ConfirmQuit.vue'
-import { postSession, calcXp } from '@/api/progress'
+import { useSessionRecorder } from '@/composables/useSessionRecorder'
+import { normalizeText } from '@/utils/textMatching'
+import { getConjugations } from '@/api/content'
+import type { ConjugationVerb } from '@/types'
 
 const router   = useRouter()
 const store    = useLangStore()
 const showQuit = ref(false)
+const { recordSession } = useSessionRecorder()
 
 const langCode = computed(() => store.currentLang?.code ?? 'es')
 const langName = computed(() => store.currentLang?.name ?? 'Espagnol')
-const verbs    = computed(() => CONJUGATIONS[langCode.value] ?? CONJUGATIONS['es'])
+const verbs    = ref<ConjugationVerb[]>([])
+const loading  = ref(true)
 
 const tenseNames = computed(() => {
   const v = verbs.value[0]
@@ -161,6 +167,20 @@ const tenseNames = computed(() => {
 // ─── selection state ───
 const selectedVerbIdx = ref<number | null>(null)
 const selectedTense   = ref<string>('')
+
+async function loadVerbs() {
+  loading.value = true
+  selectedVerbIdx.value = null
+  selectedTense.value = ''
+  phase.value = 'select'
+  try {
+    verbs.value = await getConjugations(langCode.value)
+  } catch {
+    verbs.value = []
+  } finally {
+    loading.value = false
+  }
+}
 
 const currentVerb = computed(() =>
   selectedVerbIdx.value !== null ? verbs.value[selectedVerbIdx.value] : verbs.value[0]
@@ -195,6 +215,9 @@ const resultMessage = computed(() => {
   return 'Courage ! Repassez la fiche et réessayez.'
 })
 
+onMounted(loadVerbs)
+watch(langCode, loadVerbs)
+
 function startQuiz() {
   answers.value    = []
   score.value      = 0
@@ -205,14 +228,10 @@ function startQuiz() {
   nextTick(() => inputRef.value?.focus())
 }
 
-function normalize(s: string) {
-  return s.trim().toLowerCase()
-}
-
 function validate() {
   if (showCorrection.value) return
   const entry   = currentEntry.value
-  const correct = normalize(userInput.value) === normalize(entry.form)
+  const correct = normalizeText(userInput.value) === normalizeText(entry.form)
 
   answers.value.push({ pronoun: entry.pronoun, userAnswer: userInput.value.trim(), correctAnswer: entry.form, correct })
   if (correct) score.value++
@@ -234,10 +253,7 @@ function validate() {
 
 async function finishQuiz() {
   phase.value = 'result'
-  try {
-    const xp = calcXp('quiz', score.value, totalItems.value)
-    await postSession({ mode: 'quiz', correct: score.value, total: totalItems.value, xp, lang: langCode.value })
-  } catch { /* offline */ }
+  await recordSession('conjugaison', score.value, totalItems.value, 'conjugaison')
 }
 
 function restartSame() {
