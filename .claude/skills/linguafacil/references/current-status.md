@@ -1,6 +1,6 @@
 # État courant de LinguaFacil
 
-Dernière vérification : 14 juin 2026, après le correctif des dialogues de la phase 27.
+Dernière vérification : 14 juin 2026, après le correctif des dialogues de la phase 27 et l'ajout de PHPStan/PHPMD sur `claude/optimistic-mendel-yqz0h4`.
 
 ## Dépôt
 
@@ -29,8 +29,30 @@ Dernière vérification : 14 juin 2026, après le correctif des dialogues de la 
 - Basée sur `master` après R1-R5.
 - `b8d62d3` : ajout de 12 scénarios par langue.
 - `6eca10b` : correction pédagogique, chaque nouveau scénario contient désormais 3 QCM au lieu d'un seul.
+- Contient aussi les deux skills `.claude/skills/linguafacil` et `.claude/skills/feature-delivery-workflow`, ainsi que `AGENTS.md`/`CLAUDE.md`.
 - Branche poussée sur `origin` mais pas encore fusionnée dans `master` lors du dernier relevé.
 - Avant de poursuivre, vérifier si une PR a depuis été créée ou fusionnée.
+
+### `claude/optimistic-mendel-yqz0h4`
+
+- Branche basée sur `master` (`ad16b2c`), créée pour une amélioration qualité indépendante de la phase 28.
+- Aucun changement fonctionnel ni de base de données.
+- PHPStan/Larastan installés et configurés :
+  - `larastan/larastan ^3.0` en dépendance dev de `backend/composer.json`.
+  - `backend/phpstan.neon.dist` : niveau 5, analyse `app`, `routes`, `database/seeders`.
+  - Script `composer analyse` ; étape ajoutée dans `.github/workflows/ci.yml`.
+  - Tous les modèles Eloquent ont reçu des blocs `@property` et des génériques de relation (`@return HasMany<X, $this>` / `@return BelongsTo<X, $this>`).
+  - Les Resources (`WordResource`, `ThemeResource`, `LanguageResource`, `GrammarTipResource`) ont un `@mixin` vers leur modèle.
+  - Bug corrigé : `mode_xp` sur `UserStat` n'avait pas de cast `array`.
+  - Comparaisons strictes `=== 1` sur `diffInDays()` (float) corrigées par un cast `(int)` dans `DashboardController`, `ProgressController`, `TodayController`.
+  - `composer analyse` → 0 erreur ; `php artisan test` → 5/5 ; `vendor/bin/pint --test` → OK.
+- PHPMD installé et configuré :
+  - Isolé dans `backend/tools/phpmd/` (son propre `composer.json`/`composer.lock`, `vendor` non versionné) car PHPMD 2.x est incompatible avec Symfony 8 (Laravel 13).
+  - `backend/phpmd.xml.dist` : règles `codesize`, `design`, `naming` (sans `ShortVariable`), `unusedcode` (sans `UnusedFormalParameter`), périmètre `app` et `routes` (les seeders de données sont exclus).
+  - Script `composer mess-detect` ; étape ajoutée dans la CI (avec `composer install` dans `tools/phpmd` au préalable).
+  - `composer mess-detect` → 0 violation sur `app`/`routes`.
+- A reçu une copie des deux skills (`linguafacil`, `feature-delivery-workflow`) et de `AGENTS.md`/`CLAUDE.md` depuis `codex/2026-06-14-phase-27-dialogues`, en attendant la fusion de cette dernière dans `master`.
+- Avant de repartir sur la phase 28 : fusionner (ou rebaser sur) cette branche pour récupérer la configuration PHPStan/PHPMD, sinon `composer analyse` et `composer mess-detect` n'existeront pas encore.
 
 ## Phases fonctionnelles récentes
 

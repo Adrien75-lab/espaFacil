@@ -123,10 +123,23 @@ Backend :
 ```powershell
 cd backend
 vendor\bin\pint --test app routes tests database\migrations database\seeders
+composer analyse        # PHPStan/Larastan, niveau 5, sur app/routes/database/seeders
+cd tools\phpmd
+composer install        # une seule fois, installe PHPMD dans son propre vendor isolé
+cd ..
+composer mess-detect    # PHPMD (codesize/design/naming/unusedcode) sur app/routes
 php artisan test
 ```
 
 CI GitHub exécute ces validations sur push et pull request.
+
+### Qualité statique (PHPStan/Larastan et PHPMD)
+
+- Config PHPStan : `backend/phpstan.neon.dist` (niveau 5, périmètre `app`, `routes`, `database/seeders`).
+- Toute nouvelle relation Eloquent doit avoir un `@return BelongsTo<Model, $this>` / `@return HasMany<Model, $this>` etc., et tout nouveau modèle un bloc `@property` à jour avec ses colonnes (voir les modèles existants pour le style).
+- Toute nouvelle `JsonResource` doit avoir une annotation `@mixin App\Models\NomDuModele`.
+- Config PHPMD : `backend/phpmd.xml.dist`. PHPMD est installé à part dans `backend/tools/phpmd/` (son propre `composer.json`/`vendor`, non versionné) car `phpmd/phpmd` 2.x est incompatible avec Symfony 8 (requis par Laravel 13). Lancer `composer install` dans ce dossier avant le premier `composer mess-detect`.
+- Si `composer analyse` ou `composer mess-detect` échouent, corrige la cause réelle (types, complexité, taille de méthode) — ne pas ajouter `@phpstan-ignore`, de baseline, ni d'exclusion de règle PHPMD sans accord explicite d'Adrien.
 
 ## Commit et push
 
