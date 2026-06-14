@@ -1,21 +1,21 @@
 # État courant de LinguaFacil
 
-Dernière vérification : 14 juin 2026, après la fusion de la PR GitHub no 2 (PHPStan/PHPMD) dans `master`.
+Dernière vérification : 14 juin 2026, après la fusion de la PR GitHub no 2 (PHPStan/PHPMD) et de la PR no 3 (phase 27, dialogues) dans `master`.
 
 ## Dépôt
 
 - Chemin : `C:\Users\adric\Claude\Projects\Website-Project`
 - Dépôt GitHub : `Adrien75-lab/espaFacil`
 - Branche stable locale et distante : `master`
-- Commit stable observé : `334bd10 Merge pull request #2 from Adrien75-lab/claude/optimistic-mendel-yqz0h4`
+- Commit stable observé : `9a6bad78 Merge pull request #3 from Adrien75-lab/codex/2026-06-14-phase-27-dialogues`
 - `AGENTS.md` et `CLAUDE.md` sont désormais suivis et présents sur `master`.
 
 ## Branches importantes
 
 ### `master`
 
-- Pointe sur `334bd10` lors du dernier relevé.
-- Contient les phases jusqu'à la phase 26, la refonte R1-R5, ainsi que PHPStan/Larastan et PHPMD (PR no 2).
+- Pointe sur `9a6bad78` lors du dernier relevé.
+- Contient les phases jusqu'à la phase 26, la refonte R1-R5, PHPStan/Larastan et PHPMD (PR no 2), ainsi que la phase 27 - dialogues enrichis (PR no 3, 280 dialogues, 20 par langue x 14 langues).
 - Contient les skills `.claude/skills/linguafacil` et `.claude/skills/feature-delivery-workflow`, ainsi que `AGENTS.md`/`CLAUDE.md`.
 - `composer analyse` et `composer mess-detect` sont disponibles (voir détails ci-dessous).
 
@@ -26,11 +26,8 @@ Dernière vérification : 14 juin 2026, après la fusion de la PR GitHub no 2 (P
 
 ### `codex/2026-06-14-phase-27-dialogues`
 
-- Branche de travail pour la phase 27, toujours **non fusionnée** et **sans PR** lors du dernier relevé (7 commits de retard sur `master`, 4 commits d'avance : `b8d62d3`, `6eca10b`, `2e54447`, `30c036e`).
-- `b8d62d3` : ajout de 12 scénarios par langue.
-- `6eca10b` : correction pédagogique, chaque nouveau scénario contient désormais 3 QCM au lieu d'un seul.
-- `2e54447`/`30c036e` : ajout des skills et du workflow (désormais redondants avec `master`, qui les a déjà via la PR no 2).
-- Avant de poursuivre une nouvelle phase fonctionnelle (28) : rebaser cette branche sur `master` à jour (ou la recréer depuis `master`), faire la recette, ouvrir une PR, et la fusionner.
+- Branche de la phase 27, **rebasée sur `master` à jour puis fusionnée via la PR no 3** (commit de fusion `9a6bad78`). Conservée mais n'a plus besoin d'être réutilisée.
+- Contenu : `b8d62d3`/`6eca10b` réécrits en `67000cb`/`c36b37f` après rebase (les commits docs `2e54447`/`30c036e` étaient redondants avec `master` et ont été absorbés/vidés par le rebase).
 
 ### `claude/optimistic-mendel-yqz0h4`
 
@@ -70,7 +67,7 @@ Dernière vérification : 14 juin 2026, après la fusion de la PR GitHub no 2 (P
   - Le seeder a été rendu idempotent et supprime les tables dans l'ordre inverse des clés étrangères.
 - R1-R5 : refonte qualité et architecture, intégrée à `master`.
 - Qualité backend (PHPStan/Larastan + PHPMD) : intégrée à `master` via la PR no 2.
-- Phase 27 : enrichissement des dialogues, toujours en attente de PR et de fusion.
+- Phase 27 : enrichissement des dialogues, intégrée à `master` via la PR no 3.
 
 ## Phase 27 en détail
 
@@ -85,10 +82,10 @@ Dernière vérification : 14 juin 2026, après la fusion de la PR GitHub no 2 (P
 - Le test backend contrôle les 168 nouveaux dialogues et impose 3 QCM pour chacun.
 - Dernière validation : 6 tests PHP, 436 assertions, toutes passantes.
 - Aucune migration n'est nécessaire pour ce correctif.
-- Pour mettre à jour une base locale :
+- Intégrée à `master` (PR no 3). Pour mettre à jour une base locale :
 
 ```powershell
-git switch codex/2026-06-14-phase-27-dialogues
+git switch master
 git pull
 cd backend
 php artisan db:seed --class=DialogueSeeder
@@ -98,7 +95,7 @@ php artisan db:seed --class=DialogueSeeder
 
 - Phase 28 : enrichissement des histoires.
 - Objectif historique : atteindre environ 10 histoires par niveau et par langue.
-- Avant de commencer : vérifier que la phase 27 a été testée, qu'une PR existe ou est fusionnée, puis créer une nouvelle branche depuis `master` à jour :
+- La phase 27 est fusionnée dans `master` (PR no 3) : créer la nouvelle branche depuis `master` à jour :
   `codex/YYYY-MM-DD-phase-28-histoires`.
 - Ne commence pas l'i18n sans accord explicite d'Adrien.
 
