@@ -69,6 +69,7 @@ import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { fetchDifficult, postReview, type ReviewWord } from '@/api/reviews'
+import { speakText } from '@/utils/speech'
 
 const store  = useLangStore()
 const router = useRouter()
@@ -122,9 +123,7 @@ function next() {
 }
 
 function speak() {
-  const u = new SpeechSynthesisUtterance(current.value.term)
-  u.lang = store.currentLang?.voice_locale ?? 'fr-FR'
-  speechSynthesis.speak(u)
+  speakText(current.value.term, store.currentLang?.voice_locale ?? 'fr-FR')
 }
 
 async function reload() {

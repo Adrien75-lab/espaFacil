@@ -1,13 +1,23 @@
 <?php
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class UserBadge extends Model {
-    protected $fillable = ['user_id','language_id','badge_key','unlocked_at'];
-    protected $casts = ['unlocked_at'=>'datetime'];
+class UserBadge extends Model
+{
+    protected $fillable = ['user_id', 'language_id', 'badge_key', 'unlocked_at'];
 
-    public function user(): BelongsTo     { return $this->belongsTo(User::class); }
-    public function language(): BelongsTo { return $this->belongsTo(Language::class); }
+    protected $casts = ['unlocked_at' => 'datetime'];
+
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function language(): BelongsTo
+    {
+        return $this->belongsTo(Language::class);
+    }
 }

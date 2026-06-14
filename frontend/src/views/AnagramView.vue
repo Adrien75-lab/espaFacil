@@ -86,14 +86,13 @@
 import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
-import { useAuthStore } from '@/stores/auth'
-import { postSession, calcXp } from '@/api/progress'
+import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import ConfirmQuit from '@/components/ConfirmQuit.vue'
 import type { Word } from '@/types'
 
 const store  = useLangStore()
-const auth   = useAuthStore()
 const router = useRouter()
+const { recordSession } = useSessionRecorder()
 
 const pool      = ref<Word[]>([])
 const cards     = ref<Word[]>([])
@@ -103,7 +102,6 @@ const done      = ref(false)
 const showQuit  = ref(false)
 
 // Letters state
-const scrambled       = ref<(string | null)[]>([])
 const availableLetters = ref<(string | null)[]>([])
 const answerTiles     = ref<(string | null)[]>([])
 const feedback        = ref<'ok' | 'ko' | null>(null)
@@ -181,19 +179,7 @@ function validate() {
 function next() {
   if (cardIndex.value + 1 >= total.value) {
     done.value = true
-    if (auth.user && store.currentLang && store.currentTheme) {
-      const xp = calcXp('anagram', score.value, total.value)
-      postSession({
-        language:  store.currentLang.code,
-        theme:     store.currentTheme.key,
-        level:     store.currentLevel,
-        mode:      'anagram',
-        score:     Math.round(score.value / total.value * 100),
-        xp_gained: xp,
-        correct:   score.value,
-        total:     total.value,
-      })
-    }
+    void recordSession('anagram', score.value, total.value)
     return
   }
   cardIndex.value++

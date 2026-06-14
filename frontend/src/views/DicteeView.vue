@@ -94,7 +94,7 @@
       </div>
     </div>
   </div>
-    <ConfirmQuit v-if="showQuit" @cancel="showQuit = false" @confirm="router.push('/')" />
+  <ConfirmQuit v-if="showQuit" @cancel="showQuit = false" @confirm="router.push('/')" />
 </template>
 
 <script setup lang="ts">
@@ -103,14 +103,16 @@ import ConfirmQuit from '@/components/ConfirmQuit.vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
-import { postSession, calcXp } from '@/api/progress'
+import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { postReview } from '@/api/reviews'
+import { normalizeText } from '@/utils/textMatching'
 import type { Word } from '@/types'
 
 const store  = useLangStore()
 const showQuit = ref(false)
 const auth   = useAuthStore()
 const router = useRouter()
+const { recordSession } = useSessionRecorder()
 
 const cards         = ref<Word[]>([])
 const idx           = ref(0)
@@ -132,16 +134,6 @@ const feedbackClass = computed(() => {
   if (!answered.value) return ''
   return isCorrect.value ? 'input-correct' : 'input-wrong'
 })
-
-// ── Normalisation pour comparaison souple ────────────────────────────────────
-function normalize(s: string): string {
-  return s
-    .toLowerCase()
-    .normalize('NFD').replace(/[̀-ͯ]/g, '') // retirer les accents
-    .replace(/[.,!?;:¿¡]/g, '')                       // retirer la ponctuation
-    .replace(/\s+/g, ' ')
-    .trim()
-}
 
 // ── TTS ───────────────────────────────────────────────────────────────────────
 function speak(rate = 1) {
@@ -170,7 +162,7 @@ function revealFirst() {
 function validate() {
   if (!userInput.value.trim() || answered.value) return
   const correct  = current.value.example_sentence ?? current.value.term
-  const ok       = normalize(userInput.value) === normalize(correct)
+  const ok       = normalizeText(userInput.value) === normalizeText(correct)
   answered.value = true
   isCorrect.value = ok
   if (ok) score.value++
@@ -202,19 +194,7 @@ function restart() {
 
 // ── XP ────────────────────────────────────────────────────────────────────────
 watch(done, (val) => {
-  if (!val || !auth.user || !store.currentLang || !store.currentTheme) return
-  const t  = total.value
-  const xp = calcXp('dictee', score.value, t)
-  postSession({
-    language:  store.currentLang.code,
-    theme:     store.currentTheme.key,
-    level:     store.currentLevel,
-    mode:      'dictee',
-    score:     Math.round(score.value / t * 100),
-    xp_gained: xp,
-    correct:   score.value,
-    total:     t,
-  })
+  if (val) void recordSession('dictee', score.value, total.value)
 })
 
 // ── Mount ─────────────────────────────────────────────────────────────────────

@@ -1,6 +1,6 @@
 /**
  * generate_seeders.mjs
- * Lit dialogues.ts et stories.ts, génère les seeders PHP Laravel.
+ * Lit stories.ts et génère le seeder PHP Laravel des histoires.
  * Usage : node scripts/generate_seeders.mjs
  */
 
@@ -270,71 +270,6 @@ function getQuestions(storyKey) {
   return QUESTIONS.marche
 }
 
-// ─── Générer DialogueSeeder.php ───────────────────────────────────────────────
-
-function generateDialogueSeeder(dialogues) {
-  const L = []
-  L.push(`<?php`)
-  L.push(`namespace Database\\Seeders;`)
-  L.push(``)
-  L.push(`use Illuminate\\Database\\Seeder;`)
-  L.push(`use Illuminate\\Support\\Facades\\DB;`)
-  L.push(``)
-  L.push(`class DialogueSeeder extends Seeder`)
-  L.push(`{`)
-  L.push(`    public function run(): void`)
-  L.push(`    {`)
-  L.push(`        $driver = DB::connection()->getDriverName();`)
-  L.push(`        if ($driver === 'sqlite') {`)
-  L.push(`            DB::statement('PRAGMA foreign_keys = OFF');`)
-  L.push(`            DB::table('dialogue_steps')->delete();`)
-  L.push(`            DB::table('dialogues')->delete();`)
-  L.push(`            DB::statement('PRAGMA foreign_keys = ON');`)
-  L.push(`        } else {`)
-  L.push(`            DB::statement('SET FOREIGN_KEY_CHECKS=0');`)
-  L.push(`            DB::table('dialogue_steps')->truncate();`)
-  L.push(`            DB::table('dialogues')->truncate();`)
-  L.push(`            DB::statement('SET FOREIGN_KEY_CHECKS=1');`)
-  L.push(`        }`)
-  L.push(``)
-  L.push(`        $now = now();`)
-  L.push(``)
-
-  for (const [lang, scenarios] of Object.entries(dialogues)) {
-    L.push(`        // ── ${lang.toUpperCase()} ──`)
-    scenarios.forEach((scenario, sortOrder) => {
-      L.push(`        $dialogue = DB::table('dialogues')->insertGetId([`)
-      L.push(`            'lang'         => '${esc(lang)}',`)
-      L.push(`            'scenario_key' => '${esc(scenario.id)}',`)
-      L.push(`            'emoji'        => '${esc(scenario.emoji)}',`)
-      L.push(`            'title'        => '${esc(scenario.title)}',`)
-      L.push(`            'title_fr'     => '${esc(scenario.title_fr)}',`)
-      L.push(`            'sort_order'   => ${sortOrder},`)
-      L.push(`            'created_at'   => $now,`)
-      L.push(`            'updated_at'   => $now,`)
-      L.push(`        ]);`)
-
-      if (scenario.steps && scenario.steps.length) {
-        L.push(`        DB::table('dialogue_steps')->insert([`)
-        scenario.steps.forEach((step, pos) => {
-          if (step.type === 'line') {
-            L.push(`            ['dialogue_id'=>$dialogue,'position'=>${pos},'type'=>'line','speaker'=>'${esc(step.speaker)}','text'=>'${esc(step.text)}','fr'=>'${esc(step.fr)}','options'=>null,'correct_index'=>null,'created_at'=>$now,'updated_at'=>$now],`)
-          } else {
-            const opts = JSON.stringify(step.options ?? []).replace(/\\/g, '\\\\').replace(/'/g, "\\'")
-            L.push(`            ['dialogue_id'=>$dialogue,'position'=>${pos},'type'=>'choice','speaker'=>null,'text'=>'${esc(step.text)}','fr'=>'${esc(step.fr)}','options'=>'${opts}','correct_index'=>${step.correctIndex ?? 0},'created_at'=>$now,'updated_at'=>$now],`)
-          }
-        })
-        L.push(`        ]);`)
-      }
-      L.push(``)
-    })
-  }
-
-  L.push(`    }`)
-  L.push(`}`)
-  return L.join('\n')
-}
-
 // ─── Générer StorySeeder.php ──────────────────────────────────────────────────
 
 function generateStorySeeder(stories) {
@@ -407,14 +342,6 @@ function generateStorySeeder(stories) {
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
-console.log('📖 Chargement des dialogues…')
-const dialogues = loadTS(
-  join(root, 'frontend/src/data/dialogues.ts'),
-  'DIALOGUES',
-  'const line ='
-)
-console.log(`   ${Object.keys(dialogues).length} langues, ${Object.values(dialogues).flat().length} scénarios`)
-
 console.log('📚 Chargement des histoires…')
 const stories = loadTS(
   join(root, 'frontend/src/data/stories.ts'),
@@ -423,14 +350,10 @@ const stories = loadTS(
 )
 console.log(`   ${Object.keys(stories).length} langues, ${Object.values(stories).flat().length} histoires`)
 
-const dialogueContent = generateDialogueSeeder(dialogues)
-const storyContent    = generateStorySeeder(stories)
+const storyContent = generateStorySeeder(stories)
 
-const dialoguePath = join(root, 'backend/database/seeders/DialogueSeeder.php')
-const storyPath    = join(root, 'backend/database/seeders/StorySeeder.php')
+const storyPath = join(root, 'backend/database/seeders/StorySeeder.php')
 
-writeFileSync(dialoguePath, dialogueContent)
 writeFileSync(storyPath, storyContent)
 
-console.log(`✅ DialogueSeeder.php généré (${dialogueContent.length} chars)`)
 console.log(`✅ StorySeeder.php généré (${storyContent.length} chars)`)

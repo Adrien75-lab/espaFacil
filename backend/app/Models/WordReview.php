@@ -16,10 +16,17 @@ class WordReview extends Model
 
     protected $casts = [
         'next_review_at' => 'datetime',
-        'last_result'    => 'boolean',
-        'ease'           => 'float',
+        'last_result' => 'boolean',
+        'ease' => 'float',
     ];
 
-    public function user(): BelongsTo { return $this->belongsTo(User::class); }
-    public function word(): BelongsTo { return $this->belongsTo(Word::class); }
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function word(): BelongsTo
+    {
+        return $this->belongsTo(Word::class);
+    }
 }

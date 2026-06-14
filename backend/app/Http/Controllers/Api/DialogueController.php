@@ -1,10 +1,11 @@
 <?php
+
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Dialogue;
-use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 
 class DialogueController extends Controller
 {
@@ -20,19 +21,19 @@ class DialogueController extends Controller
             ->where('lang', $lang)
             ->orderBy('sort_order')
             ->get()
-            ->map(fn($d) => [
-                'id'       => $d->scenario_key,
-                'emoji'    => $d->emoji,
-                'title'    => $d->title,
+            ->map(fn ($d) => [
+                'id' => $d->scenario_key,
+                'emoji' => $d->emoji,
+                'title' => $d->title,
                 'title_fr' => $d->title_fr,
-                'steps'    => $d->steps->map(fn($s) => array_filter([
-                    'type'          => $s->type,
-                    'speaker'       => $s->speaker,
-                    'text'          => $s->text,
-                    'fr'            => $s->fr,
-                    'options'       => $s->options,
-                    'correctIndex'  => $s->correct_index,
-                ], fn($v) => $v !== null))->values(),
+                'steps' => $d->steps->map(fn ($s) => array_filter([
+                    'type' => $s->type,
+                    'speaker' => $s->speaker,
+                    'text' => $s->text,
+                    'fr' => $s->fr,
+                    'options' => $s->options,
+                    'correctIndex' => $s->correct_index,
+                ], fn ($v) => $v !== null))->values(),
             ]);
 
         return response()->json($dialogues);

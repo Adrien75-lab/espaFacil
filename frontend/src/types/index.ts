@@ -33,3 +33,44 @@ export interface GrammarTip {
 }
 
 export type Level = 'debutant' | 'intermediaire' | 'avance'
+
+export interface DialogueOption {
+  text: string
+  fr: string
+}
+
+export interface DialogueLine {
+  type: 'line'
+  speaker: 'A' | 'B'
+  text: string
+  fr: string
+}
+
+export interface DialogueChoice {
+  type: 'choice'
+  text: string
+  fr: string
+  options: DialogueOption[]
+  correctIndex: number
+}
+
+export type DialogueStep = DialogueLine | DialogueChoice
+
+export interface Dialogue {
+  id: string
+  emoji: string
+  title: string
+  title_fr: string
+  steps: DialogueStep[]
+}
+
+export interface ConjugationEntry {
+  pronoun: string
+  form: string
+}
+
+export interface ConjugationVerb {
+  infinitive: string
+  translation: string
+  tenses: Record<string, ConjugationEntry[]>
+}
