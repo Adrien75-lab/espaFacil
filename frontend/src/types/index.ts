@@ -9,10 +9,16 @@ export interface Language {
   themes?: Theme[]
 }
 
+export interface ThemeLevelStats {
+  words: number
+  with_example: number
+}
+
 export interface Theme {
   key: string
   name: string
   emoji: string
+  stats?: Record<'debutant' | 'intermediaire' | 'avance', ThemeLevelStats>
 }
 
 export interface Word {

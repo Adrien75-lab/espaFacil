@@ -12,6 +12,12 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property string $key
  * @property string $name
  * @property string $emoji
+ * @property-read int $words_debutant
+ * @property-read int $words_intermediaire
+ * @property-read int $words_avance
+ * @property-read int $examples_debutant
+ * @property-read int $examples_intermediaire
+ * @property-read int $examples_avance
  */
 class Theme extends Model
 {
