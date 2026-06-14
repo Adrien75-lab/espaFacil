@@ -26,7 +26,7 @@ class ConjugationController extends Controller
                     ->map(fn ($forms) => $forms->map(fn ($form) => [
                         'pronoun' => $form->pronoun,
                         'form' => $form->form,
-                    ])->values()),
+                    ])->values()->all()),
             ]);
 
         return response()->json($verbs);

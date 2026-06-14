@@ -1,0 +1,15 @@
+{
+    "name": "espafacil/phpmd-tool",
+    "description": "Isolated PHPMD installation (kept out of the app's dependency graph to avoid Symfony version conflicts).",
+    "type": "project",
+    "require": {
+        "phpmd/phpmd": "^2.15"
+    },
+    "config": {
+        "platform": {
+            "php": "8.3"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

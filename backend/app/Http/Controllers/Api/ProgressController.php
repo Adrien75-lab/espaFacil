@@ -125,7 +125,7 @@ class ProgressController extends Controller
         $current = Carbon::parse($latest);
         for ($i = count($days) - 2; $i >= 0; $i--) {
             $prev = Carbon::parse($days[$i]);
-            if ($current->diffInDays($prev) === 1) {
+            if ((int) $current->diffInDays($prev) === 1) {
                 $streak++;
                 $current = $prev;
             } else {

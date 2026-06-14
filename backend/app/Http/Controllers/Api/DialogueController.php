@@ -33,7 +33,7 @@ class DialogueController extends Controller
                     'fr' => $s->fr,
                     'options' => $s->options,
                     'correctIndex' => $s->correct_index,
-                ], fn ($v) => $v !== null))->values(),
+                ], fn ($v) => $v !== null))->values()->all(),
             ]);
 
         return response()->json($dialogues);

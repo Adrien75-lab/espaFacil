@@ -36,12 +36,12 @@ class StoryController extends Controller
                     'text' => $t->text,
                     'fr' => $t->fr,
                     'punct' => $t->is_punct ?: null,
-                ], fn ($v) => $v !== null && $v !== ''))->values(),
+                ], fn ($v) => $v !== null && $v !== ''))->values()->all(),
                 'questions' => $s->questions->map(fn ($q) => [
                     'question_fr' => $q->question_fr,
                     'options' => $q->options,
                     'correctIndex' => $q->correct_index,
-                ])->values(),
+                ])->values()->all(),
             ]);
 
         return response()->json($stories);

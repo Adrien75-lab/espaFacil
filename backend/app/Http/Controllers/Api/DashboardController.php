@@ -81,8 +81,8 @@ class DashboardController extends Controller
                 'max_serie' => $s->max_serie,
                 'current_streak' => $this->computeStreak($s->activity_days ?? []),
                 'activity_days' => $s->activity_days ?? [],
-                'srs_due' => $srs?->due_count ?? 0,
-                'srs_total' => $srs?->total_words ?? 0,
+                'srs_due' => $srs->due_count ?? 0,
+                'srs_total' => $srs->total_words ?? 0,
             ];
         })->sortByDesc('xp')->values();
 
@@ -122,7 +122,7 @@ class DashboardController extends Controller
         $current = Carbon::parse($latest);
         for ($i = count($days) - 2; $i >= 0; $i--) {
             $prev = Carbon::parse($days[$i]);
-            if ($current->diffInDays($prev) === 1) {
+            if ((int) $current->diffInDays($prev) === 1) {
                 $streak++;
                 $current = $prev;
             } else {
