@@ -13,8 +13,14 @@ class LinguaFacilSeeder extends Seeder
             true
         );
 
-        // --- Languages ---
+        // --- Clear in reverse FK order ---
+        DB::table('word_reviews')->delete();
+        DB::table('words')->delete();
+        DB::table('grammar_tips')->delete();
+        DB::table('themes')->delete();
         DB::table('languages')->delete();
+
+        // --- Languages ---
         foreach ($data['languages'] as $lang) {
             DB::table('languages')->insertOrIgnore([
                 'code'         => $lang['code'],
@@ -32,7 +38,6 @@ class LinguaFacilSeeder extends Seeder
         $langIds = DB::table('languages')->pluck('id', 'code');
 
         // --- Themes ---
-        DB::table('themes')->delete();
         $themeIds = [];
         foreach ($data['themes'] as $theme) {
             $id = DB::table('themes')->insertGetId([
@@ -47,7 +52,6 @@ class LinguaFacilSeeder extends Seeder
         }
 
         // --- Words ---
-        DB::table('words')->delete();
         $wordsBatch = [];
         foreach ($data['words'] as $word) {
             $wordsBatch[] = [
@@ -72,7 +76,6 @@ class LinguaFacilSeeder extends Seeder
         if ($wordsBatch) DB::table('words')->insert($wordsBatch);
 
         // --- Grammar tips ---
-        DB::table('grammar_tips')->delete();
         foreach ($data['grammar_tips'] as $tip) {
             DB::table('grammar_tips')->insert([
                 'language_id'   => $langIds[$tip['language_code']],
