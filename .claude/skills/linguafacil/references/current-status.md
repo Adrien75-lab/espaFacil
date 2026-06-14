@@ -1,13 +1,13 @@
 # État courant de LinguaFacil
 
-Dernière vérification : 14 juin 2026, après la fusion de la PR GitHub no 2 (PHPStan/PHPMD), de la PR no 3 (phase 27, dialogues), de la PR no 4 (UX modes/thèmes/niveaux sans contenu) et de la PR no 5 (page d'accueil marketing + mode démo) dans `master`.
+Dernière vérification : 14 juin 2026, après la fusion de la PR GitHub no 2 (PHPStan/PHPMD), de la PR no 3 (phase 27, dialogues), de la PR no 4 (UX modes/thèmes/niveaux sans contenu), de la PR no 5 (page d'accueil marketing + mode démo) et de la PR no 6 (phase 28 partielle, histoires) dans `master`.
 
 ## Dépôt
 
 - Chemin : `C:\Users\adric\Claude\Projects\Website-Project`
 - Dépôt GitHub : `Adrien75-lab/espaFacil`
 - Branche stable locale et distante : `master`
-- Commit stable observé : `ad99c6c Merge pull request #5 (page d'accueil marketing + mode démo)`
+- Commit stable observé : `582c56f Merge pull request #6 (phase 28 partielle, histoires)`
 - `AGENTS.md` et `CLAUDE.md` sont désormais suivis et présents sur `master`.
 - Convention de branches : `claude/YYYY-MM-DD-nom` pour le travail réalisé par Claude (Claude Code), `codex/YYYY-MM-DD-nom` pour Codex. Permet de distinguer rapidement qui a produit quelle branche.
 
@@ -15,8 +15,8 @@ Dernière vérification : 14 juin 2026, après la fusion de la PR GitHub no 2 (P
 
 ### `master`
 
-- Pointe sur `ad99c6c` lors du dernier relevé.
-- Contient les phases jusqu'à la phase 26, la refonte R1-R5, PHPStan/Larastan et PHPMD (PR no 2), la phase 27 - dialogues enrichis (PR no 3, 280 dialogues, 20 par langue x 14 langues), le correctif UX modes/thèmes/niveaux sans contenu (PR no 4), ainsi que la nouvelle page d'accueil marketing + mode démo (PR no 5).
+- Pointe sur `582c56f` lors du dernier relevé.
+- Contient les phases jusqu'à la phase 26, la refonte R1-R5, PHPStan/Larastan et PHPMD (PR no 2), la phase 27 - dialogues enrichis (PR no 3, 280 dialogues, 20 par langue x 14 langues), le correctif UX modes/thèmes/niveaux sans contenu (PR no 4), la nouvelle page d'accueil marketing + mode démo (PR no 5), ainsi que la phase 28 partielle - enrichissement des histoires (PR no 6, 42 nouvelles histoires, 9 par langue x 14 langues).
 - Contient les skills `.claude/skills/linguafacil` et `.claude/skills/feature-delivery-workflow`, ainsi que `AGENTS.md`/`CLAUDE.md`.
 - `composer analyse` et `composer mess-detect` sont disponibles (voir détails ci-dessous).
 
@@ -71,6 +71,7 @@ Dernière vérification : 14 juin 2026, après la fusion de la PR GitHub no 2 (P
 - Phase 27 : enrichissement des dialogues, intégrée à `master` via la PR no 3.
 - Correctif UX modes/thèmes/niveaux sans contenu (hors numérotation de phase), intégré à `master` via la PR no 4.
 - Page d'accueil marketing + mode démo pour les visiteurs (hors numérotation de phase), intégrée à `master` via la PR no 5.
+- Phase 28 (partielle) : enrichissement des histoires, intégrée à `master` via la PR no 6.
 
 ## Phase 27 en détail
 
@@ -118,12 +119,28 @@ php artisan db:seed --class=DialogueSeeder
 - Les utilisateurs connectés ne voient aucun changement (sélecteur complet, comme avant).
 - Aucune migration, aucun changement d'API.
 
+## Phase 28 (partielle) : enrichissement des histoires (PR no 6)
+
+- Branche `claude/2026-06-14-phase-28-histoires`, fusionnée en `582c56f`.
+- Objectif historique : atteindre environ 10 histoires par niveau et par langue (420 au total). Cette phase est une étape intermédiaire, cadrée et validée avec Adrien le 14 juin 2026.
+- Contenu livré : pour chacune des 14 langues, 1 nouvelle histoire niveau 2 ("À l'hôtel" 🏨, id `hotel`) et 2 nouvelles histoires niveau 3 ("Une journée à la plage" 🏖️, id `plage`, et "Au cinéma" 🎬, id `cinema`), chacune avec 4 phrases et traduction française mot à mot (`w`/`p`).
+- Chaque langue passe de 6 à 9 histoires (3 niveau 1, 3 niveau 2, 3 niveau 3) : 42 nouvelles histoires au total (84 → 126).
+- Ajoutées dans `STORIES_EXTRA` (`frontend/src/data/stories.ts`), avec 3 nouvelles catégories de questions de compréhension (`hotel`, `plage`, `cinema`) dans `scripts/generate_seeders.mjs` (`QUESTIONS` + `getQuestions`).
+- `backend/database/seeders/StorySeeder.php` régénéré via `node scripts/generate_seeders.mjs`.
+- Dernière validation : 6 tests PHP, 436 assertions, toutes passantes ; `npm run lint`/`npm test`/`npm run build` OK ; vérification manuelle dans StoryView (es, ja, ar).
+- Aucune migration nécessaire. Pour mettre à jour une base locale :
+
+```powershell
+git switch master
+git pull
+cd backend
+php artisan db:seed --class=StorySeeder
+```
+
 ## Prochaine phase prévue
 
-- Phase 28 : enrichissement des histoires.
-- Objectif historique : atteindre environ 10 histoires par niveau et par langue.
-- La phase 27 est fusionnée dans `master` (PR no 3) : créer la nouvelle branche depuis `master` à jour :
-  `codex/YYYY-MM-DD-phase-28-histoires`.
+- Reste à ajouter environ 1 histoire par niveau et par langue pour atteindre l'objectif historique de ~10 histoires/niveau/langue (phase 28 suite, ou phase 29).
+- Créer la nouvelle branche depuis `master` à jour : `claude/YYYY-MM-DD-nom` (Claude) ou `codex/YYYY-MM-DD-nom` (Codex).
 - Ne commence pas l'i18n sans accord explicite d'Adrien.
 
 ## Phase prévue (après la 28) : migration SQLite vers PostgreSQL
