@@ -385,6 +385,37 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
         ]);
 
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'es',
+            'story_key'  => 'boulangerie',
+            'emoji'      => '🥖',
+            'title_fr'   => 'À la boulangerie',
+            'level'      => 1,
+            'sort_order' => 9,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Léa','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'entra en la panadería por la mañana','fr'=>'entre dans la boulangerie le matin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Huele a pan recién hecho','fr'=>'Ça sent le pain frais','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>5,'text'=>'Pide una baguette y un croissant','fr'=>'Elle commande une baguette et un croissant','is_punct'=>false],
+            ['story_id'=>$story,'position'=>6,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>7,'text'=>'La panadera','fr'=>'La boulangère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'sonríe y le da el cambio','fr'=>'sourit et lui rend la monnaie','is_punct'=>false],
+            ['story_id'=>$story,'position'=>9,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>10,'text'=>'Léa','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'sale contenta con su bolsa de pan','fr'=>'sort contente avec son sac de pain','is_punct'=>false],
+            ['story_id'=>$story,'position'=>12,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage entre-t-elle dans la boulangerie ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À minuit"},{"text":"Le week-end"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que commande-t-elle ?','options'=>'[{"text":"Seulement de l\'eau"},{"text":"Une baguette et un croissant"},{"text":"Une tarte"},{"text":"Rien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage en sortant ?','options'=>'[{"text":"Triste"},{"text":"En colère"},{"text":"Contente"},{"text":"Fatiguée"}]','correct_index'=>2],
+        ]);
+
         // ── EN ──
         $story = DB::table('stories')->insertGetId([
             'lang'       => 'en',
@@ -734,6 +765,37 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
         ]);
 
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'en',
+            'story_key'  => 'boulangerie',
+            'emoji'      => '🥖',
+            'title_fr'   => 'À la boulangerie',
+            'level'      => 1,
+            'sort_order' => 9,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Léa','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'enters the bakery in the morning','fr'=>'entre dans la boulangerie le matin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'It smells of fresh bread','fr'=>'Ça sent le pain frais','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>5,'text'=>'She orders a baguette and a croissant','fr'=>'Elle commande une baguette et un croissant','is_punct'=>false],
+            ['story_id'=>$story,'position'=>6,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>7,'text'=>'The baker','fr'=>'La boulangère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'smiles and gives her the change','fr'=>'sourit et lui rend la monnaie','is_punct'=>false],
+            ['story_id'=>$story,'position'=>9,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>10,'text'=>'Léa','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'leaves happy with her bag of bread','fr'=>'sort contente avec son sac de pain','is_punct'=>false],
+            ['story_id'=>$story,'position'=>12,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage entre-t-elle dans la boulangerie ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À minuit"},{"text":"Le week-end"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que commande-t-elle ?','options'=>'[{"text":"Seulement de l\'eau"},{"text":"Une baguette et un croissant"},{"text":"Une tarte"},{"text":"Rien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage en sortant ?','options'=>'[{"text":"Triste"},{"text":"En colère"},{"text":"Contente"},{"text":"Fatiguée"}]','correct_index'=>2],
+        ]);
+
         // ── DE ──
         $story = DB::table('stories')->insertGetId([
             'lang'       => 'de',
@@ -1079,6 +1141,37 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
         ]);
 
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'de',
+            'story_key'  => 'boulangerie',
+            'emoji'      => '🥖',
+            'title_fr'   => 'À la boulangerie',
+            'level'      => 1,
+            'sort_order' => 9,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Léa','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'geht morgens in die Bäckerei','fr'=>'entre dans la boulangerie le matin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Es duftet nach frischem Brot','fr'=>'Ça sent le pain frais','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>5,'text'=>'Sie bestellt ein Baguette und ein Croissant','fr'=>'Elle commande une baguette et un croissant','is_punct'=>false],
+            ['story_id'=>$story,'position'=>6,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>7,'text'=>'Die Bäckerin','fr'=>'La boulangère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'lächelt und gibt ihr das Wechselgeld','fr'=>'sourit et lui rend la monnaie','is_punct'=>false],
+            ['story_id'=>$story,'position'=>9,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>10,'text'=>'Léa','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'geht glücklich mit ihrer Brottüte hinaus','fr'=>'sort contente avec son sac de pain','is_punct'=>false],
+            ['story_id'=>$story,'position'=>12,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage entre-t-elle dans la boulangerie ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À minuit"},{"text":"Le week-end"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que commande-t-elle ?','options'=>'[{"text":"Seulement de l\'eau"},{"text":"Une baguette et un croissant"},{"text":"Une tarte"},{"text":"Rien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage en sortant ?','options'=>'[{"text":"Triste"},{"text":"En colère"},{"text":"Contente"},{"text":"Fatiguée"}]','correct_index'=>2],
+        ]);
+
         // ── IT ──
         $story = DB::table('stories')->insertGetId([
             'lang'       => 'it',
@@ -1420,6 +1513,37 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
         ]);
 
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'it',
+            'story_key'  => 'boulangerie',
+            'emoji'      => '🥖',
+            'title_fr'   => 'À la boulangerie',
+            'level'      => 1,
+            'sort_order' => 9,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Léa','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'entra in panetteria al mattino','fr'=>'entre dans la boulangerie le matin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Si sente il profumo di pane fresco','fr'=>'Ça sent le pain frais','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>5,'text'=>'Ordina una baguette e un croissant','fr'=>'Elle commande une baguette et un croissant','is_punct'=>false],
+            ['story_id'=>$story,'position'=>6,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>7,'text'=>'La panettiera','fr'=>'La boulangère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'sorride e le dà il resto','fr'=>'sourit et lui rend la monnaie','is_punct'=>false],
+            ['story_id'=>$story,'position'=>9,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>10,'text'=>'Léa','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'esce contenta con il suo sacchetto di pane','fr'=>'sort contente avec son sac de pain','is_punct'=>false],
+            ['story_id'=>$story,'position'=>12,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage entre-t-elle dans la boulangerie ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À minuit"},{"text":"Le week-end"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que commande-t-elle ?','options'=>'[{"text":"Seulement de l\'eau"},{"text":"Une baguette et un croissant"},{"text":"Une tarte"},{"text":"Rien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage en sortant ?','options'=>'[{"text":"Triste"},{"text":"En colère"},{"text":"Contente"},{"text":"Fatiguée"}]','correct_index'=>2],
+        ]);
+
         // ── PT ──
         $story = DB::table('stories')->insertGetId([
             'lang'       => 'pt',
@@ -1755,6 +1879,37 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il au cinéma ?','options'=>'[{"text":"Avec son frère"},{"text":"Seul(e)"},{"text":"Avec ses parents"},{"text":"Avec une amie"}]','correct_index'=>0],
             ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'achètent-ils ?','options'=>'[{"text":"Des bonbons seulement"},{"text":"Des billets et du pop-corn"},{"text":"Rien"},{"text":"Des boissons seulement"}]','correct_index'=>1],
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'pt',
+            'story_key'  => 'boulangerie',
+            'emoji'      => '🥖',
+            'title_fr'   => 'À la boulangerie',
+            'level'      => 1,
+            'sort_order' => 9,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Léa','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'entra na padaria de manhã','fr'=>'entre dans la boulangerie le matin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Sente-se o cheiro de pão fresco','fr'=>'Ça sent le pain frais','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>5,'text'=>'Pede uma baguete e um croissant','fr'=>'Elle commande une baguette et un croissant','is_punct'=>false],
+            ['story_id'=>$story,'position'=>6,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>7,'text'=>'A padeira','fr'=>'La boulangère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'sorri e dá-lhe o troco','fr'=>'sourit et lui rend la monnaie','is_punct'=>false],
+            ['story_id'=>$story,'position'=>9,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>10,'text'=>'Léa','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'sai contente com o saco de pão','fr'=>'sort contente avec son sac de pain','is_punct'=>false],
+            ['story_id'=>$story,'position'=>12,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage entre-t-elle dans la boulangerie ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À minuit"},{"text":"Le week-end"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que commande-t-elle ?','options'=>'[{"text":"Seulement de l\'eau"},{"text":"Une baguette et un croissant"},{"text":"Une tarte"},{"text":"Rien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage en sortant ?','options'=>'[{"text":"Triste"},{"text":"En colère"},{"text":"Contente"},{"text":"Fatiguée"}]','correct_index'=>2],
         ]);
 
         // ── NL ──
@@ -2102,6 +2257,37 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
         ]);
 
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'nl',
+            'story_key'  => 'boulangerie',
+            'emoji'      => '🥖',
+            'title_fr'   => 'À la boulangerie',
+            'level'      => 1,
+            'sort_order' => 9,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Léa','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'gaat \'s ochtends naar de bakkerij','fr'=>'entre dans la boulangerie le matin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Het ruikt naar vers brood','fr'=>'Ça sent le pain frais','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>5,'text'=>'Ze bestelt een baguette en een croissant','fr'=>'Elle commande une baguette et un croissant','is_punct'=>false],
+            ['story_id'=>$story,'position'=>6,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>7,'text'=>'De bakker','fr'=>'La boulangère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'glimlacht en geeft haar het wisselgeld','fr'=>'sourit et lui rend la monnaie','is_punct'=>false],
+            ['story_id'=>$story,'position'=>9,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>10,'text'=>'Léa','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'gaat tevreden naar buiten met haar broodzak','fr'=>'sort contente avec son sac de pain','is_punct'=>false],
+            ['story_id'=>$story,'position'=>12,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage entre-t-elle dans la boulangerie ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À minuit"},{"text":"Le week-end"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que commande-t-elle ?','options'=>'[{"text":"Seulement de l\'eau"},{"text":"Une baguette et un croissant"},{"text":"Une tarte"},{"text":"Rien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage en sortant ?','options'=>'[{"text":"Triste"},{"text":"En colère"},{"text":"Contente"},{"text":"Fatiguée"}]','correct_index'=>2],
+        ]);
+
         // ── PL ──
         $story = DB::table('stories')->insertGetId([
             'lang'       => 'pl',
@@ -2428,6 +2614,37 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
         ]);
 
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'pl',
+            'story_key'  => 'boulangerie',
+            'emoji'      => '🥖',
+            'title_fr'   => 'À la boulangerie',
+            'level'      => 1,
+            'sort_order' => 9,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Léa','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'wchodzi do piekarni rano','fr'=>'entre dans la boulangerie le matin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Pachnie świeżym chlebem','fr'=>'Ça sent le pain frais','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>5,'text'=>'Zamawia bagietkę i rogalik','fr'=>'Elle commande une baguette et un croissant','is_punct'=>false],
+            ['story_id'=>$story,'position'=>6,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>7,'text'=>'Piekarka','fr'=>'La boulangère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'uśmiecha się i daje jej resztę','fr'=>'sourit et lui rend la monnaie','is_punct'=>false],
+            ['story_id'=>$story,'position'=>9,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>10,'text'=>'Léa','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'wychodzi zadowolona z torbą chleba','fr'=>'sort contente avec son sac de pain','is_punct'=>false],
+            ['story_id'=>$story,'position'=>12,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage entre-t-elle dans la boulangerie ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À minuit"},{"text":"Le week-end"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que commande-t-elle ?','options'=>'[{"text":"Seulement de l\'eau"},{"text":"Une baguette et un croissant"},{"text":"Une tarte"},{"text":"Rien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage en sortant ?','options'=>'[{"text":"Triste"},{"text":"En colère"},{"text":"Contente"},{"text":"Fatiguée"}]','correct_index'=>2],
+        ]);
+
         // ── TR ──
         $story = DB::table('stories')->insertGetId([
             'lang'       => 'tr',
@@ -2741,6 +2958,37 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il au cinéma ?','options'=>'[{"text":"Avec son frère"},{"text":"Seul(e)"},{"text":"Avec ses parents"},{"text":"Avec une amie"}]','correct_index'=>0],
             ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'achètent-ils ?','options'=>'[{"text":"Des bonbons seulement"},{"text":"Des billets et du pop-corn"},{"text":"Rien"},{"text":"Des boissons seulement"}]','correct_index'=>1],
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'tr',
+            'story_key'  => 'boulangerie',
+            'emoji'      => '🥖',
+            'title_fr'   => 'À la boulangerie',
+            'level'      => 1,
+            'sort_order' => 9,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Léa','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'sabah fırına giriyor','fr'=>'entre dans la boulangerie le matin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Taze ekmek kokuyor','fr'=>'Ça sent le pain frais','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>5,'text'=>'Bir baget ve bir kruvasan sipariş ediyor','fr'=>'Elle commande une baguette et un croissant','is_punct'=>false],
+            ['story_id'=>$story,'position'=>6,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>7,'text'=>'Fırıncı','fr'=>'La boulangère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'gülümsüyor ve para üstünü veriyor','fr'=>'sourit et lui rend la monnaie','is_punct'=>false],
+            ['story_id'=>$story,'position'=>9,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>10,'text'=>'Léa','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'ekmek torbasıyla mutlu çıkıyor','fr'=>'sort contente avec son sac de pain','is_punct'=>false],
+            ['story_id'=>$story,'position'=>12,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage entre-t-elle dans la boulangerie ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À minuit"},{"text":"Le week-end"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que commande-t-elle ?','options'=>'[{"text":"Seulement de l\'eau"},{"text":"Une baguette et un croissant"},{"text":"Une tarte"},{"text":"Rien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage en sortant ?','options'=>'[{"text":"Triste"},{"text":"En colère"},{"text":"Contente"},{"text":"Fatiguée"}]','correct_index'=>2],
         ]);
 
         // ── RU ──
@@ -3068,6 +3316,37 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
         ]);
 
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'ru',
+            'story_key'  => 'boulangerie',
+            'emoji'      => '🥖',
+            'title_fr'   => 'À la boulangerie',
+            'level'      => 1,
+            'sort_order' => 9,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'Лея','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'утром заходит в булочную','fr'=>'entre dans la boulangerie le matin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'Пахнет свежим хлебом','fr'=>'Ça sent le pain frais','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>5,'text'=>'Она заказывает багет и круассан','fr'=>'Elle commande une baguette et un croissant','is_punct'=>false],
+            ['story_id'=>$story,'position'=>6,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>7,'text'=>'Булочница','fr'=>'La boulangère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'улыбается и даёт ей сдачу','fr'=>'sourit et lui rend la monnaie','is_punct'=>false],
+            ['story_id'=>$story,'position'=>9,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>10,'text'=>'Лея','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'выходит довольная с пакетом хлеба','fr'=>'sort contente avec son sac de pain','is_punct'=>false],
+            ['story_id'=>$story,'position'=>12,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage entre-t-elle dans la boulangerie ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À minuit"},{"text":"Le week-end"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que commande-t-elle ?','options'=>'[{"text":"Seulement de l\'eau"},{"text":"Une baguette et un croissant"},{"text":"Une tarte"},{"text":"Rien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage en sortant ?','options'=>'[{"text":"Triste"},{"text":"En colère"},{"text":"Contente"},{"text":"Fatiguée"}]','correct_index'=>2],
+        ]);
+
         // ── JA ──
         $story = DB::table('stories')->insertGetId([
             'lang'       => 'ja',
@@ -3391,6 +3670,37 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
         ]);
 
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'ja',
+            'story_key'  => 'boulangerie',
+            'emoji'      => '🥖',
+            'title_fr'   => 'À la boulangerie',
+            'level'      => 1,
+            'sort_order' => 9,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'レアは','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'朝パン屋に入ります','fr'=>'entre dans la boulangerie le matin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'新鮮なパンの香りがします','fr'=>'Ça sent le pain frais','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>5,'text'=>'バゲットとクロワッサンを注文します','fr'=>'Elle commande une baguette et un croissant','is_punct'=>false],
+            ['story_id'=>$story,'position'=>6,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>7,'text'=>'パン屋さんは','fr'=>'La boulangère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'笑顔でお釣りを渡します','fr'=>'sourit et lui rend la monnaie','is_punct'=>false],
+            ['story_id'=>$story,'position'=>9,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>10,'text'=>'レアは','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'パンの袋を持って嬉しそうに出ます','fr'=>'sort contente avec son sac de pain','is_punct'=>false],
+            ['story_id'=>$story,'position'=>12,'text'=>'。','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage entre-t-elle dans la boulangerie ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À minuit"},{"text":"Le week-end"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que commande-t-elle ?','options'=>'[{"text":"Seulement de l\'eau"},{"text":"Une baguette et un croissant"},{"text":"Une tarte"},{"text":"Rien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage en sortant ?','options'=>'[{"text":"Triste"},{"text":"En colère"},{"text":"Contente"},{"text":"Fatiguée"}]','correct_index'=>2],
+        ]);
+
         // ── KO ──
         $story = DB::table('stories')->insertGetId([
             'lang'       => 'ko',
@@ -3695,6 +4005,37 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il au cinéma ?','options'=>'[{"text":"Avec son frère"},{"text":"Seul(e)"},{"text":"Avec ses parents"},{"text":"Avec une amie"}]','correct_index'=>0],
             ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'achètent-ils ?','options'=>'[{"text":"Des bonbons seulement"},{"text":"Des billets et du pop-corn"},{"text":"Rien"},{"text":"Des boissons seulement"}]','correct_index'=>1],
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'ko',
+            'story_key'  => 'boulangerie',
+            'emoji'      => '🥖',
+            'title_fr'   => 'À la boulangerie',
+            'level'      => 1,
+            'sort_order' => 9,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'레아는','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'아침에 빵집에 들어갑니다','fr'=>'entre dans la boulangerie le matin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'신선한 빵 냄새가 납니다','fr'=>'Ça sent le pain frais','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>5,'text'=>'바게트와 크루아상을 주문합니다','fr'=>'Elle commande une baguette et un croissant','is_punct'=>false],
+            ['story_id'=>$story,'position'=>6,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>7,'text'=>'빵집 주인은','fr'=>'La boulangère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'웃으면서 거스름돈을 줍니다','fr'=>'sourit et lui rend la monnaie','is_punct'=>false],
+            ['story_id'=>$story,'position'=>9,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>10,'text'=>'레아는','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'빵 봉지를 들고 행복하게 나갑니다','fr'=>'sort contente avec son sac de pain','is_punct'=>false],
+            ['story_id'=>$story,'position'=>12,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage entre-t-elle dans la boulangerie ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À minuit"},{"text":"Le week-end"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que commande-t-elle ?','options'=>'[{"text":"Seulement de l\'eau"},{"text":"Une baguette et un croissant"},{"text":"Une tarte"},{"text":"Rien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage en sortant ?','options'=>'[{"text":"Triste"},{"text":"En colère"},{"text":"Contente"},{"text":"Fatiguée"}]','correct_index'=>2],
         ]);
 
         // ── ZH ──
@@ -4002,6 +4343,37 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il au cinéma ?','options'=>'[{"text":"Avec son frère"},{"text":"Seul(e)"},{"text":"Avec ses parents"},{"text":"Avec une amie"}]','correct_index'=>0],
             ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'achètent-ils ?','options'=>'[{"text":"Des bonbons seulement"},{"text":"Des billets et du pop-corn"},{"text":"Rien"},{"text":"Des boissons seulement"}]','correct_index'=>1],
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'zh',
+            'story_key'  => 'boulangerie',
+            'emoji'      => '🥖',
+            'title_fr'   => 'À la boulangerie',
+            'level'      => 1,
+            'sort_order' => 9,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'莉亚','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'早上走进面包店','fr'=>'entre dans la boulangerie le matin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'闻到新鲜面包的香味','fr'=>'Ça sent le pain frais','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>5,'text'=>'她点了一个法棍和一个羊角面包','fr'=>'Elle commande une baguette et un croissant','is_punct'=>false],
+            ['story_id'=>$story,'position'=>6,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>7,'text'=>'面包师','fr'=>'La boulangère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'微笑着把找零给她','fr'=>'sourit et lui rend la monnaie','is_punct'=>false],
+            ['story_id'=>$story,'position'=>9,'text'=>'。','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>10,'text'=>'莉亚','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'拿着面包袋开心地走出去','fr'=>'sort contente avec son sac de pain','is_punct'=>false],
+            ['story_id'=>$story,'position'=>12,'text'=>'。','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage entre-t-elle dans la boulangerie ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À minuit"},{"text":"Le week-end"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que commande-t-elle ?','options'=>'[{"text":"Seulement de l\'eau"},{"text":"Une baguette et un croissant"},{"text":"Une tarte"},{"text":"Rien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage en sortant ?','options'=>'[{"text":"Triste"},{"text":"En colère"},{"text":"Contente"},{"text":"Fatiguée"}]','correct_index'=>2],
         ]);
 
         // ── AR ──
@@ -4314,6 +4686,37 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il au cinéma ?','options'=>'[{"text":"Avec son frère"},{"text":"Seul(e)"},{"text":"Avec ses parents"},{"text":"Avec une amie"}]','correct_index'=>0],
             ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'achètent-ils ?','options'=>'[{"text":"Des bonbons seulement"},{"text":"Des billets et du pop-corn"},{"text":"Rien"},{"text":"Des boissons seulement"}]','correct_index'=>1],
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'ar',
+            'story_key'  => 'boulangerie',
+            'emoji'      => '🥖',
+            'title_fr'   => 'À la boulangerie',
+            'level'      => 1,
+            'sort_order' => 9,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'ليا','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'تدخل المخبز في الصباح','fr'=>'entre dans la boulangerie le matin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'تنبعث رائحة الخبز الطازج','fr'=>'Ça sent le pain frais','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>5,'text'=>'تطلب باغيت وكرواسون','fr'=>'Elle commande une baguette et un croissant','is_punct'=>false],
+            ['story_id'=>$story,'position'=>6,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>7,'text'=>'الخبازة','fr'=>'La boulangère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'تبتسم وتعطيها الباقي','fr'=>'sourit et lui rend la monnaie','is_punct'=>false],
+            ['story_id'=>$story,'position'=>9,'text'=>'.','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>10,'text'=>'ليا','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'تخرج سعيدة بحقيبة الخبز','fr'=>'sort contente avec son sac de pain','is_punct'=>false],
+            ['story_id'=>$story,'position'=>12,'text'=>'.','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage entre-t-elle dans la boulangerie ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À minuit"},{"text":"Le week-end"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que commande-t-elle ?','options'=>'[{"text":"Seulement de l\'eau"},{"text":"Une baguette et un croissant"},{"text":"Une tarte"},{"text":"Rien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage en sortant ?','options'=>'[{"text":"Triste"},{"text":"En colère"},{"text":"Contente"},{"text":"Fatiguée"}]','correct_index'=>2],
         ]);
 
         // ── HI ──
@@ -4634,6 +5037,37 @@ class StorySeeder extends Seeder
             ['story_id'=>$story,'position'=>0,'question_fr'=>'Avec qui le personnage va-t-il au cinéma ?','options'=>'[{"text":"Avec son frère"},{"text":"Seul(e)"},{"text":"Avec ses parents"},{"text":"Avec une amie"}]','correct_index'=>0],
             ['story_id'=>$story,'position'=>1,'question_fr'=>'Qu\'achètent-ils ?','options'=>'[{"text":"Des bonbons seulement"},{"text":"Des billets et du pop-corn"},{"text":"Rien"},{"text":"Des boissons seulement"}]','correct_index'=>1],
             ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment réagit le public à la fin du film ?','options'=>'[{"text":"Il applaudit"},{"text":"Il sort en silence"},{"text":"Il proteste"},{"text":"Il rit"}]','correct_index'=>0],
+        ]);
+
+        $story = DB::table('stories')->insertGetId([
+            'lang'       => 'hi',
+            'story_key'  => 'boulangerie',
+            'emoji'      => '🥖',
+            'title_fr'   => 'À la boulangerie',
+            'level'      => 1,
+            'sort_order' => 9,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        DB::table('story_tokens')->insert([
+            ['story_id'=>$story,'position'=>0,'text'=>'लिया','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>1,'text'=>'सुबह बेकरी में जाती है','fr'=>'entre dans la boulangerie le matin','is_punct'=>false],
+            ['story_id'=>$story,'position'=>2,'text'=>'।','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>3,'text'=>'ताज़ी रोटी की खुशबू आती है','fr'=>'Ça sent le pain frais','is_punct'=>false],
+            ['story_id'=>$story,'position'=>4,'text'=>'।','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>5,'text'=>'वह बैगेट और क्रोइसां मंगवाती है','fr'=>'Elle commande une baguette et un croissant','is_punct'=>false],
+            ['story_id'=>$story,'position'=>6,'text'=>'।','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>7,'text'=>'बेकर','fr'=>'La boulangère','is_punct'=>false],
+            ['story_id'=>$story,'position'=>8,'text'=>'मुस्कुराकर उसे बाकी पैसे देता है','fr'=>'sourit et lui rend la monnaie','is_punct'=>false],
+            ['story_id'=>$story,'position'=>9,'text'=>'।','fr'=>'','is_punct'=>true],
+            ['story_id'=>$story,'position'=>10,'text'=>'लिया','fr'=>'Léa','is_punct'=>false],
+            ['story_id'=>$story,'position'=>11,'text'=>'रोटी का बैग लेकर खुश होकर निकलती है','fr'=>'sort contente avec son sac de pain','is_punct'=>false],
+            ['story_id'=>$story,'position'=>12,'text'=>'।','fr'=>'','is_punct'=>true],
+        ]);
+        DB::table('story_questions')->insert([
+            ['story_id'=>$story,'position'=>0,'question_fr'=>'Quand le personnage entre-t-elle dans la boulangerie ?','options'=>'[{"text":"Le matin"},{"text":"Le soir"},{"text":"À minuit"},{"text":"Le week-end"}]','correct_index'=>0],
+            ['story_id'=>$story,'position'=>1,'question_fr'=>'Que commande-t-elle ?','options'=>'[{"text":"Seulement de l\'eau"},{"text":"Une baguette et un croissant"},{"text":"Une tarte"},{"text":"Rien"}]','correct_index'=>1],
+            ['story_id'=>$story,'position'=>2,'question_fr'=>'Comment se sent le personnage en sortant ?','options'=>'[{"text":"Triste"},{"text":"En colère"},{"text":"Contente"},{"text":"Fatiguée"}]','correct_index'=>2],
         ]);
 
     }

@@ -336,6 +336,38 @@ const QUESTIONS = {
       correct_index: 0,
     },
   ],
+  boulangerie: [
+    {
+      question_fr: 'Quand le personnage entre-t-elle dans la boulangerie ?',
+      options: [
+        { text: 'Le matin' },
+        { text: 'Le soir' },
+        { text: 'À minuit' },
+        { text: 'Le week-end' },
+      ],
+      correct_index: 0,
+    },
+    {
+      question_fr: 'Que commande-t-elle ?',
+      options: [
+        { text: 'Seulement de l\'eau' },
+        { text: 'Une baguette et un croissant' },
+        { text: 'Une tarte' },
+        { text: 'Rien' },
+      ],
+      correct_index: 1,
+    },
+    {
+      question_fr: 'Comment se sent le personnage en sortant ?',
+      options: [
+        { text: 'Triste' },
+        { text: 'En colère' },
+        { text: 'Contente' },
+        { text: 'Fatiguée' },
+      ],
+      correct_index: 2,
+    },
+  ],
 }
 
 function getQuestions(storyKey) {
@@ -343,6 +375,7 @@ function getQuestions(storyKey) {
   if (k === 'hotel') return QUESTIONS.hotel
   if (k === 'plage') return QUESTIONS.plage
   if (k === 'cinema') return QUESTIONS.cinema
+  if (k === 'boulangerie') return QUESTIONS.boulangerie
   if (k.includes('cafe') || k.includes('kafe') || k.includes('kissa') ||
       k.includes('cofee') || k.includes('kaffe') || k.includes('canting') || k.includes('kissa'))
     return QUESTIONS.cafe

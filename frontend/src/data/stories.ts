@@ -635,6 +635,25 @@ const STORIES_EXTRA: Record<string, Story[]> = {
       ]
     }
   ,
+    {
+      id: 'boulangerie', emoji: '🥖', title_fr: 'À la boulangerie', level: 1,
+      tokens: [
+        w('Léa','Léa'),
+        w('entra en la panadería por la mañana','entre dans la boulangerie le matin'),
+        p('.'),
+        w('Huele a pan recién hecho','Ça sent le pain frais'),
+        p('.'),
+        w('Pide una baguette y un croissant','Elle commande une baguette et un croissant'),
+        p('.'),
+        w('La panadera','La boulangère'),
+        w('sonríe y le da el cambio','sourit et lui rend la monnaie'),
+        p('.'),
+        w('Léa','Léa'),
+        w('sale contenta con su bolsa de pan','sort contente avec son sac de pain'),
+        p('.'),
+      ]
+    }
+  ,
   ],
 
   en: [
@@ -760,6 +779,25 @@ const STORIES_EXTRA: Record<string, Story[]> = {
       ]
     }
   ,
+    {
+      id: 'boulangerie', emoji: '🥖', title_fr: 'À la boulangerie', level: 1,
+      tokens: [
+        w('Léa','Léa'),
+        w('enters the bakery in the morning','entre dans la boulangerie le matin'),
+        p('.'),
+        w('It smells of fresh bread','Ça sent le pain frais'),
+        p('.'),
+        w('She orders a baguette and a croissant','Elle commande une baguette et un croissant'),
+        p('.'),
+        w('The baker','La boulangère'),
+        w('smiles and gives her the change','sourit et lui rend la monnaie'),
+        p('.'),
+        w('Léa','Léa'),
+        w('leaves happy with her bag of bread','sort contente avec son sac de pain'),
+        p('.'),
+      ]
+    }
+  ,
   ],
 
   de: [
@@ -880,6 +918,25 @@ const STORIES_EXTRA: Record<string, Story[]> = {
         p('.'),
         w('Am Ende','à la fin'),
         w('applaudiert das Publikum','le public applaudit'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'boulangerie', emoji: '🥖', title_fr: 'À la boulangerie', level: 1,
+      tokens: [
+        w('Léa','Léa'),
+        w('geht morgens in die Bäckerei','entre dans la boulangerie le matin'),
+        p('.'),
+        w('Es duftet nach frischem Brot','Ça sent le pain frais'),
+        p('.'),
+        w('Sie bestellt ein Baguette und ein Croissant','Elle commande une baguette et un croissant'),
+        p('.'),
+        w('Die Bäckerin','La boulangère'),
+        w('lächelt und gibt ihr das Wechselgeld','sourit et lui rend la monnaie'),
+        p('.'),
+        w('Léa','Léa'),
+        w('geht glücklich mit ihrer Brottüte hinaus','sort contente avec son sac de pain'),
         p('.'),
       ]
     }
@@ -1009,6 +1066,25 @@ const STORIES_EXTRA: Record<string, Story[]> = {
       ]
     }
   ,
+    {
+      id: 'boulangerie', emoji: '🥖', title_fr: 'À la boulangerie', level: 1,
+      tokens: [
+        w('Léa','Léa'),
+        w('entra in panetteria al mattino','entre dans la boulangerie le matin'),
+        p('.'),
+        w('Si sente il profumo di pane fresco','Ça sent le pain frais'),
+        p('.'),
+        w('Ordina una baguette e un croissant','Elle commande une baguette et un croissant'),
+        p('.'),
+        w('La panettiera','La boulangère'),
+        w('sorride e le dà il resto','sourit et lui rend la monnaie'),
+        p('.'),
+        w('Léa','Léa'),
+        w('esce contenta con il suo sacchetto di pane','sort contente avec son sac de pain'),
+        p('.'),
+      ]
+    }
+  ,
   ],
 
   pt: [
@@ -1128,6 +1204,25 @@ const STORIES_EXTRA: Record<string, Story[]> = {
         p('.'),
         w('No fim','à la fin'),
         w('o público aplaude','le public applaudit'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'boulangerie', emoji: '🥖', title_fr: 'À la boulangerie', level: 1,
+      tokens: [
+        w('Léa','Léa'),
+        w('entra na padaria de manhã','entre dans la boulangerie le matin'),
+        p('.'),
+        w('Sente-se o cheiro de pão fresco','Ça sent le pain frais'),
+        p('.'),
+        w('Pede uma baguete e um croissant','Elle commande une baguette et un croissant'),
+        p('.'),
+        w('A padeira','La boulangère'),
+        w('sorri e dá-lhe o troco','sourit et lui rend la monnaie'),
+        p('.'),
+        w('Léa','Léa'),
+        w('sai contente com o saco de pão','sort contente avec son sac de pain'),
         p('.'),
       ]
     }
@@ -1252,6 +1347,25 @@ const STORIES_EXTRA: Record<string, Story[]> = {
       ]
     }
   ,
+    {
+      id: 'boulangerie', emoji: '🥖', title_fr: 'À la boulangerie', level: 1,
+      tokens: [
+        w('Léa','Léa'),
+        w("gaat 's ochtends naar de bakkerij",'entre dans la boulangerie le matin'),
+        p('.'),
+        w('Het ruikt naar vers brood','Ça sent le pain frais'),
+        p('.'),
+        w('Ze bestelt een baguette en een croissant','Elle commande une baguette et un croissant'),
+        p('.'),
+        w('De bakker','La boulangère'),
+        w('glimlacht en geeft haar het wisselgeld','sourit et lui rend la monnaie'),
+        p('.'),
+        w('Léa','Léa'),
+        w('gaat tevreden naar buiten met haar broodzak','sort contente avec son sac de pain'),
+        p('.'),
+      ]
+    }
+  ,
   ],
 
   pl: [
@@ -1372,6 +1486,25 @@ const STORIES_EXTRA: Record<string, Story[]> = {
       ]
     }
   ,
+    {
+      id: 'boulangerie', emoji: '🥖', title_fr: 'À la boulangerie', level: 1,
+      tokens: [
+        w('Léa','Léa'),
+        w('wchodzi do piekarni rano','entre dans la boulangerie le matin'),
+        p('.'),
+        w('Pachnie świeżym chlebem','Ça sent le pain frais'),
+        p('.'),
+        w('Zamawia bagietkę i rogalik','Elle commande une baguette et un croissant'),
+        p('.'),
+        w('Piekarka','La boulangère'),
+        w('uśmiecha się i daje jej resztę','sourit et lui rend la monnaie'),
+        p('.'),
+        w('Léa','Léa'),
+        w('wychodzi zadowolona z torbą chleba','sort contente avec son sac de pain'),
+        p('.'),
+      ]
+    }
+  ,
   ],
 
   tr: [
@@ -1484,6 +1617,25 @@ const STORIES_EXTRA: Record<string, Story[]> = {
         p('.'),
         w('Sonunda','à la fin'),
         w('izleyiciler alkışlıyor','le public applaudit'),
+        p('.'),
+      ]
+    }
+  ,
+    {
+      id: 'boulangerie', emoji: '🥖', title_fr: 'À la boulangerie', level: 1,
+      tokens: [
+        w('Léa','Léa'),
+        w('sabah fırına giriyor','entre dans la boulangerie le matin'),
+        p('.'),
+        w('Taze ekmek kokuyor','Ça sent le pain frais'),
+        p('.'),
+        w('Bir baget ve bir kruvasan sipariş ediyor','Elle commande une baguette et un croissant'),
+        p('.'),
+        w('Fırıncı','La boulangère'),
+        w('gülümsüyor ve para üstünü veriyor','sourit et lui rend la monnaie'),
+        p('.'),
+        w('Léa','Léa'),
+        w('ekmek torbasıyla mutlu çıkıyor','sort contente avec son sac de pain'),
         p('.'),
       ]
     }
@@ -1607,6 +1759,25 @@ const STORIES_EXTRA: Record<string, Story[]> = {
       ]
     }
   ,
+    {
+      id: 'boulangerie', emoji: '🥖', title_fr: 'À la boulangerie', level: 1,
+      tokens: [
+        w('Лея','Léa'),
+        w('утром заходит в булочную','entre dans la boulangerie le matin'),
+        p('.'),
+        w('Пахнет свежим хлебом','Ça sent le pain frais'),
+        p('.'),
+        w('Она заказывает багет и круассан','Elle commande une baguette et un croissant'),
+        p('.'),
+        w('Булочница','La boulangère'),
+        w('улыбается и даёт ей сдачу','sourit et lui rend la monnaie'),
+        p('.'),
+        w('Лея','Léa'),
+        w('выходит довольная с пакетом хлеба','sort contente avec son sac de pain'),
+        p('.'),
+      ]
+    }
+  ,
   ],
 
   ja: [
@@ -1716,6 +1887,25 @@ const STORIES_EXTRA: Record<string, Story[]> = {
         p('。'),
         w('最後に','à la fin'),
         w('観客は拍手します','le public applaudit'),
+        p('。'),
+      ]
+    }
+  ,
+    {
+      id: 'boulangerie', emoji: '🥖', title_fr: 'À la boulangerie', level: 1,
+      tokens: [
+        w('レアは','Léa'),
+        w('朝パン屋に入ります','entre dans la boulangerie le matin'),
+        p('。'),
+        w('新鮮なパンの香りがします','Ça sent le pain frais'),
+        p('。'),
+        w('バゲットとクロワッサンを注文します','Elle commande une baguette et un croissant'),
+        p('。'),
+        w('パン屋さんは','La boulangère'),
+        w('笑顔でお釣りを渡します','sourit et lui rend la monnaie'),
+        p('。'),
+        w('レアは','Léa'),
+        w('パンの袋を持って嬉しそうに出ます','sort contente avec son sac de pain'),
         p('。'),
       ]
     }
@@ -1834,6 +2024,25 @@ const STORIES_EXTRA: Record<string, Story[]> = {
       ]
     }
   ,
+    {
+      id: 'boulangerie', emoji: '🥖', title_fr: 'À la boulangerie', level: 1,
+      tokens: [
+        w('레아는','Léa'),
+        w('아침에 빵집에 들어갑니다','entre dans la boulangerie le matin'),
+        p('.'),
+        w('신선한 빵 냄새가 납니다','Ça sent le pain frais'),
+        p('.'),
+        w('바게트와 크루아상을 주문합니다','Elle commande une baguette et un croissant'),
+        p('.'),
+        w('빵집 주인은','La boulangère'),
+        w('웃으면서 거스름돈을 줍니다','sourit et lui rend la monnaie'),
+        p('.'),
+        w('레아는','Léa'),
+        w('빵 봉지를 들고 행복하게 나갑니다','sort contente avec son sac de pain'),
+        p('.'),
+      ]
+    }
+  ,
   ],
 
   zh: [
@@ -1941,6 +2150,25 @@ const STORIES_EXTRA: Record<string, Story[]> = {
         p('。'),
         w('最后','à la fin'),
         w('观众们鼓掌','le public applaudit'),
+        p('。'),
+      ]
+    }
+  ,
+    {
+      id: 'boulangerie', emoji: '🥖', title_fr: 'À la boulangerie', level: 1,
+      tokens: [
+        w('莉亚','Léa'),
+        w('早上走进面包店','entre dans la boulangerie le matin'),
+        p('。'),
+        w('闻到新鲜面包的香味','Ça sent le pain frais'),
+        p('。'),
+        w('她点了一个法棍和一个羊角面包','Elle commande une baguette et un croissant'),
+        p('。'),
+        w('面包师','La boulangère'),
+        w('微笑着把找零给她','sourit et lui rend la monnaie'),
+        p('。'),
+        w('莉亚','Léa'),
+        w('拿着面包袋开心地走出去','sort contente avec son sac de pain'),
         p('。'),
       ]
     }
@@ -2062,6 +2290,25 @@ const STORIES_EXTRA: Record<string, Story[]> = {
       ]
     }
   ,
+    {
+      id: 'boulangerie', emoji: '🥖', title_fr: 'À la boulangerie', level: 1,
+      tokens: [
+        w('ليا','Léa'),
+        w('تدخل المخبز في الصباح','entre dans la boulangerie le matin'),
+        p('.'),
+        w('تنبعث رائحة الخبز الطازج','Ça sent le pain frais'),
+        p('.'),
+        w('تطلب باغيت وكرواسون','Elle commande une baguette et un croissant'),
+        p('.'),
+        w('الخبازة','La boulangère'),
+        w('تبتسم وتعطيها الباقي','sourit et lui rend la monnaie'),
+        p('.'),
+        w('ليا','Léa'),
+        w('تخرج سعيدة بحقيبة الخبز','sort contente avec son sac de pain'),
+        p('.'),
+      ]
+    }
+  ,
   ],
 
   hi: [
@@ -2172,6 +2419,25 @@ const STORIES_EXTRA: Record<string, Story[]> = {
         p('।'),
         w('अंत में','à la fin'),
         w('दर्शक तालियाँ बजाते हैं','le public applaudit'),
+        p('।'),
+      ]
+    }
+  ,
+    {
+      id: 'boulangerie', emoji: '🥖', title_fr: 'À la boulangerie', level: 1,
+      tokens: [
+        w('लिया','Léa'),
+        w('सुबह बेकरी में जाती है','entre dans la boulangerie le matin'),
+        p('।'),
+        w('ताज़ी रोटी की खुशबू आती है','Ça sent le pain frais'),
+        p('।'),
+        w('वह बैगेट और क्रोइसां मंगवाती है','Elle commande une baguette et un croissant'),
+        p('।'),
+        w('बेकर','La boulangère'),
+        w('मुस्कुराकर उसे बाकी पैसे देता है','sourit et lui rend la monnaie'),
+        p('।'),
+        w('लिया','Léa'),
+        w('रोटी का बैग लेकर खुश होकर निकलती है','sort contente avec son sac de pain'),
         p('।'),
       ]
     }
