@@ -1,21 +1,22 @@
 # État courant de LinguaFacil
 
-Dernière vérification : 14 juin 2026, après la fusion de la PR GitHub no 2 (PHPStan/PHPMD), de la PR no 3 (phase 27, dialogues) et de la PR no 4 (UX modes/thèmes/niveaux sans contenu) dans `master`.
+Dernière vérification : 14 juin 2026, après la fusion de la PR GitHub no 2 (PHPStan/PHPMD), de la PR no 3 (phase 27, dialogues), de la PR no 4 (UX modes/thèmes/niveaux sans contenu) et de la PR no 5 (page d'accueil marketing + mode démo) dans `master`.
 
 ## Dépôt
 
 - Chemin : `C:\Users\adric\Claude\Projects\Website-Project`
 - Dépôt GitHub : `Adrien75-lab/espaFacil`
 - Branche stable locale et distante : `master`
-- Commit stable observé : `ce1c834 Merge pull request #4 (UX : désactiver les modes/thèmes/niveaux sans contenu disponible)`
+- Commit stable observé : `ad99c6c Merge pull request #5 (page d'accueil marketing + mode démo)`
 - `AGENTS.md` et `CLAUDE.md` sont désormais suivis et présents sur `master`.
+- Convention de branches : `claude/YYYY-MM-DD-nom` pour le travail réalisé par Claude (Claude Code), `codex/YYYY-MM-DD-nom` pour Codex. Permet de distinguer rapidement qui a produit quelle branche.
 
 ## Branches importantes
 
 ### `master`
 
-- Pointe sur `ce1c834` lors du dernier relevé.
-- Contient les phases jusqu'à la phase 26, la refonte R1-R5, PHPStan/Larastan et PHPMD (PR no 2), la phase 27 - dialogues enrichis (PR no 3, 280 dialogues, 20 par langue x 14 langues), ainsi que le correctif UX modes/thèmes/niveaux sans contenu (PR no 4).
+- Pointe sur `ad99c6c` lors du dernier relevé.
+- Contient les phases jusqu'à la phase 26, la refonte R1-R5, PHPStan/Larastan et PHPMD (PR no 2), la phase 27 - dialogues enrichis (PR no 3, 280 dialogues, 20 par langue x 14 langues), le correctif UX modes/thèmes/niveaux sans contenu (PR no 4), ainsi que la nouvelle page d'accueil marketing + mode démo (PR no 5).
 - Contient les skills `.claude/skills/linguafacil` et `.claude/skills/feature-delivery-workflow`, ainsi que `AGENTS.md`/`CLAUDE.md`.
 - `composer analyse` et `composer mess-detect` sont disponibles (voir détails ci-dessous).
 
@@ -69,6 +70,7 @@ Dernière vérification : 14 juin 2026, après la fusion de la PR GitHub no 2 (P
 - Qualité backend (PHPStan/Larastan + PHPMD) : intégrée à `master` via la PR no 2.
 - Phase 27 : enrichissement des dialogues, intégrée à `master` via la PR no 3.
 - Correctif UX modes/thèmes/niveaux sans contenu (hors numérotation de phase), intégré à `master` via la PR no 4.
+- Page d'accueil marketing + mode démo pour les visiteurs (hors numérotation de phase), intégrée à `master` via la PR no 5.
 
 ## Phase 27 en détail
 
@@ -102,6 +104,19 @@ php artisan db:seed --class=DialogueSeeder
   - `HomeView.vue` : les boutons de mode, de thème et de niveau sont grisés/désactivés (et le bouton "Commencer" aussi) quand la combinaison n'a pas de contenu adapté, avec un message d'avertissement explicite.
 - Ne génère aucun contenu : le manque de phrases d'exemple sur certains thèmes/niveaux reste un sujet ouvert, à traiter séparément si souhaité (génération de contenu, pas UX).
 - Aucune migration nécessaire.
+
+## Page d'accueil marketing + mode démo (PR no 5)
+
+- Branche `claude/2026-06-14-landing-page`, fusionnée en `ad99c6c`.
+- Les visiteurs non connectés voient désormais sur `/` une page d'accueil marketing (`frontend/src/components/LandingHero.vue`) : hero, accroche, drapeaux des 14 langues, sections "Pourquoi LinguaFacil ?", CTA "Créer un compte gratuit" / "Essayer une leçon gratuite" / "Se connecter".
+- Le CTA "Essayer une leçon gratuite" donne accès au sélecteur habituel (`HomeView.vue`) en **mode démo limité**, persisté via `localStorage` (clé `lf_demo_started`) :
+  - seule la langue espagnole (`es`) est jouable, les autres sont grisées avec 🔒 et redirigent vers `/register` au clic ;
+  - seul le niveau Débutant est jouable ;
+  - seuls les modes QCM et Cartes sont jouables ;
+  - un bandeau rappelle la limitation avec un lien d'inscription.
+- Les constantes de démo (`DEMO_LANG`, `DEMO_LEVEL`, `DEMO_MODES`) sont en dur dans `HomeView.vue`, modifiables facilement.
+- Les utilisateurs connectés ne voient aucun changement (sélecteur complet, comme avant).
+- Aucune migration, aucun changement d'API.
 
 ## Prochaine phase prévue
 
