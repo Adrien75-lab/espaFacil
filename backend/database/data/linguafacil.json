@@ -105949,8 +105949,25 @@
       "translation_fr": "travail",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bu iş çok zor.",
+      "example_gloss": [
+        {
+          "w": "Bu",
+          "t": "Ce"
+        },
+        {
+          "w": "iş",
+          "t": "travail"
+        },
+        {
+          "w": "çok",
+          "t": "très"
+        },
+        {
+          "w": "zor",
+          "t": "difficile"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -105960,8 +105977,25 @@
       "translation_fr": "bureau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ofise her gün gidiyorum.",
+      "example_gloss": [
+        {
+          "w": "Ofise",
+          "t": "Au bureau"
+        },
+        {
+          "w": "her",
+          "t": "chaque"
+        },
+        {
+          "w": "gün",
+          "t": "jour"
+        },
+        {
+          "w": "gidiyorum",
+          "t": "je vais"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -105971,8 +106005,21 @@
       "translation_fr": "patron/chef",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Patron toplantıya geldi.",
+      "example_gloss": [
+        {
+          "w": "Patron",
+          "t": "patron"
+        },
+        {
+          "w": "toplantıya",
+          "t": "à la réunion"
+        },
+        {
+          "w": "geldi",
+          "t": "est venu"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -105982,8 +106029,21 @@
       "translation_fr": "réunion",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Toplantı saat onda.",
+      "example_gloss": [
+        {
+          "w": "Toplantı",
+          "t": "réunion"
+        },
+        {
+          "w": "saat",
+          "t": "heure"
+        },
+        {
+          "w": "onda",
+          "t": "à dix"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -105993,8 +106053,17 @@
       "translation_fr": "contrat",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sözleşmeyi imzaladım.",
+      "example_gloss": [
+        {
+          "w": "Sözleşmeyi",
+          "t": "contrat"
+        },
+        {
+          "w": "imzaladım",
+          "t": "j'ai signé"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -106004,8 +106073,25 @@
       "translation_fr": "salaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Maaş ayın sonunda gelir.",
+      "example_gloss": [
+        {
+          "w": "Maaş",
+          "t": "salaire"
+        },
+        {
+          "w": "ayın",
+          "t": "du mois"
+        },
+        {
+          "w": "sonunda",
+          "t": "à la fin"
+        },
+        {
+          "w": "gelir",
+          "t": "arrive"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -106015,8 +106101,25 @@
       "translation_fr": "entreprise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bu şirket çok büyük.",
+      "example_gloss": [
+        {
+          "w": "Bu",
+          "t": "Cette"
+        },
+        {
+          "w": "şirket",
+          "t": "entreprise"
+        },
+        {
+          "w": "çok",
+          "t": "très"
+        },
+        {
+          "w": "büyük",
+          "t": "grande"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -106026,8 +106129,29 @@
       "translation_fr": "collègue",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "İş arkadaşım bana yardım etti.",
+      "example_gloss": [
+        {
+          "w": "İş",
+          "t": "travail"
+        },
+        {
+          "w": "arkadaşım",
+          "t": "mon ami"
+        },
+        {
+          "w": "bana",
+          "t": "moi"
+        },
+        {
+          "w": "yardım",
+          "t": "aide"
+        },
+        {
+          "w": "etti",
+          "t": "a fait"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -106037,8 +106161,21 @@
       "translation_fr": "travail",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Моя работа интересная.",
+      "example_gloss": [
+        {
+          "w": "Моя",
+          "t": "Mon/Ma"
+        },
+        {
+          "w": "работа",
+          "t": "travail"
+        },
+        {
+          "w": "интересная",
+          "t": "intéressante"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -106048,8 +106185,25 @@
       "translation_fr": "bureau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Я иду в офис.",
+      "example_gloss": [
+        {
+          "w": "Я",
+          "t": "Je"
+        },
+        {
+          "w": "иду",
+          "t": "vais"
+        },
+        {
+          "w": "в",
+          "t": "à"
+        },
+        {
+          "w": "офис",
+          "t": "bureau"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -106059,8 +106213,21 @@
       "translation_fr": "patron/chef",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Начальник пришёл рано.",
+      "example_gloss": [
+        {
+          "w": "Начальник",
+          "t": "patron"
+        },
+        {
+          "w": "пришёл",
+          "t": "est venu"
+        },
+        {
+          "w": "рано",
+          "t": "tôt"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -106070,8 +106237,25 @@
       "translation_fr": "réunion",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Встреча начинается в десять.",
+      "example_gloss": [
+        {
+          "w": "Встреча",
+          "t": "réunion"
+        },
+        {
+          "w": "начинается",
+          "t": "commence"
+        },
+        {
+          "w": "в",
+          "t": "à"
+        },
+        {
+          "w": "десять",
+          "t": "dix"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -106081,8 +106265,21 @@
       "translation_fr": "contrat",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Я подписал контракт.",
+      "example_gloss": [
+        {
+          "w": "Я",
+          "t": "Je"
+        },
+        {
+          "w": "подписал",
+          "t": "ai signé"
+        },
+        {
+          "w": "контракт",
+          "t": "contrat"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -106092,8 +106289,25 @@
       "translation_fr": "salaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Зарплата приходит каждый месяц.",
+      "example_gloss": [
+        {
+          "w": "Зарплата",
+          "t": "salaire"
+        },
+        {
+          "w": "приходит",
+          "t": "arrive"
+        },
+        {
+          "w": "каждый",
+          "t": "chaque"
+        },
+        {
+          "w": "месяц",
+          "t": "mois"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -106103,8 +106317,25 @@
       "translation_fr": "entreprise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Эта компания очень большая.",
+      "example_gloss": [
+        {
+          "w": "Эта",
+          "t": "Cette"
+        },
+        {
+          "w": "компания",
+          "t": "entreprise"
+        },
+        {
+          "w": "очень",
+          "t": "très"
+        },
+        {
+          "w": "большая",
+          "t": "grande"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -106114,8 +106345,25 @@
       "translation_fr": "collègue",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Мой коллега помог мне.",
+      "example_gloss": [
+        {
+          "w": "Мой",
+          "t": "Mon"
+        },
+        {
+          "w": "коллега",
+          "t": "collègue"
+        },
+        {
+          "w": "помог",
+          "t": "a aidé"
+        },
+        {
+          "w": "мне",
+          "t": "moi"
+        }
+      ]
     },
     {
       "language_code": "ja",
@@ -108049,8 +108297,21 @@
       "translation_fr": "école",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Çocuklar okula gidiyor.",
+      "example_gloss": [
+        {
+          "w": "Çocuklar",
+          "t": "enfants"
+        },
+        {
+          "w": "okula",
+          "t": "à école"
+        },
+        {
+          "w": "gidiyor",
+          "t": "vont"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -108060,8 +108321,25 @@
       "translation_fr": "livre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bu kitap çok güzel.",
+      "example_gloss": [
+        {
+          "w": "Bu",
+          "t": "Ce"
+        },
+        {
+          "w": "kitap",
+          "t": "livre"
+        },
+        {
+          "w": "çok",
+          "t": "très"
+        },
+        {
+          "w": "güzel",
+          "t": "beau"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -108071,8 +108349,25 @@
       "translation_fr": "crayon",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bana bir kalem ver.",
+      "example_gloss": [
+        {
+          "w": "Bana",
+          "t": "moi"
+        },
+        {
+          "w": "bir",
+          "t": "un"
+        },
+        {
+          "w": "kalem",
+          "t": "crayon"
+        },
+        {
+          "w": "ver",
+          "t": "donne"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -108082,8 +108377,17 @@
       "translation_fr": "cahier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Deftere yazıyorum.",
+      "example_gloss": [
+        {
+          "w": "Deftere",
+          "t": "dans le cahier"
+        },
+        {
+          "w": "yazıyorum",
+          "t": "j'écris"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -108093,8 +108397,21 @@
       "translation_fr": "professeur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Öğretmen dersi anlatıyor.",
+      "example_gloss": [
+        {
+          "w": "Öğretmen",
+          "t": "professeur"
+        },
+        {
+          "w": "dersi",
+          "t": "leçon"
+        },
+        {
+          "w": "anlatıyor",
+          "t": "explique"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -108104,8 +108421,21 @@
       "translation_fr": "examen",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sınav yarın olacak.",
+      "example_gloss": [
+        {
+          "w": "Sınav",
+          "t": "examen"
+        },
+        {
+          "w": "yarın",
+          "t": "demain"
+        },
+        {
+          "w": "olacak",
+          "t": "sera"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -108115,8 +108445,17 @@
       "translation_fr": "devoirs",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ödevimi yapıyorum.",
+      "example_gloss": [
+        {
+          "w": "Ödevimi",
+          "t": "mes devoirs"
+        },
+        {
+          "w": "yapıyorum",
+          "t": "je fais"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -108126,8 +108465,25 @@
       "translation_fr": "bibliothèque",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Kütüphane altıya kadar açık.",
+      "example_gloss": [
+        {
+          "w": "Kütüphane",
+          "t": "bibliothèque"
+        },
+        {
+          "w": "altıya",
+          "t": "six"
+        },
+        {
+          "w": "kadar",
+          "t": "jusqu'à"
+        },
+        {
+          "w": "açık",
+          "t": "ouvert"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -108137,8 +108493,25 @@
       "translation_fr": "école",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Дети идут в школу.",
+      "example_gloss": [
+        {
+          "w": "Дети",
+          "t": "enfants"
+        },
+        {
+          "w": "идут",
+          "t": "vont"
+        },
+        {
+          "w": "в",
+          "t": "à"
+        },
+        {
+          "w": "школу",
+          "t": "école"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -108148,8 +108521,25 @@
       "translation_fr": "livre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Эта книга очень интересная.",
+      "example_gloss": [
+        {
+          "w": "Эта",
+          "t": "Ce"
+        },
+        {
+          "w": "книга",
+          "t": "livre"
+        },
+        {
+          "w": "очень",
+          "t": "très"
+        },
+        {
+          "w": "интересная",
+          "t": "intéressant"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -108159,8 +108549,21 @@
       "translation_fr": "crayon",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Дай мне карандаш.",
+      "example_gloss": [
+        {
+          "w": "Дай",
+          "t": "Donne"
+        },
+        {
+          "w": "мне",
+          "t": "moi"
+        },
+        {
+          "w": "карандаш",
+          "t": "crayon"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -108170,8 +108573,25 @@
       "translation_fr": "cahier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Я пишу в тетради.",
+      "example_gloss": [
+        {
+          "w": "Я",
+          "t": "Je"
+        },
+        {
+          "w": "пишу",
+          "t": "écris"
+        },
+        {
+          "w": "в",
+          "t": "dans"
+        },
+        {
+          "w": "тетради",
+          "t": "cahier"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -108181,8 +108601,21 @@
       "translation_fr": "professeur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Учитель объясняет урок.",
+      "example_gloss": [
+        {
+          "w": "Учитель",
+          "t": "professeur"
+        },
+        {
+          "w": "объясняет",
+          "t": "explique"
+        },
+        {
+          "w": "урок",
+          "t": "leçon"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -108192,8 +108625,21 @@
       "translation_fr": "examen",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Экзамен будет завтра.",
+      "example_gloss": [
+        {
+          "w": "Экзамен",
+          "t": "examen"
+        },
+        {
+          "w": "будет",
+          "t": "sera"
+        },
+        {
+          "w": "завтра",
+          "t": "demain"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -108203,8 +108649,25 @@
       "translation_fr": "devoirs",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Я делаю домашнее задание.",
+      "example_gloss": [
+        {
+          "w": "Я",
+          "t": "Je"
+        },
+        {
+          "w": "делаю",
+          "t": "fais"
+        },
+        {
+          "w": "домашнее",
+          "t": "de maison"
+        },
+        {
+          "w": "задание",
+          "t": "devoir"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -108214,8 +108677,25 @@
       "translation_fr": "bibliothèque",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Библиотека открыта до шести.",
+      "example_gloss": [
+        {
+          "w": "Библиотека",
+          "t": "bibliothèque"
+        },
+        {
+          "w": "открыта",
+          "t": "ouverte"
+        },
+        {
+          "w": "до",
+          "t": "jusqu'à"
+        },
+        {
+          "w": "шести",
+          "t": "six"
+        }
+      ]
     },
     {
       "language_code": "ja",
@@ -110213,8 +110693,21 @@
       "translation_fr": "magasin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mağaza sekizde kapanıyor.",
+      "example_gloss": [
+        {
+          "w": "Mağaza",
+          "t": "magasin"
+        },
+        {
+          "w": "sekizde",
+          "t": "à huit"
+        },
+        {
+          "w": "kapanıyor",
+          "t": "ferme"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -110224,8 +110717,25 @@
       "translation_fr": "prix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bu fiyat çok yüksek.",
+      "example_gloss": [
+        {
+          "w": "Bu",
+          "t": "Ce"
+        },
+        {
+          "w": "fiyat",
+          "t": "prix"
+        },
+        {
+          "w": "çok",
+          "t": "très"
+        },
+        {
+          "w": "yüksek",
+          "t": "élevé"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -110235,8 +110745,25 @@
       "translation_fr": "cher",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bu telefon çok pahalı.",
+      "example_gloss": [
+        {
+          "w": "Bu",
+          "t": "Ce"
+        },
+        {
+          "w": "telefon",
+          "t": "téléphone"
+        },
+        {
+          "w": "çok",
+          "t": "trop"
+        },
+        {
+          "w": "pahalı",
+          "t": "cher"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -110246,8 +110773,21 @@
       "translation_fr": "pas cher",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bu ekmek ucuz.",
+      "example_gloss": [
+        {
+          "w": "Bu",
+          "t": "Ce"
+        },
+        {
+          "w": "ekmek",
+          "t": "pain"
+        },
+        {
+          "w": "ucuz",
+          "t": "pas cher"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -110257,8 +110797,25 @@
       "translation_fr": "réduction",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bugün büyük indirim var.",
+      "example_gloss": [
+        {
+          "w": "Bugün",
+          "t": "Aujourd'hui"
+        },
+        {
+          "w": "büyük",
+          "t": "grande"
+        },
+        {
+          "w": "indirim",
+          "t": "réduction"
+        },
+        {
+          "w": "var",
+          "t": "il y a"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -110268,8 +110825,21 @@
       "translation_fr": "caisse",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Kasada ödeme yapın.",
+      "example_gloss": [
+        {
+          "w": "Kasada",
+          "t": "à la caisse"
+        },
+        {
+          "w": "ödeme",
+          "t": "paiement"
+        },
+        {
+          "w": "yapın",
+          "t": "faites"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -110279,8 +110849,21 @@
       "translation_fr": "carte bancaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Kartla ödeyebilir miyim?",
+      "example_gloss": [
+        {
+          "w": "Kartla",
+          "t": "par carte"
+        },
+        {
+          "w": "ödeyebilir",
+          "t": "puis-je payer"
+        },
+        {
+          "w": "miyim",
+          "t": "?"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -110290,8 +110873,17 @@
       "translation_fr": "reçu",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Fişinizi alın.",
+      "example_gloss": [
+        {
+          "w": "Fişinizi",
+          "t": "votre reçu"
+        },
+        {
+          "w": "alın",
+          "t": "prenez"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -110301,8 +110893,25 @@
       "translation_fr": "magasin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Магазин закрывается в восемь.",
+      "example_gloss": [
+        {
+          "w": "Магазин",
+          "t": "magasin"
+        },
+        {
+          "w": "закрывается",
+          "t": "ferme"
+        },
+        {
+          "w": "в",
+          "t": "à"
+        },
+        {
+          "w": "восемь",
+          "t": "huit"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -110312,8 +110921,25 @@
       "translation_fr": "prix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Какая цена этого пальто?",
+      "example_gloss": [
+        {
+          "w": "Какая",
+          "t": "Quel"
+        },
+        {
+          "w": "цена",
+          "t": "prix"
+        },
+        {
+          "w": "этого",
+          "t": "de ce"
+        },
+        {
+          "w": "пальто",
+          "t": "manteau"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -110323,8 +110949,25 @@
       "translation_fr": "cher",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Этот телефон слишком дорогой.",
+      "example_gloss": [
+        {
+          "w": "Этот",
+          "t": "Ce"
+        },
+        {
+          "w": "телефон",
+          "t": "téléphone"
+        },
+        {
+          "w": "слишком",
+          "t": "trop"
+        },
+        {
+          "w": "дорогой",
+          "t": "cher"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -110334,8 +110977,21 @@
       "translation_fr": "pas cher",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Этот хлеб дешёвый.",
+      "example_gloss": [
+        {
+          "w": "Этот",
+          "t": "Ce"
+        },
+        {
+          "w": "хлеб",
+          "t": "pain"
+        },
+        {
+          "w": "дешёвый",
+          "t": "pas cher"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -110345,8 +111001,21 @@
       "translation_fr": "réduction",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Сегодня большая скидка.",
+      "example_gloss": [
+        {
+          "w": "Сегодня",
+          "t": "Aujourd'hui"
+        },
+        {
+          "w": "большая",
+          "t": "grande"
+        },
+        {
+          "w": "скидка",
+          "t": "réduction"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -110356,8 +111025,21 @@
       "translation_fr": "caisse",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Оплатите на кассе.",
+      "example_gloss": [
+        {
+          "w": "Оплатите",
+          "t": "Payez"
+        },
+        {
+          "w": "на",
+          "t": "à"
+        },
+        {
+          "w": "кассе",
+          "t": "caisse"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -110367,8 +111049,21 @@
       "translation_fr": "carte bancaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Можно платить картой?",
+      "example_gloss": [
+        {
+          "w": "Можно",
+          "t": "On peut"
+        },
+        {
+          "w": "платить",
+          "t": "payer"
+        },
+        {
+          "w": "картой",
+          "t": "par carte"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -110378,8 +111073,21 @@
       "translation_fr": "reçu",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Возьмите ваш чек.",
+      "example_gloss": [
+        {
+          "w": "Возьмите",
+          "t": "Prenez"
+        },
+        {
+          "w": "ваш",
+          "t": "votre"
+        },
+        {
+          "w": "чек",
+          "t": "reçu"
+        }
+      ]
     },
     {
       "language_code": "ja",
@@ -112345,8 +113053,29 @@
       "translation_fr": "médecin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Doktor sabah hasta kabul ediyor.",
+      "example_gloss": [
+        {
+          "w": "Doktor",
+          "t": "médecin"
+        },
+        {
+          "w": "sabah",
+          "t": "matin"
+        },
+        {
+          "w": "hasta",
+          "t": "patient"
+        },
+        {
+          "w": "kabul",
+          "t": "accepte"
+        },
+        {
+          "w": "ediyor",
+          "t": "fait"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -112356,8 +113085,17 @@
       "translation_fr": "hôpital",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hastane yakında.",
+      "example_gloss": [
+        {
+          "w": "Hastane",
+          "t": "hôpital"
+        },
+        {
+          "w": "yakında",
+          "t": "à côté"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -112367,8 +113105,25 @@
       "translation_fr": "douleur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Şiddetli bir ağrım var.",
+      "example_gloss": [
+        {
+          "w": "Şiddetli",
+          "t": "forte"
+        },
+        {
+          "w": "bir",
+          "t": "une"
+        },
+        {
+          "w": "ağrım",
+          "t": "douleur"
+        },
+        {
+          "w": "var",
+          "t": "il y a"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -112378,8 +113133,21 @@
       "translation_fr": "fièvre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Çocuğun ateşi var.",
+      "example_gloss": [
+        {
+          "w": "Çocuğun",
+          "t": "de l'enfant"
+        },
+        {
+          "w": "ateşi",
+          "t": "fièvre"
+        },
+        {
+          "w": "var",
+          "t": "il y a"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -112389,8 +113157,21 @@
       "translation_fr": "médicament",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bu ilacı alın.",
+      "example_gloss": [
+        {
+          "w": "Bu",
+          "t": "ce"
+        },
+        {
+          "w": "ilacı",
+          "t": "médicament"
+        },
+        {
+          "w": "alın",
+          "t": "prenez"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -112400,8 +113181,21 @@
       "translation_fr": "comprimé",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bir hap için.",
+      "example_gloss": [
+        {
+          "w": "Bir",
+          "t": "un"
+        },
+        {
+          "w": "hap",
+          "t": "comprimé"
+        },
+        {
+          "w": "için",
+          "t": "buvez"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -112411,8 +113205,21 @@
       "translation_fr": "allergie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Toz alerjim var.",
+      "example_gloss": [
+        {
+          "w": "Toz",
+          "t": "poussière"
+        },
+        {
+          "w": "alerjim",
+          "t": "allergie"
+        },
+        {
+          "w": "var",
+          "t": "j'ai"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -112422,8 +113229,25 @@
       "translation_fr": "ordonnance",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Doktor bana reçete verdi.",
+      "example_gloss": [
+        {
+          "w": "Doktor",
+          "t": "médecin"
+        },
+        {
+          "w": "bana",
+          "t": "moi"
+        },
+        {
+          "w": "reçete",
+          "t": "ordonnance"
+        },
+        {
+          "w": "verdi",
+          "t": "a donné"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -112433,8 +113257,21 @@
       "translation_fr": "médecin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Врач принимает утром.",
+      "example_gloss": [
+        {
+          "w": "Врач",
+          "t": "médecin"
+        },
+        {
+          "w": "принимает",
+          "t": "reçoit"
+        },
+        {
+          "w": "утром",
+          "t": "le matin"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -112444,8 +113281,21 @@
       "translation_fr": "hôpital",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Больница находится рядом.",
+      "example_gloss": [
+        {
+          "w": "Больница",
+          "t": "hôpital"
+        },
+        {
+          "w": "находится",
+          "t": "se trouve"
+        },
+        {
+          "w": "рядом",
+          "t": "à côté"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -112455,8 +113305,25 @@
       "translation_fr": "douleur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "У меня сильная боль.",
+      "example_gloss": [
+        {
+          "w": "У",
+          "t": "Chez"
+        },
+        {
+          "w": "меня",
+          "t": "moi"
+        },
+        {
+          "w": "сильная",
+          "t": "forte"
+        },
+        {
+          "w": "боль",
+          "t": "douleur"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -112466,8 +113333,21 @@
       "translation_fr": "fièvre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "У ребёнка жар.",
+      "example_gloss": [
+        {
+          "w": "У",
+          "t": "Chez"
+        },
+        {
+          "w": "ребёнка",
+          "t": "enfant"
+        },
+        {
+          "w": "жар",
+          "t": "fièvre"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -112477,8 +113357,21 @@
       "translation_fr": "médicament",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Примите это лекарство.",
+      "example_gloss": [
+        {
+          "w": "Примите",
+          "t": "Prenez"
+        },
+        {
+          "w": "это",
+          "t": "ce"
+        },
+        {
+          "w": "лекарство",
+          "t": "médicament"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -112488,8 +113381,21 @@
       "translation_fr": "comprimé",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Выпейте одну таблетку.",
+      "example_gloss": [
+        {
+          "w": "Выпейте",
+          "t": "Avalez"
+        },
+        {
+          "w": "одну",
+          "t": "un"
+        },
+        {
+          "w": "таблетку",
+          "t": "comprimé"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -112499,8 +113405,29 @@
       "translation_fr": "allergie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "У меня аллергия на пыль.",
+      "example_gloss": [
+        {
+          "w": "У",
+          "t": "Chez"
+        },
+        {
+          "w": "меня",
+          "t": "moi"
+        },
+        {
+          "w": "аллергия",
+          "t": "allergie"
+        },
+        {
+          "w": "на",
+          "t": "à"
+        },
+        {
+          "w": "пыль",
+          "t": "poussière"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -112510,8 +113437,25 @@
       "translation_fr": "ordonnance",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Врач дал мне рецепт.",
+      "example_gloss": [
+        {
+          "w": "Врач",
+          "t": "médecin"
+        },
+        {
+          "w": "дал",
+          "t": "a donné"
+        },
+        {
+          "w": "мне",
+          "t": "moi"
+        },
+        {
+          "w": "рецепт",
+          "t": "ordonnance"
+        }
+      ]
     },
     {
       "language_code": "ja",
@@ -114441,8 +115385,17 @@
       "translation_fr": "téléphone",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Telefonum bitti.",
+      "example_gloss": [
+        {
+          "w": "Telefonum",
+          "t": "mon téléphone"
+        },
+        {
+          "w": "bitti",
+          "t": "s'est déchargé"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -114452,8 +115405,21 @@
       "translation_fr": "ordinateur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bilgisayar yavaş çalışıyor.",
+      "example_gloss": [
+        {
+          "w": "Bilgisayar",
+          "t": "ordinateur"
+        },
+        {
+          "w": "yavaş",
+          "t": "lentement"
+        },
+        {
+          "w": "çalışıyor",
+          "t": "fonctionne"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -114463,8 +115429,17 @@
       "translation_fr": "internet",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "İnternet çalışmıyor.",
+      "example_gloss": [
+        {
+          "w": "İnternet",
+          "t": "Internet"
+        },
+        {
+          "w": "çalışmıyor",
+          "t": "ne fonctionne pas"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -114474,8 +115449,17 @@
       "translation_fr": "mot de passe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Şifremi unuttum.",
+      "example_gloss": [
+        {
+          "w": "Şifremi",
+          "t": "mon mot de passe"
+        },
+        {
+          "w": "unuttum",
+          "t": "j'ai oublié"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -114485,8 +115469,21 @@
       "translation_fr": "email",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "E-postanı kontrol et.",
+      "example_gloss": [
+        {
+          "w": "E-postanı",
+          "t": "ton email"
+        },
+        {
+          "w": "kontrol",
+          "t": "vérifier"
+        },
+        {
+          "w": "et",
+          "t": "fais"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -114496,8 +115493,21 @@
       "translation_fr": "écran",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ekran çok parlak.",
+      "example_gloss": [
+        {
+          "w": "Ekran",
+          "t": "écran"
+        },
+        {
+          "w": "çok",
+          "t": "trop"
+        },
+        {
+          "w": "parlak",
+          "t": "lumineux"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -114507,8 +115517,21 @@
       "translation_fr": "clavier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bu klavye rahat.",
+      "example_gloss": [
+        {
+          "w": "Bu",
+          "t": "Ce"
+        },
+        {
+          "w": "klavye",
+          "t": "clavier"
+        },
+        {
+          "w": "rahat",
+          "t": "confortable"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -114518,8 +115541,21 @@
       "translation_fr": "application",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bu uygulamayı indir.",
+      "example_gloss": [
+        {
+          "w": "Bu",
+          "t": "cette"
+        },
+        {
+          "w": "uygulamayı",
+          "t": "application"
+        },
+        {
+          "w": "indir",
+          "t": "télécharge"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -114529,8 +115565,21 @@
       "translation_fr": "téléphone",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Мой телефон разрядился.",
+      "example_gloss": [
+        {
+          "w": "Мой",
+          "t": "Mon"
+        },
+        {
+          "w": "телефон",
+          "t": "téléphone"
+        },
+        {
+          "w": "разрядился",
+          "t": "s'est déchargé"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -114540,8 +115589,21 @@
       "translation_fr": "ordinateur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Компьютер работает медленно.",
+      "example_gloss": [
+        {
+          "w": "Компьютер",
+          "t": "ordinateur"
+        },
+        {
+          "w": "работает",
+          "t": "fonctionne"
+        },
+        {
+          "w": "медленно",
+          "t": "lentement"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -114551,8 +115613,21 @@
       "translation_fr": "internet",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Интернет не работает.",
+      "example_gloss": [
+        {
+          "w": "Интернет",
+          "t": "Internet"
+        },
+        {
+          "w": "не",
+          "t": "ne pas"
+        },
+        {
+          "w": "работает",
+          "t": "fonctionne"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -114562,8 +115637,25 @@
       "translation_fr": "mot de passe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Я забыл свой пароль.",
+      "example_gloss": [
+        {
+          "w": "Я",
+          "t": "Je"
+        },
+        {
+          "w": "забыл",
+          "t": "ai oublié"
+        },
+        {
+          "w": "свой",
+          "t": "mon"
+        },
+        {
+          "w": "пароль",
+          "t": "mot de passe"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -114573,8 +115665,21 @@
       "translation_fr": "email",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Проверь электронную почту.",
+      "example_gloss": [
+        {
+          "w": "Проверь",
+          "t": "Vérifie"
+        },
+        {
+          "w": "электронную",
+          "t": "électronique"
+        },
+        {
+          "w": "почту",
+          "t": "courrier"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -114584,8 +115689,21 @@
       "translation_fr": "écran",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Экран слишком яркий.",
+      "example_gloss": [
+        {
+          "w": "Экран",
+          "t": "écran"
+        },
+        {
+          "w": "слишком",
+          "t": "trop"
+        },
+        {
+          "w": "яркий",
+          "t": "lumineux"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -114595,8 +115713,21 @@
       "translation_fr": "clavier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Эта клавиатура удобная.",
+      "example_gloss": [
+        {
+          "w": "Эта",
+          "t": "Ce"
+        },
+        {
+          "w": "клавиатура",
+          "t": "clavier"
+        },
+        {
+          "w": "удобная",
+          "t": "confortable"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -114606,8 +115737,21 @@
       "translation_fr": "application",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Скачай это приложение.",
+      "example_gloss": [
+        {
+          "w": "Скачай",
+          "t": "Télécharge"
+        },
+        {
+          "w": "это",
+          "t": "cette"
+        },
+        {
+          "w": "приложение",
+          "t": "application"
+        }
+      ]
     },
     {
       "language_code": "ja",
@@ -116565,8 +117709,25 @@
       "translation_fr": "arbre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bu yaşlı bir ağaç.",
+      "example_gloss": [
+        {
+          "w": "Bu",
+          "t": "C'est"
+        },
+        {
+          "w": "yaşlı",
+          "t": "vieux"
+        },
+        {
+          "w": "bir",
+          "t": "un"
+        },
+        {
+          "w": "ağaç",
+          "t": "arbre"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -116576,8 +117737,25 @@
       "translation_fr": "fleur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ne güzel bir çiçek!",
+      "example_gloss": [
+        {
+          "w": "Ne",
+          "t": "Quel"
+        },
+        {
+          "w": "güzel",
+          "t": "beau"
+        },
+        {
+          "w": "bir",
+          "t": "une"
+        },
+        {
+          "w": "çiçek",
+          "t": "fleur"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -116587,8 +117765,21 @@
       "translation_fr": "rivière",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Nehir hızlı akıyor.",
+      "example_gloss": [
+        {
+          "w": "Nehir",
+          "t": "rivière"
+        },
+        {
+          "w": "hızlı",
+          "t": "vite"
+        },
+        {
+          "w": "akıyor",
+          "t": "coule"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -116598,8 +117789,25 @@
       "translation_fr": "montagne",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bu dağ çok yüksek.",
+      "example_gloss": [
+        {
+          "w": "Bu",
+          "t": "Cette"
+        },
+        {
+          "w": "dağ",
+          "t": "montagne"
+        },
+        {
+          "w": "çok",
+          "t": "très"
+        },
+        {
+          "w": "yüksek",
+          "t": "haute"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -116609,8 +117817,17 @@
       "translation_fr": "mer",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Denize gidiyoruz.",
+      "example_gloss": [
+        {
+          "w": "Denize",
+          "t": "à la mer"
+        },
+        {
+          "w": "gidiyoruz",
+          "t": "nous allons"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -116620,8 +117837,25 @@
       "translation_fr": "forêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ormanda çok mantar var.",
+      "example_gloss": [
+        {
+          "w": "Ormanda",
+          "t": "dans la forêt"
+        },
+        {
+          "w": "çok",
+          "t": "beaucoup de"
+        },
+        {
+          "w": "mantar",
+          "t": "champignons"
+        },
+        {
+          "w": "var",
+          "t": "il y a"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -116631,8 +117865,25 @@
       "translation_fr": "pierre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Suya bir taş attı.",
+      "example_gloss": [
+        {
+          "w": "Suya",
+          "t": "dans l'eau"
+        },
+        {
+          "w": "bir",
+          "t": "une"
+        },
+        {
+          "w": "taş",
+          "t": "pierre"
+        },
+        {
+          "w": "attı",
+          "t": "a jeté"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -116642,8 +117893,25 @@
       "translation_fr": "terre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Yağmurdan sonra toprak ıslak.",
+      "example_gloss": [
+        {
+          "w": "Yağmurdan",
+          "t": "de la pluie"
+        },
+        {
+          "w": "sonra",
+          "t": "après"
+        },
+        {
+          "w": "toprak",
+          "t": "terre"
+        },
+        {
+          "w": "ıslak",
+          "t": "mouillée"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -116653,8 +117921,21 @@
       "translation_fr": "arbre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Это старое дерево.",
+      "example_gloss": [
+        {
+          "w": "Это",
+          "t": "C'est"
+        },
+        {
+          "w": "старое",
+          "t": "vieux"
+        },
+        {
+          "w": "дерево",
+          "t": "arbre"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -116664,8 +117945,21 @@
       "translation_fr": "fleur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Какой красивый цветок!",
+      "example_gloss": [
+        {
+          "w": "Какой",
+          "t": "Quel"
+        },
+        {
+          "w": "красивый",
+          "t": "beau"
+        },
+        {
+          "w": "цветок",
+          "t": "fleur"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -116675,8 +117969,21 @@
       "translation_fr": "rivière",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Река течёт быстро.",
+      "example_gloss": [
+        {
+          "w": "Река",
+          "t": "rivière"
+        },
+        {
+          "w": "течёт",
+          "t": "coule"
+        },
+        {
+          "w": "быстро",
+          "t": "vite"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -116686,8 +117993,25 @@
       "translation_fr": "montagne",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Эта гора очень высокая.",
+      "example_gloss": [
+        {
+          "w": "Эта",
+          "t": "Cette"
+        },
+        {
+          "w": "гора",
+          "t": "montagne"
+        },
+        {
+          "w": "очень",
+          "t": "très"
+        },
+        {
+          "w": "высокая",
+          "t": "haute"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -116697,8 +118021,25 @@
       "translation_fr": "mer",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Мы едем к морю.",
+      "example_gloss": [
+        {
+          "w": "Мы",
+          "t": "Nous"
+        },
+        {
+          "w": "едем",
+          "t": "allons"
+        },
+        {
+          "w": "к",
+          "t": "vers"
+        },
+        {
+          "w": "морю",
+          "t": "mer"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -116708,8 +118049,25 @@
       "translation_fr": "forêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "В лесу много грибов.",
+      "example_gloss": [
+        {
+          "w": "В",
+          "t": "Dans"
+        },
+        {
+          "w": "лесу",
+          "t": "forêt"
+        },
+        {
+          "w": "много",
+          "t": "beaucoup de"
+        },
+        {
+          "w": "грибов",
+          "t": "champignons"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -116719,8 +118077,29 @@
       "translation_fr": "pierre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Он бросил камень в воду.",
+      "example_gloss": [
+        {
+          "w": "Он",
+          "t": "Il"
+        },
+        {
+          "w": "бросил",
+          "t": "a jeté"
+        },
+        {
+          "w": "камень",
+          "t": "pierre"
+        },
+        {
+          "w": "в",
+          "t": "dans"
+        },
+        {
+          "w": "воду",
+          "t": "eau"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -116730,8 +118109,25 @@
       "translation_fr": "terre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Земля мокрая после дождя.",
+      "example_gloss": [
+        {
+          "w": "Земля",
+          "t": "terre"
+        },
+        {
+          "w": "мокрая",
+          "t": "mouillée"
+        },
+        {
+          "w": "после",
+          "t": "après"
+        },
+        {
+          "w": "дождя",
+          "t": "pluie"
+        }
+      ]
     },
     {
       "language_code": "ja",
@@ -118597,8 +119993,21 @@
       "translation_fr": "heureux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bugün çok mutluyum.",
+      "example_gloss": [
+        {
+          "w": "Bugün",
+          "t": "Aujourd'hui"
+        },
+        {
+          "w": "çok",
+          "t": "très"
+        },
+        {
+          "w": "mutluyum",
+          "t": "je suis heureux"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -118608,8 +120017,17 @@
       "translation_fr": "triste",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Arkadaşsız üzgün.",
+      "example_gloss": [
+        {
+          "w": "Arkadaşsız",
+          "t": "sans amis"
+        },
+        {
+          "w": "üzgün",
+          "t": "triste"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -118619,8 +120037,21 @@
       "translation_fr": "en colère",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bana kızgın olma.",
+      "example_gloss": [
+        {
+          "w": "Bana",
+          "t": "contre moi"
+        },
+        {
+          "w": "kızgın",
+          "t": "en colère"
+        },
+        {
+          "w": "olma",
+          "t": "ne sois pas"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -118630,8 +120061,17 @@
       "translation_fr": "effrayé",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Çocuk korkmuş.",
+      "example_gloss": [
+        {
+          "w": "Çocuk",
+          "t": "enfant"
+        },
+        {
+          "w": "korkmuş",
+          "t": "effrayé"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -118641,8 +120081,17 @@
       "translation_fr": "surpris",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Habere şaşkınım.",
+      "example_gloss": [
+        {
+          "w": "Habere",
+          "t": "par la nouvelle"
+        },
+        {
+          "w": "şaşkınım",
+          "t": "je suis surpris"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -118652,8 +120101,21 @@
       "translation_fr": "fier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Baba oğluyla gururlu.",
+      "example_gloss": [
+        {
+          "w": "Baba",
+          "t": "père"
+        },
+        {
+          "w": "oğluyla",
+          "t": "de son fils"
+        },
+        {
+          "w": "gururlu",
+          "t": "fier"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -118663,8 +120125,21 @@
       "translation_fr": "honteux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Herkesin önünde utanmış.",
+      "example_gloss": [
+        {
+          "w": "Herkesin",
+          "t": "de tout le monde"
+        },
+        {
+          "w": "önünde",
+          "t": "devant"
+        },
+        {
+          "w": "utanmış",
+          "t": "honteux"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -118674,8 +120149,21 @@
       "translation_fr": "anxieux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sınavdan önce endişeli.",
+      "example_gloss": [
+        {
+          "w": "Sınavdan",
+          "t": "de l'examen"
+        },
+        {
+          "w": "önce",
+          "t": "avant"
+        },
+        {
+          "w": "endişeli",
+          "t": "anxieux"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -118685,8 +120173,25 @@
       "translation_fr": "heureux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Я очень счастливый сегодня.",
+      "example_gloss": [
+        {
+          "w": "Я",
+          "t": "Je"
+        },
+        {
+          "w": "очень",
+          "t": "très"
+        },
+        {
+          "w": "счастливый",
+          "t": "heureux"
+        },
+        {
+          "w": "сегодня",
+          "t": "aujourd'hui"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -118696,8 +120201,25 @@
       "translation_fr": "triste",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Он грустный без друзей.",
+      "example_gloss": [
+        {
+          "w": "Он",
+          "t": "Il"
+        },
+        {
+          "w": "грустный",
+          "t": "triste"
+        },
+        {
+          "w": "без",
+          "t": "sans"
+        },
+        {
+          "w": "друзей",
+          "t": "amis"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -118707,8 +120229,29 @@
       "translation_fr": "en colère",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Не будь злой на меня.",
+      "example_gloss": [
+        {
+          "w": "Не",
+          "t": "Ne"
+        },
+        {
+          "w": "будь",
+          "t": "sois"
+        },
+        {
+          "w": "злой",
+          "t": "en colère"
+        },
+        {
+          "w": "на",
+          "t": "contre"
+        },
+        {
+          "w": "меня",
+          "t": "moi"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -118718,8 +120261,21 @@
       "translation_fr": "effrayé",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ребёнок был испуганный.",
+      "example_gloss": [
+        {
+          "w": "Ребёнок",
+          "t": "enfant"
+        },
+        {
+          "w": "был",
+          "t": "était"
+        },
+        {
+          "w": "испуганный",
+          "t": "effrayé"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -118729,8 +120285,25 @@
       "translation_fr": "surpris",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Я был удивлённый новостью.",
+      "example_gloss": [
+        {
+          "w": "Я",
+          "t": "Je"
+        },
+        {
+          "w": "был",
+          "t": "étais"
+        },
+        {
+          "w": "удивлённый",
+          "t": "surpris"
+        },
+        {
+          "w": "новостью",
+          "t": "par la nouvelle"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -118740,8 +120313,25 @@
       "translation_fr": "fier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Отец гордый за сына.",
+      "example_gloss": [
+        {
+          "w": "Отец",
+          "t": "père"
+        },
+        {
+          "w": "гордый",
+          "t": "fier"
+        },
+        {
+          "w": "за",
+          "t": "de"
+        },
+        {
+          "w": "сына",
+          "t": "fils"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -118751,8 +120341,25 @@
       "translation_fr": "honteux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Он стыдливый перед всеми.",
+      "example_gloss": [
+        {
+          "w": "Он",
+          "t": "Il"
+        },
+        {
+          "w": "стыдливый",
+          "t": "honteux"
+        },
+        {
+          "w": "перед",
+          "t": "devant"
+        },
+        {
+          "w": "всеми",
+          "t": "tout le monde"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -118762,8 +120369,25 @@
       "translation_fr": "anxieux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Она тревожная перед экзаменом.",
+      "example_gloss": [
+        {
+          "w": "Она",
+          "t": "Elle"
+        },
+        {
+          "w": "тревожная",
+          "t": "anxieuse"
+        },
+        {
+          "w": "перед",
+          "t": "avant"
+        },
+        {
+          "w": "экзаменом",
+          "t": "examen"
+        }
+      ]
     },
     {
       "language_code": "ja",
@@ -120729,8 +122353,21 @@
       "translation_fr": "chemise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bu gömlek beyaz.",
+      "example_gloss": [
+        {
+          "w": "Bu",
+          "t": "Cette"
+        },
+        {
+          "w": "gömlek",
+          "t": "chemise"
+        },
+        {
+          "w": "beyaz",
+          "t": "blanche"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -120740,8 +122377,25 @@
       "translation_fr": "pantalon",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Yeni bir pantolon lazım.",
+      "example_gloss": [
+        {
+          "w": "Yeni",
+          "t": "Nouveau"
+        },
+        {
+          "w": "bir",
+          "t": "un"
+        },
+        {
+          "w": "pantolon",
+          "t": "pantalon"
+        },
+        {
+          "w": "lazım",
+          "t": "il faut"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -120751,8 +122405,21 @@
       "translation_fr": "chaussures",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bu ayakkabılar rahat.",
+      "example_gloss": [
+        {
+          "w": "Bu",
+          "t": "Ces"
+        },
+        {
+          "w": "ayakkabılar",
+          "t": "chaussures"
+        },
+        {
+          "w": "rahat",
+          "t": "confortables"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -120762,8 +122429,25 @@
       "translation_fr": "manteau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Paltoyu giy, hava soğuk.",
+      "example_gloss": [
+        {
+          "w": "Paltoyu",
+          "t": "manteau"
+        },
+        {
+          "w": "giy",
+          "t": "mets"
+        },
+        {
+          "w": "hava",
+          "t": "temps"
+        },
+        {
+          "w": "soğuk",
+          "t": "froid"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -120773,8 +122457,21 @@
       "translation_fr": "chapeau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Güzel bir şapka!",
+      "example_gloss": [
+        {
+          "w": "Güzel",
+          "t": "Beau"
+        },
+        {
+          "w": "bir",
+          "t": "un"
+        },
+        {
+          "w": "şapka",
+          "t": "chapeau"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -120784,8 +122481,17 @@
       "translation_fr": "chaussettes",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Çoraplarım nerede?",
+      "example_gloss": [
+        {
+          "w": "Çoraplarım",
+          "t": "mes chaussettes"
+        },
+        {
+          "w": "nerede",
+          "t": "où"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -120795,8 +122501,25 @@
       "translation_fr": "robe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Yeni bir elbise aldı.",
+      "example_gloss": [
+        {
+          "w": "Yeni",
+          "t": "Nouvelle"
+        },
+        {
+          "w": "bir",
+          "t": "une"
+        },
+        {
+          "w": "elbise",
+          "t": "robe"
+        },
+        {
+          "w": "aldı",
+          "t": "a acheté"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -120806,8 +122529,21 @@
       "translation_fr": "écharpe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Kışın atkı takıyorum.",
+      "example_gloss": [
+        {
+          "w": "Kışın",
+          "t": "En hiver"
+        },
+        {
+          "w": "atkı",
+          "t": "écharpe"
+        },
+        {
+          "w": "takıyorum",
+          "t": "je porte"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -120817,8 +122553,21 @@
       "translation_fr": "chemise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Эта рубашка белая.",
+      "example_gloss": [
+        {
+          "w": "Эта",
+          "t": "Cette"
+        },
+        {
+          "w": "рубашка",
+          "t": "chemise"
+        },
+        {
+          "w": "белая",
+          "t": "blanche"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -120828,8 +122577,25 @@
       "translation_fr": "pantalon",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Мне нужны новые брюки.",
+      "example_gloss": [
+        {
+          "w": "Мне",
+          "t": "J'ai"
+        },
+        {
+          "w": "нужны",
+          "t": "besoin de"
+        },
+        {
+          "w": "новые",
+          "t": "nouveaux"
+        },
+        {
+          "w": "брюки",
+          "t": "pantalons"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -120839,8 +122605,21 @@
       "translation_fr": "chaussures",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Эти туфли удобные.",
+      "example_gloss": [
+        {
+          "w": "Эти",
+          "t": "Ces"
+        },
+        {
+          "w": "туфли",
+          "t": "chaussures"
+        },
+        {
+          "w": "удобные",
+          "t": "confortables"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -120850,8 +122629,21 @@
       "translation_fr": "manteau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Надень пальто, холодно.",
+      "example_gloss": [
+        {
+          "w": "Надень",
+          "t": "Mets"
+        },
+        {
+          "w": "пальто",
+          "t": "manteau"
+        },
+        {
+          "w": "холодно",
+          "t": "il fait froid"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -120861,8 +122653,17 @@
       "translation_fr": "chapeau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Красивая шляпа!",
+      "example_gloss": [
+        {
+          "w": "Красивая",
+          "t": "Beau"
+        },
+        {
+          "w": "шляпа",
+          "t": "chapeau"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -120872,8 +122673,21 @@
       "translation_fr": "chaussettes",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Где мои носки?",
+      "example_gloss": [
+        {
+          "w": "Где",
+          "t": "Où"
+        },
+        {
+          "w": "мои",
+          "t": "mes"
+        },
+        {
+          "w": "носки",
+          "t": "chaussettes"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -120883,8 +122697,25 @@
       "translation_fr": "robe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Она купила новое платье.",
+      "example_gloss": [
+        {
+          "w": "Она",
+          "t": "Elle"
+        },
+        {
+          "w": "купила",
+          "t": "a acheté"
+        },
+        {
+          "w": "новое",
+          "t": "nouvelle"
+        },
+        {
+          "w": "платье",
+          "t": "robe"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -120894,8 +122725,25 @@
       "translation_fr": "écharpe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Зимой я ношу шарф.",
+      "example_gloss": [
+        {
+          "w": "Зимой",
+          "t": "En hiver"
+        },
+        {
+          "w": "я",
+          "t": "je"
+        },
+        {
+          "w": "ношу",
+          "t": "porte"
+        },
+        {
+          "w": "шарф",
+          "t": "écharpe"
+        }
+      ]
     },
     {
       "language_code": "ja",
@@ -122685,8 +124533,17 @@
       "translation_fr": "heure",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Saat kaç?",
+      "example_gloss": [
+        {
+          "w": "Saat",
+          "t": "Heure"
+        },
+        {
+          "w": "kaç",
+          "t": "combien"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -122696,8 +124553,21 @@
       "translation_fr": "minute",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bir dakika bekle.",
+      "example_gloss": [
+        {
+          "w": "Bir",
+          "t": "une"
+        },
+        {
+          "w": "dakika",
+          "t": "minute"
+        },
+        {
+          "w": "bekle",
+          "t": "attends"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -122707,8 +124577,21 @@
       "translation_fr": "matin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Günaydın, iyi sabahlar!",
+      "example_gloss": [
+        {
+          "w": "Günaydın",
+          "t": "Bonjour"
+        },
+        {
+          "w": "iyi",
+          "t": "bon"
+        },
+        {
+          "w": "sabahlar",
+          "t": "matins"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -122718,8 +124601,21 @@
       "translation_fr": "après-midi",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Öğleden sonra dinleniyorum.",
+      "example_gloss": [
+        {
+          "w": "Öğleden",
+          "t": "de midi"
+        },
+        {
+          "w": "sonra",
+          "t": "après"
+        },
+        {
+          "w": "dinleniyorum",
+          "t": "je me repose"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -122729,8 +124625,17 @@
       "translation_fr": "nuit/soir",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "İyi geceler!",
+      "example_gloss": [
+        {
+          "w": "İyi",
+          "t": "Bonne"
+        },
+        {
+          "w": "geceler",
+          "t": "nuits"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -122740,8 +124645,17 @@
       "translation_fr": "maintenant",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Şimdi meşgulüm.",
+      "example_gloss": [
+        {
+          "w": "Şimdi",
+          "t": "Maintenant"
+        },
+        {
+          "w": "meşgulüm",
+          "t": "je suis occupé"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -122751,8 +124665,21 @@
       "translation_fr": "bientôt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Otobüs yakında gelecek.",
+      "example_gloss": [
+        {
+          "w": "Otobüs",
+          "t": "bus"
+        },
+        {
+          "w": "yakında",
+          "t": "bientôt"
+        },
+        {
+          "w": "gelecek",
+          "t": "arrivera"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -122762,8 +124689,21 @@
       "translation_fr": "minuit",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Gece yarısı döndük.",
+      "example_gloss": [
+        {
+          "w": "Gece",
+          "t": "nuit"
+        },
+        {
+          "w": "yarısı",
+          "t": "milieu"
+        },
+        {
+          "w": "döndük",
+          "t": "nous sommes rentrés"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -122773,8 +124713,25 @@
       "translation_fr": "heure",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Один час до обеда.",
+      "example_gloss": [
+        {
+          "w": "Один",
+          "t": "Une"
+        },
+        {
+          "w": "час",
+          "t": "heure"
+        },
+        {
+          "w": "до",
+          "t": "avant"
+        },
+        {
+          "w": "обеда",
+          "t": "déjeuner"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -122784,8 +124741,21 @@
       "translation_fr": "minute",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Подожди одну минуту.",
+      "example_gloss": [
+        {
+          "w": "Подожди",
+          "t": "Attends"
+        },
+        {
+          "w": "одну",
+          "t": "une"
+        },
+        {
+          "w": "минуту",
+          "t": "minute"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -122795,8 +124765,17 @@
       "translation_fr": "matin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Доброе утро!",
+      "example_gloss": [
+        {
+          "w": "Доброе",
+          "t": "Bon"
+        },
+        {
+          "w": "утро",
+          "t": "matin"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -122806,8 +124785,25 @@
       "translation_fr": "après-midi",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "После полудня я отдыхаю.",
+      "example_gloss": [
+        {
+          "w": "После",
+          "t": "Après"
+        },
+        {
+          "w": "полудня",
+          "t": "midi"
+        },
+        {
+          "w": "я",
+          "t": "je"
+        },
+        {
+          "w": "отдыхаю",
+          "t": "me repose"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -122817,8 +124813,17 @@
       "translation_fr": "nuit/soir",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Спокойной ночи!",
+      "example_gloss": [
+        {
+          "w": "Спокойной",
+          "t": "Bonne"
+        },
+        {
+          "w": "ночи",
+          "t": "nuit"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -122828,8 +124833,21 @@
       "translation_fr": "maintenant",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Я занят сейчас.",
+      "example_gloss": [
+        {
+          "w": "Я",
+          "t": "Je"
+        },
+        {
+          "w": "занят",
+          "t": "suis occupé"
+        },
+        {
+          "w": "сейчас",
+          "t": "maintenant"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -122839,8 +124857,21 @@
       "translation_fr": "bientôt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Автобус приедет скоро.",
+      "example_gloss": [
+        {
+          "w": "Автобус",
+          "t": "bus"
+        },
+        {
+          "w": "приедет",
+          "t": "arrivera"
+        },
+        {
+          "w": "скоро",
+          "t": "bientôt"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -122850,8 +124881,25 @@
       "translation_fr": "minuit",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Мы вернулись в полночь.",
+      "example_gloss": [
+        {
+          "w": "Мы",
+          "t": "Nous"
+        },
+        {
+          "w": "вернулись",
+          "t": "sommes rentrés"
+        },
+        {
+          "w": "в",
+          "t": "à"
+        },
+        {
+          "w": "полночь",
+          "t": "minuit"
+        }
+      ]
     },
     {
       "language_code": "ja",
@@ -124777,8 +126825,25 @@
       "translation_fr": "chanson",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bu şarkı çok güzel.",
+      "example_gloss": [
+        {
+          "w": "Bu",
+          "t": "Cette"
+        },
+        {
+          "w": "şarkı",
+          "t": "chanson"
+        },
+        {
+          "w": "çok",
+          "t": "très"
+        },
+        {
+          "w": "güzel",
+          "t": "belle"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -124788,8 +126853,17 @@
       "translation_fr": "guitare",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Gitar çalıyor.",
+      "example_gloss": [
+        {
+          "w": "Gitar",
+          "t": "guitare"
+        },
+        {
+          "w": "çalıyor",
+          "t": "il joue"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -124799,8 +126873,25 @@
       "translation_fr": "piano",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Kız piyano çalmayı öğreniyor.",
+      "example_gloss": [
+        {
+          "w": "Kız",
+          "t": "fille"
+        },
+        {
+          "w": "piyano",
+          "t": "piano"
+        },
+        {
+          "w": "çalmayı",
+          "t": "à jouer"
+        },
+        {
+          "w": "öğreniyor",
+          "t": "apprend"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -124810,8 +126901,25 @@
       "translation_fr": "voix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Güzel bir sesi var.",
+      "example_gloss": [
+        {
+          "w": "Güzel",
+          "t": "Belle"
+        },
+        {
+          "w": "bir",
+          "t": "une"
+        },
+        {
+          "w": "sesi",
+          "t": "voix"
+        },
+        {
+          "w": "var",
+          "t": "elle a"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -124821,8 +126929,21 @@
       "translation_fr": "rythme",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bu ritmi seviyorum.",
+      "example_gloss": [
+        {
+          "w": "Bu",
+          "t": "Ce"
+        },
+        {
+          "w": "ritmi",
+          "t": "rythme"
+        },
+        {
+          "w": "seviyorum",
+          "t": "j'aime"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -124832,8 +126953,21 @@
       "translation_fr": "concert",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Konser yedide başlayacak.",
+      "example_gloss": [
+        {
+          "w": "Konser",
+          "t": "concert"
+        },
+        {
+          "w": "yedide",
+          "t": "à sept"
+        },
+        {
+          "w": "başlayacak",
+          "t": "commencera"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -124843,8 +126977,25 @@
       "translation_fr": "paroles",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bu şarkının sözlerini biliyorum.",
+      "example_gloss": [
+        {
+          "w": "Bu",
+          "t": "de cette"
+        },
+        {
+          "w": "şarkının",
+          "t": "chanson"
+        },
+        {
+          "w": "sözlerini",
+          "t": "paroles"
+        },
+        {
+          "w": "biliyorum",
+          "t": "je connais"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -124854,8 +127005,25 @@
       "translation_fr": "mélodie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ne hoş bir melodi!",
+      "example_gloss": [
+        {
+          "w": "Ne",
+          "t": "Quelle"
+        },
+        {
+          "w": "hoş",
+          "t": "agréable"
+        },
+        {
+          "w": "bir",
+          "t": "une"
+        },
+        {
+          "w": "melodi",
+          "t": "mélodie"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -124865,8 +127033,25 @@
       "translation_fr": "chanson",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Эта песня очень красивая.",
+      "example_gloss": [
+        {
+          "w": "Эта",
+          "t": "Cette"
+        },
+        {
+          "w": "песня",
+          "t": "chanson"
+        },
+        {
+          "w": "очень",
+          "t": "très"
+        },
+        {
+          "w": "красивая",
+          "t": "belle"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -124876,8 +127061,25 @@
       "translation_fr": "guitare",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Он играет на гитаре.",
+      "example_gloss": [
+        {
+          "w": "Он",
+          "t": "Il"
+        },
+        {
+          "w": "играет",
+          "t": "joue"
+        },
+        {
+          "w": "на",
+          "t": "de la"
+        },
+        {
+          "w": "гитаре",
+          "t": "guitare"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -124887,8 +127089,29 @@
       "translation_fr": "piano",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Девочка учится играть на пианино.",
+      "example_gloss": [
+        {
+          "w": "Девочка",
+          "t": "fille"
+        },
+        {
+          "w": "учится",
+          "t": "apprend"
+        },
+        {
+          "w": "играть",
+          "t": "à jouer"
+        },
+        {
+          "w": "на",
+          "t": "du"
+        },
+        {
+          "w": "пианино",
+          "t": "piano"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -124898,8 +127121,25 @@
       "translation_fr": "voix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "У неё красивый голос.",
+      "example_gloss": [
+        {
+          "w": "У",
+          "t": "Chez"
+        },
+        {
+          "w": "неё",
+          "t": "elle"
+        },
+        {
+          "w": "красивый",
+          "t": "belle"
+        },
+        {
+          "w": "голос",
+          "t": "voix"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -124909,8 +127149,25 @@
       "translation_fr": "rythme",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Мне нравится этот ритм.",
+      "example_gloss": [
+        {
+          "w": "Мне",
+          "t": "Me"
+        },
+        {
+          "w": "нравится",
+          "t": "plaît"
+        },
+        {
+          "w": "этот",
+          "t": "ce"
+        },
+        {
+          "w": "ритм",
+          "t": "rythme"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -124920,8 +127177,25 @@
       "translation_fr": "concert",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Концерт начнётся в семь.",
+      "example_gloss": [
+        {
+          "w": "Концерт",
+          "t": "concert"
+        },
+        {
+          "w": "начнётся",
+          "t": "commencera"
+        },
+        {
+          "w": "в",
+          "t": "à"
+        },
+        {
+          "w": "семь",
+          "t": "sept"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -124931,8 +127205,29 @@
       "translation_fr": "paroles",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Я знаю слова этой песни.",
+      "example_gloss": [
+        {
+          "w": "Я",
+          "t": "Je"
+        },
+        {
+          "w": "знаю",
+          "t": "connais"
+        },
+        {
+          "w": "слова",
+          "t": "paroles"
+        },
+        {
+          "w": "этой",
+          "t": "de cette"
+        },
+        {
+          "w": "песни",
+          "t": "chanson"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -124942,8 +127237,21 @@
       "translation_fr": "mélodie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Какая приятная мелодия!",
+      "example_gloss": [
+        {
+          "w": "Какая",
+          "t": "Quelle"
+        },
+        {
+          "w": "приятная",
+          "t": "agréable"
+        },
+        {
+          "w": "мелодия",
+          "t": "mélodie"
+        }
+      ]
     },
     {
       "language_code": "ja",
@@ -126809,8 +129117,21 @@
       "translation_fr": "cuisiner",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Evde pişirmek seviyorum.",
+      "example_gloss": [
+        {
+          "w": "Evde",
+          "t": "à la maison"
+        },
+        {
+          "w": "pişirmek",
+          "t": "cuisiner"
+        },
+        {
+          "w": "seviyorum",
+          "t": "j'aime"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -126820,8 +129141,25 @@
       "translation_fr": "recette",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bu tarifi bana ver.",
+      "example_gloss": [
+        {
+          "w": "Bu",
+          "t": "cette"
+        },
+        {
+          "w": "tarifi",
+          "t": "recette"
+        },
+        {
+          "w": "bana",
+          "t": "moi"
+        },
+        {
+          "w": "ver",
+          "t": "donne"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -126831,8 +129169,25 @@
       "translation_fr": "ingrédient",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bir malzeme daha lazım.",
+      "example_gloss": [
+        {
+          "w": "Bir",
+          "t": "Un"
+        },
+        {
+          "w": "malzeme",
+          "t": "ingrédient"
+        },
+        {
+          "w": "daha",
+          "t": "encore"
+        },
+        {
+          "w": "lazım",
+          "t": "il faut"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -126842,8 +129197,17 @@
       "translation_fr": "poêle",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Tavayı ısıt.",
+      "example_gloss": [
+        {
+          "w": "Tavayı",
+          "t": "poêle"
+        },
+        {
+          "w": "ısıt",
+          "t": "chauffe"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -126853,8 +129217,21 @@
       "translation_fr": "faire bouillir",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Suyu kaynatmak lazım.",
+      "example_gloss": [
+        {
+          "w": "Suyu",
+          "t": "eau"
+        },
+        {
+          "w": "kaynatmak",
+          "t": "faire bouillir"
+        },
+        {
+          "w": "lazım",
+          "t": "il faut"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -126864,8 +129241,25 @@
       "translation_fr": "cuire au four",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Annem kek fırınlamayı sever.",
+      "example_gloss": [
+        {
+          "w": "Annem",
+          "t": "ma mère"
+        },
+        {
+          "w": "kek",
+          "t": "gâteau"
+        },
+        {
+          "w": "fırınlamayı",
+          "t": "cuire au four"
+        },
+        {
+          "w": "sever",
+          "t": "aime"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -126875,8 +129269,25 @@
       "translation_fr": "mélanger",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Yumurta ve unu karıştır.",
+      "example_gloss": [
+        {
+          "w": "Yumurta",
+          "t": "œufs"
+        },
+        {
+          "w": "ve",
+          "t": "et"
+        },
+        {
+          "w": "unu",
+          "t": "farine"
+        },
+        {
+          "w": "karıştır",
+          "t": "mélange"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -126886,8 +129297,21 @@
       "translation_fr": "assaisonnement",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Çorbaya baharat ekle.",
+      "example_gloss": [
+        {
+          "w": "Çorbaya",
+          "t": "dans la soupe"
+        },
+        {
+          "w": "baharat",
+          "t": "assaisonnement"
+        },
+        {
+          "w": "ekle",
+          "t": "ajoute"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -126897,8 +129321,25 @@
       "translation_fr": "cuisiner",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Я люблю готовить дома.",
+      "example_gloss": [
+        {
+          "w": "Я",
+          "t": "Je"
+        },
+        {
+          "w": "люблю",
+          "t": "aime"
+        },
+        {
+          "w": "готовить",
+          "t": "cuisiner"
+        },
+        {
+          "w": "дома",
+          "t": "à la maison"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -126908,8 +129349,25 @@
       "translation_fr": "recette",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Дай мне этот рецепт.",
+      "example_gloss": [
+        {
+          "w": "Дай",
+          "t": "Donne"
+        },
+        {
+          "w": "мне",
+          "t": "moi"
+        },
+        {
+          "w": "этот",
+          "t": "cette"
+        },
+        {
+          "w": "рецепт",
+          "t": "recette"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -126919,8 +129377,25 @@
       "translation_fr": "ingrédient",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Нужен ещё один ингредиент.",
+      "example_gloss": [
+        {
+          "w": "Нужен",
+          "t": "Il faut"
+        },
+        {
+          "w": "ещё",
+          "t": "encore"
+        },
+        {
+          "w": "один",
+          "t": "un"
+        },
+        {
+          "w": "ингредиент",
+          "t": "ingrédient"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -126930,8 +129405,17 @@
       "translation_fr": "poêle",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Разогрей сковороду.",
+      "example_gloss": [
+        {
+          "w": "Разогрей",
+          "t": "Chauffe"
+        },
+        {
+          "w": "сковороду",
+          "t": "poêle"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -126941,8 +129425,21 @@
       "translation_fr": "faire bouillir",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Надо кипятить воду.",
+      "example_gloss": [
+        {
+          "w": "Надо",
+          "t": "Il faut"
+        },
+        {
+          "w": "кипятить",
+          "t": "faire bouillir"
+        },
+        {
+          "w": "воду",
+          "t": "eau"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -126952,8 +129449,25 @@
       "translation_fr": "cuire au four",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Мама любит печь пирог.",
+      "example_gloss": [
+        {
+          "w": "Мама",
+          "t": "Maman"
+        },
+        {
+          "w": "любит",
+          "t": "aime"
+        },
+        {
+          "w": "печь",
+          "t": "cuire au four"
+        },
+        {
+          "w": "пирог",
+          "t": "gâteau"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -126963,8 +129477,29 @@
       "translation_fr": "mélanger",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Нужно смешивать яйца и муку.",
+      "example_gloss": [
+        {
+          "w": "Нужно",
+          "t": "Il faut"
+        },
+        {
+          "w": "смешивать",
+          "t": "mélanger"
+        },
+        {
+          "w": "яйца",
+          "t": "œufs"
+        },
+        {
+          "w": "и",
+          "t": "et"
+        },
+        {
+          "w": "муку",
+          "t": "farine"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -126974,8 +129509,25 @@
       "translation_fr": "assaisonnement",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Добавь приправу в суп.",
+      "example_gloss": [
+        {
+          "w": "Добавь",
+          "t": "Ajoute"
+        },
+        {
+          "w": "приправу",
+          "t": "assaisonnement"
+        },
+        {
+          "w": "в",
+          "t": "dans"
+        },
+        {
+          "w": "суп",
+          "t": "soupe"
+        }
+      ]
     },
     {
       "language_code": "ja",
@@ -128181,8 +130733,21 @@
       "translation_fr": "avion",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Uçak altıda kalkıyor.",
+      "example_gloss": [
+        {
+          "w": "Uçak",
+          "t": "avion"
+        },
+        {
+          "w": "altıda",
+          "t": "à six"
+        },
+        {
+          "w": "kalkıyor",
+          "t": "décolle"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -128192,8 +130757,21 @@
       "translation_fr": "valise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bavulum çok ağır.",
+      "example_gloss": [
+        {
+          "w": "Bavulum",
+          "t": "ma valise"
+        },
+        {
+          "w": "çok",
+          "t": "très"
+        },
+        {
+          "w": "ağır",
+          "t": "lourde"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -128203,8 +130781,25 @@
       "translation_fr": "tourisme",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Turizm ülke için önemli.",
+      "example_gloss": [
+        {
+          "w": "Turizm",
+          "t": "tourisme"
+        },
+        {
+          "w": "ülke",
+          "t": "pays"
+        },
+        {
+          "w": "için",
+          "t": "pour"
+        },
+        {
+          "w": "önemli",
+          "t": "important"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -128214,8 +130809,25 @@
       "translation_fr": "avion",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Самолёт вылетает в шесть.",
+      "example_gloss": [
+        {
+          "w": "Самолёт",
+          "t": "avion"
+        },
+        {
+          "w": "вылетает",
+          "t": "décolle"
+        },
+        {
+          "w": "в",
+          "t": "à"
+        },
+        {
+          "w": "шесть",
+          "t": "six"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -128225,8 +130837,25 @@
       "translation_fr": "valise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Мой чемодан очень тяжёлый.",
+      "example_gloss": [
+        {
+          "w": "Мой",
+          "t": "Ma"
+        },
+        {
+          "w": "чемодан",
+          "t": "valise"
+        },
+        {
+          "w": "очень",
+          "t": "très"
+        },
+        {
+          "w": "тяжёлый",
+          "t": "lourde"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -128236,8 +130865,25 @@
       "translation_fr": "hôtel",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Отель находится в центре.",
+      "example_gloss": [
+        {
+          "w": "Отель",
+          "t": "hôtel"
+        },
+        {
+          "w": "находится",
+          "t": "se trouve"
+        },
+        {
+          "w": "в",
+          "t": "au"
+        },
+        {
+          "w": "центре",
+          "t": "centre"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -128247,8 +130893,25 @@
       "translation_fr": "tourisme",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Туризм важен для страны.",
+      "example_gloss": [
+        {
+          "w": "Туризм",
+          "t": "tourisme"
+        },
+        {
+          "w": "важен",
+          "t": "est important"
+        },
+        {
+          "w": "для",
+          "t": "pour"
+        },
+        {
+          "w": "страны",
+          "t": "pays"
+        }
+      ]
     },
     {
       "language_code": "ja",
@@ -129935,8 +132598,21 @@
       "translation_fr": "zéro",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sıcaklık sıfır derece.",
+      "example_gloss": [
+        {
+          "w": "Sıcaklık",
+          "t": "température"
+        },
+        {
+          "w": "sıfır",
+          "t": "zéro"
+        },
+        {
+          "w": "derece",
+          "t": "degré"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -129946,8 +132622,25 @@
       "translation_fr": "dix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "On dakikaya ihtiyacım var.",
+      "example_gloss": [
+        {
+          "w": "On",
+          "t": "Dix"
+        },
+        {
+          "w": "dakikaya",
+          "t": "minutes"
+        },
+        {
+          "w": "ihtiyacım",
+          "t": "besoin"
+        },
+        {
+          "w": "var",
+          "t": "j'ai"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -129957,8 +132650,25 @@
       "translation_fr": "cent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sınıfta yüz öğrenci var.",
+      "example_gloss": [
+        {
+          "w": "Sınıfta",
+          "t": "dans la classe"
+        },
+        {
+          "w": "yüz",
+          "t": "cent"
+        },
+        {
+          "w": "öğrenci",
+          "t": "élèves"
+        },
+        {
+          "w": "var",
+          "t": "il y a"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -129968,8 +132678,25 @@
       "translation_fr": "mille",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bu bin lira tutuyor.",
+      "example_gloss": [
+        {
+          "w": "Bu",
+          "t": "Ça"
+        },
+        {
+          "w": "bin",
+          "t": "mille"
+        },
+        {
+          "w": "lira",
+          "t": "liras"
+        },
+        {
+          "w": "tutuyor",
+          "t": "coûte"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -129979,8 +132706,29 @@
       "translation_fr": "million",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Şehirde bir milyon kişi yaşıyor.",
+      "example_gloss": [
+        {
+          "w": "Şehirde",
+          "t": "dans la ville"
+        },
+        {
+          "w": "bir",
+          "t": "un"
+        },
+        {
+          "w": "milyon",
+          "t": "million"
+        },
+        {
+          "w": "kişi",
+          "t": "personnes"
+        },
+        {
+          "w": "yaşıyor",
+          "t": "vivent"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -129990,8 +132738,21 @@
       "translation_fr": "moitié",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Pastanın yarısını yedim.",
+      "example_gloss": [
+        {
+          "w": "Pastanın",
+          "t": "du gâteau"
+        },
+        {
+          "w": "yarısını",
+          "t": "moitié"
+        },
+        {
+          "w": "yedim",
+          "t": "j'ai mangé"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -130001,8 +132762,25 @@
       "translation_fr": "double",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Çift espresso sipariş ver.",
+      "example_gloss": [
+        {
+          "w": "Çift",
+          "t": "Double"
+        },
+        {
+          "w": "espresso",
+          "t": "espresso"
+        },
+        {
+          "w": "sipariş",
+          "t": "commande"
+        },
+        {
+          "w": "ver",
+          "t": "fais"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -130012,8 +132790,29 @@
       "translation_fr": "tiers",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Öğrencilerin üçte biri geç kaldı.",
+      "example_gloss": [
+        {
+          "w": "Öğrencilerin",
+          "t": "des étudiants"
+        },
+        {
+          "w": "üçte",
+          "t": "trois"
+        },
+        {
+          "w": "biri",
+          "t": "un sur"
+        },
+        {
+          "w": "geç",
+          "t": "en retard"
+        },
+        {
+          "w": "kaldı",
+          "t": "est resté"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -130023,8 +132822,21 @@
       "translation_fr": "zéro",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Температура ноль градусов.",
+      "example_gloss": [
+        {
+          "w": "Температура",
+          "t": "Température"
+        },
+        {
+          "w": "ноль",
+          "t": "zéro"
+        },
+        {
+          "w": "градусов",
+          "t": "degrés"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -130034,8 +132846,25 @@
       "translation_fr": "dix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Мне нужно десять минут.",
+      "example_gloss": [
+        {
+          "w": "Мне",
+          "t": "J'ai"
+        },
+        {
+          "w": "нужно",
+          "t": "besoin de"
+        },
+        {
+          "w": "десять",
+          "t": "dix"
+        },
+        {
+          "w": "минут",
+          "t": "minutes"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -130045,8 +132874,25 @@
       "translation_fr": "cent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "В классе сто учеников.",
+      "example_gloss": [
+        {
+          "w": "В",
+          "t": "Dans"
+        },
+        {
+          "w": "классе",
+          "t": "classe"
+        },
+        {
+          "w": "сто",
+          "t": "cent"
+        },
+        {
+          "w": "учеников",
+          "t": "élèves"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -130056,8 +132902,25 @@
       "translation_fr": "mille",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Это стоит тысячу рублей.",
+      "example_gloss": [
+        {
+          "w": "Это",
+          "t": "Ça"
+        },
+        {
+          "w": "стоит",
+          "t": "coûte"
+        },
+        {
+          "w": "тысячу",
+          "t": "mille"
+        },
+        {
+          "w": "рублей",
+          "t": "roubles"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -130067,8 +132930,25 @@
       "translation_fr": "million",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "В городе миллион жителей.",
+      "example_gloss": [
+        {
+          "w": "В",
+          "t": "Dans"
+        },
+        {
+          "w": "городе",
+          "t": "ville"
+        },
+        {
+          "w": "миллион",
+          "t": "million"
+        },
+        {
+          "w": "жителей",
+          "t": "habitants"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -130078,8 +132958,25 @@
       "translation_fr": "moitié",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Я съел половину торта.",
+      "example_gloss": [
+        {
+          "w": "Я",
+          "t": "J'ai"
+        },
+        {
+          "w": "съел",
+          "t": "mangé"
+        },
+        {
+          "w": "половину",
+          "t": "moitié"
+        },
+        {
+          "w": "торта",
+          "t": "du gâteau"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -130089,8 +132986,21 @@
       "translation_fr": "double",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Закажи двойной кофе.",
+      "example_gloss": [
+        {
+          "w": "Закажи",
+          "t": "Commande"
+        },
+        {
+          "w": "двойной",
+          "t": "double"
+        },
+        {
+          "w": "кофе",
+          "t": "café"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -130100,8 +133010,21 @@
       "translation_fr": "tiers",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Треть студентов опоздала.",
+      "example_gloss": [
+        {
+          "w": "Треть",
+          "t": "tiers"
+        },
+        {
+          "w": "студентов",
+          "t": "des étudiants"
+        },
+        {
+          "w": "опоздала",
+          "t": "est arrivé en retard"
+        }
+      ]
     },
     {
       "language_code": "ja",
@@ -132087,8 +135010,25 @@
       "translation_fr": "pays",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Türkiye güzel bir ülke.",
+      "example_gloss": [
+        {
+          "w": "Türkiye",
+          "t": "Turquie"
+        },
+        {
+          "w": "güzel",
+          "t": "beau"
+        },
+        {
+          "w": "bir",
+          "t": "un"
+        },
+        {
+          "w": "ülke",
+          "t": "pays"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -132098,8 +135038,21 @@
       "translation_fr": "capitale",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ankara Türkiye'nin başkentidir.",
+      "example_gloss": [
+        {
+          "w": "Ankara",
+          "t": "Ankara"
+        },
+        {
+          "w": "Türkiye'nin",
+          "t": "de Turquie"
+        },
+        {
+          "w": "başkentidir",
+          "t": "est la capitale"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -132109,8 +135062,21 @@
       "translation_fr": "continent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Afrika bir kıtadır.",
+      "example_gloss": [
+        {
+          "w": "Afrika",
+          "t": "Afrique"
+        },
+        {
+          "w": "bir",
+          "t": "un"
+        },
+        {
+          "w": "kıtadır",
+          "t": "est un continent"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -132120,8 +135086,17 @@
       "translation_fr": "frontière",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sınırı geçtik.",
+      "example_gloss": [
+        {
+          "w": "Sınırı",
+          "t": "frontière"
+        },
+        {
+          "w": "geçtik",
+          "t": "nous avons traversé"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -132131,8 +135106,25 @@
       "translation_fr": "île",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bu ada çok küçük.",
+      "example_gloss": [
+        {
+          "w": "Bu",
+          "t": "Cette"
+        },
+        {
+          "w": "ada",
+          "t": "île"
+        },
+        {
+          "w": "çok",
+          "t": "très"
+        },
+        {
+          "w": "küçük",
+          "t": "petite"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -132142,8 +135134,21 @@
       "translation_fr": "désert",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Çölde çok sıcak.",
+      "example_gloss": [
+        {
+          "w": "Çölde",
+          "t": "dans le désert"
+        },
+        {
+          "w": "çok",
+          "t": "très"
+        },
+        {
+          "w": "sıcak",
+          "t": "chaud"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -132153,8 +135158,25 @@
       "translation_fr": "océan",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Büyük Okyanus en büyüktür.",
+      "example_gloss": [
+        {
+          "w": "Büyük",
+          "t": "Grand"
+        },
+        {
+          "w": "Okyanus",
+          "t": "Océan"
+        },
+        {
+          "w": "en",
+          "t": "le plus"
+        },
+        {
+          "w": "büyüktür",
+          "t": "est grand"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -132164,8 +135186,21 @@
       "translation_fr": "hémisphère",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Kuzey yarımkürede yaşıyoruz.",
+      "example_gloss": [
+        {
+          "w": "Kuzey",
+          "t": "Nord"
+        },
+        {
+          "w": "yarımkürede",
+          "t": "dans l'hémisphère"
+        },
+        {
+          "w": "yaşıyoruz",
+          "t": "nous vivons"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -132175,8 +135210,25 @@
       "translation_fr": "pays",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Россия — большая страна.",
+      "example_gloss": [
+        {
+          "w": "Россия",
+          "t": "Russie"
+        },
+        {
+          "w": "—",
+          "t": "—"
+        },
+        {
+          "w": "большая",
+          "t": "grand"
+        },
+        {
+          "w": "страна",
+          "t": "pays"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -132186,8 +135238,25 @@
       "translation_fr": "capitale",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Москва — столица России.",
+      "example_gloss": [
+        {
+          "w": "Москва",
+          "t": "Moscou"
+        },
+        {
+          "w": "—",
+          "t": "—"
+        },
+        {
+          "w": "столица",
+          "t": "capitale"
+        },
+        {
+          "w": "России",
+          "t": "de Russie"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -132197,8 +135266,25 @@
       "translation_fr": "continent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Африка — это континент.",
+      "example_gloss": [
+        {
+          "w": "Африка",
+          "t": "Afrique"
+        },
+        {
+          "w": "—",
+          "t": "—"
+        },
+        {
+          "w": "это",
+          "t": "c'est"
+        },
+        {
+          "w": "континент",
+          "t": "continent"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -132208,8 +135294,21 @@
       "translation_fr": "frontière",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Мы пересекли границу.",
+      "example_gloss": [
+        {
+          "w": "Мы",
+          "t": "Nous"
+        },
+        {
+          "w": "пересекли",
+          "t": "avons traversé"
+        },
+        {
+          "w": "границу",
+          "t": "frontière"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -132219,8 +135318,25 @@
       "translation_fr": "île",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Этот остров очень маленький.",
+      "example_gloss": [
+        {
+          "w": "Этот",
+          "t": "Cette"
+        },
+        {
+          "w": "остров",
+          "t": "île"
+        },
+        {
+          "w": "очень",
+          "t": "très"
+        },
+        {
+          "w": "маленький",
+          "t": "petite"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -132230,8 +135346,25 @@
       "translation_fr": "désert",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "В пустыне очень жарко.",
+      "example_gloss": [
+        {
+          "w": "В",
+          "t": "Dans"
+        },
+        {
+          "w": "пустыне",
+          "t": "désert"
+        },
+        {
+          "w": "очень",
+          "t": "très"
+        },
+        {
+          "w": "жарко",
+          "t": "chaud"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -132241,8 +135374,25 @@
       "translation_fr": "océan",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Тихий океан самый большой.",
+      "example_gloss": [
+        {
+          "w": "Тихий",
+          "t": "Pacifique"
+        },
+        {
+          "w": "океан",
+          "t": "océan"
+        },
+        {
+          "w": "самый",
+          "t": "le plus"
+        },
+        {
+          "w": "большой",
+          "t": "grand"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -132252,8 +135402,29 @@
       "translation_fr": "hémisphère",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Мы живём в северном полушарии.",
+      "example_gloss": [
+        {
+          "w": "Мы",
+          "t": "Nous"
+        },
+        {
+          "w": "живём",
+          "t": "vivons"
+        },
+        {
+          "w": "в",
+          "t": "dans"
+        },
+        {
+          "w": "северном",
+          "t": "nord"
+        },
+        {
+          "w": "полушарии",
+          "t": "hémisphère"
+        }
+      ]
     },
     {
       "language_code": "ja",
@@ -134215,8 +137386,25 @@
       "translation_fr": "médecin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Doktor hastayı muayene etti.",
+      "example_gloss": [
+        {
+          "w": "Doktor",
+          "t": "médecin"
+        },
+        {
+          "w": "hastayı",
+          "t": "patient"
+        },
+        {
+          "w": "muayene",
+          "t": "examen"
+        },
+        {
+          "w": "etti",
+          "t": "a fait"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -134226,8 +137414,21 @@
       "translation_fr": "enseignant",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Öğretmen okulda çalışıyor.",
+      "example_gloss": [
+        {
+          "w": "Öğretmen",
+          "t": "enseignant"
+        },
+        {
+          "w": "okulda",
+          "t": "à école"
+        },
+        {
+          "w": "çalışıyor",
+          "t": "travaille"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -134237,8 +137438,25 @@
       "translation_fr": "cuisinier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Aşçı öğle yemeği hazırlıyor.",
+      "example_gloss": [
+        {
+          "w": "Aşçı",
+          "t": "cuisinier"
+        },
+        {
+          "w": "öğle",
+          "t": "midi"
+        },
+        {
+          "w": "yemeği",
+          "t": "repas"
+        },
+        {
+          "w": "hazırlıyor",
+          "t": "prépare"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -134248,8 +137466,21 @@
       "translation_fr": "policier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Polis arabayı durdurdu.",
+      "example_gloss": [
+        {
+          "w": "Polis",
+          "t": "policier"
+        },
+        {
+          "w": "arabayı",
+          "t": "voiture"
+        },
+        {
+          "w": "durdurdu",
+          "t": "a arrêté"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -134259,8 +137490,21 @@
       "translation_fr": "pompier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "İtfaiyeci kediyi kurtardı.",
+      "example_gloss": [
+        {
+          "w": "İtfaiyeci",
+          "t": "pompier"
+        },
+        {
+          "w": "kediyi",
+          "t": "chat"
+        },
+        {
+          "w": "kurtardı",
+          "t": "a sauvé"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -134270,8 +137514,25 @@
       "translation_fr": "ingénieur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mühendis köprü inşa ediyor.",
+      "example_gloss": [
+        {
+          "w": "Mühendis",
+          "t": "ingénieur"
+        },
+        {
+          "w": "köprü",
+          "t": "pont"
+        },
+        {
+          "w": "inşa",
+          "t": "construction"
+        },
+        {
+          "w": "ediyor",
+          "t": "fait"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -134281,8 +137542,21 @@
       "translation_fr": "avocat",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Avukat müvekkilini savunuyor.",
+      "example_gloss": [
+        {
+          "w": "Avukat",
+          "t": "avocat"
+        },
+        {
+          "w": "müvekkilini",
+          "t": "client"
+        },
+        {
+          "w": "savunuyor",
+          "t": "défend"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -134292,8 +137566,21 @@
       "translation_fr": "architecte",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mimar planı çizdi.",
+      "example_gloss": [
+        {
+          "w": "Mimar",
+          "t": "architecte"
+        },
+        {
+          "w": "planı",
+          "t": "plan"
+        },
+        {
+          "w": "çizdi",
+          "t": "a dessiné"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -134303,8 +137590,21 @@
       "translation_fr": "médecin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Врач осмотрел пациента.",
+      "example_gloss": [
+        {
+          "w": "Врач",
+          "t": "médecin"
+        },
+        {
+          "w": "осмотрел",
+          "t": "a examiné"
+        },
+        {
+          "w": "пациента",
+          "t": "patient"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -134314,8 +137614,25 @@
       "translation_fr": "enseignant",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Учитель работает в школе.",
+      "example_gloss": [
+        {
+          "w": "Учитель",
+          "t": "enseignant"
+        },
+        {
+          "w": "работает",
+          "t": "travaille"
+        },
+        {
+          "w": "в",
+          "t": "à"
+        },
+        {
+          "w": "школе",
+          "t": "école"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -134325,8 +137642,21 @@
       "translation_fr": "cuisinier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Повар готовит обед.",
+      "example_gloss": [
+        {
+          "w": "Повар",
+          "t": "cuisinier"
+        },
+        {
+          "w": "готовит",
+          "t": "prépare"
+        },
+        {
+          "w": "обед",
+          "t": "déjeuner"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -134336,8 +137666,21 @@
       "translation_fr": "policier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Полицейский остановил машину.",
+      "example_gloss": [
+        {
+          "w": "Полицейский",
+          "t": "policier"
+        },
+        {
+          "w": "остановил",
+          "t": "a arrêté"
+        },
+        {
+          "w": "машину",
+          "t": "voiture"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -134347,8 +137690,21 @@
       "translation_fr": "pompier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Пожарный спас кота.",
+      "example_gloss": [
+        {
+          "w": "Пожарный",
+          "t": "pompier"
+        },
+        {
+          "w": "спас",
+          "t": "a sauvé"
+        },
+        {
+          "w": "кота",
+          "t": "chat"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -134358,8 +137714,21 @@
       "translation_fr": "ingénieur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Инженер строит мост.",
+      "example_gloss": [
+        {
+          "w": "Инженер",
+          "t": "ingénieur"
+        },
+        {
+          "w": "строит",
+          "t": "construit"
+        },
+        {
+          "w": "мост",
+          "t": "pont"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -134369,8 +137738,21 @@
       "translation_fr": "avocat",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Адвокат защищает клиента.",
+      "example_gloss": [
+        {
+          "w": "Адвокат",
+          "t": "avocat"
+        },
+        {
+          "w": "защищает",
+          "t": "défend"
+        },
+        {
+          "w": "клиента",
+          "t": "client"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -134380,8 +137762,21 @@
       "translation_fr": "architecte",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Архитектор нарисовал план.",
+      "example_gloss": [
+        {
+          "w": "Архитектор",
+          "t": "architecte"
+        },
+        {
+          "w": "нарисовал",
+          "t": "a dessiné"
+        },
+        {
+          "w": "план",
+          "t": "plan"
+        }
+      ]
     },
     {
       "language_code": "ja",
@@ -136335,8 +139730,21 @@
       "translation_fr": "lire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Okumak benim hobim.",
+      "example_gloss": [
+        {
+          "w": "Okumak",
+          "t": "Lire"
+        },
+        {
+          "w": "benim",
+          "t": "mon"
+        },
+        {
+          "w": "hobim",
+          "t": "hobby"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -136346,8 +139754,25 @@
       "translation_fr": "peindre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Resim yapmak beni rahatlatıyor.",
+      "example_gloss": [
+        {
+          "w": "Resim",
+          "t": "dessin"
+        },
+        {
+          "w": "yapmak",
+          "t": "faire"
+        },
+        {
+          "w": "beni",
+          "t": "me"
+        },
+        {
+          "w": "rahatlatıyor",
+          "t": "calme"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -136357,8 +139782,21 @@
       "translation_fr": "nager",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Yüzmek sağlığa iyi.",
+      "example_gloss": [
+        {
+          "w": "Yüzmek",
+          "t": "Nager"
+        },
+        {
+          "w": "sağlığa",
+          "t": "pour la santé"
+        },
+        {
+          "w": "iyi",
+          "t": "bon"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -136368,8 +139806,21 @@
       "translation_fr": "photographie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Fotoğrafçılık bir sanattır.",
+      "example_gloss": [
+        {
+          "w": "Fotoğrafçılık",
+          "t": "photographie"
+        },
+        {
+          "w": "bir",
+          "t": "un"
+        },
+        {
+          "w": "sanattır",
+          "t": "est un art"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -136379,8 +139830,21 @@
       "translation_fr": "jardinage",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Büyükannem bahçeciliği sever.",
+      "example_gloss": [
+        {
+          "w": "Büyükannem",
+          "t": "ma grand-mère"
+        },
+        {
+          "w": "bahçeciliği",
+          "t": "jardinage"
+        },
+        {
+          "w": "sever",
+          "t": "aime"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -136390,8 +139854,17 @@
       "translation_fr": "échecs",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Satranç oynuyoruz.",
+      "example_gloss": [
+        {
+          "w": "Satranç",
+          "t": "échecs"
+        },
+        {
+          "w": "oynuyoruz",
+          "t": "nous jouons"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -136401,8 +139874,21 @@
       "translation_fr": "randonnée",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dağda yürüyüş harika.",
+      "example_gloss": [
+        {
+          "w": "Dağda",
+          "t": "en montagne"
+        },
+        {
+          "w": "yürüyüş",
+          "t": "randonnée"
+        },
+        {
+          "w": "harika",
+          "t": "super"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -136412,8 +139898,29 @@
       "translation_fr": "collection",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Büyük bir pul koleksiyonu var.",
+      "example_gloss": [
+        {
+          "w": "Büyük",
+          "t": "grande"
+        },
+        {
+          "w": "bir",
+          "t": "une"
+        },
+        {
+          "w": "pul",
+          "t": "timbre"
+        },
+        {
+          "w": "koleksiyonu",
+          "t": "collection"
+        },
+        {
+          "w": "var",
+          "t": "il a"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -136423,8 +139930,25 @@
       "translation_fr": "lire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Чтение — моё хобби.",
+      "example_gloss": [
+        {
+          "w": "Чтение",
+          "t": "Lire"
+        },
+        {
+          "w": "—",
+          "t": "—"
+        },
+        {
+          "w": "моё",
+          "t": "mon"
+        },
+        {
+          "w": "хобби",
+          "t": "hobby"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -136434,8 +139958,21 @@
       "translation_fr": "peindre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Рисование успокаивает меня.",
+      "example_gloss": [
+        {
+          "w": "Рисование",
+          "t": "Peindre"
+        },
+        {
+          "w": "успокаивает",
+          "t": "calme"
+        },
+        {
+          "w": "меня",
+          "t": "moi"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -136445,8 +139982,25 @@
       "translation_fr": "nager",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Плавание полезно для здоровья.",
+      "example_gloss": [
+        {
+          "w": "Плавание",
+          "t": "Nager"
+        },
+        {
+          "w": "полезно",
+          "t": "bon"
+        },
+        {
+          "w": "для",
+          "t": "pour"
+        },
+        {
+          "w": "здоровья",
+          "t": "santé"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -136456,8 +140010,25 @@
       "translation_fr": "photographie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Фотография — это искусство.",
+      "example_gloss": [
+        {
+          "w": "Фотография",
+          "t": "photographie"
+        },
+        {
+          "w": "—",
+          "t": "—"
+        },
+        {
+          "w": "это",
+          "t": "c'est"
+        },
+        {
+          "w": "искусство",
+          "t": "art"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -136467,8 +140038,21 @@
       "translation_fr": "jardinage",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Бабушка любит садоводство.",
+      "example_gloss": [
+        {
+          "w": "Бабушка",
+          "t": "Grand-mère"
+        },
+        {
+          "w": "любит",
+          "t": "aime"
+        },
+        {
+          "w": "садоводство",
+          "t": "jardinage"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -136478,8 +140062,25 @@
       "translation_fr": "échecs",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Мы играем в шахматы.",
+      "example_gloss": [
+        {
+          "w": "Мы",
+          "t": "Nous"
+        },
+        {
+          "w": "играем",
+          "t": "jouons"
+        },
+        {
+          "w": "в",
+          "t": "aux"
+        },
+        {
+          "w": "шахматы",
+          "t": "échecs"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -136489,8 +140090,33 @@
       "translation_fr": "randonnée",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Походы в горы — это здорово.",
+      "example_gloss": [
+        {
+          "w": "Походы",
+          "t": "Randonnées"
+        },
+        {
+          "w": "в",
+          "t": "en"
+        },
+        {
+          "w": "горы",
+          "t": "montagne"
+        },
+        {
+          "w": "—",
+          "t": "—"
+        },
+        {
+          "w": "это",
+          "t": "c'est"
+        },
+        {
+          "w": "здорово",
+          "t": "super"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -136500,8 +140126,29 @@
       "translation_fr": "collection",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "У него большая коллекция марок.",
+      "example_gloss": [
+        {
+          "w": "У",
+          "t": "Chez"
+        },
+        {
+          "w": "него",
+          "t": "lui"
+        },
+        {
+          "w": "большая",
+          "t": "grande"
+        },
+        {
+          "w": "коллекция",
+          "t": "collection"
+        },
+        {
+          "w": "марок",
+          "t": "de timbres"
+        }
+      ]
     },
     {
       "language_code": "ja",
@@ -138435,8 +142082,25 @@
       "translation_fr": "banque",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Banka beşe kadar açık.",
+      "example_gloss": [
+        {
+          "w": "Banka",
+          "t": "banque"
+        },
+        {
+          "w": "beşe",
+          "t": "cinq"
+        },
+        {
+          "w": "kadar",
+          "t": "jusqu'à"
+        },
+        {
+          "w": "açık",
+          "t": "ouvert"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -138446,8 +142110,17 @@
       "translation_fr": "argent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Param yok.",
+      "example_gloss": [
+        {
+          "w": "Param",
+          "t": "mon argent"
+        },
+        {
+          "w": "yok",
+          "t": "il n'y a pas"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -138457,8 +142130,21 @@
       "translation_fr": "compte",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Banka hesabı açtım.",
+      "example_gloss": [
+        {
+          "w": "Banka",
+          "t": "bancaire"
+        },
+        {
+          "w": "hesabı",
+          "t": "compte"
+        },
+        {
+          "w": "açtım",
+          "t": "j'ai ouvert"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -138468,8 +142154,21 @@
       "translation_fr": "virement",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Para havalesi yaptım.",
+      "example_gloss": [
+        {
+          "w": "Para",
+          "t": "argent"
+        },
+        {
+          "w": "havalesi",
+          "t": "virement"
+        },
+        {
+          "w": "yaptım",
+          "t": "j'ai fait"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -138479,8 +142178,25 @@
       "translation_fr": "distributeur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "En yakın ATM nerede?",
+      "example_gloss": [
+        {
+          "w": "En",
+          "t": "Le plus"
+        },
+        {
+          "w": "yakın",
+          "t": "proche"
+        },
+        {
+          "w": "ATM",
+          "t": "distributeur"
+        },
+        {
+          "w": "nerede",
+          "t": "où"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -138490,8 +142206,21 @@
       "translation_fr": "intérêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Kredi faizi yüksek.",
+      "example_gloss": [
+        {
+          "w": "Kredi",
+          "t": "prêt"
+        },
+        {
+          "w": "faizi",
+          "t": "intérêt"
+        },
+        {
+          "w": "yüksek",
+          "t": "élevé"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -138501,8 +142230,25 @@
       "translation_fr": "prêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ev için kredi aldı.",
+      "example_gloss": [
+        {
+          "w": "Ev",
+          "t": "maison"
+        },
+        {
+          "w": "için",
+          "t": "pour"
+        },
+        {
+          "w": "kredi",
+          "t": "prêt"
+        },
+        {
+          "w": "aldı",
+          "t": "a pris"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -138512,8 +142258,25 @@
       "translation_fr": "taux de change",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bugün döviz kuru ne?",
+      "example_gloss": [
+        {
+          "w": "Bugün",
+          "t": "aujourd'hui"
+        },
+        {
+          "w": "döviz",
+          "t": "change"
+        },
+        {
+          "w": "kuru",
+          "t": "taux"
+        },
+        {
+          "w": "ne",
+          "t": "quel"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -138523,8 +142286,25 @@
       "translation_fr": "banque",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Банк открыт до пяти.",
+      "example_gloss": [
+        {
+          "w": "Банк",
+          "t": "banque"
+        },
+        {
+          "w": "открыт",
+          "t": "ouvert"
+        },
+        {
+          "w": "до",
+          "t": "jusqu'à"
+        },
+        {
+          "w": "пяти",
+          "t": "cinq"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -138534,8 +142314,25 @@
       "translation_fr": "argent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "У меня нет денег.",
+      "example_gloss": [
+        {
+          "w": "У",
+          "t": "Chez"
+        },
+        {
+          "w": "меня",
+          "t": "moi"
+        },
+        {
+          "w": "нет",
+          "t": "pas de"
+        },
+        {
+          "w": "денег",
+          "t": "argent"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -138545,8 +142342,25 @@
       "translation_fr": "compte",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Я открыл банковский счёт.",
+      "example_gloss": [
+        {
+          "w": "Я",
+          "t": "J'ai"
+        },
+        {
+          "w": "открыл",
+          "t": "ouvert"
+        },
+        {
+          "w": "банковский",
+          "t": "bancaire"
+        },
+        {
+          "w": "счёт",
+          "t": "compte"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -138556,8 +142370,25 @@
       "translation_fr": "virement",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Я сделал перевод денег.",
+      "example_gloss": [
+        {
+          "w": "Я",
+          "t": "J'ai"
+        },
+        {
+          "w": "сделал",
+          "t": "fait"
+        },
+        {
+          "w": "перевод",
+          "t": "virement"
+        },
+        {
+          "w": "денег",
+          "t": "d'argent"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -138567,8 +142398,21 @@
       "translation_fr": "distributeur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Где ближайший банкомат?",
+      "example_gloss": [
+        {
+          "w": "Где",
+          "t": "Où"
+        },
+        {
+          "w": "ближайший",
+          "t": "le plus proche"
+        },
+        {
+          "w": "банкомат",
+          "t": "distributeur"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -138578,8 +142422,25 @@
       "translation_fr": "intérêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Процент по кредиту высокий.",
+      "example_gloss": [
+        {
+          "w": "Процент",
+          "t": "intérêt"
+        },
+        {
+          "w": "по",
+          "t": "du"
+        },
+        {
+          "w": "кредиту",
+          "t": "prêt"
+        },
+        {
+          "w": "высокий",
+          "t": "élevé"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -138589,8 +142450,29 @@
       "translation_fr": "prêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Он взял кредит на дом.",
+      "example_gloss": [
+        {
+          "w": "Он",
+          "t": "Il"
+        },
+        {
+          "w": "взял",
+          "t": "a pris"
+        },
+        {
+          "w": "кредит",
+          "t": "prêt"
+        },
+        {
+          "w": "на",
+          "t": "pour"
+        },
+        {
+          "w": "дом",
+          "t": "maison"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -138600,8 +142482,25 @@
       "translation_fr": "taux de change",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Какой сегодня обменный курс?",
+      "example_gloss": [
+        {
+          "w": "Какой",
+          "t": "Quel"
+        },
+        {
+          "w": "сегодня",
+          "t": "aujourd'hui"
+        },
+        {
+          "w": "обменный",
+          "t": "de change"
+        },
+        {
+          "w": "курс",
+          "t": "taux"
+        }
+      ]
     },
     {
       "language_code": "ja",
@@ -140527,8 +144426,29 @@
       "translation_fr": "fête",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bugün büyük bir parti var.",
+      "example_gloss": [
+        {
+          "w": "Bugün",
+          "t": "Aujourd'hui"
+        },
+        {
+          "w": "büyük",
+          "t": "grande"
+        },
+        {
+          "w": "bir",
+          "t": "une"
+        },
+        {
+          "w": "parti",
+          "t": "fête"
+        },
+        {
+          "w": "var",
+          "t": "il y a"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -140538,8 +144458,25 @@
       "translation_fr": "anniversaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Yarın benim doğum günüm.",
+      "example_gloss": [
+        {
+          "w": "Yarın",
+          "t": "Demain"
+        },
+        {
+          "w": "benim",
+          "t": "mon"
+        },
+        {
+          "w": "doğum",
+          "t": "naissance"
+        },
+        {
+          "w": "günüm",
+          "t": "jour"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -140549,8 +144486,21 @@
       "translation_fr": "cadeau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hediye için teşekkürler!",
+      "example_gloss": [
+        {
+          "w": "Hediye",
+          "t": "cadeau"
+        },
+        {
+          "w": "için",
+          "t": "pour"
+        },
+        {
+          "w": "teşekkürler",
+          "t": "merci"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -140560,8 +144510,21 @@
       "translation_fr": "bougie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Pastadaki mumları söndür.",
+      "example_gloss": [
+        {
+          "w": "Pastadaki",
+          "t": "sur le gâteau"
+        },
+        {
+          "w": "mumları",
+          "t": "bougies"
+        },
+        {
+          "w": "söndür",
+          "t": "souffle"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -140571,8 +144534,21 @@
       "translation_fr": "toast",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sağlığa kadeh kaldırdı.",
+      "example_gloss": [
+        {
+          "w": "Sağlığa",
+          "t": "à la santé"
+        },
+        {
+          "w": "kadeh",
+          "t": "verre"
+        },
+        {
+          "w": "kaldırdı",
+          "t": "a levé"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -140582,8 +144558,25 @@
       "translation_fr": "feux d'artifice",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Havai fişek çok güzeldi.",
+      "example_gloss": [
+        {
+          "w": "Havai",
+          "t": "aérien"
+        },
+        {
+          "w": "fişek",
+          "t": "artifice"
+        },
+        {
+          "w": "çok",
+          "t": "très"
+        },
+        {
+          "w": "güzeldi",
+          "t": "beau"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -140593,8 +144586,25 @@
       "translation_fr": "décoration",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ağaç için dekorasyon aldık.",
+      "example_gloss": [
+        {
+          "w": "Ağaç",
+          "t": "arbre"
+        },
+        {
+          "w": "için",
+          "t": "pour"
+        },
+        {
+          "w": "dekorasyon",
+          "t": "décoration"
+        },
+        {
+          "w": "aldık",
+          "t": "nous avons acheté"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -140604,8 +144614,21 @@
       "translation_fr": "invité",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Misafirler zamanında geldi.",
+      "example_gloss": [
+        {
+          "w": "Misafirler",
+          "t": "invités"
+        },
+        {
+          "w": "zamanında",
+          "t": "à l'heure"
+        },
+        {
+          "w": "geldi",
+          "t": "sont venus"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -140615,8 +144638,21 @@
       "translation_fr": "fête",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Сегодня большой праздник.",
+      "example_gloss": [
+        {
+          "w": "Сегодня",
+          "t": "Aujourd'hui"
+        },
+        {
+          "w": "большой",
+          "t": "grande"
+        },
+        {
+          "w": "праздник",
+          "t": "fête"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -140626,8 +144662,25 @@
       "translation_fr": "anniversaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Завтра мой день рождения.",
+      "example_gloss": [
+        {
+          "w": "Завтра",
+          "t": "Demain"
+        },
+        {
+          "w": "мой",
+          "t": "mon"
+        },
+        {
+          "w": "день",
+          "t": "jour"
+        },
+        {
+          "w": "рождения",
+          "t": "de naissance"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -140637,8 +144690,21 @@
       "translation_fr": "cadeau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Спасибо за подарок!",
+      "example_gloss": [
+        {
+          "w": "Спасибо",
+          "t": "Merci"
+        },
+        {
+          "w": "за",
+          "t": "pour"
+        },
+        {
+          "w": "подарок",
+          "t": "cadeau"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -140648,8 +144714,25 @@
       "translation_fr": "bougie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Задуй свечи на торте.",
+      "example_gloss": [
+        {
+          "w": "Задуй",
+          "t": "Souffle"
+        },
+        {
+          "w": "свечи",
+          "t": "bougies"
+        },
+        {
+          "w": "на",
+          "t": "sur"
+        },
+        {
+          "w": "торте",
+          "t": "gâteau"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -140659,8 +144742,29 @@
       "translation_fr": "toast",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Он произнёс тост за здоровье.",
+      "example_gloss": [
+        {
+          "w": "Он",
+          "t": "Il"
+        },
+        {
+          "w": "произнёс",
+          "t": "a prononcé"
+        },
+        {
+          "w": "тост",
+          "t": "toast"
+        },
+        {
+          "w": "за",
+          "t": "à"
+        },
+        {
+          "w": "здоровье",
+          "t": "santé"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -140670,8 +144774,21 @@
       "translation_fr": "feux d'artifice",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Фейерверк был красивый.",
+      "example_gloss": [
+        {
+          "w": "Фейерверк",
+          "t": "feux d'artifice"
+        },
+        {
+          "w": "был",
+          "t": "était"
+        },
+        {
+          "w": "красивый",
+          "t": "beau"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -140681,8 +144798,29 @@
       "translation_fr": "décoration",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Мы купили украшения для ёлки.",
+      "example_gloss": [
+        {
+          "w": "Мы",
+          "t": "Nous"
+        },
+        {
+          "w": "купили",
+          "t": "avons acheté"
+        },
+        {
+          "w": "украшения",
+          "t": "décorations"
+        },
+        {
+          "w": "для",
+          "t": "pour"
+        },
+        {
+          "w": "ёлки",
+          "t": "sapin"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -140692,8 +144830,21 @@
       "translation_fr": "invité",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Гости пришли вовремя.",
+      "example_gloss": [
+        {
+          "w": "Гости",
+          "t": "invités"
+        },
+        {
+          "w": "пришли",
+          "t": "sont venus"
+        },
+        {
+          "w": "вовремя",
+          "t": "à l'heure"
+        }
+      ]
     },
     {
       "language_code": "ja",
@@ -142655,8 +146806,25 @@
       "translation_fr": "musée",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Müze her gün açık.",
+      "example_gloss": [
+        {
+          "w": "Müze",
+          "t": "musée"
+        },
+        {
+          "w": "her",
+          "t": "chaque"
+        },
+        {
+          "w": "gün",
+          "t": "jour"
+        },
+        {
+          "w": "açık",
+          "t": "ouvert"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -142666,8 +146834,21 @@
       "translation_fr": "théâtre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Akşam tiyatroya gidiyoruz.",
+      "example_gloss": [
+        {
+          "w": "Akşam",
+          "t": "ce soir"
+        },
+        {
+          "w": "tiyatroya",
+          "t": "au théâtre"
+        },
+        {
+          "w": "gidiyoruz",
+          "t": "nous allons"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -142677,8 +146858,21 @@
       "translation_fr": "art",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sanat insanları etkiler.",
+      "example_gloss": [
+        {
+          "w": "Sanat",
+          "t": "art"
+        },
+        {
+          "w": "insanları",
+          "t": "les gens"
+        },
+        {
+          "w": "etkiler",
+          "t": "influence"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -142688,8 +146882,25 @@
       "translation_fr": "tableau/peinture",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bu resim çok eski.",
+      "example_gloss": [
+        {
+          "w": "Bu",
+          "t": "Ce"
+        },
+        {
+          "w": "resim",
+          "t": "tableau"
+        },
+        {
+          "w": "çok",
+          "t": "très"
+        },
+        {
+          "w": "eski",
+          "t": "ancien"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -142699,8 +146910,21 @@
       "translation_fr": "sculpture",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bu heykel mermerden.",
+      "example_gloss": [
+        {
+          "w": "Bu",
+          "t": "Cette"
+        },
+        {
+          "w": "heykel",
+          "t": "sculpture"
+        },
+        {
+          "w": "mermerden",
+          "t": "en marbre"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -142710,8 +146934,21 @@
       "translation_fr": "littérature",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Türk edebiyatı zengindir.",
+      "example_gloss": [
+        {
+          "w": "Türk",
+          "t": "Turque"
+        },
+        {
+          "w": "edebiyatı",
+          "t": "littérature"
+        },
+        {
+          "w": "zengindir",
+          "t": "est riche"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -142721,8 +146958,17 @@
       "translation_fr": "patrimoine",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mirasımızı koruyoruz.",
+      "example_gloss": [
+        {
+          "w": "Mirasımızı",
+          "t": "notre patrimoine"
+        },
+        {
+          "w": "koruyoruz",
+          "t": "nous protégeons"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -142732,8 +146978,25 @@
       "translation_fr": "exposition",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sergi pazar günü kapanıyor.",
+      "example_gloss": [
+        {
+          "w": "Sergi",
+          "t": "exposition"
+        },
+        {
+          "w": "pazar",
+          "t": "dimanche"
+        },
+        {
+          "w": "günü",
+          "t": "jour"
+        },
+        {
+          "w": "kapanıyor",
+          "t": "ferme"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -142743,8 +147006,25 @@
       "translation_fr": "musée",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Музей открыт каждый день.",
+      "example_gloss": [
+        {
+          "w": "Музей",
+          "t": "musée"
+        },
+        {
+          "w": "открыт",
+          "t": "ouvert"
+        },
+        {
+          "w": "каждый",
+          "t": "chaque"
+        },
+        {
+          "w": "день",
+          "t": "jour"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -142754,8 +147034,29 @@
       "translation_fr": "théâtre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Мы идём в театр вечером.",
+      "example_gloss": [
+        {
+          "w": "Мы",
+          "t": "Nous"
+        },
+        {
+          "w": "идём",
+          "t": "allons"
+        },
+        {
+          "w": "в",
+          "t": "au"
+        },
+        {
+          "w": "театр",
+          "t": "théâtre"
+        },
+        {
+          "w": "вечером",
+          "t": "ce soir"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -142765,8 +147066,21 @@
       "translation_fr": "art",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Искусство вдохновляет людей.",
+      "example_gloss": [
+        {
+          "w": "Искусство",
+          "t": "art"
+        },
+        {
+          "w": "вдохновляет",
+          "t": "inspire"
+        },
+        {
+          "w": "людей",
+          "t": "les gens"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -142776,8 +147090,25 @@
       "translation_fr": "tableau/peinture",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Эта картина очень старая.",
+      "example_gloss": [
+        {
+          "w": "Эта",
+          "t": "Ce"
+        },
+        {
+          "w": "картина",
+          "t": "tableau"
+        },
+        {
+          "w": "очень",
+          "t": "très"
+        },
+        {
+          "w": "старая",
+          "t": "ancien"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -142787,8 +147118,25 @@
       "translation_fr": "sculpture",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Эта скульптура из мрамора.",
+      "example_gloss": [
+        {
+          "w": "Эта",
+          "t": "Cette"
+        },
+        {
+          "w": "скульптура",
+          "t": "sculpture"
+        },
+        {
+          "w": "из",
+          "t": "en"
+        },
+        {
+          "w": "мрамора",
+          "t": "marbre"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -142798,8 +147146,21 @@
       "translation_fr": "littérature",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Русская литература богатая.",
+      "example_gloss": [
+        {
+          "w": "Русская",
+          "t": "Russe"
+        },
+        {
+          "w": "литература",
+          "t": "littérature"
+        },
+        {
+          "w": "богатая",
+          "t": "riche"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -142809,8 +147170,25 @@
       "translation_fr": "patrimoine",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Мы защищаем наше наследие.",
+      "example_gloss": [
+        {
+          "w": "Мы",
+          "t": "Nous"
+        },
+        {
+          "w": "защищаем",
+          "t": "protégeons"
+        },
+        {
+          "w": "наше",
+          "t": "notre"
+        },
+        {
+          "w": "наследие",
+          "t": "patrimoine"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -142820,8 +147198,25 @@
       "translation_fr": "exposition",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Выставка закрывается в воскресенье.",
+      "example_gloss": [
+        {
+          "w": "Выставка",
+          "t": "exposition"
+        },
+        {
+          "w": "закрывается",
+          "t": "ferme"
+        },
+        {
+          "w": "в",
+          "t": "le"
+        },
+        {
+          "w": "воскресенье",
+          "t": "dimanche"
+        }
+      ]
     },
     {
       "language_code": "ja",
@@ -144707,8 +149102,29 @@
       "translation_fr": "recyclage",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Geri dönüşüm doğaya yardım eder.",
+      "example_gloss": [
+        {
+          "w": "Geri",
+          "t": "retour"
+        },
+        {
+          "w": "dönüşüm",
+          "t": "transformation"
+        },
+        {
+          "w": "doğaya",
+          "t": "à la nature"
+        },
+        {
+          "w": "yardım",
+          "t": "aide"
+        },
+        {
+          "w": "eder",
+          "t": "fait"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -144718,8 +149134,21 @@
       "translation_fr": "pollution",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hava kirliliği tehlikeli.",
+      "example_gloss": [
+        {
+          "w": "Hava",
+          "t": "air"
+        },
+        {
+          "w": "kirliliği",
+          "t": "pollution"
+        },
+        {
+          "w": "tehlikeli",
+          "t": "dangereux"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -144729,8 +149158,25 @@
       "translation_fr": "énergie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Temiz enerjiye ihtiyacımız var.",
+      "example_gloss": [
+        {
+          "w": "Temiz",
+          "t": "propre"
+        },
+        {
+          "w": "enerjiye",
+          "t": "énergie"
+        },
+        {
+          "w": "ihtiyacımız",
+          "t": "besoin"
+        },
+        {
+          "w": "var",
+          "t": "nous avons"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -144740,8 +149186,21 @@
       "translation_fr": "solaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Güneş enerjisi bedava.",
+      "example_gloss": [
+        {
+          "w": "Güneş",
+          "t": "solaire"
+        },
+        {
+          "w": "enerjisi",
+          "t": "énergie"
+        },
+        {
+          "w": "bedava",
+          "t": "gratuite"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -144751,8 +149210,21 @@
       "translation_fr": "déchets",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Atıkları ayırmak lazım.",
+      "example_gloss": [
+        {
+          "w": "Atıkları",
+          "t": "déchets"
+        },
+        {
+          "w": "ayırmak",
+          "t": "trier"
+        },
+        {
+          "w": "lazım",
+          "t": "il faut"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -144762,8 +149234,21 @@
       "translation_fr": "émission",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Gaz emisyonu artıyor.",
+      "example_gloss": [
+        {
+          "w": "Gaz",
+          "t": "gaz"
+        },
+        {
+          "w": "emisyonu",
+          "t": "émission"
+        },
+        {
+          "w": "artıyor",
+          "t": "augmente"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -144773,8 +149258,21 @@
       "translation_fr": "durable",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sürdürülebilir büyüme gerekli.",
+      "example_gloss": [
+        {
+          "w": "Sürdürülebilir",
+          "t": "durable"
+        },
+        {
+          "w": "büyüme",
+          "t": "croissance"
+        },
+        {
+          "w": "gerekli",
+          "t": "nécessaire"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -144784,8 +149282,21 @@
       "translation_fr": "biodiversité",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Biyoçeşitliliği korumak lazım.",
+      "example_gloss": [
+        {
+          "w": "Biyoçeşitliliği",
+          "t": "biodiversité"
+        },
+        {
+          "w": "korumak",
+          "t": "protéger"
+        },
+        {
+          "w": "lazım",
+          "t": "il faut"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -144795,8 +149306,21 @@
       "translation_fr": "recyclage",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Переработка помогает природе.",
+      "example_gloss": [
+        {
+          "w": "Переработка",
+          "t": "recyclage"
+        },
+        {
+          "w": "помогает",
+          "t": "aide"
+        },
+        {
+          "w": "природе",
+          "t": "nature"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -144806,8 +149330,21 @@
       "translation_fr": "pollution",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Загрязнение воздуха опасно.",
+      "example_gloss": [
+        {
+          "w": "Загрязнение",
+          "t": "pollution"
+        },
+        {
+          "w": "воздуха",
+          "t": "de l'air"
+        },
+        {
+          "w": "опасно",
+          "t": "dangereux"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -144817,8 +149354,25 @@
       "translation_fr": "énergie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Нам нужна чистая энергия.",
+      "example_gloss": [
+        {
+          "w": "Нам",
+          "t": "Nous"
+        },
+        {
+          "w": "нужна",
+          "t": "avons besoin de"
+        },
+        {
+          "w": "чистая",
+          "t": "propre"
+        },
+        {
+          "w": "энергия",
+          "t": "énergie"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -144828,8 +149382,21 @@
       "translation_fr": "solaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Солнечная энергия бесплатная.",
+      "example_gloss": [
+        {
+          "w": "Солнечная",
+          "t": "Solaire"
+        },
+        {
+          "w": "энергия",
+          "t": "énergie"
+        },
+        {
+          "w": "бесплатная",
+          "t": "gratuite"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -144839,8 +149406,21 @@
       "translation_fr": "déchets",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Отходы надо сортировать.",
+      "example_gloss": [
+        {
+          "w": "Отходы",
+          "t": "déchets"
+        },
+        {
+          "w": "надо",
+          "t": "il faut"
+        },
+        {
+          "w": "сортировать",
+          "t": "trier"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -144850,8 +149430,21 @@
       "translation_fr": "émission",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Выброс газов растёт.",
+      "example_gloss": [
+        {
+          "w": "Выброс",
+          "t": "émission"
+        },
+        {
+          "w": "газов",
+          "t": "de gaz"
+        },
+        {
+          "w": "растёт",
+          "t": "augmente"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -144861,8 +149454,25 @@
       "translation_fr": "durable",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Нам нужен устойчивый рост.",
+      "example_gloss": [
+        {
+          "w": "Нам",
+          "t": "Nous"
+        },
+        {
+          "w": "нужен",
+          "t": "avons besoin de"
+        },
+        {
+          "w": "устойчивый",
+          "t": "durable"
+        },
+        {
+          "w": "рост",
+          "t": "croissance"
+        }
+      ]
     },
     {
       "language_code": "ru",
@@ -144872,8 +149482,21 @@
       "translation_fr": "biodiversité",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Биоразнообразие надо защищать.",
+      "example_gloss": [
+        {
+          "w": "Биоразнообразие",
+          "t": "biodiversité"
+        },
+        {
+          "w": "надо",
+          "t": "il faut"
+        },
+        {
+          "w": "защищать",
+          "t": "protéger"
+        }
+      ]
     },
     {
       "language_code": "ja",
