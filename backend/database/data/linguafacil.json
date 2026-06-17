@@ -104773,8 +104773,25 @@
       "translation_fr": "travail",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich gehe zur Arbeit.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "je"
+        },
+        {
+          "w": "gehe",
+          "t": "vais"
+        },
+        {
+          "w": "zur",
+          "t": "à la"
+        },
+        {
+          "w": "Arbeit",
+          "t": "travail"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -104784,8 +104801,25 @@
       "translation_fr": "bureau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mein Büro ist groß.",
+      "example_gloss": [
+        {
+          "w": "Mein",
+          "t": "mon"
+        },
+        {
+          "w": "Büro",
+          "t": "bureau"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "groß",
+          "t": "grand"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -104795,8 +104829,25 @@
       "translation_fr": "patron/chef",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Der Chef ist nett.",
+      "example_gloss": [
+        {
+          "w": "Der",
+          "t": "le"
+        },
+        {
+          "w": "Chef",
+          "t": "patron"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "nett",
+          "t": "gentil"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -104806,8 +104857,29 @@
       "translation_fr": "réunion",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Die Besprechung beginnt um neun.",
+      "example_gloss": [
+        {
+          "w": "Die",
+          "t": "la"
+        },
+        {
+          "w": "Besprechung",
+          "t": "réunion"
+        },
+        {
+          "w": "beginnt",
+          "t": "commence"
+        },
+        {
+          "w": "um",
+          "t": "à"
+        },
+        {
+          "w": "neun",
+          "t": "neuf"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -104817,8 +104889,25 @@
       "translation_fr": "contrat",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich unterschreibe den Vertrag.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "je"
+        },
+        {
+          "w": "unterschreibe",
+          "t": "signe"
+        },
+        {
+          "w": "den",
+          "t": "le"
+        },
+        {
+          "w": "Vertrag",
+          "t": "contrat"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -104828,8 +104917,33 @@
       "translation_fr": "salaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Das Gehalt kommt am Ende des Monats.",
+      "example_gloss": [
+        {
+          "w": "Das",
+          "t": "le"
+        },
+        {
+          "w": "Gehalt",
+          "t": "salaire"
+        },
+        {
+          "w": "kommt",
+          "t": "arrive"
+        },
+        {
+          "w": "am Ende",
+          "t": "à la fin"
+        },
+        {
+          "w": "des",
+          "t": "du"
+        },
+        {
+          "w": "Monats",
+          "t": "mois"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -104839,8 +104953,29 @@
       "translation_fr": "entreprise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Das Unternehmen hat viele Mitarbeiter.",
+      "example_gloss": [
+        {
+          "w": "Das",
+          "t": "l'"
+        },
+        {
+          "w": "Unternehmen",
+          "t": "entreprise"
+        },
+        {
+          "w": "hat",
+          "t": "a"
+        },
+        {
+          "w": "viele",
+          "t": "beaucoup de"
+        },
+        {
+          "w": "Mitarbeiter",
+          "t": "employés"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -104850,8 +104985,25 @@
       "translation_fr": "collègue",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mein Kollege hilft mir.",
+      "example_gloss": [
+        {
+          "w": "Mein",
+          "t": "mon"
+        },
+        {
+          "w": "Kollege",
+          "t": "collègue"
+        },
+        {
+          "w": "hilft",
+          "t": "aide"
+        },
+        {
+          "w": "mir",
+          "t": "moi"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -106501,8 +106653,29 @@
       "translation_fr": "école",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Die Kinder gehen zur Schule.",
+      "example_gloss": [
+        {
+          "w": "Die",
+          "t": "les"
+        },
+        {
+          "w": "Kinder",
+          "t": "enfants"
+        },
+        {
+          "w": "gehen",
+          "t": "vont"
+        },
+        {
+          "w": "zur",
+          "t": "à l'"
+        },
+        {
+          "w": "Schule",
+          "t": "école"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -106512,8 +106685,25 @@
       "translation_fr": "livre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich lese ein Buch.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "je"
+        },
+        {
+          "w": "lese",
+          "t": "lis"
+        },
+        {
+          "w": "ein",
+          "t": "un"
+        },
+        {
+          "w": "Buch",
+          "t": "livre"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -106523,8 +106713,25 @@
       "translation_fr": "crayon",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hast du einen Bleistift?",
+      "example_gloss": [
+        {
+          "w": "Hast",
+          "t": "as"
+        },
+        {
+          "w": "du",
+          "t": "tu"
+        },
+        {
+          "w": "einen",
+          "t": "un"
+        },
+        {
+          "w": "Bleistift",
+          "t": "crayon"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -106534,8 +106741,25 @@
       "translation_fr": "cahier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Schreib in dein Heft.",
+      "example_gloss": [
+        {
+          "w": "Schreib",
+          "t": "écris"
+        },
+        {
+          "w": "in",
+          "t": "dans"
+        },
+        {
+          "w": "dein",
+          "t": "ton"
+        },
+        {
+          "w": "Heft",
+          "t": "cahier"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -106545,8 +106769,29 @@
       "translation_fr": "professeur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Der Lehrer erklärt die Aufgabe.",
+      "example_gloss": [
+        {
+          "w": "Der",
+          "t": "le"
+        },
+        {
+          "w": "Lehrer",
+          "t": "professeur"
+        },
+        {
+          "w": "erklärt",
+          "t": "explique"
+        },
+        {
+          "w": "die",
+          "t": "l'"
+        },
+        {
+          "w": "Aufgabe",
+          "t": "exercice"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -106556,8 +106801,25 @@
       "translation_fr": "examen",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Die Prüfung ist morgen.",
+      "example_gloss": [
+        {
+          "w": "Die",
+          "t": "l'"
+        },
+        {
+          "w": "Prüfung",
+          "t": "examen"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "morgen",
+          "t": "demain"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -106567,8 +106829,25 @@
       "translation_fr": "devoirs",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich mache meine Hausaufgaben.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "je"
+        },
+        {
+          "w": "mache",
+          "t": "fais"
+        },
+        {
+          "w": "meine",
+          "t": "mes"
+        },
+        {
+          "w": "Hausaufgaben",
+          "t": "devoirs"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -106578,8 +106857,25 @@
       "translation_fr": "bibliothèque",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Die Bibliothek ist ruhig.",
+      "example_gloss": [
+        {
+          "w": "Die",
+          "t": "la"
+        },
+        {
+          "w": "Bibliothek",
+          "t": "bibliothèque"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "ruhig",
+          "t": "calme"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -108217,8 +108513,29 @@
       "translation_fr": "magasin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Das Geschäft öffnet um acht.",
+      "example_gloss": [
+        {
+          "w": "Das",
+          "t": "le"
+        },
+        {
+          "w": "Geschäft",
+          "t": "magasin"
+        },
+        {
+          "w": "öffnet",
+          "t": "ouvre"
+        },
+        {
+          "w": "um",
+          "t": "à"
+        },
+        {
+          "w": "acht",
+          "t": "huit"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -108228,8 +108545,25 @@
       "translation_fr": "prix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Der Preis ist hoch.",
+      "example_gloss": [
+        {
+          "w": "Der",
+          "t": "le"
+        },
+        {
+          "w": "Preis",
+          "t": "prix"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "hoch",
+          "t": "élevé"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -108239,8 +108573,29 @@
       "translation_fr": "cher",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Diese Jacke ist zu teuer.",
+      "example_gloss": [
+        {
+          "w": "Diese",
+          "t": "cette"
+        },
+        {
+          "w": "Jacke",
+          "t": "veste"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "zu",
+          "t": "trop"
+        },
+        {
+          "w": "teuer",
+          "t": "chère"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -108250,8 +108605,25 @@
       "translation_fr": "pas cher",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Das Brot ist billig.",
+      "example_gloss": [
+        {
+          "w": "Das",
+          "t": "le"
+        },
+        {
+          "w": "Brot",
+          "t": "pain"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "billig",
+          "t": "pas cher"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -108261,8 +108633,33 @@
       "translation_fr": "réduction",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Es gibt einen Rabatt von zehn Prozent.",
+      "example_gloss": [
+        {
+          "w": "Es gibt",
+          "t": "il y a"
+        },
+        {
+          "w": "einen",
+          "t": "une"
+        },
+        {
+          "w": "Rabatt",
+          "t": "réduction"
+        },
+        {
+          "w": "von",
+          "t": "de"
+        },
+        {
+          "w": "zehn",
+          "t": "dix"
+        },
+        {
+          "w": "Prozent",
+          "t": "pour cent"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -108272,8 +108669,29 @@
       "translation_fr": "caisse",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bitte zahlen Sie an der Kasse.",
+      "example_gloss": [
+        {
+          "w": "Bitte",
+          "t": "s'il vous plaît"
+        },
+        {
+          "w": "zahlen",
+          "t": "payez"
+        },
+        {
+          "w": "Sie",
+          "t": "vous"
+        },
+        {
+          "w": "an der",
+          "t": "à la"
+        },
+        {
+          "w": "Kasse",
+          "t": "caisse"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -108283,8 +108701,29 @@
       "translation_fr": "carte bancaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Kann ich mit Karte zahlen?",
+      "example_gloss": [
+        {
+          "w": "Kann",
+          "t": "puis"
+        },
+        {
+          "w": "ich",
+          "t": "je"
+        },
+        {
+          "w": "mit",
+          "t": "par"
+        },
+        {
+          "w": "Karte",
+          "t": "carte"
+        },
+        {
+          "w": "zahlen",
+          "t": "payer"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -108294,8 +108733,25 @@
       "translation_fr": "reçu",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich brauche eine Quittung.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "je"
+        },
+        {
+          "w": "brauche",
+          "t": "ai besoin de"
+        },
+        {
+          "w": "eine",
+          "t": "un"
+        },
+        {
+          "w": "Quittung",
+          "t": "reçu"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -109933,8 +110389,25 @@
       "translation_fr": "médecin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich gehe zum Arzt.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "je"
+        },
+        {
+          "w": "gehe",
+          "t": "vais"
+        },
+        {
+          "w": "zum",
+          "t": "chez le"
+        },
+        {
+          "w": "Arzt",
+          "t": "médecin"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -109944,8 +110417,33 @@
       "translation_fr": "hôpital",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Das Krankenhaus ist in der Stadt.",
+      "example_gloss": [
+        {
+          "w": "Das",
+          "t": "l'"
+        },
+        {
+          "w": "Krankenhaus",
+          "t": "hôpital"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "in",
+          "t": "dans"
+        },
+        {
+          "w": "der",
+          "t": "la"
+        },
+        {
+          "w": "Stadt",
+          "t": "ville"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -109955,8 +110453,29 @@
       "translation_fr": "douleur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich habe Schmerz im Rücken.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "j'"
+        },
+        {
+          "w": "habe",
+          "t": "ai"
+        },
+        {
+          "w": "Schmerz",
+          "t": "douleur"
+        },
+        {
+          "w": "im",
+          "t": "dans le"
+        },
+        {
+          "w": "Rücken",
+          "t": "dos"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -109966,8 +110485,25 @@
       "translation_fr": "fièvre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Das Kind hat Fieber.",
+      "example_gloss": [
+        {
+          "w": "Das",
+          "t": "l'"
+        },
+        {
+          "w": "Kind",
+          "t": "enfant"
+        },
+        {
+          "w": "hat",
+          "t": "a"
+        },
+        {
+          "w": "Fieber",
+          "t": "fièvre"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -109977,8 +110513,33 @@
       "translation_fr": "médicament",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Nimm das Medikament nach dem Essen.",
+      "example_gloss": [
+        {
+          "w": "Nimm",
+          "t": "prends"
+        },
+        {
+          "w": "das",
+          "t": "le"
+        },
+        {
+          "w": "Medikament",
+          "t": "médicament"
+        },
+        {
+          "w": "nach",
+          "t": "après"
+        },
+        {
+          "w": "dem",
+          "t": "le"
+        },
+        {
+          "w": "Essen",
+          "t": "repas"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -109988,8 +110549,33 @@
       "translation_fr": "comprimé",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich nehme eine Tablette gegen Kopfschmerzen.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "je"
+        },
+        {
+          "w": "nehme",
+          "t": "prends"
+        },
+        {
+          "w": "eine",
+          "t": "un"
+        },
+        {
+          "w": "Tablette",
+          "t": "comprimé"
+        },
+        {
+          "w": "gegen",
+          "t": "contre"
+        },
+        {
+          "w": "Kopfschmerzen",
+          "t": "maux de tête"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -109999,8 +110585,33 @@
       "translation_fr": "allergie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich habe eine Allergie gegen Nüsse.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "j'"
+        },
+        {
+          "w": "habe",
+          "t": "ai"
+        },
+        {
+          "w": "eine",
+          "t": "une"
+        },
+        {
+          "w": "Allergie",
+          "t": "allergie"
+        },
+        {
+          "w": "gegen",
+          "t": "aux"
+        },
+        {
+          "w": "Nüsse",
+          "t": "noix"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -110010,8 +110621,33 @@
       "translation_fr": "ordonnance",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Der Arzt gibt mir ein Rezept.",
+      "example_gloss": [
+        {
+          "w": "Der",
+          "t": "le"
+        },
+        {
+          "w": "Arzt",
+          "t": "médecin"
+        },
+        {
+          "w": "gibt",
+          "t": "donne"
+        },
+        {
+          "w": "mir",
+          "t": "me"
+        },
+        {
+          "w": "ein",
+          "t": "une"
+        },
+        {
+          "w": "Rezept",
+          "t": "ordonnance"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -111633,8 +112269,21 @@
       "translation_fr": "téléphone",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mein Telefon klingelt.",
+      "example_gloss": [
+        {
+          "w": "Mein",
+          "t": "mon"
+        },
+        {
+          "w": "Telefon",
+          "t": "téléphone"
+        },
+        {
+          "w": "klingelt",
+          "t": "sonne"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -111644,8 +112293,25 @@
       "translation_fr": "ordinateur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich arbeite am Computer.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "je"
+        },
+        {
+          "w": "arbeite",
+          "t": "travaille"
+        },
+        {
+          "w": "am",
+          "t": "sur l'"
+        },
+        {
+          "w": "Computer",
+          "t": "ordinateur"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -111655,8 +112321,25 @@
       "translation_fr": "internet",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Das Internet ist langsam.",
+      "example_gloss": [
+        {
+          "w": "Das",
+          "t": "l'"
+        },
+        {
+          "w": "Internet",
+          "t": "internet"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "langsam",
+          "t": "lent"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -111666,8 +112349,29 @@
       "translation_fr": "mot de passe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich habe mein Passwort vergessen.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "j'"
+        },
+        {
+          "w": "habe",
+          "t": "ai"
+        },
+        {
+          "w": "mein",
+          "t": "mon"
+        },
+        {
+          "w": "Passwort",
+          "t": "mot de passe"
+        },
+        {
+          "w": "vergessen",
+          "t": "oublié"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -111677,8 +112381,29 @@
       "translation_fr": "email",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich schicke dir eine E-Mail.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "je"
+        },
+        {
+          "w": "schicke",
+          "t": "envoie"
+        },
+        {
+          "w": "dir",
+          "t": "te"
+        },
+        {
+          "w": "eine",
+          "t": "un"
+        },
+        {
+          "w": "E-Mail",
+          "t": "email"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -111688,8 +112413,29 @@
       "translation_fr": "écran",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Der Bildschirm ist zu hell.",
+      "example_gloss": [
+        {
+          "w": "Der",
+          "t": "l'"
+        },
+        {
+          "w": "Bildschirm",
+          "t": "écran"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "zu",
+          "t": "trop"
+        },
+        {
+          "w": "hell",
+          "t": "lumineux"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -111699,8 +112445,25 @@
       "translation_fr": "clavier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Die Tastatur funktioniert nicht.",
+      "example_gloss": [
+        {
+          "w": "Die",
+          "t": "le"
+        },
+        {
+          "w": "Tastatur",
+          "t": "clavier"
+        },
+        {
+          "w": "funktioniert",
+          "t": "fonctionne"
+        },
+        {
+          "w": "nicht",
+          "t": "pas"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -111710,8 +112473,29 @@
       "translation_fr": "application",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Diese Anwendung ist sehr nützlich.",
+      "example_gloss": [
+        {
+          "w": "Diese",
+          "t": "cette"
+        },
+        {
+          "w": "Anwendung",
+          "t": "application"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "sehr",
+          "t": "très"
+        },
+        {
+          "w": "nützlich",
+          "t": "utile"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -113337,8 +114121,29 @@
       "translation_fr": "arbre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Der Baum ist sehr alt.",
+      "example_gloss": [
+        {
+          "w": "Der",
+          "t": "l'"
+        },
+        {
+          "w": "Baum",
+          "t": "arbre"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "sehr",
+          "t": "très"
+        },
+        {
+          "w": "alt",
+          "t": "vieux"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -113348,8 +114153,25 @@
       "translation_fr": "fleur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Die Blume ist rot.",
+      "example_gloss": [
+        {
+          "w": "Die",
+          "t": "la"
+        },
+        {
+          "w": "Blume",
+          "t": "fleur"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "rot",
+          "t": "rouge"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -113359,8 +114181,33 @@
       "translation_fr": "rivière",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Der Fluss fließt durch die Stadt.",
+      "example_gloss": [
+        {
+          "w": "Der",
+          "t": "la"
+        },
+        {
+          "w": "Fluss",
+          "t": "rivière"
+        },
+        {
+          "w": "fließt",
+          "t": "coule"
+        },
+        {
+          "w": "durch",
+          "t": "à travers"
+        },
+        {
+          "w": "die",
+          "t": "la"
+        },
+        {
+          "w": "Stadt",
+          "t": "ville"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -113370,8 +114217,29 @@
       "translation_fr": "montagne",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wir wandern auf den Berg.",
+      "example_gloss": [
+        {
+          "w": "Wir",
+          "t": "nous"
+        },
+        {
+          "w": "wandern",
+          "t": "randonnons"
+        },
+        {
+          "w": "auf",
+          "t": "sur"
+        },
+        {
+          "w": "den",
+          "t": "la"
+        },
+        {
+          "w": "Berg",
+          "t": "montagne"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -113381,8 +114249,25 @@
       "translation_fr": "mer",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Das Meer ist blau.",
+      "example_gloss": [
+        {
+          "w": "Das",
+          "t": "la"
+        },
+        {
+          "w": "Meer",
+          "t": "mer"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "blau",
+          "t": "bleue"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -113392,8 +114277,29 @@
       "translation_fr": "forêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Im Wald gibt es viele Tiere.",
+      "example_gloss": [
+        {
+          "w": "Im",
+          "t": "dans la"
+        },
+        {
+          "w": "Wald",
+          "t": "forêt"
+        },
+        {
+          "w": "gibt es",
+          "t": "il y a"
+        },
+        {
+          "w": "viele",
+          "t": "beaucoup de"
+        },
+        {
+          "w": "Tiere",
+          "t": "animaux"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -113403,8 +114309,29 @@
       "translation_fr": "pierre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Der Stein liegt am Fluss.",
+      "example_gloss": [
+        {
+          "w": "Der",
+          "t": "la"
+        },
+        {
+          "w": "Stein",
+          "t": "pierre"
+        },
+        {
+          "w": "liegt",
+          "t": "se trouve"
+        },
+        {
+          "w": "am",
+          "t": "au bord du"
+        },
+        {
+          "w": "Fluss",
+          "t": "fleuve"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -113414,8 +114341,25 @@
       "translation_fr": "terre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Die Erde ist rund.",
+      "example_gloss": [
+        {
+          "w": "Die",
+          "t": "la"
+        },
+        {
+          "w": "Erde",
+          "t": "terre"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "rund",
+          "t": "ronde"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -115049,8 +115993,25 @@
       "translation_fr": "heureux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich bin sehr glücklich.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "je"
+        },
+        {
+          "w": "bin",
+          "t": "suis"
+        },
+        {
+          "w": "sehr",
+          "t": "très"
+        },
+        {
+          "w": "glücklich",
+          "t": "heureux"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -115060,8 +116021,25 @@
       "translation_fr": "triste",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Er ist traurig heute.",
+      "example_gloss": [
+        {
+          "w": "Er",
+          "t": "il"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "traurig",
+          "t": "triste"
+        },
+        {
+          "w": "heute",
+          "t": "aujourd'hui"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -115071,8 +116049,29 @@
       "translation_fr": "en colère",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sie ist wütend auf mich.",
+      "example_gloss": [
+        {
+          "w": "Sie",
+          "t": "elle"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "wütend",
+          "t": "en colère"
+        },
+        {
+          "w": "auf",
+          "t": "contre"
+        },
+        {
+          "w": "mich",
+          "t": "moi"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -115082,8 +116081,25 @@
       "translation_fr": "effrayé",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Das Kind ist verängstigt.",
+      "example_gloss": [
+        {
+          "w": "Das",
+          "t": "l'"
+        },
+        {
+          "w": "Kind",
+          "t": "enfant"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "verängstigt",
+          "t": "effrayé"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -115093,8 +116109,33 @@
       "translation_fr": "surpris",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich bin überrascht von der Nachricht.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "je"
+        },
+        {
+          "w": "bin",
+          "t": "suis"
+        },
+        {
+          "w": "überrascht",
+          "t": "surpris"
+        },
+        {
+          "w": "von",
+          "t": "par"
+        },
+        {
+          "w": "der",
+          "t": "la"
+        },
+        {
+          "w": "Nachricht",
+          "t": "nouvelle"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -115104,8 +116145,29 @@
       "translation_fr": "fier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich bin stolz auf dich.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "je"
+        },
+        {
+          "w": "bin",
+          "t": "suis"
+        },
+        {
+          "w": "stolz",
+          "t": "fier"
+        },
+        {
+          "w": "auf",
+          "t": "de"
+        },
+        {
+          "w": "dich",
+          "t": "toi"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -115115,8 +116177,25 @@
       "translation_fr": "honteux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Er fühlt sich beschämt.",
+      "example_gloss": [
+        {
+          "w": "Er",
+          "t": "il"
+        },
+        {
+          "w": "fühlt",
+          "t": "se sent"
+        },
+        {
+          "w": "sich",
+          "t": ""
+        },
+        {
+          "w": "beschämt",
+          "t": "honteux"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -115126,8 +116205,33 @@
       "translation_fr": "anxieux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sie ist ängstlich vor der Prüfung.",
+      "example_gloss": [
+        {
+          "w": "Sie",
+          "t": "elle"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "ängstlich",
+          "t": "anxieuse"
+        },
+        {
+          "w": "vor",
+          "t": "avant"
+        },
+        {
+          "w": "der",
+          "t": "l'"
+        },
+        {
+          "w": "Prüfung",
+          "t": "examen"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -116697,8 +117801,25 @@
       "translation_fr": "chemise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Das Hemd ist weiß.",
+      "example_gloss": [
+        {
+          "w": "Das",
+          "t": "la"
+        },
+        {
+          "w": "Hemd",
+          "t": "chemise"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "weiß",
+          "t": "blanche"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -116708,8 +117829,29 @@
       "translation_fr": "pantalon",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Die Hose ist zu lang.",
+      "example_gloss": [
+        {
+          "w": "Die",
+          "t": "le"
+        },
+        {
+          "w": "Hose",
+          "t": "pantalon"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "zu",
+          "t": "trop"
+        },
+        {
+          "w": "lang",
+          "t": "long"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -116719,8 +117861,25 @@
       "translation_fr": "chaussures",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Meine Schuhe sind neu.",
+      "example_gloss": [
+        {
+          "w": "Meine",
+          "t": "mes"
+        },
+        {
+          "w": "Schuhe",
+          "t": "chaussures"
+        },
+        {
+          "w": "sind",
+          "t": "sont"
+        },
+        {
+          "w": "neu",
+          "t": "neuves"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -116730,8 +117889,37 @@
       "translation_fr": "manteau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Zieh deinen Mantel an, es ist kalt.",
+      "example_gloss": [
+        {
+          "w": "Zieh",
+          "t": "mets"
+        },
+        {
+          "w": "deinen",
+          "t": "ton"
+        },
+        {
+          "w": "Mantel",
+          "t": "manteau"
+        },
+        {
+          "w": "an",
+          "t": ""
+        },
+        {
+          "w": "es",
+          "t": "il"
+        },
+        {
+          "w": "ist",
+          "t": "fait"
+        },
+        {
+          "w": "kalt",
+          "t": "froid"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -116741,8 +117929,25 @@
       "translation_fr": "chapeau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Er trägt einen Hut.",
+      "example_gloss": [
+        {
+          "w": "Er",
+          "t": "il"
+        },
+        {
+          "w": "trägt",
+          "t": "porte"
+        },
+        {
+          "w": "einen",
+          "t": "un"
+        },
+        {
+          "w": "Hut",
+          "t": "chapeau"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -116752,8 +117957,25 @@
       "translation_fr": "chaussettes",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wo sind meine Socken?",
+      "example_gloss": [
+        {
+          "w": "Wo",
+          "t": "où"
+        },
+        {
+          "w": "sind",
+          "t": "sont"
+        },
+        {
+          "w": "meine",
+          "t": "mes"
+        },
+        {
+          "w": "Socken",
+          "t": "chaussettes"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -116763,8 +117985,29 @@
       "translation_fr": "robe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Das Kleid ist sehr schön.",
+      "example_gloss": [
+        {
+          "w": "Das",
+          "t": "la"
+        },
+        {
+          "w": "Kleid",
+          "t": "robe"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "sehr",
+          "t": "très"
+        },
+        {
+          "w": "schön",
+          "t": "belle"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -116774,8 +118017,33 @@
       "translation_fr": "écharpe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Im Winter trage ich einen Schal.",
+      "example_gloss": [
+        {
+          "w": "Im",
+          "t": "en"
+        },
+        {
+          "w": "Winter",
+          "t": "hiver"
+        },
+        {
+          "w": "trage",
+          "t": "porte"
+        },
+        {
+          "w": "ich",
+          "t": "je"
+        },
+        {
+          "w": "einen",
+          "t": "une"
+        },
+        {
+          "w": "Schal",
+          "t": "écharpe"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -118373,8 +119641,29 @@
       "translation_fr": "heure",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Eine Stunde hat sechzig Minuten.",
+      "example_gloss": [
+        {
+          "w": "Eine",
+          "t": "une"
+        },
+        {
+          "w": "Stunde",
+          "t": "heure"
+        },
+        {
+          "w": "hat",
+          "t": "a"
+        },
+        {
+          "w": "sechzig",
+          "t": "soixante"
+        },
+        {
+          "w": "Minuten",
+          "t": "minutes"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -118384,8 +119673,21 @@
       "translation_fr": "minute",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Warte eine Minute.",
+      "example_gloss": [
+        {
+          "w": "Warte",
+          "t": "attends"
+        },
+        {
+          "w": "eine",
+          "t": "une"
+        },
+        {
+          "w": "Minute",
+          "t": "minute"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -118395,8 +119697,29 @@
       "translation_fr": "matin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Am Morgen trinke ich Kaffee.",
+      "example_gloss": [
+        {
+          "w": "Am",
+          "t": "le"
+        },
+        {
+          "w": "Morgen",
+          "t": "matin"
+        },
+        {
+          "w": "trinke",
+          "t": "bois"
+        },
+        {
+          "w": "ich",
+          "t": "je"
+        },
+        {
+          "w": "Kaffee",
+          "t": "café"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -118406,8 +119729,29 @@
       "translation_fr": "après-midi",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Am Nachmittag gehe ich spazieren.",
+      "example_gloss": [
+        {
+          "w": "Am",
+          "t": "l'"
+        },
+        {
+          "w": "Nachmittag",
+          "t": "après-midi"
+        },
+        {
+          "w": "gehe",
+          "t": "vais"
+        },
+        {
+          "w": "ich",
+          "t": "je"
+        },
+        {
+          "w": "spazieren",
+          "t": "me promener"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -118417,8 +119761,25 @@
       "translation_fr": "nuit/soir",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Gute Nacht, schlaf gut.",
+      "example_gloss": [
+        {
+          "w": "Gute",
+          "t": "bonne"
+        },
+        {
+          "w": "Nacht",
+          "t": "nuit"
+        },
+        {
+          "w": "schlaf",
+          "t": "dors"
+        },
+        {
+          "w": "gut",
+          "t": "bien"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -118428,8 +119789,25 @@
       "translation_fr": "maintenant",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich muss jetzt gehen.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "je"
+        },
+        {
+          "w": "muss",
+          "t": "dois"
+        },
+        {
+          "w": "jetzt",
+          "t": "maintenant"
+        },
+        {
+          "w": "gehen",
+          "t": "partir"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -118439,8 +119817,25 @@
       "translation_fr": "bientôt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Der Bus kommt bald.",
+      "example_gloss": [
+        {
+          "w": "Der",
+          "t": "le"
+        },
+        {
+          "w": "Bus",
+          "t": "bus"
+        },
+        {
+          "w": "kommt",
+          "t": "arrive"
+        },
+        {
+          "w": "bald",
+          "t": "bientôt"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -118450,8 +119845,21 @@
       "translation_fr": "minuit",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Es ist Mitternacht.",
+      "example_gloss": [
+        {
+          "w": "Es",
+          "t": "il"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "Mitternacht",
+          "t": "minuit"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -120005,8 +121413,25 @@
       "translation_fr": "chanson",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dieses Lied gefällt mir.",
+      "example_gloss": [
+        {
+          "w": "Dieses",
+          "t": "cette"
+        },
+        {
+          "w": "Lied",
+          "t": "chanson"
+        },
+        {
+          "w": "gefällt",
+          "t": "plaît"
+        },
+        {
+          "w": "mir",
+          "t": "à moi"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -120016,8 +121441,21 @@
       "translation_fr": "guitare",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Er spielt Gitarre.",
+      "example_gloss": [
+        {
+          "w": "Er",
+          "t": "il"
+        },
+        {
+          "w": "spielt",
+          "t": "joue de la"
+        },
+        {
+          "w": "Gitarre",
+          "t": "guitare"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -120027,8 +121465,29 @@
       "translation_fr": "piano",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sie übt Klavier jeden Tag.",
+      "example_gloss": [
+        {
+          "w": "Sie",
+          "t": "elle"
+        },
+        {
+          "w": "übt",
+          "t": "pratique le"
+        },
+        {
+          "w": "Klavier",
+          "t": "piano"
+        },
+        {
+          "w": "jeden",
+          "t": "chaque"
+        },
+        {
+          "w": "Tag",
+          "t": "jour"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -120038,8 +121497,29 @@
       "translation_fr": "voix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sie hat eine schöne Stimme.",
+      "example_gloss": [
+        {
+          "w": "Sie",
+          "t": "elle"
+        },
+        {
+          "w": "hat",
+          "t": "a"
+        },
+        {
+          "w": "eine",
+          "t": "une"
+        },
+        {
+          "w": "schöne",
+          "t": "belle"
+        },
+        {
+          "w": "Stimme",
+          "t": "voix"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -120049,8 +121529,25 @@
       "translation_fr": "rythme",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Der Rhythmus ist schnell.",
+      "example_gloss": [
+        {
+          "w": "Der",
+          "t": "le"
+        },
+        {
+          "w": "Rhythmus",
+          "t": "rythme"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "schnell",
+          "t": "rapide"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -120060,8 +121557,25 @@
       "translation_fr": "concert",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wir gehen zum Konzert.",
+      "example_gloss": [
+        {
+          "w": "Wir",
+          "t": "nous"
+        },
+        {
+          "w": "gehen",
+          "t": "allons"
+        },
+        {
+          "w": "zum",
+          "t": "au"
+        },
+        {
+          "w": "Konzert",
+          "t": "concert"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -120071,8 +121585,33 @@
       "translation_fr": "paroles",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich kenne den Text des Liedes.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "je"
+        },
+        {
+          "w": "kenne",
+          "t": "connais"
+        },
+        {
+          "w": "den",
+          "t": "les"
+        },
+        {
+          "w": "Text",
+          "t": "paroles"
+        },
+        {
+          "w": "des",
+          "t": "de la"
+        },
+        {
+          "w": "Liedes",
+          "t": "chanson"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -120082,8 +121621,25 @@
       "translation_fr": "mélodie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Die Melodie ist wunderschön.",
+      "example_gloss": [
+        {
+          "w": "Die",
+          "t": "la"
+        },
+        {
+          "w": "Melodie",
+          "t": "mélodie"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "wunderschön",
+          "t": "magnifique"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -121697,8 +123253,25 @@
       "translation_fr": "cuisiner",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich koche gern Pasta.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "je"
+        },
+        {
+          "w": "koche",
+          "t": "cuisine"
+        },
+        {
+          "w": "gern",
+          "t": "volontiers"
+        },
+        {
+          "w": "Pasta",
+          "t": "pâtes"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -121708,8 +123281,29 @@
       "translation_fr": "recette",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hast du ein gutes Rezept?",
+      "example_gloss": [
+        {
+          "w": "Hast",
+          "t": "as"
+        },
+        {
+          "w": "du",
+          "t": "tu"
+        },
+        {
+          "w": "ein",
+          "t": "une"
+        },
+        {
+          "w": "gutes",
+          "t": "bonne"
+        },
+        {
+          "w": "Rezept",
+          "t": "recette"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -121719,8 +123313,25 @@
       "translation_fr": "ingrédient",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Diese Zutat fehlt mir.",
+      "example_gloss": [
+        {
+          "w": "Diese",
+          "t": "cet"
+        },
+        {
+          "w": "Zutat",
+          "t": "ingrédient"
+        },
+        {
+          "w": "fehlt",
+          "t": "manque"
+        },
+        {
+          "w": "mir",
+          "t": "à moi"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -121730,8 +123341,29 @@
       "translation_fr": "poêle",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Erhitze Öl in der Pfanne.",
+      "example_gloss": [
+        {
+          "w": "Erhitze",
+          "t": "chauffe"
+        },
+        {
+          "w": "Öl",
+          "t": "de l'huile"
+        },
+        {
+          "w": "in",
+          "t": "dans"
+        },
+        {
+          "w": "der",
+          "t": "la"
+        },
+        {
+          "w": "Pfanne",
+          "t": "poêle"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -121741,8 +123373,25 @@
       "translation_fr": "faire bouillir",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich muss Wasser kochen.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "je"
+        },
+        {
+          "w": "muss",
+          "t": "dois"
+        },
+        {
+          "w": "Wasser",
+          "t": "eau"
+        },
+        {
+          "w": "kochen",
+          "t": "faire bouillir"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -121752,8 +123401,25 @@
       "translation_fr": "cuire au four",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wir backen einen Kuchen.",
+      "example_gloss": [
+        {
+          "w": "Wir",
+          "t": "nous"
+        },
+        {
+          "w": "backen",
+          "t": "cuisons au four"
+        },
+        {
+          "w": "einen",
+          "t": "un"
+        },
+        {
+          "w": "Kuchen",
+          "t": "gâteau"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -121763,8 +123429,25 @@
       "translation_fr": "mélanger",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mischen Sie die Zutaten.",
+      "example_gloss": [
+        {
+          "w": "Mischen",
+          "t": "mélangez"
+        },
+        {
+          "w": "Sie",
+          "t": "vous"
+        },
+        {
+          "w": "die",
+          "t": "les"
+        },
+        {
+          "w": "Zutaten",
+          "t": "ingrédients"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -121774,8 +123457,25 @@
       "translation_fr": "assaisonnement",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dieses Gewürz ist scharf.",
+      "example_gloss": [
+        {
+          "w": "Dieses",
+          "t": "cet"
+        },
+        {
+          "w": "Gewürz",
+          "t": "assaisonnement"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "scharf",
+          "t": "piquant"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -123197,8 +124897,29 @@
       "translation_fr": "avion",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Das Flugzeug landet um drei.",
+      "example_gloss": [
+        {
+          "w": "Das",
+          "t": "l'"
+        },
+        {
+          "w": "Flugzeug",
+          "t": "avion"
+        },
+        {
+          "w": "landet",
+          "t": "atterrit"
+        },
+        {
+          "w": "um",
+          "t": "à"
+        },
+        {
+          "w": "drei",
+          "t": "trois"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -123208,8 +124929,25 @@
       "translation_fr": "valise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mein Koffer ist schwer.",
+      "example_gloss": [
+        {
+          "w": "Mein",
+          "t": "ma"
+        },
+        {
+          "w": "Koffer",
+          "t": "valise"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "schwer",
+          "t": "lourde"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -123219,8 +124957,37 @@
       "translation_fr": "tourisme",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Der Tourismus ist wichtig für die Stadt.",
+      "example_gloss": [
+        {
+          "w": "Der",
+          "t": "le"
+        },
+        {
+          "w": "Tourismus",
+          "t": "tourisme"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "wichtig",
+          "t": "important"
+        },
+        {
+          "w": "für",
+          "t": "pour"
+        },
+        {
+          "w": "die",
+          "t": "la"
+        },
+        {
+          "w": "Stadt",
+          "t": "ville"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -124196,8 +125963,29 @@
       "translation_fr": "zéro",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Die Temperatur ist null Grad.",
+      "example_gloss": [
+        {
+          "w": "Die",
+          "t": "la"
+        },
+        {
+          "w": "Temperatur",
+          "t": "température"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "null",
+          "t": "zéro"
+        },
+        {
+          "w": "Grad",
+          "t": "degré"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -124207,8 +125995,25 @@
       "translation_fr": "dix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich habe zehn Finger.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "j'"
+        },
+        {
+          "w": "habe",
+          "t": "ai"
+        },
+        {
+          "w": "zehn",
+          "t": "dix"
+        },
+        {
+          "w": "Finger",
+          "t": "doigts"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -124218,8 +126023,25 @@
       "translation_fr": "cent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Es kostet hundert Euro.",
+      "example_gloss": [
+        {
+          "w": "Es",
+          "t": "ça"
+        },
+        {
+          "w": "kostet",
+          "t": "coûte"
+        },
+        {
+          "w": "hundert",
+          "t": "cent"
+        },
+        {
+          "w": "Euro",
+          "t": "euros"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -124229,8 +126051,29 @@
       "translation_fr": "mille",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Die Stadt hat tausend Einwohner.",
+      "example_gloss": [
+        {
+          "w": "Die",
+          "t": "la"
+        },
+        {
+          "w": "Stadt",
+          "t": "ville"
+        },
+        {
+          "w": "hat",
+          "t": "a"
+        },
+        {
+          "w": "tausend",
+          "t": "mille"
+        },
+        {
+          "w": "Einwohner",
+          "t": "habitants"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -124240,8 +126083,29 @@
       "translation_fr": "million",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Eine Million Menschen leben hier.",
+      "example_gloss": [
+        {
+          "w": "Eine",
+          "t": "un"
+        },
+        {
+          "w": "Million",
+          "t": "million"
+        },
+        {
+          "w": "Menschen",
+          "t": "personnes"
+        },
+        {
+          "w": "leben",
+          "t": "vivent"
+        },
+        {
+          "w": "hier",
+          "t": "ici"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -124251,8 +126115,25 @@
       "translation_fr": "moitié",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich esse die Hälfte.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "je"
+        },
+        {
+          "w": "esse",
+          "t": "mange"
+        },
+        {
+          "w": "die",
+          "t": "la"
+        },
+        {
+          "w": "Hälfte",
+          "t": "moitié"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -124262,8 +126143,25 @@
       "translation_fr": "double",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Er verdient doppelt so viel.",
+      "example_gloss": [
+        {
+          "w": "Er",
+          "t": "il"
+        },
+        {
+          "w": "verdient",
+          "t": "gagne"
+        },
+        {
+          "w": "doppelt",
+          "t": "le double"
+        },
+        {
+          "w": "so viel",
+          "t": "autant"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -124273,8 +126171,29 @@
       "translation_fr": "tiers",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ein Drittel der Klasse fehlt.",
+      "example_gloss": [
+        {
+          "w": "Ein",
+          "t": "un"
+        },
+        {
+          "w": "Drittel",
+          "t": "tiers"
+        },
+        {
+          "w": "der",
+          "t": "de la"
+        },
+        {
+          "w": "Klasse",
+          "t": "classe"
+        },
+        {
+          "w": "fehlt",
+          "t": "manque"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -125884,8 +127803,29 @@
       "translation_fr": "pays",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Deutschland ist ein schönes Land.",
+      "example_gloss": [
+        {
+          "w": "Deutschland",
+          "t": "l'Allemagne"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "ein",
+          "t": "un"
+        },
+        {
+          "w": "schönes",
+          "t": "beau"
+        },
+        {
+          "w": "Land",
+          "t": "pays"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -125895,8 +127835,25 @@
       "translation_fr": "capitale",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Berlin ist die Hauptstadt.",
+      "example_gloss": [
+        {
+          "w": "Berlin",
+          "t": "Berlin"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "die",
+          "t": "la"
+        },
+        {
+          "w": "Hauptstadt",
+          "t": "capitale"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -125906,8 +127863,25 @@
       "translation_fr": "continent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Europa ist ein Kontinent.",
+      "example_gloss": [
+        {
+          "w": "Europa",
+          "t": "l'Europe"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "ein",
+          "t": "un"
+        },
+        {
+          "w": "Kontinent",
+          "t": "continent"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -125917,8 +127891,29 @@
       "translation_fr": "frontière",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Die Grenze ist nicht weit.",
+      "example_gloss": [
+        {
+          "w": "Die",
+          "t": "la"
+        },
+        {
+          "w": "Grenze",
+          "t": "frontière"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "nicht",
+          "t": "pas"
+        },
+        {
+          "w": "weit",
+          "t": "loin"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -125928,8 +127923,29 @@
       "translation_fr": "île",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Die Insel ist sehr klein.",
+      "example_gloss": [
+        {
+          "w": "Die",
+          "t": "l'"
+        },
+        {
+          "w": "Insel",
+          "t": "île"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "sehr",
+          "t": "très"
+        },
+        {
+          "w": "klein",
+          "t": "petite"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -125939,8 +127955,33 @@
       "translation_fr": "désert",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "In der Wüste ist es heiß.",
+      "example_gloss": [
+        {
+          "w": "In",
+          "t": "dans"
+        },
+        {
+          "w": "der",
+          "t": "le"
+        },
+        {
+          "w": "Wüste",
+          "t": "désert"
+        },
+        {
+          "w": "ist",
+          "t": "il fait"
+        },
+        {
+          "w": "es",
+          "t": ""
+        },
+        {
+          "w": "heiß",
+          "t": "chaud"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -125950,8 +127991,29 @@
       "translation_fr": "océan",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Der Ozean ist sehr tief.",
+      "example_gloss": [
+        {
+          "w": "Der",
+          "t": "l'"
+        },
+        {
+          "w": "Ozean",
+          "t": "océan"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "sehr",
+          "t": "très"
+        },
+        {
+          "w": "tief",
+          "t": "profond"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -125961,8 +128023,33 @@
       "translation_fr": "hémisphère",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wir leben in der nördlichen Hemisphäre.",
+      "example_gloss": [
+        {
+          "w": "Wir",
+          "t": "nous"
+        },
+        {
+          "w": "leben",
+          "t": "vivons"
+        },
+        {
+          "w": "in",
+          "t": "dans"
+        },
+        {
+          "w": "der",
+          "t": "l'"
+        },
+        {
+          "w": "nördlichen",
+          "t": "nord"
+        },
+        {
+          "w": "Hemisphäre",
+          "t": "hémisphère"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -127576,8 +129663,25 @@
       "translation_fr": "médecin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mein Bruder ist Arzt.",
+      "example_gloss": [
+        {
+          "w": "Mein",
+          "t": "mon"
+        },
+        {
+          "w": "Bruder",
+          "t": "frère"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "Arzt",
+          "t": "médecin"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -127587,8 +129691,33 @@
       "translation_fr": "enseignant",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sie ist Lehrer an einer Schule.",
+      "example_gloss": [
+        {
+          "w": "Sie",
+          "t": "elle"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "Lehrer",
+          "t": "enseignante"
+        },
+        {
+          "w": "an",
+          "t": "dans"
+        },
+        {
+          "w": "einer",
+          "t": "une"
+        },
+        {
+          "w": "Schule",
+          "t": "école"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -127598,8 +129727,33 @@
       "translation_fr": "cuisinier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Der Koch bereitet das Essen vor.",
+      "example_gloss": [
+        {
+          "w": "Der",
+          "t": "le"
+        },
+        {
+          "w": "Koch",
+          "t": "cuisinier"
+        },
+        {
+          "w": "bereitet",
+          "t": "prépare"
+        },
+        {
+          "w": "das",
+          "t": "le"
+        },
+        {
+          "w": "Essen",
+          "t": "repas"
+        },
+        {
+          "w": "vor",
+          "t": ""
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -127609,8 +129763,29 @@
       "translation_fr": "policier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Der Polizist hilft den Leuten.",
+      "example_gloss": [
+        {
+          "w": "Der",
+          "t": "le"
+        },
+        {
+          "w": "Polizist",
+          "t": "policier"
+        },
+        {
+          "w": "hilft",
+          "t": "aide"
+        },
+        {
+          "w": "den",
+          "t": "les"
+        },
+        {
+          "w": "Leuten",
+          "t": "gens"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -127620,8 +129795,29 @@
       "translation_fr": "pompier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Der Feuerwehrmann löscht das Feuer.",
+      "example_gloss": [
+        {
+          "w": "Der",
+          "t": "le"
+        },
+        {
+          "w": "Feuerwehrmann",
+          "t": "pompier"
+        },
+        {
+          "w": "löscht",
+          "t": "éteint"
+        },
+        {
+          "w": "das",
+          "t": "le"
+        },
+        {
+          "w": "Feuer",
+          "t": "feu"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -127631,8 +129827,25 @@
       "translation_fr": "ingénieur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Er arbeitet als Ingenieur.",
+      "example_gloss": [
+        {
+          "w": "Er",
+          "t": "il"
+        },
+        {
+          "w": "arbeitet",
+          "t": "travaille"
+        },
+        {
+          "w": "als",
+          "t": "comme"
+        },
+        {
+          "w": "Ingenieur",
+          "t": "ingénieur"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -127642,8 +129855,25 @@
       "translation_fr": "avocat",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mein Anwalt berät mich.",
+      "example_gloss": [
+        {
+          "w": "Mein",
+          "t": "mon"
+        },
+        {
+          "w": "Anwalt",
+          "t": "avocat"
+        },
+        {
+          "w": "berät",
+          "t": "conseille"
+        },
+        {
+          "w": "mich",
+          "t": "moi"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -127653,8 +129883,29 @@
       "translation_fr": "architecte",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Der Architekt plant das Haus.",
+      "example_gloss": [
+        {
+          "w": "Der",
+          "t": "l'"
+        },
+        {
+          "w": "Architekt",
+          "t": "architecte"
+        },
+        {
+          "w": "plant",
+          "t": "planifie"
+        },
+        {
+          "w": "das",
+          "t": "la"
+        },
+        {
+          "w": "Haus",
+          "t": "maison"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -129284,8 +131535,25 @@
       "translation_fr": "lire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Lesen ist mein Hobby.",
+      "example_gloss": [
+        {
+          "w": "Lesen",
+          "t": "lire"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "mein",
+          "t": "mon"
+        },
+        {
+          "w": "Hobby",
+          "t": "hobby"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -129295,8 +131563,25 @@
       "translation_fr": "peindre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Malen macht mir Freude.",
+      "example_gloss": [
+        {
+          "w": "Malen",
+          "t": "peindre"
+        },
+        {
+          "w": "macht",
+          "t": "donne"
+        },
+        {
+          "w": "mir",
+          "t": "me"
+        },
+        {
+          "w": "Freude",
+          "t": "joie"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -129306,8 +131591,33 @@
       "translation_fr": "nager",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Schwimmen ist gut für die Gesundheit.",
+      "example_gloss": [
+        {
+          "w": "Schwimmen",
+          "t": "nager"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "gut",
+          "t": "bon"
+        },
+        {
+          "w": "für",
+          "t": "pour"
+        },
+        {
+          "w": "die",
+          "t": "la"
+        },
+        {
+          "w": "Gesundheit",
+          "t": "santé"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -129317,8 +131627,25 @@
       "translation_fr": "photographie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Fotografie ist seine Leidenschaft.",
+      "example_gloss": [
+        {
+          "w": "Fotografie",
+          "t": "la photographie"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "seine",
+          "t": "sa"
+        },
+        {
+          "w": "Leidenschaft",
+          "t": "passion"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -129328,8 +131655,21 @@
       "translation_fr": "jardinage",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Gartenarbeit entspannt mich.",
+      "example_gloss": [
+        {
+          "w": "Gartenarbeit",
+          "t": "le jardinage"
+        },
+        {
+          "w": "entspannt",
+          "t": "détend"
+        },
+        {
+          "w": "mich",
+          "t": "me"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -129339,8 +131679,29 @@
       "translation_fr": "échecs",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wir spielen Schach am Abend.",
+      "example_gloss": [
+        {
+          "w": "Wir",
+          "t": "nous"
+        },
+        {
+          "w": "spielen",
+          "t": "jouons aux"
+        },
+        {
+          "w": "Schach",
+          "t": "échecs"
+        },
+        {
+          "w": "am",
+          "t": "le"
+        },
+        {
+          "w": "Abend",
+          "t": "soir"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -129350,8 +131711,33 @@
       "translation_fr": "randonnée",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wandern in den Bergen ist toll.",
+      "example_gloss": [
+        {
+          "w": "Wandern",
+          "t": "randonner"
+        },
+        {
+          "w": "in",
+          "t": "dans"
+        },
+        {
+          "w": "den",
+          "t": "les"
+        },
+        {
+          "w": "Bergen",
+          "t": "montagnes"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "toll",
+          "t": "génial"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -129361,8 +131747,29 @@
       "translation_fr": "collection",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Seine Sammlung ist sehr groß.",
+      "example_gloss": [
+        {
+          "w": "Seine",
+          "t": "sa"
+        },
+        {
+          "w": "Sammlung",
+          "t": "collection"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "sehr",
+          "t": "très"
+        },
+        {
+          "w": "groß",
+          "t": "grande"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -131032,8 +133439,25 @@
       "translation_fr": "banque",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich gehe zur Bank.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "je"
+        },
+        {
+          "w": "gehe",
+          "t": "vais"
+        },
+        {
+          "w": "zur",
+          "t": "à la"
+        },
+        {
+          "w": "Bank",
+          "t": "banque"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -131043,8 +133467,25 @@
       "translation_fr": "argent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich habe kein Geld.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "je"
+        },
+        {
+          "w": "habe",
+          "t": "n'ai"
+        },
+        {
+          "w": "kein",
+          "t": "pas de"
+        },
+        {
+          "w": "Geld",
+          "t": "argent"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -131054,8 +133495,25 @@
       "translation_fr": "compte",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich eröffne ein Konto.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "j'"
+        },
+        {
+          "w": "eröffne",
+          "t": "ouvre"
+        },
+        {
+          "w": "ein",
+          "t": "un"
+        },
+        {
+          "w": "Konto",
+          "t": "compte"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -131065,8 +133523,25 @@
       "translation_fr": "virement",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich mache eine Überweisung.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "je"
+        },
+        {
+          "w": "mache",
+          "t": "fais"
+        },
+        {
+          "w": "eine",
+          "t": "un"
+        },
+        {
+          "w": "Überweisung",
+          "t": "virement"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -131076,8 +133551,29 @@
       "translation_fr": "distributeur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wo ist der nächste Geldautomat?",
+      "example_gloss": [
+        {
+          "w": "Wo",
+          "t": "où"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "der",
+          "t": "le"
+        },
+        {
+          "w": "nächste",
+          "t": "prochain"
+        },
+        {
+          "w": "Geldautomat",
+          "t": "distributeur"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -131087,8 +133583,25 @@
       "translation_fr": "intérêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Die Zinsen sind niedrig.",
+      "example_gloss": [
+        {
+          "w": "Die",
+          "t": "les"
+        },
+        {
+          "w": "Zinsen",
+          "t": "intérêts"
+        },
+        {
+          "w": "sind",
+          "t": "sont"
+        },
+        {
+          "w": "niedrig",
+          "t": "bas"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -131098,8 +133611,25 @@
       "translation_fr": "prêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich beantrage ein Darlehen.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "je"
+        },
+        {
+          "w": "beantrage",
+          "t": "demande"
+        },
+        {
+          "w": "ein",
+          "t": "un"
+        },
+        {
+          "w": "Darlehen",
+          "t": "prêt"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -131109,8 +133639,25 @@
       "translation_fr": "taux de change",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Der Wechselkurs ändert sich täglich.",
+      "example_gloss": [
+        {
+          "w": "Der",
+          "t": "le"
+        },
+        {
+          "w": "Wechselkurs",
+          "t": "taux de change"
+        },
+        {
+          "w": "ändert sich",
+          "t": "change"
+        },
+        {
+          "w": "täglich",
+          "t": "quotidiennement"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -132720,8 +135267,25 @@
       "translation_fr": "fête",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Die Party war super.",
+      "example_gloss": [
+        {
+          "w": "Die",
+          "t": "la"
+        },
+        {
+          "w": "Party",
+          "t": "fête"
+        },
+        {
+          "w": "war",
+          "t": "était"
+        },
+        {
+          "w": "super",
+          "t": "super"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -132731,8 +135295,25 @@
       "translation_fr": "anniversaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Alles Gute zum Geburtstag!",
+      "example_gloss": [
+        {
+          "w": "Alles",
+          "t": "tout"
+        },
+        {
+          "w": "Gute",
+          "t": "le meilleur"
+        },
+        {
+          "w": "zum",
+          "t": "pour l'"
+        },
+        {
+          "w": "Geburtstag",
+          "t": "anniversaire"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -132742,8 +135323,29 @@
       "translation_fr": "cadeau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Das Geschenk ist für dich.",
+      "example_gloss": [
+        {
+          "w": "Das",
+          "t": "le"
+        },
+        {
+          "w": "Geschenk",
+          "t": "cadeau"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "für",
+          "t": "pour"
+        },
+        {
+          "w": "dich",
+          "t": "toi"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -132753,8 +135355,25 @@
       "translation_fr": "bougie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Blas die Kerze aus.",
+      "example_gloss": [
+        {
+          "w": "Blas",
+          "t": "souffle"
+        },
+        {
+          "w": "die",
+          "t": "la"
+        },
+        {
+          "w": "Kerze",
+          "t": "bougie"
+        },
+        {
+          "w": "aus",
+          "t": ""
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -132764,8 +135383,21 @@
       "translation_fr": "toast",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wir wollen anstoßen!",
+      "example_gloss": [
+        {
+          "w": "Wir",
+          "t": "nous"
+        },
+        {
+          "w": "wollen",
+          "t": "voulons"
+        },
+        {
+          "w": "anstoßen",
+          "t": "trinquer"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -132775,8 +135407,25 @@
       "translation_fr": "feux d'artifice",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Das Feuerwerk ist wunderschön.",
+      "example_gloss": [
+        {
+          "w": "Das",
+          "t": "le"
+        },
+        {
+          "w": "Feuerwerk",
+          "t": "feu d'artifice"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "wunderschön",
+          "t": "magnifique"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -132786,8 +135435,25 @@
       "translation_fr": "décoration",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Die Dekoration ist bunt.",
+      "example_gloss": [
+        {
+          "w": "Die",
+          "t": "la"
+        },
+        {
+          "w": "Dekoration",
+          "t": "décoration"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "bunt",
+          "t": "colorée"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -132797,8 +135463,29 @@
       "translation_fr": "invité",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Jeder Gast bekommt ein Geschenk.",
+      "example_gloss": [
+        {
+          "w": "Jeder",
+          "t": "chaque"
+        },
+        {
+          "w": "Gast",
+          "t": "invité"
+        },
+        {
+          "w": "bekommt",
+          "t": "reçoit"
+        },
+        {
+          "w": "ein",
+          "t": "un"
+        },
+        {
+          "w": "Geschenk",
+          "t": "cadeau"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -134404,8 +137091,29 @@
       "translation_fr": "musée",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Das Museum ist am Montag geschlossen.",
+      "example_gloss": [
+        {
+          "w": "Das",
+          "t": "le"
+        },
+        {
+          "w": "Museum",
+          "t": "musée"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "am Montag",
+          "t": "le lundi"
+        },
+        {
+          "w": "geschlossen",
+          "t": "fermé"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -134415,8 +137123,25 @@
       "translation_fr": "théâtre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wir gehen ins Theater.",
+      "example_gloss": [
+        {
+          "w": "Wir",
+          "t": "nous"
+        },
+        {
+          "w": "gehen",
+          "t": "allons"
+        },
+        {
+          "w": "ins",
+          "t": "au"
+        },
+        {
+          "w": "Theater",
+          "t": "théâtre"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -134426,8 +137151,25 @@
       "translation_fr": "art",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ich liebe moderne Kunst.",
+      "example_gloss": [
+        {
+          "w": "Ich",
+          "t": "j'"
+        },
+        {
+          "w": "liebe",
+          "t": "aime"
+        },
+        {
+          "w": "moderne",
+          "t": "l'art"
+        },
+        {
+          "w": "Kunst",
+          "t": "moderne"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -134437,8 +137179,33 @@
       "translation_fr": "tableau/peinture",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Das Gemälde hängt an der Wand.",
+      "example_gloss": [
+        {
+          "w": "Das",
+          "t": "le"
+        },
+        {
+          "w": "Gemälde",
+          "t": "tableau"
+        },
+        {
+          "w": "hängt",
+          "t": "est accroché"
+        },
+        {
+          "w": "an",
+          "t": "au"
+        },
+        {
+          "w": "der",
+          "t": ""
+        },
+        {
+          "w": "Wand",
+          "t": "mur"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -134448,8 +137215,29 @@
       "translation_fr": "sculpture",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Die Skulptur ist aus Marmor.",
+      "example_gloss": [
+        {
+          "w": "Die",
+          "t": "la"
+        },
+        {
+          "w": "Skulptur",
+          "t": "sculpture"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "aus",
+          "t": "en"
+        },
+        {
+          "w": "Marmor",
+          "t": "marbre"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -134459,8 +137247,25 @@
       "translation_fr": "littérature",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sie studiert deutsche Literatur.",
+      "example_gloss": [
+        {
+          "w": "Sie",
+          "t": "elle"
+        },
+        {
+          "w": "studiert",
+          "t": "étudie"
+        },
+        {
+          "w": "deutsche",
+          "t": "la"
+        },
+        {
+          "w": "Literatur",
+          "t": "littérature allemande"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -134470,8 +137275,29 @@
       "translation_fr": "patrimoine",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Das kulturelle Erbe ist wichtig.",
+      "example_gloss": [
+        {
+          "w": "Das",
+          "t": "le"
+        },
+        {
+          "w": "kulturelle",
+          "t": "culturel"
+        },
+        {
+          "w": "Erbe",
+          "t": "patrimoine"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "wichtig",
+          "t": "important"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -134481,8 +137307,29 @@
       "translation_fr": "exposition",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Die Ausstellung endet nächste Woche.",
+      "example_gloss": [
+        {
+          "w": "Die",
+          "t": "l'"
+        },
+        {
+          "w": "Ausstellung",
+          "t": "exposition"
+        },
+        {
+          "w": "endet",
+          "t": "se termine"
+        },
+        {
+          "w": "nächste",
+          "t": "la semaine"
+        },
+        {
+          "w": "Woche",
+          "t": "prochaine"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -136080,8 +138927,25 @@
       "translation_fr": "recyclage",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Recycling schützt die Umwelt.",
+      "example_gloss": [
+        {
+          "w": "Recycling",
+          "t": "le recyclage"
+        },
+        {
+          "w": "schützt",
+          "t": "protège"
+        },
+        {
+          "w": "die",
+          "t": "l'"
+        },
+        {
+          "w": "Umwelt",
+          "t": "environnement"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -136091,8 +138955,29 @@
       "translation_fr": "pollution",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Die Verschmutzung ist ein Problem.",
+      "example_gloss": [
+        {
+          "w": "Die",
+          "t": "la"
+        },
+        {
+          "w": "Verschmutzung",
+          "t": "pollution"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "ein",
+          "t": "un"
+        },
+        {
+          "w": "Problem",
+          "t": "problème"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -136102,8 +138987,25 @@
       "translation_fr": "énergie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wir müssen Energie sparen.",
+      "example_gloss": [
+        {
+          "w": "Wir",
+          "t": "nous"
+        },
+        {
+          "w": "müssen",
+          "t": "devons"
+        },
+        {
+          "w": "Energie",
+          "t": "de l'énergie"
+        },
+        {
+          "w": "sparen",
+          "t": "économiser"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -136113,8 +139015,25 @@
       "translation_fr": "solaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wir nutzen solar Energie.",
+      "example_gloss": [
+        {
+          "w": "Wir",
+          "t": "nous"
+        },
+        {
+          "w": "nutzen",
+          "t": "utilisons"
+        },
+        {
+          "w": "solar",
+          "t": "solaire"
+        },
+        {
+          "w": "Energie",
+          "t": "énergie"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -136124,8 +139043,33 @@
       "translation_fr": "déchets",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wirf den Abfall in den Mülleimer.",
+      "example_gloss": [
+        {
+          "w": "Wirf",
+          "t": "jette"
+        },
+        {
+          "w": "den",
+          "t": "les"
+        },
+        {
+          "w": "Abfall",
+          "t": "déchets"
+        },
+        {
+          "w": "in",
+          "t": "dans"
+        },
+        {
+          "w": "den",
+          "t": "la"
+        },
+        {
+          "w": "Mülleimer",
+          "t": "poubelle"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -136135,8 +139079,29 @@
       "translation_fr": "émission",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wir müssen die Emission reduzieren.",
+      "example_gloss": [
+        {
+          "w": "Wir",
+          "t": "nous"
+        },
+        {
+          "w": "müssen",
+          "t": "devons"
+        },
+        {
+          "w": "die",
+          "t": "les"
+        },
+        {
+          "w": "Emission",
+          "t": "émissions"
+        },
+        {
+          "w": "reduzieren",
+          "t": "réduire"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -136146,8 +139111,25 @@
       "translation_fr": "durable",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dieses Produkt ist nachhaltig.",
+      "example_gloss": [
+        {
+          "w": "Dieses",
+          "t": "ce"
+        },
+        {
+          "w": "Produkt",
+          "t": "produit"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "nachhaltig",
+          "t": "durable"
+        }
+      ]
     },
     {
       "language_code": "de",
@@ -136157,8 +139139,25 @@
       "translation_fr": "biodiversité",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Die Biodiversität ist bedroht.",
+      "example_gloss": [
+        {
+          "w": "Die",
+          "t": "la"
+        },
+        {
+          "w": "Biodiversität",
+          "t": "biodiversité"
+        },
+        {
+          "w": "ist",
+          "t": "est"
+        },
+        {
+          "w": "bedroht",
+          "t": "menacée"
+        }
+      ]
     },
     {
       "language_code": "it",
