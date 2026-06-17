@@ -11,6 +11,10 @@
         <input v-model="password" type="password" required autocomplete="new-password" />
         <label>Confirmer le mot de passe</label>
         <input v-model="password_confirmation" type="password" required autocomplete="new-password" />
+        <label class="cgu-check">
+          <input type="checkbox" v-model="cguAccepted" />
+          J'accepte les <RouterLink to="/cgu" target="_blank">conditions générales d'utilisation</RouterLink>
+        </label>
         <p v-if="error" class="error">{{ error }}</p>
         <button type="submit" :disabled="loading">
           {{ loading ? 'Inscription…' : 'Créer mon compte' }}
@@ -26,6 +30,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import { RouterLink } from 'vue-router'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
 
@@ -35,11 +40,16 @@ const name                 = ref('')
 const email                = ref('')
 const password             = ref('')
 const password_confirmation = ref('')
+const cguAccepted          = ref(false)
 const error                = ref('')
 const loading              = ref(false)
 
 async function submit() {
-  error.value   = ''
+  error.value = ''
+  if (!cguAccepted.value) {
+    error.value = 'Vous devez accepter les conditions générales d\'utilisation.'
+    return
+  }
   loading.value = true
   try {
     await auth.register(name.value, email.value, password.value, password_confirmation.value)
@@ -71,4 +81,8 @@ button[type=submit]:disabled { opacity: 0.5; cursor: not-allowed; }
 .switch a { color: #818cf8; text-decoration: none; }
 .btn-back { background: none; border: none; color: #666; cursor: pointer;
   font-size: 0.85rem; display: block; margin: 0.75rem auto 0; }
+.cgu-check { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem;
+  color: var(--muted2); margin-bottom: 1rem; cursor: pointer; }
+.cgu-check input[type=checkbox] { width: auto; margin: 0; cursor: pointer; }
+.cgu-check a { color: #818cf8; text-decoration: none; }
 </style>

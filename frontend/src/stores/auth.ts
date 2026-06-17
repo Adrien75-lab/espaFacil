@@ -66,5 +66,14 @@ export const useAuthStore = defineStore('auth', () => {
     user.value = null
   }
 
-  return { user, loading, fetchUser, login, register, logout }
+  async function deleteAccount() {
+    const res = await apiFetch('/api/me', { method: 'DELETE' })
+    if (!res.ok) {
+      const data = await res.json()
+      throw new Error(data.message ?? 'Erreur lors de la suppression.')
+    }
+    user.value = null
+  }
+
+  return { user, loading, fetchUser, login, register, logout, deleteAccount }
 })
