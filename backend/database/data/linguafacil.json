@@ -105505,8 +105505,29 @@
       "translation_fr": "travail",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik ga naar mijn werk.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "ga",
+          "t": "vais"
+        },
+        {
+          "w": "naar",
+          "t": "à"
+        },
+        {
+          "w": "mijn",
+          "t": "mon"
+        },
+        {
+          "w": "werk",
+          "t": "travail"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -105516,8 +105537,25 @@
       "translation_fr": "bureau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Het kantoor is groot.",
+      "example_gloss": [
+        {
+          "w": "Het",
+          "t": "Le"
+        },
+        {
+          "w": "kantoor",
+          "t": "bureau"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "groot",
+          "t": "grand"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -105527,8 +105565,25 @@
       "translation_fr": "patron/chef",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De baas is aardig.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "Le"
+        },
+        {
+          "w": "baas",
+          "t": "patron"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "aardig",
+          "t": "gentil"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -105538,8 +105593,33 @@
       "translation_fr": "réunion",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De vergadering begint om tien uur.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "La"
+        },
+        {
+          "w": "vergadering",
+          "t": "réunion"
+        },
+        {
+          "w": "begint",
+          "t": "commence"
+        },
+        {
+          "w": "om",
+          "t": "à"
+        },
+        {
+          "w": "tien",
+          "t": "dix"
+        },
+        {
+          "w": "uur",
+          "t": "heures"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -105549,8 +105629,25 @@
       "translation_fr": "contrat",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik teken het contract.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "teken",
+          "t": "signe"
+        },
+        {
+          "w": "het",
+          "t": "le"
+        },
+        {
+          "w": "contract",
+          "t": "contrat"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -105560,8 +105657,25 @@
       "translation_fr": "salaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mijn salaris is goed.",
+      "example_gloss": [
+        {
+          "w": "Mijn",
+          "t": "Mon"
+        },
+        {
+          "w": "salaris",
+          "t": "salaire"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "goed",
+          "t": "bon"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -105571,8 +105685,25 @@
       "translation_fr": "entreprise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dit bedrijf is groot.",
+      "example_gloss": [
+        {
+          "w": "Dit",
+          "t": "Cette"
+        },
+        {
+          "w": "bedrijf",
+          "t": "entreprise"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "groot",
+          "t": "grande"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -105582,8 +105713,25 @@
       "translation_fr": "collègue",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mijn collega helpt mij.",
+      "example_gloss": [
+        {
+          "w": "Mijn",
+          "t": "Mon"
+        },
+        {
+          "w": "collega",
+          "t": "collègue"
+        },
+        {
+          "w": "helpt",
+          "t": "aide"
+        },
+        {
+          "w": "mij",
+          "t": "moi"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -105593,8 +105741,21 @@
       "translation_fr": "travail",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Idę do pracy.",
+      "example_gloss": [
+        {
+          "w": "Idę",
+          "t": "Je vais"
+        },
+        {
+          "w": "do",
+          "t": "au"
+        },
+        {
+          "w": "pracy",
+          "t": "travail"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -105604,8 +105765,21 @@
       "translation_fr": "bureau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Biuro jest duże.",
+      "example_gloss": [
+        {
+          "w": "Biuro",
+          "t": "Le bureau"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "duże",
+          "t": "grand"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -105615,8 +105789,21 @@
       "translation_fr": "patron/chef",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Szef jest miły.",
+      "example_gloss": [
+        {
+          "w": "Szef",
+          "t": "Le patron"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "miły",
+          "t": "gentil"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -105626,8 +105813,29 @@
       "translation_fr": "réunion",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Spotkanie zaczyna się o dziesiątej.",
+      "example_gloss": [
+        {
+          "w": "Spotkanie",
+          "t": "La réunion"
+        },
+        {
+          "w": "zaczyna",
+          "t": "commence"
+        },
+        {
+          "w": "się",
+          "t": "se"
+        },
+        {
+          "w": "o",
+          "t": "à"
+        },
+        {
+          "w": "dziesiątej",
+          "t": "dix heures"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -105637,8 +105845,17 @@
       "translation_fr": "contrat",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Podpisuję umowę.",
+      "example_gloss": [
+        {
+          "w": "Podpisuję",
+          "t": "Je signe"
+        },
+        {
+          "w": "umowę",
+          "t": "le contrat"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -105648,8 +105865,25 @@
       "translation_fr": "salaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Moje wynagrodzenie jest dobre.",
+      "example_gloss": [
+        {
+          "w": "Moje",
+          "t": "Mon"
+        },
+        {
+          "w": "wynagrodzenie",
+          "t": "salaire"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "dobre",
+          "t": "bon"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -105659,8 +105893,25 @@
       "translation_fr": "entreprise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ta firma jest duża.",
+      "example_gloss": [
+        {
+          "w": "Ta",
+          "t": "Cette"
+        },
+        {
+          "w": "firma",
+          "t": "entreprise"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "duża",
+          "t": "grande"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -105670,8 +105921,25 @@
       "translation_fr": "collègue",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mój kolega mi pomaga.",
+      "example_gloss": [
+        {
+          "w": "Mój",
+          "t": "Mon"
+        },
+        {
+          "w": "kolega",
+          "t": "collègue"
+        },
+        {
+          "w": "mi",
+          "t": "m'"
+        },
+        {
+          "w": "pomaga",
+          "t": "aide"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -107365,8 +107633,25 @@
       "translation_fr": "école",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik ga naar school.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "ga",
+          "t": "vais"
+        },
+        {
+          "w": "naar",
+          "t": "à"
+        },
+        {
+          "w": "school",
+          "t": "l'école"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -107376,8 +107661,25 @@
       "translation_fr": "livre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik lees een boek.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "lees",
+          "t": "lis"
+        },
+        {
+          "w": "een",
+          "t": "un"
+        },
+        {
+          "w": "boek",
+          "t": "livre"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -107387,8 +107689,25 @@
       "translation_fr": "crayon",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Heb je een potlood?",
+      "example_gloss": [
+        {
+          "w": "Heb",
+          "t": "As-tu"
+        },
+        {
+          "w": "je",
+          "t": "tu"
+        },
+        {
+          "w": "een",
+          "t": "un"
+        },
+        {
+          "w": "potlood",
+          "t": "crayon"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -107398,8 +107717,29 @@
       "translation_fr": "cahier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik schrijf in mijn schrift.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "J'"
+        },
+        {
+          "w": "schrijf",
+          "t": "écris"
+        },
+        {
+          "w": "in",
+          "t": "dans"
+        },
+        {
+          "w": "mijn",
+          "t": "mon"
+        },
+        {
+          "w": "schrift",
+          "t": "cahier"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -107409,8 +107749,29 @@
       "translation_fr": "professeur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De leraar legt het uit.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "Le"
+        },
+        {
+          "w": "leraar",
+          "t": "professeur"
+        },
+        {
+          "w": "legt",
+          "t": "explique"
+        },
+        {
+          "w": "het",
+          "t": "le"
+        },
+        {
+          "w": "uit",
+          "t": "(particule)"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -107420,8 +107781,25 @@
       "translation_fr": "examen",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Het examen is morgen.",
+      "example_gloss": [
+        {
+          "w": "Het",
+          "t": "L'"
+        },
+        {
+          "w": "examen",
+          "t": "examen"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "morgen",
+          "t": "demain"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -107431,8 +107809,25 @@
       "translation_fr": "devoirs",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik maak mijn huiswerk.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "maak",
+          "t": "fais"
+        },
+        {
+          "w": "mijn",
+          "t": "mes"
+        },
+        {
+          "w": "huiswerk",
+          "t": "devoirs"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -107442,8 +107837,25 @@
       "translation_fr": "bibliothèque",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De bibliotheek is open.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "La"
+        },
+        {
+          "w": "bibliotheek",
+          "t": "bibliothèque"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "open",
+          "t": "ouverte"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -107453,8 +107865,21 @@
       "translation_fr": "école",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Idę do szkoły.",
+      "example_gloss": [
+        {
+          "w": "Idę",
+          "t": "Je vais"
+        },
+        {
+          "w": "do",
+          "t": "à"
+        },
+        {
+          "w": "szkoły",
+          "t": "l'école"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -107464,8 +107889,17 @@
       "translation_fr": "livre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Czytam książkę.",
+      "example_gloss": [
+        {
+          "w": "Czytam",
+          "t": "Je lis"
+        },
+        {
+          "w": "książkę",
+          "t": "un livre"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -107475,8 +107909,17 @@
       "translation_fr": "crayon",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Masz ołówek?",
+      "example_gloss": [
+        {
+          "w": "Masz",
+          "t": "Tu as"
+        },
+        {
+          "w": "ołówek",
+          "t": "un crayon"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -107486,8 +107929,21 @@
       "translation_fr": "cahier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Piszę w zeszycie.",
+      "example_gloss": [
+        {
+          "w": "Piszę",
+          "t": "J'écris"
+        },
+        {
+          "w": "w",
+          "t": "dans"
+        },
+        {
+          "w": "zeszycie",
+          "t": "le cahier"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -107497,8 +107953,21 @@
       "translation_fr": "professeur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Nauczyciel tłumaczy lekcję.",
+      "example_gloss": [
+        {
+          "w": "Nauczyciel",
+          "t": "Le professeur"
+        },
+        {
+          "w": "tłumaczy",
+          "t": "explique"
+        },
+        {
+          "w": "lekcję",
+          "t": "la leçon"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -107508,8 +107977,21 @@
       "translation_fr": "examen",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Egzamin jest jutro.",
+      "example_gloss": [
+        {
+          "w": "Egzamin",
+          "t": "L'examen"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "jutro",
+          "t": "demain"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -107519,8 +108001,21 @@
       "translation_fr": "devoirs",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Robię pracę domową.",
+      "example_gloss": [
+        {
+          "w": "Robię",
+          "t": "Je fais"
+        },
+        {
+          "w": "pracę",
+          "t": "les"
+        },
+        {
+          "w": "domową",
+          "t": "devoirs"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -107530,8 +108025,21 @@
       "translation_fr": "bibliothèque",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Biblioteka jest otwarta.",
+      "example_gloss": [
+        {
+          "w": "Biblioteka",
+          "t": "La bibliothèque"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "otwarta",
+          "t": "ouverte"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -109241,8 +109749,33 @@
       "translation_fr": "magasin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De winkel sluit om zes uur.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "Le"
+        },
+        {
+          "w": "winkel",
+          "t": "magasin"
+        },
+        {
+          "w": "sluit",
+          "t": "ferme"
+        },
+        {
+          "w": "om",
+          "t": "à"
+        },
+        {
+          "w": "zes",
+          "t": "six"
+        },
+        {
+          "w": "uur",
+          "t": "heures"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -109252,8 +109785,29 @@
       "translation_fr": "prix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De prijs is te hoog.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "Le"
+        },
+        {
+          "w": "prijs",
+          "t": "prix"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "te",
+          "t": "trop"
+        },
+        {
+          "w": "hoog",
+          "t": "élevé"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -109263,8 +109817,25 @@
       "translation_fr": "cher",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dit is te duur.",
+      "example_gloss": [
+        {
+          "w": "Dit",
+          "t": "C'"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "te",
+          "t": "trop"
+        },
+        {
+          "w": "duur",
+          "t": "cher"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -109274,8 +109845,25 @@
       "translation_fr": "pas cher",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Deze tas is goedkoop.",
+      "example_gloss": [
+        {
+          "w": "Deze",
+          "t": "Ce"
+        },
+        {
+          "w": "tas",
+          "t": "sac"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "goedkoop",
+          "t": "pas cher"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -109285,8 +109873,29 @@
       "translation_fr": "réduction",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Er is twintig procent korting.",
+      "example_gloss": [
+        {
+          "w": "Er",
+          "t": "Il y"
+        },
+        {
+          "w": "is",
+          "t": "a"
+        },
+        {
+          "w": "twintig",
+          "t": "vingt"
+        },
+        {
+          "w": "procent",
+          "t": "pour cent"
+        },
+        {
+          "w": "korting",
+          "t": "réduction"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -109296,8 +109905,29 @@
       "translation_fr": "caisse",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik betaal bij de kassa.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "betaal",
+          "t": "paie"
+        },
+        {
+          "w": "bij",
+          "t": "à"
+        },
+        {
+          "w": "de",
+          "t": "la"
+        },
+        {
+          "w": "kassa",
+          "t": "caisse"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -109307,8 +109937,29 @@
       "translation_fr": "carte bancaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik betaal met mijn kaart.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "betaal",
+          "t": "paie"
+        },
+        {
+          "w": "met",
+          "t": "avec"
+        },
+        {
+          "w": "mijn",
+          "t": "ma"
+        },
+        {
+          "w": "kaart",
+          "t": "carte"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -109318,8 +109969,25 @@
       "translation_fr": "reçu",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mag ik de bon?",
+      "example_gloss": [
+        {
+          "w": "Mag",
+          "t": "Puis-je"
+        },
+        {
+          "w": "ik",
+          "t": "je"
+        },
+        {
+          "w": "de",
+          "t": "le"
+        },
+        {
+          "w": "bon",
+          "t": "reçu"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -109329,8 +109997,29 @@
       "translation_fr": "magasin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sklep zamyka się o szóstej.",
+      "example_gloss": [
+        {
+          "w": "Sklep",
+          "t": "Le magasin"
+        },
+        {
+          "w": "zamyka",
+          "t": "ferme"
+        },
+        {
+          "w": "się",
+          "t": "se"
+        },
+        {
+          "w": "o",
+          "t": "à"
+        },
+        {
+          "w": "szóstej",
+          "t": "six heures"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -109340,8 +110029,25 @@
       "translation_fr": "prix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Cena jest za wysoka.",
+      "example_gloss": [
+        {
+          "w": "Cena",
+          "t": "Le prix"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "za",
+          "t": "trop"
+        },
+        {
+          "w": "wysoka",
+          "t": "élevé"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -109351,8 +110057,25 @@
       "translation_fr": "cher",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "To jest za drogi.",
+      "example_gloss": [
+        {
+          "w": "To",
+          "t": "C'"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "za",
+          "t": "trop"
+        },
+        {
+          "w": "drogi",
+          "t": "cher"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -109362,8 +110085,25 @@
       "translation_fr": "pas cher",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ta torba jest tani.",
+      "example_gloss": [
+        {
+          "w": "Ta",
+          "t": "Ce"
+        },
+        {
+          "w": "torba",
+          "t": "sac"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "tani",
+          "t": "pas cher"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -109373,8 +110113,25 @@
       "translation_fr": "réduction",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Jest dwadzieścia procent zniżki.",
+      "example_gloss": [
+        {
+          "w": "Jest",
+          "t": "Il y a"
+        },
+        {
+          "w": "dwadzieścia",
+          "t": "vingt"
+        },
+        {
+          "w": "procent",
+          "t": "pour cent"
+        },
+        {
+          "w": "zniżki",
+          "t": "de réduction"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -109384,8 +110141,21 @@
       "translation_fr": "caisse",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Płacę przy kasie.",
+      "example_gloss": [
+        {
+          "w": "Płacę",
+          "t": "Je paie"
+        },
+        {
+          "w": "przy",
+          "t": "à"
+        },
+        {
+          "w": "kasie",
+          "t": "la caisse"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -109395,8 +110165,17 @@
       "translation_fr": "carte bancaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Płacę kartą.",
+      "example_gloss": [
+        {
+          "w": "Płacę",
+          "t": "Je paie"
+        },
+        {
+          "w": "kartą",
+          "t": "par carte"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -109406,8 +110185,25 @@
       "translation_fr": "reçu",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mogę prosić o paragon?",
+      "example_gloss": [
+        {
+          "w": "Mogę",
+          "t": "Puis-je"
+        },
+        {
+          "w": "prosić",
+          "t": "demander"
+        },
+        {
+          "w": "o",
+          "t": "le"
+        },
+        {
+          "w": "paragon",
+          "t": "reçu"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -111137,8 +111933,29 @@
       "translation_fr": "médecin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik ga naar de dokter.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "ga",
+          "t": "vais"
+        },
+        {
+          "w": "naar",
+          "t": "chez"
+        },
+        {
+          "w": "de",
+          "t": "le"
+        },
+        {
+          "w": "dokter",
+          "t": "médecin"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -111148,8 +111965,25 @@
       "translation_fr": "hôpital",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Het ziekenhuis is ver.",
+      "example_gloss": [
+        {
+          "w": "Het",
+          "t": "L'"
+        },
+        {
+          "w": "ziekenhuis",
+          "t": "hôpital"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "ver",
+          "t": "loin"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -111159,8 +111993,21 @@
       "translation_fr": "douleur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik heb pijn.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "J'"
+        },
+        {
+          "w": "heb",
+          "t": "ai"
+        },
+        {
+          "w": "pijn",
+          "t": "mal"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -111170,8 +112017,21 @@
       "translation_fr": "fièvre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik heb koorts.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "J'"
+        },
+        {
+          "w": "heb",
+          "t": "ai"
+        },
+        {
+          "w": "koorts",
+          "t": "de la fièvre"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -111181,8 +112041,21 @@
       "translation_fr": "médicament",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Neem dit medicijn.",
+      "example_gloss": [
+        {
+          "w": "Neem",
+          "t": "Prends"
+        },
+        {
+          "w": "dit",
+          "t": "ce"
+        },
+        {
+          "w": "medicijn",
+          "t": "médicament"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -111192,8 +112065,29 @@
       "translation_fr": "comprimé",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Neem een pil per dag.",
+      "example_gloss": [
+        {
+          "w": "Neem",
+          "t": "Prends"
+        },
+        {
+          "w": "een",
+          "t": "un"
+        },
+        {
+          "w": "pil",
+          "t": "comprimé"
+        },
+        {
+          "w": "per",
+          "t": "par"
+        },
+        {
+          "w": "dag",
+          "t": "jour"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -111203,8 +112097,25 @@
       "translation_fr": "allergie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik heb een allergie.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "J'"
+        },
+        {
+          "w": "heb",
+          "t": "ai"
+        },
+        {
+          "w": "een",
+          "t": "une"
+        },
+        {
+          "w": "allergie",
+          "t": "allergie"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -111214,8 +112125,29 @@
       "translation_fr": "ordonnance",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De dokter schrijft een recept.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "Le"
+        },
+        {
+          "w": "dokter",
+          "t": "médecin"
+        },
+        {
+          "w": "schrijft",
+          "t": "écrit"
+        },
+        {
+          "w": "een",
+          "t": "une"
+        },
+        {
+          "w": "recept",
+          "t": "ordonnance"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -111225,8 +112157,21 @@
       "translation_fr": "médecin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Idę do lekarza.",
+      "example_gloss": [
+        {
+          "w": "Idę",
+          "t": "Je vais"
+        },
+        {
+          "w": "do",
+          "t": "chez"
+        },
+        {
+          "w": "lekarza",
+          "t": "le médecin"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -111236,8 +112181,21 @@
       "translation_fr": "hôpital",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Szpital jest daleko.",
+      "example_gloss": [
+        {
+          "w": "Szpital",
+          "t": "L'hôpital"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "daleko",
+          "t": "loin"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -111247,8 +112205,21 @@
       "translation_fr": "douleur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mam ból głowy.",
+      "example_gloss": [
+        {
+          "w": "Mam",
+          "t": "J'ai"
+        },
+        {
+          "w": "ból",
+          "t": "mal"
+        },
+        {
+          "w": "głowy",
+          "t": "à la tête"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -111258,8 +112229,17 @@
       "translation_fr": "fièvre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mam gorączkę.",
+      "example_gloss": [
+        {
+          "w": "Mam",
+          "t": "J'ai"
+        },
+        {
+          "w": "gorączkę",
+          "t": "de la fièvre"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -111269,8 +112249,21 @@
       "translation_fr": "médicament",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Weź ten lek.",
+      "example_gloss": [
+        {
+          "w": "Weź",
+          "t": "Prends"
+        },
+        {
+          "w": "ten",
+          "t": "ce"
+        },
+        {
+          "w": "lek",
+          "t": "médicament"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -111280,8 +112273,25 @@
       "translation_fr": "comprimé",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Weź jedną tabletkę dziennie.",
+      "example_gloss": [
+        {
+          "w": "Weź",
+          "t": "Prends"
+        },
+        {
+          "w": "jedną",
+          "t": "un"
+        },
+        {
+          "w": "tabletkę",
+          "t": "comprimé"
+        },
+        {
+          "w": "dziennie",
+          "t": "par jour"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -111291,8 +112301,17 @@
       "translation_fr": "allergie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mam alergię.",
+      "example_gloss": [
+        {
+          "w": "Mam",
+          "t": "J'ai"
+        },
+        {
+          "w": "alergię",
+          "t": "une allergie"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -111302,8 +112321,21 @@
       "translation_fr": "ordonnance",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Lekarz pisze receptę.",
+      "example_gloss": [
+        {
+          "w": "Lekarz",
+          "t": "Le médecin"
+        },
+        {
+          "w": "pisze",
+          "t": "écrit"
+        },
+        {
+          "w": "receptę",
+          "t": "une ordonnance"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -112989,8 +114021,25 @@
       "translation_fr": "téléphone",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mijn telefoon is kapot.",
+      "example_gloss": [
+        {
+          "w": "Mijn",
+          "t": "Mon"
+        },
+        {
+          "w": "telefoon",
+          "t": "téléphone"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "kapot",
+          "t": "cassé"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -113000,8 +114049,29 @@
       "translation_fr": "ordinateur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik werk op de computer.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "werk",
+          "t": "travaille"
+        },
+        {
+          "w": "op",
+          "t": "sur"
+        },
+        {
+          "w": "de",
+          "t": "l'"
+        },
+        {
+          "w": "computer",
+          "t": "ordinateur"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -113011,8 +114081,25 @@
       "translation_fr": "internet",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Het internet werkt niet.",
+      "example_gloss": [
+        {
+          "w": "Het",
+          "t": "L'"
+        },
+        {
+          "w": "internet",
+          "t": "internet"
+        },
+        {
+          "w": "werkt",
+          "t": "fonctionne"
+        },
+        {
+          "w": "niet",
+          "t": "ne pas"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -113022,8 +114109,25 @@
       "translation_fr": "mot de passe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik vergeet mijn wachtwoord.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "J'"
+        },
+        {
+          "w": "vergeet",
+          "t": "oublie"
+        },
+        {
+          "w": "mijn",
+          "t": "mon"
+        },
+        {
+          "w": "wachtwoord",
+          "t": "mot de passe"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -113033,8 +114137,25 @@
       "translation_fr": "email",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik stuur een e-mail.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "J'"
+        },
+        {
+          "w": "stuur",
+          "t": "envoie"
+        },
+        {
+          "w": "een",
+          "t": "un"
+        },
+        {
+          "w": "e-mail",
+          "t": "email"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -113044,8 +114165,25 @@
       "translation_fr": "écran",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Het scherm is groot.",
+      "example_gloss": [
+        {
+          "w": "Het",
+          "t": "L'"
+        },
+        {
+          "w": "scherm",
+          "t": "écran"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "groot",
+          "t": "grand"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -113055,8 +114193,25 @@
       "translation_fr": "clavier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Het toetsenbord is nieuw.",
+      "example_gloss": [
+        {
+          "w": "Het",
+          "t": "Le"
+        },
+        {
+          "w": "toetsenbord",
+          "t": "clavier"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "nieuw",
+          "t": "nouveau"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -113066,8 +114221,25 @@
       "translation_fr": "application",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Deze applicatie is gratis.",
+      "example_gloss": [
+        {
+          "w": "Deze",
+          "t": "Cette"
+        },
+        {
+          "w": "applicatie",
+          "t": "application"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "gratis",
+          "t": "gratuite"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -113077,8 +114249,25 @@
       "translation_fr": "téléphone",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mój telefon jest zepsuty.",
+      "example_gloss": [
+        {
+          "w": "Mój",
+          "t": "Mon"
+        },
+        {
+          "w": "telefon",
+          "t": "téléphone"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "zepsuty",
+          "t": "cassé"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -113088,8 +114277,21 @@
       "translation_fr": "ordinateur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Pracuję na komputerze.",
+      "example_gloss": [
+        {
+          "w": "Pracuję",
+          "t": "Je travaille"
+        },
+        {
+          "w": "na",
+          "t": "sur"
+        },
+        {
+          "w": "komputerze",
+          "t": "l'ordinateur"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -113099,8 +114301,21 @@
       "translation_fr": "internet",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Internet nie działa.",
+      "example_gloss": [
+        {
+          "w": "Internet",
+          "t": "L'internet"
+        },
+        {
+          "w": "nie",
+          "t": "ne"
+        },
+        {
+          "w": "działa",
+          "t": "fonctionne pas"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -113110,8 +114325,17 @@
       "translation_fr": "mot de passe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Zapominam hasło.",
+      "example_gloss": [
+        {
+          "w": "Zapominam",
+          "t": "J'oublie"
+        },
+        {
+          "w": "hasło",
+          "t": "le mot de passe"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -113121,8 +114345,17 @@
       "translation_fr": "email",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wysyłam e-mail.",
+      "example_gloss": [
+        {
+          "w": "Wysyłam",
+          "t": "J'envoie"
+        },
+        {
+          "w": "e-mail",
+          "t": "un email"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -113132,8 +114365,21 @@
       "translation_fr": "écran",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ekran jest duży.",
+      "example_gloss": [
+        {
+          "w": "Ekran",
+          "t": "L'écran"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "duży",
+          "t": "grand"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -113143,8 +114389,21 @@
       "translation_fr": "clavier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Klawiatura jest nowa.",
+      "example_gloss": [
+        {
+          "w": "Klawiatura",
+          "t": "Le clavier"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "nowa",
+          "t": "nouveau"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -113154,8 +114413,25 @@
       "translation_fr": "application",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ta aplikacja jest darmowa.",
+      "example_gloss": [
+        {
+          "w": "Ta",
+          "t": "Cette"
+        },
+        {
+          "w": "aplikacja",
+          "t": "application"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "darmowa",
+          "t": "gratuite"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -114865,8 +116141,25 @@
       "translation_fr": "arbre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De boom is hoog.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "L'"
+        },
+        {
+          "w": "boom",
+          "t": "arbre"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "hoog",
+          "t": "grand"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -114876,8 +116169,25 @@
       "translation_fr": "fleur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De bloem is mooi.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "La"
+        },
+        {
+          "w": "bloem",
+          "t": "fleur"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "mooi",
+          "t": "belle"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -114887,8 +116197,25 @@
       "translation_fr": "rivière",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De rivier stroomt snel.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "La"
+        },
+        {
+          "w": "rivier",
+          "t": "rivière"
+        },
+        {
+          "w": "stroomt",
+          "t": "coule"
+        },
+        {
+          "w": "snel",
+          "t": "vite"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -114898,8 +116225,29 @@
       "translation_fr": "montagne",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De berg is heel hoog.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "La"
+        },
+        {
+          "w": "berg",
+          "t": "montagne"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "heel",
+          "t": "très"
+        },
+        {
+          "w": "hoog",
+          "t": "haute"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -114909,8 +116257,25 @@
       "translation_fr": "mer",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De zee is blauw.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "La"
+        },
+        {
+          "w": "zee",
+          "t": "mer"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "blauw",
+          "t": "bleue"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -114920,8 +116285,29 @@
       "translation_fr": "forêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wij wandelen in het bos.",
+      "example_gloss": [
+        {
+          "w": "Wij",
+          "t": "Nous"
+        },
+        {
+          "w": "wandelen",
+          "t": "marchons"
+        },
+        {
+          "w": "in",
+          "t": "dans"
+        },
+        {
+          "w": "het",
+          "t": "la"
+        },
+        {
+          "w": "bos",
+          "t": "forêt"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -114931,8 +116317,25 @@
       "translation_fr": "pierre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik vind een steen.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "vind",
+          "t": "trouve"
+        },
+        {
+          "w": "een",
+          "t": "une"
+        },
+        {
+          "w": "steen",
+          "t": "pierre"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -114942,8 +116345,25 @@
       "translation_fr": "terre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De aarde is rond.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "La"
+        },
+        {
+          "w": "aarde",
+          "t": "terre"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "rond",
+          "t": "ronde"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -114953,8 +116373,21 @@
       "translation_fr": "arbre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Drzewo jest wysokie.",
+      "example_gloss": [
+        {
+          "w": "Drzewo",
+          "t": "L'arbre"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "wysokie",
+          "t": "grand"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -114964,8 +116397,21 @@
       "translation_fr": "fleur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Kwiat jest piękny.",
+      "example_gloss": [
+        {
+          "w": "Kwiat",
+          "t": "La fleur"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "piękny",
+          "t": "belle"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -114975,8 +116421,21 @@
       "translation_fr": "rivière",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Rzeka płynie szybko.",
+      "example_gloss": [
+        {
+          "w": "Rzeka",
+          "t": "La rivière"
+        },
+        {
+          "w": "płynie",
+          "t": "coule"
+        },
+        {
+          "w": "szybko",
+          "t": "vite"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -114986,8 +116445,25 @@
       "translation_fr": "montagne",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Góra jest bardzo wysoka.",
+      "example_gloss": [
+        {
+          "w": "Góra",
+          "t": "La montagne"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "bardzo",
+          "t": "très"
+        },
+        {
+          "w": "wysoka",
+          "t": "haute"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -114997,8 +116473,21 @@
       "translation_fr": "mer",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Morze jest niebieskie.",
+      "example_gloss": [
+        {
+          "w": "Morze",
+          "t": "La mer"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "niebieskie",
+          "t": "bleue"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -115008,8 +116497,21 @@
       "translation_fr": "forêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Spacerujemy po lesie.",
+      "example_gloss": [
+        {
+          "w": "Spacerujemy",
+          "t": "Nous marchons"
+        },
+        {
+          "w": "po",
+          "t": "dans"
+        },
+        {
+          "w": "lesie",
+          "t": "la forêt"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -115019,8 +116521,17 @@
       "translation_fr": "pierre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Znajduję kamień.",
+      "example_gloss": [
+        {
+          "w": "Znajduję",
+          "t": "Je trouve"
+        },
+        {
+          "w": "kamień",
+          "t": "une pierre"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -115030,8 +116541,21 @@
       "translation_fr": "terre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ziemia jest okrągła.",
+      "example_gloss": [
+        {
+          "w": "Ziemia",
+          "t": "La terre"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "okrągła",
+          "t": "ronde"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -116677,8 +118201,21 @@
       "translation_fr": "heureux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik ben blij.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "ben",
+          "t": "suis"
+        },
+        {
+          "w": "blij",
+          "t": "heureux"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -116688,8 +118225,21 @@
       "translation_fr": "triste",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hij is verdrietig.",
+      "example_gloss": [
+        {
+          "w": "Hij",
+          "t": "Il"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "verdrietig",
+          "t": "triste"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -116699,8 +118249,21 @@
       "translation_fr": "en colère",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Zij is boos.",
+      "example_gloss": [
+        {
+          "w": "Zij",
+          "t": "Elle"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "boos",
+          "t": "en colère"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -116710,8 +118273,25 @@
       "translation_fr": "effrayé",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Het kind is bang.",
+      "example_gloss": [
+        {
+          "w": "Het",
+          "t": "L'"
+        },
+        {
+          "w": "kind",
+          "t": "enfant"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "bang",
+          "t": "effrayé"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -116721,8 +118301,21 @@
       "translation_fr": "surpris",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik ben verrast.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "ben",
+          "t": "suis"
+        },
+        {
+          "w": "verrast",
+          "t": "surpris"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -116732,8 +118325,29 @@
       "translation_fr": "fier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik ben trots op je.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "ben",
+          "t": "suis"
+        },
+        {
+          "w": "trots",
+          "t": "fier"
+        },
+        {
+          "w": "op",
+          "t": "de"
+        },
+        {
+          "w": "je",
+          "t": "toi"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -116743,8 +118357,25 @@
       "translation_fr": "honteux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hij voelt zich beschaamd.",
+      "example_gloss": [
+        {
+          "w": "Hij",
+          "t": "Il"
+        },
+        {
+          "w": "voelt",
+          "t": "se sent"
+        },
+        {
+          "w": "zich",
+          "t": "se"
+        },
+        {
+          "w": "beschaamd",
+          "t": "honteux"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -116754,8 +118385,21 @@
       "translation_fr": "anxieux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Zij is angstig.",
+      "example_gloss": [
+        {
+          "w": "Zij",
+          "t": "Elle"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "angstig",
+          "t": "anxieuse"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -116765,8 +118409,17 @@
       "translation_fr": "heureux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Jestem szczęśliwy.",
+      "example_gloss": [
+        {
+          "w": "Jestem",
+          "t": "Je suis"
+        },
+        {
+          "w": "szczęśliwy",
+          "t": "heureux"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -116776,8 +118429,21 @@
       "translation_fr": "triste",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "On jest smutny.",
+      "example_gloss": [
+        {
+          "w": "On",
+          "t": "Il"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "smutny",
+          "t": "triste"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -116787,8 +118453,21 @@
       "translation_fr": "en colère",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ona jest zła.",
+      "example_gloss": [
+        {
+          "w": "Ona",
+          "t": "Elle"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "zła",
+          "t": "en colère"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -116798,8 +118477,21 @@
       "translation_fr": "effrayé",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dziecko jest przestraszone.",
+      "example_gloss": [
+        {
+          "w": "Dziecko",
+          "t": "L'enfant"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "przestraszone",
+          "t": "effrayé"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -116809,8 +118501,17 @@
       "translation_fr": "surpris",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Jestem zaskoczony.",
+      "example_gloss": [
+        {
+          "w": "Jestem",
+          "t": "Je suis"
+        },
+        {
+          "w": "zaskoczony",
+          "t": "surpris"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -116820,8 +118521,25 @@
       "translation_fr": "fier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Jestem z ciebie dumny.",
+      "example_gloss": [
+        {
+          "w": "Jestem",
+          "t": "Je suis"
+        },
+        {
+          "w": "z",
+          "t": "de"
+        },
+        {
+          "w": "ciebie",
+          "t": "toi"
+        },
+        {
+          "w": "dumny",
+          "t": "fier"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -116831,8 +118549,21 @@
       "translation_fr": "honteux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "On jest zawstydzony.",
+      "example_gloss": [
+        {
+          "w": "On",
+          "t": "Il"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "zawstydzony",
+          "t": "honteux"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -116842,8 +118573,21 @@
       "translation_fr": "anxieux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ona jest niespokojna.",
+      "example_gloss": [
+        {
+          "w": "Ona",
+          "t": "Elle"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "niespokojna",
+          "t": "anxieuse"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -118541,8 +120285,25 @@
       "translation_fr": "chemise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dit shirt is nieuw.",
+      "example_gloss": [
+        {
+          "w": "Dit",
+          "t": "Cette"
+        },
+        {
+          "w": "shirt",
+          "t": "chemise"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "nieuw",
+          "t": "nouvelle"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -118552,8 +120313,25 @@
       "translation_fr": "pantalon",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mijn broek is blauw.",
+      "example_gloss": [
+        {
+          "w": "Mijn",
+          "t": "Mon"
+        },
+        {
+          "w": "broek",
+          "t": "pantalon"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "blauw",
+          "t": "bleu"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -118563,8 +120341,25 @@
       "translation_fr": "chaussures",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik koop nieuwe schoenen.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "J'"
+        },
+        {
+          "w": "koop",
+          "t": "achète"
+        },
+        {
+          "w": "nieuwe",
+          "t": "de nouvelles"
+        },
+        {
+          "w": "schoenen",
+          "t": "chaussures"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -118574,8 +120369,25 @@
       "translation_fr": "manteau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Trek je jas aan.",
+      "example_gloss": [
+        {
+          "w": "Trek",
+          "t": "Mets"
+        },
+        {
+          "w": "je",
+          "t": "ta"
+        },
+        {
+          "w": "jas",
+          "t": "veste"
+        },
+        {
+          "w": "aan",
+          "t": "(particule)"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -118585,8 +120397,25 @@
       "translation_fr": "chapeau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hij draagt een hoed.",
+      "example_gloss": [
+        {
+          "w": "Hij",
+          "t": "Il"
+        },
+        {
+          "w": "draagt",
+          "t": "porte"
+        },
+        {
+          "w": "een",
+          "t": "un"
+        },
+        {
+          "w": "hoed",
+          "t": "chapeau"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -118596,8 +120425,25 @@
       "translation_fr": "chaussettes",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mijn sokken zijn wit.",
+      "example_gloss": [
+        {
+          "w": "Mijn",
+          "t": "Mes"
+        },
+        {
+          "w": "sokken",
+          "t": "chaussettes"
+        },
+        {
+          "w": "zijn",
+          "t": "sont"
+        },
+        {
+          "w": "wit",
+          "t": "blanches"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -118607,8 +120453,29 @@
       "translation_fr": "robe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Zij draagt een rode jurk.",
+      "example_gloss": [
+        {
+          "w": "Zij",
+          "t": "Elle"
+        },
+        {
+          "w": "draagt",
+          "t": "porte"
+        },
+        {
+          "w": "een",
+          "t": "une"
+        },
+        {
+          "w": "rode",
+          "t": "rouge"
+        },
+        {
+          "w": "jurk",
+          "t": "robe"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -118618,8 +120485,33 @@
       "translation_fr": "écharpe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Het is koud, neem een sjaal.",
+      "example_gloss": [
+        {
+          "w": "Het",
+          "t": "Il"
+        },
+        {
+          "w": "is",
+          "t": "fait"
+        },
+        {
+          "w": "koud",
+          "t": "froid"
+        },
+        {
+          "w": "neem",
+          "t": "prends"
+        },
+        {
+          "w": "een",
+          "t": "une"
+        },
+        {
+          "w": "sjaal",
+          "t": "écharpe"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -118629,8 +120521,25 @@
       "translation_fr": "chemise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ta koszula jest nowa.",
+      "example_gloss": [
+        {
+          "w": "Ta",
+          "t": "Cette"
+        },
+        {
+          "w": "koszula",
+          "t": "chemise"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "nowa",
+          "t": "nouvelle"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -118640,8 +120549,25 @@
       "translation_fr": "pantalon",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Moje spodnie są niebieskie.",
+      "example_gloss": [
+        {
+          "w": "Moje",
+          "t": "Mon"
+        },
+        {
+          "w": "spodnie",
+          "t": "pantalon"
+        },
+        {
+          "w": "są",
+          "t": "est"
+        },
+        {
+          "w": "niebieskie",
+          "t": "bleu"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -118651,8 +120577,21 @@
       "translation_fr": "chaussures",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Kupuję nowe buty.",
+      "example_gloss": [
+        {
+          "w": "Kupuję",
+          "t": "J'achète"
+        },
+        {
+          "w": "nowe",
+          "t": "de nouvelles"
+        },
+        {
+          "w": "buty",
+          "t": "chaussures"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -118662,8 +120601,17 @@
       "translation_fr": "manteau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Załóż płaszcz.",
+      "example_gloss": [
+        {
+          "w": "Załóż",
+          "t": "Mets"
+        },
+        {
+          "w": "płaszcz",
+          "t": "le manteau"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -118673,8 +120621,21 @@
       "translation_fr": "chapeau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "On nosi kapelusz.",
+      "example_gloss": [
+        {
+          "w": "On",
+          "t": "Il"
+        },
+        {
+          "w": "nosi",
+          "t": "porte"
+        },
+        {
+          "w": "kapelusz",
+          "t": "un chapeau"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -118684,8 +120645,25 @@
       "translation_fr": "chaussettes",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Moje skarpety są białe.",
+      "example_gloss": [
+        {
+          "w": "Moje",
+          "t": "Mes"
+        },
+        {
+          "w": "skarpety",
+          "t": "chaussettes"
+        },
+        {
+          "w": "są",
+          "t": "sont"
+        },
+        {
+          "w": "białe",
+          "t": "blanches"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -118695,8 +120673,25 @@
       "translation_fr": "robe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ona nosi czerwoną sukienkę.",
+      "example_gloss": [
+        {
+          "w": "Ona",
+          "t": "Elle"
+        },
+        {
+          "w": "nosi",
+          "t": "porte"
+        },
+        {
+          "w": "czerwoną",
+          "t": "une rouge"
+        },
+        {
+          "w": "sukienkę",
+          "t": "robe"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -118706,8 +120701,25 @@
       "translation_fr": "écharpe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Jest zimno, weź szalik.",
+      "example_gloss": [
+        {
+          "w": "Jest",
+          "t": "Il fait"
+        },
+        {
+          "w": "zimno",
+          "t": "froid"
+        },
+        {
+          "w": "weź",
+          "t": "prends"
+        },
+        {
+          "w": "szalik",
+          "t": "une écharpe"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -120289,8 +122301,25 @@
       "translation_fr": "heure",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Het is drie uur.",
+      "example_gloss": [
+        {
+          "w": "Het",
+          "t": "Il"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "drie",
+          "t": "trois"
+        },
+        {
+          "w": "uur",
+          "t": "heures"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -120300,8 +122329,21 @@
       "translation_fr": "minute",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wacht een minuut.",
+      "example_gloss": [
+        {
+          "w": "Wacht",
+          "t": "Attends"
+        },
+        {
+          "w": "een",
+          "t": "une"
+        },
+        {
+          "w": "minuut",
+          "t": "minute"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -120311,8 +122353,25 @@
       "translation_fr": "matin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik ren elke ochtend.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "ren",
+          "t": "cours"
+        },
+        {
+          "w": "elke",
+          "t": "chaque"
+        },
+        {
+          "w": "ochtend",
+          "t": "matin"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -120322,8 +122381,25 @@
       "translation_fr": "après-midi",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik werk deze middag.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "werk",
+          "t": "travaille"
+        },
+        {
+          "w": "deze",
+          "t": "cet"
+        },
+        {
+          "w": "middag",
+          "t": "après-midi"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -120333,8 +122409,21 @@
       "translation_fr": "nuit/soir",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Het is nacht.",
+      "example_gloss": [
+        {
+          "w": "Het",
+          "t": "C'"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "nacht",
+          "t": "la nuit"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -120344,8 +122433,21 @@
       "translation_fr": "maintenant",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik vertrek nu.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "vertrek",
+          "t": "pars"
+        },
+        {
+          "w": "nu",
+          "t": "maintenant"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -120355,8 +122457,25 @@
       "translation_fr": "bientôt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De bus komt snel.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "Le"
+        },
+        {
+          "w": "bus",
+          "t": "bus"
+        },
+        {
+          "w": "komt",
+          "t": "arrive"
+        },
+        {
+          "w": "snel",
+          "t": "bientôt"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -120366,8 +122485,21 @@
       "translation_fr": "minuit",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Het is middernacht.",
+      "example_gloss": [
+        {
+          "w": "Het",
+          "t": "Il"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "middernacht",
+          "t": "minuit"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -120377,8 +122509,21 @@
       "translation_fr": "heure",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Jest trzecia godzina.",
+      "example_gloss": [
+        {
+          "w": "Jest",
+          "t": "Il est"
+        },
+        {
+          "w": "trzecia",
+          "t": "trois"
+        },
+        {
+          "w": "godzina",
+          "t": "heures"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -120388,8 +122533,17 @@
       "translation_fr": "minute",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Poczekaj minutę.",
+      "example_gloss": [
+        {
+          "w": "Poczekaj",
+          "t": "Attends"
+        },
+        {
+          "w": "minutę",
+          "t": "une minute"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -120399,8 +122553,21 @@
       "translation_fr": "matin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Biegam każdego rano.",
+      "example_gloss": [
+        {
+          "w": "Biegam",
+          "t": "Je cours"
+        },
+        {
+          "w": "każdego",
+          "t": "chaque"
+        },
+        {
+          "w": "rano",
+          "t": "matin"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -120410,8 +122577,21 @@
       "translation_fr": "après-midi",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Pracuję po południu.",
+      "example_gloss": [
+        {
+          "w": "Pracuję",
+          "t": "Je travaille"
+        },
+        {
+          "w": "po",
+          "t": "l'"
+        },
+        {
+          "w": "południu",
+          "t": "après-midi"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -120421,8 +122601,17 @@
       "translation_fr": "nuit/soir",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Jest noc.",
+      "example_gloss": [
+        {
+          "w": "Jest",
+          "t": "C'est"
+        },
+        {
+          "w": "noc",
+          "t": "la nuit"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -120432,8 +122621,17 @@
       "translation_fr": "maintenant",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wychodzę teraz.",
+      "example_gloss": [
+        {
+          "w": "Wychodzę",
+          "t": "Je pars"
+        },
+        {
+          "w": "teraz",
+          "t": "maintenant"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -120443,8 +122641,21 @@
       "translation_fr": "bientôt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Autobus przyjedzie wkrótce.",
+      "example_gloss": [
+        {
+          "w": "Autobus",
+          "t": "Le bus"
+        },
+        {
+          "w": "przyjedzie",
+          "t": "arrive"
+        },
+        {
+          "w": "wkrótce",
+          "t": "bientôt"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -120454,8 +122665,17 @@
       "translation_fr": "minuit",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Jest północ.",
+      "example_gloss": [
+        {
+          "w": "Jest",
+          "t": "Il est"
+        },
+        {
+          "w": "północ",
+          "t": "minuit"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -122129,8 +124349,25 @@
       "translation_fr": "chanson",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dit lied is mooi.",
+      "example_gloss": [
+        {
+          "w": "Dit",
+          "t": "Cette"
+        },
+        {
+          "w": "lied",
+          "t": "chanson"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "mooi",
+          "t": "belle"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -122140,8 +124377,21 @@
       "translation_fr": "guitare",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hij speelt gitaar.",
+      "example_gloss": [
+        {
+          "w": "Hij",
+          "t": "Il"
+        },
+        {
+          "w": "speelt",
+          "t": "joue de la"
+        },
+        {
+          "w": "gitaar",
+          "t": "guitare"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -122151,8 +124401,21 @@
       "translation_fr": "piano",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Zij speelt piano.",
+      "example_gloss": [
+        {
+          "w": "Zij",
+          "t": "Elle"
+        },
+        {
+          "w": "speelt",
+          "t": "joue du"
+        },
+        {
+          "w": "piano",
+          "t": "piano"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -122162,8 +124425,29 @@
       "translation_fr": "voix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Zij heeft een mooie stem.",
+      "example_gloss": [
+        {
+          "w": "Zij",
+          "t": "Elle"
+        },
+        {
+          "w": "heeft",
+          "t": "a"
+        },
+        {
+          "w": "een",
+          "t": "une"
+        },
+        {
+          "w": "mooie",
+          "t": "belle"
+        },
+        {
+          "w": "stem",
+          "t": "voix"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -122173,8 +124457,25 @@
       "translation_fr": "rythme",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Het ritme is snel.",
+      "example_gloss": [
+        {
+          "w": "Het",
+          "t": "Le"
+        },
+        {
+          "w": "ritme",
+          "t": "rythme"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "snel",
+          "t": "rapide"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -122184,8 +124485,25 @@
       "translation_fr": "concert",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Het concert is vanavond.",
+      "example_gloss": [
+        {
+          "w": "Het",
+          "t": "Le"
+        },
+        {
+          "w": "concert",
+          "t": "concert"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "vanavond",
+          "t": "ce soir"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -122195,8 +124513,25 @@
       "translation_fr": "paroles",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik ken de tekst.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "ken",
+          "t": "connais"
+        },
+        {
+          "w": "de",
+          "t": "les"
+        },
+        {
+          "w": "tekst",
+          "t": "paroles"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -122206,8 +124541,25 @@
       "translation_fr": "mélodie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De melodie is prachtig.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "La"
+        },
+        {
+          "w": "melodie",
+          "t": "mélodie"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "prachtig",
+          "t": "magnifique"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -122217,8 +124569,25 @@
       "translation_fr": "chanson",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ta piosenka jest piękna.",
+      "example_gloss": [
+        {
+          "w": "Ta",
+          "t": "Cette"
+        },
+        {
+          "w": "piosenka",
+          "t": "chanson"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "piękna",
+          "t": "belle"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -122228,8 +124597,25 @@
       "translation_fr": "guitare",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "On gra na gitarze.",
+      "example_gloss": [
+        {
+          "w": "On",
+          "t": "Il"
+        },
+        {
+          "w": "gra",
+          "t": "joue"
+        },
+        {
+          "w": "na",
+          "t": "de la"
+        },
+        {
+          "w": "gitarze",
+          "t": "guitare"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -122239,8 +124625,25 @@
       "translation_fr": "piano",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ona gra na fortepianie.",
+      "example_gloss": [
+        {
+          "w": "Ona",
+          "t": "Elle"
+        },
+        {
+          "w": "gra",
+          "t": "joue"
+        },
+        {
+          "w": "na",
+          "t": "du"
+        },
+        {
+          "w": "fortepianie",
+          "t": "piano"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -122250,8 +124653,25 @@
       "translation_fr": "voix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ona ma piękny głos.",
+      "example_gloss": [
+        {
+          "w": "Ona",
+          "t": "Elle"
+        },
+        {
+          "w": "ma",
+          "t": "a"
+        },
+        {
+          "w": "piękny",
+          "t": "une belle"
+        },
+        {
+          "w": "głos",
+          "t": "voix"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -122261,8 +124681,21 @@
       "translation_fr": "rythme",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Rytm jest szybki.",
+      "example_gloss": [
+        {
+          "w": "Rytm",
+          "t": "Le rythme"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "szybki",
+          "t": "rapide"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -122272,8 +124705,25 @@
       "translation_fr": "concert",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Koncert jest dziś wieczorem.",
+      "example_gloss": [
+        {
+          "w": "Koncert",
+          "t": "Le concert"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "dziś",
+          "t": "ce"
+        },
+        {
+          "w": "wieczorem",
+          "t": "soir"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -122283,8 +124733,17 @@
       "translation_fr": "paroles",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Znam tekst.",
+      "example_gloss": [
+        {
+          "w": "Znam",
+          "t": "Je connais"
+        },
+        {
+          "w": "tekst",
+          "t": "les paroles"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -122294,8 +124753,21 @@
       "translation_fr": "mélodie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Melodia jest piękna.",
+      "example_gloss": [
+        {
+          "w": "Melodia",
+          "t": "La mélodie"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "piękna",
+          "t": "magnifique"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -123925,8 +126397,25 @@
       "translation_fr": "cuisiner",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik hou van koken.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "J'"
+        },
+        {
+          "w": "hou",
+          "t": "aime"
+        },
+        {
+          "w": "van",
+          "t": "—"
+        },
+        {
+          "w": "koken",
+          "t": "cuisiner"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -123936,8 +126425,25 @@
       "translation_fr": "recette",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dit recept is makkelijk.",
+      "example_gloss": [
+        {
+          "w": "Dit",
+          "t": "Cette"
+        },
+        {
+          "w": "recept",
+          "t": "recette"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "makkelijk",
+          "t": "facile"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -123947,8 +126453,25 @@
       "translation_fr": "ingrédient",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dit ingrediënt is vers.",
+      "example_gloss": [
+        {
+          "w": "Dit",
+          "t": "Cet"
+        },
+        {
+          "w": "ingrediënt",
+          "t": "ingrédient"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "vers",
+          "t": "frais"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -123958,8 +126481,21 @@
       "translation_fr": "poêle",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Verwarm de pan.",
+      "example_gloss": [
+        {
+          "w": "Verwarm",
+          "t": "Chauffe"
+        },
+        {
+          "w": "de",
+          "t": "la"
+        },
+        {
+          "w": "pan",
+          "t": "poêle"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -123969,8 +126505,25 @@
       "translation_fr": "faire bouillir",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik moet water koken.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "moet",
+          "t": "dois"
+        },
+        {
+          "w": "water",
+          "t": "eau"
+        },
+        {
+          "w": "koken",
+          "t": "faire bouillir"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -123980,8 +126533,29 @@
       "translation_fr": "cuire au four",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik ga een taart bakken.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "ga",
+          "t": "vais"
+        },
+        {
+          "w": "een",
+          "t": "un"
+        },
+        {
+          "w": "taart",
+          "t": "gâteau"
+        },
+        {
+          "w": "bakken",
+          "t": "cuire au four"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -123991,8 +126565,29 @@
       "translation_fr": "mélanger",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Je moet de eieren mengen.",
+      "example_gloss": [
+        {
+          "w": "Je",
+          "t": "Tu"
+        },
+        {
+          "w": "moet",
+          "t": "dois"
+        },
+        {
+          "w": "de",
+          "t": "les"
+        },
+        {
+          "w": "eieren",
+          "t": "œufs"
+        },
+        {
+          "w": "mengen",
+          "t": "mélanger"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -124002,8 +126597,21 @@
       "translation_fr": "assaisonnement",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Voeg kruiden toe.",
+      "example_gloss": [
+        {
+          "w": "Voeg",
+          "t": "Ajoute"
+        },
+        {
+          "w": "kruiden",
+          "t": "assaisonnement"
+        },
+        {
+          "w": "toe",
+          "t": "(particule)"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -124013,8 +126621,17 @@
       "translation_fr": "cuisiner",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Lubię gotować.",
+      "example_gloss": [
+        {
+          "w": "Lubię",
+          "t": "J'aime"
+        },
+        {
+          "w": "gotować",
+          "t": "cuisiner"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -124024,8 +126641,25 @@
       "translation_fr": "recette",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ten przepis jest łatwy.",
+      "example_gloss": [
+        {
+          "w": "Ten",
+          "t": "Cette"
+        },
+        {
+          "w": "przepis",
+          "t": "recette"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "łatwy",
+          "t": "facile"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -124035,8 +126669,25 @@
       "translation_fr": "ingrédient",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ten składnik jest świeży.",
+      "example_gloss": [
+        {
+          "w": "Ten",
+          "t": "Cet"
+        },
+        {
+          "w": "składnik",
+          "t": "ingrédient"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "świeży",
+          "t": "frais"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -124046,8 +126697,17 @@
       "translation_fr": "poêle",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Rozgrzej patelnię.",
+      "example_gloss": [
+        {
+          "w": "Rozgrzej",
+          "t": "Chauffe"
+        },
+        {
+          "w": "patelnię",
+          "t": "la poêle"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -124057,8 +126717,21 @@
       "translation_fr": "faire bouillir",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Muszę zagotować wodę.",
+      "example_gloss": [
+        {
+          "w": "Muszę",
+          "t": "Je dois"
+        },
+        {
+          "w": "zagotować",
+          "t": "faire bouillir"
+        },
+        {
+          "w": "wodę",
+          "t": "l'eau"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -124068,8 +126741,21 @@
       "translation_fr": "cuire au four",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Będę piec ciasto.",
+      "example_gloss": [
+        {
+          "w": "Będę",
+          "t": "Je vais"
+        },
+        {
+          "w": "piec",
+          "t": "cuire au four"
+        },
+        {
+          "w": "ciasto",
+          "t": "un gâteau"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -124079,8 +126765,21 @@
       "translation_fr": "mélanger",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Musisz mieszać jajka.",
+      "example_gloss": [
+        {
+          "w": "Musisz",
+          "t": "Tu dois"
+        },
+        {
+          "w": "mieszać",
+          "t": "mélanger"
+        },
+        {
+          "w": "jajka",
+          "t": "les œufs"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -124090,8 +126789,17 @@
       "translation_fr": "assaisonnement",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dodaj przyprawę.",
+      "example_gloss": [
+        {
+          "w": "Dodaj",
+          "t": "Ajoute"
+        },
+        {
+          "w": "przyprawę",
+          "t": "l'assaisonnement"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -125245,8 +127953,33 @@
       "translation_fr": "avion",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Het vliegtuig vertrekt om acht uur.",
+      "example_gloss": [
+        {
+          "w": "Het",
+          "t": "L'"
+        },
+        {
+          "w": "vliegtuig",
+          "t": "avion"
+        },
+        {
+          "w": "vertrekt",
+          "t": "part"
+        },
+        {
+          "w": "om",
+          "t": "à"
+        },
+        {
+          "w": "acht",
+          "t": "huit"
+        },
+        {
+          "w": "uur",
+          "t": "heures"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -125256,8 +127989,25 @@
       "translation_fr": "valise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mijn koffer is zwaar.",
+      "example_gloss": [
+        {
+          "w": "Mijn",
+          "t": "Ma"
+        },
+        {
+          "w": "koffer",
+          "t": "valise"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "zwaar",
+          "t": "lourde"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -125267,8 +128017,25 @@
       "translation_fr": "billet",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik koop een kaartje.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "J'"
+        },
+        {
+          "w": "koop",
+          "t": "achète"
+        },
+        {
+          "w": "een",
+          "t": "un"
+        },
+        {
+          "w": "kaartje",
+          "t": "billet"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -125278,8 +128045,25 @@
       "translation_fr": "tourisme",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Toerisme is belangrijk hier.",
+      "example_gloss": [
+        {
+          "w": "Toerisme",
+          "t": "Le tourisme"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "belangrijk",
+          "t": "important"
+        },
+        {
+          "w": "hier",
+          "t": "ici"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -125289,8 +128073,25 @@
       "translation_fr": "avion",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Samolot odlatuje o ósmej.",
+      "example_gloss": [
+        {
+          "w": "Samolot",
+          "t": "L'avion"
+        },
+        {
+          "w": "odlatuje",
+          "t": "part"
+        },
+        {
+          "w": "o",
+          "t": "à"
+        },
+        {
+          "w": "ósmej",
+          "t": "huit heures"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -125300,8 +128101,25 @@
       "translation_fr": "valise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Moja walizka jest ciężka.",
+      "example_gloss": [
+        {
+          "w": "Moja",
+          "t": "Ma"
+        },
+        {
+          "w": "walizka",
+          "t": "valise"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "ciężka",
+          "t": "lourde"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -125311,8 +128129,21 @@
       "translation_fr": "douane",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Przechodzę przez cło.",
+      "example_gloss": [
+        {
+          "w": "Przechodzę",
+          "t": "Je passe"
+        },
+        {
+          "w": "przez",
+          "t": "par"
+        },
+        {
+          "w": "cło",
+          "t": "la douane"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -125322,8 +128153,25 @@
       "translation_fr": "tourisme",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Turystyka jest ważna tutaj.",
+      "example_gloss": [
+        {
+          "w": "Turystyka",
+          "t": "Le tourisme"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "ważna",
+          "t": "important"
+        },
+        {
+          "w": "tutaj",
+          "t": "ici"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -126659,8 +129507,25 @@
       "translation_fr": "zéro",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Het resultaat is nul.",
+      "example_gloss": [
+        {
+          "w": "Het",
+          "t": "Le"
+        },
+        {
+          "w": "resultaat",
+          "t": "résultat"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "nul",
+          "t": "zéro"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -126670,8 +129535,25 @@
       "translation_fr": "dix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik heb tien euro.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "J'"
+        },
+        {
+          "w": "heb",
+          "t": "ai"
+        },
+        {
+          "w": "tien",
+          "t": "dix"
+        },
+        {
+          "w": "euro",
+          "t": "euros"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -126681,8 +129563,25 @@
       "translation_fr": "cent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Er zijn honderd mensen.",
+      "example_gloss": [
+        {
+          "w": "Er",
+          "t": "Il y"
+        },
+        {
+          "w": "zijn",
+          "t": "a"
+        },
+        {
+          "w": "honderd",
+          "t": "cent"
+        },
+        {
+          "w": "mensen",
+          "t": "personnes"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -126692,8 +129591,25 @@
       "translation_fr": "mille",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Het kost duizend euro.",
+      "example_gloss": [
+        {
+          "w": "Het",
+          "t": "Ça"
+        },
+        {
+          "w": "kost",
+          "t": "coûte"
+        },
+        {
+          "w": "duizend",
+          "t": "mille"
+        },
+        {
+          "w": "euro",
+          "t": "euros"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -126703,8 +129619,33 @@
       "translation_fr": "million",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De stad heeft een miljoen inwoners.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "La"
+        },
+        {
+          "w": "stad",
+          "t": "ville"
+        },
+        {
+          "w": "heeft",
+          "t": "a"
+        },
+        {
+          "w": "een",
+          "t": "un"
+        },
+        {
+          "w": "miljoen",
+          "t": "million"
+        },
+        {
+          "w": "inwoners",
+          "t": "d'habitants"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -126714,8 +129655,25 @@
       "translation_fr": "moitié",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik eet de helft.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "eet",
+          "t": "mange"
+        },
+        {
+          "w": "de",
+          "t": "la"
+        },
+        {
+          "w": "helft",
+          "t": "moitié"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -126725,8 +129683,25 @@
       "translation_fr": "double",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dat is het dubbel.",
+      "example_gloss": [
+        {
+          "w": "Dat",
+          "t": "C'"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "het",
+          "t": "le"
+        },
+        {
+          "w": "dubbel",
+          "t": "double"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -126736,8 +129711,25 @@
       "translation_fr": "tiers",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik neem een derde.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "neem",
+          "t": "prends"
+        },
+        {
+          "w": "een",
+          "t": "un"
+        },
+        {
+          "w": "derde",
+          "t": "tiers"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -126747,8 +129739,21 @@
       "translation_fr": "zéro",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wynik to zero.",
+      "example_gloss": [
+        {
+          "w": "Wynik",
+          "t": "Le résultat"
+        },
+        {
+          "w": "to",
+          "t": "est"
+        },
+        {
+          "w": "zero",
+          "t": "zéro"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -126758,8 +129763,21 @@
       "translation_fr": "dix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mam dziesięć euro.",
+      "example_gloss": [
+        {
+          "w": "Mam",
+          "t": "J'ai"
+        },
+        {
+          "w": "dziesięć",
+          "t": "dix"
+        },
+        {
+          "w": "euro",
+          "t": "euros"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -126769,8 +129787,21 @@
       "translation_fr": "cent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Jest sto osób.",
+      "example_gloss": [
+        {
+          "w": "Jest",
+          "t": "Il y a"
+        },
+        {
+          "w": "sto",
+          "t": "cent"
+        },
+        {
+          "w": "osób",
+          "t": "personnes"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -126780,8 +129811,25 @@
       "translation_fr": "mille",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "To kosztuje tysiąc euro.",
+      "example_gloss": [
+        {
+          "w": "To",
+          "t": "Ça"
+        },
+        {
+          "w": "kosztuje",
+          "t": "coûte"
+        },
+        {
+          "w": "tysiąc",
+          "t": "mille"
+        },
+        {
+          "w": "euro",
+          "t": "euros"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -126791,8 +129839,25 @@
       "translation_fr": "million",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Miasto ma milion mieszkańców.",
+      "example_gloss": [
+        {
+          "w": "Miasto",
+          "t": "La ville"
+        },
+        {
+          "w": "ma",
+          "t": "a"
+        },
+        {
+          "w": "milion",
+          "t": "un million"
+        },
+        {
+          "w": "mieszkańców",
+          "t": "d'habitants"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -126802,8 +129867,17 @@
       "translation_fr": "moitié",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Jem połowę.",
+      "example_gloss": [
+        {
+          "w": "Jem",
+          "t": "Je mange"
+        },
+        {
+          "w": "połowę",
+          "t": "la moitié"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -126813,8 +129887,21 @@
       "translation_fr": "double",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "To jest podwójny.",
+      "example_gloss": [
+        {
+          "w": "To",
+          "t": "C'"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "podwójny",
+          "t": "le double"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -126824,8 +129911,21 @@
       "translation_fr": "tiers",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Biorę jedną trzecią.",
+      "example_gloss": [
+        {
+          "w": "Biorę",
+          "t": "Je prends"
+        },
+        {
+          "w": "jedną",
+          "t": "un"
+        },
+        {
+          "w": "trzecią",
+          "t": "tiers"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -128547,8 +131647,29 @@
       "translation_fr": "pays",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Nederland is een klein land.",
+      "example_gloss": [
+        {
+          "w": "Nederland",
+          "t": "Les Pays-Bas"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "een",
+          "t": "un"
+        },
+        {
+          "w": "klein",
+          "t": "petit"
+        },
+        {
+          "w": "land",
+          "t": "pays"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -128558,8 +131679,25 @@
       "translation_fr": "capitale",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Amsterdam is de hoofdstad.",
+      "example_gloss": [
+        {
+          "w": "Amsterdam",
+          "t": "Amsterdam"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "de",
+          "t": "la"
+        },
+        {
+          "w": "hoofdstad",
+          "t": "capitale"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -128569,8 +131707,25 @@
       "translation_fr": "continent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Europa is een continent.",
+      "example_gloss": [
+        {
+          "w": "Europa",
+          "t": "L'Europe"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "een",
+          "t": "un"
+        },
+        {
+          "w": "continent",
+          "t": "continent"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -128580,8 +131735,25 @@
       "translation_fr": "frontière",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De grens is dichtbij.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "La"
+        },
+        {
+          "w": "grens",
+          "t": "frontière"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "dichtbij",
+          "t": "proche"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -128591,8 +131763,25 @@
       "translation_fr": "île",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dit eiland is mooi.",
+      "example_gloss": [
+        {
+          "w": "Dit",
+          "t": "Cette"
+        },
+        {
+          "w": "eiland",
+          "t": "île"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "mooi",
+          "t": "belle"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -128602,8 +131791,25 @@
       "translation_fr": "désert",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De woestijn is heet.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "Le"
+        },
+        {
+          "w": "woestijn",
+          "t": "désert"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "heet",
+          "t": "chaud"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -128613,8 +131819,25 @@
       "translation_fr": "océan",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De oceaan is diep.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "L'"
+        },
+        {
+          "w": "oceaan",
+          "t": "océan"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "diep",
+          "t": "profond"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -128624,8 +131847,33 @@
       "translation_fr": "hémisphère",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wij leven op het noordelijk halfrond.",
+      "example_gloss": [
+        {
+          "w": "Wij",
+          "t": "Nous"
+        },
+        {
+          "w": "leven",
+          "t": "vivons"
+        },
+        {
+          "w": "op",
+          "t": "sur"
+        },
+        {
+          "w": "het",
+          "t": "l'"
+        },
+        {
+          "w": "noordelijk",
+          "t": "nord"
+        },
+        {
+          "w": "halfrond",
+          "t": "hémisphère"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -128635,8 +131883,25 @@
       "translation_fr": "pays",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Polska to piękny kraj.",
+      "example_gloss": [
+        {
+          "w": "Polska",
+          "t": "La Pologne"
+        },
+        {
+          "w": "to",
+          "t": "est"
+        },
+        {
+          "w": "piękny",
+          "t": "un beau"
+        },
+        {
+          "w": "kraj",
+          "t": "pays"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -128646,8 +131911,21 @@
       "translation_fr": "capitale",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Warszawa jest stolicą.",
+      "example_gloss": [
+        {
+          "w": "Warszawa",
+          "t": "Varsovie"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "stolicą",
+          "t": "la capitale"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -128657,8 +131935,21 @@
       "translation_fr": "continent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Europa to kontynent.",
+      "example_gloss": [
+        {
+          "w": "Europa",
+          "t": "L'Europe"
+        },
+        {
+          "w": "to",
+          "t": "est"
+        },
+        {
+          "w": "kontynent",
+          "t": "un continent"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -128668,8 +131959,21 @@
       "translation_fr": "frontière",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Granica jest blisko.",
+      "example_gloss": [
+        {
+          "w": "Granica",
+          "t": "La frontière"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "blisko",
+          "t": "proche"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -128679,8 +131983,25 @@
       "translation_fr": "île",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ta wyspa jest piękna.",
+      "example_gloss": [
+        {
+          "w": "Ta",
+          "t": "Cette"
+        },
+        {
+          "w": "wyspa",
+          "t": "île"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "piękna",
+          "t": "belle"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -128690,8 +132011,21 @@
       "translation_fr": "désert",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Pustynia jest gorąca.",
+      "example_gloss": [
+        {
+          "w": "Pustynia",
+          "t": "Le désert"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "gorąca",
+          "t": "chaud"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -128701,8 +132035,21 @@
       "translation_fr": "océan",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ocean jest głęboki.",
+      "example_gloss": [
+        {
+          "w": "Ocean",
+          "t": "L'océan"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "głęboki",
+          "t": "profond"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -128712,8 +132059,25 @@
       "translation_fr": "hémisphère",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Żyjemy na półkuli północnej.",
+      "example_gloss": [
+        {
+          "w": "Żyjemy",
+          "t": "Nous vivons"
+        },
+        {
+          "w": "na",
+          "t": "sur"
+        },
+        {
+          "w": "półkuli",
+          "t": "l'hémisphère"
+        },
+        {
+          "w": "północnej",
+          "t": "nord"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -130407,8 +133771,29 @@
       "translation_fr": "médecin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De dokter onderzoekt de patiënt.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "Le"
+        },
+        {
+          "w": "dokter",
+          "t": "médecin"
+        },
+        {
+          "w": "onderzoekt",
+          "t": "examine"
+        },
+        {
+          "w": "de",
+          "t": "le"
+        },
+        {
+          "w": "patiënt",
+          "t": "patient"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -130418,8 +133803,25 @@
       "translation_fr": "enseignant",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De leraar geeft les.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "L'"
+        },
+        {
+          "w": "leraar",
+          "t": "enseignant"
+        },
+        {
+          "w": "geeft",
+          "t": "donne"
+        },
+        {
+          "w": "les",
+          "t": "cours"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -130429,8 +133831,29 @@
       "translation_fr": "cuisinier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De kok maakt het eten.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "Le"
+        },
+        {
+          "w": "kok",
+          "t": "cuisinier"
+        },
+        {
+          "w": "maakt",
+          "t": "prépare"
+        },
+        {
+          "w": "het",
+          "t": "le"
+        },
+        {
+          "w": "eten",
+          "t": "repas"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -130440,8 +133863,25 @@
       "translation_fr": "policier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De politieagent helpt ons.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "Le"
+        },
+        {
+          "w": "politieagent",
+          "t": "policier"
+        },
+        {
+          "w": "helpt",
+          "t": "aide"
+        },
+        {
+          "w": "ons",
+          "t": "nous"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -130451,8 +133891,29 @@
       "translation_fr": "pompier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De brandweerman blust het vuur.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "Le"
+        },
+        {
+          "w": "brandweerman",
+          "t": "pompier"
+        },
+        {
+          "w": "blust",
+          "t": "éteint"
+        },
+        {
+          "w": "het",
+          "t": "le"
+        },
+        {
+          "w": "vuur",
+          "t": "feu"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -130462,8 +133923,29 @@
       "translation_fr": "ingénieur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De ingenieur bouwt een brug.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "L'"
+        },
+        {
+          "w": "ingenieur",
+          "t": "ingénieur"
+        },
+        {
+          "w": "bouwt",
+          "t": "construit"
+        },
+        {
+          "w": "een",
+          "t": "un"
+        },
+        {
+          "w": "brug",
+          "t": "pont"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -130473,8 +133955,29 @@
       "translation_fr": "avocat",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De advocaat verdedigt zijn cliënt.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "L'"
+        },
+        {
+          "w": "advocaat",
+          "t": "avocat"
+        },
+        {
+          "w": "verdedigt",
+          "t": "défend"
+        },
+        {
+          "w": "zijn",
+          "t": "son"
+        },
+        {
+          "w": "cliënt",
+          "t": "client"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -130484,8 +133987,29 @@
       "translation_fr": "architecte",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De architect tekent een huis.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "L'"
+        },
+        {
+          "w": "architect",
+          "t": "architecte"
+        },
+        {
+          "w": "tekent",
+          "t": "dessine"
+        },
+        {
+          "w": "een",
+          "t": "une"
+        },
+        {
+          "w": "huis",
+          "t": "maison"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -130495,8 +134019,21 @@
       "translation_fr": "médecin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Lekarz bada pacjenta.",
+      "example_gloss": [
+        {
+          "w": "Lekarz",
+          "t": "Le médecin"
+        },
+        {
+          "w": "bada",
+          "t": "examine"
+        },
+        {
+          "w": "pacjenta",
+          "t": "le patient"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -130506,8 +134043,25 @@
       "translation_fr": "enseignant",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Nauczyciel uczy w szkole.",
+      "example_gloss": [
+        {
+          "w": "Nauczyciel",
+          "t": "L'enseignant"
+        },
+        {
+          "w": "uczy",
+          "t": "enseigne"
+        },
+        {
+          "w": "w",
+          "t": "à"
+        },
+        {
+          "w": "szkole",
+          "t": "l'école"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -130517,8 +134071,21 @@
       "translation_fr": "cuisinier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Kucharz gotuje obiad.",
+      "example_gloss": [
+        {
+          "w": "Kucharz",
+          "t": "Le cuisinier"
+        },
+        {
+          "w": "gotuje",
+          "t": "prépare"
+        },
+        {
+          "w": "obiad",
+          "t": "le repas"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -130528,8 +134095,21 @@
       "translation_fr": "policier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Policjant nam pomaga.",
+      "example_gloss": [
+        {
+          "w": "Policjant",
+          "t": "Le policier"
+        },
+        {
+          "w": "nam",
+          "t": "nous"
+        },
+        {
+          "w": "pomaga",
+          "t": "aide"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -130539,8 +134119,21 @@
       "translation_fr": "pompier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Strażak gasi ogień.",
+      "example_gloss": [
+        {
+          "w": "Strażak",
+          "t": "Le pompier"
+        },
+        {
+          "w": "gasi",
+          "t": "éteint"
+        },
+        {
+          "w": "ogień",
+          "t": "le feu"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -130550,8 +134143,21 @@
       "translation_fr": "ingénieur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Inżynier buduje most.",
+      "example_gloss": [
+        {
+          "w": "Inżynier",
+          "t": "L'ingénieur"
+        },
+        {
+          "w": "buduje",
+          "t": "construit"
+        },
+        {
+          "w": "most",
+          "t": "un pont"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -130561,8 +134167,21 @@
       "translation_fr": "avocat",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Prawnik broni klienta.",
+      "example_gloss": [
+        {
+          "w": "Prawnik",
+          "t": "L'avocat"
+        },
+        {
+          "w": "broni",
+          "t": "défend"
+        },
+        {
+          "w": "klienta",
+          "t": "son client"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -130572,8 +134191,21 @@
       "translation_fr": "architecte",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Architekt rysuje dom.",
+      "example_gloss": [
+        {
+          "w": "Architekt",
+          "t": "L'architecte"
+        },
+        {
+          "w": "rysuje",
+          "t": "dessine"
+        },
+        {
+          "w": "dom",
+          "t": "une maison"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -132279,8 +135911,25 @@
       "translation_fr": "lire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik hou van lezen.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "J'"
+        },
+        {
+          "w": "hou",
+          "t": "aime"
+        },
+        {
+          "w": "van",
+          "t": "—"
+        },
+        {
+          "w": "lezen",
+          "t": "lire"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -132290,8 +135939,25 @@
       "translation_fr": "peindre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Zij houdt van schilderen.",
+      "example_gloss": [
+        {
+          "w": "Zij",
+          "t": "Elle"
+        },
+        {
+          "w": "houdt",
+          "t": "aime"
+        },
+        {
+          "w": "van",
+          "t": "—"
+        },
+        {
+          "w": "schilderen",
+          "t": "peindre"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -132301,8 +135967,21 @@
       "translation_fr": "nager",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wij gaan zwemmen.",
+      "example_gloss": [
+        {
+          "w": "Wij",
+          "t": "Nous"
+        },
+        {
+          "w": "gaan",
+          "t": "allons"
+        },
+        {
+          "w": "zwemmen",
+          "t": "nager"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -132312,8 +135991,25 @@
       "translation_fr": "photographie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Fotografie is mijn hobby.",
+      "example_gloss": [
+        {
+          "w": "Fotografie",
+          "t": "La photographie"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "mijn",
+          "t": "mon"
+        },
+        {
+          "w": "hobby",
+          "t": "hobby"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -132323,8 +136019,29 @@
       "translation_fr": "jardinage",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mijn moeder houdt van tuinieren.",
+      "example_gloss": [
+        {
+          "w": "Mijn",
+          "t": "Ma"
+        },
+        {
+          "w": "moeder",
+          "t": "mère"
+        },
+        {
+          "w": "houdt",
+          "t": "aime"
+        },
+        {
+          "w": "van",
+          "t": "—"
+        },
+        {
+          "w": "tuinieren",
+          "t": "le jardinage"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -132334,8 +136051,21 @@
       "translation_fr": "échecs",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wil je schaken?",
+      "example_gloss": [
+        {
+          "w": "Wil",
+          "t": "Veux-tu"
+        },
+        {
+          "w": "je",
+          "t": "tu"
+        },
+        {
+          "w": "schaken",
+          "t": "jouer aux échecs"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -132345,8 +136075,25 @@
       "translation_fr": "randonnée",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik ga graag wandelen.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "J'"
+        },
+        {
+          "w": "ga",
+          "t": "aime"
+        },
+        {
+          "w": "graag",
+          "t": "bien"
+        },
+        {
+          "w": "wandelen",
+          "t": "la randonnée"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -132356,8 +136103,29 @@
       "translation_fr": "collection",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hij heeft een grote verzameling.",
+      "example_gloss": [
+        {
+          "w": "Hij",
+          "t": "Il"
+        },
+        {
+          "w": "heeft",
+          "t": "a"
+        },
+        {
+          "w": "een",
+          "t": "une"
+        },
+        {
+          "w": "grote",
+          "t": "grande"
+        },
+        {
+          "w": "verzameling",
+          "t": "collection"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -132367,8 +136135,17 @@
       "translation_fr": "lire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Lubię czytanie.",
+      "example_gloss": [
+        {
+          "w": "Lubię",
+          "t": "J'aime"
+        },
+        {
+          "w": "czytanie",
+          "t": "lire"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -132378,8 +136155,21 @@
       "translation_fr": "peindre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ona lubi malowanie.",
+      "example_gloss": [
+        {
+          "w": "Ona",
+          "t": "Elle"
+        },
+        {
+          "w": "lubi",
+          "t": "aime"
+        },
+        {
+          "w": "malowanie",
+          "t": "peindre"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -132389,8 +136179,21 @@
       "translation_fr": "nager",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Idziemy na pływanie.",
+      "example_gloss": [
+        {
+          "w": "Idziemy",
+          "t": "Nous allons"
+        },
+        {
+          "w": "na",
+          "t": "—"
+        },
+        {
+          "w": "pływanie",
+          "t": "nager"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -132400,8 +136203,25 @@
       "translation_fr": "photographie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Fotografia to moje hobby.",
+      "example_gloss": [
+        {
+          "w": "Fotografia",
+          "t": "La photographie"
+        },
+        {
+          "w": "to",
+          "t": "est"
+        },
+        {
+          "w": "moje",
+          "t": "mon"
+        },
+        {
+          "w": "hobby",
+          "t": "hobby"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -132411,8 +136231,25 @@
       "translation_fr": "jardinage",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Moja mama lubi ogrodnictwo.",
+      "example_gloss": [
+        {
+          "w": "Moja",
+          "t": "Ma"
+        },
+        {
+          "w": "mama",
+          "t": "mère"
+        },
+        {
+          "w": "lubi",
+          "t": "aime"
+        },
+        {
+          "w": "ogrodnictwo",
+          "t": "le jardinage"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -132422,8 +136259,25 @@
       "translation_fr": "échecs",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Chcesz grać w szachy?",
+      "example_gloss": [
+        {
+          "w": "Chcesz",
+          "t": "Veux-tu"
+        },
+        {
+          "w": "grać",
+          "t": "jouer"
+        },
+        {
+          "w": "w",
+          "t": "aux"
+        },
+        {
+          "w": "szachy",
+          "t": "échecs"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -132433,8 +136287,17 @@
       "translation_fr": "randonnée",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Lubię wędrówki.",
+      "example_gloss": [
+        {
+          "w": "Lubię",
+          "t": "J'aime"
+        },
+        {
+          "w": "wędrówki",
+          "t": "la randonnée"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -132444,8 +136307,25 @@
       "translation_fr": "collection",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "On ma dużą kolekcję.",
+      "example_gloss": [
+        {
+          "w": "On",
+          "t": "Il"
+        },
+        {
+          "w": "ma",
+          "t": "a"
+        },
+        {
+          "w": "dużą",
+          "t": "une grande"
+        },
+        {
+          "w": "kolekcję",
+          "t": "collection"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -134131,8 +138011,29 @@
       "translation_fr": "banque",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik ga naar de bank.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "ga",
+          "t": "vais"
+        },
+        {
+          "w": "naar",
+          "t": "à"
+        },
+        {
+          "w": "de",
+          "t": "la"
+        },
+        {
+          "w": "bank",
+          "t": "banque"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -134142,8 +138043,25 @@
       "translation_fr": "argent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik heb geen geld.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "heb",
+          "t": "n'ai"
+        },
+        {
+          "w": "geen",
+          "t": "pas de"
+        },
+        {
+          "w": "geld",
+          "t": "argent"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -134153,8 +138071,25 @@
       "translation_fr": "compte",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik open een rekening.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "J'"
+        },
+        {
+          "w": "open",
+          "t": "ouvre"
+        },
+        {
+          "w": "een",
+          "t": "un"
+        },
+        {
+          "w": "rekening",
+          "t": "compte"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -134164,8 +138099,25 @@
       "translation_fr": "virement",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik doe een overschrijving.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "doe",
+          "t": "fais"
+        },
+        {
+          "w": "een",
+          "t": "un"
+        },
+        {
+          "w": "overschrijving",
+          "t": "virement"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -134175,8 +138127,25 @@
       "translation_fr": "distributeur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Waar is de pinautomaat?",
+      "example_gloss": [
+        {
+          "w": "Waar",
+          "t": "Où"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "de",
+          "t": "le"
+        },
+        {
+          "w": "pinautomaat",
+          "t": "distributeur"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -134186,8 +138155,25 @@
       "translation_fr": "intérêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De rente is laag.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "Le"
+        },
+        {
+          "w": "rente",
+          "t": "taux d'intérêt"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "laag",
+          "t": "bas"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -134197,8 +138183,29 @@
       "translation_fr": "prêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik vraag een lening aan.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "Je"
+        },
+        {
+          "w": "vraag",
+          "t": "demande"
+        },
+        {
+          "w": "een",
+          "t": "un"
+        },
+        {
+          "w": "lening",
+          "t": "prêt"
+        },
+        {
+          "w": "aan",
+          "t": "(particule)"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -134208,8 +138215,29 @@
       "translation_fr": "taux de change",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De wisselkoers verandert elke dag.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "Le"
+        },
+        {
+          "w": "wisselkoers",
+          "t": "taux de change"
+        },
+        {
+          "w": "verandert",
+          "t": "change"
+        },
+        {
+          "w": "elke",
+          "t": "chaque"
+        },
+        {
+          "w": "dag",
+          "t": "jour"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -134219,8 +138247,21 @@
       "translation_fr": "banque",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Idę do banku.",
+      "example_gloss": [
+        {
+          "w": "Idę",
+          "t": "Je vais"
+        },
+        {
+          "w": "do",
+          "t": "à"
+        },
+        {
+          "w": "banku",
+          "t": "la banque"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -134230,8 +138271,21 @@
       "translation_fr": "argent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Nie mam pieniędzy.",
+      "example_gloss": [
+        {
+          "w": "Nie",
+          "t": "Je n'ai"
+        },
+        {
+          "w": "mam",
+          "t": "—"
+        },
+        {
+          "w": "pieniędzy",
+          "t": "pas d'argent"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -134241,8 +138295,17 @@
       "translation_fr": "compte",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Otwieram konto.",
+      "example_gloss": [
+        {
+          "w": "Otwieram",
+          "t": "J'ouvre"
+        },
+        {
+          "w": "konto",
+          "t": "un compte"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -134252,8 +138315,17 @@
       "translation_fr": "virement",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Robię przelew.",
+      "example_gloss": [
+        {
+          "w": "Robię",
+          "t": "Je fais"
+        },
+        {
+          "w": "przelew",
+          "t": "un virement"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -134263,8 +138335,21 @@
       "translation_fr": "distributeur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Gdzie jest bankomat?",
+      "example_gloss": [
+        {
+          "w": "Gdzie",
+          "t": "Où"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "bankomat",
+          "t": "le distributeur"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -134274,8 +138359,21 @@
       "translation_fr": "intérêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Odsetki są niskie.",
+      "example_gloss": [
+        {
+          "w": "Odsetki",
+          "t": "Les intérêts"
+        },
+        {
+          "w": "są",
+          "t": "sont"
+        },
+        {
+          "w": "niskie",
+          "t": "bas"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -134285,8 +138383,17 @@
       "translation_fr": "prêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Biorę pożyczkę.",
+      "example_gloss": [
+        {
+          "w": "Biorę",
+          "t": "Je prends"
+        },
+        {
+          "w": "pożyczkę",
+          "t": "un prêt"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -134296,8 +138403,29 @@
       "translation_fr": "taux de change",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Kurs wymiany zmienia się codziennie.",
+      "example_gloss": [
+        {
+          "w": "Kurs",
+          "t": "Le taux"
+        },
+        {
+          "w": "wymiany",
+          "t": "de change"
+        },
+        {
+          "w": "zmienia",
+          "t": "change"
+        },
+        {
+          "w": "się",
+          "t": "—"
+        },
+        {
+          "w": "codziennie",
+          "t": "chaque jour"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -135955,8 +140083,25 @@
       "translation_fr": "fête",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Het feest is morgen.",
+      "example_gloss": [
+        {
+          "w": "Het",
+          "t": "La"
+        },
+        {
+          "w": "feest",
+          "t": "fête"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "morgen",
+          "t": "demain"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -135966,8 +140111,29 @@
       "translation_fr": "anniversaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mijn verjaardag is in mei.",
+      "example_gloss": [
+        {
+          "w": "Mijn",
+          "t": "Mon"
+        },
+        {
+          "w": "verjaardag",
+          "t": "anniversaire"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "in",
+          "t": "en"
+        },
+        {
+          "w": "mei",
+          "t": "mai"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -135977,8 +140143,29 @@
       "translation_fr": "cadeau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dit cadeau is voor jou.",
+      "example_gloss": [
+        {
+          "w": "Dit",
+          "t": "Ce"
+        },
+        {
+          "w": "cadeau",
+          "t": "cadeau"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "voor",
+          "t": "pour"
+        },
+        {
+          "w": "jou",
+          "t": "toi"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -135988,8 +140175,25 @@
       "translation_fr": "bougie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Blaas de kaars uit.",
+      "example_gloss": [
+        {
+          "w": "Blaas",
+          "t": "Souffle"
+        },
+        {
+          "w": "de",
+          "t": "la"
+        },
+        {
+          "w": "kaars",
+          "t": "bougie"
+        },
+        {
+          "w": "uit",
+          "t": "(particule)"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -135999,8 +140203,29 @@
       "translation_fr": "toast",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wij brengen een toost uit.",
+      "example_gloss": [
+        {
+          "w": "Wij",
+          "t": "Nous"
+        },
+        {
+          "w": "brengen",
+          "t": "portons"
+        },
+        {
+          "w": "een",
+          "t": "un"
+        },
+        {
+          "w": "toost",
+          "t": "toast"
+        },
+        {
+          "w": "uit",
+          "t": "(particule)"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -136010,8 +140235,25 @@
       "translation_fr": "feux d'artifice",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Het vuurwerk is prachtig.",
+      "example_gloss": [
+        {
+          "w": "Het",
+          "t": "Les"
+        },
+        {
+          "w": "vuurwerk",
+          "t": "feux d'artifice"
+        },
+        {
+          "w": "is",
+          "t": "sont"
+        },
+        {
+          "w": "prachtig",
+          "t": "magnifiques"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -136021,8 +140263,25 @@
       "translation_fr": "décoration",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De decoratie is mooi.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "La"
+        },
+        {
+          "w": "decoratie",
+          "t": "décoration"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "mooi",
+          "t": "belle"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -136032,8 +140291,29 @@
       "translation_fr": "invité",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Elke gast brengt een cadeau.",
+      "example_gloss": [
+        {
+          "w": "Elke",
+          "t": "Chaque"
+        },
+        {
+          "w": "gast",
+          "t": "invité"
+        },
+        {
+          "w": "brengt",
+          "t": "apporte"
+        },
+        {
+          "w": "een",
+          "t": "un"
+        },
+        {
+          "w": "cadeau",
+          "t": "cadeau"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -136043,8 +140323,21 @@
       "translation_fr": "fête",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Impreza jest jutro.",
+      "example_gloss": [
+        {
+          "w": "Impreza",
+          "t": "La fête"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "jutro",
+          "t": "demain"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -136054,8 +140347,29 @@
       "translation_fr": "anniversaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Moje urodziny są w maju.",
+      "example_gloss": [
+        {
+          "w": "Moje",
+          "t": "Mon"
+        },
+        {
+          "w": "urodziny",
+          "t": "anniversaire"
+        },
+        {
+          "w": "są",
+          "t": "est"
+        },
+        {
+          "w": "w",
+          "t": "en"
+        },
+        {
+          "w": "maju",
+          "t": "mai"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -136065,8 +140379,29 @@
       "translation_fr": "cadeau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ten prezent jest dla ciebie.",
+      "example_gloss": [
+        {
+          "w": "Ten",
+          "t": "Ce"
+        },
+        {
+          "w": "prezent",
+          "t": "cadeau"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "dla",
+          "t": "pour"
+        },
+        {
+          "w": "ciebie",
+          "t": "toi"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -136076,8 +140411,17 @@
       "translation_fr": "bougie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Zdmuchnij świecę.",
+      "example_gloss": [
+        {
+          "w": "Zdmuchnij",
+          "t": "Souffle"
+        },
+        {
+          "w": "świecę",
+          "t": "la bougie"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -136087,8 +140431,17 @@
       "translation_fr": "toast",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wznosimy toast.",
+      "example_gloss": [
+        {
+          "w": "Wznosimy",
+          "t": "Nous portons"
+        },
+        {
+          "w": "toast",
+          "t": "un toast"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -136098,8 +140451,21 @@
       "translation_fr": "feux d'artifice",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Fajerwerki są piękne.",
+      "example_gloss": [
+        {
+          "w": "Fajerwerki",
+          "t": "Les feux d'artifice"
+        },
+        {
+          "w": "są",
+          "t": "sont"
+        },
+        {
+          "w": "piękne",
+          "t": "magnifiques"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -136109,8 +140475,21 @@
       "translation_fr": "décoration",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dekoracja jest ładna.",
+      "example_gloss": [
+        {
+          "w": "Dekoracja",
+          "t": "La décoration"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "ładna",
+          "t": "belle"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -136120,8 +140499,25 @@
       "translation_fr": "invité",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Każdy gość przynosi prezent.",
+      "example_gloss": [
+        {
+          "w": "Każdy",
+          "t": "Chaque"
+        },
+        {
+          "w": "gość",
+          "t": "invité"
+        },
+        {
+          "w": "przynosi",
+          "t": "apporte"
+        },
+        {
+          "w": "prezent",
+          "t": "un cadeau"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -137835,8 +142231,25 @@
       "translation_fr": "musée",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Het museum is gesloten.",
+      "example_gloss": [
+        {
+          "w": "Het",
+          "t": "Le"
+        },
+        {
+          "w": "museum",
+          "t": "musée"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "gesloten",
+          "t": "fermé"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -137846,8 +142259,29 @@
       "translation_fr": "théâtre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wij gaan naar het theater.",
+      "example_gloss": [
+        {
+          "w": "Wij",
+          "t": "Nous"
+        },
+        {
+          "w": "gaan",
+          "t": "allons"
+        },
+        {
+          "w": "naar",
+          "t": "au"
+        },
+        {
+          "w": "het",
+          "t": "—"
+        },
+        {
+          "w": "theater",
+          "t": "théâtre"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -137857,8 +142291,25 @@
       "translation_fr": "art",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik hou van kunst.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "J'"
+        },
+        {
+          "w": "hou",
+          "t": "aime"
+        },
+        {
+          "w": "van",
+          "t": "—"
+        },
+        {
+          "w": "kunst",
+          "t": "l'art"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -137868,8 +142319,25 @@
       "translation_fr": "tableau/peinture",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dit schilderij is beroemd.",
+      "example_gloss": [
+        {
+          "w": "Dit",
+          "t": "Ce"
+        },
+        {
+          "w": "schilderij",
+          "t": "tableau"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "beroemd",
+          "t": "célèbre"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -137879,8 +142347,25 @@
       "translation_fr": "sculpture",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dit beeldhouwwerk is oud.",
+      "example_gloss": [
+        {
+          "w": "Dit",
+          "t": "Cette"
+        },
+        {
+          "w": "beeldhouwwerk",
+          "t": "sculpture"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "oud",
+          "t": "ancienne"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -137890,8 +142375,21 @@
       "translation_fr": "littérature",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ik studeer literatuur.",
+      "example_gloss": [
+        {
+          "w": "Ik",
+          "t": "J'"
+        },
+        {
+          "w": "studeer",
+          "t": "étudie"
+        },
+        {
+          "w": "literatuur",
+          "t": "la littérature"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -137901,8 +142399,25 @@
       "translation_fr": "patrimoine",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dit erfgoed is beschermd.",
+      "example_gloss": [
+        {
+          "w": "Dit",
+          "t": "Ce"
+        },
+        {
+          "w": "erfgoed",
+          "t": "patrimoine"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "beschermd",
+          "t": "protégé"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -137912,8 +142427,25 @@
       "translation_fr": "exposition",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De tentoonstelling opent morgen.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "L'"
+        },
+        {
+          "w": "tentoonstelling",
+          "t": "exposition"
+        },
+        {
+          "w": "opent",
+          "t": "ouvre"
+        },
+        {
+          "w": "morgen",
+          "t": "demain"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -137923,8 +142455,21 @@
       "translation_fr": "musée",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Muzeum jest zamknięte.",
+      "example_gloss": [
+        {
+          "w": "Muzeum",
+          "t": "Le musée"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "zamknięte",
+          "t": "fermé"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -137934,8 +142479,21 @@
       "translation_fr": "théâtre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Idziemy do teatru.",
+      "example_gloss": [
+        {
+          "w": "Idziemy",
+          "t": "Nous allons"
+        },
+        {
+          "w": "do",
+          "t": "au"
+        },
+        {
+          "w": "teatru",
+          "t": "théâtre"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -137945,8 +142503,17 @@
       "translation_fr": "art",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Lubię sztukę.",
+      "example_gloss": [
+        {
+          "w": "Lubię",
+          "t": "J'aime"
+        },
+        {
+          "w": "sztukę",
+          "t": "l'art"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -137956,8 +142523,25 @@
       "translation_fr": "tableau/peinture",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ten obraz jest sławny.",
+      "example_gloss": [
+        {
+          "w": "Ten",
+          "t": "Ce"
+        },
+        {
+          "w": "obraz",
+          "t": "tableau"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "sławny",
+          "t": "célèbre"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -137967,8 +142551,25 @@
       "translation_fr": "sculpture",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ta rzeźba jest stara.",
+      "example_gloss": [
+        {
+          "w": "Ta",
+          "t": "Cette"
+        },
+        {
+          "w": "rzeźba",
+          "t": "sculpture"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "stara",
+          "t": "ancienne"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -137978,8 +142579,17 @@
       "translation_fr": "littérature",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Studiuję literaturę.",
+      "example_gloss": [
+        {
+          "w": "Studiuję",
+          "t": "J'étudie"
+        },
+        {
+          "w": "literaturę",
+          "t": "la littérature"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -137989,8 +142599,25 @@
       "translation_fr": "patrimoine",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "To dziedzictwo jest chronione.",
+      "example_gloss": [
+        {
+          "w": "To",
+          "t": "Ce"
+        },
+        {
+          "w": "dziedzictwo",
+          "t": "patrimoine"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "chronione",
+          "t": "protégé"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -138000,8 +142627,25 @@
       "translation_fr": "exposition",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wystawa otwiera się jutro.",
+      "example_gloss": [
+        {
+          "w": "Wystawa",
+          "t": "L'exposition"
+        },
+        {
+          "w": "otwiera",
+          "t": "ouvre"
+        },
+        {
+          "w": "się",
+          "t": "—"
+        },
+        {
+          "w": "jutro",
+          "t": "demain"
+        }
+      ]
     },
     {
       "language_code": "tr",
@@ -139655,8 +144299,21 @@
       "translation_fr": "recyclage",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Recycling is belangrijk.",
+      "example_gloss": [
+        {
+          "w": "Recycling",
+          "t": "Le recyclage"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "belangrijk",
+          "t": "important"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -139666,8 +144323,29 @@
       "translation_fr": "pollution",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De vervuiling is een probleem.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "La"
+        },
+        {
+          "w": "vervuiling",
+          "t": "pollution"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "een",
+          "t": "un"
+        },
+        {
+          "w": "probleem",
+          "t": "problème"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -139677,8 +144355,21 @@
       "translation_fr": "énergie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wij besparen energie.",
+      "example_gloss": [
+        {
+          "w": "Wij",
+          "t": "Nous"
+        },
+        {
+          "w": "besparen",
+          "t": "économisons"
+        },
+        {
+          "w": "energie",
+          "t": "de l'énergie"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -139688,8 +144379,21 @@
       "translation_fr": "solaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wij gebruiken zonne-energie.",
+      "example_gloss": [
+        {
+          "w": "Wij",
+          "t": "Nous"
+        },
+        {
+          "w": "gebruiken",
+          "t": "utilisons"
+        },
+        {
+          "w": "zonne-energie",
+          "t": "l'énergie solaire"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -139699,8 +144403,25 @@
       "translation_fr": "déchets",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Gooi het afval weg.",
+      "example_gloss": [
+        {
+          "w": "Gooi",
+          "t": "Jette"
+        },
+        {
+          "w": "het",
+          "t": "les"
+        },
+        {
+          "w": "afval",
+          "t": "déchets"
+        },
+        {
+          "w": "weg",
+          "t": "(particule)"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -139710,8 +144431,25 @@
       "translation_fr": "émission",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "De uitstoot moet dalen.",
+      "example_gloss": [
+        {
+          "w": "De",
+          "t": "Les"
+        },
+        {
+          "w": "uitstoot",
+          "t": "émissions"
+        },
+        {
+          "w": "moet",
+          "t": "doivent"
+        },
+        {
+          "w": "dalen",
+          "t": "baisser"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -139721,8 +144459,25 @@
       "translation_fr": "durable",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dit product is duurzaam.",
+      "example_gloss": [
+        {
+          "w": "Dit",
+          "t": "Ce"
+        },
+        {
+          "w": "product",
+          "t": "produit"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "duurzaam",
+          "t": "durable"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -139732,8 +144487,21 @@
       "translation_fr": "biodiversité",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Biodiversiteit is essentieel.",
+      "example_gloss": [
+        {
+          "w": "Biodiversiteit",
+          "t": "La biodiversité"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "essentieel",
+          "t": "essentielle"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -139743,8 +144511,21 @@
       "translation_fr": "recyclage",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Recykling jest ważny.",
+      "example_gloss": [
+        {
+          "w": "Recykling",
+          "t": "Le recyclage"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "ważny",
+          "t": "important"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -139754,8 +144535,21 @@
       "translation_fr": "pollution",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Zanieczyszczenie to problem.",
+      "example_gloss": [
+        {
+          "w": "Zanieczyszczenie",
+          "t": "La pollution"
+        },
+        {
+          "w": "to",
+          "t": "est"
+        },
+        {
+          "w": "problem",
+          "t": "un problème"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -139765,8 +144559,17 @@
       "translation_fr": "énergie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Oszczędzamy energię.",
+      "example_gloss": [
+        {
+          "w": "Oszczędzamy",
+          "t": "Nous économisons"
+        },
+        {
+          "w": "energię",
+          "t": "de l'énergie"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -139776,8 +144579,21 @@
       "translation_fr": "solaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Używamy energii słonecznej.",
+      "example_gloss": [
+        {
+          "w": "Używamy",
+          "t": "Nous utilisons"
+        },
+        {
+          "w": "energii",
+          "t": "l'énergie"
+        },
+        {
+          "w": "słonecznej",
+          "t": "solaire"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -139787,8 +144603,17 @@
       "translation_fr": "déchets",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Wyrzuć odpady.",
+      "example_gloss": [
+        {
+          "w": "Wyrzuć",
+          "t": "Jette"
+        },
+        {
+          "w": "odpady",
+          "t": "les déchets"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -139798,8 +144623,25 @@
       "translation_fr": "émission",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Emisja musi się zmniejszyć.",
+      "example_gloss": [
+        {
+          "w": "Emisja",
+          "t": "Les émissions"
+        },
+        {
+          "w": "musi",
+          "t": "doivent"
+        },
+        {
+          "w": "się",
+          "t": "—"
+        },
+        {
+          "w": "zmniejszyć",
+          "t": "baisser"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -139809,8 +144651,25 @@
       "translation_fr": "durable",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ten produkt jest zrównoważony.",
+      "example_gloss": [
+        {
+          "w": "Ten",
+          "t": "Ce"
+        },
+        {
+          "w": "produkt",
+          "t": "produit"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "zrównoważony",
+          "t": "durable"
+        }
+      ]
     },
     {
       "language_code": "pl",
@@ -139820,8 +144679,25 @@
       "translation_fr": "biodiversité",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Różnorodność biologiczna jest istotna.",
+      "example_gloss": [
+        {
+          "w": "Różnorodność",
+          "t": "La diversité"
+        },
+        {
+          "w": "biologiczna",
+          "t": "biologique"
+        },
+        {
+          "w": "jest",
+          "t": "est"
+        },
+        {
+          "w": "istotna",
+          "t": "essentielle"
+        }
+      ]
     },
     {
       "language_code": "tr",
