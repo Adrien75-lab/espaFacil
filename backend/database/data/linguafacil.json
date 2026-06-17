@@ -106637,8 +106637,29 @@
       "translation_fr": "travail",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أذهب إلى العمل كل يوم",
+      "example_gloss": [
+        {
+          "w": "أذهب",
+          "t": "je vais"
+        },
+        {
+          "w": "إلى",
+          "t": "à"
+        },
+        {
+          "w": "العمل",
+          "t": "le travail"
+        },
+        {
+          "w": "كل",
+          "t": "chaque"
+        },
+        {
+          "w": "يوم",
+          "t": "jour"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -106648,8 +106669,21 @@
       "translation_fr": "bureau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "المكتب كبير وواسع",
+      "example_gloss": [
+        {
+          "w": "المكتب",
+          "t": "le bureau"
+        },
+        {
+          "w": "كبير",
+          "t": "grand"
+        },
+        {
+          "w": "وواسع",
+          "t": "et spacieux"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -106659,8 +106693,25 @@
       "translation_fr": "patron/chef",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "الرئيس في الاجتماع الآن",
+      "example_gloss": [
+        {
+          "w": "الرئيس",
+          "t": "le chef"
+        },
+        {
+          "w": "في",
+          "t": "dans"
+        },
+        {
+          "w": "الاجتماع",
+          "t": "la réunion"
+        },
+        {
+          "w": "الآن",
+          "t": "maintenant"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -106670,8 +106721,29 @@
       "translation_fr": "réunion",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "لدينا اجتماع في الساعة الثالثة",
+      "example_gloss": [
+        {
+          "w": "لدينا",
+          "t": "nous avons"
+        },
+        {
+          "w": "اجتماع",
+          "t": "une réunion"
+        },
+        {
+          "w": "في",
+          "t": "à"
+        },
+        {
+          "w": "الساعة",
+          "t": "l'heure"
+        },
+        {
+          "w": "الثالثة",
+          "t": "trois"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -106681,8 +106753,21 @@
       "translation_fr": "contrat",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "وقّعتُ العقد أمس",
+      "example_gloss": [
+        {
+          "w": "وقّعتُ",
+          "t": "j'ai signé"
+        },
+        {
+          "w": "العقد",
+          "t": "le contrat"
+        },
+        {
+          "w": "أمس",
+          "t": "hier"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -106692,8 +106777,29 @@
       "translation_fr": "salaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أحصل على راتبي كل شهر",
+      "example_gloss": [
+        {
+          "w": "أحصل",
+          "t": "je reçois"
+        },
+        {
+          "w": "على",
+          "t": "sur"
+        },
+        {
+          "w": "راتبي",
+          "t": "mon salaire"
+        },
+        {
+          "w": "كل",
+          "t": "chaque"
+        },
+        {
+          "w": "شهر",
+          "t": "mois"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -106703,8 +106809,25 @@
       "translation_fr": "entreprise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أعمل في شركة كبيرة",
+      "example_gloss": [
+        {
+          "w": "أعمل",
+          "t": "je travaille"
+        },
+        {
+          "w": "في",
+          "t": "dans"
+        },
+        {
+          "w": "شركة",
+          "t": "une entreprise"
+        },
+        {
+          "w": "كبيرة",
+          "t": "grande"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -106714,8 +106837,21 @@
       "translation_fr": "collègue",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "زميلي لطيف جداً",
+      "example_gloss": [
+        {
+          "w": "زميلي",
+          "t": "mon collègue"
+        },
+        {
+          "w": "لطيف",
+          "t": "gentil"
+        },
+        {
+          "w": "جداً",
+          "t": "très"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -106725,8 +106861,37 @@
       "translation_fr": "travail",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं हर दिन काम पर जाता हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "हर",
+          "t": "chaque"
+        },
+        {
+          "w": "दिन",
+          "t": "jour"
+        },
+        {
+          "w": "काम",
+          "t": "travail"
+        },
+        {
+          "w": "पर",
+          "t": "à"
+        },
+        {
+          "w": "जाता",
+          "t": "vais"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -106736,8 +106901,21 @@
       "translation_fr": "bureau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "कार्यालय बड़ा है",
+      "example_gloss": [
+        {
+          "w": "कार्यालय",
+          "t": "le bureau"
+        },
+        {
+          "w": "बड़ा",
+          "t": "grand"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -106747,8 +106925,25 @@
       "translation_fr": "patron/chef",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "बॉस बैठक में है",
+      "example_gloss": [
+        {
+          "w": "बॉस",
+          "t": "le chef"
+        },
+        {
+          "w": "बैठक",
+          "t": "la réunion"
+        },
+        {
+          "w": "में",
+          "t": "dans"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -106758,8 +106953,29 @@
       "translation_fr": "réunion",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "हमारी बैठक तीन बजे है",
+      "example_gloss": [
+        {
+          "w": "हमारी",
+          "t": "notre"
+        },
+        {
+          "w": "बैठक",
+          "t": "réunion"
+        },
+        {
+          "w": "तीन",
+          "t": "trois"
+        },
+        {
+          "w": "बजे",
+          "t": "heures"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -106769,8 +106985,29 @@
       "translation_fr": "contrat",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैंने अनुबंध पर हस्ताक्षर किए",
+      "example_gloss": [
+        {
+          "w": "मैंने",
+          "t": "j'ai"
+        },
+        {
+          "w": "अनुबंध",
+          "t": "le contrat"
+        },
+        {
+          "w": "पर",
+          "t": "sur"
+        },
+        {
+          "w": "हस्ताक्षर",
+          "t": "signé"
+        },
+        {
+          "w": "किए",
+          "t": "fait"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -106780,8 +107017,33 @@
       "translation_fr": "salaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मुझे हर महीने वेतन मिलता है",
+      "example_gloss": [
+        {
+          "w": "मुझे",
+          "t": "je"
+        },
+        {
+          "w": "हर",
+          "t": "chaque"
+        },
+        {
+          "w": "महीने",
+          "t": "mois"
+        },
+        {
+          "w": "वेतन",
+          "t": "salaire"
+        },
+        {
+          "w": "मिलता",
+          "t": "reçois"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -106791,8 +107053,41 @@
       "translation_fr": "entreprise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं एक बड़ी कंपनी में काम करता हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "एक",
+          "t": "une"
+        },
+        {
+          "w": "बड़ी",
+          "t": "grande"
+        },
+        {
+          "w": "कंपनी",
+          "t": "entreprise"
+        },
+        {
+          "w": "में",
+          "t": "dans"
+        },
+        {
+          "w": "काम",
+          "t": "travaille"
+        },
+        {
+          "w": "करता",
+          "t": "fais"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -106802,8 +107097,29 @@
       "translation_fr": "collègue",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मेरा सहकर्मी बहुत अच्छा है",
+      "example_gloss": [
+        {
+          "w": "मेरा",
+          "t": "mon"
+        },
+        {
+          "w": "सहकर्मी",
+          "t": "collègue"
+        },
+        {
+          "w": "बहुत",
+          "t": "très"
+        },
+        {
+          "w": "अच्छा",
+          "t": "gentil"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -108969,8 +109285,25 @@
       "translation_fr": "école",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أذهب إلى المدرسة صباحاً",
+      "example_gloss": [
+        {
+          "w": "أذهب",
+          "t": "je vais"
+        },
+        {
+          "w": "إلى",
+          "t": "à"
+        },
+        {
+          "w": "المدرسة",
+          "t": "l'école"
+        },
+        {
+          "w": "صباحاً",
+          "t": "le matin"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -108980,8 +109313,21 @@
       "translation_fr": "livre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أقرأ كتاباً ممتعاً",
+      "example_gloss": [
+        {
+          "w": "أقرأ",
+          "t": "je lis"
+        },
+        {
+          "w": "كتاباً",
+          "t": "un livre"
+        },
+        {
+          "w": "ممتعاً",
+          "t": "intéressant"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -108991,8 +109337,25 @@
       "translation_fr": "crayon",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أحتاج قلم رصاص للكتابة",
+      "example_gloss": [
+        {
+          "w": "أحتاج",
+          "t": "j'ai besoin de"
+        },
+        {
+          "w": "قلم",
+          "t": "un crayon"
+        },
+        {
+          "w": "رصاص",
+          "t": "à papier"
+        },
+        {
+          "w": "للكتابة",
+          "t": "pour écrire"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -109002,8 +109365,21 @@
       "translation_fr": "cahier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "كتبتُ في الكراسة",
+      "example_gloss": [
+        {
+          "w": "كتبتُ",
+          "t": "j'ai écrit"
+        },
+        {
+          "w": "في",
+          "t": "dans"
+        },
+        {
+          "w": "الكراسة",
+          "t": "le cahier"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -109013,8 +109389,21 @@
       "translation_fr": "professeur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "المعلم يشرح الدرس",
+      "example_gloss": [
+        {
+          "w": "المعلم",
+          "t": "le professeur"
+        },
+        {
+          "w": "يشرح",
+          "t": "explique"
+        },
+        {
+          "w": "الدرس",
+          "t": "la leçon"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -109024,8 +109413,21 @@
       "translation_fr": "examen",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "الامتحان غداً صباحاً",
+      "example_gloss": [
+        {
+          "w": "الامتحان",
+          "t": "l'examen"
+        },
+        {
+          "w": "غداً",
+          "t": "demain"
+        },
+        {
+          "w": "صباحاً",
+          "t": "matin"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -109035,8 +109437,21 @@
       "translation_fr": "devoirs",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أنهيتُ الواجب المنزلي",
+      "example_gloss": [
+        {
+          "w": "أنهيتُ",
+          "t": "j'ai terminé"
+        },
+        {
+          "w": "الواجب",
+          "t": "les devoirs"
+        },
+        {
+          "w": "المنزلي",
+          "t": "de maison"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -109046,8 +109461,21 @@
       "translation_fr": "bibliothèque",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "المكتبة مليئة بالكتب",
+      "example_gloss": [
+        {
+          "w": "المكتبة",
+          "t": "la bibliothèque"
+        },
+        {
+          "w": "مليئة",
+          "t": "pleine"
+        },
+        {
+          "w": "بالكتب",
+          "t": "de livres"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -109057,8 +109485,29 @@
       "translation_fr": "école",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं सुबह स्कूल जाता हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "सुबह",
+          "t": "le matin"
+        },
+        {
+          "w": "स्कूल",
+          "t": "école"
+        },
+        {
+          "w": "जाता",
+          "t": "vais"
+        },
+        {
+          "w": "हूँ",
+          "t": "à"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -109068,8 +109517,33 @@
       "translation_fr": "livre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं एक किताब पढ़ रहा हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "एक",
+          "t": "un"
+        },
+        {
+          "w": "किताब",
+          "t": "livre"
+        },
+        {
+          "w": "पढ़",
+          "t": "lis"
+        },
+        {
+          "w": "रहा",
+          "t": "en train de"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -109079,8 +109553,33 @@
       "translation_fr": "crayon",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मुझे लिखने के लिए पेंसिल चाहिए",
+      "example_gloss": [
+        {
+          "w": "मुझे",
+          "t": "j'ai besoin"
+        },
+        {
+          "w": "लिखने",
+          "t": "écrire"
+        },
+        {
+          "w": "के",
+          "t": "de"
+        },
+        {
+          "w": "लिए",
+          "t": "pour"
+        },
+        {
+          "w": "पेंसिल",
+          "t": "un crayon"
+        },
+        {
+          "w": "चाहिए",
+          "t": "il faut"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -109090,8 +109589,25 @@
       "translation_fr": "cahier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैंने कॉपी में लिखा",
+      "example_gloss": [
+        {
+          "w": "मैंने",
+          "t": "j'ai"
+        },
+        {
+          "w": "कॉपी",
+          "t": "le cahier"
+        },
+        {
+          "w": "में",
+          "t": "dans"
+        },
+        {
+          "w": "लिखा",
+          "t": "écrit"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -109101,8 +109617,25 @@
       "translation_fr": "professeur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "शिक्षक पाठ समझाते हैं",
+      "example_gloss": [
+        {
+          "w": "शिक्षक",
+          "t": "le professeur"
+        },
+        {
+          "w": "पाठ",
+          "t": "la leçon"
+        },
+        {
+          "w": "समझाते",
+          "t": "explique"
+        },
+        {
+          "w": "हैं",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -109112,8 +109645,25 @@
       "translation_fr": "examen",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "कल सुबह परीक्षा है",
+      "example_gloss": [
+        {
+          "w": "कल",
+          "t": "demain"
+        },
+        {
+          "w": "सुबह",
+          "t": "matin"
+        },
+        {
+          "w": "परीक्षा",
+          "t": "examen"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -109123,8 +109673,25 @@
       "translation_fr": "devoirs",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैंने गृहकार्य पूरा किया",
+      "example_gloss": [
+        {
+          "w": "मैंने",
+          "t": "j'ai"
+        },
+        {
+          "w": "गृहकार्य",
+          "t": "les devoirs"
+        },
+        {
+          "w": "पूरा",
+          "t": "terminé"
+        },
+        {
+          "w": "किया",
+          "t": "fait"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -109134,8 +109701,29 @@
       "translation_fr": "bibliothèque",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "पुस्तकालय किताबों से भरा है",
+      "example_gloss": [
+        {
+          "w": "पुस्तकालय",
+          "t": "la bibliothèque"
+        },
+        {
+          "w": "किताबों",
+          "t": "de livres"
+        },
+        {
+          "w": "से",
+          "t": "de"
+        },
+        {
+          "w": "भरा",
+          "t": "pleine"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -111361,8 +111949,25 @@
       "translation_fr": "magasin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "المتجر مفتوح حتى العاشرة",
+      "example_gloss": [
+        {
+          "w": "المتجر",
+          "t": "le magasin"
+        },
+        {
+          "w": "مفتوح",
+          "t": "ouvert"
+        },
+        {
+          "w": "حتى",
+          "t": "jusqu'à"
+        },
+        {
+          "w": "العاشرة",
+          "t": "dix heures"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -111372,8 +111977,25 @@
       "translation_fr": "prix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "ما سعر هذا القميص؟",
+      "example_gloss": [
+        {
+          "w": "ما",
+          "t": "quel"
+        },
+        {
+          "w": "سعر",
+          "t": "prix"
+        },
+        {
+          "w": "هذا",
+          "t": "de cette"
+        },
+        {
+          "w": "القميص",
+          "t": "chemise"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -111383,8 +112005,25 @@
       "translation_fr": "cher",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "هذا الحذاء غالي جداً",
+      "example_gloss": [
+        {
+          "w": "هذا",
+          "t": "cette"
+        },
+        {
+          "w": "الحذاء",
+          "t": "chaussure"
+        },
+        {
+          "w": "غالي",
+          "t": "cher"
+        },
+        {
+          "w": "جداً",
+          "t": "très"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -111394,8 +112033,21 @@
       "translation_fr": "pas cher",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "هذا الكتاب رخيص",
+      "example_gloss": [
+        {
+          "w": "هذا",
+          "t": "ce"
+        },
+        {
+          "w": "الكتاب",
+          "t": "livre"
+        },
+        {
+          "w": "رخيص",
+          "t": "pas cher"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -111405,8 +112057,25 @@
       "translation_fr": "réduction",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "هناك خصم كبير اليوم",
+      "example_gloss": [
+        {
+          "w": "هناك",
+          "t": "il y a"
+        },
+        {
+          "w": "خصم",
+          "t": "une réduction"
+        },
+        {
+          "w": "كبير",
+          "t": "grande"
+        },
+        {
+          "w": "اليوم",
+          "t": "aujourd'hui"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -111416,8 +112085,21 @@
       "translation_fr": "caisse",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "ادفع عند الصندوق",
+      "example_gloss": [
+        {
+          "w": "ادفع",
+          "t": "paye"
+        },
+        {
+          "w": "عند",
+          "t": "à"
+        },
+        {
+          "w": "الصندوق",
+          "t": "la caisse"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -111427,8 +112109,21 @@
       "translation_fr": "carte bancaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "هل تقبلون البطاقة؟",
+      "example_gloss": [
+        {
+          "w": "هل",
+          "t": "est-ce que"
+        },
+        {
+          "w": "تقبلون",
+          "t": "vous acceptez"
+        },
+        {
+          "w": "البطاقة",
+          "t": "la carte"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -111438,8 +112133,25 @@
       "translation_fr": "reçu",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أريد الفاتورة من فضلك",
+      "example_gloss": [
+        {
+          "w": "أريد",
+          "t": "je veux"
+        },
+        {
+          "w": "الفاتورة",
+          "t": "le reçu"
+        },
+        {
+          "w": "من",
+          "t": "s'il"
+        },
+        {
+          "w": "فضلك",
+          "t": "vous plaît"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -111449,8 +112161,33 @@
       "translation_fr": "magasin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "दुकान दस बजे तक खुली है",
+      "example_gloss": [
+        {
+          "w": "दुकान",
+          "t": "le magasin"
+        },
+        {
+          "w": "दस",
+          "t": "dix"
+        },
+        {
+          "w": "बजे",
+          "t": "heures"
+        },
+        {
+          "w": "तक",
+          "t": "jusqu'à"
+        },
+        {
+          "w": "खुली",
+          "t": "ouvert"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -111460,8 +112197,33 @@
       "translation_fr": "prix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "इस कमीज की कीमत क्या है?",
+      "example_gloss": [
+        {
+          "w": "इस",
+          "t": "de cette"
+        },
+        {
+          "w": "कमीज",
+          "t": "chemise"
+        },
+        {
+          "w": "की",
+          "t": "de"
+        },
+        {
+          "w": "कीमत",
+          "t": "prix"
+        },
+        {
+          "w": "क्या",
+          "t": "quel"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -111471,8 +112233,29 @@
       "translation_fr": "cher",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "यह जूता बहुत महंगा है",
+      "example_gloss": [
+        {
+          "w": "यह",
+          "t": "cette"
+        },
+        {
+          "w": "जूता",
+          "t": "chaussure"
+        },
+        {
+          "w": "बहुत",
+          "t": "très"
+        },
+        {
+          "w": "महंगा",
+          "t": "cher"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -111482,8 +112265,25 @@
       "translation_fr": "pas cher",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "यह किताब सस्ती है",
+      "example_gloss": [
+        {
+          "w": "यह",
+          "t": "ce"
+        },
+        {
+          "w": "किताब",
+          "t": "livre"
+        },
+        {
+          "w": "सस्ती",
+          "t": "pas cher"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -111493,8 +112293,25 @@
       "translation_fr": "réduction",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "आज बड़ी छूट है",
+      "example_gloss": [
+        {
+          "w": "आज",
+          "t": "aujourd'hui"
+        },
+        {
+          "w": "बड़ी",
+          "t": "grande"
+        },
+        {
+          "w": "छूट",
+          "t": "réduction"
+        },
+        {
+          "w": "है",
+          "t": "il y a"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -111504,8 +112321,25 @@
       "translation_fr": "caisse",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "काउंटर पर भुगतान करें",
+      "example_gloss": [
+        {
+          "w": "काउंटर",
+          "t": "la caisse"
+        },
+        {
+          "w": "पर",
+          "t": "à"
+        },
+        {
+          "w": "भुगतान",
+          "t": "paiement"
+        },
+        {
+          "w": "करें",
+          "t": "faites"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -111515,8 +112349,33 @@
       "translation_fr": "carte bancaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "क्या आप कार्ड स्वीकार करते हैं?",
+      "example_gloss": [
+        {
+          "w": "क्या",
+          "t": "est-ce que"
+        },
+        {
+          "w": "आप",
+          "t": "vous"
+        },
+        {
+          "w": "कार्ड",
+          "t": "la carte"
+        },
+        {
+          "w": "स्वीकार",
+          "t": "acceptez"
+        },
+        {
+          "w": "करते",
+          "t": "faites"
+        },
+        {
+          "w": "हैं",
+          "t": "êtes"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -111526,8 +112385,25 @@
       "translation_fr": "reçu",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "कृपया मुझे रसीद दें",
+      "example_gloss": [
+        {
+          "w": "कृपया",
+          "t": "s'il vous plaît"
+        },
+        {
+          "w": "मुझे",
+          "t": "me"
+        },
+        {
+          "w": "रसीद",
+          "t": "le reçu"
+        },
+        {
+          "w": "दें",
+          "t": "donnez"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -113729,8 +114605,25 @@
       "translation_fr": "médecin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "ذهبتُ إلى الطبيب أمس",
+      "example_gloss": [
+        {
+          "w": "ذهبتُ",
+          "t": "je suis allé"
+        },
+        {
+          "w": "إلى",
+          "t": "chez"
+        },
+        {
+          "w": "الطبيب",
+          "t": "le médecin"
+        },
+        {
+          "w": "أمس",
+          "t": "hier"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -113740,8 +114633,25 @@
       "translation_fr": "hôpital",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "المستشفى قريب من هنا",
+      "example_gloss": [
+        {
+          "w": "المستشفى",
+          "t": "l'hôpital"
+        },
+        {
+          "w": "قريب",
+          "t": "proche"
+        },
+        {
+          "w": "من",
+          "t": "d'"
+        },
+        {
+          "w": "هنا",
+          "t": "ici"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -113751,8 +114661,25 @@
       "translation_fr": "douleur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أشعر بألم في رأسي",
+      "example_gloss": [
+        {
+          "w": "أشعر",
+          "t": "je ressens"
+        },
+        {
+          "w": "بألم",
+          "t": "une douleur"
+        },
+        {
+          "w": "في",
+          "t": "dans"
+        },
+        {
+          "w": "رأسي",
+          "t": "ma tête"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -113762,8 +114689,25 @@
       "translation_fr": "fièvre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "لديّ حمى منذ أمس",
+      "example_gloss": [
+        {
+          "w": "لديّ",
+          "t": "j'ai"
+        },
+        {
+          "w": "حمى",
+          "t": "de la fièvre"
+        },
+        {
+          "w": "منذ",
+          "t": "depuis"
+        },
+        {
+          "w": "أمس",
+          "t": "hier"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -113773,8 +114717,25 @@
       "translation_fr": "médicament",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أتناول الدواء ثلاث مرات",
+      "example_gloss": [
+        {
+          "w": "أتناول",
+          "t": "je prends"
+        },
+        {
+          "w": "الدواء",
+          "t": "le médicament"
+        },
+        {
+          "w": "ثلاث",
+          "t": "trois"
+        },
+        {
+          "w": "مرات",
+          "t": "fois"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -113784,8 +114745,29 @@
       "translation_fr": "comprimé",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "خذ حبة واحدة بعد الأكل",
+      "example_gloss": [
+        {
+          "w": "خذ",
+          "t": "prends"
+        },
+        {
+          "w": "حبة",
+          "t": "un comprimé"
+        },
+        {
+          "w": "واحدة",
+          "t": "un"
+        },
+        {
+          "w": "بعد",
+          "t": "après"
+        },
+        {
+          "w": "الأكل",
+          "t": "le repas"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -113795,8 +114777,25 @@
       "translation_fr": "allergie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "لديّ حساسية من الغبار",
+      "example_gloss": [
+        {
+          "w": "لديّ",
+          "t": "j'ai"
+        },
+        {
+          "w": "حساسية",
+          "t": "une allergie"
+        },
+        {
+          "w": "من",
+          "t": "à"
+        },
+        {
+          "w": "الغبار",
+          "t": "la poussière"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -113806,8 +114805,25 @@
       "translation_fr": "ordonnance",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "الطبيب كتب لي وصفة",
+      "example_gloss": [
+        {
+          "w": "الطبيب",
+          "t": "le médecin"
+        },
+        {
+          "w": "كتب",
+          "t": "a écrit"
+        },
+        {
+          "w": "لي",
+          "t": "pour moi"
+        },
+        {
+          "w": "وصفة",
+          "t": "une ordonnance"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -113817,8 +114833,33 @@
       "translation_fr": "médecin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं कल डॉक्टर के पास गया",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "कल",
+          "t": "hier"
+        },
+        {
+          "w": "डॉक्टर",
+          "t": "médecin"
+        },
+        {
+          "w": "के",
+          "t": "chez"
+        },
+        {
+          "w": "पास",
+          "t": "le"
+        },
+        {
+          "w": "गया",
+          "t": "suis allé"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -113828,8 +114869,29 @@
       "translation_fr": "hôpital",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "अस्पताल यहाँ से पास है",
+      "example_gloss": [
+        {
+          "w": "अस्पताल",
+          "t": "l'hôpital"
+        },
+        {
+          "w": "यहाँ",
+          "t": "ici"
+        },
+        {
+          "w": "से",
+          "t": "d'"
+        },
+        {
+          "w": "पास",
+          "t": "proche"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -113839,8 +114901,29 @@
       "translation_fr": "douleur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मुझे सिर में दर्द है",
+      "example_gloss": [
+        {
+          "w": "मुझे",
+          "t": "j'ai"
+        },
+        {
+          "w": "सिर",
+          "t": "la tête"
+        },
+        {
+          "w": "में",
+          "t": "dans"
+        },
+        {
+          "w": "दर्द",
+          "t": "douleur"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -113850,8 +114933,29 @@
       "translation_fr": "fièvre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मुझे कल से बुखार है",
+      "example_gloss": [
+        {
+          "w": "मुझे",
+          "t": "j'ai"
+        },
+        {
+          "w": "कल",
+          "t": "hier"
+        },
+        {
+          "w": "से",
+          "t": "depuis"
+        },
+        {
+          "w": "बुखार",
+          "t": "de la fièvre"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -113861,8 +114965,41 @@
       "translation_fr": "médicament",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं दिन में तीन बार दवाई लेता हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "दिन",
+          "t": "jour"
+        },
+        {
+          "w": "में",
+          "t": "par"
+        },
+        {
+          "w": "तीन",
+          "t": "trois"
+        },
+        {
+          "w": "बार",
+          "t": "fois"
+        },
+        {
+          "w": "दवाई",
+          "t": "médicament"
+        },
+        {
+          "w": "लेता",
+          "t": "prends"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -113872,8 +115009,33 @@
       "translation_fr": "comprimé",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "खाने के बाद एक गोली लो",
+      "example_gloss": [
+        {
+          "w": "खाने",
+          "t": "le repas"
+        },
+        {
+          "w": "के",
+          "t": "de"
+        },
+        {
+          "w": "बाद",
+          "t": "après"
+        },
+        {
+          "w": "एक",
+          "t": "un"
+        },
+        {
+          "w": "गोली",
+          "t": "comprimé"
+        },
+        {
+          "w": "लो",
+          "t": "prends"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -113883,8 +115045,29 @@
       "translation_fr": "allergie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मुझे धूल से एलर्जी है",
+      "example_gloss": [
+        {
+          "w": "मुझे",
+          "t": "j'ai"
+        },
+        {
+          "w": "धूल",
+          "t": "la poussière"
+        },
+        {
+          "w": "से",
+          "t": "à"
+        },
+        {
+          "w": "एलर्जी",
+          "t": "une allergie"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -113894,8 +115077,29 @@
       "translation_fr": "ordonnance",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "डॉक्टर ने मुझे नुस्खा दिया",
+      "example_gloss": [
+        {
+          "w": "डॉक्टर",
+          "t": "le médecin"
+        },
+        {
+          "w": "ने",
+          "t": "a"
+        },
+        {
+          "w": "मुझे",
+          "t": "me"
+        },
+        {
+          "w": "नुस्खा",
+          "t": "une ordonnance"
+        },
+        {
+          "w": "दिया",
+          "t": "donné"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -116025,8 +117229,17 @@
       "translation_fr": "téléphone",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "هاتفي جديد",
+      "example_gloss": [
+        {
+          "w": "هاتفي",
+          "t": "mon téléphone"
+        },
+        {
+          "w": "جديد",
+          "t": "nouveau"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -116036,8 +117249,25 @@
       "translation_fr": "ordinateur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أستخدم الحاسوب كل يوم",
+      "example_gloss": [
+        {
+          "w": "أستخدم",
+          "t": "j'utilise"
+        },
+        {
+          "w": "الحاسوب",
+          "t": "l'ordinateur"
+        },
+        {
+          "w": "كل",
+          "t": "chaque"
+        },
+        {
+          "w": "يوم",
+          "t": "jour"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -116047,8 +117277,21 @@
       "translation_fr": "internet",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "الإنترنت بطيء اليوم",
+      "example_gloss": [
+        {
+          "w": "الإنترنت",
+          "t": "l'internet"
+        },
+        {
+          "w": "بطيء",
+          "t": "lent"
+        },
+        {
+          "w": "اليوم",
+          "t": "aujourd'hui"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -116058,8 +117301,21 @@
       "translation_fr": "mot de passe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "نسيتُ كلمة المرور",
+      "example_gloss": [
+        {
+          "w": "نسيتُ",
+          "t": "j'ai oublié"
+        },
+        {
+          "w": "كلمة",
+          "t": "le mot"
+        },
+        {
+          "w": "المرور",
+          "t": "de passe"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -116069,8 +117325,21 @@
       "translation_fr": "email",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أرسلتُ بريداً إلكترونياً",
+      "example_gloss": [
+        {
+          "w": "أرسلتُ",
+          "t": "j'ai envoyé"
+        },
+        {
+          "w": "بريداً",
+          "t": "un email"
+        },
+        {
+          "w": "إلكترونياً",
+          "t": "électronique"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -116080,8 +117349,21 @@
       "translation_fr": "écran",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "الشاشة كبيرة جداً",
+      "example_gloss": [
+        {
+          "w": "الشاشة",
+          "t": "l'écran"
+        },
+        {
+          "w": "كبيرة",
+          "t": "grand"
+        },
+        {
+          "w": "جداً",
+          "t": "très"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -116091,8 +117373,21 @@
       "translation_fr": "clavier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "لوحة المفاتيح جديدة",
+      "example_gloss": [
+        {
+          "w": "لوحة",
+          "t": "le clavier"
+        },
+        {
+          "w": "المفاتيح",
+          "t": "de touches"
+        },
+        {
+          "w": "جديدة",
+          "t": "nouveau"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -116102,8 +117397,25 @@
       "translation_fr": "application",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "هذا التطبيق مفيد جداً",
+      "example_gloss": [
+        {
+          "w": "هذا",
+          "t": "cette"
+        },
+        {
+          "w": "التطبيق",
+          "t": "application"
+        },
+        {
+          "w": "مفيد",
+          "t": "utile"
+        },
+        {
+          "w": "جداً",
+          "t": "très"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -116113,8 +117425,25 @@
       "translation_fr": "téléphone",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मेरा फ़ोन नया है",
+      "example_gloss": [
+        {
+          "w": "मेरा",
+          "t": "mon"
+        },
+        {
+          "w": "फ़ोन",
+          "t": "téléphone"
+        },
+        {
+          "w": "नया",
+          "t": "nouveau"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -116124,8 +117453,37 @@
       "translation_fr": "ordinateur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं हर दिन कंप्यूटर इस्तेमाल करता हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "हर",
+          "t": "chaque"
+        },
+        {
+          "w": "दिन",
+          "t": "jour"
+        },
+        {
+          "w": "कंप्यूटर",
+          "t": "l'ordinateur"
+        },
+        {
+          "w": "इस्तेमाल",
+          "t": "utilise"
+        },
+        {
+          "w": "करता",
+          "t": "fais"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -116135,8 +117493,25 @@
       "translation_fr": "internet",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "आज इंटरनेट धीमा है",
+      "example_gloss": [
+        {
+          "w": "आज",
+          "t": "aujourd'hui"
+        },
+        {
+          "w": "इंटरनेट",
+          "t": "l'internet"
+        },
+        {
+          "w": "धीमा",
+          "t": "lent"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -116146,8 +117521,25 @@
       "translation_fr": "mot de passe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं पासवर्ड भूल गया",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "j'ai"
+        },
+        {
+          "w": "पासवर्ड",
+          "t": "le mot de passe"
+        },
+        {
+          "w": "भूल",
+          "t": "oublié"
+        },
+        {
+          "w": "गया",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -116157,8 +117549,25 @@
       "translation_fr": "email",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैंने एक ईमेल भेजा",
+      "example_gloss": [
+        {
+          "w": "मैंने",
+          "t": "j'ai"
+        },
+        {
+          "w": "एक",
+          "t": "un"
+        },
+        {
+          "w": "ईमेल",
+          "t": "email"
+        },
+        {
+          "w": "भेजा",
+          "t": "envoyé"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -116168,8 +117577,25 @@
       "translation_fr": "écran",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "स्क्रीन बहुत बड़ी है",
+      "example_gloss": [
+        {
+          "w": "स्क्रीन",
+          "t": "l'écran"
+        },
+        {
+          "w": "बहुत",
+          "t": "très"
+        },
+        {
+          "w": "बड़ी",
+          "t": "grand"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -116179,8 +117605,21 @@
       "translation_fr": "clavier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "कीबोर्ड नया है",
+      "example_gloss": [
+        {
+          "w": "कीबोर्ड",
+          "t": "le clavier"
+        },
+        {
+          "w": "नया",
+          "t": "nouveau"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -116190,8 +117629,29 @@
       "translation_fr": "application",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "यह ऐप बहुत उपयोगी है",
+      "example_gloss": [
+        {
+          "w": "यह",
+          "t": "cette"
+        },
+        {
+          "w": "ऐप",
+          "t": "application"
+        },
+        {
+          "w": "बहुत",
+          "t": "très"
+        },
+        {
+          "w": "उपयोगी",
+          "t": "utile"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -118401,8 +119861,21 @@
       "translation_fr": "arbre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "الشجرة كبيرة وجميلة",
+      "example_gloss": [
+        {
+          "w": "الشجرة",
+          "t": "l'arbre"
+        },
+        {
+          "w": "كبيرة",
+          "t": "grand"
+        },
+        {
+          "w": "وجميلة",
+          "t": "et beau"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -118412,8 +119885,21 @@
       "translation_fr": "fleur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "هذه الزهرة حمراء",
+      "example_gloss": [
+        {
+          "w": "هذه",
+          "t": "cette"
+        },
+        {
+          "w": "الزهرة",
+          "t": "fleur"
+        },
+        {
+          "w": "حمراء",
+          "t": "rouge"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -118423,8 +119909,21 @@
       "translation_fr": "rivière",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "النهر طويل وعميق",
+      "example_gloss": [
+        {
+          "w": "النهر",
+          "t": "la rivière"
+        },
+        {
+          "w": "طويل",
+          "t": "long"
+        },
+        {
+          "w": "وعميق",
+          "t": "et profond"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -118434,8 +119933,21 @@
       "translation_fr": "montagne",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "الجبل مغطّى بالثلج",
+      "example_gloss": [
+        {
+          "w": "الجبل",
+          "t": "la montagne"
+        },
+        {
+          "w": "مغطّى",
+          "t": "couverte"
+        },
+        {
+          "w": "بالثلج",
+          "t": "de neige"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -118445,8 +119957,25 @@
       "translation_fr": "mer",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أحب السباحة في البحر",
+      "example_gloss": [
+        {
+          "w": "أحب",
+          "t": "j'aime"
+        },
+        {
+          "w": "السباحة",
+          "t": "nager"
+        },
+        {
+          "w": "في",
+          "t": "dans"
+        },
+        {
+          "w": "البحر",
+          "t": "la mer"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -118456,8 +119985,21 @@
       "translation_fr": "forêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "مشينا في الغابة",
+      "example_gloss": [
+        {
+          "w": "مشينا",
+          "t": "nous avons marché"
+        },
+        {
+          "w": "في",
+          "t": "dans"
+        },
+        {
+          "w": "الغابة",
+          "t": "la forêt"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -118467,8 +120009,21 @@
       "translation_fr": "pierre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "وجدتُ حجراً جميلاً",
+      "example_gloss": [
+        {
+          "w": "وجدتُ",
+          "t": "j'ai trouvé"
+        },
+        {
+          "w": "حجراً",
+          "t": "une pierre"
+        },
+        {
+          "w": "جميلاً",
+          "t": "belle"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -118478,8 +120033,25 @@
       "translation_fr": "terre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "الأرض رطبة بعد المطر",
+      "example_gloss": [
+        {
+          "w": "الأرض",
+          "t": "la terre"
+        },
+        {
+          "w": "رطبة",
+          "t": "humide"
+        },
+        {
+          "w": "بعد",
+          "t": "après"
+        },
+        {
+          "w": "المطر",
+          "t": "la pluie"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -118489,8 +120061,29 @@
       "translation_fr": "arbre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "पेड़ बड़ा और सुंदर है",
+      "example_gloss": [
+        {
+          "w": "पेड़",
+          "t": "l'arbre"
+        },
+        {
+          "w": "बड़ा",
+          "t": "grand"
+        },
+        {
+          "w": "और",
+          "t": "et"
+        },
+        {
+          "w": "सुंदर",
+          "t": "beau"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -118500,8 +120093,25 @@
       "translation_fr": "fleur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "यह फूल लाल है",
+      "example_gloss": [
+        {
+          "w": "यह",
+          "t": "cette"
+        },
+        {
+          "w": "फूल",
+          "t": "fleur"
+        },
+        {
+          "w": "लाल",
+          "t": "rouge"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -118511,8 +120121,29 @@
       "translation_fr": "rivière",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "नदी लंबी और गहरी है",
+      "example_gloss": [
+        {
+          "w": "नदी",
+          "t": "la rivière"
+        },
+        {
+          "w": "लंबी",
+          "t": "longue"
+        },
+        {
+          "w": "और",
+          "t": "et"
+        },
+        {
+          "w": "गहरी",
+          "t": "profonde"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -118522,8 +120153,29 @@
       "translation_fr": "montagne",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "पहाड़ बर्फ से ढका है",
+      "example_gloss": [
+        {
+          "w": "पहाड़",
+          "t": "la montagne"
+        },
+        {
+          "w": "बर्फ",
+          "t": "neige"
+        },
+        {
+          "w": "से",
+          "t": "de"
+        },
+        {
+          "w": "ढका",
+          "t": "couverte"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -118533,8 +120185,33 @@
       "translation_fr": "mer",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मुझे समुद्र में तैरना पसंद है",
+      "example_gloss": [
+        {
+          "w": "मुझे",
+          "t": "j'aime"
+        },
+        {
+          "w": "समुद्र",
+          "t": "la mer"
+        },
+        {
+          "w": "में",
+          "t": "dans"
+        },
+        {
+          "w": "तैरना",
+          "t": "nager"
+        },
+        {
+          "w": "पसंद",
+          "t": "aimer"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -118544,8 +120221,25 @@
       "translation_fr": "forêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "हम जंगल में टहले",
+      "example_gloss": [
+        {
+          "w": "हम",
+          "t": "nous"
+        },
+        {
+          "w": "जंगल",
+          "t": "la forêt"
+        },
+        {
+          "w": "में",
+          "t": "dans"
+        },
+        {
+          "w": "टहले",
+          "t": "avons marché"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -118555,8 +120249,29 @@
       "translation_fr": "pierre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मुझे एक सुंदर पत्थर मिला",
+      "example_gloss": [
+        {
+          "w": "मुझे",
+          "t": "j'ai"
+        },
+        {
+          "w": "एक",
+          "t": "une"
+        },
+        {
+          "w": "सुंदर",
+          "t": "belle"
+        },
+        {
+          "w": "पत्थर",
+          "t": "pierre"
+        },
+        {
+          "w": "मिला",
+          "t": "trouvé"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -118566,8 +120281,33 @@
       "translation_fr": "terre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "बारिश के बाद धरती गीली है",
+      "example_gloss": [
+        {
+          "w": "बारिश",
+          "t": "la pluie"
+        },
+        {
+          "w": "के",
+          "t": "de"
+        },
+        {
+          "w": "बाद",
+          "t": "après"
+        },
+        {
+          "w": "धरती",
+          "t": "la terre"
+        },
+        {
+          "w": "गीली",
+          "t": "humide"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -120661,8 +122401,21 @@
       "translation_fr": "heureux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أنا سعيد اليوم",
+      "example_gloss": [
+        {
+          "w": "أنا",
+          "t": "je suis"
+        },
+        {
+          "w": "سعيد",
+          "t": "heureux"
+        },
+        {
+          "w": "اليوم",
+          "t": "aujourd'hui"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -120672,8 +122425,25 @@
       "translation_fr": "triste",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "هو حزين لأنه وحيد",
+      "example_gloss": [
+        {
+          "w": "هو",
+          "t": "il est"
+        },
+        {
+          "w": "حزين",
+          "t": "triste"
+        },
+        {
+          "w": "لأنه",
+          "t": "parce qu'il est"
+        },
+        {
+          "w": "وحيد",
+          "t": "seul"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -120683,8 +122453,21 @@
       "translation_fr": "en colère",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أبي غاضب جداً",
+      "example_gloss": [
+        {
+          "w": "أبي",
+          "t": "mon père"
+        },
+        {
+          "w": "غاضب",
+          "t": "en colère"
+        },
+        {
+          "w": "جداً",
+          "t": "très"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -120694,8 +122477,25 @@
       "translation_fr": "effrayé",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "الطفل خائف من الظلام",
+      "example_gloss": [
+        {
+          "w": "الطفل",
+          "t": "l'enfant"
+        },
+        {
+          "w": "خائف",
+          "t": "effrayé"
+        },
+        {
+          "w": "من",
+          "t": "par"
+        },
+        {
+          "w": "الظلام",
+          "t": "l'obscurité"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -120705,8 +122505,25 @@
       "translation_fr": "surpris",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "كنتُ مندهشاً من الخبر",
+      "example_gloss": [
+        {
+          "w": "كنتُ",
+          "t": "j'étais"
+        },
+        {
+          "w": "مندهشاً",
+          "t": "surpris"
+        },
+        {
+          "w": "من",
+          "t": "par"
+        },
+        {
+          "w": "الخبر",
+          "t": "la nouvelle"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -120716,8 +122533,21 @@
       "translation_fr": "fier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أنا فخور بنتائجي",
+      "example_gloss": [
+        {
+          "w": "أنا",
+          "t": "je suis"
+        },
+        {
+          "w": "فخور",
+          "t": "fier"
+        },
+        {
+          "w": "بنتائجي",
+          "t": "de mes résultats"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -120727,8 +122557,25 @@
       "translation_fr": "honteux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "هو خجول أمام الناس",
+      "example_gloss": [
+        {
+          "w": "هو",
+          "t": "il est"
+        },
+        {
+          "w": "خجول",
+          "t": "honteux"
+        },
+        {
+          "w": "أمام",
+          "t": "devant"
+        },
+        {
+          "w": "الناس",
+          "t": "les gens"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -120738,8 +122585,25 @@
       "translation_fr": "anxieux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أنا قلق بسبب الامتحان",
+      "example_gloss": [
+        {
+          "w": "أنا",
+          "t": "je suis"
+        },
+        {
+          "w": "قلق",
+          "t": "anxieux"
+        },
+        {
+          "w": "بسبب",
+          "t": "à cause de"
+        },
+        {
+          "w": "الامتحان",
+          "t": "l'examen"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -120749,8 +122613,25 @@
       "translation_fr": "heureux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं आज खुश हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "आज",
+          "t": "aujourd'hui"
+        },
+        {
+          "w": "खुश",
+          "t": "heureux"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -120760,8 +122641,37 @@
       "translation_fr": "triste",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "वह उदास है क्योंकि वह अकेला है",
+      "example_gloss": [
+        {
+          "w": "वह",
+          "t": "il"
+        },
+        {
+          "w": "उदास",
+          "t": "triste"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        },
+        {
+          "w": "क्योंकि",
+          "t": "parce que"
+        },
+        {
+          "w": "वह",
+          "t": "il"
+        },
+        {
+          "w": "अकेला",
+          "t": "seul"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -120771,8 +122681,33 @@
       "translation_fr": "en colère",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मेरे पिता बहुत गुस्से में हैं",
+      "example_gloss": [
+        {
+          "w": "मेरे",
+          "t": "mon"
+        },
+        {
+          "w": "पिता",
+          "t": "père"
+        },
+        {
+          "w": "बहुत",
+          "t": "très"
+        },
+        {
+          "w": "गुस्से",
+          "t": "en colère"
+        },
+        {
+          "w": "में",
+          "t": "dans"
+        },
+        {
+          "w": "हैं",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -120782,8 +122717,33 @@
       "translation_fr": "effrayé",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "बच्चा अंधेरे से डरा हुआ है",
+      "example_gloss": [
+        {
+          "w": "बच्चा",
+          "t": "l'enfant"
+        },
+        {
+          "w": "अंधेरे",
+          "t": "l'obscurité"
+        },
+        {
+          "w": "से",
+          "t": "par"
+        },
+        {
+          "w": "डरा",
+          "t": "effrayé"
+        },
+        {
+          "w": "हुआ",
+          "t": "est"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -120793,8 +122753,29 @@
       "translation_fr": "surpris",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं खबर सुनकर हैरान था",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "j'étais"
+        },
+        {
+          "w": "खबर",
+          "t": "la nouvelle"
+        },
+        {
+          "w": "सुनकर",
+          "t": "en entendant"
+        },
+        {
+          "w": "हैरान",
+          "t": "surpris"
+        },
+        {
+          "w": "था",
+          "t": "étais"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -120804,8 +122785,33 @@
       "translation_fr": "fier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं अपने नतीजों पर गर्वित हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "अपने",
+          "t": "de mes"
+        },
+        {
+          "w": "नतीजों",
+          "t": "résultats"
+        },
+        {
+          "w": "पर",
+          "t": "de"
+        },
+        {
+          "w": "गर्वित",
+          "t": "fier"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -120815,8 +122821,33 @@
       "translation_fr": "honteux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "वह लोगों के सामने शर्मिंदा है",
+      "example_gloss": [
+        {
+          "w": "वह",
+          "t": "il"
+        },
+        {
+          "w": "लोगों",
+          "t": "les gens"
+        },
+        {
+          "w": "के",
+          "t": "de"
+        },
+        {
+          "w": "सामने",
+          "t": "devant"
+        },
+        {
+          "w": "शर्मिंदा",
+          "t": "honteux"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -120826,8 +122857,33 @@
       "translation_fr": "anxieux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं परीक्षा के कारण चिंतित हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "परीक्षा",
+          "t": "l'examen"
+        },
+        {
+          "w": "के",
+          "t": "de"
+        },
+        {
+          "w": "कारण",
+          "t": "à cause"
+        },
+        {
+          "w": "चिंतित",
+          "t": "anxieux"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -123017,8 +125073,21 @@
       "translation_fr": "chemise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "هذا القميص أزرق",
+      "example_gloss": [
+        {
+          "w": "هذا",
+          "t": "cette"
+        },
+        {
+          "w": "القميص",
+          "t": "chemise"
+        },
+        {
+          "w": "أزرق",
+          "t": "bleue"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -123028,8 +125097,21 @@
       "translation_fr": "pantalon",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "اشتريتُ بنطالاً جديداً",
+      "example_gloss": [
+        {
+          "w": "اشتريتُ",
+          "t": "j'ai acheté"
+        },
+        {
+          "w": "بنطالاً",
+          "t": "un pantalon"
+        },
+        {
+          "w": "جديداً",
+          "t": "nouveau"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -123039,8 +125121,21 @@
       "translation_fr": "chaussures",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أحتاج حذاءً جديداً",
+      "example_gloss": [
+        {
+          "w": "أحتاج",
+          "t": "j'ai besoin de"
+        },
+        {
+          "w": "حذاءً",
+          "t": "chaussures"
+        },
+        {
+          "w": "جديداً",
+          "t": "nouvelles"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -123050,8 +125145,25 @@
       "translation_fr": "manteau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "ألبس المعطف في الشتاء",
+      "example_gloss": [
+        {
+          "w": "ألبس",
+          "t": "je porte"
+        },
+        {
+          "w": "المعطف",
+          "t": "le manteau"
+        },
+        {
+          "w": "في",
+          "t": "en"
+        },
+        {
+          "w": "الشتاء",
+          "t": "hiver"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -123061,8 +125173,25 @@
       "translation_fr": "chapeau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "ألبس قبعة في الصيف",
+      "example_gloss": [
+        {
+          "w": "ألبس",
+          "t": "je porte"
+        },
+        {
+          "w": "قبعة",
+          "t": "un chapeau"
+        },
+        {
+          "w": "في",
+          "t": "en"
+        },
+        {
+          "w": "الصيف",
+          "t": "été"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -123072,8 +125201,17 @@
       "translation_fr": "chaussettes",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "الجوارب بيضاء",
+      "example_gloss": [
+        {
+          "w": "الجوارب",
+          "t": "les chaussettes"
+        },
+        {
+          "w": "بيضاء",
+          "t": "blanches"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -123083,8 +125221,21 @@
       "translation_fr": "robe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "الفستان أحمر وجميل",
+      "example_gloss": [
+        {
+          "w": "الفستان",
+          "t": "la robe"
+        },
+        {
+          "w": "أحمر",
+          "t": "rouge"
+        },
+        {
+          "w": "وجميل",
+          "t": "et jolie"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -123094,8 +125245,29 @@
       "translation_fr": "écharpe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "ألبس وشاحاً عندما يكون بارداً",
+      "example_gloss": [
+        {
+          "w": "ألبس",
+          "t": "je porte"
+        },
+        {
+          "w": "وشاحاً",
+          "t": "une écharpe"
+        },
+        {
+          "w": "عندما",
+          "t": "quand"
+        },
+        {
+          "w": "يكون",
+          "t": "il fait"
+        },
+        {
+          "w": "بارداً",
+          "t": "froid"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -123105,8 +125277,25 @@
       "translation_fr": "chemise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "यह कमीज नीली है",
+      "example_gloss": [
+        {
+          "w": "यह",
+          "t": "cette"
+        },
+        {
+          "w": "कमीज",
+          "t": "chemise"
+        },
+        {
+          "w": "नीली",
+          "t": "bleue"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -123116,8 +125305,25 @@
       "translation_fr": "pantalon",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैंने नई पतलून खरीदी",
+      "example_gloss": [
+        {
+          "w": "मैंने",
+          "t": "j'ai"
+        },
+        {
+          "w": "नई",
+          "t": "nouveau"
+        },
+        {
+          "w": "पतलून",
+          "t": "pantalon"
+        },
+        {
+          "w": "खरीदी",
+          "t": "acheté"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -123127,8 +125333,25 @@
       "translation_fr": "chaussures",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मुझे नए जूते चाहिए",
+      "example_gloss": [
+        {
+          "w": "मुझे",
+          "t": "j'ai besoin"
+        },
+        {
+          "w": "नए",
+          "t": "de nouvelles"
+        },
+        {
+          "w": "जूते",
+          "t": "chaussures"
+        },
+        {
+          "w": "चाहिए",
+          "t": "il faut"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -123138,8 +125361,33 @@
       "translation_fr": "manteau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं सर्दी में कोट पहनता हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "सर्दी",
+          "t": "hiver"
+        },
+        {
+          "w": "में",
+          "t": "en"
+        },
+        {
+          "w": "कोट",
+          "t": "manteau"
+        },
+        {
+          "w": "पहनता",
+          "t": "porte"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -123149,8 +125397,33 @@
       "translation_fr": "chapeau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं गर्मी में टोपी पहनता हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "गर्मी",
+          "t": "été"
+        },
+        {
+          "w": "में",
+          "t": "en"
+        },
+        {
+          "w": "टोपी",
+          "t": "chapeau"
+        },
+        {
+          "w": "पहनता",
+          "t": "porte"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -123160,8 +125433,21 @@
       "translation_fr": "chaussettes",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मोजे सफेद हैं",
+      "example_gloss": [
+        {
+          "w": "मोजे",
+          "t": "les chaussettes"
+        },
+        {
+          "w": "सफेद",
+          "t": "blanches"
+        },
+        {
+          "w": "हैं",
+          "t": "sont"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -123171,8 +125457,29 @@
       "translation_fr": "robe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "पोशाक लाल और सुंदर है",
+      "example_gloss": [
+        {
+          "w": "पोशाक",
+          "t": "la robe"
+        },
+        {
+          "w": "लाल",
+          "t": "rouge"
+        },
+        {
+          "w": "और",
+          "t": "et"
+        },
+        {
+          "w": "सुंदर",
+          "t": "jolie"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -123182,8 +125489,33 @@
       "translation_fr": "écharpe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "ठंड में मैं दुपट्टा पहनती हूँ",
+      "example_gloss": [
+        {
+          "w": "ठंड",
+          "t": "froid"
+        },
+        {
+          "w": "में",
+          "t": "quand"
+        },
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "दुपट्टा",
+          "t": "écharpe"
+        },
+        {
+          "w": "पहनती",
+          "t": "porte"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -125173,8 +127505,21 @@
       "translation_fr": "heure",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "الساعة الآن الثامنة",
+      "example_gloss": [
+        {
+          "w": "الساعة",
+          "t": "l'heure"
+        },
+        {
+          "w": "الآن",
+          "t": "maintenant"
+        },
+        {
+          "w": "الثامنة",
+          "t": "huit"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -125184,8 +127529,21 @@
       "translation_fr": "minute",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "انتظر دقيقة واحدة",
+      "example_gloss": [
+        {
+          "w": "انتظر",
+          "t": "attends"
+        },
+        {
+          "w": "دقيقة",
+          "t": "une minute"
+        },
+        {
+          "w": "واحدة",
+          "t": "une"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -125195,8 +127553,25 @@
       "translation_fr": "matin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أستيقظ في الصباح الباكر",
+      "example_gloss": [
+        {
+          "w": "أستيقظ",
+          "t": "je me réveille"
+        },
+        {
+          "w": "في",
+          "t": "le"
+        },
+        {
+          "w": "الصباح",
+          "t": "matin"
+        },
+        {
+          "w": "الباكر",
+          "t": "tôt"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -125206,8 +127581,21 @@
       "translation_fr": "après-midi",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أدرس بعد الظهر",
+      "example_gloss": [
+        {
+          "w": "أدرس",
+          "t": "j'étudie"
+        },
+        {
+          "w": "بعد",
+          "t": "l'après"
+        },
+        {
+          "w": "الظهر",
+          "t": "-midi"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -125217,8 +127605,21 @@
       "translation_fr": "nuit/soir",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أنام في الليل",
+      "example_gloss": [
+        {
+          "w": "أنام",
+          "t": "je dors"
+        },
+        {
+          "w": "في",
+          "t": "la"
+        },
+        {
+          "w": "الليل",
+          "t": "nuit"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -125228,8 +127629,25 @@
       "translation_fr": "maintenant",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أريد أن آكل الآن",
+      "example_gloss": [
+        {
+          "w": "أريد",
+          "t": "je veux"
+        },
+        {
+          "w": "أن",
+          "t": "de"
+        },
+        {
+          "w": "آكل",
+          "t": "manger"
+        },
+        {
+          "w": "الآن",
+          "t": "maintenant"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -125239,8 +127657,17 @@
       "translation_fr": "bientôt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "سيأتي قريباً",
+      "example_gloss": [
+        {
+          "w": "سيأتي",
+          "t": "il viendra"
+        },
+        {
+          "w": "قريباً",
+          "t": "bientôt"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -125250,8 +127677,25 @@
       "translation_fr": "minuit",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "عدتُ في منتصف الليل",
+      "example_gloss": [
+        {
+          "w": "عدتُ",
+          "t": "je suis rentré"
+        },
+        {
+          "w": "في",
+          "t": "à"
+        },
+        {
+          "w": "منتصف",
+          "t": "minuit"
+        },
+        {
+          "w": "الليل",
+          "t": "la nuit"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -125261,8 +127705,29 @@
       "translation_fr": "heure",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "अभी आठ घंटा बजे हैं",
+      "example_gloss": [
+        {
+          "w": "अभी",
+          "t": "maintenant"
+        },
+        {
+          "w": "आठ",
+          "t": "huit"
+        },
+        {
+          "w": "घंटा",
+          "t": "heures"
+        },
+        {
+          "w": "बजे",
+          "t": "sonnées"
+        },
+        {
+          "w": "हैं",
+          "t": "sont"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -125272,8 +127737,21 @@
       "translation_fr": "minute",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "एक मिनट रुको",
+      "example_gloss": [
+        {
+          "w": "एक",
+          "t": "une"
+        },
+        {
+          "w": "मिनट",
+          "t": "minute"
+        },
+        {
+          "w": "रुको",
+          "t": "attends"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -125283,8 +127761,29 @@
       "translation_fr": "matin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं सुबह जल्दी उठता हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "सुबह",
+          "t": "le matin"
+        },
+        {
+          "w": "जल्दी",
+          "t": "tôt"
+        },
+        {
+          "w": "उठता",
+          "t": "me lève"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -125294,8 +127793,29 @@
       "translation_fr": "après-midi",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं दोपहर को पढ़ता हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "दोपहर",
+          "t": "l'après-midi"
+        },
+        {
+          "w": "को",
+          "t": "à"
+        },
+        {
+          "w": "पढ़ता",
+          "t": "étudie"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -125305,8 +127825,29 @@
       "translation_fr": "nuit/soir",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं रात को सोता हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "रात",
+          "t": "la nuit"
+        },
+        {
+          "w": "को",
+          "t": "à"
+        },
+        {
+          "w": "सोता",
+          "t": "dors"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -125316,8 +127857,29 @@
       "translation_fr": "maintenant",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं अभी खाना चाहता हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "अभी",
+          "t": "maintenant"
+        },
+        {
+          "w": "खाना",
+          "t": "manger"
+        },
+        {
+          "w": "चाहता",
+          "t": "veux"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -125327,8 +127889,21 @@
       "translation_fr": "bientôt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "वह जल्दी आएगा",
+      "example_gloss": [
+        {
+          "w": "वह",
+          "t": "il"
+        },
+        {
+          "w": "जल्दी",
+          "t": "bientôt"
+        },
+        {
+          "w": "आएगा",
+          "t": "viendra"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -125338,8 +127913,29 @@
       "translation_fr": "minuit",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं आधी रात को लौटा",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "आधी",
+          "t": "minuit"
+        },
+        {
+          "w": "रात",
+          "t": "la nuit"
+        },
+        {
+          "w": "को",
+          "t": "à"
+        },
+        {
+          "w": "लौटा",
+          "t": "suis rentré"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -127525,8 +130121,21 @@
       "translation_fr": "chanson",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أحب هذه الأغنية",
+      "example_gloss": [
+        {
+          "w": "أحب",
+          "t": "j'aime"
+        },
+        {
+          "w": "هذه",
+          "t": "cette"
+        },
+        {
+          "w": "الأغنية",
+          "t": "chanson"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -127536,8 +130145,25 @@
       "translation_fr": "guitare",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أتعلم العزف على القيثارة",
+      "example_gloss": [
+        {
+          "w": "أتعلم",
+          "t": "j'apprends"
+        },
+        {
+          "w": "العزف",
+          "t": "à jouer"
+        },
+        {
+          "w": "على",
+          "t": "de la"
+        },
+        {
+          "w": "القيثارة",
+          "t": "guitare"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -127547,8 +130173,21 @@
       "translation_fr": "piano",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أختي تعزف البيانو",
+      "example_gloss": [
+        {
+          "w": "أختي",
+          "t": "ma sœur"
+        },
+        {
+          "w": "تعزف",
+          "t": "joue du"
+        },
+        {
+          "w": "البيانو",
+          "t": "piano"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -127558,8 +130197,21 @@
       "translation_fr": "voix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "لديها صوت جميل",
+      "example_gloss": [
+        {
+          "w": "لديها",
+          "t": "elle a"
+        },
+        {
+          "w": "صوت",
+          "t": "une voix"
+        },
+        {
+          "w": "جميل",
+          "t": "belle"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -127569,8 +130221,21 @@
       "translation_fr": "rythme",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "الإيقاع سريع جداً",
+      "example_gloss": [
+        {
+          "w": "الإيقاع",
+          "t": "le rythme"
+        },
+        {
+          "w": "سريع",
+          "t": "rapide"
+        },
+        {
+          "w": "جداً",
+          "t": "très"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -127580,8 +130245,25 @@
       "translation_fr": "concert",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "ذهبنا إلى حفلة موسيقية",
+      "example_gloss": [
+        {
+          "w": "ذهبنا",
+          "t": "nous sommes allés"
+        },
+        {
+          "w": "إلى",
+          "t": "à"
+        },
+        {
+          "w": "حفلة",
+          "t": "un concert"
+        },
+        {
+          "w": "موسيقية",
+          "t": "musical"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -127591,8 +130273,21 @@
       "translation_fr": "paroles",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أحفظ كلمات الأغنية",
+      "example_gloss": [
+        {
+          "w": "أحفظ",
+          "t": "je mémorise"
+        },
+        {
+          "w": "كلمات",
+          "t": "les paroles"
+        },
+        {
+          "w": "الأغنية",
+          "t": "de la chanson"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -127602,8 +130297,21 @@
       "translation_fr": "mélodie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "اللحن جميل جداً",
+      "example_gloss": [
+        {
+          "w": "اللحن",
+          "t": "la mélodie"
+        },
+        {
+          "w": "جميل",
+          "t": "belle"
+        },
+        {
+          "w": "جداً",
+          "t": "très"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -127613,8 +130321,29 @@
       "translation_fr": "chanson",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मुझे यह गाना पसंद है",
+      "example_gloss": [
+        {
+          "w": "मुझे",
+          "t": "j'aime"
+        },
+        {
+          "w": "यह",
+          "t": "cette"
+        },
+        {
+          "w": "गाना",
+          "t": "chanson"
+        },
+        {
+          "w": "पसंद",
+          "t": "aimer"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -127624,8 +130353,33 @@
       "translation_fr": "guitare",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं गिटार बजाना सीख रहा हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "गिटार",
+          "t": "guitare"
+        },
+        {
+          "w": "बजाना",
+          "t": "jouer"
+        },
+        {
+          "w": "सीख",
+          "t": "apprends"
+        },
+        {
+          "w": "रहा",
+          "t": "en train de"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -127635,8 +130389,29 @@
       "translation_fr": "piano",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मेरी बहन पियानो बजाती है",
+      "example_gloss": [
+        {
+          "w": "मेरी",
+          "t": "ma"
+        },
+        {
+          "w": "बहन",
+          "t": "sœur"
+        },
+        {
+          "w": "पियानो",
+          "t": "piano"
+        },
+        {
+          "w": "बजाती",
+          "t": "joue du"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -127646,8 +130421,25 @@
       "translation_fr": "voix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "उसकी आवाज़ सुंदर है",
+      "example_gloss": [
+        {
+          "w": "उसकी",
+          "t": "sa"
+        },
+        {
+          "w": "आवाज़",
+          "t": "voix"
+        },
+        {
+          "w": "सुंदर",
+          "t": "belle"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -127657,8 +130449,25 @@
       "translation_fr": "rythme",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "ताल बहुत तेज़ है",
+      "example_gloss": [
+        {
+          "w": "ताल",
+          "t": "le rythme"
+        },
+        {
+          "w": "बहुत",
+          "t": "très"
+        },
+        {
+          "w": "तेज़",
+          "t": "rapide"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -127668,8 +130477,29 @@
       "translation_fr": "concert",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "हम संगीत कार्यक्रम में गए",
+      "example_gloss": [
+        {
+          "w": "हम",
+          "t": "nous"
+        },
+        {
+          "w": "संगीत",
+          "t": "concert"
+        },
+        {
+          "w": "कार्यक्रम",
+          "t": "musical"
+        },
+        {
+          "w": "में",
+          "t": "à"
+        },
+        {
+          "w": "गए",
+          "t": "sommes allés"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -127679,8 +130509,33 @@
       "translation_fr": "paroles",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मुझे गाने के बोल याद हैं",
+      "example_gloss": [
+        {
+          "w": "मुझे",
+          "t": "je"
+        },
+        {
+          "w": "गाने",
+          "t": "de la chanson"
+        },
+        {
+          "w": "के",
+          "t": "les"
+        },
+        {
+          "w": "बोल",
+          "t": "paroles"
+        },
+        {
+          "w": "याद",
+          "t": "mémorise"
+        },
+        {
+          "w": "हैं",
+          "t": "sont"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -127690,8 +130545,25 @@
       "translation_fr": "mélodie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "धुन बहुत सुंदर है",
+      "example_gloss": [
+        {
+          "w": "धुन",
+          "t": "la mélodie"
+        },
+        {
+          "w": "बहुत",
+          "t": "très"
+        },
+        {
+          "w": "सुंदर",
+          "t": "belle"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -129801,8 +132673,29 @@
       "translation_fr": "cuisiner",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أحب أن أطبخ في المنزل",
+      "example_gloss": [
+        {
+          "w": "أحب",
+          "t": "j'aime"
+        },
+        {
+          "w": "أن",
+          "t": "de"
+        },
+        {
+          "w": "أطبخ",
+          "t": "cuisiner"
+        },
+        {
+          "w": "في",
+          "t": "à"
+        },
+        {
+          "w": "المنزل",
+          "t": "la maison"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -129812,8 +132705,21 @@
       "translation_fr": "recette",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "هذه وصفة سهلة",
+      "example_gloss": [
+        {
+          "w": "هذه",
+          "t": "c'est"
+        },
+        {
+          "w": "وصفة",
+          "t": "une recette"
+        },
+        {
+          "w": "سهلة",
+          "t": "facile"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -129823,8 +132729,21 @@
       "translation_fr": "ingrédient",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "نحتاج ثلاثة مكونات",
+      "example_gloss": [
+        {
+          "w": "نحتاج",
+          "t": "nous avons besoin de"
+        },
+        {
+          "w": "ثلاثة",
+          "t": "trois"
+        },
+        {
+          "w": "مكونات",
+          "t": "ingrédients"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -129834,8 +132753,21 @@
       "translation_fr": "poêle",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "سخّن المقلاة أولاً",
+      "example_gloss": [
+        {
+          "w": "سخّن",
+          "t": "chauffe"
+        },
+        {
+          "w": "المقلاة",
+          "t": "la poêle"
+        },
+        {
+          "w": "أولاً",
+          "t": "d'abord"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -129845,8 +132777,21 @@
       "translation_fr": "faire bouillir",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "اغلِ الماء أولاً",
+      "example_gloss": [
+        {
+          "w": "اغلِ",
+          "t": "fais bouillir"
+        },
+        {
+          "w": "الماء",
+          "t": "l'eau"
+        },
+        {
+          "w": "أولاً",
+          "t": "d'abord"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -129856,8 +132801,21 @@
       "translation_fr": "cuire au four",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أخبز كعكة للعائلة",
+      "example_gloss": [
+        {
+          "w": "أخبز",
+          "t": "je cuis au four"
+        },
+        {
+          "w": "كعكة",
+          "t": "un gâteau"
+        },
+        {
+          "w": "للعائلة",
+          "t": "pour la famille"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -129867,8 +132825,21 @@
       "translation_fr": "mélanger",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "اخلط البيض والسكر",
+      "example_gloss": [
+        {
+          "w": "اخلط",
+          "t": "mélange"
+        },
+        {
+          "w": "البيض",
+          "t": "les œufs"
+        },
+        {
+          "w": "والسكر",
+          "t": "et le sucre"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -129878,8 +132849,25 @@
       "translation_fr": "assaisonnement",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أضف التوابل إلى الطعام",
+      "example_gloss": [
+        {
+          "w": "أضف",
+          "t": "ajoute"
+        },
+        {
+          "w": "التوابل",
+          "t": "l'assaisonnement"
+        },
+        {
+          "w": "إلى",
+          "t": "à"
+        },
+        {
+          "w": "الطعام",
+          "t": "la nourriture"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -129889,8 +132877,33 @@
       "translation_fr": "cuisiner",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मुझे घर पर पकाना पसंद है",
+      "example_gloss": [
+        {
+          "w": "मुझे",
+          "t": "j'aime"
+        },
+        {
+          "w": "घर",
+          "t": "maison"
+        },
+        {
+          "w": "पर",
+          "t": "à"
+        },
+        {
+          "w": "पकाना",
+          "t": "cuisiner"
+        },
+        {
+          "w": "पसंद",
+          "t": "aimer"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -129900,8 +132913,29 @@
       "translation_fr": "recette",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "यह एक आसान रेसिपी है",
+      "example_gloss": [
+        {
+          "w": "यह",
+          "t": "c'est"
+        },
+        {
+          "w": "एक",
+          "t": "une"
+        },
+        {
+          "w": "आसान",
+          "t": "facile"
+        },
+        {
+          "w": "रेसिपी",
+          "t": "recette"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -129911,8 +132945,25 @@
       "translation_fr": "ingrédient",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "हमें तीन सामग्री चाहिए",
+      "example_gloss": [
+        {
+          "w": "हमें",
+          "t": "nous avons besoin de"
+        },
+        {
+          "w": "तीन",
+          "t": "trois"
+        },
+        {
+          "w": "सामग्री",
+          "t": "ingrédients"
+        },
+        {
+          "w": "चाहिए",
+          "t": "il faut"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -129922,8 +132973,25 @@
       "translation_fr": "poêle",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "पहले तवा गरम करो",
+      "example_gloss": [
+        {
+          "w": "पहले",
+          "t": "d'abord"
+        },
+        {
+          "w": "तवा",
+          "t": "la poêle"
+        },
+        {
+          "w": "गरम",
+          "t": "chauffe"
+        },
+        {
+          "w": "करो",
+          "t": "fais"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -129933,8 +133001,21 @@
       "translation_fr": "faire bouillir",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "पहले पानी उबालो",
+      "example_gloss": [
+        {
+          "w": "पहले",
+          "t": "d'abord"
+        },
+        {
+          "w": "पानी",
+          "t": "l'eau"
+        },
+        {
+          "w": "उबालो",
+          "t": "fais bouillir"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -129944,8 +133025,37 @@
       "translation_fr": "cuire au four",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं परिवार के लिए केक भूनता हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "परिवार",
+          "t": "la famille"
+        },
+        {
+          "w": "के",
+          "t": "de"
+        },
+        {
+          "w": "लिए",
+          "t": "pour"
+        },
+        {
+          "w": "केक",
+          "t": "un gâteau"
+        },
+        {
+          "w": "भूनता",
+          "t": "cuis au four"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -129955,8 +133065,25 @@
       "translation_fr": "mélanger",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "अंडे और चीनी मिलाओ",
+      "example_gloss": [
+        {
+          "w": "अंडे",
+          "t": "les œufs"
+        },
+        {
+          "w": "और",
+          "t": "et"
+        },
+        {
+          "w": "चीनी",
+          "t": "le sucre"
+        },
+        {
+          "w": "मिलाओ",
+          "t": "mélange"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -129966,8 +133093,25 @@
       "translation_fr": "assaisonnement",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "खाने में मसाला डालो",
+      "example_gloss": [
+        {
+          "w": "खाने",
+          "t": "la nourriture"
+        },
+        {
+          "w": "में",
+          "t": "dans"
+        },
+        {
+          "w": "मसाला",
+          "t": "l'assaisonnement"
+        },
+        {
+          "w": "डालो",
+          "t": "ajoute"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -131064,8 +134208,25 @@
       "translation_fr": "avion",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "الطائرة تغادر في الصباح",
+      "example_gloss": [
+        {
+          "w": "الطائرة",
+          "t": "l'avion"
+        },
+        {
+          "w": "تغادر",
+          "t": "part"
+        },
+        {
+          "w": "في",
+          "t": "le"
+        },
+        {
+          "w": "الصباح",
+          "t": "matin"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -131075,8 +134236,21 @@
       "translation_fr": "valise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "حضّرتُ حقيبتي للسفر",
+      "example_gloss": [
+        {
+          "w": "حضّرتُ",
+          "t": "j'ai préparé"
+        },
+        {
+          "w": "حقيبتي",
+          "t": "ma valise"
+        },
+        {
+          "w": "للسفر",
+          "t": "pour le voyage"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -131086,8 +134260,25 @@
       "translation_fr": "tourisme",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "السياحة مهمة لهذا البلد",
+      "example_gloss": [
+        {
+          "w": "السياحة",
+          "t": "le tourisme"
+        },
+        {
+          "w": "مهمة",
+          "t": "important"
+        },
+        {
+          "w": "لهذا",
+          "t": "pour ce"
+        },
+        {
+          "w": "البلد",
+          "t": "pays"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -131097,8 +134288,21 @@
       "translation_fr": "avion",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "विमान सुबह उड़ेगा",
+      "example_gloss": [
+        {
+          "w": "विमान",
+          "t": "l'avion"
+        },
+        {
+          "w": "सुबह",
+          "t": "le matin"
+        },
+        {
+          "w": "उड़ेगा",
+          "t": "partira"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -131108,8 +134312,37 @@
       "translation_fr": "valise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैंने यात्रा के लिए सूटकेस तैयार किया",
+      "example_gloss": [
+        {
+          "w": "मैंने",
+          "t": "j'ai"
+        },
+        {
+          "w": "यात्रा",
+          "t": "le voyage"
+        },
+        {
+          "w": "के",
+          "t": "de"
+        },
+        {
+          "w": "लिए",
+          "t": "pour"
+        },
+        {
+          "w": "सूटकेस",
+          "t": "la valise"
+        },
+        {
+          "w": "तैयार",
+          "t": "préparé"
+        },
+        {
+          "w": "किया",
+          "t": "fait"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -131119,8 +134352,37 @@
       "translation_fr": "tourisme",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "पर्यटन इस देश के लिए ज़रूरी है",
+      "example_gloss": [
+        {
+          "w": "पर्यटन",
+          "t": "le tourisme"
+        },
+        {
+          "w": "इस",
+          "t": "ce"
+        },
+        {
+          "w": "देश",
+          "t": "pays"
+        },
+        {
+          "w": "के",
+          "t": "de"
+        },
+        {
+          "w": "लिए",
+          "t": "pour"
+        },
+        {
+          "w": "ज़रूरी",
+          "t": "important"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -133298,8 +136560,25 @@
       "translation_fr": "zéro",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "بدأ العد من صفر",
+      "example_gloss": [
+        {
+          "w": "بدأ",
+          "t": "il a commencé"
+        },
+        {
+          "w": "العد",
+          "t": "le compte"
+        },
+        {
+          "w": "من",
+          "t": "à"
+        },
+        {
+          "w": "صفر",
+          "t": "zéro"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -133309,8 +136588,21 @@
       "translation_fr": "dix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "لديّ عشرة أصابع",
+      "example_gloss": [
+        {
+          "w": "لديّ",
+          "t": "j'ai"
+        },
+        {
+          "w": "عشرة",
+          "t": "dix"
+        },
+        {
+          "w": "أصابع",
+          "t": "doigts"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -133320,8 +136612,25 @@
       "translation_fr": "cent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "في الصف مئة طالب",
+      "example_gloss": [
+        {
+          "w": "في",
+          "t": "dans"
+        },
+        {
+          "w": "الصف",
+          "t": "la classe"
+        },
+        {
+          "w": "مئة",
+          "t": "cent"
+        },
+        {
+          "w": "طالب",
+          "t": "élèves"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -133331,8 +136640,21 @@
       "translation_fr": "mille",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "المسافة ألف كيلومتر",
+      "example_gloss": [
+        {
+          "w": "المسافة",
+          "t": "la distance"
+        },
+        {
+          "w": "ألف",
+          "t": "mille"
+        },
+        {
+          "w": "كيلومتر",
+          "t": "kilomètres"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -133342,8 +136664,25 @@
       "translation_fr": "million",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "في المدينة مليون شخص",
+      "example_gloss": [
+        {
+          "w": "في",
+          "t": "dans"
+        },
+        {
+          "w": "المدينة",
+          "t": "la ville"
+        },
+        {
+          "w": "مليون",
+          "t": "un million"
+        },
+        {
+          "w": "شخص",
+          "t": "de personnes"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -133353,8 +136692,21 @@
       "translation_fr": "moitié",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أكلتُ نصف التفاحة",
+      "example_gloss": [
+        {
+          "w": "أكلتُ",
+          "t": "j'ai mangé"
+        },
+        {
+          "w": "نصف",
+          "t": "la moitié"
+        },
+        {
+          "w": "التفاحة",
+          "t": "de la pomme"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -133364,8 +136716,21 @@
       "translation_fr": "double",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "هذا ضعف السعر",
+      "example_gloss": [
+        {
+          "w": "هذا",
+          "t": "c'est"
+        },
+        {
+          "w": "ضعف",
+          "t": "le double"
+        },
+        {
+          "w": "السعر",
+          "t": "du prix"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -133375,8 +136740,21 @@
       "translation_fr": "tiers",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أعطني ثلث الكعكة",
+      "example_gloss": [
+        {
+          "w": "أعطني",
+          "t": "donne-moi"
+        },
+        {
+          "w": "ثلث",
+          "t": "un tiers"
+        },
+        {
+          "w": "الكعكة",
+          "t": "du gâteau"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -133386,8 +136764,33 @@
       "translation_fr": "zéro",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "गिनती शून्य से शुरू होती है",
+      "example_gloss": [
+        {
+          "w": "गिनती",
+          "t": "le compte"
+        },
+        {
+          "w": "शून्य",
+          "t": "zéro"
+        },
+        {
+          "w": "से",
+          "t": "à"
+        },
+        {
+          "w": "शुरू",
+          "t": "commence"
+        },
+        {
+          "w": "होती",
+          "t": "est"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -133397,8 +136800,25 @@
       "translation_fr": "dix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मेरे दस अंगुलियाँ हैं",
+      "example_gloss": [
+        {
+          "w": "मेरे",
+          "t": "j'ai"
+        },
+        {
+          "w": "दस",
+          "t": "dix"
+        },
+        {
+          "w": "अंगुलियाँ",
+          "t": "doigts"
+        },
+        {
+          "w": "हैं",
+          "t": "sont"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -133408,8 +136828,29 @@
       "translation_fr": "cent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "कक्षा में सौ छात्र हैं",
+      "example_gloss": [
+        {
+          "w": "कक्षा",
+          "t": "la classe"
+        },
+        {
+          "w": "में",
+          "t": "dans"
+        },
+        {
+          "w": "सौ",
+          "t": "cent"
+        },
+        {
+          "w": "छात्र",
+          "t": "élèves"
+        },
+        {
+          "w": "हैं",
+          "t": "sont"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -133419,8 +136860,29 @@
       "translation_fr": "mille",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "दूरी एक हज़ार किलोमीटर है",
+      "example_gloss": [
+        {
+          "w": "दूरी",
+          "t": "la distance"
+        },
+        {
+          "w": "एक",
+          "t": "un"
+        },
+        {
+          "w": "हज़ार",
+          "t": "mille"
+        },
+        {
+          "w": "किलोमीटर",
+          "t": "kilomètres"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -133430,8 +136892,33 @@
       "translation_fr": "million",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "शहर में दस लाख लोग हैं",
+      "example_gloss": [
+        {
+          "w": "शहर",
+          "t": "la ville"
+        },
+        {
+          "w": "में",
+          "t": "dans"
+        },
+        {
+          "w": "दस",
+          "t": "un million"
+        },
+        {
+          "w": "लाख",
+          "t": "de"
+        },
+        {
+          "w": "लोग",
+          "t": "personnes"
+        },
+        {
+          "w": "हैं",
+          "t": "sont"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -133441,8 +136928,25 @@
       "translation_fr": "moitié",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैंने आधा सेब खाया",
+      "example_gloss": [
+        {
+          "w": "मैंने",
+          "t": "j'ai mangé"
+        },
+        {
+          "w": "आधा",
+          "t": "la moitié"
+        },
+        {
+          "w": "सेब",
+          "t": "de la pomme"
+        },
+        {
+          "w": "खाया",
+          "t": "mangé"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -133452,8 +136956,29 @@
       "translation_fr": "double",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "यह दाम का दोगुना है",
+      "example_gloss": [
+        {
+          "w": "यह",
+          "t": "c'est"
+        },
+        {
+          "w": "दाम",
+          "t": "du prix"
+        },
+        {
+          "w": "का",
+          "t": "de"
+        },
+        {
+          "w": "दोगुना",
+          "t": "le double"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -133463,8 +136988,33 @@
       "translation_fr": "tiers",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मुझे केक का एक तिहाई दो",
+      "example_gloss": [
+        {
+          "w": "मुझे",
+          "t": "donne-moi"
+        },
+        {
+          "w": "केक",
+          "t": "du gâteau"
+        },
+        {
+          "w": "का",
+          "t": "de"
+        },
+        {
+          "w": "एक",
+          "t": "un"
+        },
+        {
+          "w": "तिहाई",
+          "t": "tiers"
+        },
+        {
+          "w": "दो",
+          "t": "donne"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -135698,8 +139248,21 @@
       "translation_fr": "pays",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "فرنسا دولة أوروبية",
+      "example_gloss": [
+        {
+          "w": "فرنسا",
+          "t": "la France"
+        },
+        {
+          "w": "دولة",
+          "t": "un pays"
+        },
+        {
+          "w": "أوروبية",
+          "t": "européen"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -135709,8 +139272,21 @@
       "translation_fr": "capitale",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "باريس عاصمة فرنسا",
+      "example_gloss": [
+        {
+          "w": "باريس",
+          "t": "Paris"
+        },
+        {
+          "w": "عاصمة",
+          "t": "la capitale"
+        },
+        {
+          "w": "فرنسا",
+          "t": "de la France"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -135720,8 +139296,21 @@
       "translation_fr": "continent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أفريقيا قارة كبيرة",
+      "example_gloss": [
+        {
+          "w": "أفريقيا",
+          "t": "l'Afrique"
+        },
+        {
+          "w": "قارة",
+          "t": "un continent"
+        },
+        {
+          "w": "كبيرة",
+          "t": "grand"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -135731,8 +139320,21 @@
       "translation_fr": "frontière",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "عبرنا الحدود بالسيارة",
+      "example_gloss": [
+        {
+          "w": "عبرنا",
+          "t": "nous avons traversé"
+        },
+        {
+          "w": "الحدود",
+          "t": "la frontière"
+        },
+        {
+          "w": "بالسيارة",
+          "t": "en voiture"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -135742,8 +139344,21 @@
       "translation_fr": "île",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "زرنا جزيرة جميلة",
+      "example_gloss": [
+        {
+          "w": "زرنا",
+          "t": "nous avons visité"
+        },
+        {
+          "w": "جزيرة",
+          "t": "une île"
+        },
+        {
+          "w": "جميلة",
+          "t": "belle"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -135753,8 +139368,21 @@
       "translation_fr": "désert",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "الصحراء حارة جداً",
+      "example_gloss": [
+        {
+          "w": "الصحراء",
+          "t": "le désert"
+        },
+        {
+          "w": "حارة",
+          "t": "chaud"
+        },
+        {
+          "w": "جداً",
+          "t": "très"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -135764,8 +139392,21 @@
       "translation_fr": "océan",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "المحيط الأطلسي واسع",
+      "example_gloss": [
+        {
+          "w": "المحيط",
+          "t": "l'océan"
+        },
+        {
+          "w": "الأطلسي",
+          "t": "Atlantique"
+        },
+        {
+          "w": "واسع",
+          "t": "vaste"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -135775,8 +139416,29 @@
       "translation_fr": "hémisphère",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "نعيش في نصف الكرة الشمالي",
+      "example_gloss": [
+        {
+          "w": "نعيش",
+          "t": "nous vivons"
+        },
+        {
+          "w": "في",
+          "t": "dans"
+        },
+        {
+          "w": "نصف",
+          "t": "l'hémisphère"
+        },
+        {
+          "w": "الكرة",
+          "t": "la sphère"
+        },
+        {
+          "w": "الشمالي",
+          "t": "nord"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -135786,8 +139448,29 @@
       "translation_fr": "pays",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "फ्रांस एक यूरोपीय देश है",
+      "example_gloss": [
+        {
+          "w": "फ्रांस",
+          "t": "la France"
+        },
+        {
+          "w": "एक",
+          "t": "un"
+        },
+        {
+          "w": "यूरोपीय",
+          "t": "européen"
+        },
+        {
+          "w": "देश",
+          "t": "pays"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -135797,8 +139480,29 @@
       "translation_fr": "capitale",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "पेरिस फ्रांस की राजधानी है",
+      "example_gloss": [
+        {
+          "w": "पेरिस",
+          "t": "Paris"
+        },
+        {
+          "w": "फ्रांस",
+          "t": "la France"
+        },
+        {
+          "w": "की",
+          "t": "de"
+        },
+        {
+          "w": "राजधानी",
+          "t": "la capitale"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -135808,8 +139512,29 @@
       "translation_fr": "continent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "अफ्रीका एक बड़ा महाद्वीप है",
+      "example_gloss": [
+        {
+          "w": "अफ्रीका",
+          "t": "l'Afrique"
+        },
+        {
+          "w": "एक",
+          "t": "un"
+        },
+        {
+          "w": "बड़ा",
+          "t": "grand"
+        },
+        {
+          "w": "महाद्वीप",
+          "t": "continent"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -135819,8 +139544,37 @@
       "translation_fr": "frontière",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "हम गाड़ी से सीमा पार कर गए",
+      "example_gloss": [
+        {
+          "w": "हम",
+          "t": "nous"
+        },
+        {
+          "w": "गाड़ी",
+          "t": "voiture"
+        },
+        {
+          "w": "से",
+          "t": "en"
+        },
+        {
+          "w": "सीमा",
+          "t": "la frontière"
+        },
+        {
+          "w": "पार",
+          "t": "traversé"
+        },
+        {
+          "w": "कर",
+          "t": "avons"
+        },
+        {
+          "w": "गए",
+          "t": "fait"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -135830,8 +139584,29 @@
       "translation_fr": "île",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "हमने एक सुंदर द्वीप देखा",
+      "example_gloss": [
+        {
+          "w": "हमने",
+          "t": "nous avons"
+        },
+        {
+          "w": "एक",
+          "t": "une"
+        },
+        {
+          "w": "सुंदर",
+          "t": "belle"
+        },
+        {
+          "w": "द्वीप",
+          "t": "île"
+        },
+        {
+          "w": "देखा",
+          "t": "visité"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -135841,8 +139616,25 @@
       "translation_fr": "désert",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "रेगिस्तान बहुत गर्म है",
+      "example_gloss": [
+        {
+          "w": "रेगिस्तान",
+          "t": "le désert"
+        },
+        {
+          "w": "बहुत",
+          "t": "très"
+        },
+        {
+          "w": "गर्म",
+          "t": "chaud"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -135852,8 +139644,25 @@
       "translation_fr": "océan",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "अटलांटिक महासागर विशाल है",
+      "example_gloss": [
+        {
+          "w": "अटलांटिक",
+          "t": "l'Atlantique"
+        },
+        {
+          "w": "महासागर",
+          "t": "océan"
+        },
+        {
+          "w": "विशाल",
+          "t": "vaste"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -135863,8 +139672,33 @@
       "translation_fr": "hémisphère",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "हम उत्तरी गोलार्ध में रहते हैं",
+      "example_gloss": [
+        {
+          "w": "हम",
+          "t": "nous"
+        },
+        {
+          "w": "उत्तरी",
+          "t": "nord"
+        },
+        {
+          "w": "गोलार्ध",
+          "t": "hémisphère"
+        },
+        {
+          "w": "में",
+          "t": "dans"
+        },
+        {
+          "w": "रहते",
+          "t": "vivons"
+        },
+        {
+          "w": "हैं",
+          "t": "sommes"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -138050,8 +141884,25 @@
       "translation_fr": "médecin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أريد أن أصبح طبيباً",
+      "example_gloss": [
+        {
+          "w": "أريد",
+          "t": "je veux"
+        },
+        {
+          "w": "أن",
+          "t": "de"
+        },
+        {
+          "w": "أصبح",
+          "t": "devenir"
+        },
+        {
+          "w": "طبيباً",
+          "t": "médecin"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -138061,8 +141912,21 @@
       "translation_fr": "enseignant",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "المعلم يساعد الطلاب",
+      "example_gloss": [
+        {
+          "w": "المعلم",
+          "t": "l'enseignant"
+        },
+        {
+          "w": "يساعد",
+          "t": "aide"
+        },
+        {
+          "w": "الطلاب",
+          "t": "les élèves"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -138072,8 +141936,21 @@
       "translation_fr": "cuisinier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "الطاهي يحضّر العشاء",
+      "example_gloss": [
+        {
+          "w": "الطاهي",
+          "t": "le cuisinier"
+        },
+        {
+          "w": "يحضّر",
+          "t": "prépare"
+        },
+        {
+          "w": "العشاء",
+          "t": "le dîner"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -138083,8 +141960,21 @@
       "translation_fr": "policier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "الشرطي ينظم المرور",
+      "example_gloss": [
+        {
+          "w": "الشرطي",
+          "t": "le policier"
+        },
+        {
+          "w": "ينظم",
+          "t": "dirige"
+        },
+        {
+          "w": "المرور",
+          "t": "la circulation"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -138094,8 +141984,21 @@
       "translation_fr": "pompier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "الإطفائي أطفأ الحريق",
+      "example_gloss": [
+        {
+          "w": "الإطفائي",
+          "t": "le pompier"
+        },
+        {
+          "w": "أطفأ",
+          "t": "a éteint"
+        },
+        {
+          "w": "الحريق",
+          "t": "l'incendie"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -138105,8 +142008,21 @@
       "translation_fr": "ingénieur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "المهندس يبني الجسر",
+      "example_gloss": [
+        {
+          "w": "المهندس",
+          "t": "l'ingénieur"
+        },
+        {
+          "w": "يبني",
+          "t": "construit"
+        },
+        {
+          "w": "الجسر",
+          "t": "le pont"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -138116,8 +142032,21 @@
       "translation_fr": "avocat",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "المحامي في المحكمة",
+      "example_gloss": [
+        {
+          "w": "المحامي",
+          "t": "l'avocat"
+        },
+        {
+          "w": "في",
+          "t": "au"
+        },
+        {
+          "w": "المحكمة",
+          "t": "tribunal"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -138127,8 +142056,25 @@
       "translation_fr": "architecte",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "المهندس المعماري يصمم المبنى",
+      "example_gloss": [
+        {
+          "w": "المهندس",
+          "t": "l'architecte"
+        },
+        {
+          "w": "المعماري",
+          "t": "bâtiment"
+        },
+        {
+          "w": "يصمم",
+          "t": "dessine"
+        },
+        {
+          "w": "المبنى",
+          "t": "le bâtiment"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -138138,8 +142084,29 @@
       "translation_fr": "médecin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं डॉक्टर बनना चाहता हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "डॉक्टर",
+          "t": "médecin"
+        },
+        {
+          "w": "बनना",
+          "t": "devenir"
+        },
+        {
+          "w": "चाहता",
+          "t": "veux"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -138149,8 +142116,33 @@
       "translation_fr": "enseignant",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "शिक्षक छात्रों की मदद करते हैं",
+      "example_gloss": [
+        {
+          "w": "शिक्षक",
+          "t": "l'enseignant"
+        },
+        {
+          "w": "छात्रों",
+          "t": "les élèves"
+        },
+        {
+          "w": "की",
+          "t": "de"
+        },
+        {
+          "w": "मदद",
+          "t": "aide"
+        },
+        {
+          "w": "करते",
+          "t": "fait"
+        },
+        {
+          "w": "हैं",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -138160,8 +142152,37 @@
       "translation_fr": "cuisinier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "रसोइया रात का खाना बना रहा है",
+      "example_gloss": [
+        {
+          "w": "रसोइया",
+          "t": "le cuisinier"
+        },
+        {
+          "w": "रात",
+          "t": "le soir"
+        },
+        {
+          "w": "का",
+          "t": "de"
+        },
+        {
+          "w": "खाना",
+          "t": "le dîner"
+        },
+        {
+          "w": "बना",
+          "t": "prépare"
+        },
+        {
+          "w": "रहा",
+          "t": "en train de"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -138171,8 +142192,33 @@
       "translation_fr": "policier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "पुलिस यातायात का प्रबंधन करती है",
+      "example_gloss": [
+        {
+          "w": "पुलिस",
+          "t": "le policier"
+        },
+        {
+          "w": "यातायात",
+          "t": "la circulation"
+        },
+        {
+          "w": "का",
+          "t": "de"
+        },
+        {
+          "w": "प्रबंधन",
+          "t": "dirige"
+        },
+        {
+          "w": "करती",
+          "t": "fait"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -138182,8 +142228,29 @@
       "translation_fr": "pompier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "अग्निशमन दल ने आग बुझाई",
+      "example_gloss": [
+        {
+          "w": "अग्निशमन",
+          "t": "le pompier"
+        },
+        {
+          "w": "दल",
+          "t": "l'équipe"
+        },
+        {
+          "w": "ने",
+          "t": "a"
+        },
+        {
+          "w": "आग",
+          "t": "l'incendie"
+        },
+        {
+          "w": "बुझाई",
+          "t": "éteint"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -138193,8 +142260,29 @@
       "translation_fr": "ingénieur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "इंजीनियर पुल बना रहा है",
+      "example_gloss": [
+        {
+          "w": "इंजीनियर",
+          "t": "l'ingénieur"
+        },
+        {
+          "w": "पुल",
+          "t": "le pont"
+        },
+        {
+          "w": "बना",
+          "t": "construit"
+        },
+        {
+          "w": "रहा",
+          "t": "en train de"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -138204,8 +142292,25 @@
       "translation_fr": "avocat",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "वकील अदालत में है",
+      "example_gloss": [
+        {
+          "w": "वकील",
+          "t": "l'avocat"
+        },
+        {
+          "w": "अदालत",
+          "t": "le tribunal"
+        },
+        {
+          "w": "में",
+          "t": "au"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -138215,8 +142320,33 @@
       "translation_fr": "architecte",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "वास्तुकार इमारत का डिज़ाइन बनाता है",
+      "example_gloss": [
+        {
+          "w": "वास्तुकार",
+          "t": "l'architecte"
+        },
+        {
+          "w": "इमारत",
+          "t": "le bâtiment"
+        },
+        {
+          "w": "का",
+          "t": "de"
+        },
+        {
+          "w": "डिज़ाइन",
+          "t": "le design"
+        },
+        {
+          "w": "बनाता",
+          "t": "dessine"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -140422,8 +144552,25 @@
       "translation_fr": "lire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أحب القراءة قبل النوم",
+      "example_gloss": [
+        {
+          "w": "أحب",
+          "t": "j'aime"
+        },
+        {
+          "w": "القراءة",
+          "t": "lire"
+        },
+        {
+          "w": "قبل",
+          "t": "avant"
+        },
+        {
+          "w": "النوم",
+          "t": "dormir"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -140433,8 +144580,25 @@
       "translation_fr": "peindre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أتعلم الرسم في المدرسة",
+      "example_gloss": [
+        {
+          "w": "أتعلم",
+          "t": "j'apprends"
+        },
+        {
+          "w": "الرسم",
+          "t": "la peinture"
+        },
+        {
+          "w": "في",
+          "t": "à"
+        },
+        {
+          "w": "المدرسة",
+          "t": "l'école"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -140444,8 +144608,25 @@
       "translation_fr": "nager",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أمارس السباحة كل صيف",
+      "example_gloss": [
+        {
+          "w": "أمارس",
+          "t": "je pratique"
+        },
+        {
+          "w": "السباحة",
+          "t": "la natation"
+        },
+        {
+          "w": "كل",
+          "t": "chaque"
+        },
+        {
+          "w": "صيف",
+          "t": "été"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -140455,8 +144636,21 @@
       "translation_fr": "photographie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "التصوير هوايتي المفضلة",
+      "example_gloss": [
+        {
+          "w": "التصوير",
+          "t": "la photographie"
+        },
+        {
+          "w": "هوايتي",
+          "t": "mon hobby"
+        },
+        {
+          "w": "المفضلة",
+          "t": "préféré"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -140466,8 +144660,21 @@
       "translation_fr": "jardinage",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "جدتي تحب البستنة",
+      "example_gloss": [
+        {
+          "w": "جدتي",
+          "t": "ma grand-mère"
+        },
+        {
+          "w": "تحب",
+          "t": "aime"
+        },
+        {
+          "w": "البستنة",
+          "t": "le jardinage"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -140477,8 +144684,25 @@
       "translation_fr": "échecs",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "ألعب الشطرنج مع أبي",
+      "example_gloss": [
+        {
+          "w": "ألعب",
+          "t": "je joue"
+        },
+        {
+          "w": "الشطرنج",
+          "t": "aux échecs"
+        },
+        {
+          "w": "مع",
+          "t": "avec"
+        },
+        {
+          "w": "أبي",
+          "t": "mon père"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -140488,8 +144712,25 @@
       "translation_fr": "randonnée",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "نذهب للمشي في الجبل",
+      "example_gloss": [
+        {
+          "w": "نذهب",
+          "t": "nous allons"
+        },
+        {
+          "w": "للمشي",
+          "t": "en randonnée"
+        },
+        {
+          "w": "في",
+          "t": "dans"
+        },
+        {
+          "w": "الجبل",
+          "t": "la montagne"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -140499,8 +144740,25 @@
       "translation_fr": "collection",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "لديّ مجموعة من الطوابع",
+      "example_gloss": [
+        {
+          "w": "لديّ",
+          "t": "j'ai"
+        },
+        {
+          "w": "مجموعة",
+          "t": "une collection"
+        },
+        {
+          "w": "من",
+          "t": "de"
+        },
+        {
+          "w": "الطوابع",
+          "t": "timbres"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -140510,8 +144768,37 @@
       "translation_fr": "lire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मुझे सोने से पहले पढ़ना पसंद है",
+      "example_gloss": [
+        {
+          "w": "मुझे",
+          "t": "j'aime"
+        },
+        {
+          "w": "सोने",
+          "t": "dormir"
+        },
+        {
+          "w": "से",
+          "t": "de"
+        },
+        {
+          "w": "पहले",
+          "t": "avant"
+        },
+        {
+          "w": "पढ़ना",
+          "t": "lire"
+        },
+        {
+          "w": "पसंद",
+          "t": "aimer"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -140521,8 +144808,33 @@
       "translation_fr": "peindre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं स्कूल में चित्रकारी सीखता हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "स्कूल",
+          "t": "l'école"
+        },
+        {
+          "w": "में",
+          "t": "à"
+        },
+        {
+          "w": "चित्रकारी",
+          "t": "la peinture"
+        },
+        {
+          "w": "सीखता",
+          "t": "apprends"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -140532,8 +144844,37 @@
       "translation_fr": "nager",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं हर गर्मी में तैराकी करता हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "हर",
+          "t": "chaque"
+        },
+        {
+          "w": "गर्मी",
+          "t": "été"
+        },
+        {
+          "w": "में",
+          "t": "en"
+        },
+        {
+          "w": "तैराकी",
+          "t": "natation"
+        },
+        {
+          "w": "करता",
+          "t": "pratique"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -140543,8 +144884,29 @@
       "translation_fr": "photographie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "फ़ोटोग्राफ़ी मेरा पसंदीदा शौक है",
+      "example_gloss": [
+        {
+          "w": "फ़ोटोग्राफ़ी",
+          "t": "la photographie"
+        },
+        {
+          "w": "मेरा",
+          "t": "mon"
+        },
+        {
+          "w": "पसंदीदा",
+          "t": "préféré"
+        },
+        {
+          "w": "शौक",
+          "t": "hobby"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -140554,8 +144916,33 @@
       "translation_fr": "jardinage",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मेरी दादी को बागवानी पसंद है",
+      "example_gloss": [
+        {
+          "w": "मेरी",
+          "t": "ma"
+        },
+        {
+          "w": "दादी",
+          "t": "grand-mère"
+        },
+        {
+          "w": "को",
+          "t": "à"
+        },
+        {
+          "w": "बागवानी",
+          "t": "le jardinage"
+        },
+        {
+          "w": "पसंद",
+          "t": "aime"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -140565,8 +144952,41 @@
       "translation_fr": "échecs",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं अपने पिता के साथ शतरंज खेलता हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "अपने",
+          "t": "mon"
+        },
+        {
+          "w": "पिता",
+          "t": "père"
+        },
+        {
+          "w": "के",
+          "t": "de"
+        },
+        {
+          "w": "साथ",
+          "t": "avec"
+        },
+        {
+          "w": "शतरंज",
+          "t": "échecs"
+        },
+        {
+          "w": "खेलता",
+          "t": "joue"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -140576,8 +144996,33 @@
       "translation_fr": "randonnée",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "हम पहाड़ पर ट्रेकिंग करते हैं",
+      "example_gloss": [
+        {
+          "w": "हम",
+          "t": "nous"
+        },
+        {
+          "w": "पहाड़",
+          "t": "la montagne"
+        },
+        {
+          "w": "पर",
+          "t": "dans"
+        },
+        {
+          "w": "ट्रेकिंग",
+          "t": "randonnée"
+        },
+        {
+          "w": "करते",
+          "t": "faisons"
+        },
+        {
+          "w": "हैं",
+          "t": "sommes"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -140587,8 +145032,33 @@
       "translation_fr": "collection",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मेरे पास टिकटों का संग्रह है",
+      "example_gloss": [
+        {
+          "w": "मेरे",
+          "t": "j'ai"
+        },
+        {
+          "w": "पास",
+          "t": "chez moi"
+        },
+        {
+          "w": "टिकटों",
+          "t": "de timbres"
+        },
+        {
+          "w": "का",
+          "t": "de"
+        },
+        {
+          "w": "संग्रह",
+          "t": "une collection"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -142774,8 +147244,25 @@
       "translation_fr": "banque",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أذهب إلى البنك غداً",
+      "example_gloss": [
+        {
+          "w": "أذهب",
+          "t": "je vais"
+        },
+        {
+          "w": "إلى",
+          "t": "à"
+        },
+        {
+          "w": "البنك",
+          "t": "la banque"
+        },
+        {
+          "w": "غداً",
+          "t": "demain"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -142785,8 +147272,25 @@
       "translation_fr": "argent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "لا أملك مالاً كافياً",
+      "example_gloss": [
+        {
+          "w": "لا",
+          "t": "ne pas"
+        },
+        {
+          "w": "أملك",
+          "t": "j'ai"
+        },
+        {
+          "w": "مالاً",
+          "t": "d'argent"
+        },
+        {
+          "w": "كافياً",
+          "t": "suffisamment"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -142796,8 +147300,25 @@
       "translation_fr": "compte",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "فتحتُ حساباً في البنك",
+      "example_gloss": [
+        {
+          "w": "فتحتُ",
+          "t": "j'ai ouvert"
+        },
+        {
+          "w": "حساباً",
+          "t": "un compte"
+        },
+        {
+          "w": "في",
+          "t": "à"
+        },
+        {
+          "w": "البنك",
+          "t": "la banque"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -142807,8 +147328,25 @@
       "translation_fr": "virement",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أريد إجراء تحويل بنكي",
+      "example_gloss": [
+        {
+          "w": "أريد",
+          "t": "je veux"
+        },
+        {
+          "w": "إجراء",
+          "t": "faire"
+        },
+        {
+          "w": "تحويل",
+          "t": "un virement"
+        },
+        {
+          "w": "بنكي",
+          "t": "bancaire"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -142818,8 +147356,25 @@
       "translation_fr": "distributeur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أين أقرب صراف آلي؟",
+      "example_gloss": [
+        {
+          "w": "أين",
+          "t": "où est"
+        },
+        {
+          "w": "أقرب",
+          "t": "le plus proche"
+        },
+        {
+          "w": "صراف",
+          "t": "distributeur"
+        },
+        {
+          "w": "آلي",
+          "t": "automatique"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -142829,8 +147384,21 @@
       "translation_fr": "intérêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "نسبة الفائدة منخفضة",
+      "example_gloss": [
+        {
+          "w": "نسبة",
+          "t": "le taux"
+        },
+        {
+          "w": "الفائدة",
+          "t": "d'intérêt"
+        },
+        {
+          "w": "منخفضة",
+          "t": "bas"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -142840,8 +147408,25 @@
       "translation_fr": "prêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "طلبتُ قرضاً من البنك",
+      "example_gloss": [
+        {
+          "w": "طلبتُ",
+          "t": "j'ai demandé"
+        },
+        {
+          "w": "قرضاً",
+          "t": "un prêt"
+        },
+        {
+          "w": "من",
+          "t": "à"
+        },
+        {
+          "w": "البنك",
+          "t": "la banque"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -142851,8 +147436,25 @@
       "translation_fr": "taux de change",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "ما سعر الصرف اليوم؟",
+      "example_gloss": [
+        {
+          "w": "ما",
+          "t": "quel est"
+        },
+        {
+          "w": "سعر",
+          "t": "le taux"
+        },
+        {
+          "w": "الصرف",
+          "t": "de change"
+        },
+        {
+          "w": "اليوم",
+          "t": "aujourd'hui"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -142862,8 +147464,25 @@
       "translation_fr": "banque",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं कल बैंक जाऊँगा",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "कल",
+          "t": "demain"
+        },
+        {
+          "w": "बैंक",
+          "t": "banque"
+        },
+        {
+          "w": "जाऊँगा",
+          "t": "irai"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -142873,8 +147492,33 @@
       "translation_fr": "argent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मेरे पास काफ़ी पैसा नहीं है",
+      "example_gloss": [
+        {
+          "w": "मेरे",
+          "t": "je"
+        },
+        {
+          "w": "पास",
+          "t": "n'ai"
+        },
+        {
+          "w": "काफ़ी",
+          "t": "suffisamment"
+        },
+        {
+          "w": "पैसा",
+          "t": "d'argent"
+        },
+        {
+          "w": "नहीं",
+          "t": "pas"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -142884,8 +147528,29 @@
       "translation_fr": "compte",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैंने बैंक में खाता खोला",
+      "example_gloss": [
+        {
+          "w": "मैंने",
+          "t": "j'ai"
+        },
+        {
+          "w": "बैंक",
+          "t": "la banque"
+        },
+        {
+          "w": "में",
+          "t": "à"
+        },
+        {
+          "w": "खाता",
+          "t": "un compte"
+        },
+        {
+          "w": "खोला",
+          "t": "ouvert"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -142895,8 +147560,33 @@
       "translation_fr": "virement",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं बैंक ट्रांसफर करना चाहता हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "बैंक",
+          "t": "bancaire"
+        },
+        {
+          "w": "ट्रांसफर",
+          "t": "virement"
+        },
+        {
+          "w": "करना",
+          "t": "faire"
+        },
+        {
+          "w": "चाहता",
+          "t": "veux"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -142906,8 +147596,29 @@
       "translation_fr": "distributeur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "सबसे पास एटीएम कहाँ है?",
+      "example_gloss": [
+        {
+          "w": "सबसे",
+          "t": "le plus"
+        },
+        {
+          "w": "पास",
+          "t": "proche"
+        },
+        {
+          "w": "एटीएम",
+          "t": "distributeur"
+        },
+        {
+          "w": "कहाँ",
+          "t": "où"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -142917,8 +147628,25 @@
       "translation_fr": "intérêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "ब्याज दर कम है",
+      "example_gloss": [
+        {
+          "w": "ब्याज",
+          "t": "intérêt"
+        },
+        {
+          "w": "दर",
+          "t": "taux"
+        },
+        {
+          "w": "कम",
+          "t": "bas"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -142928,8 +147656,29 @@
       "translation_fr": "prêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैंने बैंक से ऋण माँगा",
+      "example_gloss": [
+        {
+          "w": "मैंने",
+          "t": "j'ai"
+        },
+        {
+          "w": "बैंक",
+          "t": "la banque"
+        },
+        {
+          "w": "से",
+          "t": "à"
+        },
+        {
+          "w": "ऋण",
+          "t": "un prêt"
+        },
+        {
+          "w": "माँगा",
+          "t": "demandé"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -142939,8 +147688,29 @@
       "translation_fr": "taux de change",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "आज विनिमय दर क्या है?",
+      "example_gloss": [
+        {
+          "w": "आज",
+          "t": "aujourd'hui"
+        },
+        {
+          "w": "विनिमय",
+          "t": "de change"
+        },
+        {
+          "w": "दर",
+          "t": "taux"
+        },
+        {
+          "w": "क्या",
+          "t": "quel"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -145118,8 +149888,25 @@
       "translation_fr": "fête",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "ذهبتُ إلى حفلة ممتعة",
+      "example_gloss": [
+        {
+          "w": "ذهبتُ",
+          "t": "je suis allé"
+        },
+        {
+          "w": "إلى",
+          "t": "à"
+        },
+        {
+          "w": "حفلة",
+          "t": "une fête"
+        },
+        {
+          "w": "ممتعة",
+          "t": "amusante"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -145129,8 +149916,21 @@
       "translation_fr": "anniversaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "اليوم عيد ميلادي",
+      "example_gloss": [
+        {
+          "w": "اليوم",
+          "t": "aujourd'hui"
+        },
+        {
+          "w": "عيد",
+          "t": "c'est l'anniversaire"
+        },
+        {
+          "w": "ميلادي",
+          "t": "mon"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -145140,8 +149940,21 @@
       "translation_fr": "cadeau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أعطاني هدية جميلة",
+      "example_gloss": [
+        {
+          "w": "أعطاني",
+          "t": "il m'a donné"
+        },
+        {
+          "w": "هدية",
+          "t": "un cadeau"
+        },
+        {
+          "w": "جميلة",
+          "t": "beau"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -145151,8 +149964,21 @@
       "translation_fr": "bougie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أطفئ شموع الكعكة",
+      "example_gloss": [
+        {
+          "w": "أطفئ",
+          "t": "souffle"
+        },
+        {
+          "w": "شموع",
+          "t": "les bougies"
+        },
+        {
+          "w": "الكعكة",
+          "t": "du gâteau"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -145162,8 +149988,21 @@
       "translation_fr": "toast",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "رفعنا نخباً للنجاح",
+      "example_gloss": [
+        {
+          "w": "رفعنا",
+          "t": "nous avons porté"
+        },
+        {
+          "w": "نخباً",
+          "t": "un toast"
+        },
+        {
+          "w": "للنجاح",
+          "t": "au succès"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -145173,8 +150012,21 @@
       "translation_fr": "feux d'artifice",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "شاهدنا الألعاب النارية",
+      "example_gloss": [
+        {
+          "w": "شاهدنا",
+          "t": "nous avons regardé"
+        },
+        {
+          "w": "الألعاب",
+          "t": "les feux"
+        },
+        {
+          "w": "النارية",
+          "t": "d'artifice"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -145184,8 +150036,25 @@
       "translation_fr": "décoration",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "وضعنا الزينة في البيت",
+      "example_gloss": [
+        {
+          "w": "وضعنا",
+          "t": "nous avons mis"
+        },
+        {
+          "w": "الزينة",
+          "t": "la décoration"
+        },
+        {
+          "w": "في",
+          "t": "dans"
+        },
+        {
+          "w": "البيت",
+          "t": "la maison"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -145195,8 +150064,25 @@
       "translation_fr": "invité",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "وصل الضيوف في الموعد",
+      "example_gloss": [
+        {
+          "w": "وصل",
+          "t": "sont arrivés"
+        },
+        {
+          "w": "الضيوف",
+          "t": "les invités"
+        },
+        {
+          "w": "في",
+          "t": "à"
+        },
+        {
+          "w": "الموعد",
+          "t": "l'heure"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -145206,8 +150092,33 @@
       "translation_fr": "fête",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं एक मज़ेदार पार्टी में गया",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "एक",
+          "t": "une"
+        },
+        {
+          "w": "मज़ेदार",
+          "t": "amusante"
+        },
+        {
+          "w": "पार्टी",
+          "t": "fête"
+        },
+        {
+          "w": "में",
+          "t": "à"
+        },
+        {
+          "w": "गया",
+          "t": "suis allé"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -145217,8 +150128,25 @@
       "translation_fr": "anniversaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "आज मेरा जन्मदिन है",
+      "example_gloss": [
+        {
+          "w": "आज",
+          "t": "aujourd'hui"
+        },
+        {
+          "w": "मेरा",
+          "t": "mon"
+        },
+        {
+          "w": "जन्मदिन",
+          "t": "anniversaire"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -145228,8 +150156,33 @@
       "translation_fr": "cadeau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "उसने मुझे एक सुंदर उपहार दिया",
+      "example_gloss": [
+        {
+          "w": "उसने",
+          "t": "il m'a"
+        },
+        {
+          "w": "मुझे",
+          "t": "me"
+        },
+        {
+          "w": "एक",
+          "t": "un"
+        },
+        {
+          "w": "सुंदर",
+          "t": "beau"
+        },
+        {
+          "w": "उपहार",
+          "t": "cadeau"
+        },
+        {
+          "w": "दिया",
+          "t": "donné"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -145239,8 +150192,25 @@
       "translation_fr": "bougie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "केक पर मोमबत्ती बुझाओ",
+      "example_gloss": [
+        {
+          "w": "केक",
+          "t": "le gâteau"
+        },
+        {
+          "w": "पर",
+          "t": "sur"
+        },
+        {
+          "w": "मोमबत्ती",
+          "t": "les bougies"
+        },
+        {
+          "w": "बुझाओ",
+          "t": "souffle"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -145250,8 +150220,33 @@
       "translation_fr": "toast",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "हमने सफलता के लिए 乾杯 किया",
+      "example_gloss": [
+        {
+          "w": "हमने",
+          "t": "nous avons"
+        },
+        {
+          "w": "सफलता",
+          "t": "le succès"
+        },
+        {
+          "w": "के",
+          "t": "de"
+        },
+        {
+          "w": "लिए",
+          "t": "pour"
+        },
+        {
+          "w": "乾杯",
+          "t": "un toast"
+        },
+        {
+          "w": "किया",
+          "t": "porté"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -145261,8 +150256,21 @@
       "translation_fr": "feux d'artifice",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "हमने आतिशबाजी देखी",
+      "example_gloss": [
+        {
+          "w": "हमने",
+          "t": "nous avons"
+        },
+        {
+          "w": "आतिशबाजी",
+          "t": "les feux d'artifice"
+        },
+        {
+          "w": "देखी",
+          "t": "regardé"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -145272,8 +150280,29 @@
       "translation_fr": "décoration",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "हमने घर में सजावट की",
+      "example_gloss": [
+        {
+          "w": "हमने",
+          "t": "nous avons"
+        },
+        {
+          "w": "घर",
+          "t": "la maison"
+        },
+        {
+          "w": "में",
+          "t": "dans"
+        },
+        {
+          "w": "सजावट",
+          "t": "la décoration"
+        },
+        {
+          "w": "की",
+          "t": "mis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -145283,8 +150312,25 @@
       "translation_fr": "invité",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मेहमान समय पर आए",
+      "example_gloss": [
+        {
+          "w": "मेहमान",
+          "t": "les invités"
+        },
+        {
+          "w": "समय",
+          "t": "l'heure"
+        },
+        {
+          "w": "पर",
+          "t": "à"
+        },
+        {
+          "w": "आए",
+          "t": "sont arrivés"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -147490,8 +152536,21 @@
       "translation_fr": "musée",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "زرتُ المتحف أمس",
+      "example_gloss": [
+        {
+          "w": "زرتُ",
+          "t": "j'ai visité"
+        },
+        {
+          "w": "المتحف",
+          "t": "le musée"
+        },
+        {
+          "w": "أمس",
+          "t": "hier"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -147501,8 +152560,25 @@
       "translation_fr": "théâtre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "ذهبنا إلى المسرح مساءً",
+      "example_gloss": [
+        {
+          "w": "ذهبنا",
+          "t": "nous sommes allés"
+        },
+        {
+          "w": "إلى",
+          "t": "au"
+        },
+        {
+          "w": "المسرح",
+          "t": "théâtre"
+        },
+        {
+          "w": "مساءً",
+          "t": "ce soir"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -147512,8 +152588,21 @@
       "translation_fr": "art",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أحب الفن الحديث",
+      "example_gloss": [
+        {
+          "w": "أحب",
+          "t": "j'aime"
+        },
+        {
+          "w": "الفن",
+          "t": "l'art"
+        },
+        {
+          "w": "الحديث",
+          "t": "moderne"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -147523,8 +152612,21 @@
       "translation_fr": "tableau/peinture",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "هذه اللوحة رائعة",
+      "example_gloss": [
+        {
+          "w": "هذه",
+          "t": "ce"
+        },
+        {
+          "w": "اللوحة",
+          "t": "tableau"
+        },
+        {
+          "w": "رائعة",
+          "t": "magnifique"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -147534,8 +152636,21 @@
       "translation_fr": "sculpture",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "النحت فن قديم",
+      "example_gloss": [
+        {
+          "w": "النحت",
+          "t": "la sculpture"
+        },
+        {
+          "w": "فن",
+          "t": "un art"
+        },
+        {
+          "w": "قديم",
+          "t": "ancien"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -147545,8 +152660,21 @@
       "translation_fr": "littérature",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "أدرس الأدب العربي",
+      "example_gloss": [
+        {
+          "w": "أدرس",
+          "t": "j'étudie"
+        },
+        {
+          "w": "الأدب",
+          "t": "la littérature"
+        },
+        {
+          "w": "العربي",
+          "t": "arabe"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -147556,8 +152684,21 @@
       "translation_fr": "patrimoine",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "يجب حماية التراث",
+      "example_gloss": [
+        {
+          "w": "يجب",
+          "t": "il faut"
+        },
+        {
+          "w": "حماية",
+          "t": "protéger"
+        },
+        {
+          "w": "التراث",
+          "t": "le patrimoine"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -147567,8 +152708,21 @@
       "translation_fr": "exposition",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "المعرض مفتوح للجمهور",
+      "example_gloss": [
+        {
+          "w": "المعرض",
+          "t": "l'exposition"
+        },
+        {
+          "w": "مفتوح",
+          "t": "ouverte"
+        },
+        {
+          "w": "للجمهور",
+          "t": "au public"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -147578,8 +152732,25 @@
       "translation_fr": "musée",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैंने कल संग्रहालय देखा",
+      "example_gloss": [
+        {
+          "w": "मैंने",
+          "t": "j'ai"
+        },
+        {
+          "w": "कल",
+          "t": "hier"
+        },
+        {
+          "w": "संग्रहालय",
+          "t": "le musée"
+        },
+        {
+          "w": "देखा",
+          "t": "visité"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -147589,8 +152760,29 @@
       "translation_fr": "théâtre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "हम शाम को थियेटर गए",
+      "example_gloss": [
+        {
+          "w": "हम",
+          "t": "nous"
+        },
+        {
+          "w": "शाम",
+          "t": "le soir"
+        },
+        {
+          "w": "को",
+          "t": "à"
+        },
+        {
+          "w": "थियेटर",
+          "t": "le théâtre"
+        },
+        {
+          "w": "गए",
+          "t": "sommes allés"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -147600,8 +152792,29 @@
       "translation_fr": "art",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मुझे आधुनिक कला पसंद है",
+      "example_gloss": [
+        {
+          "w": "मुझे",
+          "t": "j'aime"
+        },
+        {
+          "w": "आधुनिक",
+          "t": "moderne"
+        },
+        {
+          "w": "कला",
+          "t": "l'art"
+        },
+        {
+          "w": "पसंद",
+          "t": "aimer"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -147611,8 +152824,25 @@
       "translation_fr": "tableau/peinture",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "यह चित्रकारी शानदार है",
+      "example_gloss": [
+        {
+          "w": "यह",
+          "t": "ce"
+        },
+        {
+          "w": "चित्रकारी",
+          "t": "tableau"
+        },
+        {
+          "w": "शानदार",
+          "t": "magnifique"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -147622,8 +152852,29 @@
       "translation_fr": "sculpture",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मूर्तिकला एक प्राचीन कला है",
+      "example_gloss": [
+        {
+          "w": "मूर्तिकला",
+          "t": "la sculpture"
+        },
+        {
+          "w": "एक",
+          "t": "un"
+        },
+        {
+          "w": "प्राचीन",
+          "t": "ancien"
+        },
+        {
+          "w": "कला",
+          "t": "art"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -147633,8 +152884,29 @@
       "translation_fr": "littérature",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "मैं हिंदी साहित्य पढ़ता हूँ",
+      "example_gloss": [
+        {
+          "w": "मैं",
+          "t": "je"
+        },
+        {
+          "w": "हिंदी",
+          "t": "hindi"
+        },
+        {
+          "w": "साहित्य",
+          "t": "littérature"
+        },
+        {
+          "w": "पढ़ता",
+          "t": "étudie"
+        },
+        {
+          "w": "हूँ",
+          "t": "suis"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -147644,8 +152916,29 @@
       "translation_fr": "patrimoine",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "विरासत की रक्षा करनी चाहिए",
+      "example_gloss": [
+        {
+          "w": "विरासत",
+          "t": "le patrimoine"
+        },
+        {
+          "w": "की",
+          "t": "de"
+        },
+        {
+          "w": "रक्षा",
+          "t": "protéger"
+        },
+        {
+          "w": "करनी",
+          "t": "faire"
+        },
+        {
+          "w": "चाहिए",
+          "t": "il faut"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -147655,8 +152948,33 @@
       "translation_fr": "exposition",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "प्रदर्शनी जनता के लिए खुली है",
+      "example_gloss": [
+        {
+          "w": "प्रदर्शनी",
+          "t": "l'exposition"
+        },
+        {
+          "w": "जनता",
+          "t": "le public"
+        },
+        {
+          "w": "के",
+          "t": "de"
+        },
+        {
+          "w": "लिए",
+          "t": "pour"
+        },
+        {
+          "w": "खुली",
+          "t": "ouverte"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -149770,8 +155088,25 @@
       "translation_fr": "recyclage",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "إعادة التدوير مهمة للبيئة",
+      "example_gloss": [
+        {
+          "w": "إعادة",
+          "t": "le recyclage"
+        },
+        {
+          "w": "التدوير",
+          "t": "est"
+        },
+        {
+          "w": "مهمة",
+          "t": "important"
+        },
+        {
+          "w": "للبيئة",
+          "t": "pour l'environnement"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -149781,8 +155116,21 @@
       "translation_fr": "pollution",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "التلوث يضر بالصحة",
+      "example_gloss": [
+        {
+          "w": "التلوث",
+          "t": "la pollution"
+        },
+        {
+          "w": "يضر",
+          "t": "nuit"
+        },
+        {
+          "w": "بالصحة",
+          "t": "à la santé"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -149792,8 +155140,21 @@
       "translation_fr": "énergie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "نحتاج طاقة نظيفة",
+      "example_gloss": [
+        {
+          "w": "نحتاج",
+          "t": "nous avons besoin de"
+        },
+        {
+          "w": "طاقة",
+          "t": "énergie"
+        },
+        {
+          "w": "نظيفة",
+          "t": "propre"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -149803,8 +155164,21 @@
       "translation_fr": "solaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "الطاقة الشمسية متجددة",
+      "example_gloss": [
+        {
+          "w": "الطاقة",
+          "t": "l'énergie"
+        },
+        {
+          "w": "الشمسية",
+          "t": "solaire"
+        },
+        {
+          "w": "متجددة",
+          "t": "renouvelable"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -149814,8 +155188,21 @@
       "translation_fr": "déchets",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "يجب فرز النفايات",
+      "example_gloss": [
+        {
+          "w": "يجب",
+          "t": "il faut"
+        },
+        {
+          "w": "فرز",
+          "t": "trier"
+        },
+        {
+          "w": "النفايات",
+          "t": "les déchets"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -149825,8 +155212,21 @@
       "translation_fr": "émission",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "يجب تقليل الانبعاثات",
+      "example_gloss": [
+        {
+          "w": "يجب",
+          "t": "il faut"
+        },
+        {
+          "w": "تقليل",
+          "t": "réduire"
+        },
+        {
+          "w": "الانبعاثات",
+          "t": "les émissions"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -149836,8 +155236,21 @@
       "translation_fr": "durable",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "نريد مستقبلاً مستداماً",
+      "example_gloss": [
+        {
+          "w": "نريد",
+          "t": "nous voulons"
+        },
+        {
+          "w": "مستقبلاً",
+          "t": "un futur"
+        },
+        {
+          "w": "مستداماً",
+          "t": "durable"
+        }
+      ]
     },
     {
       "language_code": "ar",
@@ -149847,8 +155260,21 @@
       "translation_fr": "biodiversité",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "التنوع البيولوجي مهدد",
+      "example_gloss": [
+        {
+          "w": "التنوع",
+          "t": "la biodiversité"
+        },
+        {
+          "w": "البيولوجي",
+          "t": "biologique"
+        },
+        {
+          "w": "مهدد",
+          "t": "menacée"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -149858,8 +155284,33 @@
       "translation_fr": "recyclage",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "पुनर्चक्रण पर्यावरण के लिए ज़रूरी है",
+      "example_gloss": [
+        {
+          "w": "पुनर्चक्रण",
+          "t": "le recyclage"
+        },
+        {
+          "w": "पर्यावरण",
+          "t": "l'environnement"
+        },
+        {
+          "w": "के",
+          "t": "de"
+        },
+        {
+          "w": "लिए",
+          "t": "pour"
+        },
+        {
+          "w": "ज़रूरी",
+          "t": "important"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -149869,8 +155320,33 @@
       "translation_fr": "pollution",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "प्रदूषण सेहत को नुकसान पहुँचाता है",
+      "example_gloss": [
+        {
+          "w": "प्रदूषण",
+          "t": "la pollution"
+        },
+        {
+          "w": "सेहत",
+          "t": "la santé"
+        },
+        {
+          "w": "को",
+          "t": "à"
+        },
+        {
+          "w": "नुकसान",
+          "t": "nuit"
+        },
+        {
+          "w": "पहुँचाता",
+          "t": "cause"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -149880,8 +155356,25 @@
       "translation_fr": "énergie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "हमें स्वच्छ ऊर्जा चाहिए",
+      "example_gloss": [
+        {
+          "w": "हमें",
+          "t": "nous avons besoin"
+        },
+        {
+          "w": "स्वच्छ",
+          "t": "propre"
+        },
+        {
+          "w": "ऊर्जा",
+          "t": "énergie"
+        },
+        {
+          "w": "चाहिए",
+          "t": "de"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -149891,8 +155384,25 @@
       "translation_fr": "solaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "सौर ऊर्जा नवीकरणीय है",
+      "example_gloss": [
+        {
+          "w": "सौर",
+          "t": "solaire"
+        },
+        {
+          "w": "ऊर्जा",
+          "t": "énergie"
+        },
+        {
+          "w": "नवीकरणीय",
+          "t": "renouvelable"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -149902,8 +155412,29 @@
       "translation_fr": "déchets",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "कचरा अलग करना ज़रूरी है",
+      "example_gloss": [
+        {
+          "w": "कचरा",
+          "t": "les déchets"
+        },
+        {
+          "w": "अलग",
+          "t": "trier"
+        },
+        {
+          "w": "करना",
+          "t": "faire"
+        },
+        {
+          "w": "ज़रूरी",
+          "t": "il faut"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -149913,8 +155444,29 @@
       "translation_fr": "émission",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "उत्सर्जन कम करना ज़रूरी है",
+      "example_gloss": [
+        {
+          "w": "उत्सर्जन",
+          "t": "les émissions"
+        },
+        {
+          "w": "कम",
+          "t": "réduire"
+        },
+        {
+          "w": "करना",
+          "t": "faire"
+        },
+        {
+          "w": "ज़रूरी",
+          "t": "il faut"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -149924,8 +155476,33 @@
       "translation_fr": "durable",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "हम एक टिकाऊ भविष्य चाहते हैं",
+      "example_gloss": [
+        {
+          "w": "हम",
+          "t": "nous"
+        },
+        {
+          "w": "एक",
+          "t": "un"
+        },
+        {
+          "w": "टिकाऊ",
+          "t": "durable"
+        },
+        {
+          "w": "भविष्य",
+          "t": "futur"
+        },
+        {
+          "w": "चाहते",
+          "t": "voulons"
+        },
+        {
+          "w": "हैं",
+          "t": "sommes"
+        }
+      ]
     },
     {
       "language_code": "hi",
@@ -149935,8 +155512,29 @@
       "translation_fr": "biodiversité",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "जैव विविधता ख़तरे में है",
+      "example_gloss": [
+        {
+          "w": "जैव",
+          "t": "la biodiversité"
+        },
+        {
+          "w": "विविधता",
+          "t": "diversité"
+        },
+        {
+          "w": "ख़तरे",
+          "t": "menacée"
+        },
+        {
+          "w": "में",
+          "t": "en"
+        },
+        {
+          "w": "है",
+          "t": "est"
+        }
+      ]
     }
   ],
   "grammar_tips": [
