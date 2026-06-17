@@ -104421,8 +104421,25 @@
       "translation_fr": "travail",
       "transliteration": null,
       "clue": "Activité professionnelle rémunérée",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mi trabajo es interesante.",
+      "example_gloss": [
+        {
+          "w": "Mi",
+          "t": "mon"
+        },
+        {
+          "w": "trabajo",
+          "t": "travail"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "interesante",
+          "t": "intéressant"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -104432,8 +104449,33 @@
       "translation_fr": "bureau",
       "transliteration": null,
       "clue": "Lieu de travail avec un bureau",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Voy a la oficina cada día.",
+      "example_gloss": [
+        {
+          "w": "Voy",
+          "t": "je vais"
+        },
+        {
+          "w": "a",
+          "t": "à"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "oficina",
+          "t": "bureau"
+        },
+        {
+          "w": "cada",
+          "t": "chaque"
+        },
+        {
+          "w": "día",
+          "t": "jour"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -104443,8 +104485,29 @@
       "translation_fr": "patron/chef",
       "transliteration": null,
       "clue": "Personne qui dirige l'équipe",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El jefe organiza la reunión.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "le"
+        },
+        {
+          "w": "jefe",
+          "t": "patron"
+        },
+        {
+          "w": "organiza",
+          "t": "organise"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "reunión",
+          "t": "réunion"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -104454,8 +104517,33 @@
       "translation_fr": "réunion",
       "transliteration": null,
       "clue": "Rassemblement pour discuter d'un sujet",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La reunión empieza a las diez.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "reunión",
+          "t": "réunion"
+        },
+        {
+          "w": "empieza",
+          "t": "commence"
+        },
+        {
+          "w": "a",
+          "t": "à"
+        },
+        {
+          "w": "las",
+          "t": "les"
+        },
+        {
+          "w": "diez",
+          "t": "dix"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -104465,8 +104553,25 @@
       "translation_fr": "contrat",
       "transliteration": null,
       "clue": "Document qui engage deux parties",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Firmé el contrato ayer.",
+      "example_gloss": [
+        {
+          "w": "Firmé",
+          "t": "j'ai signé"
+        },
+        {
+          "w": "el",
+          "t": "le"
+        },
+        {
+          "w": "contrato",
+          "t": "contrat"
+        },
+        {
+          "w": "ayer",
+          "t": "hier"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -104476,8 +104581,33 @@
       "translation_fr": "salaire",
       "transliteration": null,
       "clue": "Somme versée pour un travail",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El salario se paga cada mes.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "le"
+        },
+        {
+          "w": "salario",
+          "t": "salaire"
+        },
+        {
+          "w": "se",
+          "t": "se"
+        },
+        {
+          "w": "paga",
+          "t": "paie"
+        },
+        {
+          "w": "cada",
+          "t": "chaque"
+        },
+        {
+          "w": "mes",
+          "t": "mois"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -104487,8 +104617,29 @@
       "translation_fr": "entreprise",
       "transliteration": null,
       "clue": "Organisation qui produit des biens ou services",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Esta empresa tiene cien empleados.",
+      "example_gloss": [
+        {
+          "w": "Esta",
+          "t": "cette"
+        },
+        {
+          "w": "empresa",
+          "t": "entreprise"
+        },
+        {
+          "w": "tiene",
+          "t": "a"
+        },
+        {
+          "w": "cien",
+          "t": "cent"
+        },
+        {
+          "w": "empleados",
+          "t": "employés"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -104498,8 +104649,29 @@
       "translation_fr": "collègue",
       "transliteration": null,
       "clue": "Personne qui travaille avec vous",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mi colega me ayuda mucho.",
+      "example_gloss": [
+        {
+          "w": "Mi",
+          "t": "mon"
+        },
+        {
+          "w": "colega",
+          "t": "collègue"
+        },
+        {
+          "w": "me",
+          "t": "m'"
+        },
+        {
+          "w": "ayuda",
+          "t": "aide"
+        },
+        {
+          "w": "mucho",
+          "t": "beaucoup"
+        }
+      ]
     },
     {
       "language_code": "en",
@@ -105653,8 +105825,33 @@
       "translation_fr": "école",
       "transliteration": null,
       "clue": "Lieu où l'on apprend",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Los niños van a la escuela.",
+      "example_gloss": [
+        {
+          "w": "Los",
+          "t": "les"
+        },
+        {
+          "w": "niños",
+          "t": "enfants"
+        },
+        {
+          "w": "van",
+          "t": "vont"
+        },
+        {
+          "w": "a",
+          "t": "à"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "escuela",
+          "t": "école"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -105664,8 +105861,29 @@
       "translation_fr": "livre",
       "transliteration": null,
       "clue": "Objet rempli de pages à lire",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Leo un libro cada semana.",
+      "example_gloss": [
+        {
+          "w": "Leo",
+          "t": "je lis"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "libro",
+          "t": "livre"
+        },
+        {
+          "w": "cada",
+          "t": "chaque"
+        },
+        {
+          "w": "semana",
+          "t": "semaine"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -105675,8 +105893,29 @@
       "translation_fr": "crayon",
       "transliteration": null,
       "clue": "Outil pour écrire ou dessiner",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Necesito un lápiz para escribir.",
+      "example_gloss": [
+        {
+          "w": "Necesito",
+          "t": "j'ai besoin"
+        },
+        {
+          "w": "un",
+          "t": "d'un"
+        },
+        {
+          "w": "lápiz",
+          "t": "crayon"
+        },
+        {
+          "w": "para",
+          "t": "pour"
+        },
+        {
+          "w": "escribir",
+          "t": "écrire"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -105686,8 +105925,25 @@
       "translation_fr": "cahier",
       "transliteration": null,
       "clue": "Carnet pour prendre des notes",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Escribo en mi cuaderno.",
+      "example_gloss": [
+        {
+          "w": "Escribo",
+          "t": "j'écris"
+        },
+        {
+          "w": "en",
+          "t": "dans"
+        },
+        {
+          "w": "mi",
+          "t": "mon"
+        },
+        {
+          "w": "cuaderno",
+          "t": "cahier"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -105697,8 +105953,29 @@
       "translation_fr": "professeur",
       "transliteration": null,
       "clue": "Personne qui enseigne en classe",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El profesor explica la lección.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "le"
+        },
+        {
+          "w": "profesor",
+          "t": "professeur"
+        },
+        {
+          "w": "explica",
+          "t": "explique"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "lección",
+          "t": "leçon"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -105708,8 +105985,25 @@
       "translation_fr": "examen",
       "transliteration": null,
       "clue": "Épreuve qui évalue les connaissances",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Tengo un examen mañana.",
+      "example_gloss": [
+        {
+          "w": "Tengo",
+          "t": "j'ai"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "examen",
+          "t": "examen"
+        },
+        {
+          "w": "mañana",
+          "t": "demain"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -105719,8 +106013,33 @@
       "translation_fr": "devoirs",
       "transliteration": null,
       "clue": "Travail scolaire à faire à la maison",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hago mis deberes por la tarde.",
+      "example_gloss": [
+        {
+          "w": "Hago",
+          "t": "je fais"
+        },
+        {
+          "w": "mis",
+          "t": "mes"
+        },
+        {
+          "w": "deberes",
+          "t": "devoirs"
+        },
+        {
+          "w": "por",
+          "t": "pendant"
+        },
+        {
+          "w": "la",
+          "t": "l'"
+        },
+        {
+          "w": "tarde",
+          "t": "après-midi"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -105730,8 +106049,25 @@
       "translation_fr": "bibliothèque",
       "transliteration": null,
       "clue": "Lieu rempli de livres à emprunter",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Estudio en la biblioteca.",
+      "example_gloss": [
+        {
+          "w": "Estudio",
+          "t": "j'étudie"
+        },
+        {
+          "w": "en",
+          "t": "à"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "biblioteca",
+          "t": "bibliothèque"
+        }
+      ]
     },
     {
       "language_code": "en",
@@ -106885,8 +107221,33 @@
       "translation_fr": "magasin",
       "transliteration": null,
       "clue": "Lieu où l'on achète des produits",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Voy a la tienda a comprar.",
+      "example_gloss": [
+        {
+          "w": "Voy",
+          "t": "je vais"
+        },
+        {
+          "w": "a",
+          "t": "à"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "tienda",
+          "t": "magasin"
+        },
+        {
+          "w": "a",
+          "t": "pour"
+        },
+        {
+          "w": "comprar",
+          "t": "acheter"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -106896,8 +107257,33 @@
       "translation_fr": "prix",
       "transliteration": null,
       "clue": "Somme à payer pour un objet",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "¿Cuál es el precio de esto?",
+      "example_gloss": [
+        {
+          "w": "Cuál",
+          "t": "quel"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "el",
+          "t": "le"
+        },
+        {
+          "w": "precio",
+          "t": "prix"
+        },
+        {
+          "w": "de",
+          "t": "de"
+        },
+        {
+          "w": "esto",
+          "t": "ceci"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -106907,8 +107293,29 @@
       "translation_fr": "cher",
       "transliteration": null,
       "clue": "Qui coûte beaucoup d'argent",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Este vestido es muy caro.",
+      "example_gloss": [
+        {
+          "w": "Este",
+          "t": "cette"
+        },
+        {
+          "w": "vestido",
+          "t": "robe"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "muy",
+          "t": "très"
+        },
+        {
+          "w": "caro",
+          "t": "cher"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -106918,8 +107325,29 @@
       "translation_fr": "pas cher",
       "transliteration": null,
       "clue": "Qui coûte peu d'argent",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Las frutas son baratas aquí.",
+      "example_gloss": [
+        {
+          "w": "Las",
+          "t": "les"
+        },
+        {
+          "w": "frutas",
+          "t": "fruits"
+        },
+        {
+          "w": "son",
+          "t": "sont"
+        },
+        {
+          "w": "baratas",
+          "t": "pas chers"
+        },
+        {
+          "w": "aquí",
+          "t": "ici"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -106929,8 +107357,33 @@
       "translation_fr": "réduction",
       "transliteration": null,
       "clue": "Baisse temporaire d'un prix",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hay un descuento del veinte por ciento.",
+      "example_gloss": [
+        {
+          "w": "Hay",
+          "t": "il y a"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "descuento",
+          "t": "réduction"
+        },
+        {
+          "w": "del",
+          "t": "de"
+        },
+        {
+          "w": "veinte",
+          "t": "vingt"
+        },
+        {
+          "w": "por ciento",
+          "t": "pour cent"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -106940,8 +107393,25 @@
       "translation_fr": "caisse",
       "transliteration": null,
       "clue": "Endroit où l'on paie ses achats",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Pago en la caja.",
+      "example_gloss": [
+        {
+          "w": "Pago",
+          "t": "je paie"
+        },
+        {
+          "w": "en",
+          "t": "à"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "caja",
+          "t": "caisse"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -106951,8 +107421,25 @@
       "translation_fr": "carte bancaire",
       "transliteration": null,
       "clue": "Carte pour payer sans argent liquide",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "¿Puedo pagar con tarjeta?",
+      "example_gloss": [
+        {
+          "w": "Puedo",
+          "t": "je peux"
+        },
+        {
+          "w": "pagar",
+          "t": "payer"
+        },
+        {
+          "w": "con",
+          "t": "par"
+        },
+        {
+          "w": "tarjeta",
+          "t": "carte"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -106962,8 +107449,29 @@
       "translation_fr": "reçu",
       "transliteration": null,
       "clue": "Papier qui prouve un achat",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "¿Me da el recibo, por favor?",
+      "example_gloss": [
+        {
+          "w": "Me",
+          "t": "me"
+        },
+        {
+          "w": "da",
+          "t": "donnez"
+        },
+        {
+          "w": "el",
+          "t": "le"
+        },
+        {
+          "w": "recibo",
+          "t": "reçu"
+        },
+        {
+          "w": "por favor",
+          "t": "s'il vous plaît"
+        }
+      ]
     },
     {
       "language_code": "en",
@@ -108117,8 +108625,29 @@
       "translation_fr": "médecin",
       "transliteration": null,
       "clue": "Professionnel qui soigne les malades",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Voy al médico cada año.",
+      "example_gloss": [
+        {
+          "w": "Voy",
+          "t": "je vais"
+        },
+        {
+          "w": "al",
+          "t": "chez le"
+        },
+        {
+          "w": "médico",
+          "t": "médecin"
+        },
+        {
+          "w": "cada",
+          "t": "chaque"
+        },
+        {
+          "w": "año",
+          "t": "année"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -108128,8 +108657,25 @@
       "translation_fr": "hôpital",
       "transliteration": null,
       "clue": "Lieu où l'on soigne les malades",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El hospital está cerca.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "l'"
+        },
+        {
+          "w": "hospital",
+          "t": "hôpital"
+        },
+        {
+          "w": "está",
+          "t": "est"
+        },
+        {
+          "w": "cerca",
+          "t": "proche"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -108139,8 +108685,29 @@
       "translation_fr": "douleur",
       "transliteration": null,
       "clue": "Sensation désagréable dans le corps",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Tengo un dolor de cabeza.",
+      "example_gloss": [
+        {
+          "w": "Tengo",
+          "t": "j'ai"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "dolor",
+          "t": "mal"
+        },
+        {
+          "w": "de",
+          "t": "de"
+        },
+        {
+          "w": "cabeza",
+          "t": "tête"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -108150,8 +108717,25 @@
       "translation_fr": "fièvre",
       "transliteration": null,
       "clue": "Température corporelle anormalement élevée",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El niño tiene fiebre.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "le"
+        },
+        {
+          "w": "niño",
+          "t": "enfant"
+        },
+        {
+          "w": "tiene",
+          "t": "a"
+        },
+        {
+          "w": "fiebre",
+          "t": "de la fièvre"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -108161,8 +108745,33 @@
       "translation_fr": "médicament",
       "transliteration": null,
       "clue": "Produit pris pour soigner",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Tomo este medicamento dos veces al día.",
+      "example_gloss": [
+        {
+          "w": "Tomo",
+          "t": "je prends"
+        },
+        {
+          "w": "este",
+          "t": "ce"
+        },
+        {
+          "w": "medicamento",
+          "t": "médicament"
+        },
+        {
+          "w": "dos",
+          "t": "deux"
+        },
+        {
+          "w": "veces",
+          "t": "fois"
+        },
+        {
+          "w": "al día",
+          "t": "par jour"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -108172,8 +108781,29 @@
       "translation_fr": "comprimé",
       "transliteration": null,
       "clue": "Petit médicament solide à avaler",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Toma una pastilla con agua.",
+      "example_gloss": [
+        {
+          "w": "Toma",
+          "t": "prends"
+        },
+        {
+          "w": "una",
+          "t": "un"
+        },
+        {
+          "w": "pastilla",
+          "t": "comprimé"
+        },
+        {
+          "w": "con",
+          "t": "avec"
+        },
+        {
+          "w": "agua",
+          "t": "de l'eau"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -108183,8 +108813,25 @@
       "translation_fr": "allergie",
       "transliteration": null,
       "clue": "Réaction du corps à une substance",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Tengo alergia al polen.",
+      "example_gloss": [
+        {
+          "w": "Tengo",
+          "t": "j'ai"
+        },
+        {
+          "w": "alergia",
+          "t": "une allergie"
+        },
+        {
+          "w": "al",
+          "t": "au"
+        },
+        {
+          "w": "polen",
+          "t": "pollen"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -108194,8 +108841,33 @@
       "translation_fr": "ordonnance",
       "transliteration": null,
       "clue": "Document écrit par un médecin",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El médico me dio una receta.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "le"
+        },
+        {
+          "w": "médico",
+          "t": "médecin"
+        },
+        {
+          "w": "me",
+          "t": "m'"
+        },
+        {
+          "w": "dio",
+          "t": "a donné"
+        },
+        {
+          "w": "una",
+          "t": "une"
+        },
+        {
+          "w": "receta",
+          "t": "ordonnance"
+        }
+      ]
     },
     {
       "language_code": "en",
@@ -109349,8 +110021,25 @@
       "translation_fr": "téléphone",
       "transliteration": null,
       "clue": "Appareil pour appeler à distance",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mi teléfono es nuevo.",
+      "example_gloss": [
+        {
+          "w": "Mi",
+          "t": "mon"
+        },
+        {
+          "w": "teléfono",
+          "t": "téléphone"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "nuevo",
+          "t": "nouveau"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -109360,8 +110049,25 @@
       "translation_fr": "ordinateur",
       "transliteration": null,
       "clue": "Machine pour travailler et naviguer en ligne",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Trabajo con mi ordenador.",
+      "example_gloss": [
+        {
+          "w": "Trabajo",
+          "t": "je travaille"
+        },
+        {
+          "w": "con",
+          "t": "avec"
+        },
+        {
+          "w": "mi",
+          "t": "mon"
+        },
+        {
+          "w": "ordenador",
+          "t": "ordinateur"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -109371,8 +110077,25 @@
       "translation_fr": "internet",
       "transliteration": null,
       "clue": "Réseau mondial d'ordinateurs connectés",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "No hay internet aquí.",
+      "example_gloss": [
+        {
+          "w": "No",
+          "t": "il n'y a pas"
+        },
+        {
+          "w": "hay",
+          "t": ""
+        },
+        {
+          "w": "internet",
+          "t": "d'internet"
+        },
+        {
+          "w": "aquí",
+          "t": "ici"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -109382,8 +110105,21 @@
       "translation_fr": "mot de passe",
       "transliteration": null,
       "clue": "Code secret pour se connecter",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Olvidé mi contraseña.",
+      "example_gloss": [
+        {
+          "w": "Olvidé",
+          "t": "j'ai oublié"
+        },
+        {
+          "w": "mi",
+          "t": "mon"
+        },
+        {
+          "w": "contraseña",
+          "t": "mot de passe"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -109393,8 +110129,29 @@
       "translation_fr": "email",
       "transliteration": null,
       "clue": "Message envoyé par internet",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Te envío un correo mañana.",
+      "example_gloss": [
+        {
+          "w": "Te",
+          "t": "je te"
+        },
+        {
+          "w": "envío",
+          "t": "envoie"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "correo",
+          "t": "email"
+        },
+        {
+          "w": "mañana",
+          "t": "demain"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -109404,8 +110161,29 @@
       "translation_fr": "écran",
       "transliteration": null,
       "clue": "Surface qui affiche des images",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La pantalla es muy grande.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "l'"
+        },
+        {
+          "w": "pantalla",
+          "t": "écran"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "muy",
+          "t": "très"
+        },
+        {
+          "w": "grande",
+          "t": "grand"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -109415,8 +110193,29 @@
       "translation_fr": "clavier",
       "transliteration": null,
       "clue": "Ensemble de touches pour écrire",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Escribo rápido con este teclado.",
+      "example_gloss": [
+        {
+          "w": "Escribo",
+          "t": "j'écris"
+        },
+        {
+          "w": "rápido",
+          "t": "vite"
+        },
+        {
+          "w": "con",
+          "t": "avec"
+        },
+        {
+          "w": "este",
+          "t": "ce"
+        },
+        {
+          "w": "teclado",
+          "t": "clavier"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -109426,8 +110225,25 @@
       "translation_fr": "application",
       "transliteration": null,
       "clue": "Programme installé sur un téléphone",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Descargué una aplicación nueva.",
+      "example_gloss": [
+        {
+          "w": "Descargué",
+          "t": "j'ai téléchargé"
+        },
+        {
+          "w": "una",
+          "t": "une"
+        },
+        {
+          "w": "aplicación",
+          "t": "application"
+        },
+        {
+          "w": "nueva",
+          "t": "nouvelle"
+        }
+      ]
     },
     {
       "language_code": "en",
@@ -110581,8 +111397,33 @@
       "translation_fr": "arbre",
       "transliteration": null,
       "clue": "Grande plante avec un tronc et des branches",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hay un árbol en el jardín.",
+      "example_gloss": [
+        {
+          "w": "Hay",
+          "t": "il y a"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "árbol",
+          "t": "arbre"
+        },
+        {
+          "w": "en",
+          "t": "dans"
+        },
+        {
+          "w": "el",
+          "t": "le"
+        },
+        {
+          "w": "jardín",
+          "t": "jardin"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -110592,8 +111433,29 @@
       "translation_fr": "fleur",
       "transliteration": null,
       "clue": "Partie colorée et parfumée d'une plante",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Esta flor es muy bonita.",
+      "example_gloss": [
+        {
+          "w": "Esta",
+          "t": "cette"
+        },
+        {
+          "w": "flor",
+          "t": "fleur"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "muy",
+          "t": "très"
+        },
+        {
+          "w": "bonita",
+          "t": "jolie"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -110603,8 +111465,29 @@
       "translation_fr": "rivière",
       "transliteration": null,
       "clue": "Cours d'eau qui coule vers la mer",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El río cruza la ciudad.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "la"
+        },
+        {
+          "w": "río",
+          "t": "rivière"
+        },
+        {
+          "w": "cruza",
+          "t": "traverse"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "ciudad",
+          "t": "ville"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -110614,8 +111497,25 @@
       "translation_fr": "montagne",
       "transliteration": null,
       "clue": "Relief naturel très élevé",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La montaña tiene nieve.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "montaña",
+          "t": "montagne"
+        },
+        {
+          "w": "tiene",
+          "t": "a"
+        },
+        {
+          "w": "nieve",
+          "t": "de la neige"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -110625,8 +111525,29 @@
       "translation_fr": "mer",
       "transliteration": null,
       "clue": "Grande étendue d'eau salée",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El mar está azul hoy.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "la"
+        },
+        {
+          "w": "mar",
+          "t": "mer"
+        },
+        {
+          "w": "está",
+          "t": "est"
+        },
+        {
+          "w": "azul",
+          "t": "bleue"
+        },
+        {
+          "w": "hoy",
+          "t": "aujourd'hui"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -110636,8 +111557,25 @@
       "translation_fr": "forêt",
       "transliteration": null,
       "clue": "Grand espace couvert d'arbres",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Caminamos por el bosque.",
+      "example_gloss": [
+        {
+          "w": "Caminamos",
+          "t": "nous marchons"
+        },
+        {
+          "w": "por",
+          "t": "dans"
+        },
+        {
+          "w": "el",
+          "t": "la"
+        },
+        {
+          "w": "bosque",
+          "t": "forêt"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -110647,8 +111585,25 @@
       "translation_fr": "pierre",
       "transliteration": null,
       "clue": "Matière dure et minérale",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Encontré una piedra bonita.",
+      "example_gloss": [
+        {
+          "w": "Encontré",
+          "t": "j'ai trouvé"
+        },
+        {
+          "w": "una",
+          "t": "une"
+        },
+        {
+          "w": "piedra",
+          "t": "pierre"
+        },
+        {
+          "w": "bonita",
+          "t": "jolie"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -110658,8 +111613,25 @@
       "translation_fr": "terre",
       "transliteration": null,
       "clue": "Sol sur lequel on marche",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La tierra está seca.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "tierra",
+          "t": "terre"
+        },
+        {
+          "w": "está",
+          "t": "est"
+        },
+        {
+          "w": "seca",
+          "t": "sèche"
+        }
+      ]
     },
     {
       "language_code": "en",
@@ -111813,8 +112785,25 @@
       "translation_fr": "heureux",
       "transliteration": null,
       "clue": "Qui ressent de la joie",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Estoy muy feliz hoy.",
+      "example_gloss": [
+        {
+          "w": "Estoy",
+          "t": "je suis"
+        },
+        {
+          "w": "muy",
+          "t": "très"
+        },
+        {
+          "w": "feliz",
+          "t": "heureux"
+        },
+        {
+          "w": "hoy",
+          "t": "aujourd'hui"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -111824,8 +112813,21 @@
       "translation_fr": "triste",
       "transliteration": null,
       "clue": "Qui ressent de la peine",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "María está triste.",
+      "example_gloss": [
+        {
+          "w": "María",
+          "t": "María"
+        },
+        {
+          "w": "está",
+          "t": "est"
+        },
+        {
+          "w": "triste",
+          "t": "triste"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -111835,8 +112837,25 @@
       "translation_fr": "en colère",
       "transliteration": null,
       "clue": "Qui ressent de la colère",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Pedro está enfadado conmigo.",
+      "example_gloss": [
+        {
+          "w": "Pedro",
+          "t": "Pedro"
+        },
+        {
+          "w": "está",
+          "t": "est"
+        },
+        {
+          "w": "enfadado",
+          "t": "en colère"
+        },
+        {
+          "w": "conmigo",
+          "t": "contre moi"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -111846,8 +112865,25 @@
       "translation_fr": "effrayé",
       "transliteration": null,
       "clue": "Qui ressent de la peur",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El gato está asustado.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "le"
+        },
+        {
+          "w": "gato",
+          "t": "chat"
+        },
+        {
+          "w": "está",
+          "t": "est"
+        },
+        {
+          "w": "asustado",
+          "t": "effrayé"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -111857,8 +112893,29 @@
       "translation_fr": "surpris",
       "transliteration": null,
       "clue": "Qui ne s'attendait pas à ça",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Estoy sorprendido por la noticia.",
+      "example_gloss": [
+        {
+          "w": "Estoy",
+          "t": "je suis"
+        },
+        {
+          "w": "sorprendido",
+          "t": "surpris"
+        },
+        {
+          "w": "por",
+          "t": "par"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "noticia",
+          "t": "nouvelle"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -111868,8 +112925,29 @@
       "translation_fr": "fier",
       "transliteration": null,
       "clue": "Qui ressent de la fierté",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Estoy orgulloso de mi hijo.",
+      "example_gloss": [
+        {
+          "w": "Estoy",
+          "t": "je suis"
+        },
+        {
+          "w": "orgulloso",
+          "t": "fier"
+        },
+        {
+          "w": "de",
+          "t": "de"
+        },
+        {
+          "w": "mi",
+          "t": "mon"
+        },
+        {
+          "w": "hijo",
+          "t": "fils"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -111879,8 +112957,21 @@
       "translation_fr": "honteux",
       "transliteration": null,
       "clue": "Qui ressent de la honte",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Se siente avergonzado.",
+      "example_gloss": [
+        {
+          "w": "Se",
+          "t": "il se"
+        },
+        {
+          "w": "siente",
+          "t": "sent"
+        },
+        {
+          "w": "avergonzado",
+          "t": "honteux"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -111890,8 +112981,29 @@
       "translation_fr": "anxieux",
       "transliteration": null,
       "clue": "Qui ressent de l'inquiétude",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Estoy ansioso por el resultado.",
+      "example_gloss": [
+        {
+          "w": "Estoy",
+          "t": "je suis"
+        },
+        {
+          "w": "ansioso",
+          "t": "anxieux"
+        },
+        {
+          "w": "por",
+          "t": "à cause"
+        },
+        {
+          "w": "el",
+          "t": "du"
+        },
+        {
+          "w": "resultado",
+          "t": "résultat"
+        }
+      ]
     },
     {
       "language_code": "en",
@@ -113045,8 +114157,25 @@
       "translation_fr": "chemise",
       "transliteration": null,
       "clue": "Vêtement boutonné pour le haut du corps",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Llevo una camisa blanca.",
+      "example_gloss": [
+        {
+          "w": "Llevo",
+          "t": "je porte"
+        },
+        {
+          "w": "una",
+          "t": "une"
+        },
+        {
+          "w": "camisa",
+          "t": "chemise"
+        },
+        {
+          "w": "blanca",
+          "t": "blanche"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -113056,8 +114185,25 @@
       "translation_fr": "pantalon",
       "transliteration": null,
       "clue": "Vêtement qui couvre les deux jambes",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Este pantalón es cómodo.",
+      "example_gloss": [
+        {
+          "w": "Este",
+          "t": "ce"
+        },
+        {
+          "w": "pantalón",
+          "t": "pantalon"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "cómodo",
+          "t": "confortable"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -113067,8 +114213,21 @@
       "translation_fr": "chaussures",
       "transliteration": null,
       "clue": "Ce qu'on porte aux pieds",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Necesito zapatos nuevos.",
+      "example_gloss": [
+        {
+          "w": "Necesito",
+          "t": "j'ai besoin de"
+        },
+        {
+          "w": "zapatos",
+          "t": "chaussures"
+        },
+        {
+          "w": "nuevos",
+          "t": "nouvelles"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -113078,8 +114237,29 @@
       "translation_fr": "manteau",
       "transliteration": null,
       "clue": "Vêtement chaud porté par-dessus",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ponte el abrigo, hace frío.",
+      "example_gloss": [
+        {
+          "w": "Ponte",
+          "t": "mets"
+        },
+        {
+          "w": "el",
+          "t": "le"
+        },
+        {
+          "w": "abrigo",
+          "t": "manteau"
+        },
+        {
+          "w": "hace",
+          "t": "il fait"
+        },
+        {
+          "w": "frío",
+          "t": "froid"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -113089,8 +114269,25 @@
       "translation_fr": "chapeau",
       "transliteration": null,
       "clue": "Accessoire porté sur la tête",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Lleva un sombrero grande.",
+      "example_gloss": [
+        {
+          "w": "Lleva",
+          "t": "il porte"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "sombrero",
+          "t": "chapeau"
+        },
+        {
+          "w": "grande",
+          "t": "grand"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -113100,8 +114297,25 @@
       "translation_fr": "chaussettes",
       "transliteration": null,
       "clue": "Vêtement qui couvre le pied sous la chaussure",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mis calcetines son rojos.",
+      "example_gloss": [
+        {
+          "w": "Mis",
+          "t": "mes"
+        },
+        {
+          "w": "calcetines",
+          "t": "chaussettes"
+        },
+        {
+          "w": "son",
+          "t": "sont"
+        },
+        {
+          "w": "rojos",
+          "t": "rouges"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -113111,8 +114325,25 @@
       "translation_fr": "robe",
       "transliteration": null,
       "clue": "Vêtement féminin d'une seule pièce",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Tu vestido es elegante.",
+      "example_gloss": [
+        {
+          "w": "Tu",
+          "t": "ta"
+        },
+        {
+          "w": "vestido",
+          "t": "robe"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "elegante",
+          "t": "élégante"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -113122,8 +114353,29 @@
       "translation_fr": "écharpe",
       "transliteration": null,
       "clue": "Accessoire chaud porté autour du cou",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Llevo una bufanda en invierno.",
+      "example_gloss": [
+        {
+          "w": "Llevo",
+          "t": "je porte"
+        },
+        {
+          "w": "una",
+          "t": "une"
+        },
+        {
+          "w": "bufanda",
+          "t": "écharpe"
+        },
+        {
+          "w": "en",
+          "t": "en"
+        },
+        {
+          "w": "invierno",
+          "t": "hiver"
+        }
+      ]
     },
     {
       "language_code": "en",
@@ -114277,8 +115529,21 @@
       "translation_fr": "heure",
       "transliteration": null,
       "clue": "Unité de mesure du temps, 60 minutes",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "¿Qué hora es?",
+      "example_gloss": [
+        {
+          "w": "Qué",
+          "t": "quelle"
+        },
+        {
+          "w": "hora",
+          "t": "heure"
+        },
+        {
+          "w": "es",
+          "t": "est-il"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -114288,8 +115553,21 @@
       "translation_fr": "minute",
       "transliteration": null,
       "clue": "Unité de temps, 60 secondes",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Espera un minuto.",
+      "example_gloss": [
+        {
+          "w": "Espera",
+          "t": "attends"
+        },
+        {
+          "w": "un",
+          "t": "une"
+        },
+        {
+          "w": "minuto",
+          "t": "minute"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -114299,8 +115577,25 @@
       "translation_fr": "matin",
       "transliteration": null,
       "clue": "Début de la journée",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Estudio por la mañana.",
+      "example_gloss": [
+        {
+          "w": "Estudio",
+          "t": "j'étudie"
+        },
+        {
+          "w": "por",
+          "t": "pendant"
+        },
+        {
+          "w": "la",
+          "t": "le"
+        },
+        {
+          "w": "mañana",
+          "t": "matin"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -114310,8 +115605,25 @@
       "translation_fr": "après-midi",
       "transliteration": null,
       "clue": "Partie de la journée après le déjeuner",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Salimos por la tarde.",
+      "example_gloss": [
+        {
+          "w": "Salimos",
+          "t": "nous sortons"
+        },
+        {
+          "w": "por",
+          "t": "pendant"
+        },
+        {
+          "w": "la",
+          "t": "l'"
+        },
+        {
+          "w": "tarde",
+          "t": "après-midi"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -114321,8 +115633,29 @@
       "translation_fr": "nuit/soir",
       "transliteration": null,
       "clue": "Période sombre de la journée",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Duermo bien por la noche.",
+      "example_gloss": [
+        {
+          "w": "Duermo",
+          "t": "je dors"
+        },
+        {
+          "w": "bien",
+          "t": "bien"
+        },
+        {
+          "w": "por",
+          "t": "pendant"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "noche",
+          "t": "nuit"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -114332,8 +115665,17 @@
       "translation_fr": "maintenant",
       "transliteration": null,
       "clue": "À cet instant précis",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Vamos ahora.",
+      "example_gloss": [
+        {
+          "w": "Vamos",
+          "t": "allons-y"
+        },
+        {
+          "w": "ahora",
+          "t": "maintenant"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -114343,8 +115685,17 @@
       "translation_fr": "bientôt",
       "transliteration": null,
       "clue": "Dans peu de temps",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Llegaré pronto.",
+      "example_gloss": [
+        {
+          "w": "Llegaré",
+          "t": "j'arriverai"
+        },
+        {
+          "w": "pronto",
+          "t": "bientôt"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -114354,8 +115705,29 @@
       "translation_fr": "minuit",
       "transliteration": null,
       "clue": "Milieu de la nuit, zéro heure",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Es medianoche, vamos a dormir.",
+      "example_gloss": [
+        {
+          "w": "Es",
+          "t": "il est"
+        },
+        {
+          "w": "medianoche",
+          "t": "minuit"
+        },
+        {
+          "w": "vamos",
+          "t": "allons"
+        },
+        {
+          "w": "a",
+          "t": ""
+        },
+        {
+          "w": "dormir",
+          "t": "dormir"
+        }
+      ]
     },
     {
       "language_code": "en",
@@ -115509,8 +116881,25 @@
       "translation_fr": "chanson",
       "transliteration": null,
       "clue": "Morceau de musique avec des paroles",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Me gusta esta canción.",
+      "example_gloss": [
+        {
+          "w": "Me",
+          "t": "me"
+        },
+        {
+          "w": "gusta",
+          "t": "plaît"
+        },
+        {
+          "w": "esta",
+          "t": "cette"
+        },
+        {
+          "w": "canción",
+          "t": "chanson"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -115520,8 +116909,21 @@
       "translation_fr": "guitare",
       "transliteration": null,
       "clue": "Instrument à cordes que l'on pince",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Toco la guitarra.",
+      "example_gloss": [
+        {
+          "w": "Toco",
+          "t": "je joue de"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "guitarra",
+          "t": "guitare"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -115531,8 +116933,21 @@
       "translation_fr": "piano",
       "transliteration": null,
       "clue": "Instrument à clavier et à cordes",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ella aprende piano.",
+      "example_gloss": [
+        {
+          "w": "Ella",
+          "t": "elle"
+        },
+        {
+          "w": "aprende",
+          "t": "apprend"
+        },
+        {
+          "w": "piano",
+          "t": "le piano"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -115542,8 +116957,25 @@
       "translation_fr": "voix",
       "transliteration": null,
       "clue": "Son produit par les cordes vocales",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Tiene una voz bonita.",
+      "example_gloss": [
+        {
+          "w": "Tiene",
+          "t": "il/elle a"
+        },
+        {
+          "w": "una",
+          "t": "une"
+        },
+        {
+          "w": "voz",
+          "t": "voix"
+        },
+        {
+          "w": "bonita",
+          "t": "jolie"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -115553,8 +116985,25 @@
       "translation_fr": "rythme",
       "transliteration": null,
       "clue": "Répétition régulière d'un son",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El ritmo es rápido.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "le"
+        },
+        {
+          "w": "ritmo",
+          "t": "rythme"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "rápido",
+          "t": "rapide"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -115564,8 +117013,29 @@
       "translation_fr": "concert",
       "transliteration": null,
       "clue": "Spectacle musical en direct",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Vamos al concierto esta noche.",
+      "example_gloss": [
+        {
+          "w": "Vamos",
+          "t": "nous allons"
+        },
+        {
+          "w": "al",
+          "t": "au"
+        },
+        {
+          "w": "concierto",
+          "t": "concert"
+        },
+        {
+          "w": "esta",
+          "t": "ce"
+        },
+        {
+          "w": "noche",
+          "t": "soir"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -115575,8 +117045,25 @@
       "translation_fr": "paroles",
       "transliteration": null,
       "clue": "Texte chanté d'une chanson",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "No conozco la letra.",
+      "example_gloss": [
+        {
+          "w": "No",
+          "t": "je ne"
+        },
+        {
+          "w": "conozco",
+          "t": "connais pas"
+        },
+        {
+          "w": "la",
+          "t": "les"
+        },
+        {
+          "w": "letra",
+          "t": "paroles"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -115586,8 +117073,29 @@
       "translation_fr": "mélodie",
       "transliteration": null,
       "clue": "Suite de notes qui forme un air",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La melodía es muy dulce.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "melodía",
+          "t": "mélodie"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "muy",
+          "t": "très"
+        },
+        {
+          "w": "dulce",
+          "t": "douce"
+        }
+      ]
     },
     {
       "language_code": "en",
@@ -116741,8 +118249,25 @@
       "translation_fr": "cuisiner",
       "transliteration": null,
       "clue": "Préparer des plats à manger",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Me gusta cocinar pasta.",
+      "example_gloss": [
+        {
+          "w": "Me",
+          "t": "me"
+        },
+        {
+          "w": "gusta",
+          "t": "plaît"
+        },
+        {
+          "w": "cocinar",
+          "t": "cuisiner"
+        },
+        {
+          "w": "pasta",
+          "t": "des pâtes"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -116752,8 +118277,29 @@
       "translation_fr": "recette",
       "transliteration": null,
       "clue": "Instructions pour préparer un plat",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sigo la receta del libro.",
+      "example_gloss": [
+        {
+          "w": "Sigo",
+          "t": "je suis"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "receta",
+          "t": "recette"
+        },
+        {
+          "w": "del",
+          "t": "du"
+        },
+        {
+          "w": "libro",
+          "t": "livre"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -116763,8 +118309,21 @@
       "translation_fr": "ingrédient",
       "transliteration": null,
       "clue": "Élément utilisé dans une recette",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Falta un ingrediente.",
+      "example_gloss": [
+        {
+          "w": "Falta",
+          "t": "il manque"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "ingrediente",
+          "t": "ingrédient"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -116774,8 +118333,29 @@
       "translation_fr": "poêle",
       "transliteration": null,
       "clue": "Ustensile plat pour cuire les aliments",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Caliento la sartén con aceite.",
+      "example_gloss": [
+        {
+          "w": "Caliento",
+          "t": "je chauffe"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "sartén",
+          "t": "poêle"
+        },
+        {
+          "w": "con",
+          "t": "avec"
+        },
+        {
+          "w": "aceite",
+          "t": "de l'huile"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -116785,8 +118365,25 @@
       "translation_fr": "faire bouillir",
       "transliteration": null,
       "clue": "Chauffer un liquide jusqu'à ébullition",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hay que hervir el agua.",
+      "example_gloss": [
+        {
+          "w": "Hay que",
+          "t": "il faut"
+        },
+        {
+          "w": "hervir",
+          "t": "faire bouillir"
+        },
+        {
+          "w": "el",
+          "t": "l'"
+        },
+        {
+          "w": "agua",
+          "t": "eau"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -116796,8 +118393,29 @@
       "translation_fr": "cuire au four",
       "transliteration": null,
       "clue": "Cuire un plat dans le four",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Voy a hornear un pastel.",
+      "example_gloss": [
+        {
+          "w": "Voy",
+          "t": "je vais"
+        },
+        {
+          "w": "a",
+          "t": ""
+        },
+        {
+          "w": "hornear",
+          "t": "cuire au four"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "pastel",
+          "t": "gâteau"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -116807,8 +118425,25 @@
       "translation_fr": "mélanger",
       "transliteration": null,
       "clue": "Combiner plusieurs ingrédients ensemble",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hay que mezclar los ingredientes.",
+      "example_gloss": [
+        {
+          "w": "Hay que",
+          "t": "il faut"
+        },
+        {
+          "w": "mezclar",
+          "t": "mélanger"
+        },
+        {
+          "w": "los",
+          "t": "les"
+        },
+        {
+          "w": "ingredientes",
+          "t": "ingrédients"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -116818,8 +118453,29 @@
       "translation_fr": "assaisonnement",
       "transliteration": null,
       "clue": "Ajouté pour donner du goût",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Añade un poco de condimento.",
+      "example_gloss": [
+        {
+          "w": "Añade",
+          "t": "ajoute"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "poco",
+          "t": "peu"
+        },
+        {
+          "w": "de",
+          "t": "de"
+        },
+        {
+          "w": "condimento",
+          "t": "assaisonnement"
+        }
+      ]
     },
     {
       "language_code": "en",
@@ -117973,8 +119629,33 @@
       "translation_fr": "avion",
       "transliteration": null,
       "clue": "Véhicule qui vole dans le ciel",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El avión sale a las ocho.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "l'"
+        },
+        {
+          "w": "avión",
+          "t": "avion"
+        },
+        {
+          "w": "sale",
+          "t": "part"
+        },
+        {
+          "w": "a",
+          "t": "à"
+        },
+        {
+          "w": "las",
+          "t": ""
+        },
+        {
+          "w": "ocho",
+          "t": "huit heures"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -117984,8 +119665,29 @@
       "translation_fr": "valise",
       "transliteration": null,
       "clue": "Bagage pour transporter ses affaires",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hago la maleta esta noche.",
+      "example_gloss": [
+        {
+          "w": "Hago",
+          "t": "je fais"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "maleta",
+          "t": "valise"
+        },
+        {
+          "w": "esta",
+          "t": "ce"
+        },
+        {
+          "w": "noche",
+          "t": "soir"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -117995,8 +119697,21 @@
       "translation_fr": "passeport",
       "transliteration": null,
       "clue": "Document officiel pour voyager à l'étranger",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "¿Tienes tu pasaporte?",
+      "example_gloss": [
+        {
+          "w": "Tienes",
+          "t": "tu as"
+        },
+        {
+          "w": "tu",
+          "t": "ton"
+        },
+        {
+          "w": "pasaporte",
+          "t": "passeport"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -118006,8 +119721,25 @@
       "translation_fr": "hôtel",
       "transliteration": null,
       "clue": "Établissement où l'on dort en voyage",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El hotel tiene piscina.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "l'"
+        },
+        {
+          "w": "hotel",
+          "t": "hôtel"
+        },
+        {
+          "w": "tiene",
+          "t": "a"
+        },
+        {
+          "w": "piscina",
+          "t": "une piscine"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -118017,8 +119749,29 @@
       "translation_fr": "billet",
       "transliteration": null,
       "clue": "Titre de transport payant",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Compré un billete de tren.",
+      "example_gloss": [
+        {
+          "w": "Compré",
+          "t": "j'ai acheté"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "billete",
+          "t": "billet"
+        },
+        {
+          "w": "de",
+          "t": "de"
+        },
+        {
+          "w": "tren",
+          "t": "train"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -118028,8 +119781,25 @@
       "translation_fr": "douane",
       "transliteration": null,
       "clue": "Contrôle aux frontières d'un pays",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Pasamos por la aduana.",
+      "example_gloss": [
+        {
+          "w": "Pasamos",
+          "t": "nous passons"
+        },
+        {
+          "w": "por",
+          "t": "par"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "aduana",
+          "t": "douane"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -118039,8 +119809,29 @@
       "translation_fr": "tourisme",
       "transliteration": null,
       "clue": "Activité de visiter pour le plaisir",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El turismo es importante aquí.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "le"
+        },
+        {
+          "w": "turismo",
+          "t": "tourisme"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "importante",
+          "t": "important"
+        },
+        {
+          "w": "aquí",
+          "t": "ici"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -118050,8 +119841,25 @@
       "translation_fr": "hébergement",
       "transliteration": null,
       "clue": "Lieu où l'on séjourne pour la nuit",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Busco un alojamiento barato.",
+      "example_gloss": [
+        {
+          "w": "Busco",
+          "t": "je cherche"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "alojamiento",
+          "t": "hébergement"
+        },
+        {
+          "w": "barato",
+          "t": "pas cher"
+        }
+      ]
     },
     {
       "language_code": "en",
@@ -118589,8 +120397,29 @@
       "translation_fr": "zéro",
       "transliteration": null,
       "clue": "Nombre qui représente le vide",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La temperatura es cero grados.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "temperatura",
+          "t": "température"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "cero",
+          "t": "zéro"
+        },
+        {
+          "w": "grados",
+          "t": "degrés"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -118600,8 +120429,21 @@
       "translation_fr": "dix",
       "transliteration": null,
       "clue": "Nombre entre neuf et onze",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Tengo diez dedos.",
+      "example_gloss": [
+        {
+          "w": "Tengo",
+          "t": "j'ai"
+        },
+        {
+          "w": "diez",
+          "t": "dix"
+        },
+        {
+          "w": "dedos",
+          "t": "doigts"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -118611,8 +120453,33 @@
       "translation_fr": "cent",
       "transliteration": null,
       "clue": "Nombre égal à dix fois dix",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hay cien personas en la sala.",
+      "example_gloss": [
+        {
+          "w": "Hay",
+          "t": "il y a"
+        },
+        {
+          "w": "cien",
+          "t": "cent"
+        },
+        {
+          "w": "personas",
+          "t": "personnes"
+        },
+        {
+          "w": "en",
+          "t": "dans"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "sala",
+          "t": "salle"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -118622,8 +120489,21 @@
       "translation_fr": "mille",
       "transliteration": null,
       "clue": "Nombre égal à dix fois cent",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Cuesta mil euros.",
+      "example_gloss": [
+        {
+          "w": "Cuesta",
+          "t": "ça coûte"
+        },
+        {
+          "w": "mil",
+          "t": "mille"
+        },
+        {
+          "w": "euros",
+          "t": "euros"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -118633,8 +120513,37 @@
       "translation_fr": "million",
       "transliteration": null,
       "clue": "Nombre égal à mille fois mille",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La ciudad tiene un millón de habitantes.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "ciudad",
+          "t": "ville"
+        },
+        {
+          "w": "tiene",
+          "t": "a"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "millón",
+          "t": "million"
+        },
+        {
+          "w": "de",
+          "t": "d'"
+        },
+        {
+          "w": "habitantes",
+          "t": "habitants"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -118644,8 +120553,21 @@
       "translation_fr": "moitié",
       "transliteration": null,
       "clue": "Une partie sur deux d'un tout",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dame la mitad.",
+      "example_gloss": [
+        {
+          "w": "Dame",
+          "t": "donne-moi"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "mitad",
+          "t": "moitié"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -118655,8 +120577,21 @@
       "translation_fr": "double",
       "transliteration": null,
       "clue": "Deux fois la quantité initiale",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Quiero el doble.",
+      "example_gloss": [
+        {
+          "w": "Quiero",
+          "t": "je veux"
+        },
+        {
+          "w": "el",
+          "t": "le"
+        },
+        {
+          "w": "doble",
+          "t": "double"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -118666,8 +120601,33 @@
       "translation_fr": "tiers",
       "transliteration": null,
       "clue": "Une partie sur trois d'un tout",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Un tercio de la clase falta.",
+      "example_gloss": [
+        {
+          "w": "Un",
+          "t": "un"
+        },
+        {
+          "w": "tercio",
+          "t": "tiers"
+        },
+        {
+          "w": "de",
+          "t": "de"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "clase",
+          "t": "classe"
+        },
+        {
+          "w": "falta",
+          "t": "est absent"
+        }
+      ]
     },
     {
       "language_code": "en",
@@ -119821,8 +121781,29 @@
       "translation_fr": "pays",
       "transliteration": null,
       "clue": "Territoire avec son propre gouvernement",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "España es un país europeo.",
+      "example_gloss": [
+        {
+          "w": "España",
+          "t": "l'Espagne"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "país",
+          "t": "pays"
+        },
+        {
+          "w": "europeo",
+          "t": "européen"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -119832,8 +121813,33 @@
       "translation_fr": "capitale",
       "transliteration": null,
       "clue": "Ville principale d'un pays",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Madrid es la capital de España.",
+      "example_gloss": [
+        {
+          "w": "Madrid",
+          "t": "Madrid"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "capital",
+          "t": "capitale"
+        },
+        {
+          "w": "de",
+          "t": "de"
+        },
+        {
+          "w": "España",
+          "t": "l'Espagne"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -119843,8 +121849,25 @@
       "translation_fr": "continent",
       "transliteration": null,
       "clue": "Très grande étendue de terre",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Europa es un continente.",
+      "example_gloss": [
+        {
+          "w": "Europa",
+          "t": "l'Europe"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "continente",
+          "t": "continent"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -119854,8 +121877,33 @@
       "translation_fr": "frontière",
       "transliteration": null,
       "clue": "Ligne qui sépare deux pays",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La frontera está a diez kilómetros.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "frontera",
+          "t": "frontière"
+        },
+        {
+          "w": "está",
+          "t": "est"
+        },
+        {
+          "w": "a",
+          "t": "à"
+        },
+        {
+          "w": "diez",
+          "t": "dix"
+        },
+        {
+          "w": "kilómetros",
+          "t": "kilomètres"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -119865,8 +121913,29 @@
       "translation_fr": "île",
       "transliteration": null,
       "clue": "Terre entourée d'eau de tous côtés",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mallorca es una isla bonita.",
+      "example_gloss": [
+        {
+          "w": "Mallorca",
+          "t": "Majorque"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "una",
+          "t": "une"
+        },
+        {
+          "w": "isla",
+          "t": "île"
+        },
+        {
+          "w": "bonita",
+          "t": "jolie"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -119876,8 +121945,29 @@
       "translation_fr": "désert",
       "transliteration": null,
       "clue": "Région très sèche avec peu de végétation",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El desierto es muy seco.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "le"
+        },
+        {
+          "w": "desierto",
+          "t": "désert"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "muy",
+          "t": "très"
+        },
+        {
+          "w": "seco",
+          "t": "sec"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -119887,8 +121977,29 @@
       "translation_fr": "océan",
       "transliteration": null,
       "clue": "Très grande étendue d'eau salée",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El océano Atlántico es inmenso.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "l'"
+        },
+        {
+          "w": "océano",
+          "t": "océan"
+        },
+        {
+          "w": "Atlántico",
+          "t": "Atlantique"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "inmenso",
+          "t": "immense"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -119898,8 +122009,29 @@
       "translation_fr": "hémisphère",
       "transliteration": null,
       "clue": "Moitié du globe terrestre",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Vivimos en el hemisferio norte.",
+      "example_gloss": [
+        {
+          "w": "Vivimos",
+          "t": "nous vivons"
+        },
+        {
+          "w": "en",
+          "t": "dans"
+        },
+        {
+          "w": "el",
+          "t": "l'"
+        },
+        {
+          "w": "hemisferio",
+          "t": "hémisphère"
+        },
+        {
+          "w": "norte",
+          "t": "nord"
+        }
+      ]
     },
     {
       "language_code": "en",
@@ -121053,8 +123185,33 @@
       "translation_fr": "médecin",
       "transliteration": null,
       "clue": "Professionnel de santé qui soigne les patients",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El médico trabaja en el hospital.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "le"
+        },
+        {
+          "w": "médico",
+          "t": "médecin"
+        },
+        {
+          "w": "trabaja",
+          "t": "travaille"
+        },
+        {
+          "w": "en",
+          "t": "à"
+        },
+        {
+          "w": "el",
+          "t": "l'"
+        },
+        {
+          "w": "hospital",
+          "t": "hôpital"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -121064,8 +123221,25 @@
       "translation_fr": "enseignant",
       "transliteration": null,
       "clue": "Personne qui enseigne aux enfants",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El maestro enseña matemáticas.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "l'"
+        },
+        {
+          "w": "maestro",
+          "t": "enseignant"
+        },
+        {
+          "w": "enseña",
+          "t": "enseigne"
+        },
+        {
+          "w": "matemáticas",
+          "t": "les mathématiques"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -121075,8 +123249,29 @@
       "translation_fr": "cuisinier",
       "transliteration": null,
       "clue": "Personne qui prépare les repas",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El cocinero prepara la cena.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "le"
+        },
+        {
+          "w": "cocinero",
+          "t": "cuisinier"
+        },
+        {
+          "w": "prepara",
+          "t": "prépare"
+        },
+        {
+          "w": "la",
+          "t": "le"
+        },
+        {
+          "w": "cena",
+          "t": "dîner"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -121086,8 +123281,29 @@
       "translation_fr": "policier",
       "transliteration": null,
       "clue": "Personne qui fait respecter la loi",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El policía dirige el tráfico.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "le"
+        },
+        {
+          "w": "policía",
+          "t": "policier"
+        },
+        {
+          "w": "dirige",
+          "t": "dirige"
+        },
+        {
+          "w": "el",
+          "t": "la"
+        },
+        {
+          "w": "tráfico",
+          "t": "circulation"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -121097,8 +123313,29 @@
       "translation_fr": "pompier",
       "transliteration": null,
       "clue": "Personne qui éteint les incendies",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El bombero apaga el fuego.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "le"
+        },
+        {
+          "w": "bombero",
+          "t": "pompier"
+        },
+        {
+          "w": "apaga",
+          "t": "éteint"
+        },
+        {
+          "w": "el",
+          "t": "le"
+        },
+        {
+          "w": "fuego",
+          "t": "feu"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -121108,8 +123345,25 @@
       "translation_fr": "ingénieur",
       "transliteration": null,
       "clue": "Personne qui conçoit des projets techniques",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El ingeniero diseña puentes.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "l'"
+        },
+        {
+          "w": "ingeniero",
+          "t": "ingénieur"
+        },
+        {
+          "w": "diseña",
+          "t": "conçoit"
+        },
+        {
+          "w": "puentes",
+          "t": "des ponts"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -121119,8 +123373,33 @@
       "translation_fr": "avocat",
       "transliteration": null,
       "clue": "Personne qui défend en justice",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El abogado defiende a su cliente.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "l'"
+        },
+        {
+          "w": "abogado",
+          "t": "avocat"
+        },
+        {
+          "w": "defiende",
+          "t": "défend"
+        },
+        {
+          "w": "a",
+          "t": ""
+        },
+        {
+          "w": "su",
+          "t": "son"
+        },
+        {
+          "w": "cliente",
+          "t": "client"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -121130,8 +123409,25 @@
       "translation_fr": "architecte",
       "transliteration": null,
       "clue": "Personne qui conçoit les bâtiments",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El arquitecto diseña casas.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "l'"
+        },
+        {
+          "w": "arquitecto",
+          "t": "architecte"
+        },
+        {
+          "w": "diseña",
+          "t": "conçoit"
+        },
+        {
+          "w": "casas",
+          "t": "des maisons"
+        }
+      ]
     },
     {
       "language_code": "en",
@@ -122285,8 +124581,25 @@
       "translation_fr": "lire",
       "transliteration": null,
       "clue": "Parcourir un texte avec les yeux",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Me encanta leer novelas.",
+      "example_gloss": [
+        {
+          "w": "Me",
+          "t": "j'"
+        },
+        {
+          "w": "encanta",
+          "t": "adore"
+        },
+        {
+          "w": "leer",
+          "t": "lire"
+        },
+        {
+          "w": "novelas",
+          "t": "des romans"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -122296,8 +124609,33 @@
       "translation_fr": "peindre",
       "transliteration": null,
       "clue": "Créer une image avec de la peinture",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mi hermana sabe pintar muy bien.",
+      "example_gloss": [
+        {
+          "w": "Mi",
+          "t": "ma"
+        },
+        {
+          "w": "hermana",
+          "t": "sœur"
+        },
+        {
+          "w": "sabe",
+          "t": "sait"
+        },
+        {
+          "w": "pintar",
+          "t": "peindre"
+        },
+        {
+          "w": "muy",
+          "t": "très"
+        },
+        {
+          "w": "bien",
+          "t": "bien"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -122307,8 +124645,33 @@
       "translation_fr": "nager",
       "transliteration": null,
       "clue": "Se déplacer dans l'eau",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Vamos a nadar a la piscina.",
+      "example_gloss": [
+        {
+          "w": "Vamos",
+          "t": "nous allons"
+        },
+        {
+          "w": "a",
+          "t": ""
+        },
+        {
+          "w": "nadar",
+          "t": "nager"
+        },
+        {
+          "w": "a",
+          "t": "à"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "piscina",
+          "t": "piscine"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -122318,8 +124681,29 @@
       "translation_fr": "photographie",
       "transliteration": null,
       "clue": "Art de capturer des images",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La fotografía es su pasión.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "fotografía",
+          "t": "photographie"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "su",
+          "t": "sa"
+        },
+        {
+          "w": "pasión",
+          "t": "passion"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -122329,8 +124713,25 @@
       "translation_fr": "jardinage",
       "transliteration": null,
       "clue": "Activité de cultiver des plantes",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hago jardinería los domingos.",
+      "example_gloss": [
+        {
+          "w": "Hago",
+          "t": "je fais du"
+        },
+        {
+          "w": "jardinería",
+          "t": "jardinage"
+        },
+        {
+          "w": "los",
+          "t": "les"
+        },
+        {
+          "w": "domingos",
+          "t": "dimanches"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -122340,8 +124741,21 @@
       "translation_fr": "échecs",
       "transliteration": null,
       "clue": "Jeu de stratégie avec un roi et une reine",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "¿Jugamos al ajedrez?",
+      "example_gloss": [
+        {
+          "w": "Jugamos",
+          "t": "nous jouons"
+        },
+        {
+          "w": "al",
+          "t": "aux"
+        },
+        {
+          "w": "ajedrez",
+          "t": "échecs"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -122351,8 +124765,29 @@
       "translation_fr": "randonnée",
       "transliteration": null,
       "clue": "Marche sportive en pleine nature",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hacemos senderismo en la montaña.",
+      "example_gloss": [
+        {
+          "w": "Hacemos",
+          "t": "nous faisons"
+        },
+        {
+          "w": "senderismo",
+          "t": "de la randonnée"
+        },
+        {
+          "w": "en",
+          "t": "à"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "montaña",
+          "t": "montagne"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -122362,8 +124797,29 @@
       "translation_fr": "collection",
       "transliteration": null,
       "clue": "Ensemble d'objets réunis par passion",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Tiene una colección de sellos.",
+      "example_gloss": [
+        {
+          "w": "Tiene",
+          "t": "il/elle a"
+        },
+        {
+          "w": "una",
+          "t": "une"
+        },
+        {
+          "w": "colección",
+          "t": "collection"
+        },
+        {
+          "w": "de",
+          "t": "de"
+        },
+        {
+          "w": "sellos",
+          "t": "timbres"
+        }
+      ]
     },
     {
       "language_code": "en",
@@ -123517,8 +125973,33 @@
       "translation_fr": "banque",
       "transliteration": null,
       "clue": "Établissement qui gère l'argent",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Voy al banco a sacar dinero.",
+      "example_gloss": [
+        {
+          "w": "Voy",
+          "t": "je vais"
+        },
+        {
+          "w": "al",
+          "t": "à la"
+        },
+        {
+          "w": "banco",
+          "t": "banque"
+        },
+        {
+          "w": "a",
+          "t": "pour"
+        },
+        {
+          "w": "sacar",
+          "t": "retirer"
+        },
+        {
+          "w": "dinero",
+          "t": "de l'argent"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -123528,8 +126009,21 @@
       "translation_fr": "argent",
       "transliteration": null,
       "clue": "Ce qu'on utilise pour payer",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "No tengo dinero.",
+      "example_gloss": [
+        {
+          "w": "No",
+          "t": "je n'"
+        },
+        {
+          "w": "tengo",
+          "t": "ai pas"
+        },
+        {
+          "w": "dinero",
+          "t": "d'argent"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -123539,8 +126033,33 @@
       "translation_fr": "compte",
       "transliteration": null,
       "clue": "Espace bancaire pour son argent",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Abrí una cuenta en el banco.",
+      "example_gloss": [
+        {
+          "w": "Abrí",
+          "t": "j'ai ouvert"
+        },
+        {
+          "w": "una",
+          "t": "un"
+        },
+        {
+          "w": "cuenta",
+          "t": "compte"
+        },
+        {
+          "w": "en",
+          "t": "à"
+        },
+        {
+          "w": "el",
+          "t": "la"
+        },
+        {
+          "w": "banco",
+          "t": "banque"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -123550,8 +126069,29 @@
       "translation_fr": "virement",
       "transliteration": null,
       "clue": "Envoi d'argent d'un compte à un autre",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hice una transferencia esta mañana.",
+      "example_gloss": [
+        {
+          "w": "Hice",
+          "t": "j'ai fait"
+        },
+        {
+          "w": "una",
+          "t": "un"
+        },
+        {
+          "w": "transferencia",
+          "t": "virement"
+        },
+        {
+          "w": "esta",
+          "t": "ce"
+        },
+        {
+          "w": "mañana",
+          "t": "matin"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -123561,8 +126101,25 @@
       "translation_fr": "distributeur",
       "transliteration": null,
       "clue": "Machine pour retirer de l'argent",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El cajero no funciona.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "le"
+        },
+        {
+          "w": "cajero",
+          "t": "distributeur"
+        },
+        {
+          "w": "no",
+          "t": "ne"
+        },
+        {
+          "w": "funciona",
+          "t": "fonctionne pas"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -123572,8 +126129,33 @@
       "translation_fr": "intérêt",
       "transliteration": null,
       "clue": "Somme gagnée ou payée sur un prêt",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El interés del préstamo es bajo.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "l'"
+        },
+        {
+          "w": "interés",
+          "t": "intérêt"
+        },
+        {
+          "w": "del",
+          "t": "du"
+        },
+        {
+          "w": "préstamo",
+          "t": "prêt"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "bajo",
+          "t": "bas"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -123583,8 +126165,29 @@
       "translation_fr": "prêt",
       "transliteration": null,
       "clue": "Argent emprunté à rembourser",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Pedí un préstamo al banco.",
+      "example_gloss": [
+        {
+          "w": "Pedí",
+          "t": "j'ai demandé"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "préstamo",
+          "t": "prêt"
+        },
+        {
+          "w": "al",
+          "t": "à la"
+        },
+        {
+          "w": "banco",
+          "t": "banque"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -123594,8 +126197,29 @@
       "translation_fr": "taux de change",
       "transliteration": null,
       "clue": "Valeur d'une monnaie par rapport à une autre",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "¿Cuál es la tasa de cambio hoy?",
+      "example_gloss": [
+        {
+          "w": "Cuál",
+          "t": "quel"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "la",
+          "t": "le"
+        },
+        {
+          "w": "tasa de cambio",
+          "t": "taux de change"
+        },
+        {
+          "w": "hoy",
+          "t": "aujourd'hui"
+        }
+      ]
     },
     {
       "language_code": "en",
@@ -124749,8 +127373,29 @@
       "translation_fr": "fête",
       "transliteration": null,
       "clue": "Moment de joie et de célébration",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La fiesta es el sábado.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "fiesta",
+          "t": "fête"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "el",
+          "t": ""
+        },
+        {
+          "w": "sábado",
+          "t": "samedi"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -124760,8 +127405,25 @@
       "translation_fr": "anniversaire",
       "transliteration": null,
       "clue": "Jour qui marque sa naissance",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hoy es mi cumpleaños.",
+      "example_gloss": [
+        {
+          "w": "Hoy",
+          "t": "aujourd'hui"
+        },
+        {
+          "w": "es",
+          "t": "c'est"
+        },
+        {
+          "w": "mi",
+          "t": "mon"
+        },
+        {
+          "w": "cumpleaños",
+          "t": "anniversaire"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -124771,8 +127433,29 @@
       "translation_fr": "cadeau",
       "transliteration": null,
       "clue": "Objet offert pour faire plaisir",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Compré un regalo para ti.",
+      "example_gloss": [
+        {
+          "w": "Compré",
+          "t": "j'ai acheté"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "regalo",
+          "t": "cadeau"
+        },
+        {
+          "w": "para",
+          "t": "pour"
+        },
+        {
+          "w": "ti",
+          "t": "toi"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -124782,8 +127465,29 @@
       "translation_fr": "bougie",
       "transliteration": null,
       "clue": "Petite source de lumière à flamme",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sopla las velas del pastel.",
+      "example_gloss": [
+        {
+          "w": "Sopla",
+          "t": "souffle"
+        },
+        {
+          "w": "las",
+          "t": "les"
+        },
+        {
+          "w": "velas",
+          "t": "bougies"
+        },
+        {
+          "w": "del",
+          "t": "du"
+        },
+        {
+          "w": "pastel",
+          "t": "gâteau"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -124793,8 +127497,33 @@
       "translation_fr": "toast",
       "transliteration": null,
       "clue": "Geste festif avec des verres",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hacemos un brindis por la salud.",
+      "example_gloss": [
+        {
+          "w": "Hacemos",
+          "t": "nous faisons"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "brindis",
+          "t": "toast"
+        },
+        {
+          "w": "por",
+          "t": "à"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "salud",
+          "t": "santé"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -124804,8 +127533,25 @@
       "translation_fr": "feux d'artifice",
       "transliteration": null,
       "clue": "Explosions lumineuses dans le ciel",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Los fuegos artificiales son bonitos.",
+      "example_gloss": [
+        {
+          "w": "Los",
+          "t": "les"
+        },
+        {
+          "w": "fuegos artificiales",
+          "t": "feux d'artifice"
+        },
+        {
+          "w": "son",
+          "t": "sont"
+        },
+        {
+          "w": "bonitos",
+          "t": "beaux"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -124815,8 +127561,25 @@
       "translation_fr": "décoration",
       "transliteration": null,
       "clue": "Éléments pour embellir un lieu",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La decoración está lista.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "decoración",
+          "t": "décoration"
+        },
+        {
+          "w": "está",
+          "t": "est"
+        },
+        {
+          "w": "lista",
+          "t": "prête"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -124826,8 +127589,29 @@
       "translation_fr": "invité",
       "transliteration": null,
       "clue": "Personne conviée à un événement",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Cada invitado trae un plato.",
+      "example_gloss": [
+        {
+          "w": "Cada",
+          "t": "chaque"
+        },
+        {
+          "w": "invitado",
+          "t": "invité"
+        },
+        {
+          "w": "trae",
+          "t": "apporte"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "plato",
+          "t": "plat"
+        }
+      ]
     },
     {
       "language_code": "en",
@@ -125981,8 +128765,25 @@
       "translation_fr": "musée",
       "transliteration": null,
       "clue": "Lieu qui expose des œuvres d'art",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Visitamos el museo ayer.",
+      "example_gloss": [
+        {
+          "w": "Visitamos",
+          "t": "nous avons visité"
+        },
+        {
+          "w": "el",
+          "t": "le"
+        },
+        {
+          "w": "museo",
+          "t": "musée"
+        },
+        {
+          "w": "ayer",
+          "t": "hier"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -125992,8 +128793,29 @@
       "translation_fr": "théâtre",
       "transliteration": null,
       "clue": "Lieu où l'on joue des pièces",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Fuimos al teatro el viernes.",
+      "example_gloss": [
+        {
+          "w": "Fuimos",
+          "t": "nous sommes allés"
+        },
+        {
+          "w": "al",
+          "t": "au"
+        },
+        {
+          "w": "teatro",
+          "t": "théâtre"
+        },
+        {
+          "w": "el",
+          "t": ""
+        },
+        {
+          "w": "viernes",
+          "t": "vendredi"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -126003,8 +128825,29 @@
       "translation_fr": "art",
       "transliteration": null,
       "clue": "Expression créative et esthétique",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El arte moderno es interesante.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "l'"
+        },
+        {
+          "w": "arte",
+          "t": "art"
+        },
+        {
+          "w": "moderno",
+          "t": "moderne"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "interesante",
+          "t": "intéressant"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -126014,8 +128857,25 @@
       "translation_fr": "tableau/peinture",
       "transliteration": null,
       "clue": "Œuvre réalisée avec des couleurs",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Esta pintura es famosa.",
+      "example_gloss": [
+        {
+          "w": "Esta",
+          "t": "cette"
+        },
+        {
+          "w": "pintura",
+          "t": "peinture"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "famosa",
+          "t": "célèbre"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -126025,8 +128885,29 @@
       "translation_fr": "sculpture",
       "transliteration": null,
       "clue": "Œuvre d'art en trois dimensions",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La escultura es de mármol.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "escultura",
+          "t": "sculpture"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "de",
+          "t": "en"
+        },
+        {
+          "w": "mármol",
+          "t": "marbre"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -126036,8 +128917,21 @@
       "translation_fr": "littérature",
       "transliteration": null,
       "clue": "Ensemble des œuvres écrites",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Estudio literatura española.",
+      "example_gloss": [
+        {
+          "w": "Estudio",
+          "t": "j'étudie"
+        },
+        {
+          "w": "literatura",
+          "t": "la littérature"
+        },
+        {
+          "w": "española",
+          "t": "espagnole"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -126047,8 +128941,29 @@
       "translation_fr": "patrimoine",
       "transliteration": null,
       "clue": "Héritage culturel transmis",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El patrimonio cultural es rico.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "le"
+        },
+        {
+          "w": "patrimonio",
+          "t": "patrimoine"
+        },
+        {
+          "w": "cultural",
+          "t": "culturel"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "rico",
+          "t": "riche"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -126058,8 +128973,33 @@
       "translation_fr": "exposition",
       "transliteration": null,
       "clue": "Présentation publique d'œuvres",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hay una exposición en el museo.",
+      "example_gloss": [
+        {
+          "w": "Hay",
+          "t": "il y a"
+        },
+        {
+          "w": "una",
+          "t": "une"
+        },
+        {
+          "w": "exposición",
+          "t": "exposition"
+        },
+        {
+          "w": "en",
+          "t": "au"
+        },
+        {
+          "w": "el",
+          "t": ""
+        },
+        {
+          "w": "museo",
+          "t": "musée"
+        }
+      ]
     },
     {
       "language_code": "en",
@@ -127213,8 +130153,25 @@
       "translation_fr": "recyclage",
       "transliteration": null,
       "clue": "Réutilisation des déchets",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El reciclaje es importante.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "le"
+        },
+        {
+          "w": "reciclaje",
+          "t": "recyclage"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "importante",
+          "t": "important"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -127224,8 +130181,29 @@
       "translation_fr": "pollution",
       "transliteration": null,
       "clue": "Dégradation de l'environnement par des déchets",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La contaminación daña la salud.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "contaminación",
+          "t": "pollution"
+        },
+        {
+          "w": "daña",
+          "t": "nuit à"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "salud",
+          "t": "santé"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -127235,8 +130213,21 @@
       "translation_fr": "énergie",
       "transliteration": null,
       "clue": "Force nécessaire pour fonctionner",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Usamos energía solar.",
+      "example_gloss": [
+        {
+          "w": "Usamos",
+          "t": "nous utilisons"
+        },
+        {
+          "w": "energía",
+          "t": "de l'énergie"
+        },
+        {
+          "w": "solar",
+          "t": "solaire"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -127246,8 +130237,29 @@
       "translation_fr": "solaire",
       "transliteration": null,
       "clue": "Provenant du soleil",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Los paneles solares producen electricidad.",
+      "example_gloss": [
+        {
+          "w": "Los",
+          "t": "les"
+        },
+        {
+          "w": "paneles",
+          "t": "panneaux"
+        },
+        {
+          "w": "solares",
+          "t": "solaires"
+        },
+        {
+          "w": "producen",
+          "t": "produisent"
+        },
+        {
+          "w": "electricidad",
+          "t": "de l'électricité"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -127257,8 +130269,25 @@
       "translation_fr": "déchets",
       "transliteration": null,
       "clue": "Ce qui reste après usage",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hay que reducir los residuos.",
+      "example_gloss": [
+        {
+          "w": "Hay que",
+          "t": "il faut"
+        },
+        {
+          "w": "reducir",
+          "t": "réduire"
+        },
+        {
+          "w": "los",
+          "t": "les"
+        },
+        {
+          "w": "residuos",
+          "t": "déchets"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -127268,8 +130297,33 @@
       "translation_fr": "émission",
       "transliteration": null,
       "clue": "Rejet de gaz dans l'atmosphère",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Debemos reducir las emisiones de CO2.",
+      "example_gloss": [
+        {
+          "w": "Debemos",
+          "t": "nous devons"
+        },
+        {
+          "w": "reducir",
+          "t": "réduire"
+        },
+        {
+          "w": "las",
+          "t": "les"
+        },
+        {
+          "w": "emisiones",
+          "t": "émissions"
+        },
+        {
+          "w": "de",
+          "t": "de"
+        },
+        {
+          "w": "CO2",
+          "t": "CO2"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -127279,8 +130333,29 @@
       "translation_fr": "durable",
       "transliteration": null,
       "clue": "Qui préserve les ressources pour l'avenir",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "El desarrollo sostenible es esencial.",
+      "example_gloss": [
+        {
+          "w": "El",
+          "t": "le"
+        },
+        {
+          "w": "desarrollo",
+          "t": "développement"
+        },
+        {
+          "w": "sostenible",
+          "t": "durable"
+        },
+        {
+          "w": "es",
+          "t": "est"
+        },
+        {
+          "w": "esencial",
+          "t": "essentiel"
+        }
+      ]
     },
     {
       "language_code": "es",
@@ -127290,8 +130365,29 @@
       "translation_fr": "biodiversité",
       "transliteration": null,
       "clue": "Variété des espèces vivantes",
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La biodiversidad está en peligro.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "biodiversidad",
+          "t": "biodiversité"
+        },
+        {
+          "w": "está",
+          "t": "est"
+        },
+        {
+          "w": "en",
+          "t": "en"
+        },
+        {
+          "w": "peligro",
+          "t": "danger"
+        }
+      ]
     },
     {
       "language_code": "en",
