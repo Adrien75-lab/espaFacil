@@ -104861,8 +104861,25 @@
       "translation_fr": "travail",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Il lavoro è importante.",
+      "example_gloss": [
+        {
+          "w": "Il",
+          "t": "le"
+        },
+        {
+          "w": "lavoro",
+          "t": "travail"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "importante",
+          "t": "important"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -104872,8 +104889,29 @@
       "translation_fr": "bureau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Vado in ufficio ogni giorno.",
+      "example_gloss": [
+        {
+          "w": "Vado",
+          "t": "je vais"
+        },
+        {
+          "w": "in",
+          "t": "au"
+        },
+        {
+          "w": "ufficio",
+          "t": "bureau"
+        },
+        {
+          "w": "ogni",
+          "t": "chaque"
+        },
+        {
+          "w": "giorno",
+          "t": "jour"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -104883,8 +104921,29 @@
       "translation_fr": "patron/chef",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Il mio capo è gentile.",
+      "example_gloss": [
+        {
+          "w": "Il",
+          "t": "le"
+        },
+        {
+          "w": "mio",
+          "t": "mon"
+        },
+        {
+          "w": "capo",
+          "t": "patron"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "gentile",
+          "t": "gentil"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -104894,8 +104953,29 @@
       "translation_fr": "réunion",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La riunione è alle dieci.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "riunione",
+          "t": "réunion"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "alle",
+          "t": "à"
+        },
+        {
+          "w": "dieci",
+          "t": "dix heures"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -104905,8 +104985,25 @@
       "translation_fr": "contrat",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ho firmato il contratto.",
+      "example_gloss": [
+        {
+          "w": "Ho",
+          "t": "j'ai"
+        },
+        {
+          "w": "firmato",
+          "t": "signé"
+        },
+        {
+          "w": "il",
+          "t": "le"
+        },
+        {
+          "w": "contratto",
+          "t": "contrat"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -104916,8 +105013,33 @@
       "translation_fr": "salaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Lo stipendio arriva a fine mese.",
+      "example_gloss": [
+        {
+          "w": "Lo",
+          "t": "le"
+        },
+        {
+          "w": "stipendio",
+          "t": "salaire"
+        },
+        {
+          "w": "arriva",
+          "t": "arrive"
+        },
+        {
+          "w": "a",
+          "t": "à"
+        },
+        {
+          "w": "fine",
+          "t": "fin de"
+        },
+        {
+          "w": "mese",
+          "t": "mois"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -104927,8 +105049,29 @@
       "translation_fr": "entreprise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Questa azienda è molto grande.",
+      "example_gloss": [
+        {
+          "w": "Questa",
+          "t": "cette"
+        },
+        {
+          "w": "azienda",
+          "t": "entreprise"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "molto",
+          "t": "très"
+        },
+        {
+          "w": "grande",
+          "t": "grande"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -104938,8 +105081,29 @@
       "translation_fr": "collègue",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Il mio collega è simpatico.",
+      "example_gloss": [
+        {
+          "w": "Il",
+          "t": "le"
+        },
+        {
+          "w": "mio",
+          "t": "mon"
+        },
+        {
+          "w": "collega",
+          "t": "collègue"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "simpatico",
+          "t": "sympathique"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -104949,8 +105113,29 @@
       "translation_fr": "travail",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Eu gosto do meu trabalho.",
+      "example_gloss": [
+        {
+          "w": "Eu",
+          "t": "Je"
+        },
+        {
+          "w": "gosto",
+          "t": "aime"
+        },
+        {
+          "w": "do",
+          "t": "du"
+        },
+        {
+          "w": "meu",
+          "t": "mon"
+        },
+        {
+          "w": "trabalho",
+          "t": "travail"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -104960,8 +105145,25 @@
       "translation_fr": "bureau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O escritório é grande.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "Le"
+        },
+        {
+          "w": "escritório",
+          "t": "bureau"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "grande",
+          "t": "grand"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -104971,8 +105173,25 @@
       "translation_fr": "patron/chef",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O chefe chegou cedo.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "Le"
+        },
+        {
+          "w": "chefe",
+          "t": "patron"
+        },
+        {
+          "w": "chegou",
+          "t": "est arrivé"
+        },
+        {
+          "w": "cedo",
+          "t": "tôt"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -104982,8 +105201,29 @@
       "translation_fr": "réunion",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A reunião começa às dez.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "La"
+        },
+        {
+          "w": "reunião",
+          "t": "réunion"
+        },
+        {
+          "w": "começa",
+          "t": "commence"
+        },
+        {
+          "w": "às",
+          "t": "à"
+        },
+        {
+          "w": "dez",
+          "t": "dix"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -104993,8 +105233,29 @@
       "translation_fr": "contrat",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Eu assinei o contrato hoje.",
+      "example_gloss": [
+        {
+          "w": "Eu",
+          "t": "Je"
+        },
+        {
+          "w": "assinei",
+          "t": "ai signé"
+        },
+        {
+          "w": "o",
+          "t": "le"
+        },
+        {
+          "w": "contrato",
+          "t": "contrat"
+        },
+        {
+          "w": "hoje",
+          "t": "aujourd'hui"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -105004,8 +105265,25 @@
       "translation_fr": "salaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O salário é bom.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "Le"
+        },
+        {
+          "w": "salário",
+          "t": "salaire"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "bom",
+          "t": "bon"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -105015,8 +105293,29 @@
       "translation_fr": "entreprise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A empresa tem cem funcionários.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "L'"
+        },
+        {
+          "w": "empresa",
+          "t": "entreprise"
+        },
+        {
+          "w": "tem",
+          "t": "a"
+        },
+        {
+          "w": "cem",
+          "t": "cent"
+        },
+        {
+          "w": "funcionários",
+          "t": "employés"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -105026,8 +105325,25 @@
       "translation_fr": "collègue",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Meu colega é simpático.",
+      "example_gloss": [
+        {
+          "w": "Meu",
+          "t": "Mon"
+        },
+        {
+          "w": "colega",
+          "t": "collègue"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "simpático",
+          "t": "sympathique"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -106273,8 +106589,29 @@
       "translation_fr": "école",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La scuola inizia a settembre.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "scuola",
+          "t": "école"
+        },
+        {
+          "w": "inizia",
+          "t": "commence"
+        },
+        {
+          "w": "a",
+          "t": "en"
+        },
+        {
+          "w": "settembre",
+          "t": "septembre"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -106284,8 +106621,29 @@
       "translation_fr": "livre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Leggo un libro ogni sera.",
+      "example_gloss": [
+        {
+          "w": "Leggo",
+          "t": "je lis"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "libro",
+          "t": "livre"
+        },
+        {
+          "w": "ogni",
+          "t": "chaque"
+        },
+        {
+          "w": "sera",
+          "t": "soir"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -106295,8 +106653,33 @@
       "translation_fr": "crayon",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mi serve una matita per scrivere.",
+      "example_gloss": [
+        {
+          "w": "Mi",
+          "t": "me"
+        },
+        {
+          "w": "serve",
+          "t": "faut"
+        },
+        {
+          "w": "una",
+          "t": "un"
+        },
+        {
+          "w": "matita",
+          "t": "crayon"
+        },
+        {
+          "w": "per",
+          "t": "pour"
+        },
+        {
+          "w": "scrivere",
+          "t": "écrire"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -106306,8 +106689,21 @@
       "translation_fr": "cahier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Scrivo sul quaderno.",
+      "example_gloss": [
+        {
+          "w": "Scrivo",
+          "t": "j'écris"
+        },
+        {
+          "w": "sul",
+          "t": "sur le"
+        },
+        {
+          "w": "quaderno",
+          "t": "cahier"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -106317,8 +106713,29 @@
       "translation_fr": "professeur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Il professore spiega la lezione.",
+      "example_gloss": [
+        {
+          "w": "Il",
+          "t": "le"
+        },
+        {
+          "w": "professore",
+          "t": "professeur"
+        },
+        {
+          "w": "spiega",
+          "t": "explique"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "lezione",
+          "t": "leçon"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -106328,8 +106745,21 @@
       "translation_fr": "examen",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "L'esame è domani.",
+      "example_gloss": [
+        {
+          "w": "L'esame",
+          "t": "l'examen"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "domani",
+          "t": "demain"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -106339,8 +106769,25 @@
       "translation_fr": "devoirs",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Devo fare i compiti.",
+      "example_gloss": [
+        {
+          "w": "Devo",
+          "t": "je dois"
+        },
+        {
+          "w": "fare",
+          "t": "faire"
+        },
+        {
+          "w": "i",
+          "t": "les"
+        },
+        {
+          "w": "compiti",
+          "t": "devoirs"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -106350,8 +106797,21 @@
       "translation_fr": "bibliothèque",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Studio in biblioteca.",
+      "example_gloss": [
+        {
+          "w": "Studio",
+          "t": "j'étudie"
+        },
+        {
+          "w": "in",
+          "t": "à la"
+        },
+        {
+          "w": "biblioteca",
+          "t": "bibliothèque"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -106361,8 +106821,33 @@
       "translation_fr": "école",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A escola fica perto de casa.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "L'"
+        },
+        {
+          "w": "escola",
+          "t": "école"
+        },
+        {
+          "w": "fica",
+          "t": "se trouve"
+        },
+        {
+          "w": "perto",
+          "t": "près"
+        },
+        {
+          "w": "de",
+          "t": "de"
+        },
+        {
+          "w": "casa",
+          "t": "la maison"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -106372,8 +106857,25 @@
       "translation_fr": "livre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Este livro é interessante.",
+      "example_gloss": [
+        {
+          "w": "Este",
+          "t": "Ce"
+        },
+        {
+          "w": "livro",
+          "t": "livre"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "interessante",
+          "t": "intéressant"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -106383,8 +106885,29 @@
       "translation_fr": "crayon",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Eu preciso de um lápis.",
+      "example_gloss": [
+        {
+          "w": "Eu",
+          "t": "J'"
+        },
+        {
+          "w": "preciso",
+          "t": "ai besoin"
+        },
+        {
+          "w": "de",
+          "t": "d'"
+        },
+        {
+          "w": "um",
+          "t": "un"
+        },
+        {
+          "w": "lápis",
+          "t": "crayon"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -106394,8 +106917,25 @@
       "translation_fr": "cahier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Escrevo no meu caderno.",
+      "example_gloss": [
+        {
+          "w": "Escrevo",
+          "t": "J'écris"
+        },
+        {
+          "w": "no",
+          "t": "dans"
+        },
+        {
+          "w": "meu",
+          "t": "mon"
+        },
+        {
+          "w": "caderno",
+          "t": "cahier"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -106405,8 +106945,25 @@
       "translation_fr": "professeur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O professor explica bem.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "Le"
+        },
+        {
+          "w": "professor",
+          "t": "professeur"
+        },
+        {
+          "w": "explica",
+          "t": "explique"
+        },
+        {
+          "w": "bem",
+          "t": "bien"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -106416,8 +106973,25 @@
       "translation_fr": "examen",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O exame é amanhã.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "L'"
+        },
+        {
+          "w": "exame",
+          "t": "examen"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "amanhã",
+          "t": "demain"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -106427,8 +107001,33 @@
       "translation_fr": "devoirs",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Fiz as tarefas depois da escola.",
+      "example_gloss": [
+        {
+          "w": "Fiz",
+          "t": "J'ai fait"
+        },
+        {
+          "w": "as",
+          "t": "les"
+        },
+        {
+          "w": "tarefas",
+          "t": "devoirs"
+        },
+        {
+          "w": "depois",
+          "t": "après"
+        },
+        {
+          "w": "da",
+          "t": "l'"
+        },
+        {
+          "w": "escola",
+          "t": "école"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -106438,8 +107037,29 @@
       "translation_fr": "bibliothèque",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A biblioteca tem muitos livros.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "La"
+        },
+        {
+          "w": "biblioteca",
+          "t": "bibliothèque"
+        },
+        {
+          "w": "tem",
+          "t": "a"
+        },
+        {
+          "w": "muitos",
+          "t": "beaucoup de"
+        },
+        {
+          "w": "livros",
+          "t": "livres"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -107685,8 +108305,25 @@
       "translation_fr": "magasin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Il negozio è aperto.",
+      "example_gloss": [
+        {
+          "w": "Il",
+          "t": "le"
+        },
+        {
+          "w": "negozio",
+          "t": "magasin"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "aperto",
+          "t": "ouvert"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -107696,8 +108333,25 @@
       "translation_fr": "prix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Qual è il prezzo?",
+      "example_gloss": [
+        {
+          "w": "Qual",
+          "t": "quel"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "il",
+          "t": "le"
+        },
+        {
+          "w": "prezzo",
+          "t": "prix"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -107707,8 +108361,29 @@
       "translation_fr": "cher",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Questo vestito è troppo caro.",
+      "example_gloss": [
+        {
+          "w": "Questo",
+          "t": "ce"
+        },
+        {
+          "w": "vestito",
+          "t": "vêtement"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "troppo",
+          "t": "trop"
+        },
+        {
+          "w": "caro",
+          "t": "cher"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -107718,8 +108393,25 @@
       "translation_fr": "pas cher",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Cerco qualcosa di economico.",
+      "example_gloss": [
+        {
+          "w": "Cerco",
+          "t": "je cherche"
+        },
+        {
+          "w": "qualcosa",
+          "t": "quelque chose"
+        },
+        {
+          "w": "di",
+          "t": "de"
+        },
+        {
+          "w": "economico",
+          "t": "pas cher"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -107729,8 +108421,33 @@
       "translation_fr": "réduction",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "C'è uno sconto del venti per cento.",
+      "example_gloss": [
+        {
+          "w": "C'è",
+          "t": "il y a"
+        },
+        {
+          "w": "uno",
+          "t": "une"
+        },
+        {
+          "w": "sconto",
+          "t": "réduction"
+        },
+        {
+          "w": "del",
+          "t": "de"
+        },
+        {
+          "w": "venti",
+          "t": "vingt"
+        },
+        {
+          "w": "per cento",
+          "t": "pour cent"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -107740,8 +108457,21 @@
       "translation_fr": "caisse",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Pago alla cassa.",
+      "example_gloss": [
+        {
+          "w": "Pago",
+          "t": "je paie"
+        },
+        {
+          "w": "alla",
+          "t": "à la"
+        },
+        {
+          "w": "cassa",
+          "t": "caisse"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -107751,8 +108481,25 @@
       "translation_fr": "carte bancaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Posso pagare con carta?",
+      "example_gloss": [
+        {
+          "w": "Posso",
+          "t": "je peux"
+        },
+        {
+          "w": "pagare",
+          "t": "payer"
+        },
+        {
+          "w": "con",
+          "t": "avec"
+        },
+        {
+          "w": "carta",
+          "t": "carte bancaire"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -107762,8 +108509,29 @@
       "translation_fr": "reçu",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mi dia lo scontrino, per favore.",
+      "example_gloss": [
+        {
+          "w": "Mi",
+          "t": "me"
+        },
+        {
+          "w": "dia",
+          "t": "donnez"
+        },
+        {
+          "w": "lo",
+          "t": "le"
+        },
+        {
+          "w": "scontrino",
+          "t": "reçu"
+        },
+        {
+          "w": "per favore",
+          "t": "s'il vous plaît"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -107773,8 +108541,29 @@
       "translation_fr": "magasin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A loja abre às nove.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "Le"
+        },
+        {
+          "w": "loja",
+          "t": "magasin"
+        },
+        {
+          "w": "abre",
+          "t": "ouvre"
+        },
+        {
+          "w": "às",
+          "t": "à"
+        },
+        {
+          "w": "nove",
+          "t": "neuf"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -107784,8 +108573,25 @@
       "translation_fr": "prix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Qual é o preço?",
+      "example_gloss": [
+        {
+          "w": "Qual",
+          "t": "Quel"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "o",
+          "t": "le"
+        },
+        {
+          "w": "preço",
+          "t": "prix"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -107795,8 +108601,29 @@
       "translation_fr": "cher",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Este vestido é muito caro.",
+      "example_gloss": [
+        {
+          "w": "Este",
+          "t": "Cette"
+        },
+        {
+          "w": "vestido",
+          "t": "robe"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "muito",
+          "t": "très"
+        },
+        {
+          "w": "caro",
+          "t": "cher"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -107806,8 +108633,25 @@
       "translation_fr": "pas cher",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Este produto é barato.",
+      "example_gloss": [
+        {
+          "w": "Este",
+          "t": "Ce"
+        },
+        {
+          "w": "produto",
+          "t": "produit"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "barato",
+          "t": "pas cher"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -107817,8 +108661,33 @@
       "translation_fr": "réduction",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Há um desconto de vinte por cento.",
+      "example_gloss": [
+        {
+          "w": "Há",
+          "t": "Il y a"
+        },
+        {
+          "w": "um",
+          "t": "une"
+        },
+        {
+          "w": "desconto",
+          "t": "réduction"
+        },
+        {
+          "w": "de",
+          "t": "de"
+        },
+        {
+          "w": "vinte",
+          "t": "vingt"
+        },
+        {
+          "w": "por cento",
+          "t": "pour cent"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -107828,8 +108697,25 @@
       "translation_fr": "caisse",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Pague na caixa, por favor.",
+      "example_gloss": [
+        {
+          "w": "Pague",
+          "t": "Payez"
+        },
+        {
+          "w": "na",
+          "t": "à la"
+        },
+        {
+          "w": "caixa",
+          "t": "caisse"
+        },
+        {
+          "w": "por favor",
+          "t": "s'il vous plaît"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -107839,8 +108725,25 @@
       "translation_fr": "carte bancaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Posso pagar com cartão?",
+      "example_gloss": [
+        {
+          "w": "Posso",
+          "t": "Je peux"
+        },
+        {
+          "w": "pagar",
+          "t": "payer"
+        },
+        {
+          "w": "com",
+          "t": "par"
+        },
+        {
+          "w": "cartão",
+          "t": "carte bancaire"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -107850,8 +108753,29 @@
       "translation_fr": "reçu",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Pode me dar o recibo?",
+      "example_gloss": [
+        {
+          "w": "Pode",
+          "t": "Pouvez-vous"
+        },
+        {
+          "w": "me",
+          "t": "me"
+        },
+        {
+          "w": "dar",
+          "t": "donner"
+        },
+        {
+          "w": "o",
+          "t": "le"
+        },
+        {
+          "w": "recibo",
+          "t": "reçu"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -109097,8 +110021,25 @@
       "translation_fr": "médecin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Devo andare dal medico.",
+      "example_gloss": [
+        {
+          "w": "Devo",
+          "t": "je dois"
+        },
+        {
+          "w": "andare",
+          "t": "aller"
+        },
+        {
+          "w": "dal",
+          "t": "chez le"
+        },
+        {
+          "w": "medico",
+          "t": "médecin"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -109108,8 +110049,21 @@
       "translation_fr": "hôpital",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "L'ospedale è vicino.",
+      "example_gloss": [
+        {
+          "w": "L'ospedale",
+          "t": "l'hôpital"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "vicino",
+          "t": "proche"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -109119,8 +110073,29 @@
       "translation_fr": "douleur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ho un dolore alla testa.",
+      "example_gloss": [
+        {
+          "w": "Ho",
+          "t": "j'ai"
+        },
+        {
+          "w": "un",
+          "t": "une"
+        },
+        {
+          "w": "dolore",
+          "t": "douleur"
+        },
+        {
+          "w": "alla",
+          "t": "à la"
+        },
+        {
+          "w": "testa",
+          "t": "tête"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -109130,8 +110105,25 @@
       "translation_fr": "fièvre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ho la febbre alta.",
+      "example_gloss": [
+        {
+          "w": "Ho",
+          "t": "j'ai"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "febbre",
+          "t": "fièvre"
+        },
+        {
+          "w": "alta",
+          "t": "haute"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -109141,8 +110133,29 @@
       "translation_fr": "médicament",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Prendo la medicina ogni mattina.",
+      "example_gloss": [
+        {
+          "w": "Prendo",
+          "t": "je prends"
+        },
+        {
+          "w": "la",
+          "t": "le"
+        },
+        {
+          "w": "medicina",
+          "t": "médicament"
+        },
+        {
+          "w": "ogni",
+          "t": "chaque"
+        },
+        {
+          "w": "mattina",
+          "t": "matin"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -109152,8 +110165,25 @@
       "translation_fr": "comprimé",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Devo prendere una pillola.",
+      "example_gloss": [
+        {
+          "w": "Devo",
+          "t": "je dois"
+        },
+        {
+          "w": "prendere",
+          "t": "prendre"
+        },
+        {
+          "w": "una",
+          "t": "un"
+        },
+        {
+          "w": "pillola",
+          "t": "comprimé"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -109163,8 +110193,25 @@
       "translation_fr": "allergie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ho un'allergia al polline.",
+      "example_gloss": [
+        {
+          "w": "Ho",
+          "t": "j'ai"
+        },
+        {
+          "w": "un'allergia",
+          "t": "une allergie"
+        },
+        {
+          "w": "al",
+          "t": "au"
+        },
+        {
+          "w": "polline",
+          "t": "pollen"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -109174,8 +110221,33 @@
       "translation_fr": "ordonnance",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Il medico mi ha dato la ricetta.",
+      "example_gloss": [
+        {
+          "w": "Il",
+          "t": "le"
+        },
+        {
+          "w": "medico",
+          "t": "médecin"
+        },
+        {
+          "w": "mi",
+          "t": "m'"
+        },
+        {
+          "w": "ha dato",
+          "t": "a donné"
+        },
+        {
+          "w": "la",
+          "t": "l'"
+        },
+        {
+          "w": "ricetta",
+          "t": "ordonnance"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -109185,8 +110257,25 @@
       "translation_fr": "médecin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Preciso ir ao médico.",
+      "example_gloss": [
+        {
+          "w": "Preciso",
+          "t": "J'ai besoin d'"
+        },
+        {
+          "w": "ir",
+          "t": "aller"
+        },
+        {
+          "w": "ao",
+          "t": "chez le"
+        },
+        {
+          "w": "médico",
+          "t": "médecin"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -109196,8 +110285,25 @@
       "translation_fr": "hôpital",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O hospital fica longe.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "L'"
+        },
+        {
+          "w": "hospital",
+          "t": "hôpital"
+        },
+        {
+          "w": "fica",
+          "t": "se trouve"
+        },
+        {
+          "w": "longe",
+          "t": "loin"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -109207,8 +110313,29 @@
       "translation_fr": "douleur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Tenho uma dor de cabeça.",
+      "example_gloss": [
+        {
+          "w": "Tenho",
+          "t": "J'ai"
+        },
+        {
+          "w": "uma",
+          "t": "un"
+        },
+        {
+          "w": "dor",
+          "t": "mal"
+        },
+        {
+          "w": "de",
+          "t": "de"
+        },
+        {
+          "w": "cabeça",
+          "t": "tête"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -109218,8 +110345,25 @@
       "translation_fr": "fièvre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ela está com febre.",
+      "example_gloss": [
+        {
+          "w": "Ela",
+          "t": "Elle"
+        },
+        {
+          "w": "está",
+          "t": "est"
+        },
+        {
+          "w": "com",
+          "t": "avec"
+        },
+        {
+          "w": "febre",
+          "t": "fièvre"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -109229,8 +110373,29 @@
       "translation_fr": "médicament",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Tome o medicamento duas vezes.",
+      "example_gloss": [
+        {
+          "w": "Tome",
+          "t": "Prenez"
+        },
+        {
+          "w": "o",
+          "t": "le"
+        },
+        {
+          "w": "medicamento",
+          "t": "médicament"
+        },
+        {
+          "w": "duas",
+          "t": "deux"
+        },
+        {
+          "w": "vezes",
+          "t": "fois"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -109240,8 +110405,29 @@
       "translation_fr": "comprimé",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Tome um comprimido por dia.",
+      "example_gloss": [
+        {
+          "w": "Tome",
+          "t": "Prenez"
+        },
+        {
+          "w": "um",
+          "t": "un"
+        },
+        {
+          "w": "comprimido",
+          "t": "comprimé"
+        },
+        {
+          "w": "por",
+          "t": "par"
+        },
+        {
+          "w": "dia",
+          "t": "jour"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -109251,8 +110437,29 @@
       "translation_fr": "allergie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Eu tenho alergia ao pólen.",
+      "example_gloss": [
+        {
+          "w": "Eu",
+          "t": "J'"
+        },
+        {
+          "w": "tenho",
+          "t": "ai"
+        },
+        {
+          "w": "alergia",
+          "t": "une allergie"
+        },
+        {
+          "w": "ao",
+          "t": "au"
+        },
+        {
+          "w": "pólen",
+          "t": "pollen"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -109262,8 +110469,29 @@
       "translation_fr": "ordonnance",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O médico deu uma receita.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "Le"
+        },
+        {
+          "w": "médico",
+          "t": "médecin"
+        },
+        {
+          "w": "deu",
+          "t": "a donné"
+        },
+        {
+          "w": "uma",
+          "t": "une"
+        },
+        {
+          "w": "receita",
+          "t": "ordonnance"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -110493,8 +111721,29 @@
       "translation_fr": "téléphone",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Il mio telefono è scarico.",
+      "example_gloss": [
+        {
+          "w": "Il",
+          "t": "le"
+        },
+        {
+          "w": "mio",
+          "t": "mon"
+        },
+        {
+          "w": "telefono",
+          "t": "téléphone"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "scarico",
+          "t": "déchargé"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -110504,8 +111753,33 @@
       "translation_fr": "ordinateur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Lavoro al computer tutto il giorno.",
+      "example_gloss": [
+        {
+          "w": "Lavoro",
+          "t": "je travaille"
+        },
+        {
+          "w": "al",
+          "t": "à l'"
+        },
+        {
+          "w": "computer",
+          "t": "ordinateur"
+        },
+        {
+          "w": "tutto",
+          "t": "tout"
+        },
+        {
+          "w": "il",
+          "t": "le"
+        },
+        {
+          "w": "giorno",
+          "t": "jour"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -110515,8 +111789,25 @@
       "translation_fr": "internet",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Non c'è internet qui.",
+      "example_gloss": [
+        {
+          "w": "Non",
+          "t": "ne"
+        },
+        {
+          "w": "c'è",
+          "t": "il y a"
+        },
+        {
+          "w": "internet",
+          "t": "internet"
+        },
+        {
+          "w": "qui",
+          "t": "ici"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -110526,8 +111817,25 @@
       "translation_fr": "mot de passe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ho dimenticato la password.",
+      "example_gloss": [
+        {
+          "w": "Ho",
+          "t": "j'ai"
+        },
+        {
+          "w": "dimenticato",
+          "t": "oublié"
+        },
+        {
+          "w": "la",
+          "t": "le"
+        },
+        {
+          "w": "password",
+          "t": "mot de passe"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -110537,8 +111845,25 @@
       "translation_fr": "email",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ti mando un'email domani.",
+      "example_gloss": [
+        {
+          "w": "Ti",
+          "t": "je te"
+        },
+        {
+          "w": "mando",
+          "t": "envoie"
+        },
+        {
+          "w": "un'email",
+          "t": "un email"
+        },
+        {
+          "w": "domani",
+          "t": "demain"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -110548,8 +111873,25 @@
       "translation_fr": "écran",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Lo schermo è rotto.",
+      "example_gloss": [
+        {
+          "w": "Lo",
+          "t": "l'"
+        },
+        {
+          "w": "schermo",
+          "t": "écran"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "rotto",
+          "t": "cassé"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -110559,8 +111901,25 @@
       "translation_fr": "clavier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La tastiera non funziona.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "le"
+        },
+        {
+          "w": "tastiera",
+          "t": "clavier"
+        },
+        {
+          "w": "non",
+          "t": "ne"
+        },
+        {
+          "w": "funziona",
+          "t": "fonctionne pas"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -110570,8 +111929,21 @@
       "translation_fr": "application",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Scarica questa applicazione.",
+      "example_gloss": [
+        {
+          "w": "Scarica",
+          "t": "télécharge"
+        },
+        {
+          "w": "questa",
+          "t": "cette"
+        },
+        {
+          "w": "applicazione",
+          "t": "application"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -110581,8 +111953,33 @@
       "translation_fr": "téléphone",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O meu telefone está sem bateria.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "Le"
+        },
+        {
+          "w": "meu",
+          "t": "mon"
+        },
+        {
+          "w": "telefone",
+          "t": "téléphone"
+        },
+        {
+          "w": "está",
+          "t": "est"
+        },
+        {
+          "w": "sem",
+          "t": "sans"
+        },
+        {
+          "w": "bateria",
+          "t": "batterie"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -110592,8 +111989,33 @@
       "translation_fr": "ordinateur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Trabalho no computador todos os dias.",
+      "example_gloss": [
+        {
+          "w": "Trabalho",
+          "t": "Je travaille"
+        },
+        {
+          "w": "no",
+          "t": "sur le"
+        },
+        {
+          "w": "computador",
+          "t": "ordinateur"
+        },
+        {
+          "w": "todos",
+          "t": "tous"
+        },
+        {
+          "w": "os",
+          "t": "les"
+        },
+        {
+          "w": "dias",
+          "t": "jours"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -110603,8 +112025,25 @@
       "translation_fr": "internet",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A internet está lenta.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "L'"
+        },
+        {
+          "w": "internet",
+          "t": "internet"
+        },
+        {
+          "w": "está",
+          "t": "est"
+        },
+        {
+          "w": "lenta",
+          "t": "lent"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -110614,8 +112053,25 @@
       "translation_fr": "mot de passe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Esqueci a minha senha.",
+      "example_gloss": [
+        {
+          "w": "Esqueci",
+          "t": "J'ai oublié"
+        },
+        {
+          "w": "a",
+          "t": "le"
+        },
+        {
+          "w": "minha",
+          "t": "mon"
+        },
+        {
+          "w": "senha",
+          "t": "mot de passe"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -110625,8 +112081,25 @@
       "translation_fr": "email",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Enviei um email ontem.",
+      "example_gloss": [
+        {
+          "w": "Enviei",
+          "t": "J'ai envoyé"
+        },
+        {
+          "w": "um",
+          "t": "un"
+        },
+        {
+          "w": "email",
+          "t": "email"
+        },
+        {
+          "w": "ontem",
+          "t": "hier"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -110636,8 +112109,33 @@
       "translation_fr": "écran",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A tela do computador é grande.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "L'"
+        },
+        {
+          "w": "tela",
+          "t": "écran"
+        },
+        {
+          "w": "do",
+          "t": "de l'"
+        },
+        {
+          "w": "computador",
+          "t": "ordinateur"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "grande",
+          "t": "grand"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -110647,8 +112145,25 @@
       "translation_fr": "clavier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O teclado é novo.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "Le"
+        },
+        {
+          "w": "teclado",
+          "t": "clavier"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "novo",
+          "t": "nouveau"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -110658,8 +112173,29 @@
       "translation_fr": "application",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Este aplicativo é muito útil.",
+      "example_gloss": [
+        {
+          "w": "Este",
+          "t": "Cette"
+        },
+        {
+          "w": "aplicativo",
+          "t": "application"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "muito",
+          "t": "très"
+        },
+        {
+          "w": "útil",
+          "t": "utile"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -111889,8 +113425,25 @@
       "translation_fr": "arbre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "L'albero è molto alto.",
+      "example_gloss": [
+        {
+          "w": "L'albero",
+          "t": "l'arbre"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "molto",
+          "t": "très"
+        },
+        {
+          "w": "alto",
+          "t": "haut"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -111900,8 +113453,25 @@
       "translation_fr": "fleur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Questo fiore è bellissimo.",
+      "example_gloss": [
+        {
+          "w": "Questo",
+          "t": "cette"
+        },
+        {
+          "w": "fiore",
+          "t": "fleur"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "bellissimo",
+          "t": "très belle"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -111911,8 +113481,25 @@
       "translation_fr": "rivière",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Il fiume scorre lentamente.",
+      "example_gloss": [
+        {
+          "w": "Il",
+          "t": "la"
+        },
+        {
+          "w": "fiume",
+          "t": "rivière"
+        },
+        {
+          "w": "scorre",
+          "t": "coule"
+        },
+        {
+          "w": "lentamente",
+          "t": "lentement"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -111922,8 +113509,33 @@
       "translation_fr": "montagne",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La montagna è coperta di neve.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "montagna",
+          "t": "montagne"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "coperta",
+          "t": "couverte"
+        },
+        {
+          "w": "di",
+          "t": "de"
+        },
+        {
+          "w": "neve",
+          "t": "neige"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -111933,8 +113545,25 @@
       "translation_fr": "mer",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "D'estate andiamo al mare.",
+      "example_gloss": [
+        {
+          "w": "D'estate",
+          "t": "en été"
+        },
+        {
+          "w": "andiamo",
+          "t": "nous allons"
+        },
+        {
+          "w": "al",
+          "t": "à la"
+        },
+        {
+          "w": "mare",
+          "t": "mer"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -111944,8 +113573,33 @@
       "translation_fr": "forêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La foresta è piena di animali.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "foresta",
+          "t": "forêt"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "piena",
+          "t": "pleine"
+        },
+        {
+          "w": "di",
+          "t": "d'"
+        },
+        {
+          "w": "animali",
+          "t": "animaux"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -111955,8 +113609,29 @@
       "translation_fr": "pierre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ho trovato una bella pietra.",
+      "example_gloss": [
+        {
+          "w": "Ho",
+          "t": "j'ai"
+        },
+        {
+          "w": "trovato",
+          "t": "trouvé"
+        },
+        {
+          "w": "una",
+          "t": "une"
+        },
+        {
+          "w": "bella",
+          "t": "belle"
+        },
+        {
+          "w": "pietra",
+          "t": "pierre"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -111966,8 +113641,25 @@
       "translation_fr": "terre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La terra è bagnata.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "terra",
+          "t": "terre"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "bagnata",
+          "t": "mouillée"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -111977,8 +113669,29 @@
       "translation_fr": "arbre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A árvore é muito alta.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "L'"
+        },
+        {
+          "w": "árvore",
+          "t": "arbre"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "muito",
+          "t": "très"
+        },
+        {
+          "w": "alta",
+          "t": "haut"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -111988,8 +113701,25 @@
       "translation_fr": "fleur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Esta flor é bonita.",
+      "example_gloss": [
+        {
+          "w": "Esta",
+          "t": "Cette"
+        },
+        {
+          "w": "flor",
+          "t": "fleur"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "bonita",
+          "t": "belle"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -111999,8 +113729,29 @@
       "translation_fr": "rivière",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O rio passa pela cidade.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "La"
+        },
+        {
+          "w": "rio",
+          "t": "rivière"
+        },
+        {
+          "w": "passa",
+          "t": "passe"
+        },
+        {
+          "w": "pela",
+          "t": "par la"
+        },
+        {
+          "w": "cidade",
+          "t": "ville"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -112010,8 +113761,33 @@
       "translation_fr": "montagne",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A montanha tem neve no topo.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "La"
+        },
+        {
+          "w": "montanha",
+          "t": "montagne"
+        },
+        {
+          "w": "tem",
+          "t": "a"
+        },
+        {
+          "w": "neve",
+          "t": "de la neige"
+        },
+        {
+          "w": "no",
+          "t": "au"
+        },
+        {
+          "w": "topo",
+          "t": "sommet"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -112021,8 +113797,29 @@
       "translation_fr": "mer",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O mar está calmo hoje.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "La"
+        },
+        {
+          "w": "mar",
+          "t": "mer"
+        },
+        {
+          "w": "está",
+          "t": "est"
+        },
+        {
+          "w": "calmo",
+          "t": "calme"
+        },
+        {
+          "w": "hoje",
+          "t": "aujourd'hui"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -112032,8 +113829,25 @@
       "translation_fr": "forêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A floresta é escura.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "La"
+        },
+        {
+          "w": "floresta",
+          "t": "forêt"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "escura",
+          "t": "sombre"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -112043,8 +113857,29 @@
       "translation_fr": "pierre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Há uma pedra no caminho.",
+      "example_gloss": [
+        {
+          "w": "Há",
+          "t": "Il y a"
+        },
+        {
+          "w": "uma",
+          "t": "une"
+        },
+        {
+          "w": "pedra",
+          "t": "pierre"
+        },
+        {
+          "w": "no",
+          "t": "sur le"
+        },
+        {
+          "w": "caminho",
+          "t": "chemin"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -112054,8 +113889,29 @@
       "translation_fr": "terre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A terra é fértil aqui.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "La"
+        },
+        {
+          "w": "terra",
+          "t": "terre"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "fértil",
+          "t": "fertile"
+        },
+        {
+          "w": "aqui",
+          "t": "ici"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -113281,8 +115137,25 @@
       "translation_fr": "heureux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sono molto felice oggi.",
+      "example_gloss": [
+        {
+          "w": "Sono",
+          "t": "je suis"
+        },
+        {
+          "w": "molto",
+          "t": "très"
+        },
+        {
+          "w": "felice",
+          "t": "heureux"
+        },
+        {
+          "w": "oggi",
+          "t": "aujourd'hui"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -113292,8 +115165,21 @@
       "translation_fr": "triste",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Perché sei triste?",
+      "example_gloss": [
+        {
+          "w": "Perché",
+          "t": "pourquoi"
+        },
+        {
+          "w": "sei",
+          "t": "es-tu"
+        },
+        {
+          "w": "triste",
+          "t": "triste"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -113303,8 +115189,29 @@
       "translation_fr": "en colère",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Non essere arrabbiato con me.",
+      "example_gloss": [
+        {
+          "w": "Non",
+          "t": "ne"
+        },
+        {
+          "w": "essere",
+          "t": "sois pas"
+        },
+        {
+          "w": "arrabbiato",
+          "t": "en colère"
+        },
+        {
+          "w": "con",
+          "t": "avec"
+        },
+        {
+          "w": "me",
+          "t": "moi"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -113314,8 +115221,25 @@
       "translation_fr": "effrayé",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Il bambino è spaventato.",
+      "example_gloss": [
+        {
+          "w": "Il",
+          "t": "le"
+        },
+        {
+          "w": "bambino",
+          "t": "enfant"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "spaventato",
+          "t": "effrayé"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -113325,8 +115249,25 @@
       "translation_fr": "surpris",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sono sorpreso di vederti.",
+      "example_gloss": [
+        {
+          "w": "Sono",
+          "t": "je suis"
+        },
+        {
+          "w": "sorpreso",
+          "t": "surpris"
+        },
+        {
+          "w": "di",
+          "t": "de"
+        },
+        {
+          "w": "vederti",
+          "t": "te voir"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -113336,8 +115277,25 @@
       "translation_fr": "fier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sono orgoglioso di te.",
+      "example_gloss": [
+        {
+          "w": "Sono",
+          "t": "je suis"
+        },
+        {
+          "w": "orgoglioso",
+          "t": "fier"
+        },
+        {
+          "w": "di",
+          "t": "de"
+        },
+        {
+          "w": "te",
+          "t": "toi"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -113347,8 +115305,21 @@
       "translation_fr": "honteux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mi sento vergognoso.",
+      "example_gloss": [
+        {
+          "w": "Mi",
+          "t": "je me"
+        },
+        {
+          "w": "sento",
+          "t": "sens"
+        },
+        {
+          "w": "vergognoso",
+          "t": "honteux"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -113358,8 +115329,25 @@
       "translation_fr": "anxieux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sono ansioso per l'esame.",
+      "example_gloss": [
+        {
+          "w": "Sono",
+          "t": "je suis"
+        },
+        {
+          "w": "ansioso",
+          "t": "anxieux"
+        },
+        {
+          "w": "per",
+          "t": "pour"
+        },
+        {
+          "w": "l'esame",
+          "t": "l'examen"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -113369,8 +115357,25 @@
       "translation_fr": "heureux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Estou muito feliz hoje.",
+      "example_gloss": [
+        {
+          "w": "Estou",
+          "t": "Je suis"
+        },
+        {
+          "w": "muito",
+          "t": "très"
+        },
+        {
+          "w": "feliz",
+          "t": "heureux"
+        },
+        {
+          "w": "hoje",
+          "t": "aujourd'hui"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -113380,8 +115385,21 @@
       "translation_fr": "triste",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ele está triste.",
+      "example_gloss": [
+        {
+          "w": "Ele",
+          "t": "Il"
+        },
+        {
+          "w": "está",
+          "t": "est"
+        },
+        {
+          "w": "triste",
+          "t": "triste"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -113391,8 +115409,21 @@
       "translation_fr": "en colère",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ela está com raiva.",
+      "example_gloss": [
+        {
+          "w": "Ela",
+          "t": "Elle"
+        },
+        {
+          "w": "está",
+          "t": "est"
+        },
+        {
+          "w": "com raiva",
+          "t": "en colère"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -113402,8 +115433,25 @@
       "translation_fr": "effrayé",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O menino ficou assustado.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "Le"
+        },
+        {
+          "w": "menino",
+          "t": "garçon"
+        },
+        {
+          "w": "ficou",
+          "t": "est devenu"
+        },
+        {
+          "w": "assustado",
+          "t": "effrayé"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -113413,8 +115461,29 @@
       "translation_fr": "surpris",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Fiquei surpreso com a notícia.",
+      "example_gloss": [
+        {
+          "w": "Fiquei",
+          "t": "J'ai été"
+        },
+        {
+          "w": "surpreso",
+          "t": "surpris"
+        },
+        {
+          "w": "com",
+          "t": "par"
+        },
+        {
+          "w": "a",
+          "t": "la"
+        },
+        {
+          "w": "notícia",
+          "t": "nouvelle"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -113424,8 +115493,25 @@
       "translation_fr": "fier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O pai está orgulhoso.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "Le"
+        },
+        {
+          "w": "pai",
+          "t": "père"
+        },
+        {
+          "w": "está",
+          "t": "est"
+        },
+        {
+          "w": "orgulhoso",
+          "t": "fier"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -113435,8 +115521,21 @@
       "translation_fr": "honteux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ele ficou envergonhado.",
+      "example_gloss": [
+        {
+          "w": "Ele",
+          "t": "Il"
+        },
+        {
+          "w": "ficou",
+          "t": "est devenu"
+        },
+        {
+          "w": "envergonhado",
+          "t": "honteux"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -113446,8 +115545,25 @@
       "translation_fr": "anxieux",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Estou ansioso pelo resultado.",
+      "example_gloss": [
+        {
+          "w": "Estou",
+          "t": "Je suis"
+        },
+        {
+          "w": "ansioso",
+          "t": "anxieux"
+        },
+        {
+          "w": "pelo",
+          "t": "pour le"
+        },
+        {
+          "w": "resultado",
+          "t": "résultat"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -114669,8 +116785,25 @@
       "translation_fr": "chemise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Metto una camicia bianca.",
+      "example_gloss": [
+        {
+          "w": "Metto",
+          "t": "je mets"
+        },
+        {
+          "w": "una",
+          "t": "une"
+        },
+        {
+          "w": "camicia",
+          "t": "chemise"
+        },
+        {
+          "w": "bianca",
+          "t": "blanche"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -114680,8 +116813,25 @@
       "translation_fr": "pantalon",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Questi pantaloni sono comodi.",
+      "example_gloss": [
+        {
+          "w": "Questi",
+          "t": "ces"
+        },
+        {
+          "w": "pantaloni",
+          "t": "pantalons"
+        },
+        {
+          "w": "sono",
+          "t": "sont"
+        },
+        {
+          "w": "comodi",
+          "t": "confortables"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -114691,8 +116841,29 @@
       "translation_fr": "chaussures",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Le scarpe nuove sono belle.",
+      "example_gloss": [
+        {
+          "w": "Le",
+          "t": "les"
+        },
+        {
+          "w": "scarpe",
+          "t": "chaussures"
+        },
+        {
+          "w": "nuove",
+          "t": "nouvelles"
+        },
+        {
+          "w": "sono",
+          "t": "sont"
+        },
+        {
+          "w": "belle",
+          "t": "belles"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -114702,8 +116873,29 @@
       "translation_fr": "manteau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Prendi il cappotto, fa freddo.",
+      "example_gloss": [
+        {
+          "w": "Prendi",
+          "t": "prends"
+        },
+        {
+          "w": "il",
+          "t": "le"
+        },
+        {
+          "w": "cappotto",
+          "t": "manteau"
+        },
+        {
+          "w": "fa",
+          "t": "il fait"
+        },
+        {
+          "w": "freddo",
+          "t": "froid"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -114713,8 +116905,25 @@
       "translation_fr": "chapeau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Porto sempre il cappello.",
+      "example_gloss": [
+        {
+          "w": "Porto",
+          "t": "je porte"
+        },
+        {
+          "w": "sempre",
+          "t": "toujours"
+        },
+        {
+          "w": "il",
+          "t": "le"
+        },
+        {
+          "w": "cappello",
+          "t": "chapeau"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -114724,8 +116933,29 @@
       "translation_fr": "chaussettes",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "I calzini sono nel cassetto.",
+      "example_gloss": [
+        {
+          "w": "I",
+          "t": "les"
+        },
+        {
+          "w": "calzini",
+          "t": "chaussettes"
+        },
+        {
+          "w": "sono",
+          "t": "sont"
+        },
+        {
+          "w": "nel",
+          "t": "dans le"
+        },
+        {
+          "w": "cassetto",
+          "t": "tiroir"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -114735,8 +116965,21 @@
       "translation_fr": "robe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Che bel vestito!",
+      "example_gloss": [
+        {
+          "w": "Che",
+          "t": "quel"
+        },
+        {
+          "w": "bel",
+          "t": "beau"
+        },
+        {
+          "w": "vestito",
+          "t": "robe"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -114746,8 +116989,29 @@
       "translation_fr": "écharpe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La sciarpa è di lana.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "l'"
+        },
+        {
+          "w": "sciarpa",
+          "t": "écharpe"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "di",
+          "t": "en"
+        },
+        {
+          "w": "lana",
+          "t": "laine"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -114757,8 +117021,29 @@
       "translation_fr": "chemise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A camisa azul é bonita.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "La"
+        },
+        {
+          "w": "camisa",
+          "t": "chemise"
+        },
+        {
+          "w": "azul",
+          "t": "bleue"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "bonita",
+          "t": "belle"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -114768,8 +117053,29 @@
       "translation_fr": "pantalon",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Preciso de uma calça nova.",
+      "example_gloss": [
+        {
+          "w": "Preciso",
+          "t": "J'ai besoin"
+        },
+        {
+          "w": "de",
+          "t": "d'"
+        },
+        {
+          "w": "uma",
+          "t": "un"
+        },
+        {
+          "w": "calça",
+          "t": "pantalon"
+        },
+        {
+          "w": "nova",
+          "t": "nouveau"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -114779,8 +117085,25 @@
       "translation_fr": "chaussures",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Estes sapatos são confortáveis.",
+      "example_gloss": [
+        {
+          "w": "Estes",
+          "t": "Ces"
+        },
+        {
+          "w": "sapatos",
+          "t": "chaussures"
+        },
+        {
+          "w": "são",
+          "t": "sont"
+        },
+        {
+          "w": "confortáveis",
+          "t": "confortables"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -114790,8 +117113,29 @@
       "translation_fr": "manteau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Vista o casaco, está frio.",
+      "example_gloss": [
+        {
+          "w": "Vista",
+          "t": "Mets"
+        },
+        {
+          "w": "o",
+          "t": "le"
+        },
+        {
+          "w": "casaco",
+          "t": "manteau"
+        },
+        {
+          "w": "está",
+          "t": "il fait"
+        },
+        {
+          "w": "frio",
+          "t": "froid"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -114801,8 +117145,29 @@
       "translation_fr": "chapeau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ele usa um chapéu vermelho.",
+      "example_gloss": [
+        {
+          "w": "Ele",
+          "t": "Il"
+        },
+        {
+          "w": "usa",
+          "t": "porte"
+        },
+        {
+          "w": "um",
+          "t": "un"
+        },
+        {
+          "w": "chapéu",
+          "t": "chapeau"
+        },
+        {
+          "w": "vermelho",
+          "t": "rouge"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -114812,8 +117177,29 @@
       "translation_fr": "chaussettes",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "As meias estão no armário.",
+      "example_gloss": [
+        {
+          "w": "As",
+          "t": "Les"
+        },
+        {
+          "w": "meias",
+          "t": "chaussettes"
+        },
+        {
+          "w": "estão",
+          "t": "sont"
+        },
+        {
+          "w": "no",
+          "t": "dans le"
+        },
+        {
+          "w": "armário",
+          "t": "placard"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -114823,8 +117209,29 @@
       "translation_fr": "robe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O vestido dela é lindo.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "La"
+        },
+        {
+          "w": "vestido",
+          "t": "robe"
+        },
+        {
+          "w": "dela",
+          "t": "d'elle"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "lindo",
+          "t": "magnifique"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -114834,8 +117241,29 @@
       "translation_fr": "écharpe",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Uso um cachecol no inverno.",
+      "example_gloss": [
+        {
+          "w": "Uso",
+          "t": "Je porte"
+        },
+        {
+          "w": "um",
+          "t": "une"
+        },
+        {
+          "w": "cachecol",
+          "t": "écharpe"
+        },
+        {
+          "w": "no",
+          "t": "en"
+        },
+        {
+          "w": "inverno",
+          "t": "hiver"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -116033,8 +118461,21 @@
       "translation_fr": "heure",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Che ora è?",
+      "example_gloss": [
+        {
+          "w": "Che",
+          "t": "quelle"
+        },
+        {
+          "w": "ora",
+          "t": "heure"
+        },
+        {
+          "w": "è",
+          "t": "est-il"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -116044,8 +118485,21 @@
       "translation_fr": "minute",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Aspetta un minuto.",
+      "example_gloss": [
+        {
+          "w": "Aspetta",
+          "t": "attends"
+        },
+        {
+          "w": "un",
+          "t": "une"
+        },
+        {
+          "w": "minuto",
+          "t": "minute"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -116055,8 +118509,29 @@
       "translation_fr": "matin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mi alzo presto la mattina.",
+      "example_gloss": [
+        {
+          "w": "Mi",
+          "t": "je me"
+        },
+        {
+          "w": "alzo",
+          "t": "lève"
+        },
+        {
+          "w": "presto",
+          "t": "tôt"
+        },
+        {
+          "w": "la",
+          "t": "le"
+        },
+        {
+          "w": "mattina",
+          "t": "matin"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -116066,8 +118541,29 @@
       "translation_fr": "après-midi",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Il pomeriggio leggo un libro.",
+      "example_gloss": [
+        {
+          "w": "Il",
+          "t": "l'"
+        },
+        {
+          "w": "pomeriggio",
+          "t": "après-midi"
+        },
+        {
+          "w": "leggo",
+          "t": "je lis"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "libro",
+          "t": "livre"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -116077,8 +118573,17 @@
       "translation_fr": "nuit/soir",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Buona notte!",
+      "example_gloss": [
+        {
+          "w": "Buona",
+          "t": "bonne"
+        },
+        {
+          "w": "notte",
+          "t": "nuit"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -116088,8 +118593,21 @@
       "translation_fr": "maintenant",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Devo partire adesso.",
+      "example_gloss": [
+        {
+          "w": "Devo",
+          "t": "je dois"
+        },
+        {
+          "w": "partire",
+          "t": "partir"
+        },
+        {
+          "w": "adesso",
+          "t": "maintenant"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -116099,8 +118617,21 @@
       "translation_fr": "bientôt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ci vediamo presto.",
+      "example_gloss": [
+        {
+          "w": "Ci",
+          "t": "nous nous"
+        },
+        {
+          "w": "vediamo",
+          "t": "voyons"
+        },
+        {
+          "w": "presto",
+          "t": "bientôt"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -116110,8 +118641,21 @@
       "translation_fr": "minuit",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "È quasi mezzanotte.",
+      "example_gloss": [
+        {
+          "w": "È",
+          "t": "il est"
+        },
+        {
+          "w": "quasi",
+          "t": "presque"
+        },
+        {
+          "w": "mezzanotte",
+          "t": "minuit"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -116121,8 +118665,25 @@
       "translation_fr": "heure",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Que hora é agora?",
+      "example_gloss": [
+        {
+          "w": "Que",
+          "t": "Quelle"
+        },
+        {
+          "w": "hora",
+          "t": "heure"
+        },
+        {
+          "w": "é",
+          "t": "est-il"
+        },
+        {
+          "w": "agora",
+          "t": "maintenant"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -116132,8 +118693,21 @@
       "translation_fr": "minute",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Espere um minuto.",
+      "example_gloss": [
+        {
+          "w": "Espere",
+          "t": "Attendez"
+        },
+        {
+          "w": "um",
+          "t": "une"
+        },
+        {
+          "w": "minuto",
+          "t": "minute"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -116143,8 +118717,25 @@
       "translation_fr": "matin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Acordo cedo de manhã.",
+      "example_gloss": [
+        {
+          "w": "Acordo",
+          "t": "Je me réveille"
+        },
+        {
+          "w": "cedo",
+          "t": "tôt"
+        },
+        {
+          "w": "de",
+          "t": "le"
+        },
+        {
+          "w": "manhã",
+          "t": "matin"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -116154,8 +118745,25 @@
       "translation_fr": "après-midi",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Vou estudar à tarde.",
+      "example_gloss": [
+        {
+          "w": "Vou",
+          "t": "Je vais"
+        },
+        {
+          "w": "estudar",
+          "t": "étudier"
+        },
+        {
+          "w": "à",
+          "t": "l'"
+        },
+        {
+          "w": "tarde",
+          "t": "après-midi"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -116165,8 +118773,25 @@
       "translation_fr": "nuit/soir",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Boa noite, durma bem.",
+      "example_gloss": [
+        {
+          "w": "Boa",
+          "t": "Bonne"
+        },
+        {
+          "w": "noite",
+          "t": "nuit"
+        },
+        {
+          "w": "durma",
+          "t": "dormez"
+        },
+        {
+          "w": "bem",
+          "t": "bien"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -116176,8 +118801,21 @@
       "translation_fr": "maintenant",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Vamos sair agora.",
+      "example_gloss": [
+        {
+          "w": "Vamos",
+          "t": "Allons"
+        },
+        {
+          "w": "sair",
+          "t": "sortir"
+        },
+        {
+          "w": "agora",
+          "t": "maintenant"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -116187,8 +118825,21 @@
       "translation_fr": "bientôt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ele chega em breve.",
+      "example_gloss": [
+        {
+          "w": "Ele",
+          "t": "Il"
+        },
+        {
+          "w": "chega",
+          "t": "arrive"
+        },
+        {
+          "w": "em breve",
+          "t": "bientôt"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -116198,8 +118849,29 @@
       "translation_fr": "minuit",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O filme começa à meia-noite.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "Le"
+        },
+        {
+          "w": "filme",
+          "t": "film"
+        },
+        {
+          "w": "começa",
+          "t": "commence"
+        },
+        {
+          "w": "à",
+          "t": "à"
+        },
+        {
+          "w": "meia-noite",
+          "t": "minuit"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -117421,8 +120093,25 @@
       "translation_fr": "chanson",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Questa canzone è bellissima.",
+      "example_gloss": [
+        {
+          "w": "Questa",
+          "t": "cette"
+        },
+        {
+          "w": "canzone",
+          "t": "chanson"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "bellissima",
+          "t": "très belle"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -117432,8 +120121,21 @@
       "translation_fr": "guitare",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Suono la chitarra.",
+      "example_gloss": [
+        {
+          "w": "Suono",
+          "t": "je joue de"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "chitarra",
+          "t": "guitare"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -117443,8 +120145,33 @@
       "translation_fr": "piano",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Studio il pianoforte da tre anni.",
+      "example_gloss": [
+        {
+          "w": "Studio",
+          "t": "j'étudie"
+        },
+        {
+          "w": "il",
+          "t": "le"
+        },
+        {
+          "w": "pianoforte",
+          "t": "piano"
+        },
+        {
+          "w": "da",
+          "t": "depuis"
+        },
+        {
+          "w": "tre",
+          "t": "trois"
+        },
+        {
+          "w": "anni",
+          "t": "ans"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -117454,8 +120181,25 @@
       "translation_fr": "voix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hai una bella voce.",
+      "example_gloss": [
+        {
+          "w": "Hai",
+          "t": "tu as"
+        },
+        {
+          "w": "una",
+          "t": "une"
+        },
+        {
+          "w": "bella",
+          "t": "belle"
+        },
+        {
+          "w": "voce",
+          "t": "voix"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -117465,8 +120209,25 @@
       "translation_fr": "rythme",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Il ritmo è veloce.",
+      "example_gloss": [
+        {
+          "w": "Il",
+          "t": "le"
+        },
+        {
+          "w": "ritmo",
+          "t": "rythme"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "veloce",
+          "t": "rapide"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -117476,8 +120237,25 @@
       "translation_fr": "concert",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Andiamo al concerto stasera.",
+      "example_gloss": [
+        {
+          "w": "Andiamo",
+          "t": "allons"
+        },
+        {
+          "w": "al",
+          "t": "au"
+        },
+        {
+          "w": "concerto",
+          "t": "concert"
+        },
+        {
+          "w": "stasera",
+          "t": "ce soir"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -117487,8 +120265,25 @@
       "translation_fr": "paroles",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Non conosco il testo.",
+      "example_gloss": [
+        {
+          "w": "Non",
+          "t": "je ne"
+        },
+        {
+          "w": "conosco",
+          "t": "connais pas"
+        },
+        {
+          "w": "il",
+          "t": "les"
+        },
+        {
+          "w": "testo",
+          "t": "paroles"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -117498,8 +120293,25 @@
       "translation_fr": "mélodie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La melodia è dolce.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "melodia",
+          "t": "mélodie"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "dolce",
+          "t": "douce"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -117509,8 +120321,25 @@
       "translation_fr": "chanson",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Esta música é linda.",
+      "example_gloss": [
+        {
+          "w": "Esta",
+          "t": "Cette"
+        },
+        {
+          "w": "música",
+          "t": "chanson"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "linda",
+          "t": "belle"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -117520,8 +120349,29 @@
       "translation_fr": "guitare",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ele toca violão muito bem.",
+      "example_gloss": [
+        {
+          "w": "Ele",
+          "t": "Il"
+        },
+        {
+          "w": "toca",
+          "t": "joue de la"
+        },
+        {
+          "w": "violão",
+          "t": "guitare"
+        },
+        {
+          "w": "muito",
+          "t": "très"
+        },
+        {
+          "w": "bem",
+          "t": "bien"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -117531,8 +120381,29 @@
       "translation_fr": "piano",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ela estuda piano desde criança.",
+      "example_gloss": [
+        {
+          "w": "Ela",
+          "t": "Elle"
+        },
+        {
+          "w": "estuda",
+          "t": "étudie le"
+        },
+        {
+          "w": "piano",
+          "t": "piano"
+        },
+        {
+          "w": "desde",
+          "t": "depuis"
+        },
+        {
+          "w": "criança",
+          "t": "l'enfance"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -117542,8 +120413,29 @@
       "translation_fr": "voix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ela tem uma voz bonita.",
+      "example_gloss": [
+        {
+          "w": "Ela",
+          "t": "Elle"
+        },
+        {
+          "w": "tem",
+          "t": "a"
+        },
+        {
+          "w": "uma",
+          "t": "une"
+        },
+        {
+          "w": "voz",
+          "t": "voix"
+        },
+        {
+          "w": "bonita",
+          "t": "belle"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -117553,8 +120445,25 @@
       "translation_fr": "rythme",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O ritmo é rápido.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "Le"
+        },
+        {
+          "w": "ritmo",
+          "t": "rythme"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "rápido",
+          "t": "rapide"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -117564,8 +120473,29 @@
       "translation_fr": "concert",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O concerto é hoje à noite.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "Le"
+        },
+        {
+          "w": "concerto",
+          "t": "concert"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "hoje",
+          "t": "ce"
+        },
+        {
+          "w": "à noite",
+          "t": "soir"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -117575,8 +120505,33 @@
       "translation_fr": "paroles",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A letra desta música é triste.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "Les"
+        },
+        {
+          "w": "letra",
+          "t": "paroles"
+        },
+        {
+          "w": "desta",
+          "t": "de cette"
+        },
+        {
+          "w": "música",
+          "t": "chanson"
+        },
+        {
+          "w": "é",
+          "t": "sont"
+        },
+        {
+          "w": "triste",
+          "t": "tristes"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -117586,8 +120541,29 @@
       "translation_fr": "mélodie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A melodia é muito suave.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "La"
+        },
+        {
+          "w": "melodia",
+          "t": "mélodie"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "muito",
+          "t": "très"
+        },
+        {
+          "w": "suave",
+          "t": "douce"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -118809,8 +121785,29 @@
       "translation_fr": "cuisiner",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mi piace cucinare la pasta.",
+      "example_gloss": [
+        {
+          "w": "Mi",
+          "t": "me"
+        },
+        {
+          "w": "piace",
+          "t": "plaît"
+        },
+        {
+          "w": "cucinare",
+          "t": "cuisiner"
+        },
+        {
+          "w": "la",
+          "t": "les"
+        },
+        {
+          "w": "pasta",
+          "t": "pâtes"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -118820,8 +121817,33 @@
       "translation_fr": "recette",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Seguo la ricetta passo dopo passo.",
+      "example_gloss": [
+        {
+          "w": "Seguo",
+          "t": "je suis"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "ricetta",
+          "t": "recette"
+        },
+        {
+          "w": "passo",
+          "t": "pas"
+        },
+        {
+          "w": "dopo",
+          "t": "après"
+        },
+        {
+          "w": "passo",
+          "t": "pas"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -118831,8 +121853,21 @@
       "translation_fr": "ingrédient",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Manca un ingrediente.",
+      "example_gloss": [
+        {
+          "w": "Manca",
+          "t": "il manque"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "ingrediente",
+          "t": "ingrédient"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -118842,8 +121877,25 @@
       "translation_fr": "poêle",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Metti l'olio nella padella.",
+      "example_gloss": [
+        {
+          "w": "Metti",
+          "t": "mets"
+        },
+        {
+          "w": "l'olio",
+          "t": "l'huile"
+        },
+        {
+          "w": "nella",
+          "t": "dans la"
+        },
+        {
+          "w": "padella",
+          "t": "poêle"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -118853,8 +121905,21 @@
       "translation_fr": "faire bouillir",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Devo bollire l'acqua.",
+      "example_gloss": [
+        {
+          "w": "Devo",
+          "t": "je dois"
+        },
+        {
+          "w": "bollire",
+          "t": "faire bouillir"
+        },
+        {
+          "w": "l'acqua",
+          "t": "l'eau"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -118864,8 +121929,33 @@
       "translation_fr": "cuire au four",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Bisogna cuocere al forno per trenta minuti.",
+      "example_gloss": [
+        {
+          "w": "Bisogna",
+          "t": "il faut"
+        },
+        {
+          "w": "cuocere",
+          "t": "cuire"
+        },
+        {
+          "w": "al forno",
+          "t": "au four"
+        },
+        {
+          "w": "per",
+          "t": "pendant"
+        },
+        {
+          "w": "trenta",
+          "t": "trente"
+        },
+        {
+          "w": "minuti",
+          "t": "minutes"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -118875,8 +121965,21 @@
       "translation_fr": "mélanger",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Devi mescolare bene.",
+      "example_gloss": [
+        {
+          "w": "Devi",
+          "t": "tu dois"
+        },
+        {
+          "w": "mescolare",
+          "t": "mélanger"
+        },
+        {
+          "w": "bene",
+          "t": "bien"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -118886,8 +121989,25 @@
       "translation_fr": "assaisonnement",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Aggiungi un po' di condimento.",
+      "example_gloss": [
+        {
+          "w": "Aggiungi",
+          "t": "ajoute"
+        },
+        {
+          "w": "un po'",
+          "t": "un peu"
+        },
+        {
+          "w": "di",
+          "t": "d'"
+        },
+        {
+          "w": "condimento",
+          "t": "assaisonnement"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -118897,8 +122017,21 @@
       "translation_fr": "cuisiner",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Eu adoro cozinhar.",
+      "example_gloss": [
+        {
+          "w": "Eu",
+          "t": "J'"
+        },
+        {
+          "w": "adoro",
+          "t": "adore"
+        },
+        {
+          "w": "cozinhar",
+          "t": "cuisiner"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -118908,8 +122041,25 @@
       "translation_fr": "recette",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A receita é simples.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "La"
+        },
+        {
+          "w": "receita",
+          "t": "recette"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "simples",
+          "t": "simple"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -118919,8 +122069,21 @@
       "translation_fr": "ingrédient",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Falta um ingrediente.",
+      "example_gloss": [
+        {
+          "w": "Falta",
+          "t": "Il manque"
+        },
+        {
+          "w": "um",
+          "t": "un"
+        },
+        {
+          "w": "ingrediente",
+          "t": "ingrédient"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -118930,8 +122093,21 @@
       "translation_fr": "poêle",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Coloque na frigideira.",
+      "example_gloss": [
+        {
+          "w": "Coloque",
+          "t": "Mettez"
+        },
+        {
+          "w": "na",
+          "t": "dans la"
+        },
+        {
+          "w": "frigideira",
+          "t": "poêle"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -118941,8 +122117,25 @@
       "translation_fr": "faire bouillir",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Deixe a água ferver.",
+      "example_gloss": [
+        {
+          "w": "Deixe",
+          "t": "Laissez"
+        },
+        {
+          "w": "a",
+          "t": "l'"
+        },
+        {
+          "w": "água",
+          "t": "eau"
+        },
+        {
+          "w": "ferver",
+          "t": "bouillir"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -118952,8 +122145,25 @@
       "translation_fr": "cuire au four",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Vou assar um bolo.",
+      "example_gloss": [
+        {
+          "w": "Vou",
+          "t": "Je vais"
+        },
+        {
+          "w": "assar",
+          "t": "cuire au four"
+        },
+        {
+          "w": "um",
+          "t": "un"
+        },
+        {
+          "w": "bolo",
+          "t": "gâteau"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -118963,8 +122173,21 @@
       "translation_fr": "mélanger",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Precisa misturar bem.",
+      "example_gloss": [
+        {
+          "w": "Precisa",
+          "t": "Il faut"
+        },
+        {
+          "w": "misturar",
+          "t": "mélanger"
+        },
+        {
+          "w": "bem",
+          "t": "bien"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -118974,8 +122197,25 @@
       "translation_fr": "assaisonnement",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Este tempero é forte.",
+      "example_gloss": [
+        {
+          "w": "Este",
+          "t": "Cet"
+        },
+        {
+          "w": "tempero",
+          "t": "assaisonnement"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "forte",
+          "t": "fort"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -119990,8 +123230,25 @@
       "translation_fr": "avion",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "L'aereo parte alle otto.",
+      "example_gloss": [
+        {
+          "w": "L'aereo",
+          "t": "l'avion"
+        },
+        {
+          "w": "parte",
+          "t": "part"
+        },
+        {
+          "w": "alle",
+          "t": "à"
+        },
+        {
+          "w": "otto",
+          "t": "huit heures"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -120001,8 +123258,25 @@
       "translation_fr": "valise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Devo preparare la valigia.",
+      "example_gloss": [
+        {
+          "w": "Devo",
+          "t": "je dois"
+        },
+        {
+          "w": "preparare",
+          "t": "préparer"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "valigia",
+          "t": "valise"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -120012,8 +123286,29 @@
       "translation_fr": "hôtel",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "L'hotel è vicino alla stazione.",
+      "example_gloss": [
+        {
+          "w": "L'hotel",
+          "t": "l'hôtel"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "vicino",
+          "t": "près"
+        },
+        {
+          "w": "alla",
+          "t": "de la"
+        },
+        {
+          "w": "stazione",
+          "t": "gare"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -120023,8 +123318,33 @@
       "translation_fr": "tourisme",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Il turismo è importante per l'Italia.",
+      "example_gloss": [
+        {
+          "w": "Il",
+          "t": "le"
+        },
+        {
+          "w": "turismo",
+          "t": "tourisme"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "importante",
+          "t": "important"
+        },
+        {
+          "w": "per",
+          "t": "pour"
+        },
+        {
+          "w": "l'Italia",
+          "t": "l'Italie"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -120034,8 +123354,29 @@
       "translation_fr": "avion",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O avião parte às oito.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "L'"
+        },
+        {
+          "w": "avião",
+          "t": "avion"
+        },
+        {
+          "w": "parte",
+          "t": "part"
+        },
+        {
+          "w": "às",
+          "t": "à"
+        },
+        {
+          "w": "oito",
+          "t": "huit"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -120045,8 +123386,29 @@
       "translation_fr": "valise",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A minha mala está pronta.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "Ma"
+        },
+        {
+          "w": "minha",
+          "t": ""
+        },
+        {
+          "w": "mala",
+          "t": "valise"
+        },
+        {
+          "w": "está",
+          "t": "est"
+        },
+        {
+          "w": "pronta",
+          "t": "prête"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -120056,8 +123418,29 @@
       "translation_fr": "tourisme",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O turismo é importante aqui.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "Le"
+        },
+        {
+          "w": "turismo",
+          "t": "tourisme"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "importante",
+          "t": "important"
+        },
+        {
+          "w": "aqui",
+          "t": "ici"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -120067,8 +123450,25 @@
       "translation_fr": "hébergement",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A acomodação é confortável.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "L'"
+        },
+        {
+          "w": "acomodação",
+          "t": "hébergement"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "confortável",
+          "t": "confortable"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -120884,8 +124284,29 @@
       "translation_fr": "zéro",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La temperatura è zero gradi.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "temperatura",
+          "t": "température"
+        },
+        {
+          "w": "è",
+          "t": "est de"
+        },
+        {
+          "w": "zero",
+          "t": "zéro"
+        },
+        {
+          "w": "gradi",
+          "t": "degrés"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -120895,8 +124316,21 @@
       "translation_fr": "dix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ho dieci euro.",
+      "example_gloss": [
+        {
+          "w": "Ho",
+          "t": "j'ai"
+        },
+        {
+          "w": "dieci",
+          "t": "dix"
+        },
+        {
+          "w": "euro",
+          "t": "euros"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -120906,8 +124340,21 @@
       "translation_fr": "cent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Costa cento euro.",
+      "example_gloss": [
+        {
+          "w": "Costa",
+          "t": "ça coûte"
+        },
+        {
+          "w": "cento",
+          "t": "cent"
+        },
+        {
+          "w": "euro",
+          "t": "euros"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -120917,8 +124364,25 @@
       "translation_fr": "mille",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ci sono mille persone.",
+      "example_gloss": [
+        {
+          "w": "Ci",
+          "t": "il y"
+        },
+        {
+          "w": "sono",
+          "t": "a"
+        },
+        {
+          "w": "mille",
+          "t": "mille"
+        },
+        {
+          "w": "persone",
+          "t": "personnes"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -120928,8 +124392,25 @@
       "translation_fr": "million",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Un milione di abitanti.",
+      "example_gloss": [
+        {
+          "w": "Un",
+          "t": "un"
+        },
+        {
+          "w": "milione",
+          "t": "million"
+        },
+        {
+          "w": "di",
+          "t": "d'"
+        },
+        {
+          "w": "abitanti",
+          "t": "habitants"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -120939,8 +124420,25 @@
       "translation_fr": "moitié",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mangio metà della torta.",
+      "example_gloss": [
+        {
+          "w": "Mangio",
+          "t": "je mange"
+        },
+        {
+          "w": "metà",
+          "t": "la moitié"
+        },
+        {
+          "w": "della",
+          "t": "du"
+        },
+        {
+          "w": "torta",
+          "t": "gâteau"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -120950,8 +124448,25 @@
       "translation_fr": "double",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Vorrei un caffè doppio.",
+      "example_gloss": [
+        {
+          "w": "Vorrei",
+          "t": "je voudrais"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "caffè",
+          "t": "café"
+        },
+        {
+          "w": "doppio",
+          "t": "double"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -120961,8 +124476,25 @@
       "translation_fr": "tiers",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Abito al terzo piano.",
+      "example_gloss": [
+        {
+          "w": "Abito",
+          "t": "j'habite"
+        },
+        {
+          "w": "al",
+          "t": "au"
+        },
+        {
+          "w": "terzo",
+          "t": "troisième"
+        },
+        {
+          "w": "piano",
+          "t": "étage"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -120972,8 +124504,25 @@
       "translation_fr": "zéro",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O resultado é zero.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "Le"
+        },
+        {
+          "w": "resultado",
+          "t": "résultat"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "zero",
+          "t": "zéro"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -120983,8 +124532,21 @@
       "translation_fr": "dix",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "São dez horas.",
+      "example_gloss": [
+        {
+          "w": "São",
+          "t": "Il est"
+        },
+        {
+          "w": "dez",
+          "t": "dix"
+        },
+        {
+          "w": "horas",
+          "t": "heures"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -120994,8 +124556,25 @@
       "translation_fr": "cent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Há cem pessoas aqui.",
+      "example_gloss": [
+        {
+          "w": "Há",
+          "t": "Il y a"
+        },
+        {
+          "w": "cem",
+          "t": "cent"
+        },
+        {
+          "w": "pessoas",
+          "t": "personnes"
+        },
+        {
+          "w": "aqui",
+          "t": "ici"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -121005,8 +124584,21 @@
       "translation_fr": "mille",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Custou mil euros.",
+      "example_gloss": [
+        {
+          "w": "Custou",
+          "t": "Ça a coûté"
+        },
+        {
+          "w": "mil",
+          "t": "mille"
+        },
+        {
+          "w": "euros",
+          "t": "euros"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -121016,8 +124608,37 @@
       "translation_fr": "million",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A cidade tem um milhão de habitantes.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "La"
+        },
+        {
+          "w": "cidade",
+          "t": "ville"
+        },
+        {
+          "w": "tem",
+          "t": "a"
+        },
+        {
+          "w": "um",
+          "t": "un"
+        },
+        {
+          "w": "milhão",
+          "t": "million"
+        },
+        {
+          "w": "de",
+          "t": "d'"
+        },
+        {
+          "w": "habitantes",
+          "t": "habitants"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -121027,8 +124648,29 @@
       "translation_fr": "moitié",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Comi a metade do bolo.",
+      "example_gloss": [
+        {
+          "w": "Comi",
+          "t": "J'ai mangé"
+        },
+        {
+          "w": "a",
+          "t": "la"
+        },
+        {
+          "w": "metade",
+          "t": "moitié"
+        },
+        {
+          "w": "do",
+          "t": "du"
+        },
+        {
+          "w": "bolo",
+          "t": "gâteau"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -121038,8 +124680,25 @@
       "translation_fr": "double",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ele ganha o dobro.",
+      "example_gloss": [
+        {
+          "w": "Ele",
+          "t": "Il"
+        },
+        {
+          "w": "ganha",
+          "t": "gagne"
+        },
+        {
+          "w": "o",
+          "t": "le"
+        },
+        {
+          "w": "dobro",
+          "t": "double"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -121049,8 +124708,29 @@
       "translation_fr": "tiers",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Um terço dos alunos faltou.",
+      "example_gloss": [
+        {
+          "w": "Um",
+          "t": "Un"
+        },
+        {
+          "w": "terço",
+          "t": "tiers"
+        },
+        {
+          "w": "dos",
+          "t": "des"
+        },
+        {
+          "w": "alunos",
+          "t": "élèves"
+        },
+        {
+          "w": "faltou",
+          "t": "a manqué"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -122292,8 +125972,29 @@
       "translation_fr": "pays",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "L'Italia è un bel paese.",
+      "example_gloss": [
+        {
+          "w": "L'Italia",
+          "t": "l'Italie"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "bel",
+          "t": "beau"
+        },
+        {
+          "w": "paese",
+          "t": "pays"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -122303,8 +126004,29 @@
       "translation_fr": "capitale",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Roma è la capitale d'Italia.",
+      "example_gloss": [
+        {
+          "w": "Roma",
+          "t": "Rome"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "capitale",
+          "t": "capitale"
+        },
+        {
+          "w": "d'Italia",
+          "t": "d'Italie"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -122314,8 +126036,25 @@
       "translation_fr": "continent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "L'Europa è un continente.",
+      "example_gloss": [
+        {
+          "w": "L'Europa",
+          "t": "l'Europe"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "continente",
+          "t": "continent"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -122325,8 +126064,29 @@
       "translation_fr": "frontière",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Il confine è a nord.",
+      "example_gloss": [
+        {
+          "w": "Il",
+          "t": "la"
+        },
+        {
+          "w": "confine",
+          "t": "frontière"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "a",
+          "t": "au"
+        },
+        {
+          "w": "nord",
+          "t": "nord"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -122336,8 +126096,25 @@
       "translation_fr": "île",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La Sardegna è un'isola.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "Sardegna",
+          "t": "Sardaigne"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "un'isola",
+          "t": "une île"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -122347,8 +126124,33 @@
       "translation_fr": "désert",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Il deserto del Sahara è enorme.",
+      "example_gloss": [
+        {
+          "w": "Il",
+          "t": "le"
+        },
+        {
+          "w": "deserto",
+          "t": "désert"
+        },
+        {
+          "w": "del",
+          "t": "du"
+        },
+        {
+          "w": "Sahara",
+          "t": "Sahara"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "enorme",
+          "t": "énorme"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -122358,8 +126160,25 @@
       "translation_fr": "océan",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "L'oceano Atlantico è vasto.",
+      "example_gloss": [
+        {
+          "w": "L'oceano",
+          "t": "l'océan"
+        },
+        {
+          "w": "Atlantico",
+          "t": "Atlantique"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "vasto",
+          "t": "vaste"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -122369,8 +126188,21 @@
       "translation_fr": "hémisphère",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Viviamo nell'emisfero nord.",
+      "example_gloss": [
+        {
+          "w": "Viviamo",
+          "t": "nous vivons"
+        },
+        {
+          "w": "nell'emisfero",
+          "t": "dans l'hémisphère"
+        },
+        {
+          "w": "nord",
+          "t": "nord"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -122380,8 +126212,29 @@
       "translation_fr": "pays",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Portugal é um país bonito.",
+      "example_gloss": [
+        {
+          "w": "Portugal",
+          "t": "Le Portugal"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "um",
+          "t": "un"
+        },
+        {
+          "w": "país",
+          "t": "pays"
+        },
+        {
+          "w": "bonito",
+          "t": "beau"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -122391,8 +126244,33 @@
       "translation_fr": "capitale",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Lisboa é a capital de Portugal.",
+      "example_gloss": [
+        {
+          "w": "Lisboa",
+          "t": "Lisbonne"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "a",
+          "t": "la"
+        },
+        {
+          "w": "capital",
+          "t": "capitale"
+        },
+        {
+          "w": "de",
+          "t": "du"
+        },
+        {
+          "w": "Portugal",
+          "t": "Portugal"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -122402,8 +126280,29 @@
       "translation_fr": "continent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A Europa é um continente.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "L'"
+        },
+        {
+          "w": "Europa",
+          "t": "Europe"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "um",
+          "t": "un"
+        },
+        {
+          "w": "continente",
+          "t": "continent"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -122413,8 +126312,25 @@
       "translation_fr": "frontière",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A fronteira fica perto.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "La"
+        },
+        {
+          "w": "fronteira",
+          "t": "frontière"
+        },
+        {
+          "w": "fica",
+          "t": "se trouve"
+        },
+        {
+          "w": "perto",
+          "t": "près"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -122424,8 +126340,25 @@
       "translation_fr": "île",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Esta ilha é tropical.",
+      "example_gloss": [
+        {
+          "w": "Esta",
+          "t": "Cette"
+        },
+        {
+          "w": "ilha",
+          "t": "île"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "tropical",
+          "t": "tropicale"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -122435,8 +126368,29 @@
       "translation_fr": "désert",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O deserto é muito seco.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "Le"
+        },
+        {
+          "w": "deserto",
+          "t": "désert"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "muito",
+          "t": "très"
+        },
+        {
+          "w": "seco",
+          "t": "sec"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -122446,8 +126400,29 @@
       "translation_fr": "océan",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O oceano Atlântico é enorme.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "L'"
+        },
+        {
+          "w": "oceano",
+          "t": "océan"
+        },
+        {
+          "w": "Atlântico",
+          "t": "Atlantique"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "enorme",
+          "t": "énorme"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -122457,8 +126432,25 @@
       "translation_fr": "hémisphère",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Vivemos no hemisfério norte.",
+      "example_gloss": [
+        {
+          "w": "Vivemos",
+          "t": "Nous vivons"
+        },
+        {
+          "w": "no",
+          "t": "dans l'"
+        },
+        {
+          "w": "hemisfério",
+          "t": "hémisphère"
+        },
+        {
+          "w": "norte",
+          "t": "nord"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -123672,8 +127664,25 @@
       "translation_fr": "médecin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mio padre è medico.",
+      "example_gloss": [
+        {
+          "w": "Mio",
+          "t": "mon"
+        },
+        {
+          "w": "padre",
+          "t": "père"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "medico",
+          "t": "médecin"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -123683,8 +127692,25 @@
       "translation_fr": "enseignant",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "L'insegnante è molto paziente.",
+      "example_gloss": [
+        {
+          "w": "L'insegnante",
+          "t": "l'enseignant"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "molto",
+          "t": "très"
+        },
+        {
+          "w": "paziente",
+          "t": "patient"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -123694,8 +127720,29 @@
       "translation_fr": "cuisinier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Il cuoco prepara il pranzo.",
+      "example_gloss": [
+        {
+          "w": "Il",
+          "t": "le"
+        },
+        {
+          "w": "cuoco",
+          "t": "cuisinier"
+        },
+        {
+          "w": "prepara",
+          "t": "prépare"
+        },
+        {
+          "w": "il",
+          "t": "le"
+        },
+        {
+          "w": "pranzo",
+          "t": "déjeuner"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -123705,8 +127752,29 @@
       "translation_fr": "policier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Il poliziotto controlla i documenti.",
+      "example_gloss": [
+        {
+          "w": "Il",
+          "t": "le"
+        },
+        {
+          "w": "poliziotto",
+          "t": "policier"
+        },
+        {
+          "w": "controlla",
+          "t": "contrôle"
+        },
+        {
+          "w": "i",
+          "t": "les"
+        },
+        {
+          "w": "documenti",
+          "t": "documents"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -123716,8 +127784,29 @@
       "translation_fr": "pompier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Il pompiere spegne il fuoco.",
+      "example_gloss": [
+        {
+          "w": "Il",
+          "t": "le"
+        },
+        {
+          "w": "pompiere",
+          "t": "pompier"
+        },
+        {
+          "w": "spegne",
+          "t": "éteint"
+        },
+        {
+          "w": "il",
+          "t": "le"
+        },
+        {
+          "w": "fuoco",
+          "t": "feu"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -123727,8 +127816,25 @@
       "translation_fr": "ingénieur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "L'ingegnere progetta il ponte.",
+      "example_gloss": [
+        {
+          "w": "L'ingegnere",
+          "t": "l'ingénieur"
+        },
+        {
+          "w": "progetta",
+          "t": "conçoit"
+        },
+        {
+          "w": "il",
+          "t": "le"
+        },
+        {
+          "w": "ponte",
+          "t": "pont"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -123738,8 +127844,29 @@
       "translation_fr": "avocat",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ho bisogno di un avvocato.",
+      "example_gloss": [
+        {
+          "w": "Ho",
+          "t": "j'ai"
+        },
+        {
+          "w": "bisogno",
+          "t": "besoin"
+        },
+        {
+          "w": "di",
+          "t": "d'"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "avvocato",
+          "t": "avocat"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -123749,8 +127876,25 @@
       "translation_fr": "architecte",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "L'architetto disegna la casa.",
+      "example_gloss": [
+        {
+          "w": "L'architetto",
+          "t": "l'architecte"
+        },
+        {
+          "w": "disegna",
+          "t": "dessine"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "casa",
+          "t": "maison"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -123760,8 +127904,29 @@
       "translation_fr": "médecin",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O médico trabalha no hospital.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "Le"
+        },
+        {
+          "w": "médico",
+          "t": "médecin"
+        },
+        {
+          "w": "trabalha",
+          "t": "travaille"
+        },
+        {
+          "w": "no",
+          "t": "à l'"
+        },
+        {
+          "w": "hospital",
+          "t": "hôpital"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -123771,8 +127936,25 @@
       "translation_fr": "enseignant",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O professor ensina matemática.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "L'"
+        },
+        {
+          "w": "professor",
+          "t": "enseignant"
+        },
+        {
+          "w": "ensina",
+          "t": "enseigne"
+        },
+        {
+          "w": "matemática",
+          "t": "les mathématiques"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -123782,8 +127964,29 @@
       "translation_fr": "cuisinier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O cozinheiro prepara o jantar.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "Le"
+        },
+        {
+          "w": "cozinheiro",
+          "t": "cuisinier"
+        },
+        {
+          "w": "prepara",
+          "t": "prépare"
+        },
+        {
+          "w": "o",
+          "t": "le"
+        },
+        {
+          "w": "jantar",
+          "t": "dîner"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -123793,8 +127996,29 @@
       "translation_fr": "policier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O policial ajudou a senhora.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "Le"
+        },
+        {
+          "w": "policial",
+          "t": "policier"
+        },
+        {
+          "w": "ajudou",
+          "t": "a aidé"
+        },
+        {
+          "w": "a",
+          "t": "la"
+        },
+        {
+          "w": "senhora",
+          "t": "dame"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -123804,8 +128028,29 @@
       "translation_fr": "pompier",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O bombeiro apagou o fogo.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "Le"
+        },
+        {
+          "w": "bombeiro",
+          "t": "pompier"
+        },
+        {
+          "w": "apagou",
+          "t": "a éteint"
+        },
+        {
+          "w": "o",
+          "t": "le"
+        },
+        {
+          "w": "fogo",
+          "t": "feu"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -123815,8 +128060,29 @@
       "translation_fr": "ingénieur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O engenheiro desenhou a ponte.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "L'"
+        },
+        {
+          "w": "engenheiro",
+          "t": "ingénieur"
+        },
+        {
+          "w": "desenhou",
+          "t": "a dessiné"
+        },
+        {
+          "w": "a",
+          "t": "le"
+        },
+        {
+          "w": "ponte",
+          "t": "pont"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -123826,8 +128092,29 @@
       "translation_fr": "avocat",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O advogado defende o cliente.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "L'"
+        },
+        {
+          "w": "advogado",
+          "t": "avocat"
+        },
+        {
+          "w": "defende",
+          "t": "défend"
+        },
+        {
+          "w": "o",
+          "t": "le"
+        },
+        {
+          "w": "cliente",
+          "t": "client"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -123837,8 +128124,29 @@
       "translation_fr": "architecte",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O arquiteto projetou a casa.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "L'"
+        },
+        {
+          "w": "arquiteto",
+          "t": "architecte"
+        },
+        {
+          "w": "projetou",
+          "t": "a conçu"
+        },
+        {
+          "w": "a",
+          "t": "la"
+        },
+        {
+          "w": "casa",
+          "t": "maison"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -125064,8 +129372,29 @@
       "translation_fr": "lire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Mi piace leggere la sera.",
+      "example_gloss": [
+        {
+          "w": "Mi",
+          "t": "me"
+        },
+        {
+          "w": "piace",
+          "t": "plaît"
+        },
+        {
+          "w": "leggere",
+          "t": "lire"
+        },
+        {
+          "w": "la",
+          "t": "le"
+        },
+        {
+          "w": "sera",
+          "t": "soir"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -125075,8 +129404,25 @@
       "translation_fr": "peindre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Amo dipingere i paesaggi.",
+      "example_gloss": [
+        {
+          "w": "Amo",
+          "t": "j'aime"
+        },
+        {
+          "w": "dipingere",
+          "t": "peindre"
+        },
+        {
+          "w": "i",
+          "t": "les"
+        },
+        {
+          "w": "paesaggi",
+          "t": "paysages"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -125086,8 +129432,29 @@
       "translation_fr": "nager",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Vado a nuotare in piscina.",
+      "example_gloss": [
+        {
+          "w": "Vado",
+          "t": "je vais"
+        },
+        {
+          "w": "a",
+          "t": "à"
+        },
+        {
+          "w": "nuotare",
+          "t": "nager"
+        },
+        {
+          "w": "in",
+          "t": "à la"
+        },
+        {
+          "w": "piscina",
+          "t": "piscine"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -125097,8 +129464,33 @@
       "translation_fr": "photographie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La fotografia è la mia passione.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "fotografia",
+          "t": "photographie"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "mia",
+          "t": "ma"
+        },
+        {
+          "w": "passione",
+          "t": "passion"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -125108,8 +129500,25 @@
       "translation_fr": "jardinage",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Il giardinaggio è rilassante.",
+      "example_gloss": [
+        {
+          "w": "Il",
+          "t": "le"
+        },
+        {
+          "w": "giardinaggio",
+          "t": "jardinage"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "rilassante",
+          "t": "relaxant"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -125119,8 +129528,21 @@
       "translation_fr": "échecs",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Giochiamo a scacchi?",
+      "example_gloss": [
+        {
+          "w": "Giochiamo",
+          "t": "jouons"
+        },
+        {
+          "w": "a",
+          "t": "aux"
+        },
+        {
+          "w": "scacchi",
+          "t": "échecs"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -125130,8 +129552,29 @@
       "translation_fr": "randonnée",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "L'escursionismo è il mio hobby.",
+      "example_gloss": [
+        {
+          "w": "L'escursionismo",
+          "t": "la randonnée"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "il",
+          "t": "le"
+        },
+        {
+          "w": "mio",
+          "t": "mon"
+        },
+        {
+          "w": "hobby",
+          "t": "hobby"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -125141,8 +129584,29 @@
       "translation_fr": "collection",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ho una collezione di francobolli.",
+      "example_gloss": [
+        {
+          "w": "Ho",
+          "t": "j'ai"
+        },
+        {
+          "w": "una",
+          "t": "une"
+        },
+        {
+          "w": "collezione",
+          "t": "collection"
+        },
+        {
+          "w": "di",
+          "t": "de"
+        },
+        {
+          "w": "francobolli",
+          "t": "timbres"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -125152,8 +129616,33 @@
       "translation_fr": "lire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A leitura é o meu passatempo.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "La"
+        },
+        {
+          "w": "leitura",
+          "t": "lecture"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "o",
+          "t": "mon"
+        },
+        {
+          "w": "meu",
+          "t": ""
+        },
+        {
+          "w": "passatempo",
+          "t": "passe-temps"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -125163,8 +129652,25 @@
       "translation_fr": "peindre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Eu gosto de pintura.",
+      "example_gloss": [
+        {
+          "w": "Eu",
+          "t": "J'"
+        },
+        {
+          "w": "gosto",
+          "t": "aime"
+        },
+        {
+          "w": "de",
+          "t": "la"
+        },
+        {
+          "w": "pintura",
+          "t": "peinture"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -125174,8 +129680,29 @@
       "translation_fr": "nager",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A natação é bom exercício.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "La"
+        },
+        {
+          "w": "natação",
+          "t": "natation"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "bom",
+          "t": "un bon"
+        },
+        {
+          "w": "exercício",
+          "t": "exercice"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -125185,8 +129712,33 @@
       "translation_fr": "photographie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A fotografia é o meu hobby.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "La"
+        },
+        {
+          "w": "fotografia",
+          "t": "photographie"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "o",
+          "t": "mon"
+        },
+        {
+          "w": "meu",
+          "t": ""
+        },
+        {
+          "w": "hobby",
+          "t": "hobby"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -125196,8 +129748,25 @@
       "translation_fr": "jardinage",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Faço jardinagem ao fim de semana.",
+      "example_gloss": [
+        {
+          "w": "Faço",
+          "t": "Je fais du"
+        },
+        {
+          "w": "jardinagem",
+          "t": "jardinage"
+        },
+        {
+          "w": "ao",
+          "t": "le"
+        },
+        {
+          "w": "fim de semana",
+          "t": "week-end"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -125207,8 +129776,25 @@
       "translation_fr": "échecs",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Jogamos xadrez à noite.",
+      "example_gloss": [
+        {
+          "w": "Jogamos",
+          "t": "Nous jouons aux"
+        },
+        {
+          "w": "xadrez",
+          "t": "échecs"
+        },
+        {
+          "w": "à",
+          "t": "le"
+        },
+        {
+          "w": "noite",
+          "t": "soir"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -125218,8 +129804,33 @@
       "translation_fr": "randonnée",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Faço uma caminhada todos os dias.",
+      "example_gloss": [
+        {
+          "w": "Faço",
+          "t": "Je fais"
+        },
+        {
+          "w": "uma",
+          "t": "une"
+        },
+        {
+          "w": "caminhada",
+          "t": "randonnée"
+        },
+        {
+          "w": "todos",
+          "t": "tous"
+        },
+        {
+          "w": "os",
+          "t": "les"
+        },
+        {
+          "w": "dias",
+          "t": "jours"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -125229,8 +129840,29 @@
       "translation_fr": "collection",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Tenho uma coleção de selos.",
+      "example_gloss": [
+        {
+          "w": "Tenho",
+          "t": "J'ai"
+        },
+        {
+          "w": "uma",
+          "t": "une"
+        },
+        {
+          "w": "coleção",
+          "t": "collection"
+        },
+        {
+          "w": "de",
+          "t": "de"
+        },
+        {
+          "w": "selos",
+          "t": "timbres"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -126488,8 +131120,25 @@
       "translation_fr": "banque",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Vado in banca domani.",
+      "example_gloss": [
+        {
+          "w": "Vado",
+          "t": "je vais"
+        },
+        {
+          "w": "in",
+          "t": "à la"
+        },
+        {
+          "w": "banca",
+          "t": "banque"
+        },
+        {
+          "w": "domani",
+          "t": "demain"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -126499,8 +131148,25 @@
       "translation_fr": "argent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Non ho abbastanza soldi.",
+      "example_gloss": [
+        {
+          "w": "Non",
+          "t": "je n'"
+        },
+        {
+          "w": "ho",
+          "t": "ai"
+        },
+        {
+          "w": "abbastanza",
+          "t": "assez d'"
+        },
+        {
+          "w": "soldi",
+          "t": "argent"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -126510,8 +131176,25 @@
       "translation_fr": "compte",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Vorrei aprire un conto.",
+      "example_gloss": [
+        {
+          "w": "Vorrei",
+          "t": "je voudrais"
+        },
+        {
+          "w": "aprire",
+          "t": "ouvrir"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "conto",
+          "t": "compte"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -126521,8 +131204,25 @@
       "translation_fr": "virement",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Devo fare un bonifico.",
+      "example_gloss": [
+        {
+          "w": "Devo",
+          "t": "je dois"
+        },
+        {
+          "w": "fare",
+          "t": "faire"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "bonifico",
+          "t": "virement"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -126532,8 +131232,21 @@
       "translation_fr": "distributeur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dov'è il bancomat?",
+      "example_gloss": [
+        {
+          "w": "Dov'è",
+          "t": "où est"
+        },
+        {
+          "w": "il",
+          "t": "le"
+        },
+        {
+          "w": "bancomat",
+          "t": "distributeur"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -126543,8 +131256,33 @@
       "translation_fr": "intérêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Il tasso di interesse è basso.",
+      "example_gloss": [
+        {
+          "w": "Il",
+          "t": "le"
+        },
+        {
+          "w": "tasso",
+          "t": "taux"
+        },
+        {
+          "w": "di",
+          "t": "d'"
+        },
+        {
+          "w": "interesse",
+          "t": "intérêt"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "basso",
+          "t": "bas"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -126554,8 +131292,25 @@
       "translation_fr": "prêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ho chiesto un prestito.",
+      "example_gloss": [
+        {
+          "w": "Ho",
+          "t": "j'ai"
+        },
+        {
+          "w": "chiesto",
+          "t": "demandé"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "prestito",
+          "t": "prêt"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -126565,8 +131320,29 @@
       "translation_fr": "taux de change",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Qual è il tasso di cambio oggi?",
+      "example_gloss": [
+        {
+          "w": "Qual",
+          "t": "quel"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "il",
+          "t": "le"
+        },
+        {
+          "w": "tasso di cambio",
+          "t": "taux de change"
+        },
+        {
+          "w": "oggi",
+          "t": "aujourd'hui"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -126576,8 +131352,25 @@
       "translation_fr": "banque",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Vou ao banco amanhã.",
+      "example_gloss": [
+        {
+          "w": "Vou",
+          "t": "Je vais"
+        },
+        {
+          "w": "ao",
+          "t": "à la"
+        },
+        {
+          "w": "banco",
+          "t": "banque"
+        },
+        {
+          "w": "amanhã",
+          "t": "demain"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -126587,8 +131380,25 @@
       "translation_fr": "argent",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Não tenho dinheiro suficiente.",
+      "example_gloss": [
+        {
+          "w": "Não",
+          "t": "Je n'"
+        },
+        {
+          "w": "tenho",
+          "t": "ai pas"
+        },
+        {
+          "w": "dinheiro",
+          "t": "d'argent"
+        },
+        {
+          "w": "suficiente",
+          "t": "suffisant"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -126598,8 +131408,29 @@
       "translation_fr": "compte",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Abri uma conta no banco.",
+      "example_gloss": [
+        {
+          "w": "Abri",
+          "t": "J'ai ouvert"
+        },
+        {
+          "w": "uma",
+          "t": "un"
+        },
+        {
+          "w": "conta",
+          "t": "compte"
+        },
+        {
+          "w": "no",
+          "t": "à la"
+        },
+        {
+          "w": "banco",
+          "t": "banque"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -126609,8 +131440,25 @@
       "translation_fr": "virement",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Fiz uma transferência bancária.",
+      "example_gloss": [
+        {
+          "w": "Fiz",
+          "t": "J'ai fait"
+        },
+        {
+          "w": "uma",
+          "t": "un"
+        },
+        {
+          "w": "transferência",
+          "t": "virement"
+        },
+        {
+          "w": "bancária",
+          "t": "bancaire"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -126620,8 +131468,25 @@
       "translation_fr": "distributeur",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O caixa eletrônico está avariado.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "Le"
+        },
+        {
+          "w": "caixa eletrônico",
+          "t": "distributeur"
+        },
+        {
+          "w": "está",
+          "t": "est"
+        },
+        {
+          "w": "avariado",
+          "t": "en panne"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -126631,8 +131496,29 @@
       "translation_fr": "intérêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O juro é muito alto.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "L'"
+        },
+        {
+          "w": "juro",
+          "t": "intérêt"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "muito",
+          "t": "très"
+        },
+        {
+          "w": "alto",
+          "t": "élevé"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -126642,8 +131528,29 @@
       "translation_fr": "prêt",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Pedi um empréstimo ao banco.",
+      "example_gloss": [
+        {
+          "w": "Pedi",
+          "t": "J'ai demandé"
+        },
+        {
+          "w": "um",
+          "t": "un"
+        },
+        {
+          "w": "empréstimo",
+          "t": "prêt"
+        },
+        {
+          "w": "ao",
+          "t": "à la"
+        },
+        {
+          "w": "banco",
+          "t": "banque"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -126653,8 +131560,21 @@
       "translation_fr": "taux de change",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A taxa de câmbio mudou.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "Le"
+        },
+        {
+          "w": "taxa de câmbio",
+          "t": "taux de change"
+        },
+        {
+          "w": "mudou",
+          "t": "a changé"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -127888,8 +132808,29 @@
       "translation_fr": "fête",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La festa è sabato sera.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "festa",
+          "t": "fête"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "sabato",
+          "t": "samedi"
+        },
+        {
+          "w": "sera",
+          "t": "soir"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -127899,8 +132840,17 @@
       "translation_fr": "anniversaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Buon compleanno!",
+      "example_gloss": [
+        {
+          "w": "Buon",
+          "t": "bon"
+        },
+        {
+          "w": "compleanno",
+          "t": "anniversaire"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -127910,8 +132860,29 @@
       "translation_fr": "cadeau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ti ho comprato un regalo.",
+      "example_gloss": [
+        {
+          "w": "Ti",
+          "t": "je t'"
+        },
+        {
+          "w": "ho",
+          "t": "ai"
+        },
+        {
+          "w": "comprato",
+          "t": "acheté"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "regalo",
+          "t": "cadeau"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -127921,8 +132892,21 @@
       "translation_fr": "bougie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Soffia le candele!",
+      "example_gloss": [
+        {
+          "w": "Soffia",
+          "t": "souffle"
+        },
+        {
+          "w": "le",
+          "t": "les"
+        },
+        {
+          "w": "candele",
+          "t": "bougies"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -127932,8 +132916,21 @@
       "translation_fr": "toast",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Facciamo un brindisi!",
+      "example_gloss": [
+        {
+          "w": "Facciamo",
+          "t": "faisons"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "brindisi",
+          "t": "toast"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -127943,8 +132940,25 @@
       "translation_fr": "feux d'artifice",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "I fuochi d'artificio sono bellissimi.",
+      "example_gloss": [
+        {
+          "w": "I",
+          "t": "les"
+        },
+        {
+          "w": "fuochi d'artificio",
+          "t": "feux d'artifice"
+        },
+        {
+          "w": "sono",
+          "t": "sont"
+        },
+        {
+          "w": "bellissimi",
+          "t": "magnifiques"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -127954,8 +132968,25 @@
       "translation_fr": "décoration",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La decorazione è elegante.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "decorazione",
+          "t": "décoration"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "elegante",
+          "t": "élégante"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -127965,8 +132996,29 @@
       "translation_fr": "invité",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Sei invitato alla mia festa.",
+      "example_gloss": [
+        {
+          "w": "Sei",
+          "t": "tu es"
+        },
+        {
+          "w": "invitato",
+          "t": "invité"
+        },
+        {
+          "w": "alla",
+          "t": "à"
+        },
+        {
+          "w": "mia",
+          "t": "ma"
+        },
+        {
+          "w": "festa",
+          "t": "fête"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -127976,8 +133028,25 @@
       "translation_fr": "fête",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A festa foi divertida.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "La"
+        },
+        {
+          "w": "festa",
+          "t": "fête"
+        },
+        {
+          "w": "foi",
+          "t": "a été"
+        },
+        {
+          "w": "divertida",
+          "t": "amusante"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -127987,8 +133056,29 @@
       "translation_fr": "anniversaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Hoje é o meu aniversário.",
+      "example_gloss": [
+        {
+          "w": "Hoje",
+          "t": "Aujourd'hui"
+        },
+        {
+          "w": "é",
+          "t": "c'est"
+        },
+        {
+          "w": "o",
+          "t": "mon"
+        },
+        {
+          "w": "meu",
+          "t": ""
+        },
+        {
+          "w": "aniversário",
+          "t": "anniversaire"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -127998,8 +133088,25 @@
       "translation_fr": "cadeau",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ganhei um presente bonito.",
+      "example_gloss": [
+        {
+          "w": "Ganhei",
+          "t": "J'ai reçu"
+        },
+        {
+          "w": "um",
+          "t": "un"
+        },
+        {
+          "w": "presente",
+          "t": "cadeau"
+        },
+        {
+          "w": "bonito",
+          "t": "joli"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -128009,8 +133116,29 @@
       "translation_fr": "bougie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Apague as velas do bolo!",
+      "example_gloss": [
+        {
+          "w": "Apague",
+          "t": "Souffle"
+        },
+        {
+          "w": "as",
+          "t": "les"
+        },
+        {
+          "w": "velas",
+          "t": "bougies"
+        },
+        {
+          "w": "do",
+          "t": "du"
+        },
+        {
+          "w": "bolo",
+          "t": "gâteau"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -128020,8 +133148,29 @@
       "translation_fr": "toast",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Fizemos um brinde à saúde.",
+      "example_gloss": [
+        {
+          "w": "Fizemos",
+          "t": "Nous avons fait"
+        },
+        {
+          "w": "um",
+          "t": "un"
+        },
+        {
+          "w": "brinde",
+          "t": "toast"
+        },
+        {
+          "w": "à",
+          "t": "à la"
+        },
+        {
+          "w": "saúde",
+          "t": "santé"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -128031,8 +133180,25 @@
       "translation_fr": "feux d'artifice",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Os fogos de artifício são lindos.",
+      "example_gloss": [
+        {
+          "w": "Os",
+          "t": "Les"
+        },
+        {
+          "w": "fogos de artifício",
+          "t": "feux d'artifice"
+        },
+        {
+          "w": "são",
+          "t": "sont"
+        },
+        {
+          "w": "lindos",
+          "t": "magnifiques"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -128042,8 +133208,25 @@
       "translation_fr": "décoration",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A decoração está bonita.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "La"
+        },
+        {
+          "w": "decoração",
+          "t": "décoration"
+        },
+        {
+          "w": "está",
+          "t": "est"
+        },
+        {
+          "w": "bonita",
+          "t": "belle"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -128053,8 +133236,29 @@
       "translation_fr": "invité",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Cada convidado trouxe um prato.",
+      "example_gloss": [
+        {
+          "w": "Cada",
+          "t": "Chaque"
+        },
+        {
+          "w": "convidado",
+          "t": "invité"
+        },
+        {
+          "w": "trouxe",
+          "t": "a apporté"
+        },
+        {
+          "w": "um",
+          "t": "un"
+        },
+        {
+          "w": "prato",
+          "t": "plat"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -129288,8 +134492,33 @@
       "translation_fr": "musée",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Il museo è chiuso il lunedì.",
+      "example_gloss": [
+        {
+          "w": "Il",
+          "t": "le"
+        },
+        {
+          "w": "museo",
+          "t": "musée"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "chiuso",
+          "t": "fermé"
+        },
+        {
+          "w": "il",
+          "t": "le"
+        },
+        {
+          "w": "lunedì",
+          "t": "lundi"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -129299,8 +134528,25 @@
       "translation_fr": "théâtre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Andiamo a teatro stasera.",
+      "example_gloss": [
+        {
+          "w": "Andiamo",
+          "t": "allons"
+        },
+        {
+          "w": "a",
+          "t": "au"
+        },
+        {
+          "w": "teatro",
+          "t": "théâtre"
+        },
+        {
+          "w": "stasera",
+          "t": "ce soir"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -129310,8 +134556,25 @@
       "translation_fr": "art",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "L'arte italiana è famosa.",
+      "example_gloss": [
+        {
+          "w": "L'arte",
+          "t": "l'art"
+        },
+        {
+          "w": "italiana",
+          "t": "italien"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "famosa",
+          "t": "célèbre"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -129321,8 +134584,29 @@
       "translation_fr": "tableau/peinture",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Questo dipinto è di Leonardo.",
+      "example_gloss": [
+        {
+          "w": "Questo",
+          "t": "ce"
+        },
+        {
+          "w": "dipinto",
+          "t": "tableau"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "di",
+          "t": "de"
+        },
+        {
+          "w": "Leonardo",
+          "t": "Léonard"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -129332,8 +134616,29 @@
       "translation_fr": "sculpture",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La scultura è in marmo.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "scultura",
+          "t": "sculpture"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "in",
+          "t": "en"
+        },
+        {
+          "w": "marmo",
+          "t": "marbre"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -129343,8 +134648,25 @@
       "translation_fr": "littérature",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Studio la letteratura italiana.",
+      "example_gloss": [
+        {
+          "w": "Studio",
+          "t": "j'étudie"
+        },
+        {
+          "w": "la",
+          "t": "la"
+        },
+        {
+          "w": "letteratura",
+          "t": "littérature"
+        },
+        {
+          "w": "italiana",
+          "t": "italienne"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -129354,8 +134676,33 @@
       "translation_fr": "patrimoine",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Roma ha un grande patrimonio culturale.",
+      "example_gloss": [
+        {
+          "w": "Roma",
+          "t": "Rome"
+        },
+        {
+          "w": "ha",
+          "t": "a"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "grande",
+          "t": "grand"
+        },
+        {
+          "w": "patrimonio",
+          "t": "patrimoine"
+        },
+        {
+          "w": "culturale",
+          "t": "culturel"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -129365,8 +134712,29 @@
       "translation_fr": "exposition",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "C'è una mostra al museo.",
+      "example_gloss": [
+        {
+          "w": "C'è",
+          "t": "il y a"
+        },
+        {
+          "w": "una",
+          "t": "une"
+        },
+        {
+          "w": "mostra",
+          "t": "exposition"
+        },
+        {
+          "w": "al",
+          "t": "au"
+        },
+        {
+          "w": "museo",
+          "t": "musée"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -129376,8 +134744,29 @@
       "translation_fr": "musée",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O museu abre às dez.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "Le"
+        },
+        {
+          "w": "museu",
+          "t": "musée"
+        },
+        {
+          "w": "abre",
+          "t": "ouvre"
+        },
+        {
+          "w": "às",
+          "t": "à"
+        },
+        {
+          "w": "dez",
+          "t": "dix"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -129387,8 +134776,25 @@
       "translation_fr": "théâtre",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Fomos ao teatro ontem.",
+      "example_gloss": [
+        {
+          "w": "Fomos",
+          "t": "Nous sommes allés"
+        },
+        {
+          "w": "ao",
+          "t": "au"
+        },
+        {
+          "w": "teatro",
+          "t": "théâtre"
+        },
+        {
+          "w": "ontem",
+          "t": "hier"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -129398,8 +134804,29 @@
       "translation_fr": "art",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A arte moderna é interessante.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "L'"
+        },
+        {
+          "w": "arte",
+          "t": "art"
+        },
+        {
+          "w": "moderna",
+          "t": "moderne"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "interessante",
+          "t": "intéressant"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -129409,8 +134836,25 @@
       "translation_fr": "tableau/peinture",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Esta pintura é famosa.",
+      "example_gloss": [
+        {
+          "w": "Esta",
+          "t": "Ce"
+        },
+        {
+          "w": "pintura",
+          "t": "tableau"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "famosa",
+          "t": "célèbre"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -129420,8 +134864,29 @@
       "translation_fr": "sculpture",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A escultura é de mármore.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "La"
+        },
+        {
+          "w": "escultura",
+          "t": "sculpture"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "de",
+          "t": "en"
+        },
+        {
+          "w": "mármore",
+          "t": "marbre"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -129431,8 +134896,29 @@
       "translation_fr": "littérature",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Eu gosto de literatura portuguesa.",
+      "example_gloss": [
+        {
+          "w": "Eu",
+          "t": "J'"
+        },
+        {
+          "w": "gosto",
+          "t": "aime"
+        },
+        {
+          "w": "de",
+          "t": "la"
+        },
+        {
+          "w": "literatura",
+          "t": "littérature"
+        },
+        {
+          "w": "portuguesa",
+          "t": "portugaise"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -129442,8 +134928,29 @@
       "translation_fr": "patrimoine",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Este castelo é patrimônio mundial.",
+      "example_gloss": [
+        {
+          "w": "Este",
+          "t": "Ce"
+        },
+        {
+          "w": "castelo",
+          "t": "château"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "patrimônio",
+          "t": "patrimoine"
+        },
+        {
+          "w": "mundial",
+          "t": "mondial"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -129453,8 +134960,25 @@
       "translation_fr": "exposition",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A exposição termina domingo.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "L'"
+        },
+        {
+          "w": "exposição",
+          "t": "exposition"
+        },
+        {
+          "w": "termina",
+          "t": "se termine"
+        },
+        {
+          "w": "domingo",
+          "t": "dimanche"
+        }
+      ]
     },
     {
       "language_code": "nl",
@@ -130644,8 +136168,25 @@
       "translation_fr": "recyclage",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Il riciclaggio è importante.",
+      "example_gloss": [
+        {
+          "w": "Il",
+          "t": "le"
+        },
+        {
+          "w": "riciclaggio",
+          "t": "recyclage"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "importante",
+          "t": "important"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -130655,8 +136196,29 @@
       "translation_fr": "pollution",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "L'inquinamento è un problema grave.",
+      "example_gloss": [
+        {
+          "w": "L'inquinamento",
+          "t": "la pollution"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "problema",
+          "t": "problème"
+        },
+        {
+          "w": "grave",
+          "t": "grave"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -130666,8 +136228,21 @@
       "translation_fr": "énergie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Usiamo energia rinnovabile.",
+      "example_gloss": [
+        {
+          "w": "Usiamo",
+          "t": "nous utilisons"
+        },
+        {
+          "w": "energia",
+          "t": "énergie"
+        },
+        {
+          "w": "rinnovabile",
+          "t": "renouvelable"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -130677,8 +136252,25 @@
       "translation_fr": "solaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Ho un pannello solare.",
+      "example_gloss": [
+        {
+          "w": "Ho",
+          "t": "j'ai"
+        },
+        {
+          "w": "un",
+          "t": "un"
+        },
+        {
+          "w": "pannello",
+          "t": "panneau"
+        },
+        {
+          "w": "solare",
+          "t": "solaire"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -130688,8 +136280,33 @@
       "translation_fr": "déchets",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Non buttare i rifiuti per terra.",
+      "example_gloss": [
+        {
+          "w": "Non",
+          "t": "ne"
+        },
+        {
+          "w": "buttare",
+          "t": "jette pas"
+        },
+        {
+          "w": "i",
+          "t": "les"
+        },
+        {
+          "w": "rifiuti",
+          "t": "déchets"
+        },
+        {
+          "w": "per",
+          "t": "par"
+        },
+        {
+          "w": "terra",
+          "t": "terre"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -130699,8 +136316,25 @@
       "translation_fr": "émission",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Dobbiamo ridurre le emissioni.",
+      "example_gloss": [
+        {
+          "w": "Dobbiamo",
+          "t": "nous devons"
+        },
+        {
+          "w": "ridurre",
+          "t": "réduire"
+        },
+        {
+          "w": "le",
+          "t": "les"
+        },
+        {
+          "w": "emissioni",
+          "t": "émissions"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -130710,8 +136344,29 @@
       "translation_fr": "durable",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Lo sviluppo sostenibile è necessario.",
+      "example_gloss": [
+        {
+          "w": "Lo",
+          "t": "le"
+        },
+        {
+          "w": "sviluppo",
+          "t": "développement"
+        },
+        {
+          "w": "sostenibile",
+          "t": "durable"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "necessario",
+          "t": "nécessaire"
+        }
+      ]
     },
     {
       "language_code": "it",
@@ -130721,8 +136376,29 @@
       "translation_fr": "biodiversité",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "La biodiversità è in pericolo.",
+      "example_gloss": [
+        {
+          "w": "La",
+          "t": "la"
+        },
+        {
+          "w": "biodiversità",
+          "t": "biodiversité"
+        },
+        {
+          "w": "è",
+          "t": "est"
+        },
+        {
+          "w": "in",
+          "t": "en"
+        },
+        {
+          "w": "pericolo",
+          "t": "danger"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -130732,8 +136408,25 @@
       "translation_fr": "recyclage",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A reciclagem é importante.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "Le"
+        },
+        {
+          "w": "reciclagem",
+          "t": "recyclage"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "importante",
+          "t": "important"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -130743,8 +136436,33 @@
       "translation_fr": "pollution",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A poluição é um problema grave.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "La"
+        },
+        {
+          "w": "poluição",
+          "t": "pollution"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "um",
+          "t": "un"
+        },
+        {
+          "w": "problema",
+          "t": "problème"
+        },
+        {
+          "w": "grave",
+          "t": "grave"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -130754,8 +136472,21 @@
       "translation_fr": "énergie",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Usamos energia solar.",
+      "example_gloss": [
+        {
+          "w": "Usamos",
+          "t": "Nous utilisons"
+        },
+        {
+          "w": "energia",
+          "t": "l'énergie"
+        },
+        {
+          "w": "solar",
+          "t": "solaire"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -130765,8 +136496,29 @@
       "translation_fr": "solaire",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "O painel solar funciona bem.",
+      "example_gloss": [
+        {
+          "w": "O",
+          "t": "Le"
+        },
+        {
+          "w": "painel",
+          "t": "panneau"
+        },
+        {
+          "w": "solar",
+          "t": "solaire"
+        },
+        {
+          "w": "funciona",
+          "t": "fonctionne"
+        },
+        {
+          "w": "bem",
+          "t": "bien"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -130776,8 +136528,29 @@
       "translation_fr": "déchets",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Separamos os resíduos em casa.",
+      "example_gloss": [
+        {
+          "w": "Separamos",
+          "t": "Nous séparons"
+        },
+        {
+          "w": "os",
+          "t": "les"
+        },
+        {
+          "w": "resíduos",
+          "t": "déchets"
+        },
+        {
+          "w": "em",
+          "t": "à la"
+        },
+        {
+          "w": "casa",
+          "t": "maison"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -130787,8 +136560,33 @@
       "translation_fr": "émission",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A emissão de carbono é alta.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "L'"
+        },
+        {
+          "w": "emissão",
+          "t": "émission"
+        },
+        {
+          "w": "de",
+          "t": "de"
+        },
+        {
+          "w": "carbono",
+          "t": "carbone"
+        },
+        {
+          "w": "é",
+          "t": "est"
+        },
+        {
+          "w": "alta",
+          "t": "élevée"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -130798,8 +136596,25 @@
       "translation_fr": "durable",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "Precisamos de energia sustentável.",
+      "example_gloss": [
+        {
+          "w": "Precisamos",
+          "t": "Nous avons besoin"
+        },
+        {
+          "w": "de",
+          "t": "d'"
+        },
+        {
+          "w": "energia",
+          "t": "énergie"
+        },
+        {
+          "w": "sustentável",
+          "t": "durable"
+        }
+      ]
     },
     {
       "language_code": "pt",
@@ -130809,8 +136624,29 @@
       "translation_fr": "biodiversité",
       "transliteration": null,
       "clue": null,
-      "example_sentence": null,
-      "example_gloss": null
+      "example_sentence": "A biodiversidade está em perigo.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "La"
+        },
+        {
+          "w": "biodiversidade",
+          "t": "biodiversité"
+        },
+        {
+          "w": "está",
+          "t": "est"
+        },
+        {
+          "w": "em",
+          "t": "en"
+        },
+        {
+          "w": "perigo",
+          "t": "danger"
+        }
+      ]
     },
     {
       "language_code": "nl",
