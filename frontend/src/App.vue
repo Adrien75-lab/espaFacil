@@ -1,10 +1,12 @@
 <template>
   <div>
+    <OfflineBanner />
     <!-- Auth bar -->
     <div class="auth-bar">
       <button class="theme-toggle" @click="toggle" :title="theme === 'dark' ? 'Mode clair' : 'Mode sombre'">
         {{ theme === 'dark' ? '☀️' : '🌙' }}
       </button>
+      <PwaInstallPrompt />
       <template v-if="auth.user">
         <RouterLink class="auth-btn" to="/leaderboard">🏆</RouterLink>
         <RouterLink class="auth-btn" to="/profile">👤 {{ auth.user.name }}</RouterLink>
@@ -24,6 +26,8 @@ import { onMounted } from 'vue'
 import { RouterView, RouterLink } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
 import { useTheme } from '@/composables/useTheme'
+import PwaInstallPrompt from '@/components/PwaInstallPrompt.vue'
+import OfflineBanner from '@/components/OfflineBanner.vue'
 
 const auth = useAuthStore()
 const { theme, toggle } = useTheme()
