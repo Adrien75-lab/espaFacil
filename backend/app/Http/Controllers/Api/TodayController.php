@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\UserStat;
+use App\Services\LingoRewardService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
@@ -14,7 +15,7 @@ class TodayController extends Controller
      * GET /api/me/today
      * XP gagné aujourd'hui (toutes langues) + objectif + streak.
      */
-    public function index(Request $request): JsonResponse
+    public function index(Request $request, LingoRewardService $lingos): JsonResponse
     {
         $user = $request->user();
         $today = Carbon::today()->toDateString();
@@ -39,6 +40,9 @@ class TodayController extends Controller
             'goal_reached' => $xpToday >= $goal,
             'streak' => $currentStreak,
             'played_today' => $xpToday > 0,
+            'lingos_balance' => $user->lingos_balance ?? 0,
+            'lingos_today' => $lingos->earnedToday($user->id),
+            'next_lingo_bonus' => $lingos->nextDailyBonus($xpToday, $goal),
         ]);
     }
 

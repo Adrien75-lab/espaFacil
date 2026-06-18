@@ -7,6 +7,7 @@ use App\Models\Language;
 use App\Models\UserBadge;
 use App\Models\UserProgress;
 use App\Models\UserStat;
+use App\Services\LingoRewardService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
@@ -34,7 +35,7 @@ class ProgressController extends Controller
         return response()->json(compact('stat', 'progress', 'badges'));
     }
 
-    public function session(Request $request): JsonResponse
+    public function session(Request $request, LingoRewardService $lingos): JsonResponse
     {
         $data = $request->validate([
             'language' => 'required|string|size:2',
@@ -101,12 +102,31 @@ class ProgressController extends Controller
 
         // --- Badges ---
         $newBadges = $this->checkBadges($user->id, $lang->id, $stat, $data);
+        $xpToday = $this->xpToday($user->id, $today);
+        $lingoRewards = $lingos->awardForSession(
+            $user,
+            $data,
+            $xpToday,
+            $user->daily_goal_xp ?? 50,
+            $streak,
+        );
 
         return response()->json([
             'stat' => $stat->fresh(),
             'streak' => $streak,
             'new_badges' => $newBadges,
+            'lingos_gained' => $lingoRewards['gained'],
+            'lingo_rewards' => $lingoRewards['rewards'],
+            'lingos_balance' => $user->fresh()->lingos_balance,
+            'next_lingo_bonus' => $lingos->nextDailyBonus($xpToday, $user->daily_goal_xp ?? 50),
         ]);
+    }
+
+    private function xpToday(int $userId, string $today): int
+    {
+        return UserStat::where('user_id', $userId)
+            ->get()
+            ->sum(fn (UserStat $stat) => ($stat->xp_history ?? [])[$today] ?? 0);
     }
 
     private function computeStreak(array $days): int
