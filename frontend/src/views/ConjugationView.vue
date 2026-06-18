@@ -78,6 +78,7 @@
       <div class="quiz-header">
         <div class="verb-badge">{{ currentVerb.infinitive }} <span class="verb-fr-sm">({{ currentVerb.translation }})</span></div>
         <div class="tense-badge">{{ selectedTense }}</div>
+        <BlocExerciseScoreBadge :correct="score" :answered="answers.length" />
         <button class="btn-fiche-link" @click="phase = 'fiche'">📖 Revoir la fiche</button>
       </div>
 
@@ -113,11 +114,13 @@
     </template>
 
     <!-- ── Phase RÉSULTAT ── -->
-    <template v-else-if="phase === 'result'">
-      <h2 class="result-title">
-        {{ score === totalItems ? '🏆' : score >= totalItems * 0.7 ? '🎉' : '📚' }}
-        {{ score }} / {{ totalItems }}
-      </h2>
+    <BlocExerciseResults
+      v-else-if="phase === 'result'"
+      :correct="score"
+      :total="totalItems"
+      title="Conjugaison terminée !"
+      :score-label="`${score} / ${totalItems} correctes`"
+    >
       <p class="result-sub">{{ resultMessage }}</p>
 
       <div class="result-table">
@@ -130,12 +133,12 @@
         </div>
       </div>
 
-      <div class="result-actions">
+      <template #actions>
         <button class="btn-replay" @click="restartSame">🔁 Rejouer</button>
         <button class="btn-back2" @click="phase = 'fiche'">📖 Revoir la fiche</button>
         <button class="btn-home" @click="router.push('/')">🏠 Accueil</button>
-      </div>
-    </template>
+      </template>
+    </BlocExerciseResults>
   </div>
 </template>
 
@@ -148,6 +151,7 @@ import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { normalizeText } from '@/utils/textMatching'
 import { getConjugations } from '@/api/content'
 import type { ConjugationVerb } from '@/types'
+import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 const router   = useRouter()
 const store    = useLangStore()

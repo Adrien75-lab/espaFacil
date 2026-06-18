@@ -38,7 +38,10 @@
       <div class="game-header">
         <button class="btn-back" @click="current = null">← Scénarios</button>
         <span class="mode-badge">💬 {{ current.emoji }} {{ current.title_fr }}</span>
-        <span class="counter">{{ choicesDone }} / {{ totalChoices }}</span>
+        <span class="header-status">
+          <BlocExerciseScoreBadge :correct="score" :answered="choicesDone" />
+          <span class="counter">{{ choicesDone }} / {{ totalChoices }}</span>
+        </span>
       </div>
       <div class="progress-bar">
         <div class="progress-fill" :style="{ width: (choicesDone / Math.max(totalChoices, 1) * 100) + '%' }"></div>
@@ -95,21 +98,19 @@
     </div>
 
     <!-- Résultats -->
-    <div v-else class="results">
-      <Teleport to="body">
-        <div v-if="showConfetti" class="confetti-container" aria-hidden="true">
-          <div v-for="n in 50" :key="n" class="confetto" :style="confettoStyle(n)"></div>
-        </div>
-      </Teleport>
-      <div class="results-emoji">{{ score === totalChoices ? '🏆' : score >= totalChoices * 0.7 ? '🎉' : '💪' }}</div>
-      <h2>Dialogue terminé !</h2>
-      <p class="score-text">{{ score }} / {{ totalChoices }} bonnes réponses</p>
-      <div class="results-actions">
+    <BlocExerciseResults
+      v-else
+      :correct="score"
+      :total="totalChoices"
+      title="Dialogue terminé !"
+      :score-label="`${score} / ${totalChoices} bonnes réponses`"
+    >
+      <template #actions>
         <button class="btn-primary" @click="restartCurrent">Rejouer</button>
         <button class="btn-secondary" @click="current = null">Autres scénarios</button>
         <button class="btn-secondary" @click="router.push('/')">Accueil</button>
-      </div>
-    </div>
+      </template>
+    </BlocExerciseResults>
 
   </div>
   <ConfirmQuit v-if="showQuit" @cancel="showQuit = false" @confirm="router.push('/')" />
@@ -123,6 +124,7 @@ import { useLangStore } from '@/stores/lang'
 import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { getDialogues } from '@/api/content'
 import type { Dialogue, DialogueChoice } from '@/types'
+import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 // ─── State ────────────────────────────────────────────────────────────────────
 
@@ -144,20 +146,6 @@ const score         = ref(0)
 const done          = ref(false)
 const chatLog       = ref<HTMLElement | null>(null)
 const selectedIndex = ref<number | null>(null)
-const showConfetti  = ref(false)
-
-function confettoStyle(n: number) {
-  const colors = ['#4f46e5','#22c55e','#f59e0b','#ec4899','#0ea5e9','#a855f7']
-  return {
-    left:              Math.random() * 100 + 'vw',
-    background:        colors[n % colors.length],
-    animationDelay:    (Math.random() * 1.5) + 's',
-    animationDuration: (1.5 + Math.random() * 1.5) + 's',
-    width:             (6 + Math.random() * 8) + 'px',
-    height:            (6 + Math.random() * 8) + 'px',
-    borderRadius:      Math.random() > 0.5 ? '50%' : '2px',
-  }
-}
 const revealingLines = ref(false)
 
 const langCode = computed(() => store.currentLang?.code ?? '')
@@ -301,11 +289,6 @@ onMounted(async () => {
 
 watch(done, (val) => {
   if (!val) return
-  // Confettis si score parfait ou ≥ 70%
-  if (score.value === totalChoices.value || score.value >= totalChoices.value * 0.7) {
-    showConfetti.value = true
-    setTimeout(() => { showConfetti.value = false }, 4000)
-  }
   void recordSession('dialogue', score.value, totalChoices.value, 'general')
 })
 </script>
@@ -426,18 +409,5 @@ watch(done, (val) => {
 .btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
 .empty { text-align: center; color: var(--muted); padding: 2rem; }
 
-/* Confettis */
-.confetti-container {
-  position: fixed; top: 0; left: 0; width: 100vw; height: 0;
-  pointer-events: none; z-index: 9999; overflow: visible;
-}
-.confetto {
-  position: absolute; top: -10px;
-  animation: fall linear forwards;
-}
-@keyframes fall {
-  0%   { transform: translateY(0) rotate(0deg); opacity: 1; }
-  80%  { opacity: 1; }
-  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
-}
+
 </style>

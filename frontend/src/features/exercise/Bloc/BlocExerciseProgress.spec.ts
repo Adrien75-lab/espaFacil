@@ -1,10 +1,10 @@
 import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
-import ExerciseProgress from './ExerciseProgress.vue'
+import BlocExerciseProgress from './BlocExerciseProgress.vue'
 
-describe('ExerciseProgress', () => {
+describe('BlocExerciseProgress', () => {
   it('expose une progression accessible et plafonnée', () => {
-    const wrapper = mount(ExerciseProgress, {
+    const wrapper = mount(BlocExerciseProgress, {
       props: { current: 12, total: 10 },
     })
 
@@ -14,7 +14,7 @@ describe('ExerciseProgress', () => {
   })
 
   it('gère un total vide sans division par zéro', () => {
-    const wrapper = mount(ExerciseProgress, {
+    const wrapper = mount(BlocExerciseProgress, {
       props: { current: 0, total: 0 },
     })
 

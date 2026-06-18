@@ -7,21 +7,27 @@
       <button class="btn-secondary" @click="router.push('/')">← Retour</button>
     </div>
 
-    <div v-else-if="done" class="results">
-      <div class="results-emoji">{{ score === total ? '🏆' : score >= total * 0.7 ? '🎉' : '💪' }}</div>
-      <h2>Anagrammes terminés !</h2>
-      <p class="score-text">{{ score }} / {{ total }} trouvés</p>
-      <div class="results-actions">
+    <BlocExerciseResults
+      v-else-if="done"
+      :correct="score"
+      :total="total"
+      title="Anagrammes terminés !"
+      :score-label="`${score} / ${total} trouvés`"
+    >
+      <template #actions>
         <button class="btn-primary" @click="restart">Rejouer</button>
         <button class="btn-secondary" @click="router.push('/')">Accueil</button>
-      </div>
-    </div>
+      </template>
+    </BlocExerciseResults>
 
     <div v-else class="game-screen">
       <div class="game-header">
         <button class="btn-back" @click="showQuit = true">← Quitter</button>
         <span class="mode-badge">🔀 Anagramme</span>
-        <span class="counter">{{ cardIndex + 1 }} / {{ total }}</span>
+        <span class="header-status">
+          <BlocExerciseScoreBadge :correct="score" :answered="cardIndex + (feedback ? 1 : 0)" />
+          <span class="counter">{{ cardIndex + 1 }} / {{ total }}</span>
+        </span>
       </div>
       <div class="progress-bar">
         <div class="progress-fill" :style="{ width: ((cardIndex) / total * 100) + '%' }"></div>
@@ -89,6 +95,7 @@ import { useLangStore } from '@/stores/lang'
 import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import ConfirmQuit from '@/components/ConfirmQuit.vue'
 import type { Word } from '@/types'
+import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 const store  = useLangStore()
 const router = useRouter()

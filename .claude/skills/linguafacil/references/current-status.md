@@ -1,5 +1,16 @@
 # État courant de LinguaFacil
 
+## Mise à jour Codex — 18 juin 2026
+
+- Branche de travail actuelle : `codex/2026-06-18-refacto-exercise-front`, poussée sur `origin`.
+- Cette branche est empilée sur `codex/2026-06-18-progression-lingos`, car la branche gamification/progression n'est pas encore fusionnée dans `master`.
+- `codex/2026-06-18-progression-lingos` contient la gamification validée par Adrien : XP, Lingos, bonus journaliers, jauge d'objectif, badge de performance sur les exercices et célébrations de fin de session. Commit principal : `c9c7222 feat: harmoniser la gamification des exercices`.
+- `codex/2026-06-18-refacto-exercise-front` contient la phase 1 de refacto frontend validée : les composants partagés d'exercice ont quitté `frontend/src/components/exercise/` pour `frontend/src/features/exercise/Bloc/`, avec des fichiers préfixés `BlocExercise...` et un export groupé dans `Bloc/index.ts`. Commit principal : `9dc001c refactor: structurer les blocs d'exercice frontend`.
+- La logique de statut/performance d'exercice est désormais portée par `frontend/src/features/exercise/composables/useExercisePerformance.ts`.
+- Validations de la refacto front : `npm run lint`, `npm test`, `npm run build` et `git diff --check` OK.
+- Aucun changement backend, aucune migration et aucun seeder pour cette phase de refacto.
+- Pour reprendre une nouvelle fonctionnalité depuis l'état validé par Adrien, ne touche pas aux branches `claude/*`; repars d'une base Git explicite et conserve le préfixe `codex/`.
+
 Dernière vérification : 17 juin 2026, après la fusion des PR no 7 (indices espagnol), no 8 (indices 13 langues), no 9 (phrases d'exemple 14 langues) et no 10 (phase 28 suite, boulangerie) dans `master`.
 
 ## Dépôt

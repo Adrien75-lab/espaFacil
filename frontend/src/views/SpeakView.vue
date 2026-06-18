@@ -15,11 +15,12 @@
       <button class="btn-secondary" @click="router.push('/')">← Retour</button>
     </div>
 
-    <div v-else-if="done" class="results">
-      <div class="results-emoji">{{ avgSim >= 85 ? '🏆' : avgSim >= 60 ? '🎉' : '💪' }}</div>
-      <h2>Session terminée !</h2>
-
-      <!-- Jauge score global -->
+    <BlocExerciseResults
+      v-else-if="done"
+      :correct="score"
+      :total="total"
+      :score-label="`${score} / ${total} prononciations validées`"
+    >
       <div class="gauge-wrap">
         <svg viewBox="0 0 120 70" class="gauge-svg">
           <path d="M10,60 A50,50 0 0,1 110,60" fill="none" stroke="var(--border)" stroke-width="10" stroke-linecap="round" />
@@ -34,7 +35,6 @@
         </svg>
       </div>
 
-      <!-- Détail par mot -->
       <div class="word-results">
         <div v-for="r in wordResults" :key="r.term" class="wr-row" :class="r.cls">
           <span class="wr-icon">{{ r.sim >= 80 ? '✓' : r.sim >= 55 ? '~' : '✗' }}</span>
@@ -44,17 +44,20 @@
         </div>
       </div>
 
-      <div class="results-actions">
+      <template #actions>
         <button class="btn-primary" @click="restart">Recommencer</button>
         <button class="btn-secondary" @click="router.push('/')">Accueil</button>
-      </div>
-    </div>
+      </template>
+    </BlocExerciseResults>
 
     <div v-else class="card-screen">
       <div class="quiz-header">
         <button class="btn-back" @click="stopAndQuit">← Quitter</button>
         <span class="mode-badge">🎙️ Prononciation</span>
-        <span class="counter">{{ idx + 1 }} / {{ total }}</span>
+        <span class="header-status">
+          <BlocExerciseScoreBadge :correct="score" :answered="idx + (answered ? 1 : 0)" />
+          <span class="counter">{{ idx + 1 }} / {{ total }}</span>
+        </span>
       </div>
       <div class="progress-bar">
         <div class="progress-fill" :style="{ width: (idx / total * 100) + '%' }"></div>
@@ -133,6 +136,7 @@ import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { postReview } from '@/api/reviews'
 import { normalizeText, similarity as textSimilarity } from '@/utils/textMatching'
 import type { Word } from '@/types'
+import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 const store  = useLangStore()
 const showQuit = ref(false)

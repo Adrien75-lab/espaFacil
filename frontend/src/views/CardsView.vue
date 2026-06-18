@@ -2,10 +2,12 @@
   <div class="cards">
     <div v-if="store.loading" class="loader">Chargement…</div>
 
-    <div v-else-if="done" class="results">
-      <div class="results-emoji">{{ known === total ? '🏆' : known >= total * 0.7 ? '🎉' : '💪' }}</div>
-      <h2>Session terminée !</h2>
-      <p class="score-text">{{ known }} / {{ total }} connues</p>
+    <BlocExerciseResults
+      v-else-if="done"
+      :correct="known"
+      :total="total"
+      :score-label="`${known} / ${total} connues`"
+    >
       <div v-if="review.length" class="review-list">
         <p class="review-label">À revoir :</p>
         <div v-for="w in review" :key="w.id" class="review-item">
@@ -14,17 +16,17 @@
           <span class="review-fr">{{ w.translation_fr }}</span>
         </div>
       </div>
-      <div class="results-actions">
+      <template #actions>
         <button class="btn-primary" @click="restart">Recommencer</button>
         <button class="btn-secondary" @click="router.push('/')">Accueil</button>
-      </div>
-    </div>
+      </template>
+    </BlocExerciseResults>
 
     <div v-else-if="cards.length" class="card-screen">
       <div class="quiz-header">
         <button class="btn-back" @click="showQuit = true">← Quitter</button>
         <span class="counter">{{ idx + 1 }} / {{ total }}</span>
-        <span class="score-badge">✓ {{ known }}</span>
+        <BlocExerciseScoreBadge :correct="known" :answered="idx" />
       </div>
       <div class="progress-bar">
         <div class="progress-fill" :style="{ width: (idx / total * 100) + '%' }"></div>
@@ -71,6 +73,7 @@ import { postReview } from '@/api/reviews'
 import ConfirmQuit from '@/components/ConfirmQuit.vue'
 import { speakText } from '@/utils/speech'
 import type { Word } from '@/types'
+import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 const store  = useLangStore()
 const auth   = useAuthStore()

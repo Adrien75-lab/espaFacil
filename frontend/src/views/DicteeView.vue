@@ -7,21 +7,26 @@
       <button class="btn-secondary" @click="router.push('/')">← Retour</button>
     </div>
 
-    <div v-else-if="done" class="results">
-      <div class="results-emoji">{{ score === total ? '🏆' : score >= total * 0.7 ? '🎉' : '💪' }}</div>
-      <h2>Session terminée !</h2>
-      <p class="score-text">{{ score }} / {{ total }} correctes</p>
-      <div class="results-actions">
+    <BlocExerciseResults
+      v-else-if="done"
+      :correct="score"
+      :total="total"
+      :score-label="`${score} / ${total} correctes`"
+    >
+      <template #actions>
         <button class="btn-primary" @click="restart">Recommencer</button>
         <button class="btn-secondary" @click="router.push('/')">Accueil</button>
-      </div>
-    </div>
+      </template>
+    </BlocExerciseResults>
 
     <div v-else class="quiz-screen">
       <div class="quiz-header">
         <button class="btn-back" @click="showQuit = true">← Quitter</button>
         <span class="mode-badge">✍️ Dictée</span>
-        <span class="counter">{{ idx + 1 }} / {{ total }}</span>
+        <span class="header-status">
+          <BlocExerciseScoreBadge :correct="score" :answered="idx + (answered ? 1 : 0)" />
+          <span class="counter">{{ idx + 1 }} / {{ total }}</span>
+        </span>
       </div>
       <div class="progress-bar">
         <div class="progress-fill" :style="{ width: (idx / total * 100) + '%' }"></div>
@@ -107,6 +112,7 @@ import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { postReview } from '@/api/reviews'
 import { normalizeText } from '@/utils/textMatching'
 import type { Word } from '@/types'
+import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 const store  = useLangStore()
 const showQuit = ref(false)

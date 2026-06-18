@@ -2,22 +2,24 @@
   <div class="builder">
     <div v-if="store.loading" class="loader">Chargement…</div>
 
-    <div v-else-if="done" class="results">
-      <div class="results-emoji">{{ score === total ? '🏆' : score >= total * 0.7 ? '🎉' : '💪' }}</div>
-      <h2>Session terminée !</h2>
-      <p class="score-text">{{ score }} / {{ total }} bonnes réponses</p>
-      <div class="results-actions">
+    <BlocExerciseResults
+      v-else-if="done"
+      :correct="score"
+      :total="total"
+      :score-label="`${score} / ${total} bonnes réponses`"
+    >
+      <template #actions>
         <button class="btn-primary" @click="restart">Recommencer</button>
         <button class="btn-secondary" @click="router.push('/')">Accueil</button>
-      </div>
-    </div>
+      </template>
+    </BlocExerciseResults>
 
     <div v-else-if="cards.length" class="quiz-screen">
       <!-- En-tête -->
       <div class="quiz-header">
         <button class="btn-back" @click="showQuit = true">← Quitter</button>
         <span class="counter">{{ idx + 1 }} / {{ total }}</span>
-        <span class="score-badge">✓ {{ score }}</span>
+        <BlocExerciseScoreBadge :correct="score" :answered="idx + (answered ? 1 : 0)" />
       </div>
       <div class="progress-bar">
         <div class="progress-fill" :style="{ width: (idx / total * 100) + '%' }"></div>
@@ -99,6 +101,7 @@ import { useLangStore } from '@/stores/lang'
 import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import type { Word } from '@/types'
 import { speakText } from '@/utils/speech'
+import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 const store  = useLangStore()
 const showQuit = ref(false)

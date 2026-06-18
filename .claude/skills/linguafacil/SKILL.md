@@ -37,7 +37,8 @@ Ne modifie jamais `index.html`, `style.css` ou `script.js` à la racine. Ce sont
 - Le contenu durable vit côté backend, dans `backend/database/data/`, puis est chargé par un seeder.
 - Les générateurs restent dans `scripts/`; les fichiers générés et leur source doivent rester synchronisés.
 - Utilise les composants, composables, types, utilitaires, Resources et modèles introduits par la refonte R1-R5.
-- Évite toute duplication importante. Si deux vues reproduisent le même algorithme ou le même affichage, extrais-le dans `utils/`, `composables/` ou `components/exercise/`.
+- Évite toute duplication importante. Si deux vues reproduisent le même algorithme ou le même affichage, extrais-le dans `utils/`, `composables/`, `features/exercise/Bloc/` ou `features/exercise/composables/`.
+- Pour les blocs UI partagés des exercices, utilise `frontend/src/features/exercise/Bloc/` avec des fichiers préfixés `BlocExercise...` et un import via `@/features/exercise/Bloc`.
 - Préserve les changements d'Adrien et ne réinitialise jamais brutalement le worktree.
 - Ne commit et ne pousse que lorsque l'utilisateur le demande, sauf instruction explicite contraire dans la conversation.
 

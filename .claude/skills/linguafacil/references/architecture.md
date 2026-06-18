@@ -7,9 +7,11 @@ Website-Project/
 ├── frontend/                 Vue 3 + TypeScript + Vite
 │   ├── src/api/              Client HTTP et API métier
 │   ├── src/components/       Composants généraux
-│   ├── src/components/exercise/ Composants d'exercice partagés
 │   ├── src/composables/      Logique réutilisable
 │   ├── src/data/             Données encore statiques uniquement
+│   ├── src/features/exercise/ Domaine frontend des exercices
+│   │   ├── Bloc/             Blocs UI partagés BlocExercise*
+│   │   └── composables/      Logique exercice réutilisable
 │   ├── src/stores/           Pinia
 │   ├── src/types/            Types partagés
 │   ├── src/utils/            Speech, comparaison de texte, drapeaux
@@ -44,11 +46,18 @@ Les fichiers `index.html`, `style.css` et `script.js` à la racine appartiennent
 - Comparaison normalisée/Levenshtein : `src/utils/textMatching.ts`.
 - Synthèse vocale et mapping BCP47 : `src/utils/speech.ts`.
 - Enregistrement de sessions/XP : `src/composables/useSessionRecorder.ts`.
-- Composants d'exercice :
-  - `ExerciseHeader.vue`
-  - `ExerciseProgress.vue`
-  - `ExerciseResults.vue`
+- Domaine exercice refactorisé (phase Codex du 18 juin 2026) :
+  - `src/features/exercise/Bloc/BlocExerciseHeader.vue`
+  - `src/features/exercise/Bloc/BlocExerciseProgress.vue`
+  - `src/features/exercise/Bloc/BlocExerciseResults.vue`
+  - `src/features/exercise/Bloc/BlocExerciseScoreBadge.vue`
+  - `src/features/exercise/Bloc/index.ts`
+  - `src/features/exercise/composables/useExercisePerformance.ts`
 - Les vues doivent assembler ces briques au lieu de recopier leur logique.
+- Les nouveaux blocs UI partagés d'exercice vont dans `frontend/src/features/exercise/Bloc/`, avec un nom de fichier préfixé `BlocExercise`.
+- Les vues importent les blocs via `@/features/exercise/Bloc`, pas via des chemins directs vers les fichiers `.vue`.
+- La logique de score, statut ou performance d'exercice doit rester dans `features/exercise/composables/` ou dans un composable dédié, pas dans un composant visuel.
+- Ne réintroduis pas `frontend/src/components/exercise/`.
 
 ### Modes actuellement routés
 

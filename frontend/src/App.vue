@@ -9,6 +9,7 @@
       <PwaInstallPrompt />
       <template v-if="auth.user">
         <RouterLink class="auth-btn" to="/leaderboard">🏆</RouterLink>
+        <RouterLink class="auth-btn" to="/progression">Progression</RouterLink>
         <RouterLink class="auth-btn" to="/profile">👤 {{ auth.user.name }}</RouterLink>
         <button class="auth-btn" @click="doLogout">Déconnexion</button>
       </template>

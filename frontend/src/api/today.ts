@@ -4,6 +4,15 @@ export interface TodayData {
   goal_reached: boolean
   streak:       number
   played_today: boolean
+  lingos_balance: number
+  lingos_today:   number
+  next_lingo_bonus: {
+    multiplier:   number
+    xp_required:  number
+    remaining_xp: number
+    amount:       number
+    label:        string
+  } | null
 }
 
 export async function fetchToday(): Promise<TodayData | null> {
