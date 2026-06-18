@@ -12,22 +12,28 @@
     </div>
 
     <!-- Session terminée -->
-    <div v-else-if="done" class="results">
-      <div class="results-emoji">{{ score === total ? '🏆' : score >= total * 0.7 ? '🎉' : '💪' }}</div>
-      <h2>Révision terminée !</h2>
-      <p class="score-text">{{ score }} / {{ total }} correctes</p>
-      <div class="results-actions">
+    <ExerciseResults
+      v-else-if="done"
+      :correct="score"
+      :total="total"
+      title="Révision terminée !"
+      :score-label="`${score} / ${total} correctes`"
+    >
+      <template #actions>
         <button class="btn-primary" @click="reload">Recommencer</button>
         <button class="btn-secondary" @click="router.push('/')">Accueil</button>
-      </div>
-    </div>
+      </template>
+    </ExerciseResults>
 
     <!-- Carte active -->
     <div v-else class="card-screen">
       <div class="quiz-header">
         <button class="btn-back" @click="router.push('/')">← Quitter</button>
         <span class="mode-badge">🔁 Révision SRS</span>
-        <span class="counter">{{ idx + 1 }} / {{ total }}</span>
+        <span class="header-status">
+          <ExerciseScoreBadge :correct="score" :answered="idx + (answered ? 1 : 0)" />
+          <span class="counter">{{ idx + 1 }} / {{ total }}</span>
+        </span>
       </div>
       <div class="progress-bar">
         <div class="progress-fill" :style="{ width: (idx / total * 100) + '%' }"></div>
@@ -70,6 +76,8 @@ import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { fetchDue, postReview, type ReviewWord } from '@/api/reviews'
 import { speakText } from '@/utils/speech'
+import ExerciseResults from '@/components/exercise/ExerciseResults.vue'
+import ExerciseScoreBadge from '@/components/exercise/ExerciseScoreBadge.vue'
 
 const store  = useLangStore()
 const router = useRouter()

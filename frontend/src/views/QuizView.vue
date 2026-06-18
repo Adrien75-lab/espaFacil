@@ -27,7 +27,7 @@
       <div class="quiz-header">
         <button class="btn-back" @click="showQuit = true">← Quitter</button>
         <span class="counter">{{ idx + 1 }} / {{ cards.length }}</span>
-        <span class="score-badge" :class="performanceClass">{{ performanceLabel }} · {{ score }}</span>
+        <ExerciseScoreBadge :correct="score" :answered="answeredCount" />
       </div>
 
       <div class="progress-bar">
@@ -81,6 +81,7 @@
 import { ref, computed, onMounted, watch } from 'vue'
 import ConfirmQuit from '@/components/ConfirmQuit.vue'
 import ExerciseResults from '@/components/exercise/ExerciseResults.vue'
+import ExerciseScoreBadge from '@/components/exercise/ExerciseScoreBadge.vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
@@ -111,20 +112,6 @@ const answeredCount = computed(() => idx.value + (answered.value ? 1 : 0))
 const performanceRatio = computed(() => {
   if (answeredCount.value <= 0) return 1
   return score.value / answeredCount.value
-})
-
-const performanceLabel = computed(() => {
-  if (answeredCount.value === 0 || performanceRatio.value === 1) return 'Parfait'
-  if (performanceRatio.value >= 0.8) return 'Bravo'
-  if (performanceRatio.value >= 0.6) return 'Bien'
-  return 'Continue'
-})
-
-const performanceClass = computed(() => {
-  if (answeredCount.value === 0 || performanceRatio.value === 1) return 'perfect'
-  if (performanceRatio.value >= 0.8) return 'great'
-  if (performanceRatio.value >= 0.6) return 'good'
-  return 'practice'
 })
 
 const answerFeedback = computed(() => {
@@ -198,11 +185,6 @@ onMounted(async () => {
 .quiz-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem; }
 .btn-back { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 0.9rem; }
 .counter { color: var(--muted2); font-size: 0.9rem; }
-.score-badge { padding: 0.25rem 0.7rem; border-radius: 20px; font-size: 0.85rem; font-weight: 800; transition: transform .2s, border-color .2s; }
-.score-badge.perfect { background: #22c55e20; color: #86efac; border: 1px solid #22c55e80; }
-.score-badge.great { background: #6366f120; color: #c4b5fd; border: 1px solid #6366f180; }
-.score-badge.good { background: #f59e0b20; color: #fde68a; border: 1px solid #f59e0b80; }
-.score-badge.practice { background: #ef444420; color: #fca5a5; border: 1px solid #ef444480; }
 .progress-bar { height: 6px; background: var(--border); border-radius: 3px; margin-bottom: 1.5rem; }
 .progress-fill { height: 100%; background: var(--accent); border-radius: 3px; transition: width .3s; }
 .question { text-align: center; color: var(--muted2); margin-bottom: 1rem; }

@@ -34,7 +34,14 @@
 
     <!-- Carte active -->
     <div v-else class="card-screen">
-      <ExerciseHeader label="🔍 Devinettes" :current="idx + 1" :total="cards.length" @quit="showQuit = true" />
+      <ExerciseHeader
+        label="🔍 Devinettes"
+        :current="idx + 1"
+        :total="cards.length"
+        :correct="score"
+        :answered="idx + (answered ? 1 : 0)"
+        @quit="showQuit = true"
+      />
       <ExerciseProgress :current="idx" :total="cards.length" />
 
       <!-- La devinette -->

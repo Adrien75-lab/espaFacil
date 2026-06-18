@@ -115,7 +115,10 @@
       <div class="game-header">
         <button class="btn-back" @click="phase = 'read'">← Relire</button>
         <span class="mode-badge">📖 Compréhension</span>
-        <span class="counter">{{ qcmIndex + 1 }} / {{ questions.length }}</span>
+        <span class="header-status">
+          <ExerciseScoreBadge :correct="qcmScore" :answered="qcmIndex + (qcmAnswered ? 1 : 0)" />
+          <span class="counter">{{ qcmIndex + 1 }} / {{ questions.length }}</span>
+        </span>
       </div>
       <div class="progress-bar">
         <div class="progress-fill qcm-fill" :style="{ width: ((qcmIndex + (qcmAnswered ? 1 : 0)) / questions.length * 100) + '%' }"></div>
@@ -150,21 +153,19 @@
     </div>
 
     <!-- Résultats -->
-    <div v-else-if="phase === 'results'" class="results">
-      <Teleport to="body">
-        <div v-if="showConfetti" class="confetti-container" aria-hidden="true">
-          <div v-for="n in 50" :key="n" class="confetto" :style="confettoStyle(n)"></div>
-        </div>
-      </Teleport>
-      <div class="results-emoji">{{ qcmScore === questions.length ? '🏆' : qcmScore >= Math.ceil(questions.length * 0.67) ? '🎉' : '💪' }}</div>
-      <h2>Histoire terminée !</h2>
-      <p class="score-text">{{ qcmScore }} / {{ questions.length }} bonnes réponses</p>
-      <div class="results-actions">
+    <ExerciseResults
+      v-else-if="phase === 'results'"
+      :correct="qcmScore"
+      :total="questions.length"
+      title="Histoire terminée !"
+      :score-label="`${qcmScore} / ${questions.length} bonnes réponses`"
+    >
+      <template #actions>
         <button class="btn-primary" @click="startStory(currentStory!)">Relire</button>
         <button class="btn-secondary" @click="phase = 'list'">Autres histoires</button>
         <button class="btn-secondary" @click="router.push('/')">Accueil</button>
-      </div>
-    </div>
+      </template>
+    </ExerciseResults>
 
   </div>
 
@@ -174,6 +175,8 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import ConfirmQuit from '@/components/ConfirmQuit.vue'
+import ExerciseScoreBadge from '@/components/exercise/ExerciseScoreBadge.vue'
+import ExerciseResults from '@/components/exercise/ExerciseResults.vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useSessionRecorder } from '@/composables/useSessionRecorder'
@@ -212,21 +215,6 @@ const qcmAnswered    = ref(false)
 const qcmLastCorrect = ref(false)
 const qcmScore       = ref(0)
 const qcmSelected    = ref<number | null>(null)
-const showConfetti   = ref(false)
-
-function confettoStyle(n: number) {
-  const colors = ['#8b5cf6','#22c55e','#f59e0b','#ec4899','#0ea5e9','#a855f7']
-  return {
-    left:              Math.random() * 100 + 'vw',
-    background:        colors[n % colors.length],
-    animationDelay:    (Math.random() * 1.5) + 's',
-    animationDuration: (1.5 + Math.random() * 1.5) + 's',
-    width:             (6 + Math.random() * 8) + 'px',
-    height:            (6 + Math.random() * 8) + 'px',
-    borderRadius:      Math.random() > 0.5 ? '50%' : '2px',
-  }
-}
-
 const langCode = computed(() => store.currentLang?.code ?? '')
 
 const LANG_BCP47: Record<string, string> = {
@@ -348,10 +336,6 @@ function pickQcm(i: number) {
 function nextQcm() {
   if (qcmIndex.value + 1 >= questions.value.length) {
     phase.value = 'results'
-    if (qcmScore.value >= Math.ceil(questions.value.length * 0.67)) {
-      showConfetti.value = true
-      setTimeout(() => { showConfetti.value = false }, 4000)
-    }
     void recordSession('stories', qcmScore.value, questions.value.length, 'general')
     return
   }
@@ -509,18 +493,5 @@ function nextQcm() {
 .btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
 .empty { text-align: center; color: var(--muted); padding: 2rem; }
 
-/* Confettis */
-.confetti-container {
-  position: fixed; top: 0; left: 0; width: 100vw; height: 0;
-  pointer-events: none; z-index: 9999; overflow: visible;
-}
-.confetto {
-  position: absolute; top: -10px;
-  animation: fall linear forwards;
-}
-@keyframes fall {
-  0%   { transform: translateY(0) rotate(0deg); opacity: 1; }
-  80%  { opacity: 1; }
-  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
-}
+
 </style>

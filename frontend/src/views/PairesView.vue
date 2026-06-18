@@ -7,21 +7,27 @@
       <button class="btn-secondary" @click="router.push('/')">← Retour</button>
     </div>
 
-    <div v-else-if="done" class="results">
-      <div class="results-emoji">{{ mistakes === 0 ? '🏆' : mistakes <= 3 ? '🎉' : '💪' }}</div>
-      <h2>Toutes les paires trouvées !</h2>
-      <p class="score-text">{{ pairsCount }} paires — {{ mistakes }} erreur{{ mistakes !== 1 ? 's' : '' }}</p>
-      <div class="results-actions">
+    <ExerciseResults
+      v-else-if="done"
+      :correct="Math.max(0, pairsCount - mistakes)"
+      :total="pairsCount"
+      title="Toutes les paires trouvées !"
+      :score-label="`${pairsCount} paires · ${mistakes} erreur${mistakes !== 1 ? 's' : ''}`"
+    >
+      <template #actions>
         <button class="btn-primary" @click="restart">Rejouer</button>
         <button class="btn-secondary" @click="router.push('/')">Accueil</button>
-      </div>
-    </div>
+      </template>
+    </ExerciseResults>
 
     <div v-else class="game-screen">
       <div class="game-header">
         <button class="btn-back" @click="showQuit = true">← Quitter</button>
         <span class="mode-badge">🃏 Paires</span>
-        <span class="counter">{{ matchedCount }} / {{ pairsCount }} paires</span>
+        <span class="header-status">
+          <ExerciseScoreBadge :correct="matchedCount" :answered="matchedCount + mistakes" />
+          <span class="counter">{{ matchedCount }} / {{ pairsCount }} paires</span>
+        </span>
       </div>
       <div class="progress-bar">
         <div class="progress-fill" :style="{ width: (matchedCount / pairsCount * 100) + '%' }"></div>
@@ -73,6 +79,8 @@ import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import type { Word } from '@/types'
+import ExerciseResults from '@/components/exercise/ExerciseResults.vue'
+import ExerciseScoreBadge from '@/components/exercise/ExerciseScoreBadge.vue'
 
 const store  = useLangStore()
 const router = useRouter()
