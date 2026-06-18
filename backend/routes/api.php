@@ -8,6 +8,7 @@ use App\Http\Controllers\Api\DialogueController;
 use App\Http\Controllers\Api\GrammarController;
 use App\Http\Controllers\Api\LanguageController;
 use App\Http\Controllers\Api\LeaderboardController;
+use App\Http\Controllers\Api\LearningProgressController;
 use App\Http\Controllers\Api\ProgressController;
 use App\Http\Controllers\Api\ReviewController;
 use App\Http\Controllers\Api\StoryController;
@@ -31,6 +32,7 @@ Route::middleware('auth:sanctum')->prefix('me')->group(function () {
 
     // Dashboard + aujourd'hui
     Route::get('/dashboard', [DashboardController::class, 'index']);
+    Route::get('/learning-progress', [LearningProgressController::class, 'index']);
     Route::get('/today', [TodayController::class, 'index']);
     Route::put('/goal', [TodayController::class, 'updateGoal']);
 
