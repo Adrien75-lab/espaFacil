@@ -16,6 +16,7 @@
 ## Refacto backend phase 2 — 18 juin 2026
 
 - Branche de travail : `codex/2026-06-18-refacto-back-services`, créée depuis `master` après fusion de la pile progression/gamification/refacto front.
+- Recette déléguée validée par Codex après tests automatisés et parcours navigateur, puis fusion locale dans `master` par le commit `2de50bf merge: intégrer la refacto backend progression`.
 - Première tranche : extraction de la logique métier des contrôleurs de progression vers des services dédiés.
 - Nouveaux enums : `backend/app/Enums/ExerciseMode.php` et `backend/app/Enums/LearningLevel.php`.
 - Nouveaux services : `StreakService`, `UserSessionProgressService`, `LearningProgressService`.
