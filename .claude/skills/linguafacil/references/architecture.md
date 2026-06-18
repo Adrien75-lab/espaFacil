@@ -18,10 +18,12 @@ Website-Project/
 │   ├── src/views/            Écrans et modes
 │   └── src/router/index.ts    Routes frontend
 ├── backend/                  Laravel 13, PHP 8.3, Sanctum
+│   ├── app/Assemblers/       Construction des payloads API complexes
 │   ├── app/Enums/            Valeurs métier autorisées
 │   ├── app/Http/Controllers/Api/
 │   ├── app/Http/Resources/
 │   ├── app/Models/
+│   ├── app/Repositories/     Requêtes métier réutilisables
 │   ├── app/Services/         Logique métier et orchestration
 │   ├── database/data/        Catalogues JSON durables
 │   ├── database/migrations/
@@ -106,6 +108,9 @@ Règles à conserver :
 
 ```text
 backend/app/
+├── Assemblers/
+│   ├── LearningProgressPayloadAssembler.php
+│   └── UserSessionResultAssembler.php
 ├── Enums/
 │   ├── ExerciseMode.php
 │   └── LearningLevel.php
@@ -114,10 +119,15 @@ backend/app/
 │   ├── ProgressController.php
 │   └── TodayController.php
 ├── Models/
+├── Repositories/
+│   ├── LearningProgressRepository.php
+│   ├── UserBadgeRepository.php
+│   └── UserProgressRepository.php
 ├── Services/
 │   ├── LearningProgressService.php
 │   ├── LingoRewardService.php
 │   ├── StreakService.php
+│   ├── TodaySummaryService.php
 │   └── UserSessionProgressService.php
 └── Http/Resources/
 ```
@@ -132,6 +142,9 @@ flowchart TD
     SessionService --> LearningLevel["LearningLevel enum"]
     SessionService --> StreakService["StreakService"]
     SessionService --> LingoService["LingoRewardService"]
+    SessionService --> ProgressRepo["UserProgressRepository"]
+    SessionService --> BadgeRepo["UserBadgeRepository"]
+    SessionService --> ResultAssembler["UserSessionResultAssembler"]
     SessionService --> UserStat["UserStat"]
     SessionService --> UserProgress["UserProgress"]
     SessionService --> UserBadge["UserBadge"]
@@ -141,24 +154,31 @@ flowchart TD
 ```mermaid
 flowchart TD
     TodayApi["GET /api/me/today"] --> TodayController["TodayController"]
-    TodayController --> StreakService["StreakService"]
-    TodayController --> LingoService["LingoRewardService"]
-    TodayController --> UserStat["UserStat"]
+    TodayController --> TodayService["TodaySummaryService"]
+    TodayService --> StreakService["StreakService"]
+    TodayService --> LingoService["LingoRewardService"]
+    TodayService --> ProgressRepo["UserProgressRepository"]
+    ProgressRepo --> UserStat["UserStat"]
 
     LearningApi["GET /api/me/learning-progress"] --> LearningController["LearningProgressController"]
     LearningController --> LearningService["LearningProgressService"]
-    LearningService --> Language["Language + themes + words"]
-    LearningService --> UserProgress["UserProgress"]
-    LearningService --> WordReview["WordReview"]
+    LearningService --> LearningRepo["LearningProgressRepository"]
+    LearningService --> LearningAssembler["LearningProgressPayloadAssembler"]
+    LearningRepo --> Language["Language + themes + words"]
+    LearningRepo --> UserProgress["UserProgress"]
+    LearningRepo --> WordReview["WordReview"]
 ```
 
 Règles à conserver :
 
 - un contrôleur API valide la requête et compose la réponse HTTP;
 - un service contient la logique métier ou l'orchestration;
+- un assembler construit un payload API complexe à partir de données déjà chargées;
+- un repository regroupe une requête métier réutilisable ou une mutation de persistance significative;
 - un enum centralise les valeurs autorisées partagées par plusieurs points du back;
 - un modèle Eloquent reste responsable des relations, casts et accès base;
 - une Resource transforme les modèles de catalogue pour l'API publique;
+- n'ajoute pas de repository pour un simple `Model::find()` isolé; attends une vraie répétition ou une requête métier nommable;
 - ne remets pas de calcul de progression, streak, Lingos ou statut pédagogique directement dans les contrôleurs.
 
 ### Données et responsabilité
@@ -173,8 +193,8 @@ Règles à conserver :
 ### SRS et progression
 
 - `ProgressController` valide `/api/me/session` puis délègue l'enregistrement à `UserSessionProgressService`.
-- `TodayController` expose le résumé quotidien et délègue le calcul de série à `StreakService`.
-- `LearningProgressController` délègue la progression pédagogique à `LearningProgressService`.
+- `TodayController` expose le résumé quotidien et délègue à `TodaySummaryService`.
+- `LearningProgressController` délègue la progression pédagogique à `LearningProgressService`, qui orchestre `LearningProgressRepository` et `LearningProgressPayloadAssembler`.
 - `LingoRewardService` gère les Lingos et récompenses journalières.
 - `ReviewController` gère les révisions espacées.
 - Tables/modèles clés : `UserStat`, `UserProgress`, `UserBadge`, `UserLingoReward`, `WordReview`.

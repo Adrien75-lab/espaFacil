@@ -6,34 +6,28 @@ use App\Enums\ExerciseMode;
 use App\Enums\LearningLevel;
 use App\Http\Controllers\Controller;
 use App\Models\Language;
-use App\Models\UserBadge;
-use App\Models\UserProgress;
-use App\Models\UserStat;
+use App\Repositories\UserBadgeRepository;
+use App\Repositories\UserProgressRepository;
 use App\Services\UserSessionProgressService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
 class ProgressController extends Controller
 {
-    public function show(Request $request): JsonResponse
+    public function show(Request $request, UserProgressRepository $progress, UserBadgeRepository $badges): JsonResponse
     {
         $language = Language::where('code', $request->query('language', 'es'))->firstOrFail();
         $user = $request->user();
 
-        $stat = UserStat::firstOrCreate(
-            ['user_id' => $user->id, 'language_id' => $language->id],
-            ['xp' => 0, 'sessions' => 0, 'max_serie' => 0, 'phrases_sessions' => 0, 'activity_days' => []]
-        );
+        $stat = $progress->statFor($user->id, $language->id);
+        $progressRows = $progress->progressRowsForLanguage($user->id, $language->id);
+        $badgeKeys = $badges->keysForLanguage($user->id, $language->id);
 
-        $progress = UserProgress::where('user_id', $user->id)
-            ->where('language_id', $language->id)
-            ->get(['theme_key', 'level', 'best_score', 'total_seen']);
-
-        $badges = UserBadge::where('user_id', $user->id)
-            ->where('language_id', $language->id)
-            ->pluck('badge_key');
-
-        return response()->json(compact('stat', 'progress', 'badges'));
+        return response()->json([
+            'stat' => $stat,
+            'progress' => $progressRows,
+            'badges' => $badgeKeys,
+        ]);
     }
 
     public function session(Request $request, UserSessionProgressService $progress): JsonResponse
