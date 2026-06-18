@@ -39,7 +39,7 @@
         <button class="btn-back" @click="current = null">← Scénarios</button>
         <span class="mode-badge">💬 {{ current.emoji }} {{ current.title_fr }}</span>
         <span class="header-status">
-          <ExerciseScoreBadge :correct="score" :answered="choicesDone" />
+          <BlocExerciseScoreBadge :correct="score" :answered="choicesDone" />
           <span class="counter">{{ choicesDone }} / {{ totalChoices }}</span>
         </span>
       </div>
@@ -98,7 +98,7 @@
     </div>
 
     <!-- Résultats -->
-    <ExerciseResults
+    <BlocExerciseResults
       v-else
       :correct="score"
       :total="totalChoices"
@@ -110,7 +110,7 @@
         <button class="btn-secondary" @click="current = null">Autres scénarios</button>
         <button class="btn-secondary" @click="router.push('/')">Accueil</button>
       </template>
-    </ExerciseResults>
+    </BlocExerciseResults>
 
   </div>
   <ConfirmQuit v-if="showQuit" @cancel="showQuit = false" @confirm="router.push('/')" />
@@ -119,13 +119,12 @@
 <script setup lang="ts">
 import { ref, computed, watch, nextTick, onMounted } from 'vue'
 import ConfirmQuit from '@/components/ConfirmQuit.vue'
-import ExerciseScoreBadge from '@/components/exercise/ExerciseScoreBadge.vue'
-import ExerciseResults from '@/components/exercise/ExerciseResults.vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { getDialogues } from '@/api/content'
 import type { Dialogue, DialogueChoice } from '@/types'
+import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 // ─── State ────────────────────────────────────────────────────────────────────
 

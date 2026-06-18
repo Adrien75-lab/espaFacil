@@ -10,7 +10,7 @@
     </div>
 
     <!-- Session terminée -->
-    <ExerciseResults
+    <BlocExerciseResults
       v-else-if="done"
       :correct="score"
       :total="cards.length"
@@ -20,14 +20,14 @@
         <button class="btn-primary" @click="restart">Recommencer</button>
         <button class="btn-secondary" @click="router.push('/')">Accueil</button>
       </template>
-    </ExerciseResults>
+    </BlocExerciseResults>
 
     <!-- Carte active -->
     <div v-else class="card-screen">
       <div class="quiz-header">
         <button class="btn-back" @click="showQuit = true">← Quitter</button>
         <span class="counter">{{ idx + 1 }} / {{ cards.length }}</span>
-        <ExerciseScoreBadge :correct="score" :answered="answeredCount" />
+        <BlocExerciseScoreBadge :correct="score" :answered="answeredCount" />
       </div>
 
       <div class="progress-bar">
@@ -80,8 +80,6 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, watch } from 'vue'
 import ConfirmQuit from '@/components/ConfirmQuit.vue'
-import ExerciseResults from '@/components/exercise/ExerciseResults.vue'
-import ExerciseScoreBadge from '@/components/exercise/ExerciseScoreBadge.vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
@@ -89,6 +87,7 @@ import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { postReview } from '@/api/reviews'
 import type { Word } from '@/types'
 import { speakText } from '@/utils/speech'
+import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 const store  = useLangStore()
 const showQuit = ref(false)

@@ -12,7 +12,7 @@
     </div>
 
     <!-- Session terminée -->
-    <ExerciseResults
+    <BlocExerciseResults
       v-else-if="done"
       :emoji="score === cards.length ? '🏆' : score >= cards.length * 0.7 ? '🎉' : '💪'"
       :score-label="`${score} / ${cards.length} trouvés`"
@@ -30,11 +30,11 @@
         <button class="btn-primary" @click="restart">🔁 Recommencer</button>
         <button class="btn-secondary" @click="router.push('/')">🏠 Accueil</button>
       </template>
-    </ExerciseResults>
+    </BlocExerciseResults>
 
     <!-- Carte active -->
     <div v-else class="card-screen">
-      <ExerciseHeader
+      <BlocExerciseHeader
         label="🔍 Devinettes"
         :current="idx + 1"
         :total="cards.length"
@@ -42,7 +42,7 @@
         :answered="idx + (answered ? 1 : 0)"
         @quit="showQuit = true"
       />
-      <ExerciseProgress :current="idx" :total="cards.length" />
+      <BlocExerciseProgress :current="idx" :total="cards.length" />
 
       <!-- La devinette -->
       <div class="riddle-block">
@@ -117,13 +117,11 @@ import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
 import ConfirmQuit from '@/components/ConfirmQuit.vue'
-import ExerciseHeader from '@/components/exercise/ExerciseHeader.vue'
-import ExerciseProgress from '@/components/exercise/ExerciseProgress.vue'
-import ExerciseResults from '@/components/exercise/ExerciseResults.vue'
 import { postReview } from '@/api/reviews'
 import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { evaluateAnswer } from '@/utils/textMatching'
 import type { Word } from '@/types'
+import { BlocExerciseHeader, BlocExerciseProgress, BlocExerciseResults } from '@/features/exercise/Bloc'
 
 const store    = useLangStore()
 const auth     = useAuthStore()

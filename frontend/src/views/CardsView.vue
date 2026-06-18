@@ -2,7 +2,7 @@
   <div class="cards">
     <div v-if="store.loading" class="loader">Chargement…</div>
 
-    <ExerciseResults
+    <BlocExerciseResults
       v-else-if="done"
       :correct="known"
       :total="total"
@@ -20,13 +20,13 @@
         <button class="btn-primary" @click="restart">Recommencer</button>
         <button class="btn-secondary" @click="router.push('/')">Accueil</button>
       </template>
-    </ExerciseResults>
+    </BlocExerciseResults>
 
     <div v-else-if="cards.length" class="card-screen">
       <div class="quiz-header">
         <button class="btn-back" @click="showQuit = true">← Quitter</button>
         <span class="counter">{{ idx + 1 }} / {{ total }}</span>
-        <ExerciseScoreBadge :correct="known" :answered="idx" />
+        <BlocExerciseScoreBadge :correct="known" :answered="idx" />
       </div>
       <div class="progress-bar">
         <div class="progress-fill" :style="{ width: (idx / total * 100) + '%' }"></div>
@@ -71,10 +71,9 @@ import { useAuthStore } from '@/stores/auth'
 import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { postReview } from '@/api/reviews'
 import ConfirmQuit from '@/components/ConfirmQuit.vue'
-import ExerciseScoreBadge from '@/components/exercise/ExerciseScoreBadge.vue'
-import ExerciseResults from '@/components/exercise/ExerciseResults.vue'
 import { speakText } from '@/utils/speech'
 import type { Word } from '@/types'
+import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 const store  = useLangStore()
 const auth   = useAuthStore()

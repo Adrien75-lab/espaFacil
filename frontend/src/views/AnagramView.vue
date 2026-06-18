@@ -7,7 +7,7 @@
       <button class="btn-secondary" @click="router.push('/')">← Retour</button>
     </div>
 
-    <ExerciseResults
+    <BlocExerciseResults
       v-else-if="done"
       :correct="score"
       :total="total"
@@ -18,14 +18,14 @@
         <button class="btn-primary" @click="restart">Rejouer</button>
         <button class="btn-secondary" @click="router.push('/')">Accueil</button>
       </template>
-    </ExerciseResults>
+    </BlocExerciseResults>
 
     <div v-else class="game-screen">
       <div class="game-header">
         <button class="btn-back" @click="showQuit = true">← Quitter</button>
         <span class="mode-badge">🔀 Anagramme</span>
         <span class="header-status">
-          <ExerciseScoreBadge :correct="score" :answered="cardIndex + (feedback ? 1 : 0)" />
+          <BlocExerciseScoreBadge :correct="score" :answered="cardIndex + (feedback ? 1 : 0)" />
           <span class="counter">{{ cardIndex + 1 }} / {{ total }}</span>
         </span>
       </div>
@@ -94,9 +94,8 @@ import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import ConfirmQuit from '@/components/ConfirmQuit.vue'
-import ExerciseScoreBadge from '@/components/exercise/ExerciseScoreBadge.vue'
-import ExerciseResults from '@/components/exercise/ExerciseResults.vue'
 import type { Word } from '@/types'
+import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 const store  = useLangStore()
 const router = useRouter()

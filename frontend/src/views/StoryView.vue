@@ -116,7 +116,7 @@
         <button class="btn-back" @click="phase = 'read'">← Relire</button>
         <span class="mode-badge">📖 Compréhension</span>
         <span class="header-status">
-          <ExerciseScoreBadge :correct="qcmScore" :answered="qcmIndex + (qcmAnswered ? 1 : 0)" />
+          <BlocExerciseScoreBadge :correct="qcmScore" :answered="qcmIndex + (qcmAnswered ? 1 : 0)" />
           <span class="counter">{{ qcmIndex + 1 }} / {{ questions.length }}</span>
         </span>
       </div>
@@ -153,7 +153,7 @@
     </div>
 
     <!-- Résultats -->
-    <ExerciseResults
+    <BlocExerciseResults
       v-else-if="phase === 'results'"
       :correct="qcmScore"
       :total="questions.length"
@@ -165,7 +165,7 @@
         <button class="btn-secondary" @click="phase = 'list'">Autres histoires</button>
         <button class="btn-secondary" @click="router.push('/')">Accueil</button>
       </template>
-    </ExerciseResults>
+    </BlocExerciseResults>
 
   </div>
 
@@ -175,11 +175,10 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import ConfirmQuit from '@/components/ConfirmQuit.vue'
-import ExerciseScoreBadge from '@/components/exercise/ExerciseScoreBadge.vue'
-import ExerciseResults from '@/components/exercise/ExerciseResults.vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useSessionRecorder } from '@/composables/useSessionRecorder'
+import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 interface StoryToken  { text: string; fr?: string; punct?: boolean }
 interface QcmOption   { text: string }

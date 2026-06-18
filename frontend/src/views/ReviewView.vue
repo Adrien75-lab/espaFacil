@@ -12,7 +12,7 @@
     </div>
 
     <!-- Session terminée -->
-    <ExerciseResults
+    <BlocExerciseResults
       v-else-if="done"
       :correct="score"
       :total="total"
@@ -23,7 +23,7 @@
         <button class="btn-primary" @click="reload">Recommencer</button>
         <button class="btn-secondary" @click="router.push('/')">Accueil</button>
       </template>
-    </ExerciseResults>
+    </BlocExerciseResults>
 
     <!-- Carte active -->
     <div v-else class="card-screen">
@@ -31,7 +31,7 @@
         <button class="btn-back" @click="router.push('/')">← Quitter</button>
         <span class="mode-badge">🔁 Révision SRS</span>
         <span class="header-status">
-          <ExerciseScoreBadge :correct="score" :answered="idx + (answered ? 1 : 0)" />
+          <BlocExerciseScoreBadge :correct="score" :answered="idx + (answered ? 1 : 0)" />
           <span class="counter">{{ idx + 1 }} / {{ total }}</span>
         </span>
       </div>
@@ -76,8 +76,7 @@ import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { fetchDue, postReview, type ReviewWord } from '@/api/reviews'
 import { speakText } from '@/utils/speech'
-import ExerciseResults from '@/components/exercise/ExerciseResults.vue'
-import ExerciseScoreBadge from '@/components/exercise/ExerciseScoreBadge.vue'
+import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 const store  = useLangStore()
 const router = useRouter()

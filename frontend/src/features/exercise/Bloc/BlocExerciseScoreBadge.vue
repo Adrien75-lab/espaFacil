@@ -1,31 +1,21 @@
 <template>
-  <span class="score-badge" :class="performanceClass" aria-live="polite">
-    {{ performanceLabel }} · {{ correct }}
+  <span class="score-badge" :class="tone" aria-live="polite">
+    {{ label }} · {{ correct }}
   </span>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { toRef } from 'vue'
+import { useExercisePerformance } from '../composables/useExercisePerformance'
 
 const props = defineProps<{
   correct: number
   answered: number
 }>()
 
-const ratio = computed(() => (props.answered > 0 ? props.correct / props.answered : 1))
-
-const performanceLabel = computed(() => {
-  if (ratio.value >= 1) return 'Parfait'
-  if (ratio.value >= 0.8) return 'Bravo'
-  if (ratio.value >= 0.6) return 'Bien'
-  return 'On se reprend'
-})
-
-const performanceClass = computed(() => {
-  if (ratio.value >= 1) return 'perfect'
-  if (ratio.value >= 0.8) return 'great'
-  if (ratio.value >= 0.6) return 'good'
-  return 'practice'
+const { label, tone } = useExercisePerformance({
+  correct: toRef(props, 'correct'),
+  answered: toRef(props, 'answered'),
 })
 </script>
 

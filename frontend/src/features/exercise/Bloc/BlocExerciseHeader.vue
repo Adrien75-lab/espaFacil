@@ -3,7 +3,7 @@
     <button class="quit-button" type="button" @click="$emit('quit')">← Quitter</button>
     <span class="mode-label">{{ label }}</span>
     <span class="header-status">
-      <ExerciseScoreBadge v-if="showScore" :correct="correct ?? 0" :answered="answered ?? 0" />
+      <BlocExerciseScoreBadge v-if="showScore" :correct="correct ?? 0" :answered="answered ?? 0" />
       <span class="counter">{{ current }} / {{ total }}</span>
     </span>
   </header>
@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import ExerciseScoreBadge from './ExerciseScoreBadge.vue'
+import BlocExerciseScoreBadge from './BlocExerciseScoreBadge.vue'
 
 const props = defineProps<{
   label: string
