@@ -18,9 +18,13 @@ Website-Project/
 │   ├── src/views/            Écrans et modes
 │   └── src/router/index.ts    Routes frontend
 ├── backend/                  Laravel 13, PHP 8.3, Sanctum
+│   ├── app/Assemblers/       Construction des payloads API complexes
+│   ├── app/Enums/            Valeurs métier autorisées
 │   ├── app/Http/Controllers/Api/
 │   ├── app/Http/Resources/
 │   ├── app/Models/
+│   ├── app/Repositories/     Requêtes métier réutilisables
+│   ├── app/Services/         Logique métier et orchestration
 │   ├── database/data/        Catalogues JSON durables
 │   ├── database/migrations/
 │   ├── database/seeders/
@@ -59,6 +63,28 @@ Les fichiers `index.html`, `style.css` et `script.js` à la racine appartiennent
 - La logique de score, statut ou performance d'exercice doit rester dans `features/exercise/composables/` ou dans un composable dédié, pas dans un composant visuel.
 - Ne réintroduis pas `frontend/src/components/exercise/`.
 
+### Schéma frontend exercice
+
+```mermaid
+flowchart TD
+    HomeView["HomeView.vue"] --> ExerciseView["Vue d'exercice"]
+    ExerciseView --> BlocIndex["@/features/exercise/Bloc"]
+    BlocIndex --> Header["BlocExerciseHeader"]
+    BlocIndex --> Progress["BlocExerciseProgress"]
+    BlocIndex --> Score["BlocExerciseScoreBadge"]
+    BlocIndex --> Results["BlocExerciseResults"]
+    Score --> Performance["useExercisePerformance"]
+    ExerciseView --> Recorder["useSessionRecorder"]
+    Recorder --> ApiSession["POST /api/me/session"]
+```
+
+Règles à conserver :
+
+- une vue d'exercice orchestre l'expérience utilisateur;
+- un bloc `BlocExercise...` affiche un morceau d'interface réutilisable;
+- un composable porte la logique réutilisable;
+- l'enregistrement de session passe par `useSessionRecorder` puis `/api/me/session`.
+
 ### Modes actuellement routés
 
 `quiz`, `cards`, `fill-blank`, `learn`, `listen`, `speak`, `review`, `difficult`, `sentence-builder`, `dictee`, `paires`, `dialogue`, `anagram`, `survival`, `voyage`, `stories`, `conjugaison`, `traduction`, `devinette`, plus login, inscription, profil et classement.
@@ -78,6 +104,83 @@ Les fichiers `index.html`, `style.css` et `script.js` à la racine appartiennent
 - Routes privées sous `/api/me` avec `auth:sanctum`.
 - Contenu public : langues, thèmes, mots, grammaire, dialogues, histoires et conjugaisons.
 
+### Structure backend refactorisée
+
+```text
+backend/app/
+├── Assemblers/
+│   ├── LearningProgressPayloadAssembler.php
+│   └── UserSessionResultAssembler.php
+├── Enums/
+│   ├── ExerciseMode.php
+│   └── LearningLevel.php
+├── Http/Controllers/Api/
+│   ├── LearningProgressController.php
+│   ├── ProgressController.php
+│   └── TodayController.php
+├── Models/
+├── Repositories/
+│   ├── LearningProgressRepository.php
+│   ├── UserBadgeRepository.php
+│   └── UserProgressRepository.php
+├── Services/
+│   ├── LearningProgressService.php
+│   ├── LingoRewardService.php
+│   ├── StreakService.php
+│   ├── TodaySummaryService.php
+│   └── UserSessionProgressService.php
+└── Http/Resources/
+```
+
+### Schéma backend progression
+
+```mermaid
+flowchart TD
+    ApiSession["POST /api/me/session"] --> ProgressController["ProgressController"]
+    ProgressController --> SessionService["UserSessionProgressService"]
+    SessionService --> ExerciseMode["ExerciseMode enum"]
+    SessionService --> LearningLevel["LearningLevel enum"]
+    SessionService --> StreakService["StreakService"]
+    SessionService --> LingoService["LingoRewardService"]
+    SessionService --> ProgressRepo["UserProgressRepository"]
+    SessionService --> BadgeRepo["UserBadgeRepository"]
+    SessionService --> ResultAssembler["UserSessionResultAssembler"]
+    SessionService --> UserStat["UserStat"]
+    SessionService --> UserProgress["UserProgress"]
+    SessionService --> UserBadge["UserBadge"]
+    LingoService --> UserLingoReward["UserLingoReward"]
+```
+
+```mermaid
+flowchart TD
+    TodayApi["GET /api/me/today"] --> TodayController["TodayController"]
+    TodayController --> TodayService["TodaySummaryService"]
+    TodayService --> StreakService["StreakService"]
+    TodayService --> LingoService["LingoRewardService"]
+    TodayService --> ProgressRepo["UserProgressRepository"]
+    ProgressRepo --> UserStat["UserStat"]
+
+    LearningApi["GET /api/me/learning-progress"] --> LearningController["LearningProgressController"]
+    LearningController --> LearningService["LearningProgressService"]
+    LearningService --> LearningRepo["LearningProgressRepository"]
+    LearningService --> LearningAssembler["LearningProgressPayloadAssembler"]
+    LearningRepo --> Language["Language + themes + words"]
+    LearningRepo --> UserProgress["UserProgress"]
+    LearningRepo --> WordReview["WordReview"]
+```
+
+Règles à conserver :
+
+- un contrôleur API valide la requête et compose la réponse HTTP;
+- un service contient la logique métier ou l'orchestration;
+- un assembler construit un payload API complexe à partir de données déjà chargées;
+- un repository regroupe une requête métier réutilisable ou une mutation de persistance significative;
+- un enum centralise les valeurs autorisées partagées par plusieurs points du back;
+- un modèle Eloquent reste responsable des relations, casts et accès base;
+- une Resource transforme les modèles de catalogue pour l'API publique;
+- n'ajoute pas de repository pour un simple `Model::find()` isolé; attends une vraie répétition ou une requête métier nommable;
+- ne remets pas de calcul de progression, streak, Lingos ou statut pédagogique directement dans les contrôleurs.
+
 ### Données et responsabilité
 
 - Vocabulaire, thèmes, langues et grammaire : `database/data/linguafacil.json` puis `LinguaFacilSeeder`.
@@ -89,9 +192,12 @@ Les fichiers `index.html`, `style.css` et `script.js` à la racine appartiennent
 
 ### SRS et progression
 
-- `ProgressController` enregistre les sessions, XP, historique, activité, badges et XP par mode.
+- `ProgressController` valide `/api/me/session` puis délègue l'enregistrement à `UserSessionProgressService`.
+- `TodayController` expose le résumé quotidien et délègue à `TodaySummaryService`.
+- `LearningProgressController` délègue la progression pédagogique à `LearningProgressService`, qui orchestre `LearningProgressRepository` et `LearningProgressPayloadAssembler`.
+- `LingoRewardService` gère les Lingos et récompenses journalières.
 - `ReviewController` gère les révisions espacées.
-- Tables/modèles clés : `UserStat`, `UserProgress`, `UserBadge`, `WordReview`.
+- Tables/modèles clés : `UserStat`, `UserProgress`, `UserBadge`, `UserLingoReward`, `WordReview`.
 
 ## R1-R5 consolidées
 
