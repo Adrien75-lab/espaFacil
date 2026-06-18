@@ -5,31 +5,25 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Models\UserStat;
 use App\Services\LingoRewardService;
+use App\Services\StreakService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 
 class TodayController extends Controller
 {
-    /**
-     * GET /api/me/today
-     * XP gagné aujourd'hui (toutes langues) + objectif + streak.
-     */
-    public function index(Request $request, LingoRewardService $lingos): JsonResponse
+    public function index(Request $request, LingoRewardService $lingos, StreakService $streaks): JsonResponse
     {
         $user = $request->user();
         $today = Carbon::today()->toDateString();
-
         $stats = UserStat::where('user_id', $user->id)->get();
 
-        // XP aujourd'hui = somme de xp_history[$today] sur toutes les langues
         $xpToday = 0;
         $currentStreak = 0;
-        foreach ($stats as $s) {
-            $hist = $s->xp_history ?? [];
-            $xpToday += $hist[$today] ?? 0;
-            $streak = $this->computeStreak($s->activity_days ?? []);
-            $currentStreak = max($currentStreak, $streak);
+        foreach ($stats as $stat) {
+            $history = $stat->xp_history ?? [];
+            $xpToday += $history[$today] ?? 0;
+            $currentStreak = max($currentStreak, $streaks->compute($stat->activity_days ?? []));
         }
 
         $goal = $user->daily_goal_xp ?? 50;
@@ -46,10 +40,6 @@ class TodayController extends Controller
         ]);
     }
 
-    /**
-     * PUT /api/me/goal
-     * Met à jour l'objectif quotidien.
-     */
     public function updateGoal(Request $request): JsonResponse
     {
         $data = $request->validate([
@@ -59,31 +49,5 @@ class TodayController extends Controller
         $request->user()->update(['daily_goal_xp' => $data['daily_goal_xp']]);
 
         return response()->json(['daily_goal' => $data['daily_goal_xp']]);
-    }
-
-    private function computeStreak(array $days): int
-    {
-        if (empty($days)) {
-            return 0;
-        }
-        $today = Carbon::today()->toDateString();
-        $yesterday = Carbon::yesterday()->toDateString();
-        $latest = end($days);
-        if ($latest !== $today && $latest !== $yesterday) {
-            return 0;
-        }
-        $streak = 1;
-        $current = Carbon::parse($latest);
-        for ($i = count($days) - 2; $i >= 0; $i--) {
-            $prev = Carbon::parse($days[$i]);
-            if ((int) $current->diffInDays($prev) === 1) {
-                $streak++;
-                $current = $prev;
-            } else {
-                break;
-            }
-        }
-
-        return $streak;
     }
 }

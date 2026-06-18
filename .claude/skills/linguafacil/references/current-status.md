@@ -13,6 +13,16 @@
 - Aucun changement backend, aucune migration et aucun seeder pour cette phase de refacto.
 - Pour reprendre une nouvelle fonctionnalité depuis l'état validé par Adrien, ne touche pas aux branches `claude/*`; repars d'une base Git explicite et conserve le préfixe `codex/`.
 
+## Refacto backend phase 2 — 18 juin 2026
+
+- Branche de travail : `codex/2026-06-18-refacto-back-services`, créée depuis `master` après fusion de la pile progression/gamification/refacto front.
+- Première tranche : extraction de la logique métier des contrôleurs de progression vers des services dédiés.
+- Nouveaux enums : `backend/app/Enums/ExerciseMode.php` et `backend/app/Enums/LearningLevel.php`.
+- Nouveaux services : `StreakService`, `UserSessionProgressService`, `LearningProgressService`.
+- Contrôleurs allégés : `ProgressController`, `TodayController`, `LearningProgressController`.
+- Objectif : conserver les routes et réponses JSON existantes tout en préparant les phases back suivantes vers services/repositories/assemblers plus explicites.
+- Aucun changement de base de données, aucune migration, aucun seeder.
+
 Dernière vérification : 17 juin 2026, après la fusion des PR no 7 (indices espagnol), no 8 (indices 13 langues), no 9 (phrases d'exemple 14 langues) et no 10 (phase 28 suite, boulangerie) dans `master`.
 
 ## Dépôt
