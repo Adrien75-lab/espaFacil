@@ -2,8 +2,10 @@
 
 ## Mise à jour Codex — 18 juin 2026
 
+- Recette validée par Adrien, puis fusion locale dans `master` par le commit `74672e8 merge: intégrer progression et refacto exercices`.
+- `master` contient désormais la pile Codex progression/gamification + refacto frontend exercice.
 - Branche de travail actuelle : `codex/2026-06-18-refacto-exercise-front`, poussée sur `origin`.
-- Cette branche est empilée sur `codex/2026-06-18-progression-lingos`, car la branche gamification/progression n'est pas encore fusionnée dans `master`.
+- Cette branche était empilée sur `codex/2026-06-18-progression-lingos` avant fusion dans `master`.
 - `codex/2026-06-18-progression-lingos` contient la gamification validée par Adrien : XP, Lingos, bonus journaliers, jauge d'objectif, badge de performance sur les exercices et célébrations de fin de session. Commit principal : `c9c7222 feat: harmoniser la gamification des exercices`.
 - `codex/2026-06-18-refacto-exercise-front` contient la phase 1 de refacto frontend validée : les composants partagés d'exercice ont quitté `frontend/src/components/exercise/` pour `frontend/src/features/exercise/Bloc/`, avec des fichiers préfixés `BlocExercise...` et un export groupé dans `Bloc/index.ts`. Commit principal : `9dc001c refactor: structurer les blocs d'exercice frontend`.
 - La logique de statut/performance d'exercice est désormais portée par `frontend/src/features/exercise/composables/useExercisePerformance.ts`.
