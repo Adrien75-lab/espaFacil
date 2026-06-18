@@ -21,6 +21,7 @@
 - Nouveaux services : `StreakService`, `UserSessionProgressService`, `LearningProgressService`.
 - Contrôleurs allégés : `ProgressController`, `TodayController`, `LearningProgressController`.
 - Objectif : conserver les routes et réponses JSON existantes tout en préparant les phases back suivantes vers services/repositories/assemblers plus explicites.
+- `references/architecture.md` contient désormais les schémas frontend exercice, backend progression et les règles Controller/Service/Enum à respecter.
 - Aucun changement de base de données, aucune migration, aucun seeder.
 
 Dernière vérification : 17 juin 2026, après la fusion des PR no 7 (indices espagnol), no 8 (indices 13 langues), no 9 (phrases d'exemple 14 langues) et no 10 (phase 28 suite, boulangerie) dans `master`.
