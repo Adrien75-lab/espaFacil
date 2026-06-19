@@ -1,5 +1,14 @@
 # État courant de LinguaFacil
 
+## Mise à jour Codex — 19 juin 2026
+
+- Branche de travail : `codex/2026-06-19-ux-theme-clair-selecteur`, créée depuis `work`.
+- Phase UX thème clair/sélecteur : renforcement du contraste du thème clair, ajout de variables visuelles globales (`accent-soft`, `success`, `warning`, `danger`, `shadow-card`) et meilleure lisibilité des textes secondaires.
+- `HomeView.vue` présente désormais le parcours de sélection en étapes numérotées, avec résumé de configuration, aide contextuelle avant démarrage et messages d'indisponibilité plus actionnables.
+- Les blocs partagés d'exercice (`BlocExerciseHeader`, `BlocExerciseProgress`, `BlocExerciseScoreBadge`) ont été harmonisés pour mieux ressortir en thème clair sans casser le thème sombre.
+- Aucun changement backend, aucune migration et aucun seeder.
+- Validations frontend : `npm run lint`, `npm test`, `npm run build` et `git diff --check` OK.
+
 ## Mise à jour Codex — 18 juin 2026
 
 - Recette validée par Adrien, puis fusion locale dans `master` par le commit `74672e8 merge: intégrer progression et refacto exercices`.
