@@ -1,5 +1,14 @@
 # État courant de LinguaFacil
 
+## Mise à jour Codex — 19 juin 2026 — tests sélecteur
+
+- Branche de travail : `codex/2026-06-19-tests-selecteur-exercices`, créée depuis `origin/master` avec l'autorisation explicite d'Adrien de préparer une autre branche sans merge pendant la recette UX.
+- Objectif : sécuriser la logique de disponibilité du sélecteur d'accueil sans modifier le backend ni le contenu pédagogique.
+- Extraction de la logique `NO_THEME_MODES`, `EXAMPLE_MODES` et `statsSatisfyMode` vers `frontend/src/features/home/availability.ts`, réutilisée par `HomeView.vue`.
+- Ajout de tests Vitest pour vérifier les catalogues sans statistiques, les modes vocabulaire, les modes à phrases d'exemple et les modes sans thème.
+- Aucun changement backend, aucune migration et aucun seeder.
+- Validations frontend : `npm test`, `npm run lint`, `npm run build` et `git diff --check` OK.
+
 ## Mise à jour Codex — 18 juin 2026
 
 - Recette validée par Adrien, puis fusion locale dans `master` par le commit `74672e8 merge: intégrer progression et refacto exercices`.

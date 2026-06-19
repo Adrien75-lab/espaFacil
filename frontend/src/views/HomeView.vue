@@ -58,7 +58,7 @@
         </div>
 
         <!-- Thème + niveau : masqués pour les modes sans thème -->
-        <template v-if="!NO_THEME_MODES.includes(currentMode)">
+        <template v-if="!isNoThemeMode(currentMode)">
           <p class="subtitle" style="margin-top:1rem">Choisissez un thème</p>
           <div class="theme-grid">
             <button
@@ -113,7 +113,7 @@
 
         <button
           class="btn-start"
-          :disabled="currentMode === 'dialogue' ? !selectedScenario : NO_THEME_MODES.includes(currentMode) ? false : !store.currentTheme || !modeAvailable(currentMode)"
+          :disabled="currentMode === 'dialogue' ? !selectedScenario : isNoThemeMode(currentMode) ? false : !store.currentTheme || !modeAvailable(currentMode)"
           @click="goMode"
         >▶ Commencer</button>
 
@@ -142,7 +142,8 @@ import DailyGoalWidget from '@/components/DailyGoalWidget.vue'
 import FlagIcon from '@/components/FlagIcon.vue'
 import LandingHero from '@/components/LandingHero.vue'
 import { getDialogues } from '@/api/content'
-import type { Dialogue, Language, Level, Theme, ThemeLevelStats } from '@/types'
+import type { Dialogue, Language, Level, Theme } from '@/types'
+import { isNoThemeMode, statsSatisfyMode } from '@/features/home/availability'
 
 const store      = useLangStore()
 const auth       = useAuthStore()
@@ -245,33 +246,21 @@ const modes = [
   { key: 'devinette',        emoji: '🔍',   label: 'Devinettes' },
 ]
 
-// Modes qui ne nécessitent pas de thème sélectionné
-const NO_THEME_MODES = ['dialogue', 'survival', 'voyage', 'stories', 'conjugaison']
-
-// Modes qui exploitent les phrases d'exemple plutôt que le vocabulaire brut
-const EXAMPLE_MODES = ['fill-blank', 'sentence-builder']
-
-// Indique si des statistiques de thème couvrent le besoin du mode pour un niveau donné
-function statsSatisfyMode(stats: ThemeLevelStats | undefined, modeKey: string): boolean {
-  if (!stats) return true
-  return EXAMPLE_MODES.includes(modeKey) ? stats.with_example > 0 : stats.words > 0
-}
-
 // Un mode est disponible si le thème/niveau courants ont du contenu adapté
 function modeAvailable(modeKey: string): boolean {
-  if (NO_THEME_MODES.includes(modeKey)) return true
+  if (isNoThemeMode(modeKey)) return true
   return statsSatisfyMode(store.currentTheme?.stats?.[store.currentLevel], modeKey)
 }
 
 // Un thème est disponible s'il a du contenu adapté au mode/niveau courants
 function themeAvailable(theme: Theme): boolean {
-  if (NO_THEME_MODES.includes(currentMode.value)) return true
+  if (isNoThemeMode(currentMode.value)) return true
   return statsSatisfyMode(theme.stats?.[store.currentLevel], currentMode.value)
 }
 
 // Un niveau est disponible si le thème courant a du contenu adapté au mode/niveau
 function levelAvailable(level: Level): boolean {
-  if (NO_THEME_MODES.includes(currentMode.value)) return true
+  if (isNoThemeMode(currentMode.value)) return true
   return statsSatisfyMode(store.currentTheme?.stats?.[level], currentMode.value)
 }
 
