@@ -178772,6 +178772,3348 @@
           "t": "aéroport."
         }
       ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "banque",
+      "level": "debutant",
+      "term": "card",
+      "translation_fr": "carte",
+      "clue": "Carte bancaire en plastique",
+      "example_sentence": "I lost my bank card.",
+      "example_gloss": [
+        {
+          "w": "I",
+          "t": "J'ai"
+        },
+        {
+          "w": "lost",
+          "t": "perdu"
+        },
+        {
+          "w": "my",
+          "t": "ma"
+        },
+        {
+          "w": "bank",
+          "t": "bancaire"
+        },
+        {
+          "w": "card.",
+          "t": "carte."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "banque",
+      "level": "debutant",
+      "term": "to save",
+      "translation_fr": "épargner",
+      "clue": "Mettre de l'argent de côté",
+      "example_sentence": "I want to save money.",
+      "example_gloss": [
+        {
+          "w": "I",
+          "t": "Je"
+        },
+        {
+          "w": "want",
+          "t": "veux"
+        },
+        {
+          "w": "to",
+          "t": "de"
+        },
+        {
+          "w": "save",
+          "t": "épargner"
+        },
+        {
+          "w": "money.",
+          "t": "de l'argent."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "banque",
+      "level": "debutant",
+      "term": "to pay",
+      "translation_fr": "payer",
+      "clue": "Donner de l'argent en échange",
+      "example_sentence": "I need to pay the rent.",
+      "example_gloss": [
+        {
+          "w": "I",
+          "t": "Je"
+        },
+        {
+          "w": "need",
+          "t": "dois"
+        },
+        {
+          "w": "to",
+          "t": "de"
+        },
+        {
+          "w": "pay",
+          "t": "payer"
+        },
+        {
+          "w": "the",
+          "t": "le"
+        },
+        {
+          "w": "rent.",
+          "t": "loyer."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "banque",
+      "level": "debutant",
+      "term": "bill",
+      "translation_fr": "billet",
+      "clue": "Papier-monnaie",
+      "example_sentence": "I need to pay with a bill.",
+      "example_gloss": [
+        {
+          "w": "I",
+          "t": "Je"
+        },
+        {
+          "w": "need",
+          "t": "dois"
+        },
+        {
+          "w": "to",
+          "t": "de"
+        },
+        {
+          "w": "pay",
+          "t": "payer"
+        },
+        {
+          "w": "with",
+          "t": "avec"
+        },
+        {
+          "w": "a",
+          "t": "un"
+        },
+        {
+          "w": "bill.",
+          "t": "billet."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "banque",
+      "level": "debutant",
+      "term": "coin",
+      "translation_fr": "pièce de monnaie",
+      "clue": "Petite pièce métallique",
+      "example_sentence": "I found a coin on the floor.",
+      "example_gloss": [
+        {
+          "w": "I",
+          "t": "J'ai"
+        },
+        {
+          "w": "found",
+          "t": "trouvé"
+        },
+        {
+          "w": "a",
+          "t": "une"
+        },
+        {
+          "w": "coin",
+          "t": "pièce"
+        },
+        {
+          "w": "on",
+          "t": "sur"
+        },
+        {
+          "w": "the",
+          "t": "le"
+        },
+        {
+          "w": "floor.",
+          "t": "sol."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "banque",
+      "level": "debutant",
+      "term": "receipt",
+      "translation_fr": "reçu",
+      "clue": "Preuve d'un paiement",
+      "example_sentence": "Keep your receipt.",
+      "example_gloss": [
+        {
+          "w": "Keep",
+          "t": "Gardez"
+        },
+        {
+          "w": "your",
+          "t": "votre"
+        },
+        {
+          "w": "receipt.",
+          "t": "reçu."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "banque",
+      "level": "debutant",
+      "term": "change",
+      "translation_fr": "monnaie/change",
+      "clue": "Argent rendu après un paiement",
+      "example_sentence": "Do you have any change?",
+      "example_gloss": [
+        {
+          "w": "Do",
+          "t": "Est-ce que"
+        },
+        {
+          "w": "you",
+          "t": "vous"
+        },
+        {
+          "w": "have",
+          "t": "avez"
+        },
+        {
+          "w": "any",
+          "t": "de la"
+        },
+        {
+          "w": "change?",
+          "t": "monnaie ?"
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "banque",
+      "level": "intermediaire",
+      "term": "mortgage",
+      "translation_fr": "hypothèque",
+      "clue": "Prêt pour acheter un logement",
+      "example_sentence": "We got a mortgage for the house.",
+      "example_gloss": [
+        {
+          "w": "We",
+          "t": "Nous"
+        },
+        {
+          "w": "got",
+          "t": "avons obtenu"
+        },
+        {
+          "w": "a",
+          "t": "une"
+        },
+        {
+          "w": "mortgage",
+          "t": "hypothèque"
+        },
+        {
+          "w": "for",
+          "t": "pour"
+        },
+        {
+          "w": "the",
+          "t": "la"
+        },
+        {
+          "w": "house.",
+          "t": "maison."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "banque",
+      "level": "intermediaire",
+      "term": "deposit",
+      "translation_fr": "dépôt",
+      "clue": "Somme d'argent placée en banque",
+      "example_sentence": "I made a deposit this morning.",
+      "example_gloss": [
+        {
+          "w": "I",
+          "t": "J'ai"
+        },
+        {
+          "w": "made",
+          "t": "fait"
+        },
+        {
+          "w": "a",
+          "t": "un"
+        },
+        {
+          "w": "deposit",
+          "t": "dépôt"
+        },
+        {
+          "w": "this",
+          "t": "ce"
+        },
+        {
+          "w": "morning.",
+          "t": "matin."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "banque",
+      "level": "intermediaire",
+      "term": "to withdraw",
+      "translation_fr": "retirer",
+      "clue": "Sortir de l'argent d'un compte",
+      "example_sentence": "I need to withdraw cash.",
+      "example_gloss": [
+        {
+          "w": "I",
+          "t": "Je"
+        },
+        {
+          "w": "need",
+          "t": "dois"
+        },
+        {
+          "w": "to",
+          "t": "de"
+        },
+        {
+          "w": "withdraw",
+          "t": "retirer"
+        },
+        {
+          "w": "cash.",
+          "t": "de l'argent."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "banque",
+      "level": "intermediaire",
+      "term": "balance",
+      "translation_fr": "solde",
+      "clue": "Montant disponible sur un compte",
+      "example_sentence": "My account balance is low.",
+      "example_gloss": [
+        {
+          "w": "My",
+          "t": "Mon"
+        },
+        {
+          "w": "account",
+          "t": "compte"
+        },
+        {
+          "w": "balance",
+          "t": "solde"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "low.",
+          "t": "bas."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "banque",
+      "level": "intermediaire",
+      "term": "statement",
+      "translation_fr": "relevé",
+      "clue": "Document récapitulatif des opérations",
+      "example_sentence": "I check my bank statement every month.",
+      "example_gloss": [
+        {
+          "w": "I",
+          "t": "Je"
+        },
+        {
+          "w": "check",
+          "t": "vérifie"
+        },
+        {
+          "w": "my",
+          "t": "mon"
+        },
+        {
+          "w": "bank",
+          "t": "bancaire"
+        },
+        {
+          "w": "statement",
+          "t": "relevé"
+        },
+        {
+          "w": "every",
+          "t": "chaque"
+        },
+        {
+          "w": "month.",
+          "t": "mois."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "banque",
+      "level": "intermediaire",
+      "term": "fee",
+      "translation_fr": "commission",
+      "clue": "Frais facturés par la banque",
+      "example_sentence": "The bank charges a fee.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "La"
+        },
+        {
+          "w": "bank",
+          "t": "banque"
+        },
+        {
+          "w": "charges",
+          "t": "prélève"
+        },
+        {
+          "w": "a",
+          "t": "une"
+        },
+        {
+          "w": "fee.",
+          "t": "commission."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "banque",
+      "level": "avance",
+      "term": "amortization",
+      "translation_fr": "amortissement",
+      "clue": "Remboursement progressif d'un prêt",
+      "example_sentence": "The amortization period is thirty years.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "La"
+        },
+        {
+          "w": "amortization",
+          "t": "amortissement"
+        },
+        {
+          "w": "period",
+          "t": "période"
+        },
+        {
+          "w": "is",
+          "t": "est de"
+        },
+        {
+          "w": "thirty",
+          "t": "trente"
+        },
+        {
+          "w": "years.",
+          "t": "ans."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "banque",
+      "level": "avance",
+      "term": "asset",
+      "translation_fr": "actif",
+      "clue": "Ensemble des biens détenus",
+      "example_sentence": "Real estate is a valuable asset.",
+      "example_gloss": [
+        {
+          "w": "Real",
+          "t": "L'immobilier"
+        },
+        {
+          "w": "estate",
+          "t": ""
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "a",
+          "t": "un"
+        },
+        {
+          "w": "valuable",
+          "t": "précieux"
+        },
+        {
+          "w": "asset.",
+          "t": "actif."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "banque",
+      "level": "avance",
+      "term": "liability",
+      "translation_fr": "passif",
+      "clue": "Ensemble des dettes",
+      "example_sentence": "Debt is a liability.",
+      "example_gloss": [
+        {
+          "w": "Debt",
+          "t": "La dette"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "a",
+          "t": "un"
+        },
+        {
+          "w": "liability.",
+          "t": "passif."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "banque",
+      "level": "avance",
+      "term": "liquidity",
+      "translation_fr": "liquidité",
+      "clue": "Capacité à convertir en argent",
+      "example_sentence": "The company needs more liquidity.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "L'"
+        },
+        {
+          "w": "company",
+          "t": "entreprise"
+        },
+        {
+          "w": "needs",
+          "t": "a besoin de"
+        },
+        {
+          "w": "more",
+          "t": "plus de"
+        },
+        {
+          "w": "liquidity.",
+          "t": "liquidité."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "banque",
+      "level": "avance",
+      "term": "yield",
+      "translation_fr": "rendement",
+      "clue": "Gain sur un investissement",
+      "example_sentence": "The yield on this investment is good.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "Le"
+        },
+        {
+          "w": "yield",
+          "t": "rendement"
+        },
+        {
+          "w": "on",
+          "t": "de"
+        },
+        {
+          "w": "this",
+          "t": "cet"
+        },
+        {
+          "w": "investment",
+          "t": "investissement"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "good.",
+          "t": "bon."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "banque",
+      "level": "avance",
+      "term": "currency",
+      "translation_fr": "devise",
+      "clue": "Monnaie d'un pays étranger",
+      "example_sentence": "The local currency is the euro.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "La"
+        },
+        {
+          "w": "local",
+          "t": "locale"
+        },
+        {
+          "w": "currency",
+          "t": "devise"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "the",
+          "t": "l'"
+        },
+        {
+          "w": "euro.",
+          "t": "euro."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "banque",
+      "level": "avance",
+      "term": "financial wealth",
+      "translation_fr": "patrimoine financier",
+      "clue": "Ensemble des biens d'une personne",
+      "example_sentence": "He manages his financial wealth carefully.",
+      "example_gloss": [
+        {
+          "w": "He",
+          "t": "Il"
+        },
+        {
+          "w": "manages",
+          "t": "gère"
+        },
+        {
+          "w": "his",
+          "t": "son"
+        },
+        {
+          "w": "financial",
+          "t": "financier"
+        },
+        {
+          "w": "wealth",
+          "t": "patrimoine"
+        },
+        {
+          "w": "carefully.",
+          "t": "prudemment."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "banque",
+      "level": "avance",
+      "term": "deposit/guarantee",
+      "translation_fr": "caution",
+      "clue": "Garantie donnée par un tiers",
+      "example_sentence": "They asked for a security deposit.",
+      "example_gloss": [
+        {
+          "w": "They",
+          "t": "Ils"
+        },
+        {
+          "w": "asked",
+          "t": "ont demandé"
+        },
+        {
+          "w": "for",
+          "t": "pour"
+        },
+        {
+          "w": "a",
+          "t": "une"
+        },
+        {
+          "w": "security",
+          "t": "de sécurité"
+        },
+        {
+          "w": "deposit.",
+          "t": "caution."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "banque",
+      "level": "avance",
+      "term": "defaulting debtor",
+      "translation_fr": "débiteur défaillant",
+      "clue": "Personne en retard de paiement",
+      "example_sentence": "The defaulting debtor lost his house.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "Le"
+        },
+        {
+          "w": "defaulting",
+          "t": "défaillant"
+        },
+        {
+          "w": "debtor",
+          "t": "débiteur"
+        },
+        {
+          "w": "lost",
+          "t": "a perdu"
+        },
+        {
+          "w": "his",
+          "t": "sa"
+        },
+        {
+          "w": "house.",
+          "t": "maison."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "cuisine",
+      "level": "debutant",
+      "term": "knife",
+      "translation_fr": "couteau",
+      "clue": "Ustensile pour couper",
+      "example_sentence": "Be careful with the knife.",
+      "example_gloss": [
+        {
+          "w": "Be",
+          "t": "Fais"
+        },
+        {
+          "w": "careful",
+          "t": "attention"
+        },
+        {
+          "w": "with",
+          "t": "avec"
+        },
+        {
+          "w": "the",
+          "t": "le"
+        },
+        {
+          "w": "knife.",
+          "t": "couteau."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "cuisine",
+      "level": "debutant",
+      "term": "plate",
+      "translation_fr": "assiette",
+      "clue": "Vaisselle pour servir la nourriture",
+      "example_sentence": "Put the food on the plate.",
+      "example_gloss": [
+        {
+          "w": "Put",
+          "t": "Mets"
+        },
+        {
+          "w": "the",
+          "t": "la"
+        },
+        {
+          "w": "food",
+          "t": "nourriture"
+        },
+        {
+          "w": "on",
+          "t": "dans"
+        },
+        {
+          "w": "the",
+          "t": "l'"
+        },
+        {
+          "w": "plate.",
+          "t": "assiette."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "cuisine",
+      "level": "debutant",
+      "term": "salt",
+      "translation_fr": "sel",
+      "clue": "Condiment blanc pour assaisonner",
+      "example_sentence": "Add a pinch of salt.",
+      "example_gloss": [
+        {
+          "w": "Add",
+          "t": "Ajoute"
+        },
+        {
+          "w": "a",
+          "t": "une"
+        },
+        {
+          "w": "pinch",
+          "t": "pincée"
+        },
+        {
+          "w": "of",
+          "t": "de"
+        },
+        {
+          "w": "salt.",
+          "t": "sel."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "cuisine",
+      "level": "debutant",
+      "term": "sugar",
+      "translation_fr": "sucre",
+      "clue": "Substance douce pour édulcorer",
+      "example_sentence": "I take my coffee without sugar.",
+      "example_gloss": [
+        {
+          "w": "I",
+          "t": "Je"
+        },
+        {
+          "w": "take",
+          "t": "prends"
+        },
+        {
+          "w": "my",
+          "t": "mon"
+        },
+        {
+          "w": "coffee",
+          "t": "café"
+        },
+        {
+          "w": "without",
+          "t": "sans"
+        },
+        {
+          "w": "sugar.",
+          "t": "sucre."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "cuisine",
+      "level": "debutant",
+      "term": "oven",
+      "translation_fr": "four",
+      "clue": "Appareil pour cuire les aliments",
+      "example_sentence": "Preheat the oven to 180 degrees.",
+      "example_gloss": [
+        {
+          "w": "Preheat",
+          "t": "Préchauffez"
+        },
+        {
+          "w": "the",
+          "t": "le"
+        },
+        {
+          "w": "oven",
+          "t": "four"
+        },
+        {
+          "w": "to",
+          "t": "à"
+        },
+        {
+          "w": "180",
+          "t": "180"
+        },
+        {
+          "w": "degrees.",
+          "t": "degrés."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "cuisine",
+      "level": "debutant",
+      "term": "saucepan",
+      "translation_fr": "casserole",
+      "clue": "Récipient pour faire bouillir",
+      "example_sentence": "Heat the milk in a saucepan.",
+      "example_gloss": [
+        {
+          "w": "Heat",
+          "t": "Chauffe"
+        },
+        {
+          "w": "the",
+          "t": "le"
+        },
+        {
+          "w": "milk",
+          "t": "lait"
+        },
+        {
+          "w": "in",
+          "t": "dans"
+        },
+        {
+          "w": "a",
+          "t": "une"
+        },
+        {
+          "w": "saucepan.",
+          "t": "casserole."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "cuisine",
+      "level": "debutant",
+      "term": "spoon",
+      "translation_fr": "cuillère",
+      "clue": "Ustensile pour manger la soupe",
+      "example_sentence": "Stir with a spoon.",
+      "example_gloss": [
+        {
+          "w": "Stir",
+          "t": "Remue"
+        },
+        {
+          "w": "with",
+          "t": "avec"
+        },
+        {
+          "w": "a",
+          "t": "une"
+        },
+        {
+          "w": "spoon.",
+          "t": "cuillère."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "cuisine",
+      "level": "intermediaire",
+      "term": "to chop",
+      "translation_fr": "hacher",
+      "clue": "Couper en petits morceaux",
+      "example_sentence": "Chop the garlic finely.",
+      "example_gloss": [
+        {
+          "w": "Chop",
+          "t": "Hachez"
+        },
+        {
+          "w": "the",
+          "t": "l'"
+        },
+        {
+          "w": "garlic",
+          "t": "ail"
+        },
+        {
+          "w": "finely.",
+          "t": "finement."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "cuisine",
+      "level": "intermediaire",
+      "term": "to grate",
+      "translation_fr": "râper",
+      "clue": "Réduire en petits morceaux avec une râpe",
+      "example_sentence": "Grate the cheese over the pasta.",
+      "example_gloss": [
+        {
+          "w": "Grate",
+          "t": "Râpez"
+        },
+        {
+          "w": "the",
+          "t": "le"
+        },
+        {
+          "w": "cheese",
+          "t": "fromage"
+        },
+        {
+          "w": "over",
+          "t": "sur"
+        },
+        {
+          "w": "the",
+          "t": "les"
+        },
+        {
+          "w": "pasta.",
+          "t": "pâtes."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "cuisine",
+      "level": "intermediaire",
+      "term": "to beat",
+      "translation_fr": "battre",
+      "clue": "Mélanger vigoureusement",
+      "example_sentence": "Beat the eggs until fluffy.",
+      "example_gloss": [
+        {
+          "w": "Beat",
+          "t": "Battez"
+        },
+        {
+          "w": "the",
+          "t": "les"
+        },
+        {
+          "w": "eggs",
+          "t": "œufs"
+        },
+        {
+          "w": "until",
+          "t": "jusqu'à ce qu'ils soient"
+        },
+        {
+          "w": "fluffy.",
+          "t": "mousseux."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "cuisine",
+      "level": "intermediaire",
+      "term": "to fry",
+      "translation_fr": "frire",
+      "clue": "Cuire dans l'huile chaude",
+      "example_sentence": "Fry the onions in oil.",
+      "example_gloss": [
+        {
+          "w": "Fry",
+          "t": "Faites frire"
+        },
+        {
+          "w": "the",
+          "t": "les"
+        },
+        {
+          "w": "onions",
+          "t": "oignons"
+        },
+        {
+          "w": "in",
+          "t": "dans"
+        },
+        {
+          "w": "oil.",
+          "t": "l'huile."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "cuisine",
+      "level": "intermediaire",
+      "term": "to drain",
+      "translation_fr": "égoutter",
+      "clue": "Retirer le liquide d'un aliment",
+      "example_sentence": "Drain the pasta when ready.",
+      "example_gloss": [
+        {
+          "w": "Drain",
+          "t": "Égouttez"
+        },
+        {
+          "w": "the",
+          "t": "les"
+        },
+        {
+          "w": "pasta",
+          "t": "pâtes"
+        },
+        {
+          "w": "when",
+          "t": "quand elles sont"
+        },
+        {
+          "w": "ready.",
+          "t": "prêtes."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "cuisine",
+      "level": "intermediaire",
+      "term": "to roast",
+      "translation_fr": "rôtir",
+      "clue": "Cuire à feu vif",
+      "example_sentence": "Roast the chicken for two hours.",
+      "example_gloss": [
+        {
+          "w": "Roast",
+          "t": "Faites rôtir"
+        },
+        {
+          "w": "the",
+          "t": "le"
+        },
+        {
+          "w": "chicken",
+          "t": "poulet"
+        },
+        {
+          "w": "for",
+          "t": "pendant"
+        },
+        {
+          "w": "two",
+          "t": "deux"
+        },
+        {
+          "w": "hours.",
+          "t": "heures."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "cuisine",
+      "level": "avance",
+      "term": "to emulsify",
+      "translation_fr": "émulsionner",
+      "clue": "Mélanger deux liquides non miscibles",
+      "example_sentence": "Emulsify the oil and vinegar.",
+      "example_gloss": [
+        {
+          "w": "Emulsify",
+          "t": "Émulsionnez"
+        },
+        {
+          "w": "the",
+          "t": "l'"
+        },
+        {
+          "w": "oil",
+          "t": "huile"
+        },
+        {
+          "w": "and",
+          "t": "et le"
+        },
+        {
+          "w": "vinegar.",
+          "t": "vinaigre."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "cuisine",
+      "level": "avance",
+      "term": "to flambé",
+      "translation_fr": "flamber",
+      "clue": "Enflammer un plat avec de l'alcool",
+      "example_sentence": "The chef will flambé the dessert.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "Le"
+        },
+        {
+          "w": "chef",
+          "t": "chef"
+        },
+        {
+          "w": "will",
+          "t": "va"
+        },
+        {
+          "w": "flambé",
+          "t": "flamber"
+        },
+        {
+          "w": "the",
+          "t": "le"
+        },
+        {
+          "w": "dessert.",
+          "t": "dessert."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "cuisine",
+      "level": "avance",
+      "term": "to macerate",
+      "translation_fr": "macérer",
+      "clue": "Laisser reposer dans un liquide",
+      "example_sentence": "Macerate the fruit in sugar.",
+      "example_gloss": [
+        {
+          "w": "Macerate",
+          "t": "Faites macérer"
+        },
+        {
+          "w": "the",
+          "t": "les"
+        },
+        {
+          "w": "fruit",
+          "t": "fruits"
+        },
+        {
+          "w": "in",
+          "t": "dans le"
+        },
+        {
+          "w": "sugar.",
+          "t": "sucre."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "cuisine",
+      "level": "avance",
+      "term": "to glaze",
+      "translation_fr": "glacer",
+      "clue": "Recouvrir d'une couche brillante",
+      "example_sentence": "Glaze the pastry with egg.",
+      "example_gloss": [
+        {
+          "w": "Glaze",
+          "t": "Glacez"
+        },
+        {
+          "w": "the",
+          "t": "la"
+        },
+        {
+          "w": "pastry",
+          "t": "pâtisserie"
+        },
+        {
+          "w": "with",
+          "t": "avec de l'"
+        },
+        {
+          "w": "egg.",
+          "t": "œuf."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "cuisine",
+      "level": "avance",
+      "term": "to blanch",
+      "translation_fr": "blanchir",
+      "clue": "Plonger brièvement dans l'eau bouillante",
+      "example_sentence": "Blanch the vegetables for two minutes.",
+      "example_gloss": [
+        {
+          "w": "Blanch",
+          "t": "Blanchissez"
+        },
+        {
+          "w": "the",
+          "t": "les"
+        },
+        {
+          "w": "vegetables",
+          "t": "légumes"
+        },
+        {
+          "w": "for",
+          "t": "pendant"
+        },
+        {
+          "w": "two",
+          "t": "deux"
+        },
+        {
+          "w": "minutes.",
+          "t": "minutes."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "cuisine",
+      "level": "avance",
+      "term": "to marinate",
+      "translation_fr": "mariner",
+      "clue": "Faire tremper dans une préparation",
+      "example_sentence": "Marinate the meat overnight.",
+      "example_gloss": [
+        {
+          "w": "Marinate",
+          "t": "Faites mariner"
+        },
+        {
+          "w": "the",
+          "t": "la"
+        },
+        {
+          "w": "meat",
+          "t": "viande"
+        },
+        {
+          "w": "overnight.",
+          "t": "toute la nuit."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "cuisine",
+      "level": "avance",
+      "term": "garnish",
+      "translation_fr": "garniture",
+      "clue": "Accompagnement d'un plat principal",
+      "example_sentence": "Add a garnish of fresh herbs.",
+      "example_gloss": [
+        {
+          "w": "Add",
+          "t": "Ajoutez"
+        },
+        {
+          "w": "a",
+          "t": "une"
+        },
+        {
+          "w": "garnish",
+          "t": "garniture"
+        },
+        {
+          "w": "of",
+          "t": "de"
+        },
+        {
+          "w": "fresh",
+          "t": "fraîches"
+        },
+        {
+          "w": "herbs.",
+          "t": "herbes."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "cuisine",
+      "level": "avance",
+      "term": "reduction",
+      "translation_fr": "réduction",
+      "clue": "Sauce concentrée par évaporation",
+      "example_sentence": "Make a wine reduction for the sauce.",
+      "example_gloss": [
+        {
+          "w": "Make",
+          "t": "Faites"
+        },
+        {
+          "w": "a",
+          "t": "une"
+        },
+        {
+          "w": "wine",
+          "t": "de vin"
+        },
+        {
+          "w": "reduction",
+          "t": "réduction"
+        },
+        {
+          "w": "for",
+          "t": "pour"
+        },
+        {
+          "w": "the",
+          "t": "la"
+        },
+        {
+          "w": "sauce.",
+          "t": "sauce."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "cuisine",
+      "level": "avance",
+      "term": "soffritto",
+      "translation_fr": "soffritto",
+      "clue": "Base de légumes revenus doucement",
+      "example_sentence": "Start with a soffritto of onion and celery.",
+      "example_gloss": [
+        {
+          "w": "Start",
+          "t": "Commencez"
+        },
+        {
+          "w": "with",
+          "t": "par"
+        },
+        {
+          "w": "a",
+          "t": "un"
+        },
+        {
+          "w": "soffritto",
+          "t": "soffritto"
+        },
+        {
+          "w": "of",
+          "t": "d'"
+        },
+        {
+          "w": "onion",
+          "t": "oignon"
+        },
+        {
+          "w": "and",
+          "t": "et de"
+        },
+        {
+          "w": "celery.",
+          "t": "céleri."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "culture",
+      "level": "debutant",
+      "term": "music",
+      "translation_fr": "musique",
+      "clue": "Son organisé de façon harmonieuse",
+      "example_sentence": "Music brings people together.",
+      "example_gloss": [
+        {
+          "w": "Music",
+          "t": "La musique"
+        },
+        {
+          "w": "brings",
+          "t": "rassemble"
+        },
+        {
+          "w": "people",
+          "t": "les gens"
+        },
+        {
+          "w": "together.",
+          "t": "ensemble."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "culture",
+      "level": "debutant",
+      "term": "cinema",
+      "translation_fr": "cinéma",
+      "clue": "Lieu où l'on projette des films",
+      "example_sentence": "Let's go to the cinema tonight.",
+      "example_gloss": [
+        {
+          "w": "Let's",
+          "t": "Allons"
+        },
+        {
+          "w": "go",
+          "t": ""
+        },
+        {
+          "w": "to",
+          "t": "au"
+        },
+        {
+          "w": "the",
+          "t": ""
+        },
+        {
+          "w": "cinema",
+          "t": "cinéma"
+        },
+        {
+          "w": "tonight.",
+          "t": "ce soir."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "culture",
+      "level": "debutant",
+      "term": "dance",
+      "translation_fr": "danse",
+      "clue": "Art du mouvement du corps",
+      "example_sentence": "She loves classical dance.",
+      "example_gloss": [
+        {
+          "w": "She",
+          "t": "Elle"
+        },
+        {
+          "w": "loves",
+          "t": "adore"
+        },
+        {
+          "w": "classical",
+          "t": "classique"
+        },
+        {
+          "w": "dance.",
+          "t": "la danse."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "culture",
+      "level": "debutant",
+      "term": "book",
+      "translation_fr": "livre",
+      "clue": "Ouvrage imprimé pour la lecture",
+      "example_sentence": "I read a book every week.",
+      "example_gloss": [
+        {
+          "w": "I",
+          "t": "Je"
+        },
+        {
+          "w": "read",
+          "t": "lis"
+        },
+        {
+          "w": "a",
+          "t": "un"
+        },
+        {
+          "w": "book",
+          "t": "livre"
+        },
+        {
+          "w": "every",
+          "t": "chaque"
+        },
+        {
+          "w": "week.",
+          "t": "semaine."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "culture",
+      "level": "debutant",
+      "term": "song",
+      "translation_fr": "chanson",
+      "clue": "Morceau de musique avec paroles",
+      "example_sentence": "This song is very popular.",
+      "example_gloss": [
+        {
+          "w": "This",
+          "t": "Cette"
+        },
+        {
+          "w": "song",
+          "t": "chanson"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "very",
+          "t": "très"
+        },
+        {
+          "w": "popular.",
+          "t": "populaire."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "culture",
+      "level": "debutant",
+      "term": "actor",
+      "translation_fr": "acteur",
+      "clue": "Personne qui joue un rôle",
+      "example_sentence": "The actor won an award.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "L'"
+        },
+        {
+          "w": "actor",
+          "t": "acteur"
+        },
+        {
+          "w": "won",
+          "t": "a gagné"
+        },
+        {
+          "w": "an",
+          "t": "un"
+        },
+        {
+          "w": "award.",
+          "t": "prix."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "culture",
+      "level": "debutant",
+      "term": "photo",
+      "translation_fr": "photo",
+      "clue": "Image prise avec un appareil",
+      "example_sentence": "I took a photo of the sunset.",
+      "example_gloss": [
+        {
+          "w": "I",
+          "t": "J'ai"
+        },
+        {
+          "w": "took",
+          "t": "pris"
+        },
+        {
+          "w": "a",
+          "t": "une"
+        },
+        {
+          "w": "photo",
+          "t": "photo"
+        },
+        {
+          "w": "of",
+          "t": "du"
+        },
+        {
+          "w": "the",
+          "t": ""
+        },
+        {
+          "w": "sunset.",
+          "t": "coucher de soleil."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "culture",
+      "level": "intermediaire",
+      "term": "novel",
+      "translation_fr": "roman",
+      "clue": "Œuvre littéraire narrative longue",
+      "example_sentence": "This novel is a bestseller.",
+      "example_gloss": [
+        {
+          "w": "This",
+          "t": "Ce"
+        },
+        {
+          "w": "novel",
+          "t": "roman"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "a",
+          "t": "un"
+        },
+        {
+          "w": "bestseller.",
+          "t": "best-seller."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "culture",
+      "level": "intermediaire",
+      "term": "poetry",
+      "translation_fr": "poésie",
+      "clue": "Art d'exprimer par les vers",
+      "example_sentence": "She writes beautiful poetry.",
+      "example_gloss": [
+        {
+          "w": "She",
+          "t": "Elle"
+        },
+        {
+          "w": "writes",
+          "t": "écrit"
+        },
+        {
+          "w": "beautiful",
+          "t": "de la belle"
+        },
+        {
+          "w": "poetry.",
+          "t": "poésie."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "culture",
+      "level": "intermediaire",
+      "term": "opera",
+      "translation_fr": "opéra",
+      "clue": "Spectacle alliant musique et théâtre",
+      "example_sentence": "We saw an opera last night.",
+      "example_gloss": [
+        {
+          "w": "We",
+          "t": "Nous"
+        },
+        {
+          "w": "saw",
+          "t": "avons vu"
+        },
+        {
+          "w": "an",
+          "t": "un"
+        },
+        {
+          "w": "opera",
+          "t": "opéra"
+        },
+        {
+          "w": "last",
+          "t": "hier"
+        },
+        {
+          "w": "night.",
+          "t": "soir."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "culture",
+      "level": "intermediaire",
+      "term": "architecture",
+      "translation_fr": "architecture",
+      "clue": "Art de concevoir des bâtiments",
+      "example_sentence": "The architecture of this city is stunning.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "L'"
+        },
+        {
+          "w": "architecture",
+          "t": "architecture"
+        },
+        {
+          "w": "of",
+          "t": "de"
+        },
+        {
+          "w": "this",
+          "t": "cette"
+        },
+        {
+          "w": "city",
+          "t": "ville"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "stunning.",
+          "t": "magnifique."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "culture",
+      "level": "intermediaire",
+      "term": "folklore",
+      "translation_fr": "folklore",
+      "clue": "Traditions populaires d'un peuple",
+      "example_sentence": "The region has a rich folklore.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "La"
+        },
+        {
+          "w": "region",
+          "t": "région"
+        },
+        {
+          "w": "has",
+          "t": "a"
+        },
+        {
+          "w": "a",
+          "t": "un"
+        },
+        {
+          "w": "rich",
+          "t": "riche"
+        },
+        {
+          "w": "folklore.",
+          "t": "folklore."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "culture",
+      "level": "intermediaire",
+      "term": "gallery",
+      "translation_fr": "galerie",
+      "clue": "Lieu d'exposition d'œuvres d'art",
+      "example_sentence": "We visited an art gallery.",
+      "example_gloss": [
+        {
+          "w": "We",
+          "t": "Nous"
+        },
+        {
+          "w": "visited",
+          "t": "avons visité"
+        },
+        {
+          "w": "an",
+          "t": "une"
+        },
+        {
+          "w": "art",
+          "t": "d'art"
+        },
+        {
+          "w": "gallery.",
+          "t": "galerie."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "culture",
+      "level": "avance",
+      "term": "avant-garde",
+      "translation_fr": "avant-garde",
+      "clue": "Mouvement artistique novateur",
+      "example_sentence": "This artist is avant-garde.",
+      "example_gloss": [
+        {
+          "w": "This",
+          "t": "Cet"
+        },
+        {
+          "w": "artist",
+          "t": "artiste"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "avant-garde.",
+          "t": "avant-garde."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "culture",
+      "level": "avance",
+      "term": "patron",
+      "translation_fr": "mécène",
+      "clue": "Personne qui finance les arts",
+      "example_sentence": "The patron funded the museum.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "Le"
+        },
+        {
+          "w": "patron",
+          "t": "mécène"
+        },
+        {
+          "w": "funded",
+          "t": "a financé"
+        },
+        {
+          "w": "the",
+          "t": "le"
+        },
+        {
+          "w": "museum.",
+          "t": "musée."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "culture",
+      "level": "avance",
+      "term": "playwright",
+      "translation_fr": "dramaturge",
+      "clue": "Auteur de pièces de théâtre",
+      "example_sentence": "Shakespeare was a famous playwright.",
+      "example_gloss": [
+        {
+          "w": "Shakespeare",
+          "t": "Shakespeare"
+        },
+        {
+          "w": "was",
+          "t": "était"
+        },
+        {
+          "w": "a",
+          "t": "un"
+        },
+        {
+          "w": "famous",
+          "t": "célèbre"
+        },
+        {
+          "w": "playwright.",
+          "t": "dramaturge."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "culture",
+      "level": "avance",
+      "term": "baroque",
+      "translation_fr": "baroque",
+      "clue": "Style artistique du XVIIe siècle",
+      "example_sentence": "The church has a baroque style.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "L'"
+        },
+        {
+          "w": "church",
+          "t": "église"
+        },
+        {
+          "w": "has",
+          "t": "a"
+        },
+        {
+          "w": "a",
+          "t": "un"
+        },
+        {
+          "w": "baroque",
+          "t": "baroque"
+        },
+        {
+          "w": "style.",
+          "t": "style."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "culture",
+      "level": "avance",
+      "term": "canvas",
+      "translation_fr": "toile",
+      "clue": "Support pour la peinture",
+      "example_sentence": "The artist painted on a large canvas.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "L'"
+        },
+        {
+          "w": "artist",
+          "t": "artiste"
+        },
+        {
+          "w": "painted",
+          "t": "a peint"
+        },
+        {
+          "w": "on",
+          "t": "sur"
+        },
+        {
+          "w": "a",
+          "t": "une"
+        },
+        {
+          "w": "large",
+          "t": "grande"
+        },
+        {
+          "w": "canvas.",
+          "t": "toile."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "culture",
+      "level": "avance",
+      "term": "restoration",
+      "translation_fr": "restauration",
+      "clue": "Réparation d'œuvres d'art anciennes",
+      "example_sentence": "The restoration of the painting took years.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "La"
+        },
+        {
+          "w": "restoration",
+          "t": "restauration"
+        },
+        {
+          "w": "of",
+          "t": "du"
+        },
+        {
+          "w": "the",
+          "t": ""
+        },
+        {
+          "w": "painting",
+          "t": "tableau"
+        },
+        {
+          "w": "took",
+          "t": "a pris"
+        },
+        {
+          "w": "years.",
+          "t": "des années."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "culture",
+      "level": "avance",
+      "term": "curator",
+      "translation_fr": "commissaire d'exposition",
+      "clue": "Responsable d'une exposition",
+      "example_sentence": "The curator organized a new exhibit.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "Le"
+        },
+        {
+          "w": "curator",
+          "t": "commissaire"
+        },
+        {
+          "w": "organized",
+          "t": "a organisé"
+        },
+        {
+          "w": "a",
+          "t": "une"
+        },
+        {
+          "w": "new",
+          "t": "nouvelle"
+        },
+        {
+          "w": "exhibit.",
+          "t": "exposition."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "culture",
+      "level": "avance",
+      "term": "cultural heritage",
+      "translation_fr": "patrimoine culturel",
+      "clue": "Ensemble des biens culturels",
+      "example_sentence": "We must protect our cultural heritage.",
+      "example_gloss": [
+        {
+          "w": "We",
+          "t": "Nous"
+        },
+        {
+          "w": "must",
+          "t": "devons"
+        },
+        {
+          "w": "protect",
+          "t": "protéger"
+        },
+        {
+          "w": "our",
+          "t": "notre"
+        },
+        {
+          "w": "cultural",
+          "t": "culturel"
+        },
+        {
+          "w": "heritage.",
+          "t": "patrimoine."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "culture",
+      "level": "avance",
+      "term": "muralism",
+      "translation_fr": "muralisme",
+      "clue": "Mouvement de peintures murales",
+      "example_sentence": "Muralism is a Mexican art movement.",
+      "example_gloss": [
+        {
+          "w": "Muralism",
+          "t": "Le muralisme"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "a",
+          "t": "un"
+        },
+        {
+          "w": "Mexican",
+          "t": "mexicain"
+        },
+        {
+          "w": "art",
+          "t": "artistique"
+        },
+        {
+          "w": "movement.",
+          "t": "mouvement."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "ecole",
+      "level": "debutant",
+      "term": "class",
+      "translation_fr": "classe",
+      "clue": "Salle de cours ou groupe d'élèves",
+      "example_sentence": "The class starts at nine.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "La"
+        },
+        {
+          "w": "class",
+          "t": "classe"
+        },
+        {
+          "w": "starts",
+          "t": "commence"
+        },
+        {
+          "w": "at",
+          "t": "à"
+        },
+        {
+          "w": "nine.",
+          "t": "neuf heures."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "ecole",
+      "level": "debutant",
+      "term": "blackboard",
+      "translation_fr": "tableau",
+      "clue": "Surface pour écrire en classe",
+      "example_sentence": "The teacher wrote on the blackboard.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "Le"
+        },
+        {
+          "w": "teacher",
+          "t": "professeur"
+        },
+        {
+          "w": "wrote",
+          "t": "a écrit"
+        },
+        {
+          "w": "on",
+          "t": "sur"
+        },
+        {
+          "w": "the",
+          "t": "le"
+        },
+        {
+          "w": "blackboard.",
+          "t": "tableau."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "ecole",
+      "level": "debutant",
+      "term": "eraser",
+      "translation_fr": "gomme",
+      "clue": "Objet pour effacer les erreurs",
+      "example_sentence": "I need an eraser.",
+      "example_gloss": [
+        {
+          "w": "I",
+          "t": "J'ai"
+        },
+        {
+          "w": "need",
+          "t": "besoin d'"
+        },
+        {
+          "w": "an",
+          "t": "une"
+        },
+        {
+          "w": "eraser.",
+          "t": "gomme."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "ecole",
+      "level": "debutant",
+      "term": "grade",
+      "translation_fr": "note",
+      "clue": "Résultat d'une évaluation",
+      "example_sentence": "I got a good grade.",
+      "example_gloss": [
+        {
+          "w": "I",
+          "t": "J'ai"
+        },
+        {
+          "w": "got",
+          "t": "eu"
+        },
+        {
+          "w": "a",
+          "t": "une"
+        },
+        {
+          "w": "good",
+          "t": "bonne"
+        },
+        {
+          "w": "grade.",
+          "t": "note."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "ecole",
+      "level": "intermediaire",
+      "term": "recess",
+      "translation_fr": "récréation",
+      "clue": "Pause entre les cours",
+      "example_sentence": "The children play during recess.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "Les"
+        },
+        {
+          "w": "children",
+          "t": "enfants"
+        },
+        {
+          "w": "play",
+          "t": "jouent"
+        },
+        {
+          "w": "during",
+          "t": "pendant"
+        },
+        {
+          "w": "recess.",
+          "t": "la récréation."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "ecole",
+      "level": "avance",
+      "term": "tenured teacher",
+      "translation_fr": "professeur titulaire",
+      "clue": "Enseignant de rang élevé",
+      "example_sentence": "She became a tenured teacher.",
+      "example_gloss": [
+        {
+          "w": "She",
+          "t": "Elle"
+        },
+        {
+          "w": "became",
+          "t": "est devenue"
+        },
+        {
+          "w": "a",
+          "t": ""
+        },
+        {
+          "w": "tenured",
+          "t": "titulaire"
+        },
+        {
+          "w": "teacher.",
+          "t": "professeur."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "ecole",
+      "level": "avance",
+      "term": "school record",
+      "translation_fr": "dossier scolaire",
+      "clue": "Ensemble des résultats d'un élève",
+      "example_sentence": "Your school record is excellent.",
+      "example_gloss": [
+        {
+          "w": "Your",
+          "t": "Ton"
+        },
+        {
+          "w": "school",
+          "t": "scolaire"
+        },
+        {
+          "w": "record",
+          "t": "dossier"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "excellent.",
+          "t": "excellent."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "ecole",
+      "level": "avance",
+      "term": "enrollment",
+      "translation_fr": "inscription",
+      "clue": "Formalité pour s'inscrire à un cours",
+      "example_sentence": "Enrollment opens in September.",
+      "example_gloss": [
+        {
+          "w": "Enrollment",
+          "t": "L'inscription"
+        },
+        {
+          "w": "opens",
+          "t": "ouvre"
+        },
+        {
+          "w": "in",
+          "t": "en"
+        },
+        {
+          "w": "September.",
+          "t": "septembre."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "ecole",
+      "level": "avance",
+      "term": "teacher",
+      "translation_fr": "enseignant",
+      "clue": "Personne dont le métier est d'enseigner",
+      "example_sentence": "The teacher explained the lesson.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "L'"
+        },
+        {
+          "w": "teacher",
+          "t": "enseignant"
+        },
+        {
+          "w": "explained",
+          "t": "a expliqué"
+        },
+        {
+          "w": "the",
+          "t": "la"
+        },
+        {
+          "w": "lesson.",
+          "t": "leçon."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "ecole",
+      "level": "avance",
+      "term": "curriculum",
+      "translation_fr": "programme d'études",
+      "clue": "Organisation des matières",
+      "example_sentence": "The curriculum changed this year.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "Le"
+        },
+        {
+          "w": "curriculum",
+          "t": "programme d'études"
+        },
+        {
+          "w": "changed",
+          "t": "a changé"
+        },
+        {
+          "w": "this",
+          "t": "cette"
+        },
+        {
+          "w": "year.",
+          "t": "année."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "ecole",
+      "level": "avance",
+      "term": "elective",
+      "translation_fr": "matière optionnelle",
+      "clue": "Matière non obligatoire",
+      "example_sentence": "Art is an elective this year.",
+      "example_gloss": [
+        {
+          "w": "Art",
+          "t": "L'art"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "an",
+          "t": "une"
+        },
+        {
+          "w": "elective",
+          "t": "matière optionnelle"
+        },
+        {
+          "w": "this",
+          "t": "cette"
+        },
+        {
+          "w": "year.",
+          "t": "année."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "ecole",
+      "level": "avance",
+      "term": "educator",
+      "translation_fr": "pédagogue",
+      "clue": "Spécialiste de l'enseignement",
+      "example_sentence": "He is a renowned educator.",
+      "example_gloss": [
+        {
+          "w": "He",
+          "t": "Il"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "a",
+          "t": "un"
+        },
+        {
+          "w": "renowned",
+          "t": "renommé"
+        },
+        {
+          "w": "educator.",
+          "t": "pédagogue."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "ecole",
+      "level": "avance",
+      "term": "exam session",
+      "translation_fr": "session d'examen",
+      "clue": "Période officielle d'examens",
+      "example_sentence": "The exam session starts next week.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "La"
+        },
+        {
+          "w": "exam",
+          "t": "d'examen"
+        },
+        {
+          "w": "session",
+          "t": "session"
+        },
+        {
+          "w": "starts",
+          "t": "commence"
+        },
+        {
+          "w": "next",
+          "t": "la semaine"
+        },
+        {
+          "w": "week.",
+          "t": "prochaine."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "ecole",
+      "level": "avance",
+      "term": "faculty meeting",
+      "translation_fr": "conseil des enseignants",
+      "clue": "Réunion du corps professoral",
+      "example_sentence": "The faculty meeting is on Friday.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "Le"
+        },
+        {
+          "w": "faculty",
+          "t": "des enseignants"
+        },
+        {
+          "w": "meeting",
+          "t": "conseil"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "on",
+          "t": ""
+        },
+        {
+          "w": "Friday.",
+          "t": "vendredi."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "emotions",
+      "level": "debutant",
+      "term": "content",
+      "translation_fr": "content",
+      "clue": "Satisfait, de bonne humeur",
+      "example_sentence": "She felt content with her life.",
+      "example_gloss": [
+        {
+          "w": "She",
+          "t": "Elle"
+        },
+        {
+          "w": "felt",
+          "t": "se sentait"
+        },
+        {
+          "w": "content",
+          "t": "contente"
+        },
+        {
+          "w": "with",
+          "t": "de"
+        },
+        {
+          "w": "her",
+          "t": "sa"
+        },
+        {
+          "w": "life.",
+          "t": "vie."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "emotions",
+      "level": "debutant",
+      "term": "fear",
+      "translation_fr": "peur",
+      "clue": "Émotion face au danger",
+      "example_sentence": "Fear can be paralyzing.",
+      "example_gloss": [
+        {
+          "w": "Fear",
+          "t": "La peur"
+        },
+        {
+          "w": "can",
+          "t": "peut"
+        },
+        {
+          "w": "be",
+          "t": "être"
+        },
+        {
+          "w": "paralyzing.",
+          "t": "paralysante."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "emotions",
+      "level": "debutant",
+      "term": "love",
+      "translation_fr": "amour",
+      "clue": "Sentiment profond d'affection",
+      "example_sentence": "Love is a powerful emotion.",
+      "example_gloss": [
+        {
+          "w": "Love",
+          "t": "L'amour"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "a",
+          "t": "une"
+        },
+        {
+          "w": "powerful",
+          "t": "puissante"
+        },
+        {
+          "w": "emotion.",
+          "t": "émotion."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "emotions",
+      "level": "debutant",
+      "term": "joy",
+      "translation_fr": "joie",
+      "clue": "Sentiment de grand bonheur",
+      "example_sentence": "The children were full of joy.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "Les"
+        },
+        {
+          "w": "children",
+          "t": "enfants"
+        },
+        {
+          "w": "were",
+          "t": "étaient"
+        },
+        {
+          "w": "full",
+          "t": "pleins"
+        },
+        {
+          "w": "of",
+          "t": "de"
+        },
+        {
+          "w": "joy.",
+          "t": "joie."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "emotions",
+      "level": "debutant",
+      "term": "to cry",
+      "translation_fr": "pleurer",
+      "clue": "Verser des larmes",
+      "example_sentence": "The baby started to cry.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "Le"
+        },
+        {
+          "w": "baby",
+          "t": "bébé"
+        },
+        {
+          "w": "started",
+          "t": "a commencé"
+        },
+        {
+          "w": "to",
+          "t": "à"
+        },
+        {
+          "w": "cry.",
+          "t": "pleurer."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "emotions",
+      "level": "debutant",
+      "term": "to laugh",
+      "translation_fr": "rire",
+      "clue": "Exprimer de la joie en riant",
+      "example_sentence": "They made me laugh.",
+      "example_gloss": [
+        {
+          "w": "They",
+          "t": "Ils"
+        },
+        {
+          "w": "made",
+          "t": "m'ont fait"
+        },
+        {
+          "w": "me",
+          "t": ""
+        },
+        {
+          "w": "laugh.",
+          "t": "rire."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "emotions",
+      "level": "debutant",
+      "term": "tired",
+      "translation_fr": "fatigué",
+      "clue": "Qui manque d'énergie",
+      "example_sentence": "I am very tired today.",
+      "example_gloss": [
+        {
+          "w": "I",
+          "t": "Je"
+        },
+        {
+          "w": "am",
+          "t": "suis"
+        },
+        {
+          "w": "very",
+          "t": "très"
+        },
+        {
+          "w": "tired",
+          "t": "fatigué"
+        },
+        {
+          "w": "today.",
+          "t": "aujourd'hui."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "emotions",
+      "level": "intermediaire",
+      "term": "frustrated",
+      "translation_fr": "frustré",
+      "clue": "Déçu de ne pas atteindre son objectif",
+      "example_sentence": "He felt frustrated with the result.",
+      "example_gloss": [
+        {
+          "w": "He",
+          "t": "Il"
+        },
+        {
+          "w": "felt",
+          "t": "se sentait"
+        },
+        {
+          "w": "frustrated",
+          "t": "frustré"
+        },
+        {
+          "w": "with",
+          "t": "par"
+        },
+        {
+          "w": "the",
+          "t": "le"
+        },
+        {
+          "w": "result.",
+          "t": "résultat."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "emotions",
+      "level": "intermediaire",
+      "term": "relieved",
+      "translation_fr": "soulagé",
+      "clue": "Libéré d'une inquiétude",
+      "example_sentence": "I was relieved to hear the news.",
+      "example_gloss": [
+        {
+          "w": "I",
+          "t": "J'étais"
+        },
+        {
+          "w": "was",
+          "t": ""
+        },
+        {
+          "w": "relieved",
+          "t": "soulagé"
+        },
+        {
+          "w": "to",
+          "t": "d'"
+        },
+        {
+          "w": "hear",
+          "t": "entendre"
+        },
+        {
+          "w": "the",
+          "t": "la"
+        },
+        {
+          "w": "news.",
+          "t": "nouvelle."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "emotions",
+      "level": "intermediaire",
+      "term": "jealous",
+      "translation_fr": "jaloux",
+      "clue": "Qui ressent de l'envie",
+      "example_sentence": "He is jealous of his brother.",
+      "example_gloss": [
+        {
+          "w": "He",
+          "t": "Il"
+        },
+        {
+          "w": "is",
+          "t": "est"
+        },
+        {
+          "w": "jealous",
+          "t": "jaloux"
+        },
+        {
+          "w": "of",
+          "t": "de"
+        },
+        {
+          "w": "his",
+          "t": "son"
+        },
+        {
+          "w": "brother.",
+          "t": "frère."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "emotions",
+      "level": "intermediaire",
+      "term": "grateful",
+      "translation_fr": "reconnaissant",
+      "clue": "Qui éprouve de la gratitude",
+      "example_sentence": "I am grateful for your help.",
+      "example_gloss": [
+        {
+          "w": "I",
+          "t": "Je"
+        },
+        {
+          "w": "am",
+          "t": "suis"
+        },
+        {
+          "w": "grateful",
+          "t": "reconnaissant"
+        },
+        {
+          "w": "for",
+          "t": "pour"
+        },
+        {
+          "w": "your",
+          "t": "votre"
+        },
+        {
+          "w": "help.",
+          "t": "aide."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "emotions",
+      "level": "intermediaire",
+      "term": "confused",
+      "translation_fr": "confus",
+      "clue": "Qui ne comprend pas bien",
+      "example_sentence": "She looked confused.",
+      "example_gloss": [
+        {
+          "w": "She",
+          "t": "Elle"
+        },
+        {
+          "w": "looked",
+          "t": "avait l'air"
+        },
+        {
+          "w": "confused.",
+          "t": "confuse."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "emotions",
+      "level": "intermediaire",
+      "term": "excited",
+      "translation_fr": "enthousiaste",
+      "clue": "Plein d'espoir et d'enthousiasme",
+      "example_sentence": "The kids are excited about the trip.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "Les"
+        },
+        {
+          "w": "kids",
+          "t": "enfants"
+        },
+        {
+          "w": "are",
+          "t": "sont"
+        },
+        {
+          "w": "excited",
+          "t": "enthousiastes"
+        },
+        {
+          "w": "about",
+          "t": "pour"
+        },
+        {
+          "w": "the",
+          "t": "le"
+        },
+        {
+          "w": "trip.",
+          "t": "voyage."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "emotions",
+      "level": "avance",
+      "term": "nostalgic",
+      "translation_fr": "nostalgique",
+      "clue": "Qui regrette le passé",
+      "example_sentence": "The song made me feel nostalgic.",
+      "example_gloss": [
+        {
+          "w": "The",
+          "t": "La"
+        },
+        {
+          "w": "song",
+          "t": "chanson"
+        },
+        {
+          "w": "made",
+          "t": "m'a rendu"
+        },
+        {
+          "w": "me",
+          "t": ""
+        },
+        {
+          "w": "feel",
+          "t": ""
+        },
+        {
+          "w": "nostalgic.",
+          "t": "nostalgique."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "emotions",
+      "level": "avance",
+      "term": "apathetic",
+      "translation_fr": "apathique",
+      "clue": "Qui manque d'intérêt ou d'émotion",
+      "example_sentence": "He seemed apathetic about everything.",
+      "example_gloss": [
+        {
+          "w": "He",
+          "t": "Il"
+        },
+        {
+          "w": "seemed",
+          "t": "semblait"
+        },
+        {
+          "w": "apathetic",
+          "t": "apathique"
+        },
+        {
+          "w": "about",
+          "t": "envers"
+        },
+        {
+          "w": "everything.",
+          "t": "tout."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "emotions",
+      "level": "avance",
+      "term": "euphoric",
+      "translation_fr": "euphorique",
+      "clue": "Qui ressent une joie intense",
+      "example_sentence": "She was euphoric after winning.",
+      "example_gloss": [
+        {
+          "w": "She",
+          "t": "Elle"
+        },
+        {
+          "w": "was",
+          "t": "était"
+        },
+        {
+          "w": "euphoric",
+          "t": "euphorique"
+        },
+        {
+          "w": "after",
+          "t": "après avoir"
+        },
+        {
+          "w": "winning.",
+          "t": "gagné."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "emotions",
+      "level": "avance",
+      "term": "deep unease",
+      "translation_fr": "inquiétude profonde",
+      "clue": "Agitation intérieure et malaise",
+      "example_sentence": "A deep unease filled the room.",
+      "example_gloss": [
+        {
+          "w": "A",
+          "t": "Une"
+        },
+        {
+          "w": "deep",
+          "t": "profonde"
+        },
+        {
+          "w": "unease",
+          "t": "inquiétude"
+        },
+        {
+          "w": "filled",
+          "t": "a rempli"
+        },
+        {
+          "w": "the",
+          "t": "la"
+        },
+        {
+          "w": "room.",
+          "t": "pièce."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "emotions",
+      "level": "avance",
+      "term": "bitterness",
+      "translation_fr": "amertume",
+      "clue": "Sentiment de tristesse profonde",
+      "example_sentence": "He spoke with bitterness.",
+      "example_gloss": [
+        {
+          "w": "He",
+          "t": "Il"
+        },
+        {
+          "w": "spoke",
+          "t": "a parlé"
+        },
+        {
+          "w": "with",
+          "t": "avec"
+        },
+        {
+          "w": "bitterness.",
+          "t": "amertume."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "emotions",
+      "level": "avance",
+      "term": "rejoicing",
+      "translation_fr": "allégresse",
+      "clue": "Joie vive et partagée",
+      "example_sentence": "There was great rejoicing.",
+      "example_gloss": [
+        {
+          "w": "There",
+          "t": "Il y avait"
+        },
+        {
+          "w": "was",
+          "t": ""
+        },
+        {
+          "w": "great",
+          "t": "une grande"
+        },
+        {
+          "w": "rejoicing.",
+          "t": "allégresse."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "emotions",
+      "level": "avance",
+      "term": "grief",
+      "translation_fr": "désolation",
+      "clue": "Chagrin sans consolation possible",
+      "example_sentence": "She was overcome with grief.",
+      "example_gloss": [
+        {
+          "w": "She",
+          "t": "Elle"
+        },
+        {
+          "w": "was",
+          "t": "était"
+        },
+        {
+          "w": "overcome",
+          "t": "submergée"
+        },
+        {
+          "w": "with",
+          "t": "par la"
+        },
+        {
+          "w": "grief.",
+          "t": "désolation."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "emotions",
+      "level": "avance",
+      "term": "resentment",
+      "translation_fr": "ressentiment",
+      "clue": "Rancœur persistante",
+      "example_sentence": "He harbored deep resentment.",
+      "example_gloss": [
+        {
+          "w": "He",
+          "t": "Il"
+        },
+        {
+          "w": "harbored",
+          "t": "nourrissait"
+        },
+        {
+          "w": "deep",
+          "t": "un profond"
+        },
+        {
+          "w": "resentment.",
+          "t": "ressentiment."
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "theme_key": "emotions",
+      "level": "avance",
+      "term": "fulfillment",
+      "translation_fr": "plénitude",
+      "clue": "Sentiment d'accomplissement total",
+      "example_sentence": "She found fulfillment in her work.",
+      "example_gloss": [
+        {
+          "w": "She",
+          "t": "Elle"
+        },
+        {
+          "w": "found",
+          "t": "a trouvé"
+        },
+        {
+          "w": "fulfillment",
+          "t": "la plénitude"
+        },
+        {
+          "w": "in",
+          "t": "dans"
+        },
+        {
+          "w": "her",
+          "t": "son"
+        },
+        {
+          "w": "work.",
+          "t": "travail."
+        }
+      ]
     }
   ],
   "grammar_tips": [
