@@ -71,4 +71,10 @@ button[type=submit]:disabled { opacity: 0.5; cursor: not-allowed; }
 .switch a { color: #818cf8; text-decoration: none; }
 .btn-back { background: none; border: none; color: #666; cursor: pointer;
   font-size: 0.85rem; display: block; margin: 0.75rem auto 0; }
+
+@media (max-width: 480px) {
+  .auth-page { padding: 1rem .5rem; }
+  .auth-card { padding: 1.25rem; }
+  h2 { font-size: 1.2rem; }
+}
 </style>

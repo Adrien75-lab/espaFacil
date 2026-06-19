@@ -370,4 +370,28 @@ h1 { font-size: 1.6rem; margin-bottom: 1rem; }
 .btn-back2  { background: var(--bg-card); border: 2px solid var(--border); color: var(--dim); border-radius: 8px; padding: 0.65rem 1.4rem; cursor: pointer; }
 .btn-home   { background: var(--bg-card); border: 2px solid var(--border); color: var(--dim); border-radius: 8px; padding: 0.65rem 1.4rem; cursor: pointer; }
 .btn-replay:hover, .btn-back2:hover, .btn-home:hover { opacity: 0.8; }
+
+@media (max-width: 480px) {
+  h1 { font-size: 1.25rem; }
+  .verb-grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 0.4rem; }
+  .verb-card { padding: 0.55rem 0.4rem; }
+  .verb-inf { font-size: 0.88rem; }
+  .fiche-verb { font-size: 1.4rem; }
+  .fiche-pronoun { min-width: 80px; font-size: 0.88rem; }
+  .fiche-form { font-size: 0.95rem; }
+  .fiche-row { padding: 0.6rem 0.9rem; gap: 0.6rem; }
+  .pronoun-label { font-size: 1.5rem; }
+  .pronoun-hint { font-size: 1.15rem; }
+  .pronoun-card { padding: 1rem; }
+  .btn-start { padding: 0.65rem 1.2rem; font-size: 0.92rem; }
+  .fiche-actions { flex-direction: column; }
+  .fiche-actions .btn-start,
+  .fiche-actions .btn-other-tense { width: 100%; text-align: center; }
+  .result-title { font-size: 1.5rem; }
+  .result-actions { flex-direction: column; }
+  .btn-replay, .btn-back2, .btn-home { width: 100%; text-align: center; }
+  .r-pron { min-width: 70px; font-size: 0.82rem; }
+  .input-row { flex-direction: column; }
+  .btn-validate { width: 100%; }
+}
 </style>

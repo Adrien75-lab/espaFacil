@@ -305,4 +305,16 @@ onMounted(async () => {
 .results-actions { display: flex; gap: 1rem; justify-content: center; }
 .btn-primary   { background: var(--accent); color: white; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
 .btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
+
+@media (max-width: 480px) {
+  .dictee { padding: 1rem 0.75rem; }
+  .input-wrap { flex-direction: column; }
+  .btn-validate { width: 100%; }
+  .play-row { flex-direction: column; align-items: center; }
+  .play-btn { width: 100%; justify-content: center; }
+  .feedback-block { flex-direction: column; align-items: flex-start; gap: 0.6rem; padding: 0.75rem 1rem; }
+  .btn-next { width: 100%; text-align: center; }
+  .results-actions { flex-direction: column; }
+  .btn-primary, .btn-secondary { width: 100%; text-align: center; padding: 0.65rem 1rem; }
+}
 </style>

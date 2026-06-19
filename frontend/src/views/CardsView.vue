@@ -173,4 +173,16 @@ onMounted(async () => {
 .results-actions { display: flex; gap: 1rem; justify-content: center; }
 .btn-primary  { background: var(--accent); color: white; border: none; border-radius: 8px; padding: 0.7rem 1.8rem; font-size: 1rem; cursor: pointer; }
 .btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: 0.7rem 1.8rem; font-size: 1rem; cursor: pointer; }
+
+@media (max-width: 480px) {
+  .cards { padding: 1rem 0.75rem; }
+  .word-term { font-size: 1.7rem; }
+  .word-fr { font-size: 1.3rem; }
+  .card { height: 190px; }
+  .card-face { padding: 1rem; }
+  .verdict-row { flex-direction: column; gap: 0.5rem; }
+  .btn-review, .btn-known { padding: 0.6rem; font-size: 0.9rem; }
+  .results-actions { flex-direction: column; }
+  .btn-primary, .btn-secondary { width: 100%; text-align: center; padding: 0.65rem 1rem; }
+}
 </style>

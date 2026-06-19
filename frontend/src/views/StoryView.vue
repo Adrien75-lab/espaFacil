@@ -492,5 +492,21 @@ function nextQcm() {
 .btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
 .empty { text-align: center; color: var(--muted); padding: 2rem; }
 
+@media (max-width: 480px) {
+  .story-view { padding: 1rem .5rem; }
+  .story-grid { grid-template-columns: 1fr; }
+  .story-card { padding: 1rem .75rem; }
+  .card-emoji { font-size: 2rem; }
+  .story-text { padding: 1rem; font-size: .95rem; max-height: 340px; }
+  .btn-continue { width: 100%; padding: .65rem; }
+  .btn-qcm { width: 100%; padding: .65rem 1rem; }
+  .question-card { padding: 1rem; }
+  .results-emoji { font-size: 3rem; }
+  .score-text { font-size: 1rem; }
+  .btn-primary, .btn-secondary { width: 100%; }
+  .results-actions { flex-direction: column; }
+  .qcm-next-row { flex-direction: column; align-items: stretch; gap: .75rem; }
+  .btn-next { margin-left: 0; width: 100%; }
+}
 
 </style>

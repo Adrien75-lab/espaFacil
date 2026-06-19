@@ -409,5 +409,17 @@ watch(done, (val) => {
 .btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
 .empty { text-align: center; color: var(--muted); padding: 2rem; }
 
-
+@media (max-width: 480px) {
+  .dialogue { padding: 1rem 0.5rem; }
+  .scenario-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.5rem; }
+  .scenario-card { padding: 1rem 0.75rem; }
+  .sc-emoji { font-size: 1.8rem; }
+  .chat-log { max-height: 280px; }
+  .bubble { max-width: 85%; }
+  .results-emoji { font-size: 3rem; }
+  .score-text { font-size: 1rem; }
+  .btn-primary, .btn-secondary { width: 100%; text-align: center; }
+  .results-actions { flex-direction: column; }
+  .btn-next { width: 100%; }
+}
 </style>

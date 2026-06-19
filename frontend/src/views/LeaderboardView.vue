@@ -109,4 +109,13 @@ onMounted(async () => {
 .rank-1 .lb-rank { color: #fbbf24; }
 .rank-2 .lb-rank { color: #94a3b8; }
 .rank-3 .lb-rank { color: #fb923c; }
+
+@media (max-width: 480px) {
+  .lb-header h2 { font-size: 1.1rem; }
+  .my-rank-card { padding: .7rem .9rem; }
+  .my-rank-num { font-size: 1.3rem; }
+  .lb-row { padding: .55rem .75rem; gap: .5rem; }
+  .lb-name { font-size: .88rem; }
+  .lb-xp { font-size: .88rem; }
+}
 </style>

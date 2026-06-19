@@ -224,4 +224,13 @@ watch(() => store.currentLang, () => {
 .ql-text { flex: 1; font-size: .82rem; color: var(--text); font-weight: 600; }
 .ql-tts  { background: none; border: none; cursor: pointer; font-size: .85rem; opacity: .5; }
 .ql-tts:hover { opacity: 1; }
+
+@media (max-width: 480px) {
+  .flash-card { padding: 1.25rem 1rem; min-height: 160px; }
+  .card-text { font-size: 1.15rem; }
+  .nav-row { flex-direction: column; }
+  .nav-btn { width: 100%; text-align: center; }
+  .quick-row { gap: .5rem; padding: .5rem .75rem; }
+  .ql-fr, .ql-text { font-size: .75rem; }
+}
 </style>

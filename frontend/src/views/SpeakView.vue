@@ -367,4 +367,13 @@ onUnmounted(() => recognition?.abort())
 .wr-sim   { font-size: .8rem; font-weight: 700; color: var(--muted2); white-space: nowrap; }
 .btn-primary   { background: var(--accent); color: white; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
 .btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
+
+@media (max-width: 480px) {
+  .speak { padding: 1rem 0.75rem; }
+  .word-term { font-size: 1.8rem; }
+  .word-zone { padding: 1rem 0.75rem; }
+  .mic-btn { padding: 0.9rem 1.8rem; font-size: 0.95rem; }
+  .results-actions { flex-direction: column; }
+  .btn-primary, .btn-secondary { width: 100%; text-align: center; padding: 0.65rem 1rem; }
+}
 </style>

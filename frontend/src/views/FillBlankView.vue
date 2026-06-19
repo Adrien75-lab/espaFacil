@@ -335,4 +335,13 @@ onUnmounted(() => document.removeEventListener('click', handleOutsideClick))
 .results-actions { display: flex; gap: 1rem; justify-content: center; }
 .btn-primary  { background: var(--accent); color: white; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
 .btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
+
+@media (max-width: 480px) {
+  .fill { padding: 1rem 0.75rem; }
+  .sentence-box { font-size: 1.05rem; padding: 1rem 0.75rem; }
+  .feedback-row { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+  .btn-next { width: 100%; text-align: center; }
+  .results-actions { flex-direction: column; }
+  .btn-primary, .btn-secondary { width: 100%; text-align: center; padding: 0.65rem 1rem; }
+}
 </style>

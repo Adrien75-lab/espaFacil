@@ -212,4 +212,15 @@ onMounted(async () => {
 .results-actions { display: flex; gap: 1rem; justify-content: center; }
 .btn-primary   { background: var(--accent); color: white; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
 .btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
+
+@media (max-width: 480px) {
+  .listen { padding: 1rem 0.5rem; }
+  .play-btn { padding: 0.75rem 1.5rem; font-size: 0.95rem; }
+  .play-icon { font-size: 1.2rem; }
+  .reveal-term { font-size: 1.3rem; }
+  .results-emoji { font-size: 3rem; }
+  .score-text { font-size: 1.1rem; }
+  .btn-primary, .btn-secondary { width: 100%; text-align: center; }
+  .results-actions { flex-direction: column; }
+}
 </style>

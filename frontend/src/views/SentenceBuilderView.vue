@@ -339,4 +339,18 @@ onMounted(async () => {
 .btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
 
 .no-sentences { text-align: center; padding: 3rem 1rem; color: var(--muted); }
+
+@media (max-width: 480px) {
+  .builder { padding: 1rem 0.5rem; }
+  .fr-hint { padding: 0.75rem 0.75rem; }
+  .fr-text { font-size: 1rem; }
+  .word-token { padding: 5px 10px; font-size: 0.85rem; }
+  .btn-validate { padding: 0.45rem 1.2rem; font-size: 0.9rem; }
+  .btn-primary, .btn-secondary { width: 100%; padding: 0.65rem; text-align: center; }
+  .results-actions { flex-direction: column; }
+  .score-text { font-size: 1.1rem; }
+  .results-emoji { font-size: 2.8rem; }
+  .feedback-row { flex-direction: column; gap: 0.5rem; }
+  .btn-next { width: 100%; text-align: center; }
+}
 </style>

@@ -393,4 +393,17 @@ onMounted(() => {
 .prog-pct   { color: var(--accent); font-weight: 700; font-size: .85rem; }
 .prog-bar   { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
 .prog-fill  { height: 100%; background: var(--accent); border-radius: 4px; transition: width .5s; }
+
+@media (max-width: 480px) {
+  .setup-card { padding: 1.25rem 1rem; }
+  .setup-icon { font-size: 2.2rem; }
+  .setup-card h2 { font-size: 1.15rem; }
+  .cnt-days { font-size: 2.5rem; }
+  .countdown-card { padding: 1rem; }
+  .lang-chip { font-size: .75rem; padding: .25rem .55rem; }
+  .btn-start { padding: .7rem; font-size: .92rem; }
+  .task-btn { padding: .6rem .75rem; gap: .5rem; }
+  .task-icon { font-size: 1.1rem; }
+  .phase-tag { font-size: .7rem; padding: .15rem .45rem; }
+}
 </style>

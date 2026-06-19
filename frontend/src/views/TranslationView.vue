@@ -262,4 +262,15 @@ onMounted(async () => {
 .btn-secondary { background: var(--bg-card); border: 2px solid var(--border); color: var(--dim);
   border-radius: 8px; padding: 0.65rem 1.5rem; cursor: pointer; }
 .btn-primary:hover, .btn-secondary:hover { opacity: 0.8; }
+
+@media (max-width: 480px) {
+  .transl-wrap { padding: 1rem 0.5rem; }
+  .word-term { font-size: 1.7rem; }
+  .feedback-icon { font-size: 1.6rem; }
+  .feedback-block { padding: 1rem; }
+  .input-row { flex-direction: column; }
+  .btn-validate { width: 100%; text-align: center; }
+  .btn-next { width: 100%; text-align: center; }
+  .btn-primary, .btn-secondary { width: 100%; text-align: center; }
+}
 </style>

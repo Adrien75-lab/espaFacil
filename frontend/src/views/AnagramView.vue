@@ -282,4 +282,14 @@ onMounted(async () => {
 .results-actions { display: flex; gap: .75rem; justify-content: center; flex-wrap: wrap; }
 .btn-primary   { background: var(--accent); color: white; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
 .btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
+
+@media (max-width: 480px) {
+  .anagram { padding: 1rem 0.75rem; }
+  .hint { font-size: 1.15rem; }
+  .tile { width: 36px; height: 36px; font-size: 0.95rem; }
+  .action-row { flex-direction: column; }
+  .btn-clear, .btn-validate, .btn-next { width: 100%; text-align: center; }
+  .results-actions { flex-direction: column; }
+  .btn-primary, .btn-secondary { width: 100%; text-align: center; padding: 0.65rem 1rem; }
+}
 </style>

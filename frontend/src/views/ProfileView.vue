@@ -411,4 +411,15 @@ onMounted(async () => {
 .goal-opt { background: var(--bg-card); border: 2px solid var(--border); border-radius: 20px;
   color: var(--muted2); padding: .3rem .9rem; font-size: .85rem; cursor: pointer; transition: border-color .15s; }
 .goal-opt:hover, .goal-opt.active { border-color: var(--accent); color: #a5b4fc; }
+
+@media (max-width: 480px) {
+  .profile { padding: 1rem 0.75rem 2rem; }
+  .profile-header h1 { font-size: 1.3rem; }
+  .avatar { width: 56px; height: 56px; font-size: 1.4rem; }
+  .stat-value { font-size: 1.3rem; }
+  .lang-row { grid-template-columns: 1.5fr 1fr 1fr; font-size: 0.8rem; }
+  .lang-row .lang-name-cell:nth-child(n+4) { display: none; }
+  .header-row span:nth-child(n+4) { display: none; }
+  .radar-svg { width: 200px; height: 200px; }
+}
 </style>

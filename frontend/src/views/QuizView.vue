@@ -224,4 +224,10 @@ onMounted(async () => {
   from { opacity: 0; transform: translateY(8px) scale(.96); }
   to { opacity: 1; transform: translateY(0) scale(1); }
 }
+@media (max-width: 480px) {
+  .quiz { padding: 1rem 0.75rem; }
+  .word-term { font-size: 1.5rem; }
+  .choice-btn { padding: 0.65rem 0.75rem; font-size: 0.9rem; }
+  .btn-next { padding: 0.65rem; font-size: 0.9rem; }
+}
 </style>

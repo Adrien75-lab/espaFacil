@@ -189,4 +189,14 @@ onMounted(async () => {
 .results-actions { display: flex; gap: 1rem; justify-content: center; }
 .btn-primary   { background: var(--accent); color: white; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
 .btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
+
+@media (max-width: 480px) {
+  .review { padding: 1rem .5rem; }
+  .word-term { font-size: 1.5rem; }
+  .empty-icon { font-size: 2.4rem; }
+  .results-emoji { font-size: 3rem; }
+  .score-text { font-size: 1rem; }
+  .btn-primary, .btn-secondary { width: 100%; }
+  .results-actions { flex-direction: column; }
+}
 </style>

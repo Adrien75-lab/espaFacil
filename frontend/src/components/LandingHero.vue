@@ -86,4 +86,13 @@ const features = [
 .cta-final { padding: 2.5rem 1rem 1rem; }
 .cta-final h2 { font-size: 1.6rem; margin-bottom: 0.5rem; }
 .cta-final p { color: var(--muted); margin-bottom: 1.25rem; max-width: 480px; margin-left: auto; margin-right: auto; }
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 1.8rem; }
+  .hero-tagline { font-size: 0.95rem; }
+  .btn { padding: 0.75rem 1.2rem; font-size: 0.9rem; }
+  .hero-actions { flex-direction: column; align-items: center; }
+  .features h2, .cta-final h2 { font-size: 1.25rem; }
+  .feature-grid { grid-template-columns: 1fr; }
+}
 </style>
