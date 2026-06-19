@@ -1,5 +1,23 @@
 # État courant de LinguaFacil
 
+## Mise à jour Claude — 19 juin 2026 — branches en attente de recette
+
+### Branches Claude (3) — en attente de recette Adrien
+
+| Branche | Contenu | Statut |
+|---------|---------|--------|
+| `claude/2026-06-17-rgpd` | RGPD : mentions légales, confidentialité, CGU, checkbox inscription, suppression de compte, footer | En attente de recette |
+| `claude/2026-06-18-enrichir-themes` | Fallback `loadWords(minCount=8)` : si un niveau a < 8 mots, complète avec les autres niveaux du même thème | En attente de recette |
+| `claude/2026-06-19-responsive-mobile` | Responsive mobile : media queries (max-width: 480px) sur 23 fichiers (auth bar, landing, home, quiz, profil, tous exercices) | En attente de recette |
+
+### Branches Claude fusionnées
+
+| Branche | PR | Contenu |
+|---------|-----|---------|
+| `claude/2026-06-18-pwa` | #11 (merged) | PWA installable, workbox 7.0.0, cache offline |
+
+---
+
 ## Mise à jour Codex — 19 juin 2026 — passage de relais Claude
 
 - Mise à jour ajoutée directement sur `master` à la demande d'Adrien pour que Claude reprenne le contexte sans ambiguïté.
