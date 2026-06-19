@@ -1,5 +1,14 @@
 # État courant de LinguaFacil
 
+## Mise à jour Codex — 19 juin 2026 — parcours guidé utilisateur
+
+- Branche de travail : `codex/2026-06-19-parcours-guide-utilisateur`, créée depuis `origin/master`.
+- Objectif : rendre l'expérience d'accueil plus claire et guider l'utilisateur vers une première leçon courte.
+- `HomeView.vue` affiche désormais un panneau "Commencez en 3 étapes simples" avant le choix de langue.
+- Après sélection d'une langue, un bloc "Suivez un parcours simple" propose trois étapes conseillées : Découvrir (`quiz`), Comprendre (`fill-blank`) et Pratiquer (`dialogue`).
+- Aucun changement backend, aucune migration et aucun seeder.
+- Validations frontend : `npm test`, `npm run lint`, `npm run build` et `git diff --check` OK. Capture non générée : aucun navigateur CLI disponible dans l'environnement.
+
 ## Mise à jour Codex — 18 juin 2026
 
 - Recette validée par Adrien, puis fusion locale dans `master` par le commit `74672e8 merge: intégrer progression et refacto exercices`.

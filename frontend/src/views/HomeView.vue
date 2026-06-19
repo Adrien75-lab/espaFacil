@@ -17,6 +17,28 @@
 
       <!-- Langue non choisie : grille des 14 langues -->
       <template v-if="!store.currentLang">
+        <section class="start-guide" aria-labelledby="start-guide-title">
+          <p class="eyebrow">Parcours conseillé</p>
+          <h2 id="start-guide-title">Commencez en 3 étapes simples</h2>
+          <div class="guide-steps">
+            <div class="guide-step">
+              <span class="step-number">1</span>
+              <strong>Choisissez une langue</strong>
+              <small>La démo démarre en espagnol débutant.</small>
+            </div>
+            <div class="guide-step">
+              <span class="step-number">2</span>
+              <strong>Faites une leçon courte</strong>
+              <small>QCM ou cartes pour découvrir les premiers mots.</small>
+            </div>
+            <div class="guide-step">
+              <span class="step-number">3</span>
+              <strong>Revenez demain</strong>
+              <small>La révision consolide ce que vous avez appris.</small>
+            </div>
+          </div>
+        </section>
+
         <p class="subtitle">Choisissez une langue</p>
         <div class="lang-grid">
           <button
@@ -39,8 +61,32 @@
         <button class="btn-back" @click="store.currentLang = null">← Changer de langue</button>
         <h2><FlagIcon :lang="store.currentLang.code" :size="28" /> {{ store.currentLang.name }}</h2>
 
+        <section class="lesson-guide" aria-labelledby="lesson-guide-title">
+          <div class="lesson-guide-copy">
+            <p class="eyebrow">Que faire maintenant ?</p>
+            <h3 id="lesson-guide-title">Suivez un parcours simple</h3>
+            <p>Si vous débutez, choisissez d’abord un mode court. Vous pourrez ensuite passer aux phrases, dialogues et histoires.</p>
+          </div>
+          <div class="recommendation-grid">
+            <button
+              v-for="step in recommendedSteps"
+              :key="step.mode"
+              type="button"
+              class="recommendation-card"
+              :class="{ active: currentMode === step.mode, locked: isGuestModeLocked(step.mode) }"
+              :title="isGuestModeLocked(step.mode) ? '🔒 Créez un compte gratuit pour débloquer cette étape' : step.help"
+              @click="applyRecommendation(step.mode)"
+            >
+              <span class="recommendation-rank">{{ step.rank }}</span>
+              <span class="recommendation-emoji">{{ step.emoji }}</span>
+              <strong>{{ step.title }}</strong>
+              <small>{{ isGuestModeLocked(step.mode) ? 'Compte requis' : step.help }}</small>
+            </button>
+          </div>
+        </section>
+
         <!-- Sélecteur de mode (en premier) -->
-        <p class="subtitle">Mode de jeu :</p>
+        <p class="subtitle">Ou choisissez directement un mode :</p>
         <div class="mode-row">
           <button
             v-for="m in modes"
@@ -194,6 +240,12 @@ function onLevelClick(level: Level) {
   store.setLevel(level)
 }
 
+function applyRecommendation(modeKey: string) {
+  if (isGuestModeLocked(modeKey)) { router.push('/register'); return }
+  currentMode.value = modeKey
+  if (store.currentLevel !== DEMO_LEVEL) store.setLevel(DEMO_LEVEL)
+}
+
 // Une fois l'état de connexion connu, ramène les visiteurs non connectés
 // sur la combinaison de démo (langue/niveau) si une session précédente a laissé d'autres valeurs
 let authChecked = false
@@ -224,6 +276,12 @@ const levels: { key: Level; label: string }[] = [
   { key: 'debutant',      label: '🌱 Débutant' },
   { key: 'intermediaire', label: '🌿 Intermédiaire' },
   { key: 'avance',        label: '🌳 Avancé' },
+]
+
+const recommendedSteps = [
+  { rank: '1', mode: 'quiz', emoji: '🧠', title: 'Découvrir', help: 'Idéal pour apprendre les premiers mots.' },
+  { rank: '2', mode: 'fill-blank', emoji: '✏️', title: 'Comprendre', help: 'Complétez une phrase avec le bon mot.' },
+  { rank: '3', mode: 'dialogue', emoji: '💬', title: 'Pratiquer', help: 'Utilisez la langue dans une situation réelle.' },
 ]
 
 const modes = [
@@ -303,6 +361,19 @@ function goMode() {
 h1 { font-size: 2.2rem; margin-bottom: 0.25rem; }
 h2 { margin: 1rem 0 0.5rem; font-size: 1.4rem; }
 .subtitle { color: var(--muted); margin-bottom: 1.25rem; }
+.eyebrow { color: var(--accent); font-size: .78rem; font-weight: 800; letter-spacing: .08em; margin: 0 0 .35rem; text-transform: uppercase; }
+.start-guide, .lesson-guide { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; margin: 1rem 0 1.5rem; padding: 1rem; text-align: left; }
+.start-guide h2, .lesson-guide h3 { color: var(--text); margin: 0 0 .75rem; }
+.guide-steps, .recommendation-grid { display: grid; gap: .75rem; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.guide-step { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: .8rem; display: grid; gap: .25rem; }
+.step-number, .recommendation-rank { align-items: center; background: var(--accent); border-radius: 999px; color: #fff; display: inline-flex; font-size: .8rem; font-weight: 800; height: 1.6rem; justify-content: center; width: 1.6rem; }
+.guide-step strong, .recommendation-card strong { color: var(--text); }
+.guide-step small, .recommendation-card small, .lesson-guide-copy p { color: var(--muted2); line-height: 1.45; }
+.lesson-guide { display: grid; gap: 1rem; }
+.recommendation-card { background: var(--bg); border: 2px solid var(--border); border-radius: 14px; color: var(--dim); cursor: pointer; display: grid; gap: .35rem; padding: .85rem; text-align: left; transition: border-color .2s, transform .15s; }
+.recommendation-card:hover, .recommendation-card.active { border-color: var(--accent); color: var(--text); transform: translateY(-1px); }
+.recommendation-card.locked { opacity: .55; }
+.recommendation-emoji { font-size: 1.5rem; }
 
 .lang-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 0.75rem; }
 .lang-card { background: var(--bg-card); border: 2px solid var(--border); border-radius: 10px; padding: 1rem 0.5rem;
@@ -362,4 +433,8 @@ h2 { margin: 1rem 0 0.5rem; font-size: 1.4rem; }
 .review-btn   { background: var(--accent)20; color: #a5b4fc; border: 2px solid var(--accent); }
 .difficult-btn { background: #ef444420; color: #fca5a5; border: 2px solid #ef4444; }
 .srs-btn:hover { opacity: 0.8; }
+
+@media (max-width: 700px) {
+  .guide-steps, .recommendation-grid { grid-template-columns: 1fr; }
+}
 </style>
