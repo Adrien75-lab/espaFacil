@@ -263,7 +263,7 @@ watch(done, (val) => {
 })
 
 onMounted(async () => {
-  if (!store.words.length) await store.loadWords()
+  if (!store.words.length) await store.loadWords(8)
   const withSentence = store.words.filter(w => w.example_sentence).sort(() => Math.random() - 0.5)
   cards.value = buildCards(withSentence)
   document.addEventListener('click', handleOutsideClick)

@@ -207,7 +207,7 @@ function restart() {
 }
 
 onMounted(async () => {
-  if (!store.words.length) await store.loadWords()
+  if (!store.words.length) await store.loadWords(8)
   pool.value  = store.words.filter(w => w.term.length >= 3 && w.term.length <= 12)
   cards.value = shuffle(pool.value).slice(0, 15)
   if (cards.value.length) loadCard()

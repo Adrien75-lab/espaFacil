@@ -147,7 +147,7 @@ async function load() {
 }
 
 onMounted(async () => {
-  if (!store.currentLang) await store.loadWords()
+  if (!store.currentLang) await store.loadWords(8)
   await load()
 })
 </script>

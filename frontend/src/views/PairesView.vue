@@ -194,7 +194,7 @@ watch(done, (val) => {
 })
 
 onMounted(async () => {
-  if (!store.words.length) await store.loadWords()
+  if (!store.words.length) await store.loadWords(8)
   pool.value = store.words
   buildCards(pool.value)
 })

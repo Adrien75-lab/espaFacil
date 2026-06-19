@@ -159,7 +159,7 @@ watch(done, (val) => {
 })
 
 onMounted(async () => {
-  if (!store.words.length) await store.loadWords()
+  if (!store.words.length) await store.loadWords(8)
   cards.value = [...store.words].sort(() => Math.random() - 0.5)
   buildChoices()
   setTimeout(speak, 600)
