@@ -1,5 +1,22 @@
 # État courant de LinguaFacil
 
+## Mise à jour Codex — 19 juin 2026 — passage de relais Claude
+
+- Mise à jour ajoutée directement sur `master` à la demande d'Adrien pour que Claude reprenne le contexte sans ambiguïté.
+- Plusieurs branches Codex du 19 juin 2026 sont poussées sur `origin` mais **non fusionnées** et **non validées en recette**. Ne les merge pas sans validation explicite d'Adrien.
+- Branches fonctionnelles à tester en priorité :
+  - `codex/2026-06-19-ux-theme-clair-selecteur` : amélioration UX du thème clair, sélecteur plus lisible, messages d'indisponibilité, blocs d'exercice harmonisés.
+  - `codex/2026-06-19-tests-selecteur-exercices` : extraction/test de la logique de disponibilité du sélecteur, sans changement produit majeur attendu.
+  - `codex/2026-06-19-aide-lecture-langues-non-latines` : aide activable dans le mode Phrases pour afficher translittération/traduction sous les choix en japonais, chinois, coréen, arabe, hindi et russe.
+  - `codex/2026-06-19-parcours-guide-utilisateur` : panneaux de guidage sur `HomeView` pour expliquer comment démarrer et proposer Découvrir → Comprendre → Pratiquer.
+- Branches documentaires/audit utiles :
+  - `codex/2026-06-19-audit-contenu-pedagogique` : script `scripts/audit_content_coverage.mjs` et rapport `docs/audits/content-coverage.md`. Résultat observé : 14 langues, 433 thèmes, 6380 mots, 100% exemples/glosses, mais risque UX sur les écritures non latines.
+  - `codex/2026-06-19-doc-recette-branches` : fiche `docs/recettes/2026-06-19-recette-branches-codex.md` pour guider Adrien dans la recette des branches.
+  - `codex/2026-06-19-doc-mise-en-production` : document `docs/production/preparation-mise-en-production.md` avec planning déploiement, bêta privée/publique, checklist technique et critères produit.
+- Ordre conseillé de recette : UX thème clair/sélecteur, parcours guidé, aide lecture non latine, tests sélecteur, puis audit/docs.
+- Important : Adrien a explicitement rappelé que la recette Product Owner doit être validée avant PR/merge. Ne considère jamais des tests automatisés comme une validation de recette.
+- Aucun changement de base de données n'est porté par ces branches du 19 juin : migrations non, seeders non.
+
 ## Mise à jour Codex — 18 juin 2026
 
 - Recette validée par Adrien, puis fusion locale dans `master` par le commit `74672e8 merge: intégrer progression et refacto exercices`.
