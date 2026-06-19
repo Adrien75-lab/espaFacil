@@ -65,6 +65,13 @@
       <div v-if="current.transliteration" class="rom-hint">{{ current.transliteration }}</div>
 
       <!-- Choix -->
+      <div v-if="choiceHelpAvailable" class="choice-help-panel">
+        <p>Besoin d’un coup de pouce pour lire les choix ?</p>
+        <button class="choice-help-toggle" type="button" @click="choiceHelpVisible = !choiceHelpVisible">
+          {{ choiceHelpVisible ? 'Masquer l’aide' : 'Afficher l’aide' }}
+        </button>
+      </div>
+
       <div class="choices">
         <button
           v-for="c in choices"
@@ -74,7 +81,11 @@
           :disabled="answered"
           @click="answer(c)"
         >
-          {{ c.term }}
+          <span class="choice-term" :class="{ rtl: store.currentLang?.is_rtl }">{{ c.term }}</span>
+          <span v-if="choiceHelpVisible && choiceHasHelp(c)" class="choice-reading-help">
+            <span v-if="c.transliteration" class="choice-transliteration">{{ c.transliteration }}</span>
+            <span class="choice-translation">{{ c.translation_fr }}</span>
+          </span>
         </button>
       </div>
 
@@ -111,6 +122,7 @@ import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { postReview } from '@/api/reviews'
 import type { Word } from '@/types'
 import { speakText } from '@/utils/speech'
+import { needsReadingSupport } from '@/utils/readingSupport'
 import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 const store  = useLangStore()
@@ -129,11 +141,15 @@ const selected     = ref<Word | null>(null)
 const showClue     = ref(false)
 const done         = ref(false)
 const activePopover = ref<number | null>(null)
+const choiceHelpVisible = ref(false)
 
 const total   = computed(() => cards.value.length)
 const current = computed(() => cards.value[idx.value].word)
 const choices = computed(() => cards.value[idx.value].choices)
 const isCorrect = computed(() => selected.value?.id === current.value.id)
+const choiceHelpAvailable = computed(() =>
+  needsReadingSupport(store.currentLang?.code) && choices.value.some(choiceHasHelp),
+)
 
 // Build interactive tokens from gloss
 interface Token {
@@ -187,6 +203,10 @@ function togglePopover(ti: number, e: Event) {
   activePopover.value = activePopover.value === ti ? null : ti
 }
 function closePopover() { activePopover.value = null }
+
+function choiceHasHelp(choice: Word): boolean {
+  return Boolean(choice.transliteration || choice.translation_fr)
+}
 
 function choiceClass(c: Word) {
   if (!answered.value) return {}
@@ -310,9 +330,22 @@ onUnmounted(() => document.removeEventListener('click', handleOutsideClick))
   padding: .4rem 1rem; color: #f5d080; font-size: .85rem; margin-bottom: .5rem; }
 .rom-hint { text-align: center; color: #666; font-style: italic; font-size: .85rem; margin-bottom: .75rem; }
 
+.choice-help-panel { display: flex; align-items: center; justify-content: space-between; gap: .75rem;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: .65rem .85rem;
+  color: var(--muted2); font-size: .85rem; margin-bottom: .75rem; }
+.choice-help-panel p { margin: 0; }
+.choice-help-toggle { background: transparent; border: 2px solid var(--accent); border-radius: 999px; color: var(--accent);
+  cursor: pointer; font-weight: 700; padding: .35rem .8rem; white-space: nowrap; }
+.choice-help-toggle:hover { background: var(--bg-hover); color: var(--text); }
 .choices { display: flex; flex-direction: column; gap: .65rem; margin-bottom: 1rem; }
 .choice-btn { background: var(--bg-card); border: 2px solid #444; border-radius: 10px;
-  color: #ddd; padding: .75rem 1rem; font-size: 1rem; cursor: pointer; text-align: center; transition: border-color .15s; }
+  color: #ddd; padding: .75rem 1rem; font-size: 1rem; cursor: pointer; text-align: center; transition: border-color .15s;
+  display: flex; flex-direction: column; align-items: center; gap: .3rem; }
+.choice-term { font-weight: 700; }
+.choice-term.rtl { direction: rtl; }
+.choice-reading-help { display: flex; flex-direction: column; gap: .15rem; font-size: .82rem; line-height: 1.25; color: var(--muted2); }
+.choice-transliteration { color: #a5b4fc; font-weight: 700; }
+.choice-translation { color: #86efac; }
 .choice-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--text); }
 .choice-btn.correct { background: #14532d40; border-color: #22c55e; color: #86efac; }
 .choice-btn.wrong   { background: #7f1d1d40; border-color: #ef4444; color: #fca5a5; }
@@ -335,4 +368,9 @@ onUnmounted(() => document.removeEventListener('click', handleOutsideClick))
 .results-actions { display: flex; gap: 1rem; justify-content: center; }
 .btn-primary  { background: var(--accent); color: white; border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
 .btn-secondary { background: var(--border); color: var(--dim); border: none; border-radius: 8px; padding: .7rem 1.8rem; font-size: 1rem; cursor: pointer; }
+
+@media (max-width: 520px) {
+  .choice-help-panel { align-items: stretch; flex-direction: column; }
+  .choice-help-toggle { width: 100%; }
+}
 </style>
