@@ -1,5 +1,13 @@
 # État courant de LinguaFacil
 
+## Mise à jour Codex — 19 juin 2026 — fiche recette branches
+
+- Branche de travail : `codex/2026-06-19-doc-recette-branches`, créée depuis `origin/master`.
+- Ajout de `docs/recettes/2026-06-19-recette-branches-codex.md` pour guider la recette des branches Codex en attente.
+- La fiche couvre les branches `tests-selecteur-exercices`, `audit-contenu-pedagogique`, `aide-lecture-langues-non-latines` et rappelle aussi la branche UX thème clair/sélecteur.
+- Aucun changement applicatif, aucune migration et aucun seeder.
+- Validation : `git diff --check` OK.
+
 ## Mise à jour Codex — 18 juin 2026
 
 - Recette validée par Adrien, puis fusion locale dans `master` par le commit `74672e8 merge: intégrer progression et refacto exercices`.
