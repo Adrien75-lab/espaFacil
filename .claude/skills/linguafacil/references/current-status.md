@@ -1,5 +1,14 @@
 # État courant de LinguaFacil
 
+## Mise à jour Codex — 19 juin 2026 — audit contenu pédagogique
+
+- Branche de travail : `codex/2026-06-19-audit-contenu-pedagogique`, créée depuis `origin/master` avec l'autorisation explicite d'Adrien de préparer une autre branche sans merge pendant les recettes en cours.
+- Ajout du script reproductible `scripts/audit_content_coverage.mjs` pour analyser `backend/database/data/linguafacil.json`.
+- Rapport généré dans `docs/audits/content-coverage.md` : 14 langues, 433 thèmes, 6380 mots, 100% de phrases d'exemple et 100% de glosses mot à mot.
+- Aucun blocage de contenu détecté pour les modes vocabulaire ou les modes à phrases d'exemple, mais risque UX identifié pour les écritures non latines : les choix de réponse restent peu intuitifs sans translittération/traduction visible, notamment en japonais.
+- Aucun changement backend runtime, aucune migration et aucun seeder.
+- Validation : `node scripts/audit_content_coverage.mjs` et `git diff --check` OK.
+
 ## Mise à jour Codex — 18 juin 2026
 
 - Recette validée par Adrien, puis fusion locale dans `master` par le commit `74672e8 merge: intégrer progression et refacto exercices`.
