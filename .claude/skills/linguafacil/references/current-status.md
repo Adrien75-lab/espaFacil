@@ -1,5 +1,13 @@
 # État courant de LinguaFacil
 
+## Mise à jour Codex — 19 juin 2026 — documentation mise en production
+
+- Branche de travail : `codex/2026-06-19-doc-mise-en-production`, créée depuis `origin/master`.
+- Ajout de `docs/production/preparation-mise-en-production.md` pour cadrer les délais réalistes, la bêta privée, la bêta publique, la checklist technique et les critères produit avant ouverture.
+- Le document recommande de valider les branches UX en attente avant une branche dédiée `pre-deploiement`.
+- Aucun changement applicatif, aucune migration et aucun seeder.
+- Validation : `git diff --check` OK.
+
 ## Mise à jour Codex — 18 juin 2026
 
 - Recette validée par Adrien, puis fusion locale dans `master` par le commit `74672e8 merge: intégrer progression et refacto exercices`.
