@@ -14,7 +14,6 @@ use App\Http\Controllers\Api\ReviewController;
 use App\Http\Controllers\Api\StoryController;
 use App\Http\Controllers\Api\TodayController;
 use App\Http\Controllers\Api\WordController;
-use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -27,11 +26,21 @@ Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth:sanc
 Route::get('/user', [AuthController::class, 'user'])->middleware('auth:sanctum');
 
 // Email verification
-Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
-    $request->fulfill();
+Route::get('/email/verify/{id}/{hash}', function (Request $request, string $id, string $hash) {
+    $user = \App\Models\User::findOrFail($id);
+
+    if (! hash_equals(sha1($user->getEmailForVerification()), $hash)) {
+        return response()->json(['message' => 'Lien de vérification invalide.'], 403);
+    }
+
+    if (! $user->hasVerifiedEmail()) {
+        $user->markEmailAsVerified();
+        event(new \Illuminate\Auth\Events\Verified($user));
+    }
+
     $frontendUrl = env('FRONTEND_URL', 'http://localhost:5173');
     return redirect($frontendUrl . '/email-verified');
-})->middleware(['auth:sanctum', 'signed'])->name('verification.verify');
+})->middleware('signed')->name('verification.verify');
 
 Route::post('/email/resend', function (Request $request) {
     if ($request->user()->hasVerifiedEmail()) {
