@@ -40,21 +40,22 @@
 - Validations frontend : `npm run lint`, `npm test`, `npm run build` et `git diff --check` OK.
 - Migration : non. Seeder : non.
 
-## Mise à jour Claude — 19 juin 2026 — branches en attente de recette
+## Mise à jour Claude — 20 juin 2026 20h — état des branches
 
-### Branches Claude (3) — en attente de recette Adrien
+### Branches Claude fusionnées dans master
+
+| Branche | PR | Contenu | Date recette |
+|---------|-----|---------|-------------|
+| `claude/2026-06-18-pwa` | #11 | PWA installable, workbox 7.0.0, cache offline | 18 juin 2026 |
+| `claude/2026-06-18-enrichir-themes` | #16 | Fallback `loadWords(minCount=8)` + enrichissement ES/EN | 20 juin 2026 |
+| `claude/2026-06-17-rgpd` | #17 | RGPD : mentions légales, confidentialité, CGU, checkbox inscription, suppression de compte, footer | 20 juin 2026 |
+
+### Branches Claude en attente
 
 | Branche | Contenu | Statut |
 |---------|---------|--------|
-| `claude/2026-06-17-rgpd` | RGPD : mentions légales, confidentialité, CGU, checkbox inscription, suppression de compte, footer | En attente de recette |
-| `claude/2026-06-18-enrichir-themes` | Fallback `loadWords(minCount=8)` : si un niveau a < 8 mots, complète avec les autres niveaux du même thème | En attente de recette |
 | `claude/2026-06-19-responsive-mobile` | Responsive mobile : media queries (max-width: 480px) sur 23 fichiers (auth bar, landing, home, quiz, profil, tous exercices) | En attente de recette |
-
-### Branches Claude fusionnées
-
-| Branche | PR | Contenu |
-|---------|-----|---------|
-| `claude/2026-06-18-pwa` | #11 (merged) | PWA installable, workbox 7.0.0, cache offline |
+| `claude/2026-06-19-enrichir-langues` | Enrichissement partiel : +2640 mots pour AR, HI, PL, TR, DE, NL (de ~455 à ~895 mots). 8 langues restantes (ES, EN, IT, PT, JA, KO, RU, ZH) à compléter | En attente de recette |
 
 ---
 
