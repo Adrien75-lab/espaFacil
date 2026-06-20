@@ -1,5 +1,23 @@
 # État courant de LinguaFacil
 
+## Mise à jour Codex — 20 juin 2026 — PR #12 déblocage conflits
+
+- Branche : `codex/2026-06-19-doc-recette-branches`.
+- Objectif : résoudre les conflits de la PR #12 après la fusion de la PR #13 dans `master`.
+- Contenu de la branche : ajout de `docs/recettes/2026-06-19-recette-branches-codex.md` pour guider la recette des branches Codex en attente.
+- La fiche couvre les branches `tests-selecteur-exercices`, `audit-contenu-pedagogique`, `aide-lecture-langues-non-latines` et rappelle aussi la branche UX thème clair/sélecteur.
+- Aucun changement applicatif, aucune migration et aucun seeder.
+- Validation : `git diff --check` OK après résolution.
+
+## Mise à jour Codex — 20 juin 2026 — PR #13 fusionnée
+
+- Branche : `codex/2026-06-19-ux-theme-clair-selecteur`.
+- Recette utilisateur validée par Adrien.
+- PR GitHub : #13, `Améliorer l’UX du sélecteur et des retours d’exercice`.
+- Correctifs ajoutés pendant recette : contraste des réponses dans les modes de jeu et animations de fin différenciées (`Parfait`, `Bravo`, `Bien`, `On continue`).
+- Validations frontend : `npm run lint`, `npm test`, `npm run build` et `git diff --check` OK.
+- Migration : non. Seeder : non.
+
 ## Mise à jour Claude — 19 juin 2026 — branches en attente de recette
 
 ### Branches Claude (3) — en attente de recette Adrien
