@@ -1,3 +1,5 @@
+import { API_URL } from '@/api/client'
+
 export interface DashboardData {
   user:            { name: string; email: string }
   total_xp:        number
@@ -22,7 +24,7 @@ export interface DashboardData {
 
 export async function fetchDashboard(): Promise<DashboardData | null> {
   try {
-    const res = await fetch('/api/me/dashboard', {
+    const res = await fetch(`${API_URL}/api/me/dashboard`, {
       credentials: 'include',
       headers: { 'Accept': 'application/json' },
     })

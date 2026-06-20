@@ -1,9 +1,11 @@
 import type { Language, Theme, Word, GrammarTip, Level } from '@/types'
 
-const BASE = '/api'
+export const API_URL = import.meta.env.VITE_API_URL || ''
+
+const BASE = `${API_URL}/api`
 
 export async function apiGet<T>(path: string): Promise<T> {
-  const res = await fetch(`${BASE}${path}`)
+  const res = await fetch(`${BASE}${path}`, { credentials: 'include' })
   if (!res.ok) throw new Error(`API error ${res.status}: ${path}`)
   const json = await res.json()
   return json.data ?? json

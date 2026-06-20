@@ -1,3 +1,5 @@
+import { API_URL } from '@/api/client'
+
 export interface ReviewWord {
   id:               number
   term:             string
@@ -18,7 +20,7 @@ export interface ReviewWord {
 
 export async function postReview(wordId: number, languageCode: string, correct: boolean): Promise<void> {
   try {
-    await fetch('/api/me/reviews', {
+    await fetch(`${API_URL}/api/me/reviews`, {
       method: 'POST',
       credentials: 'include',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
@@ -30,7 +32,7 @@ export async function postReview(wordId: number, languageCode: string, correct: 
 }
 
 export async function fetchDue(language: string, limit = 20): Promise<ReviewWord[]> {
-  const res = await fetch(`/api/me/reviews/due?language=${language}&limit=${limit}`, {
+  const res = await fetch(`${API_URL}/api/me/reviews/due?language=${language}&limit=${limit}`, {
     credentials: 'include',
     headers: { 'Accept': 'application/json' },
   })
@@ -40,7 +42,7 @@ export async function fetchDue(language: string, limit = 20): Promise<ReviewWord
 }
 
 export async function fetchDifficult(language: string, limit = 20): Promise<ReviewWord[]> {
-  const res = await fetch(`/api/me/reviews/difficult?language=${language}&limit=${limit}`, {
+  const res = await fetch(`${API_URL}/api/me/reviews/difficult?language=${language}&limit=${limit}`, {
     credentials: 'include',
     headers: { 'Accept': 'application/json' },
   })

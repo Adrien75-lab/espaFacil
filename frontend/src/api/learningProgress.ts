@@ -1,3 +1,5 @@
+import { API_URL } from '@/api/client'
+
 export type ProgressLevel = 'debutant' | 'intermediaire' | 'avance'
 
 export type ProgressStatus =
@@ -50,7 +52,7 @@ export interface LearningProgressData {
 
 export async function fetchLearningProgress(): Promise<LearningProgressData | null> {
   try {
-    const res = await fetch('/api/me/learning-progress', {
+    const res = await fetch(`${API_URL}/api/me/learning-progress`, {
       credentials: 'include',
       headers: { 'Accept': 'application/json' },
     })

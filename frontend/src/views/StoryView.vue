@@ -178,6 +178,7 @@ import ConfirmQuit from '@/components/ConfirmQuit.vue'
 import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useSessionRecorder } from '@/composables/useSessionRecorder'
+import { API_URL } from '@/api/client'
 import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 interface StoryToken  { text: string; fr?: string; punct?: boolean }
@@ -234,7 +235,7 @@ function speakWord(text: string) {
 async function loadStories() {
   loading.value = true
   try {
-    const res = await fetch(`/api/stories?lang=${langCode.value}`)
+    const res = await fetch(`${API_URL}/api/stories?lang=${langCode.value}`)
     if (res.ok) stories.value = await res.json()
   } catch { /* réseau indispo */ }
   loading.value = false

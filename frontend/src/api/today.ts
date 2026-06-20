@@ -1,3 +1,5 @@
+import { API_URL } from '@/api/client'
+
 export interface TodayData {
   xp_today:     number
   daily_goal:   number
@@ -17,7 +19,7 @@ export interface TodayData {
 
 export async function fetchToday(): Promise<TodayData | null> {
   try {
-    const res = await fetch('/api/me/today', {
+    const res = await fetch(`${API_URL}/api/me/today`, {
       credentials: 'include',
       headers: { 'Accept': 'application/json' },
     })
@@ -27,7 +29,7 @@ export async function fetchToday(): Promise<TodayData | null> {
 }
 
 export async function updateGoal(daily_goal_xp: number): Promise<void> {
-  await fetch('/api/me/goal', {
+  await fetch(`${API_URL}/api/me/goal`, {
     method: 'PUT',
     credentials: 'include',
     headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },

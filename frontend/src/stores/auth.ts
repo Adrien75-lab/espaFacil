@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
+import { API_URL } from '@/api/client'
 
 export interface AuthUser {
   id: number
@@ -24,13 +25,13 @@ export const useAuthStore = defineStore('auth', () => {
   const loading = ref(false)
 
   async function csrfCookie() {
-    await apiFetch('/sanctum/csrf-cookie')
+    await apiFetch(`${API_URL}/sanctum/csrf-cookie`)
   }
 
   async function fetchUser() {
     loading.value = true
     try {
-      const res = await apiFetch('/api/user')
+      const res = await apiFetch(`${API_URL}/api/user`)
       user.value = res.ok ? (await res.json()).user : null
     } catch {
       user.value = null
@@ -41,7 +42,7 @@ export const useAuthStore = defineStore('auth', () => {
 
   async function login(email: string, password: string) {
     await csrfCookie()
-    const res  = await apiFetch('/api/login', {
+    const res  = await apiFetch(`${API_URL}/api/login`, {
       method: 'POST',
       body: JSON.stringify({ email, password }),
     })
@@ -52,7 +53,7 @@ export const useAuthStore = defineStore('auth', () => {
 
   async function register(name: string, email: string, password: string, password_confirmation: string) {
     await csrfCookie()
-    const res  = await apiFetch('/api/register', {
+    const res  = await apiFetch(`${API_URL}/api/register`, {
       method: 'POST',
       body: JSON.stringify({ name, email, password, password_confirmation }),
     })
@@ -62,12 +63,12 @@ export const useAuthStore = defineStore('auth', () => {
   }
 
   async function logout() {
-    await apiFetch('/api/logout', { method: 'POST' })
+    await apiFetch(`${API_URL}/api/logout`, { method: 'POST' })
     user.value = null
   }
 
   async function deleteAccount() {
-    const res = await apiFetch('/api/me', { method: 'DELETE' })
+    const res = await apiFetch(`${API_URL}/api/me`, { method: 'DELETE' })
     if (!res.ok) {
       const data = await res.json()
       throw new Error(data.message ?? 'Erreur lors de la suppression.')
