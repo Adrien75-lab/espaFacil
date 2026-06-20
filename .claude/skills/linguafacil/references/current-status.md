@@ -1,5 +1,14 @@
 # État courant de LinguaFacil
 
+## Mise à jour Codex — 20 juin 2026 — PR #13 ouverte
+
+- Branche : `codex/2026-06-19-ux-theme-clair-selecteur`.
+- Recette utilisateur validée par Adrien.
+- PR GitHub : #13, `Améliorer l’UX du sélecteur et des retours d’exercice`.
+- Correctifs ajoutés pendant recette : contraste des réponses dans les modes de jeu et animations de fin différenciées (`Parfait`, `Bravo`, `Bien`, `On continue`).
+- Validations frontend : `npm run lint`, `npm test`, `npm run build` et `git diff --check` OK.
+- Migration : non. Seeder : non.
+
 ## Mise à jour Claude — 19 juin 2026 — branches en attente de recette
 
 ### Branches Claude (3) — en attente de recette Adrien
