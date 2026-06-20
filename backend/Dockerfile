@@ -1,8 +1,8 @@
 FROM php:8.3-apache
 
 RUN apt-get update && apt-get install -y \
-    unzip libzip-dev libsqlite3-dev \
-    && docker-php-ext-install pdo pdo_sqlite zip bcmath \
+    unzip libzip-dev libsqlite3-dev libpq-dev \
+    && docker-php-ext-install pdo pdo_sqlite pdo_pgsql zip bcmath \
     && a2enmod rewrite \
     && rm -rf /var/lib/apt/lists/*
 
