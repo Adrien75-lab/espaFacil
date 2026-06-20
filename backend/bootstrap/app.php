@@ -44,7 +44,12 @@ return Application::configure(basePath: dirname(__DIR__))
 
         $exceptions->render(function (\Throwable $e, Request $request) {
             if ($request->is('api/*')) {
-                return response()->json(['message' => 'Une erreur interne est survenue.'], 500);
+                $response = ['message' => 'Une erreur interne est survenue.'];
+                if (config('app.debug')) {
+                    $response['error'] = $e->getMessage();
+                    $response['trace'] = $e->getTraceAsString();
+                }
+                return response()->json($response, 500);
             }
         });
     })->create();
