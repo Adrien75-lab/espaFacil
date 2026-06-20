@@ -14,4 +14,6 @@ export const getLanguage  = (code: string)                                   => 
 export const getThemes    = (code: string)                                   => apiGet<Theme[]>(`/languages/${code}/themes`)
 export const getWords     = (code: string, themeKey: string, level: Level)   =>
   apiGet<Word[]>(`/languages/${code}/themes/${themeKey}/words?level=${level}`)
+export const getAllWords  = (code: string, themeKey: string)                 =>
+  apiGet<Word[]>(`/languages/${code}/themes/${themeKey}/words`)
 export const getGrammar   = (code: string)                                   => apiGet<GrammarTip[]>(`/languages/${code}/grammar`)

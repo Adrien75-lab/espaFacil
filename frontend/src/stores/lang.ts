@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
-import { getLanguages, getThemes, getWords } from '@/api/client'
+import { getLanguages, getThemes, getWords, getAllWords } from '@/api/client'
 import type { Language, Theme, Word, Level } from '@/types'
 
 const LS_LANG  = 'lf_lang'
@@ -53,11 +53,17 @@ export const useLangStore = defineStore('lang', () => {
     words.value = []
   }
 
-  async function loadWords() {
+  async function loadWords(minCount = 0) {
     if (!currentLang.value || !currentTheme.value) return
     loading.value = true
     try {
       words.value = await getWords(langCode.value, currentTheme.value.key, currentLevel.value)
+      if (minCount > 0 && words.value.length < minCount) {
+        const all = await getAllWords(langCode.value, currentTheme.value.key)
+        const existing = new Set(words.value.map(w => w.id))
+        const extras = all.filter(w => !existing.has(w.id))
+        words.value = [...words.value, ...extras].slice(0, Math.max(minCount, words.value.length + extras.length))
+      }
     } finally { loading.value = false }
   }
 
