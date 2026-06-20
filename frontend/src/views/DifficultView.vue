@@ -14,6 +14,8 @@
       :correct="score"
       :total="total"
       :score-label="`${score} / ${total} correctes`"
+      :lingos-gained="sessionResult?.lingos_gained ?? 0"
+      :lingo-rewards="sessionResult?.lingo_rewards ?? []"
     >
       <template #actions>
         <button class="btn-primary" @click="reload">Recommencer</button>
@@ -75,11 +77,13 @@ import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { fetchDifficult, postReview, type ReviewWord } from '@/api/reviews'
 import { speakText } from '@/utils/speech'
+import type { SessionResult } from '@/api/progress'
 import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 const store  = useLangStore()
 const router = useRouter()
 
+const sessionResult = ref<SessionResult | null>(null)
 const cards    = ref<ReviewWord[]>([])
 const idx      = ref(0)
 const score    = ref(0)

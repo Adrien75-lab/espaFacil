@@ -25,6 +25,16 @@
         <span>{{ scorePercent }}%</span>
       </div>
 
+      <div v-if="lingosGained > 0" class="lingos-reward">
+        <div class="lingos-nuggets">
+          <span v-for="n in Math.min(lingosGained, 10)" :key="n" class="nugget" :style="{ animationDelay: `${n * 0.12}s` }">🪙</span>
+        </div>
+        <p class="lingos-text">+ {{ lingosGained }} Lingos</p>
+        <div v-if="lingoRewards.length" class="lingos-details">
+          <span v-for="r in lingoRewards" :key="r.key" class="lingo-detail">{{ r.label }}: +{{ r.amount }}</span>
+        </div>
+      </div>
+
       <slot />
 
       <div class="results-actions">
@@ -36,6 +46,7 @@
 
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
+import type { LingoReward } from '@/api/progress'
 
 const props = withDefaults(defineProps<{
   emoji?: string
@@ -44,12 +55,16 @@ const props = withDefaults(defineProps<{
   correct?: number
   total?: number
   playSound?: boolean
+  lingosGained?: number
+  lingoRewards?: LingoReward[]
 }>(), {
   emoji: '',
   title: '',
   correct: 0,
   total: 0,
   playSound: true,
+  lingosGained: 0,
+  lingoRewards: () => [],
 })
 
 const showCelebration = ref(false)
@@ -305,6 +320,50 @@ h2 {
   0% { opacity: 0; transform: translateY(24px) scale(0.6); }
   18% { opacity: 0.9; }
   100% { opacity: 0; transform: translateY(-150px) scale(1.25); }
+}
+.lingos-reward {
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, #78350f22, #fbbf2412);
+  border: 1px solid #fbbf2440;
+  border-radius: 10px;
+  animation: pop-in 0.5s cubic-bezier(.2, 1.4, .4, 1) 0.3s both;
+}
+.lingos-nuggets {
+  display: flex;
+  justify-content: center;
+  gap: 0.15rem;
+  margin-bottom: 0.4rem;
+}
+.nugget {
+  font-size: 1.5rem;
+  animation: nugget-pop 0.4s cubic-bezier(.2, 1.6, .4, 1) both;
+  filter: drop-shadow(0 0 6px #fbbf2488);
+}
+.lingos-text {
+  color: #fbbf24;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 0;
+  text-shadow: 0 0 12px #fbbf2444;
+}
+.lingos-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+.lingo-detail {
+  font-size: 0.72rem;
+  color: #fde68a;
+  background: #78350f30;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+}
+@keyframes nugget-pop {
+  0% { opacity: 0; transform: scale(0) translateY(10px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
 }
 @media (max-width: 520px) {
   .results { min-height: auto; padding: 1rem 0; }

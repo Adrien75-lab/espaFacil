@@ -15,6 +15,8 @@
       :correct="score"
       :total="cards.length"
       :score-label="`${score} / ${cards.length} correctes`"
+      :lingos-gained="sessionResult?.lingos_gained ?? 0"
+      :lingo-rewards="sessionResult?.lingo_rewards ?? []"
     >
       <template #actions>
         <button class="btn-primary" @click="restart">Recommencer</button>
@@ -86,6 +88,7 @@ import { useAuthStore } from '@/stores/auth'
 import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { postReview } from '@/api/reviews'
 import type { Word } from '@/types'
+import type { SessionResult } from '@/api/progress'
 import { speakText } from '@/utils/speech'
 import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
@@ -95,6 +98,7 @@ const auth   = useAuthStore()
 const router = useRouter()
 const { recordSession } = useSessionRecorder()
 
+const sessionResult = ref<SessionResult | null>(null)
 const cards    = ref<Word[]>([])
 const idx      = ref(0)
 const score    = ref(0)
@@ -167,8 +171,8 @@ function speak() {
   speakText(current.value.term, store.currentLang?.voice_locale ?? 'fr-FR')
 }
 
-watch(done, (val) => {
-  if (val) void recordSession('quiz', score.value, cards.value.length)
+watch(done, async (val) => {
+  if (val) sessionResult.value = await recordSession('quiz', score.value, cards.value.length)
 })
 
 onMounted(async () => {

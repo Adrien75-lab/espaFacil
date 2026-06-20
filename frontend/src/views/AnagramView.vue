@@ -13,6 +13,8 @@
       :total="total"
       title="Anagrammes terminés !"
       :score-label="`${score} / ${total} trouvés`"
+      :lingos-gained="sessionResult?.lingos_gained ?? 0"
+      :lingo-rewards="sessionResult?.lingo_rewards ?? []"
     >
       <template #actions>
         <button class="btn-primary" @click="restart">Rejouer</button>
@@ -98,6 +100,7 @@ import { useLangStore } from '@/stores/lang'
 import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import ConfirmQuit from '@/components/ConfirmQuit.vue'
 import type { Word } from '@/types'
+import type { SessionResult } from '@/api/progress'
 import { needsReadingSupport } from '@/utils/readingSupport'
 import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
@@ -111,6 +114,7 @@ const cardIndex = ref(0)
 const score     = ref(0)
 const done      = ref(false)
 const showQuit  = ref(false)
+const sessionResult = ref<SessionResult | null>(null)
 
 // Letters state
 const availableLetters = ref<(string | null)[]>([])
@@ -188,10 +192,10 @@ function validate() {
   }
 }
 
-function next() {
+async function next() {
   if (cardIndex.value + 1 >= total.value) {
     done.value = true
-    void recordSession('anagram', score.value, total.value)
+    sessionResult.value = await recordSession('anagram', score.value, total.value)
     return
   }
   cardIndex.value++

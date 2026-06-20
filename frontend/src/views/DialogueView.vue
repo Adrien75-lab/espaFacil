@@ -104,6 +104,8 @@
       :total="totalChoices"
       title="Dialogue terminé !"
       :score-label="`${score} / ${totalChoices} bonnes réponses`"
+      :lingos-gained="sessionResult?.lingos_gained ?? 0"
+      :lingo-rewards="sessionResult?.lingo_rewards ?? []"
     >
       <template #actions>
         <button class="btn-primary" @click="restartCurrent">Rejouer</button>
@@ -124,6 +126,7 @@ import { useLangStore } from '@/stores/lang'
 import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { getDialogues } from '@/api/content'
 import type { Dialogue, DialogueChoice } from '@/types'
+import type { SessionResult } from '@/api/progress'
 import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 // ─── State ────────────────────────────────────────────────────────────────────
@@ -134,6 +137,7 @@ const route    = useRoute()
 const showQuit = ref(false)
 const { recordSession } = useSessionRecorder()
 
+const sessionResult = ref<SessionResult | null>(null)
 const loading       = ref(true)
 const scenarios     = ref<Dialogue[]>([])
 const current       = ref<Dialogue | null>(null)
@@ -287,9 +291,9 @@ onMounted(async () => {
 
 // ─── XP ───────────────────────────────────────────────────────────────────────
 
-watch(done, (val) => {
+watch(done, async (val) => {
   if (!val) return
-  void recordSession('dialogue', score.value, totalChoices.value, 'general')
+  sessionResult.value = await recordSession('dialogue', score.value, totalChoices.value, 'general')
 })
 </script>
 

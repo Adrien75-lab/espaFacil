@@ -21,10 +21,21 @@ class LingoRewardService
     /**
      * @return array{gained: int, rewards: array<int, array{key: string, label: string, amount: int}>}
      */
+    private const LEVEL_LINGOS = [
+        'debutant' => 2,
+        'intermediaire' => 4,
+        'avance' => 6,
+    ];
+
     public function awardForSession(User $user, array $session, int $xpToday, int $dailyGoal, int $streak): array
     {
         $today = Carbon::today()->toDateString();
+
+        $levelLingos = self::LEVEL_LINGOS[$session['level'] ?? 'debutant'] ?? 2;
+        $user->increment('lingos_balance', $levelLingos);
+
         $rewards = [
+            ['key' => 'session_complete', 'label' => 'Session terminée', 'amount' => $levelLingos],
             ...$this->dailyMilestoneRewards($user, $xpToday, $dailyGoal, $today),
             ...$this->perfectSessionReward($user, $session, $today),
             ...$this->streakRewards($user, $streak, $today),

@@ -159,6 +159,8 @@
       :total="questions.length"
       title="Histoire terminée !"
       :score-label="`${qcmScore} / ${questions.length} bonnes réponses`"
+      :lingos-gained="sessionResult?.lingos_gained ?? 0"
+      :lingo-rewards="sessionResult?.lingo_rewards ?? []"
     >
       <template #actions>
         <button class="btn-primary" @click="startStory(currentStory!)">Relire</button>
@@ -179,6 +181,7 @@ import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
+import type { SessionResult } from '@/api/progress'
 
 interface StoryToken  { text: string; fr?: string; punct?: boolean }
 interface QcmOption   { text: string }
@@ -215,6 +218,7 @@ const qcmLastCorrect = ref(false)
 const qcmScore       = ref(0)
 const qcmSelected    = ref<number | null>(null)
 const langCode = computed(() => store.currentLang?.code ?? '')
+const sessionResult = ref<SessionResult | null>(null)
 
 const LANG_BCP47: Record<string, string> = {
   es: 'es-ES', en: 'en-US', de: 'de-DE', it: 'it-IT',
@@ -332,10 +336,10 @@ function pickQcm(i: number) {
   if (ok) qcmScore.value++
 }
 
-function nextQcm() {
+async function nextQcm() {
   if (qcmIndex.value + 1 >= questions.value.length) {
     phase.value = 'results'
-    void recordSession('stories', qcmScore.value, questions.value.length, 'general')
+    sessionResult.value = await recordSession('stories', qcmScore.value, questions.value.length, 'general')
     return
   }
   qcmIndex.value++

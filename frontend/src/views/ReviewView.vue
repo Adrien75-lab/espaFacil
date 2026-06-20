@@ -18,6 +18,8 @@
       :total="total"
       title="Révision terminée !"
       :score-label="`${score} / ${total} correctes`"
+      :lingos-gained="sessionResult?.lingos_gained ?? 0"
+      :lingo-rewards="sessionResult?.lingo_rewards ?? []"
     >
       <template #actions>
         <button class="btn-primary" @click="reload">Recommencer</button>
@@ -77,9 +79,13 @@ import { useLangStore } from '@/stores/lang'
 import { fetchDue, postReview, type ReviewWord } from '@/api/reviews'
 import { speakText } from '@/utils/speech'
 import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
+import { useSessionRecorder } from '@/composables/useSessionRecorder'
+import type { SessionResult } from '@/api/progress'
 
 const store  = useLangStore()
 const router = useRouter()
+const { recordSession } = useSessionRecorder()
+const sessionResult = ref<SessionResult | null>(null)
 
 const cards    = ref<ReviewWord[]>([])
 const idx      = ref(0)

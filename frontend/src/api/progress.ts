@@ -25,10 +25,16 @@ export interface SessionPayload {
   total:     number
 }
 
+export interface LingoReward {
+  key: string
+  label: string
+  amount: number
+}
+
 export interface SessionResult {
   lingos_balance: number
   lingos_gained: number
-  lingo_rewards: string[]
+  lingo_rewards: LingoReward[]
   [key: string]: unknown
 }
 
@@ -47,8 +53,14 @@ export async function postSession(payload: SessionPayload): Promise<SessionResul
   }
 }
 
+export const LEVEL_XP_MULTIPLIER: Record<string, number> = {
+  debutant: 1,
+  intermediaire: 1.5,
+  avance: 2,
+}
+
 /** Calcul XP côté front */
-export function calcXp(mode: ExerciseMode, correct: number, total: number): number {
+export function calcXp(mode: ExerciseMode, correct: number, total: number, level = 'debutant'): number {
   const xpPerCorrect: Record<ExerciseMode, number> = {
     quiz: 5,
     cards: 3,
@@ -69,7 +81,8 @@ export function calcXp(mode: ExerciseMode, correct: number, total: number): numb
   const base       = correct * perCorrect
   const pct        = total > 0 ? correct / total : 0
   const bonus      = pct === 1 ? 20 : pct >= 0.8 ? 10 : 0
-  return base + bonus
+  const multiplier = LEVEL_XP_MULTIPLIER[level] ?? 1
+  return Math.round((base + bonus) * multiplier)
 }
 
 export interface LeaderboardEntry {

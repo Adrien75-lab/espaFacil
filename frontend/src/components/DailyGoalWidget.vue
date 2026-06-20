@@ -41,7 +41,7 @@
       <div class="reward-panel">
         <div>
           <span class="reward-label">Lingos</span>
-          <strong class="reward-value">● {{ data.lingos_balance }}</strong>
+          <strong class="reward-value">🪙 {{ data.lingos_balance }}</strong>
         </div>
         <div>
           <span class="reward-label">Aujourd'hui</span>
@@ -181,7 +181,7 @@ defineExpose({ reload: load })
 .reward-panel { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; margin-top: .75rem; }
 .reward-panel > div { background: #12121f; border: 1px solid #2a2a3e; border-radius: 8px; padding: .55rem .65rem; }
 .reward-label { display: block; color: var(--muted); font-size: .72rem; margin-bottom: .15rem; }
-.reward-value { color: #f0abfc; font-size: .98rem; }
+.reward-value { color: #fbbf24; font-size: .98rem; }
 .reward-earned { color: #86efac; font-size: .98rem; }
 .bonus-row { margin-top: .55rem; color: var(--muted); font-size: .78rem; }
 .confetti-container {

@@ -20,6 +20,8 @@
       :correct="score"
       :total="total"
       :score-label="`${score} / ${total} prononciations validées`"
+      :lingos-gained="sessionResult?.lingos_gained ?? 0"
+      :lingo-rewards="sessionResult?.lingo_rewards ?? []"
     >
       <div class="gauge-wrap">
         <svg viewBox="0 0 120 70" class="gauge-svg">
@@ -136,6 +138,7 @@ import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { postReview } from '@/api/reviews'
 import { normalizeText, similarity as textSimilarity } from '@/utils/textMatching'
 import type { Word } from '@/types'
+import type { SessionResult } from '@/api/progress'
 import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 const store  = useLangStore()
@@ -160,6 +163,7 @@ const heard     = ref<string | null>(null)
 const similarity = ref(0)
 const micError  = ref(false)
 const wordResults = ref<WordResult[]>([])
+const sessionResult = ref<SessionResult | null>(null)
 
 let recognition: any = null
 
@@ -260,8 +264,8 @@ function stopAndQuit() {
   router.push('/')
 }
 
-watch(done, (val) => {
-  if (val) void recordSession('speak', score.value, total.value)
+watch(done, async (val) => {
+  if (val) sessionResult.value = await recordSession('speak', score.value, total.value)
 })
 
 onMounted(async () => {

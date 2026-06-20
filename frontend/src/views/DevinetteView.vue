@@ -16,6 +16,8 @@
       v-else-if="done"
       :emoji="score === cards.length ? '🏆' : score >= cards.length * 0.7 ? '🎉' : '💪'"
       :score-label="`${score} / ${cards.length} trouvés`"
+      :lingos-gained="sessionResult?.lingos_gained ?? 0"
+      :lingo-rewards="sessionResult?.lingo_rewards ?? []"
     >
       <div class="result-list">
         <div v-for="(r, i) in results" :key="i" class="result-row" :class="r.status">
@@ -121,6 +123,7 @@ import { postReview } from '@/api/reviews'
 import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { evaluateAnswer } from '@/utils/textMatching'
 import type { Word } from '@/types'
+import type { SessionResult } from '@/api/progress'
 import { BlocExerciseHeader, BlocExerciseProgress, BlocExerciseResults } from '@/features/exercise/Bloc'
 
 const store    = useLangStore()
@@ -130,6 +133,8 @@ const showQuit = ref(false)
 const { recordSession } = useSessionRecorder()
 
 const langName = computed(() => store.currentLang?.name ?? 'la langue')
+
+const sessionResult = ref<SessionResult | null>(null)
 
 // ─── données ───
 const cards    = ref<Word[]>([])
@@ -224,8 +229,8 @@ function restart() {
   nextTick(() => inputRef.value?.focus())
 }
 
-watch(done, (val) => {
-  if (val) void recordSession('devinette', score.value, cards.value.length)
+watch(done, async (val) => {
+  if (val) sessionResult.value = await recordSession('devinette', score.value, cards.value.length)
 })
 
 onMounted(async () => {

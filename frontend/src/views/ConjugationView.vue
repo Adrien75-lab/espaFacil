@@ -120,6 +120,8 @@
       :total="totalItems"
       title="Conjugaison terminée !"
       :score-label="`${score} / ${totalItems} correctes`"
+      :lingos-gained="sessionResult?.lingos_gained ?? 0"
+      :lingo-rewards="sessionResult?.lingo_rewards ?? []"
     >
       <p class="result-sub">{{ resultMessage }}</p>
 
@@ -151,6 +153,7 @@ import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { normalizeText } from '@/utils/textMatching'
 import { getConjugations } from '@/api/content'
 import type { ConjugationVerb } from '@/types'
+import type { SessionResult } from '@/api/progress'
 import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 const router   = useRouter()
@@ -162,6 +165,7 @@ const langCode = computed(() => store.currentLang?.code ?? 'es')
 const langName = computed(() => store.currentLang?.name ?? 'Espagnol')
 const verbs    = ref<ConjugationVerb[]>([])
 const loading  = ref(true)
+const sessionResult = ref<SessionResult | null>(null)
 
 const tenseNames = computed(() => {
   const v = verbs.value[0]
@@ -257,7 +261,7 @@ function validate() {
 
 async function finishQuiz() {
   phase.value = 'result'
-  await recordSession('conjugaison', score.value, totalItems.value, 'conjugaison')
+  sessionResult.value = await recordSession('conjugaison', score.value, totalItems.value, 'conjugaison')
 }
 
 function restartSame() {

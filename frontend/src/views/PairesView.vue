@@ -13,6 +13,8 @@
       :total="pairsCount"
       title="Toutes les paires trouvées !"
       :score-label="`${pairsCount} paires · ${mistakes} erreur${mistakes !== 1 ? 's' : ''}`"
+      :lingos-gained="sessionResult?.lingos_gained ?? 0"
+      :lingo-rewards="sessionResult?.lingo_rewards ?? []"
     >
       <template #actions>
         <button class="btn-primary" @click="restart">Rejouer</button>
@@ -90,6 +92,7 @@ import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import type { Word } from '@/types'
+import type { SessionResult } from '@/api/progress'
 import { needsReadingSupport } from '@/utils/readingSupport'
 import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
@@ -114,6 +117,7 @@ const wrongPair  = ref<string[]>([])
 const mistakes   = ref(0)
 const done       = ref(false)
 const showQuit   = ref(false)
+const sessionResult = ref<SessionResult | null>(null)
 
 interface MatchedPair { id: number; term: string; translation: string; transliteration: string | null }
 const matchedPairs = ref<MatchedPair[]>([])
@@ -184,13 +188,13 @@ function restart() {
 }
 
 // XP when done
-watch(done, (val) => {
+watch(done, async (val) => {
   if (!val) return
   const total  = pairsCount.value
   const errors = mistakes.value
   // Treat "correct" inversely to mistakes: max correct = total, lose 1 per mistake
   const correct = Math.max(0, total - errors)
-  void recordSession('paires', correct, total)
+  sessionResult.value = await recordSession('paires', correct, total)
 })
 
 onMounted(async () => {

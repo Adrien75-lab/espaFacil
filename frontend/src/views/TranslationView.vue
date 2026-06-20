@@ -16,6 +16,8 @@
       v-else-if="done"
       :emoji="score === cards.length ? '🏆' : score >= cards.length * 0.7 ? '🎉' : '💪'"
       :score-label="`${score} / ${cards.length} correctes`"
+      :lingos-gained="sessionResult?.lingos_gained ?? 0"
+      :lingo-rewards="sessionResult?.lingo_rewards ?? []"
     >
       <div class="result-list">
         <div
@@ -106,6 +108,7 @@ import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { evaluateAnswer } from '@/utils/textMatching'
 import { speakText } from '@/utils/speech'
 import type { Word } from '@/types'
+import type { SessionResult } from '@/api/progress'
 import { BlocExerciseHeader, BlocExerciseProgress, BlocExerciseResults } from '@/features/exercise/Bloc'
 
 const store    = useLangStore()
@@ -123,6 +126,7 @@ const answered  = ref(false)
 const showClue  = ref(false)
 const userInput = ref('')
 const inputRef  = ref<HTMLInputElement | null>(null)
+const sessionResult = ref<SessionResult | null>(null)
 
 const current = computed(() => cards.value[idx.value])
 
@@ -192,8 +196,8 @@ function speak() {
   speakText(current.value.term, store.currentLang?.voice_locale ?? 'fr-FR')
 }
 
-watch(done, (val) => {
-  if (val) void recordSession('traduction', score.value, cards.value.length)
+watch(done, async (val) => {
+  if (val) sessionResult.value = await recordSession('traduction', score.value, cards.value.length)
 })
 
 onMounted(async () => {

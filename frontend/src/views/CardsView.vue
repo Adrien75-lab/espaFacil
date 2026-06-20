@@ -7,6 +7,8 @@
       :correct="known"
       :total="total"
       :score-label="`${known} / ${total} connues`"
+      :lingos-gained="sessionResult?.lingos_gained ?? 0"
+      :lingo-rewards="sessionResult?.lingo_rewards ?? []"
     >
       <div v-if="review.length" class="review-list">
         <p class="review-label">À revoir :</p>
@@ -73,6 +75,7 @@ import { postReview } from '@/api/reviews'
 import ConfirmQuit from '@/components/ConfirmQuit.vue'
 import { speakText } from '@/utils/speech'
 import type { Word } from '@/types'
+import type { SessionResult } from '@/api/progress'
 import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 const store  = useLangStore()
@@ -80,6 +83,7 @@ const auth   = useAuthStore()
 const router = useRouter()
 const { recordSession } = useSessionRecorder()
 
+const sessionResult = ref<SessionResult | null>(null)
 const cards    = ref<Word[]>([])
 const showQuit = ref(false)
 const idx      = ref(0)
@@ -115,8 +119,8 @@ function speak() {
   speakText(current.value.term, store.currentLang?.voice_locale ?? 'fr-FR')
 }
 
-watch(done, (val) => {
-  if (val) void recordSession('cards', known.value, total.value)
+watch(done, async (val) => {
+  if (val) sessionResult.value = await recordSession('cards', known.value, total.value)
 })
 
 onMounted(async () => {

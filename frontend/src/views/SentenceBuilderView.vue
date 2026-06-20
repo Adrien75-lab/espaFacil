@@ -7,6 +7,8 @@
       :correct="score"
       :total="total"
       :score-label="`${score} / ${total} bonnes réponses`"
+      :lingos-gained="sessionResult?.lingos_gained ?? 0"
+      :lingo-rewards="sessionResult?.lingo_rewards ?? []"
     >
       <template #actions>
         <button class="btn-primary" @click="restart">Recommencer</button>
@@ -100,6 +102,7 @@ import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import type { Word } from '@/types'
+import type { SessionResult } from '@/api/progress'
 import { speakText } from '@/utils/speech'
 import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
@@ -120,6 +123,7 @@ const answered    = ref(false)
 const feedbackState = ref<'correct' | 'wrong' | null>(null)
 const showClue    = ref(false)
 const done        = ref(false)
+const sessionResult = ref<SessionResult | null>(null)
 const poolTokens  = ref<Token[]>([])
 const answerTokens = ref<Token[]>([])
 
@@ -222,8 +226,8 @@ function speak() {
 }
 
 // ── XP save ───────────────────────────────────────────────────────────────────
-watch(done, (val) => {
-  if (val) void recordSession('sentence-builder', score.value, total.value)
+watch(done, async (val) => {
+  if (val) sessionResult.value = await recordSession('sentence-builder', score.value, total.value)
 })
 
 // ── Mount ─────────────────────────────────────────────────────────────────────

@@ -7,6 +7,8 @@
       :correct="score"
       :total="total"
       :score-label="`${score} / ${total} correctes`"
+      :lingos-gained="sessionResult?.lingos_gained ?? 0"
+      :lingo-rewards="sessionResult?.lingo_rewards ?? []"
     >
       <template #actions>
         <button class="btn-primary" @click="restart">Recommencer</button>
@@ -121,6 +123,7 @@ import { useAuthStore } from '@/stores/auth'
 import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { postReview } from '@/api/reviews'
 import type { Word } from '@/types'
+import type { SessionResult } from '@/api/progress'
 import { speakText } from '@/utils/speech'
 import { needsReadingSupport, shouldShowChoiceTranslation } from '@/utils/readingSupport'
 import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
@@ -130,6 +133,8 @@ const showQuit = ref(false)
 const auth   = useAuthStore()
 const router = useRouter()
 const { recordSession } = useSessionRecorder()
+
+const sessionResult = ref<SessionResult | null>(null)
 
 interface Card { word: Word; choices: Word[] }
 
@@ -258,8 +263,8 @@ function speak() {
 
 function handleOutsideClick() { activePopover.value = null }
 
-watch(done, (val) => {
-  if (val) void recordSession('fill-blank', score.value, total.value)
+watch(done, async (val) => {
+  if (val) sessionResult.value = await recordSession('fill-blank', score.value, total.value)
 })
 
 onMounted(async () => {

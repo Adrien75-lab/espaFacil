@@ -12,6 +12,8 @@
       :correct="score"
       :total="total"
       :score-label="`${score} / ${total} correctes`"
+      :lingos-gained="sessionResult?.lingos_gained ?? 0"
+      :lingo-rewards="sessionResult?.lingo_rewards ?? []"
     >
       <template #actions>
         <button class="btn-primary" @click="restart">Recommencer</button>
@@ -112,6 +114,7 @@ import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { postReview } from '@/api/reviews'
 import { normalizeText } from '@/utils/textMatching'
 import type { Word } from '@/types'
+import type { SessionResult } from '@/api/progress'
 import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 const store  = useLangStore()
@@ -120,6 +123,7 @@ const auth   = useAuthStore()
 const router = useRouter()
 const { recordSession } = useSessionRecorder()
 
+const sessionResult = ref<SessionResult | null>(null)
 const cards         = ref<Word[]>([])
 const idx           = ref(0)
 const score         = ref(0)
@@ -199,8 +203,8 @@ function restart() {
 }
 
 // ── XP ────────────────────────────────────────────────────────────────────────
-watch(done, (val) => {
-  if (val) void recordSession('dictee', score.value, total.value)
+watch(done, async (val) => {
+  if (val) sessionResult.value = await recordSession('dictee', score.value, total.value)
 })
 
 // ── Mount ─────────────────────────────────────────────────────────────────────

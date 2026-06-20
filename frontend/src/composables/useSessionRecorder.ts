@@ -1,4 +1,4 @@
-import { calcXp, postSession, type ExerciseMode } from '@/api/progress'
+import { calcXp, postSession, type ExerciseMode, type SessionResult } from '@/api/progress'
 import { useAuthStore } from '@/stores/auth'
 import { useLangStore } from '@/stores/lang'
 
@@ -11,16 +11,16 @@ export function useSessionRecorder() {
     correct: number,
     total: number,
     theme = lang.currentTheme?.key ?? 'general',
-  ): Promise<void> {
-    if (!auth.user || !lang.currentLang || total < 1) return
+  ): Promise<SessionResult | null> {
+    if (!auth.user || !lang.currentLang || total < 1) return null
 
-    await postSession({
+    return await postSession({
       language: lang.currentLang.code,
       theme,
       level: lang.currentLevel,
       mode,
       score: Math.round(correct / total * 100),
-      xp_gained: calcXp(mode, correct, total),
+      xp_gained: calcXp(mode, correct, total, lang.currentLevel),
       correct,
       total,
     })
