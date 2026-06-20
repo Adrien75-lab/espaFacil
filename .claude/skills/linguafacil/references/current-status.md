@@ -1,5 +1,15 @@
 # État courant de LinguaFacil
 
+## Mise à jour Codex — 20 juin 2026 — parcours guidé utilisateur validé
+
+- Branche : `codex/2026-06-19-parcours-guide-utilisateur`.
+- Recette utilisateur validée par Adrien.
+- Objectif : rendre l'expérience d'accueil plus claire et guider l'utilisateur vers une première leçon courte.
+- `HomeView.vue` conserve l'UX du sélecteur validée en PR #13 et ajoute le panneau "Commencez en 3 étapes simples" avant le choix de langue.
+- Après sélection d'une langue, un bloc "Suivez un parcours simple" propose trois étapes conseillées : Découvrir (`quiz`), Comprendre (`fill-blank`) et Pratiquer (`dialogue`).
+- Aucun changement backend, aucune migration et aucun seeder.
+- Validations frontend après synchronisation avec `master` : `npm run lint`, `npm test`, `npm run build` et `git diff --check` OK.
+
 ## Mise à jour Codex — 20 juin 2026 — PR #12 déblocage conflits
 
 - Branche : `codex/2026-06-19-doc-recette-branches`.
@@ -52,6 +62,7 @@
 - Ordre conseillé de recette : UX thème clair/sélecteur, parcours guidé, aide lecture non latine, tests sélecteur, puis audit/docs.
 - Important : Adrien a explicitement rappelé que la recette Product Owner doit être validée avant PR/merge. Ne considère jamais des tests automatisés comme une validation de recette.
 - Aucun changement de base de données n'est porté par ces branches du 19 juin : migrations non, seeders non.
+
 
 ## Mise à jour Codex — 18 juin 2026
 
