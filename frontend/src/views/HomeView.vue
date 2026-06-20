@@ -195,7 +195,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, watch } from 'vue'
+import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { useRouter, RouterLink } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
@@ -365,7 +365,19 @@ function levelAvailable(level: Level): boolean {
   return statsSatisfyMode(store.currentTheme?.stats?.[level], currentMode.value)
 }
 
-onMounted(() => { if (!store.languages.length) store.loadLanguages() })
+onMounted(() => {
+  if (!store.languages.length) store.loadLanguages()
+  goalWidget.value?.reload()
+  document.addEventListener('visibilitychange', onVisibility)
+})
+
+function onVisibility() {
+  if (document.visibilityState === 'visible') goalWidget.value?.reload()
+}
+
+onUnmounted(() => {
+  document.removeEventListener('visibilitychange', onVisibility)
+})
 
 function goMode() {
   if (currentMode.value === 'dialogue') {
