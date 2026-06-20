@@ -66,7 +66,7 @@
 
       <!-- Choix -->
       <div v-if="choiceHelpAvailable" class="choice-help-panel">
-        <p>Besoin d’un coup de pouce pour lire les choix ?</p>
+        <p>{{ choiceHelpText }}</p>
         <button class="choice-help-toggle" type="button" @click="choiceHelpVisible = !choiceHelpVisible">
           {{ choiceHelpVisible ? 'Masquer l’aide' : 'Afficher l’aide' }}
         </button>
@@ -84,7 +84,7 @@
           <span class="choice-term" :class="{ rtl: store.currentLang?.is_rtl }">{{ c.term }}</span>
           <span v-if="choiceHelpVisible && choiceHasHelp(c)" class="choice-reading-help">
             <span v-if="c.transliteration" class="choice-transliteration">{{ c.transliteration }}</span>
-            <span class="choice-translation">{{ c.translation_fr }}</span>
+            <span v-if="showChoiceTranslations" class="choice-translation">{{ c.translation_fr }}</span>
           </span>
         </button>
       </div>
@@ -122,7 +122,7 @@ import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import { postReview } from '@/api/reviews'
 import type { Word } from '@/types'
 import { speakText } from '@/utils/speech'
-import { needsReadingSupport } from '@/utils/readingSupport'
+import { needsReadingSupport, shouldShowChoiceTranslation } from '@/utils/readingSupport'
 import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 const store  = useLangStore()
@@ -147,8 +147,14 @@ const total   = computed(() => cards.value.length)
 const current = computed(() => cards.value[idx.value].word)
 const choices = computed(() => cards.value[idx.value].choices)
 const isCorrect = computed(() => selected.value?.id === current.value.id)
+const showChoiceTranslations = computed(() => shouldShowChoiceTranslation(store.currentLevel))
 const choiceHelpAvailable = computed(() =>
   needsReadingSupport(store.currentLang?.code) && choices.value.some(choiceHasHelp),
+)
+const choiceHelpText = computed(() =>
+  showChoiceTranslations.value
+    ? 'Besoin d’un coup de pouce pour lire les choix ?'
+    : 'Aide de lecture : la traduction reste cachée à ce niveau.',
 )
 
 // Build interactive tokens from gloss
@@ -205,7 +211,7 @@ function togglePopover(ti: number, e: Event) {
 function closePopover() { activePopover.value = null }
 
 function choiceHasHelp(choice: Word): boolean {
-  return Boolean(choice.transliteration || choice.translation_fr)
+  return Boolean(choice.transliteration || (showChoiceTranslations.value && choice.translation_fr))
 }
 
 function choiceClass(c: Word) {

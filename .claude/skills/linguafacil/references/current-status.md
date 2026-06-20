@@ -5,9 +5,10 @@
 - Branche de travail : `codex/2026-06-19-aide-lecture-langues-non-latines`, créée depuis `origin/master` avec l'autorisation explicite d'Adrien de préparer une autre branche sans merge pendant les recettes en cours.
 - Objectif : rendre le mode Phrases plus intuitif pour les langues à écriture non latine, notamment le japonais.
 - Ajout de `frontend/src/utils/readingSupport.ts` pour identifier les langues nécessitant une aide de lecture (`ru`, `ja`, `ko`, `zh`, `ar`, `hi`) et de tests Vitest associés.
-- `FillBlankView.vue` affiche désormais un panneau activable "Afficher l'aide" pour ces langues ; une fois activé, chaque choix montre le terme, la translittération si disponible et la traduction française.
+- `FillBlankView.vue` affiche désormais un panneau activable "Afficher l'aide" pour ces langues ; en niveau `debutant`, chaque choix montre le terme, la translittération si disponible et la traduction française.
+- Correction de recette : aux niveaux `intermediaire` et `avance`, l'aide ne montre plus la traduction française des choix et reste limitée à la lecture/translittération.
 - Aucun changement backend, aucune migration et aucun seeder.
-- Validations frontend : `npm test`, `npm run lint`, `npm run build` et `git diff --check` OK. Capture non générée : aucun navigateur CLI disponible dans l'environnement.
+- Validations frontend après correction : `npm run lint`, `npm test`, `npm run build` et `git diff --check` OK. Capture non générée : aucun navigateur CLI disponible dans l'environnement.
 
 ## Mise à jour Codex — 18 juin 2026
 
