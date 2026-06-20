@@ -3,10 +3,12 @@
     <div class="auth-card">
       <h2>✨ Créer un compte</h2>
       <form @submit.prevent="submit">
-        <label>Nom</label>
-        <input v-model="name" type="text" required autocomplete="name" />
+        <label>Pseudo</label>
+        <input v-model="name" type="text" required autocomplete="username" placeholder="ex: SuperLearner42" />
+        <p v-if="fieldErrors.name" class="field-error">{{ fieldErrors.name }}</p>
         <label>Email</label>
-        <input v-model="email" type="email" required autocomplete="email" />
+        <input v-model="email" type="email" required autocomplete="email" placeholder="votre@email.com" />
+        <p v-if="fieldErrors.email" class="field-error">{{ fieldErrors.email }}</p>
         <label>Mot de passe</label>
         <input v-model="password" type="password" required autocomplete="new-password" />
         <div class="password-rules" v-if="password">
@@ -22,7 +24,8 @@
         </div>
         <label>Confirmer le mot de passe</label>
         <input v-model="password_confirmation" type="password" required autocomplete="new-password" />
-        <p v-if="password_confirmation && password !== password_confirmation" class="error">Les mots de passe ne correspondent pas.</p>
+        <p v-if="password_confirmation && password !== password_confirmation" class="field-error">Les mots de passe ne correspondent pas.</p>
+        <p v-if="fieldErrors.password" class="field-error">{{ fieldErrors.password }}</p>
         <label class="cgu-check">
           <input type="checkbox" v-model="cguAccepted" />
           J'accepte les <RouterLink to="/cgu" target="_blank">conditions générales d'utilisation</RouterLink>
@@ -54,6 +57,7 @@ const password             = ref('')
 const password_confirmation = ref('')
 const cguAccepted          = ref(false)
 const error                = ref('')
+const fieldErrors          = ref<Record<string, string>>({})
 const loading              = ref(false)
 
 const rules = computed(() => ({
@@ -88,6 +92,7 @@ const allRulesValid = computed(() => strengthScore.value === 5)
 
 async function submit() {
   error.value = ''
+  fieldErrors.value = {}
   if (!cguAccepted.value) {
     error.value = 'Vous devez accepter les conditions générales d\'utilisation.'
     return
@@ -105,6 +110,13 @@ async function submit() {
     await auth.register(name.value, email.value, password.value, password_confirmation.value)
     router.push('/')
   } catch (e: any) {
+    if (e.errors) {
+      const errs: Record<string, string> = {}
+      for (const [key, msgs] of Object.entries(e.errors)) {
+        errs[key] = (msgs as string[])[0]
+      }
+      fieldErrors.value = errs
+    }
     error.value = e.message
   } finally {
     loading.value = false
@@ -127,6 +139,7 @@ button[type=submit] { width: 100%; background: var(--accent); color: white; bord
   border-radius: 8px; padding: 0.7rem; font-size: 1rem; font-weight: 600; cursor: pointer; }
 button[type=submit]:disabled { opacity: 0.5; cursor: not-allowed; }
 .error { color: #f87171; font-size: 0.85rem; margin-bottom: 0.75rem; }
+.field-error { color: #f87171; font-size: 0.8rem; margin: -0.75rem 0 0.75rem; }
 .switch { text-align: center; margin-top: 1rem; color: var(--muted); font-size: 0.9rem; }
 .switch a { color: #818cf8; text-decoration: none; }
 .btn-back { background: none; border: none; color: #666; cursor: pointer;

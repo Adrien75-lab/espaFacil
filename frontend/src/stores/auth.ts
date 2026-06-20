@@ -57,7 +57,11 @@ export const useAuthStore = defineStore('auth', () => {
       body: JSON.stringify({ name, email, password, password_confirmation }),
     })
     const data = await res.json()
-    if (!res.ok) throw new Error(data.message ?? 'Erreur d\'inscription.')
+    if (!res.ok) {
+      const err: any = new Error(data.message ?? 'Erreur d\'inscription.')
+      err.errors = data.errors ?? {}
+      throw err
+    }
     user.value = data.user
   }
 

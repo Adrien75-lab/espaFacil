@@ -14,7 +14,7 @@ class AuthController extends Controller
     public function register(Request $request): JsonResponse
     {
         $data = $request->validate([
-            'name' => 'required|string|min:3|max:50',
+            'name' => 'required|string|min:3|max:30|unique:users,name|regex:/^[a-zA-Z0-9_\-]+$/',
             'email' => 'required|email:rfc,dns|unique:users',
             'password' => [
                 'required',
@@ -27,9 +27,11 @@ class AuthController extends Controller
                     ->uncompromised(),
             ],
         ], [
-            'name.required' => 'Le nom est obligatoire.',
-            'name.min' => 'Le nom doit contenir au moins 3 caractères.',
-            'name.max' => 'Le nom ne peut pas dépasser 50 caractères.',
+            'name.required' => 'Le pseudo est obligatoire.',
+            'name.min' => 'Le pseudo doit contenir au moins 3 caractères.',
+            'name.max' => 'Le pseudo ne peut pas dépasser 30 caractères.',
+            'name.unique' => 'Ce pseudo est déjà pris.',
+            'name.regex' => 'Le pseudo ne peut contenir que des lettres, chiffres, tirets et underscores.',
             'email.required' => 'L\'adresse email est obligatoire.',
             'email.email' => 'L\'adresse email n\'est pas valide.',
             'email.unique' => 'Cette adresse email est déjà utilisée.',
