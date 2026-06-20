@@ -1,5 +1,50 @@
 # État courant de LinguaFacil
 
+## Mise à jour Claude — 20 juin 2026 — Déploiement production Railway + Vercel
+
+- Branche de travail : `staging` (config de déploiement, ne pas merger dans master).
+- **LinguaFacil est en ligne** :
+  - Frontend : `https://linguafacil.vercel.app` (Vercel, branche staging)
+  - Backend : `https://espafacil-production.up.railway.app` (Railway, branche staging)
+  - Base de données : PostgreSQL persistante (Railway)
+
+### Changements techniques effectués
+
+**Backend (branche staging uniquement)** :
+- `backend/Dockerfile` : ajout extensions `pdo_pgsql` + `libpq-dev`, fix MPM Apache, `config:clear` au boot, `chown www-data` sur database/storage
+- `backend/docker/apache.conf` : config Apache pour Laravel
+- `backend/config/cors.php` : CORS global avec `linguafacil.vercel.app` en dur + pattern preview deployments
+- `backend/bootstrap/app.php` : middleware CORS global (pas uniquement API), handler d'erreurs JSON pour API (401, 404, 500), suppression de `EnsureFrontendRequestsAreStateful` (tokens au lieu de cookies)
+- `backend/app/Http/Controllers/Api/AuthController.php` : passage de l'auth session/cookie vers tokens API Sanctum (`createToken`, `Bearer`)
+- `backend/database/seeders/LinguaFacilSeeder.php` : fix `$word['transliteration'] ?? null`
+- `backend/database/seeders/StorySeeder.php` : ajout branche `pgsql` (pas de `SET FOREIGN_KEY_CHECKS`)
+
+**Frontend (branche staging uniquement)** :
+- `frontend/src/api/client.ts` : export `API_URL` depuis `VITE_API_URL` avec fallback Railway en prod
+- `frontend/src/stores/auth.ts` : tokens Bearer via `localStorage` au lieu de cookies, plus de `/sanctum/csrf-cookie`
+- `frontend/src/api/*.ts` : toutes les fonctions fetch utilisent `API_URL` et `authHeaders()`
+- `frontend/src/views/StoryView.vue` : idem
+- `frontend/vercel.json` : suppression des rewrites API (appel direct Railway), headers de sécurité
+
+**Documentation** :
+- `docs/deploiement.md` : réécriture complète avec la config réelle (Railway, Vercel, PostgreSQL, tokens, problèmes résolus)
+
+### Variables d'environnement en production
+
+**Railway (backend)** : `APP_NAME`, `APP_ENV`, `APP_KEY`, `APP_DEBUG`, `APP_URL`, `DB_CONNECTION=pgsql`, `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`, `CORS_ALLOWED_ORIGINS`, `SANCTUM_STATEFUL_DOMAINS`
+
+**Vercel (frontend)** : `VITE_API_URL=https://espafacil-production.up.railway.app` (All Environments)
+
+### Points importants pour Codex et Claude
+
+- **master reste pour le dev local** avec SQLite. Ne jamais y mettre de config de déploiement.
+- La branche `staging` contient la config de déploiement (Dockerfile, vercel.json, CORS, tokens). Pour déployer, merger master dans staging.
+- L'auth en production utilise des **tokens API** (pas des cookies). Le code frontend détecte le mode via `VITE_API_URL`.
+- Les seeders doivent supporter **SQLite ET PostgreSQL** : pas de `SET FOREIGN_KEY_CHECKS`, utiliser `$driver === 'pgsql'` pour les cas spécifiques.
+- PostgreSQL est plus strict que SQLite sur les types et les contraintes FK.
+
+---
+
 ## Mise à jour Codex — 20 juin 2026 — aide lecture choix non latins validée
 
 - Branche : `codex/2026-06-19-aide-lecture-langues-non-latines`.
@@ -261,29 +306,17 @@ php artisan db:seed --class=StorySeeder
 
 ## Prochaine phase prévue
 
-- Migration SQLite vers PostgreSQL (voir section ci-dessous, à ne démarrer qu'après accord explicite d'Adrien).
 - Créer toute nouvelle branche depuis `master` à jour : `claude/YYYY-MM-DD-nom` (Claude) ou `codex/YYYY-MM-DD-nom` (Codex).
 - Ne commence pas l'i18n sans accord explicite d'Adrien.
 
-## Phase prévue (après la 28) : migration SQLite vers PostgreSQL
+## Migration SQLite vers PostgreSQL — FAIT (production uniquement)
 
-Cadrée le 14 juin 2026, à ne démarrer qu'après accord explicite d'Adrien sur le moment.
-
-- Objectif : passer la base de données du projet de SQLite à PostgreSQL pour se rapprocher d'un environnement de production réaliste, sans changement fonctionnel.
-- Périmètre inclus :
-  - configuration Laravel pour PostgreSQL (`.env`, `config/database.php`, driver `pgsql`) ;
-  - audit de toutes les migrations, modèles, seeders et requêtes brutes pour les éléments spécifiques à SQLite (types de colonnes, fonctions de date, JSON/casts, contraintes uniques, auto-increment) ;
-  - mise à jour de la CI pour faire tourner les tests contre PostgreSQL (service Docker dans `ci.yml`) ;
-  - documentation pour lancer PostgreSQL en local ;
-  - exécution complète de toutes les migrations et de tous les seeders contre PostgreSQL, et de la suite de tests.
-- Hors périmètre : aucune nouvelle fonctionnalité, aucune migration de données de production (projet en développement), suppression du support SQLite à décider au cadrage final.
-- Critères d'acceptation :
-  - `php artisan migrate:fresh --seed` fonctionne sans erreur sur PostgreSQL ;
-  - `php artisan test` passe entièrement sur PostgreSQL ;
-  - l'application fonctionne normalement en local avec PostgreSQL ;
-  - CI verte avec PostgreSQL comme base de test.
-- Risques : PostgreSQL requis en local/CI (Docker), typage strict de Postgres pouvant révéler des bugs latents masqués par SQLite (à corriger).
-- À traiter sur une branche dédiée, indépendante des phases fonctionnelles.
+- **Statut** : fait en production (Railway), le dev local reste sur SQLite.
+- PostgreSQL est fourni par Railway comme service séparé avec volume persistant.
+- Les seeders ont été adaptés pour supporter les deux drivers (SQLite et PostgreSQL).
+- Le Dockerfile installe `pdo_pgsql` en plus de `pdo_sqlite`.
+- Les variables `DB_CONNECTION=pgsql`, `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD` sont configurées dans Railway.
+- Voir `docs/deploiement.md` pour la configuration complète.
 
 ## Points de vigilance
 
