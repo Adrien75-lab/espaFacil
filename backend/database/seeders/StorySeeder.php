@@ -15,6 +15,10 @@ class StorySeeder extends Seeder
             DB::table('story_tokens')->delete();
             DB::table('stories')->delete();
             DB::statement('PRAGMA foreign_keys = ON');
+        } elseif ($driver === 'pgsql') {
+            DB::table('story_questions')->delete();
+            DB::table('story_tokens')->delete();
+            DB::table('stories')->delete();
         } else {
             DB::statement('SET FOREIGN_KEY_CHECKS=0');
             DB::table('story_questions')->truncate();
