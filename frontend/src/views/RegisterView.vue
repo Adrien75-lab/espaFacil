@@ -108,7 +108,7 @@ async function submit() {
   loading.value = true
   try {
     await auth.register(name.value, email.value, password.value, password_confirmation.value)
-    router.push('/')
+    router.push('/verify-email')
   } catch (e: any) {
     if (e.errors && Object.keys(e.errors).length) {
       const errs: Record<string, string> = {}

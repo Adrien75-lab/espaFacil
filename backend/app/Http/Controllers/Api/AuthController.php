@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rules\Password;
 
@@ -46,10 +47,14 @@ class AuthController extends Controller
         ]);
 
         $user = User::create($data);
+        event(new Registered($user));
         Auth::login($user);
         $request->session()->regenerate();
 
-        return response()->json(['user' => $user], 201);
+        return response()->json([
+            'user' => $user,
+            'email_verified' => $user->hasVerifiedEmail(),
+        ], 201);
     }
 
     public function login(Request $request): JsonResponse
@@ -65,7 +70,11 @@ class AuthController extends Controller
 
         $request->session()->regenerate();
 
-        return response()->json(['user' => Auth::user()]);
+        $user = Auth::user();
+        return response()->json([
+            'user' => $user,
+            'email_verified' => $user->hasVerifiedEmail(),
+        ]);
     }
 
     public function logout(Request $request): JsonResponse
@@ -79,7 +88,11 @@ class AuthController extends Controller
 
     public function user(Request $request): JsonResponse
     {
-        return response()->json(['user' => $request->user()]);
+        $user = $request->user();
+        return response()->json([
+            'user' => $user,
+            'email_verified' => $user->hasVerifiedEmail(),
+        ]);
     }
 
     public function deleteAccount(Request $request): JsonResponse

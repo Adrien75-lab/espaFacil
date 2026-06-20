@@ -14,6 +14,8 @@ use App\Http\Controllers\Api\ReviewController;
 use App\Http\Controllers\Api\StoryController;
 use App\Http\Controllers\Api\TodayController;
 use App\Http\Controllers\Api\WordController;
+use Illuminate\Foundation\Auth\EmailVerificationRequest;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 // Auth (SPA stateful via Sanctum cookie)
@@ -24,10 +26,25 @@ Route::middleware('throttle:5,1')->group(function () {
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth:sanctum');
 Route::get('/user', [AuthController::class, 'user'])->middleware('auth:sanctum');
 
+// Email verification
+Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
+    $request->fulfill();
+    $frontendUrl = env('FRONTEND_URL', 'http://localhost:5173');
+    return redirect($frontendUrl . '/email-verified');
+})->middleware(['auth:sanctum', 'signed'])->name('verification.verify');
+
+Route::post('/email/resend', function (Request $request) {
+    if ($request->user()->hasVerifiedEmail()) {
+        return response()->json(['message' => 'Email déjà vérifié.']);
+    }
+    $request->user()->sendEmailVerificationNotification();
+    return response()->json(['message' => 'Email de vérification envoyé.']);
+})->middleware(['auth:sanctum', 'throttle:3,1']);
+
 // Protected: progression + mots perso
 Route::delete('/me', [AuthController::class, 'deleteAccount'])->middleware('auth:sanctum');
 
-Route::middleware('auth:sanctum')->prefix('me')->group(function () {
+Route::middleware(['auth:sanctum', 'verified'])->prefix('me')->group(function () {
     Route::get('/progress', [ProgressController::class,  'show']);
     Route::post('/session', [ProgressController::class,  'session']);
     Route::get('/custom-words', [CustomWordController::class, 'index']);

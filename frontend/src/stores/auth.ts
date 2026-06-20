@@ -1,10 +1,11 @@
 import { defineStore } from 'pinia'
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
 export interface AuthUser {
   id: number
   name: string
   email: string
+  email_verified_at: string | null
 }
 
 async function apiFetch(url: string, options: RequestInit = {}) {
@@ -79,5 +80,14 @@ export const useAuthStore = defineStore('auth', () => {
     user.value = null
   }
 
-  return { user, loading, fetchUser, login, register, logout, deleteAccount }
+  const emailVerified = computed(() => !!user.value?.email_verified_at)
+
+  async function resendVerification() {
+    const res = await apiFetch('/api/email/resend', { method: 'POST' })
+    const data = await res.json()
+    if (!res.ok) throw new Error(data.message ?? 'Erreur lors de l\'envoi.')
+    return data.message
+  }
+
+  return { user, loading, emailVerified, fetchUser, login, register, logout, deleteAccount, resendVerification }
 })
