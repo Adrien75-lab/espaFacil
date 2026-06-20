@@ -1,0 +1,13 @@
+vendor
+node_modules
+.env
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+tests
+phpunit.xml
+phpstan.neon.dist
+phpmd.xml.dist
+tools
+.git
