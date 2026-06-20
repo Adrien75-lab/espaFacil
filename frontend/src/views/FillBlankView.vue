@@ -256,14 +256,14 @@ onUnmounted(() => document.removeEventListener('click', handleOutsideClick))
 .progress-fill { height: 100%; background: var(--accent); border-radius: 3px; transition: width .3s; }
 
 /* Sentence box */
-.sentence-box { font-size: 1.2rem; color: #ddd; line-height: 2.2;
+.sentence-box { font-size: 1.2rem; color: var(--text); line-height: 2.2;
   background: var(--bg-card); border-radius: 12px; padding: 1.25rem 1rem;
   margin-bottom: .5rem; text-align: center; word-break: break-word; }
 .sentence-box.rtl { direction: rtl; }
 
 /* Tokens */
 .token { position: relative; display: inline; }
-.token-plain { color: #ddd; }
+.token-plain { color: var(--text); }
 .token-gloss {
   color: #a5b4fc;
   border-bottom: 2px dashed #6366f1;
@@ -311,17 +311,17 @@ onUnmounted(() => document.removeEventListener('click', handleOutsideClick))
 .rom-hint { text-align: center; color: #666; font-style: italic; font-size: .85rem; margin-bottom: .75rem; }
 
 .choices { display: flex; flex-direction: column; gap: .65rem; margin-bottom: 1rem; }
-.choice-btn { background: var(--bg-card); border: 2px solid #444; border-radius: 10px;
-  color: #ddd; padding: .75rem 1rem; font-size: 1rem; cursor: pointer; text-align: center; transition: border-color .15s; }
+.choice-btn { background: var(--bg-card); border: 2px solid var(--border); border-radius: 10px;
+  color: var(--text); padding: .75rem 1rem; font-size: 1rem; font-weight: 600; cursor: pointer; text-align: center; transition: border-color .15s, color .15s; }
 .choice-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--text); }
-.choice-btn.correct { background: #14532d40; border-color: #22c55e; color: #86efac; }
-.choice-btn.wrong   { background: #7f1d1d40; border-color: #ef4444; color: #fca5a5; }
+.choice-btn.correct { background: #14532d40; border-color: var(--success); color: var(--success); }
+.choice-btn.wrong   { background: #7f1d1d40; border-color: var(--danger); color: var(--danger); }
 .choice-btn:disabled { cursor: default; }
 
 .reveal-pair { display: flex; align-items: center; gap: .4rem; margin-top: .3rem; flex-wrap: wrap; }
 .reveal-term { font-size: .85rem; font-weight: 700; color: var(--dim); }
 .reveal-arrow { font-size: .8rem; color: var(--muted); }
-.reveal-fr { font-size: .85rem; color: #86efac; font-weight: 600; }
+.reveal-fr { font-size: .85rem; color: var(--success); font-weight: 600; }
 .feedback-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .feedback-text { font-size: 1rem; font-weight: 600; }
 .feedback-text.correct { color: #22c55e; }
