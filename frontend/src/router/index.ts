@@ -32,6 +32,8 @@ const router = createRouter({
     { path: '/mentions-legales',  name: 'mentions-legales',  component: () => import('@/views/MentionsLegalesView.vue') },
     { path: '/confidentialite',   name: 'confidentialite',   component: () => import('@/views/ConfidentialiteView.vue') },
     { path: '/cgu',               name: 'cgu',               component: () => import('@/views/CguView.vue') },
+    { path: '/verify-email',      name: 'verify-email',      component: () => import('@/views/VerifyEmailView.vue') },
+    { path: '/email-verified',    name: 'email-verified',    component: () => import('@/views/EmailVerifiedView.vue') },
   ]
 })
 
