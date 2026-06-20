@@ -7,10 +7,22 @@
         <input v-model="name" type="text" required autocomplete="name" />
         <label>Email</label>
         <input v-model="email" type="email" required autocomplete="email" />
-        <label>Mot de passe (8 caractères min.)</label>
+        <label>Mot de passe</label>
         <input v-model="password" type="password" required autocomplete="new-password" />
+        <div class="password-rules" v-if="password">
+          <p :class="{ ok: rules.length }">{{ rules.length ? '✓' : '✗' }} 12 caractères minimum</p>
+          <p :class="{ ok: rules.uppercase }">{{ rules.uppercase ? '✓' : '✗' }} Une majuscule</p>
+          <p :class="{ ok: rules.lowercase }">{{ rules.lowercase ? '✓' : '✗' }} Une minuscule</p>
+          <p :class="{ ok: rules.number }">{{ rules.number ? '✓' : '✗' }} Un chiffre</p>
+          <p :class="{ ok: rules.special }">{{ rules.special ? '✓' : '✗' }} Un caractère spécial (@#$!…)</p>
+          <div class="strength-bar">
+            <div class="strength-fill" :style="{ width: strengthPercent + '%' }" :class="strengthClass"></div>
+          </div>
+          <p class="strength-label" :class="strengthClass">{{ strengthLabel }}</p>
+        </div>
         <label>Confirmer le mot de passe</label>
         <input v-model="password_confirmation" type="password" required autocomplete="new-password" />
+        <p v-if="password_confirmation && password !== password_confirmation" class="error">Les mots de passe ne correspondent pas.</p>
         <label class="cgu-check">
           <input type="checkbox" v-model="cguAccepted" />
           J'accepte les <RouterLink to="/cgu" target="_blank">conditions générales d'utilisation</RouterLink>
@@ -29,7 +41,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { RouterLink } from 'vue-router'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
@@ -44,10 +56,48 @@ const cguAccepted          = ref(false)
 const error                = ref('')
 const loading              = ref(false)
 
+const rules = computed(() => ({
+  length: password.value.length >= 12,
+  uppercase: /[A-Z]/.test(password.value),
+  lowercase: /[a-z]/.test(password.value),
+  number: /\d/.test(password.value),
+  special: /[^A-Za-z0-9]/.test(password.value),
+}))
+
+const strengthScore = computed(() =>
+  Object.values(rules.value).filter(Boolean).length
+)
+
+const strengthPercent = computed(() => (strengthScore.value / 5) * 100)
+
+const strengthClass = computed(() => {
+  if (strengthScore.value <= 2) return 'weak'
+  if (strengthScore.value <= 3) return 'medium'
+  if (strengthScore.value <= 4) return 'strong'
+  return 'excellent'
+})
+
+const strengthLabel = computed(() => {
+  if (strengthScore.value <= 2) return 'Faible'
+  if (strengthScore.value <= 3) return 'Moyen'
+  if (strengthScore.value <= 4) return 'Fort'
+  return 'Excellent'
+})
+
+const allRulesValid = computed(() => strengthScore.value === 5)
+
 async function submit() {
   error.value = ''
   if (!cguAccepted.value) {
     error.value = 'Vous devez accepter les conditions générales d\'utilisation.'
+    return
+  }
+  if (!allRulesValid.value) {
+    error.value = 'Le mot de passe ne respecte pas tous les critères de sécurité.'
+    return
+  }
+  if (password.value !== password_confirmation.value) {
+    error.value = 'Les mots de passe ne correspondent pas.'
     return
   }
   loading.value = true
@@ -85,4 +135,23 @@ button[type=submit]:disabled { opacity: 0.5; cursor: not-allowed; }
   color: var(--muted2); margin-bottom: 1rem; cursor: pointer; }
 .cgu-check input[type=checkbox] { width: auto; margin: 0; cursor: pointer; }
 .cgu-check a { color: #818cf8; text-decoration: none; }
+
+.password-rules { margin: -0.5rem 0 1rem; padding: 0.75rem; background: rgba(255,255,255,0.03);
+  border-radius: 8px; border: 1px solid var(--border); }
+.password-rules p { font-size: 0.8rem; margin: 0.2rem 0; color: #f87171; transition: color 0.2s; }
+.password-rules p.ok { color: #34d399; }
+
+.strength-bar { height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px;
+  margin-top: 0.5rem; overflow: hidden; }
+.strength-fill { height: 100%; border-radius: 2px; transition: width 0.3s, background 0.3s; }
+.strength-fill.weak { background: #f87171; }
+.strength-fill.medium { background: #fbbf24; }
+.strength-fill.strong { background: #60a5fa; }
+.strength-fill.excellent { background: #34d399; }
+
+.strength-label { font-size: 0.75rem; margin-top: 0.25rem; font-weight: 600; }
+.strength-label.weak { color: #f87171; }
+.strength-label.medium { color: #fbbf24; }
+.strength-label.strong { color: #60a5fa; }
+.strength-label.excellent { color: #34d399; }
 </style>
