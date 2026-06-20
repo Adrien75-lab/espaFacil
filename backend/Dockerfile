@@ -3,8 +3,8 @@ FROM php:8.3-apache
 RUN apt-get update && apt-get install -y \
     unzip libzip-dev libsqlite3-dev \
     && docker-php-ext-install pdo pdo_sqlite zip bcmath \
-    && a2dismod mpm_event && a2enmod mpm_prefork \
-    && a2enmod rewrite \
+    && rm -f /etc/apache2/mods-enabled/mpm_event.conf /etc/apache2/mods-enabled/mpm_event.load \
+    && a2enmod mpm_prefork rewrite \
     && rm -rf /var/lib/apt/lists/*
 
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
