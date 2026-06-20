@@ -25,16 +25,25 @@ export interface SessionPayload {
   total:     number
 }
 
-export async function postSession(payload: SessionPayload): Promise<void> {
+export interface SessionResult {
+  lingos_balance: number
+  lingos_gained: number
+  lingo_rewards: string[]
+  [key: string]: unknown
+}
+
+export async function postSession(payload: SessionPayload): Promise<SessionResult | null> {
   try {
-    await fetch('/api/me/session', {
+    const res = await fetch('/api/me/session', {
       method: 'POST',
       credentials: 'include',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify(payload),
     })
+    if (res.ok) return await res.json()
+    return null
   } catch {
-    // silencieux : mode invité ou réseau
+    return null
   }
 }
 
