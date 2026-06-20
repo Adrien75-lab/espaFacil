@@ -24,7 +24,9 @@ RUN mkdir -p storage/framework/{cache,sessions,views} \
 
 COPY docker/apache.conf /etc/apache2/sites-available/000-default.conf
 
-RUN if [ ! -f database/database.sqlite ]; then touch database/database.sqlite; fi
+RUN if [ ! -f database/database.sqlite ]; then touch database/database.sqlite; fi \
+    && chown -R www-data:www-data database storage bootstrap/cache \
+    && chmod -R 775 database storage bootstrap/cache
 
 EXPOSE 8080
 
