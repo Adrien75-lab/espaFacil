@@ -23,6 +23,8 @@ Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth:sanc
 Route::get('/user', [AuthController::class, 'user'])->middleware('auth:sanctum');
 
 // Protected: progression + mots perso
+Route::delete('/me', [AuthController::class, 'deleteAccount'])->middleware('auth:sanctum');
+
 Route::middleware('auth:sanctum')->prefix('me')->group(function () {
     Route::get('/progress', [ProgressController::class,  'show']);
     Route::post('/session', [ProgressController::class,  'session']);

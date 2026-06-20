@@ -19,6 +19,7 @@
       </template>
     </div>
     <RouterView />
+    <AppFooter />
   </div>
 </template>
 
@@ -29,6 +30,7 @@ import { useAuthStore } from '@/stores/auth'
 import { useTheme } from '@/composables/useTheme'
 import PwaInstallPrompt from '@/components/PwaInstallPrompt.vue'
 import OfflineBanner from '@/components/OfflineBanner.vue'
+import AppFooter from '@/components/AppFooter.vue'
 
 const auth = useAuthStore()
 const { theme, toggle } = useTheme()

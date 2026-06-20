@@ -177,6 +177,15 @@
           </div>
         </div>
       </section>
+
+      <!-- Supprimer mon compte -->
+      <section class="section danger-zone">
+        <h2>Zone de danger</h2>
+        <p class="danger-text">La suppression de votre compte est définitive. Toutes vos données seront effacées.</p>
+        <button class="btn-danger" @click="confirmDelete" :disabled="deleting">
+          {{ deleting ? 'Suppression…' : 'Supprimer mon compte' }}
+        </button>
+      </section>
     </template>
   </div>
 </template>
@@ -194,6 +203,7 @@ const auth   = useAuthStore()
 
 const data        = ref<DashboardData | null>(null)
 const loading     = ref(true)
+const deleting    = ref(false)
 const todayStr    = new Date().toISOString().slice(0, 10)
 const currentGoal = ref(50)
 const goalOptions = [20, 50, 100, 200]
@@ -201,6 +211,19 @@ const goalOptions = [20, 50, 100, 200]
 async function changeGoal(xp: number) {
   currentGoal.value = xp
   await updateGoal(xp)
+}
+
+async function confirmDelete() {
+  if (!confirm('Êtes-vous sûr de vouloir supprimer votre compte ? Cette action est irréversible.')) return
+  deleting.value = true
+  try {
+    await auth.deleteAccount()
+    router.push('/')
+  } catch (e: any) {
+    alert(e.message)
+  } finally {
+    deleting.value = false
+  }
 }
 
 const initials = computed(() => {
@@ -411,4 +434,12 @@ onMounted(async () => {
 .goal-opt { background: var(--bg-card); border: 2px solid var(--border); border-radius: 20px;
   color: var(--muted2); padding: .3rem .9rem; font-size: .85rem; cursor: pointer; transition: border-color .15s; }
 .goal-opt:hover, .goal-opt.active { border-color: var(--accent); color: #a5b4fc; }
+
+.danger-zone { border: 1px solid #7f1d1d; border-radius: 10px; padding: 1.5rem; margin-top: 2rem; }
+.danger-zone h2 { color: #f87171; margin-top: 0; }
+.danger-text { color: var(--muted2); font-size: 0.88rem; margin-bottom: 1rem; }
+.btn-danger { background: #dc2626; color: white; border: none; border-radius: 8px;
+  padding: 0.6rem 1.5rem; font-size: 0.9rem; cursor: pointer; font-weight: 600; }
+.btn-danger:hover { background: #b91c1c; }
+.btn-danger:disabled { opacity: 0.5; cursor: not-allowed; }
 </style>
