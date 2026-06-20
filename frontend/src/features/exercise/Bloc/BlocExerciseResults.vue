@@ -1,11 +1,16 @@
 <template>
   <section class="results" :class="tone" aria-live="polite">
-    <div v-if="showConfetti" class="confetti-layer" aria-hidden="true">
+    <div
+      v-if="showCelebration"
+      class="celebration-layer"
+      :class="`celebration-${tone}`"
+      aria-hidden="true"
+    >
       <span
-        v-for="n in 42"
+        v-for="n in celebrationCount"
         :key="n"
-        class="confetto"
-        :style="confettoStyle(n)"
+        class="celebration-piece"
+        :style="celebrationStyle(n)"
       ></span>
     </div>
 
@@ -47,7 +52,7 @@ const props = withDefaults(defineProps<{
   playSound: true,
 })
 
-const showConfetti = ref(false)
+const showCelebration = ref(false)
 
 const scorePercent = computed(() => {
   if (!props.total || props.total <= 0) return 0
@@ -63,6 +68,15 @@ const tone = computed(() => {
   if (scorePercent.value >= 80) return 'great'
   if (scorePercent.value >= 60) return 'good'
   return 'practice'
+})
+
+const shouldCelebrate = computed(() => tone.value !== 'practice')
+
+const celebrationCount = computed(() => {
+  if (tone.value === 'perfect') return 48
+  if (tone.value === 'great') return 30
+  if (tone.value === 'good') return 22
+  return 0
 })
 
 const displayEmoji = computed(() => {
@@ -88,13 +102,19 @@ const displayTitle = computed(() => {
   return 'Session terminée !'
 })
 
-function confettoStyle(n: number) {
+function celebrationStyle(n: number) {
   const colors = ['#22c55e', '#6366f1', '#f59e0b', '#ec4899', '#38bdf8', '#f0abfc']
+  const angle = (n * 137) % 360
+  const distance = 110 + (n % 5) * 22
+
   return {
-    left: `${(n * 23) % 100}%`,
+    left: tone.value === 'great' ? '50%' : `${(n * 23) % 100}%`,
+    top: tone.value === 'great' ? '46%' : tone.value === 'good' ? `${62 + (n % 5) * 5}%` : '-16px',
     background: colors[n % colors.length],
     animationDelay: `${(n % 9) * 0.08}s`,
     animationDuration: `${1.7 + (n % 5) * 0.22}s`,
+    '--angle': `${angle}deg`,
+    '--distance': `${distance}px`,
   }
 }
 
@@ -122,10 +142,10 @@ function playVictorySound() {
 }
 
 onMounted(() => {
-  if (isPerfect.value) {
-    showConfetti.value = true
+  if (shouldCelebrate.value) {
+    showCelebration.value = true
     playVictorySound()
-    window.setTimeout(() => { showConfetti.value = false }, 3200)
+    window.setTimeout(() => { showCelebration.value = false }, 3200)
   }
 })
 </script>
@@ -145,6 +165,7 @@ onMounted(() => {
   padding: 2rem 1.5rem;
   overflow: hidden;
   text-align: center;
+  color: #e2e8f0;
   background: linear-gradient(180deg, #19192a, #11111d);
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -189,11 +210,12 @@ onMounted(() => {
 }
 h2 {
   margin: 0 0 0.25rem;
+  color: #f8fafc;
   font-size: 1.8rem;
 }
 .score-text {
   margin: 0 0 1rem;
-  color: var(--muted2);
+  color: #cbd5e1;
   font-size: 1.15rem;
 }
 .score-ring {
@@ -209,7 +231,7 @@ h2 {
   border-radius: 50%;
 }
 .score-ring span {
-  color: var(--text);
+  color: #e2e8f0;
   font-weight: 900;
 }
 .results-actions {
@@ -219,18 +241,35 @@ h2 {
   justify-content: center;
   margin-top: 1rem;
 }
-.confetti-layer {
+.celebration-layer {
   position: absolute;
   inset: 0;
   pointer-events: none;
 }
-.confetto {
+.celebration-piece {
   position: absolute;
-  top: -16px;
   width: 9px;
   height: 14px;
   border-radius: 2px;
+}
+.celebration-perfect .celebration-piece {
   animation: confetti-fall linear forwards;
+}
+.celebration-great .celebration-piece {
+  left: 50%;
+  width: 11px;
+  height: 11px;
+  clip-path: polygon(50% 0, 61% 34%, 98% 35%, 68% 55%, 79% 91%, 50% 70%, 21% 91%, 32% 55%, 2% 35%, 39% 34%);
+  filter: drop-shadow(0 0 8px currentColor);
+  animation: sparkle-burst cubic-bezier(.18, .85, .28, 1) forwards;
+}
+.celebration-good .celebration-piece {
+  width: 10px;
+  height: 10px;
+  background: color-mix(in srgb, var(--success) 75%, white) !important;
+  border-radius: 999px;
+  opacity: 0;
+  animation: good-float ease-out forwards;
 }
 @keyframes pop-in {
   from { opacity: 0; transform: translateY(18px) scale(0.75); }
@@ -248,6 +287,24 @@ h2 {
   0% { opacity: 1; transform: translateY(0) rotate(0deg); }
   90% { opacity: 1; }
   100% { opacity: 0; transform: translateY(680px) rotate(620deg); }
+}
+@keyframes sparkle-burst {
+  0% { opacity: 0; transform: translate(-50%, -50%) scale(0.3) rotate(0deg); }
+  15% { opacity: 1; }
+  100% {
+    opacity: 0;
+    transform:
+      translate(-50%, -50%)
+      rotate(var(--angle))
+      translateY(calc(-1 * var(--distance)))
+      scale(1.15)
+      rotate(160deg);
+  }
+}
+@keyframes good-float {
+  0% { opacity: 0; transform: translateY(24px) scale(0.6); }
+  18% { opacity: 0.9; }
+  100% { opacity: 0; transform: translateY(-150px) scale(1.25); }
 }
 @media (max-width: 520px) {
   .results { min-height: auto; padding: 1rem 0; }
