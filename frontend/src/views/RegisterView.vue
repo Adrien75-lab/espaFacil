@@ -110,14 +110,15 @@ async function submit() {
     await auth.register(name.value, email.value, password.value, password_confirmation.value)
     router.push('/')
   } catch (e: any) {
-    if (e.errors) {
+    if (e.errors && Object.keys(e.errors).length) {
       const errs: Record<string, string> = {}
       for (const [key, msgs] of Object.entries(e.errors)) {
         errs[key] = (msgs as string[])[0]
       }
       fieldErrors.value = errs
+    } else {
+      error.value = e.message
     }
-    error.value = e.message
   } finally {
     loading.value = false
   }
