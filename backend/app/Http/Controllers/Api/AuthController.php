@@ -14,16 +14,20 @@ class AuthController extends Controller
 {
     public function register(Request $request): JsonResponse
     {
-        $data = $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|email|unique:users',
-            'password' => ['required', 'confirmed', Password::min(8)],
-        ]);
+        try {
+            $data = $request->validate([
+                'name' => 'required|string|max:255',
+                'email' => 'required|email|unique:users',
+                'password' => ['required', 'confirmed', Password::min(8)],
+            ]);
 
-        $user = User::create($data);
-        $token = $user->createToken('auth')->plainTextToken;
+            $user = User::create($data);
+            $token = $user->createToken('auth')->plainTextToken;
 
-        return response()->json(['user' => $user, 'token' => $token], 201);
+            return response()->json(['user' => $user, 'token' => $token], 201);
+        } catch (\Throwable $e) {
+            return response()->json(['message' => $e->getMessage()], 500);
+        }
     }
 
     public function login(Request $request): JsonResponse
