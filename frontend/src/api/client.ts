@@ -1,6 +1,6 @@
 import type { Language, Theme, Word, GrammarTip, Level } from '@/types'
 
-export const API_URL = import.meta.env.VITE_API_URL || ''
+export const API_URL = import.meta.env.VITE_API_URL ?? (import.meta.env.PROD ? 'https://espafacil-production.up.railway.app' : '')
 
 const BASE = `${API_URL}/api`
 
