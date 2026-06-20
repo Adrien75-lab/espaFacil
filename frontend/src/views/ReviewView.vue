@@ -175,11 +175,11 @@ onMounted(async () => {
 .btn-icon:hover { border-color: var(--accent); }
 .srs-hint { margin-top: .5rem; color: #f59e0b; font-size: .8rem; }
 .choices { display: flex; flex-direction: column; gap: .6rem; margin-bottom: 1.25rem; }
-.choice-btn { background: var(--bg-card); border: 2px solid #444; border-radius: 10px; padding: .75rem 1rem;
-  color: #ddd; font-size: 1rem; cursor: pointer; text-align: left; transition: border-color .15s; }
+.choice-btn { background: var(--bg-card); border: 2px solid var(--border); border-radius: 10px; padding: .75rem 1rem;
+  color: var(--text); font-size: 1rem; font-weight: 600; cursor: pointer; text-align: left; transition: border-color .15s, color .15s; }
 .choice-btn:not(:disabled):hover { border-color: var(--accent); }
-.choice-btn.correct { border-color: #22c55e; background: #14532d40; color: #86efac; }
-.choice-btn.wrong   { border-color: #ef4444; background: #7f1d1d40; color: #fca5a5; }
+.choice-btn.correct { border-color: var(--success); background: #14532d40; color: var(--success); }
+.choice-btn.wrong   { border-color: var(--danger); background: #7f1d1d40; color: var(--danger); }
 .btn-next { width: 100%; background: var(--accent); color: white; border: none; border-radius: 8px;
   padding: .75rem; font-size: 1rem; font-weight: 600; cursor: pointer; }
 .btn-next:hover { opacity: .88; }

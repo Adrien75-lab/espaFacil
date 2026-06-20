@@ -1,13 +1,68 @@
 # État courant de LinguaFacil
 
-## Mise à jour Codex — 19 juin 2026 — parcours guidé utilisateur
+## Mise à jour Codex — 20 juin 2026 — parcours guidé utilisateur validé
 
-- Branche de travail : `codex/2026-06-19-parcours-guide-utilisateur`, créée depuis `origin/master`.
+- Branche : `codex/2026-06-19-parcours-guide-utilisateur`.
+- Recette utilisateur validée par Adrien.
 - Objectif : rendre l'expérience d'accueil plus claire et guider l'utilisateur vers une première leçon courte.
-- `HomeView.vue` affiche désormais un panneau "Commencez en 3 étapes simples" avant le choix de langue.
+- `HomeView.vue` conserve l'UX du sélecteur validée en PR #13 et ajoute le panneau "Commencez en 3 étapes simples" avant le choix de langue.
 - Après sélection d'une langue, un bloc "Suivez un parcours simple" propose trois étapes conseillées : Découvrir (`quiz`), Comprendre (`fill-blank`) et Pratiquer (`dialogue`).
 - Aucun changement backend, aucune migration et aucun seeder.
-- Validations frontend : `npm test`, `npm run lint`, `npm run build` et `git diff --check` OK. Capture non générée : aucun navigateur CLI disponible dans l'environnement.
+- Validations frontend après synchronisation avec `master` : `npm run lint`, `npm test`, `npm run build` et `git diff --check` OK.
+
+## Mise à jour Codex — 20 juin 2026 — PR #12 déblocage conflits
+
+- Branche : `codex/2026-06-19-doc-recette-branches`.
+- Objectif : résoudre les conflits de la PR #12 après la fusion de la PR #13 dans `master`.
+- Contenu de la branche : ajout de `docs/recettes/2026-06-19-recette-branches-codex.md` pour guider la recette des branches Codex en attente.
+- La fiche couvre les branches `tests-selecteur-exercices`, `audit-contenu-pedagogique`, `aide-lecture-langues-non-latines` et rappelle aussi la branche UX thème clair/sélecteur.
+- Aucun changement applicatif, aucune migration et aucun seeder.
+- Validation : `git diff --check` OK après résolution.
+
+## Mise à jour Codex — 20 juin 2026 — PR #13 fusionnée
+
+- Branche : `codex/2026-06-19-ux-theme-clair-selecteur`.
+- Recette utilisateur validée par Adrien.
+- PR GitHub : #13, `Améliorer l’UX du sélecteur et des retours d’exercice`.
+- Correctifs ajoutés pendant recette : contraste des réponses dans les modes de jeu et animations de fin différenciées (`Parfait`, `Bravo`, `Bien`, `On continue`).
+- Validations frontend : `npm run lint`, `npm test`, `npm run build` et `git diff --check` OK.
+- Migration : non. Seeder : non.
+
+## Mise à jour Claude — 19 juin 2026 — branches en attente de recette
+
+### Branches Claude (3) — en attente de recette Adrien
+
+| Branche | Contenu | Statut |
+|---------|---------|--------|
+| `claude/2026-06-17-rgpd` | RGPD : mentions légales, confidentialité, CGU, checkbox inscription, suppression de compte, footer | En attente de recette |
+| `claude/2026-06-18-enrichir-themes` | Fallback `loadWords(minCount=8)` : si un niveau a < 8 mots, complète avec les autres niveaux du même thème | En attente de recette |
+| `claude/2026-06-19-responsive-mobile` | Responsive mobile : media queries (max-width: 480px) sur 23 fichiers (auth bar, landing, home, quiz, profil, tous exercices) | En attente de recette |
+
+### Branches Claude fusionnées
+
+| Branche | PR | Contenu |
+|---------|-----|---------|
+| `claude/2026-06-18-pwa` | #11 (merged) | PWA installable, workbox 7.0.0, cache offline |
+
+---
+
+## Mise à jour Codex — 19 juin 2026 — passage de relais Claude
+
+- Mise à jour ajoutée directement sur `master` à la demande d'Adrien pour que Claude reprenne le contexte sans ambiguïté.
+- Plusieurs branches Codex du 19 juin 2026 sont poussées sur `origin` mais **non fusionnées** et **non validées en recette**. Ne les merge pas sans validation explicite d'Adrien.
+- Branches fonctionnelles à tester en priorité :
+  - `codex/2026-06-19-ux-theme-clair-selecteur` : amélioration UX du thème clair, sélecteur plus lisible, messages d'indisponibilité, blocs d'exercice harmonisés.
+  - `codex/2026-06-19-tests-selecteur-exercices` : extraction/test de la logique de disponibilité du sélecteur, sans changement produit majeur attendu.
+  - `codex/2026-06-19-aide-lecture-langues-non-latines` : aide activable dans le mode Phrases pour afficher translittération/traduction sous les choix en japonais, chinois, coréen, arabe, hindi et russe.
+  - `codex/2026-06-19-parcours-guide-utilisateur` : panneaux de guidage sur `HomeView` pour expliquer comment démarrer et proposer Découvrir → Comprendre → Pratiquer.
+- Branches documentaires/audit utiles :
+  - `codex/2026-06-19-audit-contenu-pedagogique` : script `scripts/audit_content_coverage.mjs` et rapport `docs/audits/content-coverage.md`. Résultat observé : 14 langues, 433 thèmes, 6380 mots, 100% exemples/glosses, mais risque UX sur les écritures non latines.
+  - `codex/2026-06-19-doc-recette-branches` : fiche `docs/recettes/2026-06-19-recette-branches-codex.md` pour guider Adrien dans la recette des branches.
+  - `codex/2026-06-19-doc-mise-en-production` : document `docs/production/preparation-mise-en-production.md` avec planning déploiement, bêta privée/publique, checklist technique et critères produit.
+- Ordre conseillé de recette : UX thème clair/sélecteur, parcours guidé, aide lecture non latine, tests sélecteur, puis audit/docs.
+- Important : Adrien a explicitement rappelé que la recette Product Owner doit être validée avant PR/merge. Ne considère jamais des tests automatisés comme une validation de recette.
+- Aucun changement de base de données n'est porté par ces branches du 19 juin : migrations non, seeders non.
+
 
 ## Mise à jour Codex — 18 juin 2026
 

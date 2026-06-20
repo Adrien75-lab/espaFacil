@@ -27,17 +27,18 @@ const percentage = computed(() => {
 
 <style scoped>
 .progress-bar {
-  height: 6px;
+  height: 10px;
   overflow: hidden;
   margin-bottom: 1.5rem;
-  background: var(--border);
-  border-radius: 3px;
+  background: color-mix(in srgb, var(--border) 55%, var(--bg-card));
+  border: 1px solid var(--border);
+  border-radius: 999px;
 }
 
 .progress-fill {
   height: 100%;
-  background: var(--accent);
-  border-radius: 3px;
+  background: linear-gradient(90deg, var(--success), var(--accent));
+  border-radius: 999px;
   transition: width 0.3s;
 }
 </style>
