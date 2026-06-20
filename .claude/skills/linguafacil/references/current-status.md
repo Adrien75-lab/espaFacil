@@ -7,6 +7,8 @@
 - Ajout de `frontend/src/utils/readingSupport.ts` pour identifier les langues nécessitant une aide de lecture (`ru`, `ja`, `ko`, `zh`, `ar`, `hi`) et de tests Vitest associés.
 - `FillBlankView.vue` affiche désormais un panneau activable "Afficher l'aide" pour ces langues ; en niveau `debutant`, chaque choix montre le terme, la translittération si disponible et la traduction française.
 - Correction de recette : aux niveaux `intermediaire` et `avance`, l'aide ne montre plus la traduction française des choix et reste limitée à la lecture/translittération.
+- Extension de recette : `PairesView.vue` affiche la translittération sur les cartes "mot" et dans le récap des paires trouvées ; `AnagramView.vue` affiche une aide de lecture sous l'indice français pour les langues non latines.
+- Les modes dont les choix sont déjà en français (`quiz`, `review`, `difficult`, `listen`) ne reçoivent pas d'aide de lecture sur les réponses ; ils conservent la translittération du mot cible déjà affichée.
 - Aucun changement backend, aucune migration et aucun seeder.
 - Validations frontend après correction : `npm run lint`, `npm test`, `npm run build` et `git diff --check` OK. Capture non générée : aucun navigateur CLI disponible dans l'environnement.
 
