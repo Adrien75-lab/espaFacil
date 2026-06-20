@@ -1,5 +1,17 @@
 # État courant de LinguaFacil
 
+## Mise à jour Codex — 20 juin 2026 — aide lecture choix non latins validée
+
+- Branche : `codex/2026-06-19-aide-lecture-langues-non-latines`.
+- Recette utilisateur validée par Adrien.
+- Objectif : rendre les modes avec réponses en écriture non latine plus lisibles, notamment le japonais.
+- Ajout de `frontend/src/utils/readingSupport.ts` pour identifier les langues nécessitant une aide de lecture (`ru`, `ja`, `ko`, `zh`, `ar`, `hi`) et de tests Vitest associés.
+- `FillBlankView.vue` affiche un panneau activable : en niveau `debutant`, les choix montrent terme, translittération et traduction française ; en `intermediaire` et `avance`, la traduction reste cachée et l'aide se limite à la lecture/translittération.
+- `PairesView.vue` affiche la translittération sur les cartes "mot" et dans le récap des paires trouvées ; `AnagramView.vue` affiche une aide de lecture sous l'indice français pour les langues non latines.
+- Les modes dont les choix sont déjà en français (`quiz`, `review`, `difficult`, `listen`) ne reçoivent pas d'aide de lecture sur les réponses ; ils conservent la translittération du mot cible déjà affichée.
+- Aucun changement backend, aucune migration et aucun seeder.
+- Validations frontend après synchronisation avec `master` : `npm run lint`, `npm test`, `npm run build` et `git diff --check` OK.
+
 ## Mise à jour Codex — 20 juin 2026 — parcours guidé utilisateur validé
 
 - Branche : `codex/2026-06-19-parcours-guide-utilisateur`.
@@ -62,6 +74,7 @@
 - Ordre conseillé de recette : UX thème clair/sélecteur, parcours guidé, aide lecture non latine, tests sélecteur, puis audit/docs.
 - Important : Adrien a explicitement rappelé que la recette Product Owner doit être validée avant PR/merge. Ne considère jamais des tests automatisés comme une validation de recette.
 - Aucun changement de base de données n'est porté par ces branches du 19 juin : migrations non, seeders non.
+
 
 
 ## Mise à jour Codex — 18 juin 2026
