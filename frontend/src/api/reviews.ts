@@ -1,4 +1,5 @@
 import { API_URL } from '@/api/client'
+import { authHeaders } from '@/stores/auth'
 
 export interface ReviewWord {
   id:               number
@@ -22,8 +23,7 @@ export async function postReview(wordId: number, languageCode: string, correct: 
   try {
     await fetch(`${API_URL}/api/me/reviews`, {
       method: 'POST',
-      credentials: 'include',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', ...authHeaders() },
       body: JSON.stringify({ word_id: wordId, language_code: languageCode, correct }),
     })
   } catch {
@@ -33,8 +33,7 @@ export async function postReview(wordId: number, languageCode: string, correct: 
 
 export async function fetchDue(language: string, limit = 20): Promise<ReviewWord[]> {
   const res = await fetch(`${API_URL}/api/me/reviews/due?language=${language}&limit=${limit}`, {
-    credentials: 'include',
-    headers: { 'Accept': 'application/json' },
+    headers: { 'Accept': 'application/json', ...authHeaders() },
   })
   if (!res.ok) return []
   const data = await res.json()
@@ -43,8 +42,7 @@ export async function fetchDue(language: string, limit = 20): Promise<ReviewWord
 
 export async function fetchDifficult(language: string, limit = 20): Promise<ReviewWord[]> {
   const res = await fetch(`${API_URL}/api/me/reviews/difficult?language=${language}&limit=${limit}`, {
-    credentials: 'include',
-    headers: { 'Accept': 'application/json' },
+    headers: { 'Accept': 'application/json', ...authHeaders() },
   })
   if (!res.ok) return []
   const data = await res.json()

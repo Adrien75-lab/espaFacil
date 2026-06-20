@@ -1,4 +1,5 @@
 import { API_URL } from '@/api/client'
+import { authHeaders } from '@/stores/auth'
 
 export interface DashboardData {
   user:            { name: string; email: string }
@@ -25,8 +26,7 @@ export interface DashboardData {
 export async function fetchDashboard(): Promise<DashboardData | null> {
   try {
     const res = await fetch(`${API_URL}/api/me/dashboard`, {
-      credentials: 'include',
-      headers: { 'Accept': 'application/json' },
+      headers: { 'Accept': 'application/json', ...authHeaders() },
     })
     if (!res.ok) return null
     return await res.json()

@@ -1,4 +1,5 @@
 import { API_URL } from '@/api/client'
+import { authHeaders } from '@/stores/auth'
 
 export type ExerciseMode =
   | 'quiz'
@@ -31,8 +32,7 @@ export async function postSession(payload: SessionPayload): Promise<void> {
   try {
     await fetch(`${API_URL}/api/me/session`, {
       method: 'POST',
-      credentials: 'include',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', ...authHeaders() },
       body: JSON.stringify(payload),
     })
   } catch {
@@ -81,8 +81,7 @@ export interface LeaderboardData {
 export async function fetchLeaderboard(): Promise<LeaderboardData | null> {
   try {
     const r = await fetch(`${API_URL}/api/leaderboard`, {
-      credentials: 'include',
-      headers: { 'Accept': 'application/json' },
+      headers: { 'Accept': 'application/json', ...authHeaders() },
     })
     if (!r.ok) return null
     return await r.json()

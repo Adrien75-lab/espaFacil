@@ -8,13 +8,32 @@ export interface AuthUser {
   email: string
 }
 
+const TOKEN_KEY = 'auth_token'
+
+function getToken(): string | null {
+  return localStorage.getItem(TOKEN_KEY)
+}
+
+function setToken(token: string) {
+  localStorage.setItem(TOKEN_KEY, token)
+}
+
+function clearToken() {
+  localStorage.removeItem(TOKEN_KEY)
+}
+
+export function authHeaders(): Record<string, string> {
+  const token = getToken()
+  return token ? { Authorization: `Bearer ${token}` } : {}
+}
+
 async function apiFetch(url: string, options: RequestInit = {}) {
   return fetch(url, {
     ...options,
-    credentials: 'include',
     headers: {
       'Content-Type': 'application/json',
       'Accept': 'application/json',
+      ...authHeaders(),
       ...(options.headers ?? {}),
     },
   })
@@ -24,15 +43,13 @@ export const useAuthStore = defineStore('auth', () => {
   const user    = ref<AuthUser | null>(null)
   const loading = ref(false)
 
-  async function csrfCookie() {
-    await apiFetch(`${API_URL}/sanctum/csrf-cookie`)
-  }
-
   async function fetchUser() {
+    if (!getToken()) { user.value = null; return }
     loading.value = true
     try {
       const res = await apiFetch(`${API_URL}/api/user`)
       user.value = res.ok ? (await res.json()).user : null
+      if (!res.ok) clearToken()
     } catch {
       user.value = null
     } finally {
@@ -41,29 +58,30 @@ export const useAuthStore = defineStore('auth', () => {
   }
 
   async function login(email: string, password: string) {
-    await csrfCookie()
     const res  = await apiFetch(`${API_URL}/api/login`, {
       method: 'POST',
       body: JSON.stringify({ email, password }),
     })
     const data = await res.json()
     if (!res.ok) throw new Error(data.message ?? 'Identifiants incorrects.')
+    setToken(data.token)
     user.value = data.user
   }
 
   async function register(name: string, email: string, password: string, password_confirmation: string) {
-    await csrfCookie()
     const res  = await apiFetch(`${API_URL}/api/register`, {
       method: 'POST',
       body: JSON.stringify({ name, email, password, password_confirmation }),
     })
     const data = await res.json()
     if (!res.ok) throw new Error(data.message ?? 'Erreur d\'inscription.')
+    setToken(data.token)
     user.value = data.user
   }
 
   async function logout() {
     await apiFetch(`${API_URL}/api/logout`, { method: 'POST' })
+    clearToken()
     user.value = null
   }
 
@@ -73,6 +91,7 @@ export const useAuthStore = defineStore('auth', () => {
       const data = await res.json()
       throw new Error(data.message ?? 'Erreur lors de la suppression.')
     }
+    clearToken()
     user.value = null
   }
 

@@ -1,11 +1,14 @@
 import type { Language, Theme, Word, GrammarTip, Level } from '@/types'
+import { authHeaders } from '@/stores/auth'
 
 export const API_URL = import.meta.env.VITE_API_URL ?? (import.meta.env.PROD ? 'https://espafacil-production.up.railway.app' : '')
 
 const BASE = `${API_URL}/api`
 
 export async function apiGet<T>(path: string): Promise<T> {
-  const res = await fetch(`${BASE}${path}`, { credentials: 'include' })
+  const res = await fetch(`${BASE}${path}`, {
+    headers: { 'Accept': 'application/json', ...authHeaders() },
+  })
   if (!res.ok) throw new Error(`API error ${res.status}: ${path}`)
   const json = await res.json()
   return json.data ?? json
