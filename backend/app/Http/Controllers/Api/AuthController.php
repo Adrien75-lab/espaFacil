@@ -47,7 +47,13 @@ class AuthController extends Controller
         ]);
 
         $user = User::create($data);
-        event(new Registered($user));
+
+        try {
+            event(new Registered($user));
+        } catch (\Throwable $e) {
+            report($e);
+        }
+
         $token = $user->createToken('auth')->plainTextToken;
 
         return response()->json([
