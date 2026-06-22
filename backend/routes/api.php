@@ -53,7 +53,7 @@ Route::post('/email/resend', function (Request $request) {
 // Protected: progression + mots perso
 Route::delete('/me', [AuthController::class, 'deleteAccount'])->middleware('auth:sanctum');
 
-Route::middleware(['auth:sanctum', 'verified'])->prefix('me')->group(function () {
+Route::middleware(['auth:sanctum'])->prefix('me')->group(function () {
     Route::get('/progress', [ProgressController::class,  'show']);
     Route::post('/session', [ProgressController::class,  'session']);
     Route::get('/custom-words', [CustomWordController::class, 'index']);
