@@ -31,13 +31,20 @@ const showScore = computed(() => props.correct !== undefined && props.answered !
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.9rem;
+  padding: 0.75rem 0.85rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow-card);
 }
 
 .quit-button {
-  background: none;
-  border: none;
-  color: var(--muted);
+  background: var(--bg-hover);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted2);
+  padding: 0.4rem 0.75rem;
   cursor: pointer;
   font-size: 0.9rem;
 }
@@ -46,10 +53,13 @@ const showScore = computed(() => props.correct !== undefined && props.answered !
 .counter {
   color: var(--muted2);
   font-size: 0.9rem;
+  font-weight: 800;
 }
 
 .mode-label {
-  font-size: 0.88rem;
+  color: var(--text);
+  font-size: 0.92rem;
+  font-weight: 900;
 }
 
 .header-status {

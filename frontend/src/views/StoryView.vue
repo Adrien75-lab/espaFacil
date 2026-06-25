@@ -466,8 +466,8 @@ function nextQcm() {
 .opt-wrong   { border-color: #ef4444 !important; background: #7f1d1d20 !important; }
 .opt-correct .opt-letter { background: #22c55e; color: white; }
 .opt-wrong   .opt-letter { background: #ef4444; color: white; }
-.opt-correct .opt-label  { color: #86efac; }
-.opt-wrong   .opt-label  { color: #fca5a5; }
+.opt-correct .opt-label  { color: var(--success); }
+.opt-wrong   .opt-label  { color: var(--danger); }
 
 .question-slide-enter-active { transition: opacity .3s ease, transform .3s ease; }
 .question-slide-leave-active { transition: opacity .2s ease, transform .2s ease; }

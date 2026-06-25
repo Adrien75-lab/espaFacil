@@ -29,6 +29,11 @@ const router = createRouter({
     { path: '/conjugaison',  name: 'conjugaison',  component: () => import('@/views/ConjugationView.vue') },
     { path: '/traduction',   name: 'traduction',   component: () => import('@/views/TranslationView.vue') },
     { path: '/devinette',    name: 'devinette',    component: () => import('@/views/DevinetteView.vue') },
+    { path: '/mentions-legales',  name: 'mentions-legales',  component: () => import('@/views/MentionsLegalesView.vue') },
+    { path: '/confidentialite',   name: 'confidentialite',   component: () => import('@/views/ConfidentialiteView.vue') },
+    { path: '/cgu',               name: 'cgu',               component: () => import('@/views/CguView.vue') },
+    { path: '/verify-email',      name: 'verify-email',      component: () => import('@/views/VerifyEmailView.vue') },
+    { path: '/email-verified',    name: 'email-verified',    component: () => import('@/views/EmailVerifiedView.vue') },
   ]
 })
 

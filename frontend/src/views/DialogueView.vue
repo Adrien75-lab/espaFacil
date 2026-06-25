@@ -375,15 +375,15 @@ watch(done, (val) => {
   display: flex; flex-direction: column; gap: .15rem;
   transition: border-color .15s;
 }
-.choice-btn:not(:disabled):hover { border-color: #0ea5e9; background: #1a2a3a; }
+.choice-btn:not(:disabled):hover { border-color: #0ea5e9; background: var(--bg-hover); }
 .choice-btn:disabled { cursor: default; }
 .opt-text { color: var(--text); font-size: .92rem; }
 .opt-fr   { color: #666; font-size: .78rem; font-style: italic; }
 
 .opt-correct { border-color: #22c55e !important; background: #14532d20 !important; }
 .opt-wrong   { border-color: #ef4444 !important; background: #7f1d1d20 !important; }
-.opt-correct .opt-text { color: #86efac; }
-.opt-wrong   .opt-text { color: #fca5a5; }
+.opt-correct .opt-text { color: var(--success); }
+.opt-wrong   .opt-text { color: var(--danger); }
 
 /* Animation choices */
 .choices-fade-enter-active { transition: opacity .3s ease, transform .3s ease; }

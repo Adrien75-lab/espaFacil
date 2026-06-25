@@ -34,6 +34,9 @@
       </div>
 
       <p class="hint">{{ current.translation_fr }}</p>
+      <p v-if="readingSupportAvailable && current.transliteration" class="reading-hint">
+        {{ current.transliteration }}
+      </p>
       <p class="sublabel">Reconstituez le mot en {{ store.currentLang?.name }}</p>
 
       <!-- Zone réponse -->
@@ -95,6 +98,7 @@ import { useLangStore } from '@/stores/lang'
 import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import ConfirmQuit from '@/components/ConfirmQuit.vue'
 import type { Word } from '@/types'
+import { needsReadingSupport } from '@/utils/readingSupport'
 import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 const store  = useLangStore()
@@ -116,6 +120,7 @@ const shakeAnswer     = ref(false)
 
 const total   = computed(() => cards.value.length)
 const current = computed(() => cards.value[cardIndex.value])
+const readingSupportAvailable = computed(() => needsReadingSupport(store.currentLang?.code))
 
 function shuffle<T>(arr: T[]): T[] {
   return [...arr].sort(() => Math.random() - 0.5)
@@ -202,7 +207,7 @@ function restart() {
 }
 
 onMounted(async () => {
-  if (!store.words.length) await store.loadWords()
+  if (!store.words.length) await store.loadWords(8)
   pool.value  = store.words.filter(w => w.term.length >= 3 && w.term.length <= 12)
   cards.value = shuffle(pool.value).slice(0, 15)
   if (cards.value.length) loadCard()
@@ -223,6 +228,7 @@ onMounted(async () => {
 .progress-fill { height: 100%; background: #f59e0b; border-radius: 3px; transition: width .4s; }
 
 .hint     { text-align: center; font-size: 1.4rem; font-weight: 700; color: var(--text); margin-bottom: .25rem; }
+.reading-hint { text-align: center; color: #a5b4fc; font-size: .9rem; font-style: italic; font-weight: 700; margin: 0 0 .25rem; }
 .sublabel { text-align: center; font-size: .82rem; color: var(--muted); margin-bottom: 1.5rem; }
 
 /* Answer row */

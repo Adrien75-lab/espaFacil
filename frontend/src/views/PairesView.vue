@@ -50,8 +50,16 @@
           @click="flip(card)"
         >
           <span class="card-front">?</span>
-          <span class="card-back" :dir="card.type === 'term' && store.currentLang?.is_rtl ? 'rtl' : 'ltr'">
-            {{ card.text }}
+          <span
+            class="card-back"
+            :class="{ 'term-card-back': card.type === 'term' && readingSupportAvailable }"
+            :dir="card.type === 'term' && store.currentLang?.is_rtl ? 'rtl' : 'ltr'"
+          >
+            <span>{{ card.text }}</span>
+            <span
+              v-if="card.type === 'term' && readingSupportAvailable && card.transliteration"
+              class="card-reading"
+            >{{ card.transliteration }}</span>
           </span>
         </button>
       </div>
@@ -62,7 +70,10 @@
       <div v-if="matchedPairs.length" class="matched-list">
         <p class="matched-title">✅ Trouvés :</p>
         <div v-for="p in matchedPairs" :key="p.id" class="matched-item">
-          <span class="matched-term">{{ p.term }}</span>
+          <span class="matched-term">
+            {{ p.term }}
+            <small v-if="readingSupportAvailable && p.transliteration">{{ p.transliteration }}</small>
+          </span>
           <span class="matched-sep">→</span>
           <span class="matched-tr">{{ p.translation }}</span>
         </div>
@@ -79,6 +90,7 @@ import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useSessionRecorder } from '@/composables/useSessionRecorder'
 import type { Word } from '@/types'
+import { needsReadingSupport } from '@/utils/readingSupport'
 import { BlocExerciseResults, BlocExerciseScoreBadge } from '@/features/exercise/Bloc'
 
 const store  = useLangStore()
@@ -90,6 +102,7 @@ interface Card {
   pairId:  number   // shared between term+translation
   type:    'term' | 'translation'
   text:    string
+  transliteration: string | null
   flipped: boolean
   matched: boolean
 }
@@ -102,7 +115,7 @@ const mistakes   = ref(0)
 const done       = ref(false)
 const showQuit   = ref(false)
 
-interface MatchedPair { id: number; term: string; translation: string }
+interface MatchedPair { id: number; term: string; translation: string; transliteration: string | null }
 const matchedPairs = ref<MatchedPair[]>([])
 
 const PAIR_COUNT = 8   // 8 pairs = 16 cards
@@ -110,6 +123,7 @@ const PAIR_COUNT = 8   // 8 pairs = 16 cards
 const pairsCount  = computed(() => cards.value.length / 2)
 const matchedCount = computed(() => cards.value.filter(c => c.matched && c.type === 'term').length)
 const cols        = computed(() => pairsCount.value <= 6 ? 3 : 4)
+const readingSupportAvailable = computed(() => needsReadingSupport(store.currentLang?.code))
 
 function shuffle<T>(arr: T[]): T[] {
   return [...arr].sort(() => Math.random() - 0.5)
@@ -119,8 +133,8 @@ function buildCards(words: Word[]) {
   const picked = shuffle(words).slice(0, PAIR_COUNT)
   const c: Card[] = []
   picked.forEach((w, i) => {
-    c.push({ uid: `t-${i}`,  pairId: i, type: 'term',        text: w.term,           flipped: false, matched: false })
-    c.push({ uid: `tr-${i}`, pairId: i, type: 'translation', text: w.translation_fr, flipped: false, matched: false })
+    c.push({ uid: `t-${i}`,  pairId: i, type: 'term',        text: w.term,           transliteration: w.transliteration, flipped: false, matched: false })
+    c.push({ uid: `tr-${i}`, pairId: i, type: 'translation', text: w.translation_fr, transliteration: null, flipped: false, matched: false })
   })
   cards.value = shuffle(c)
 }
@@ -145,7 +159,7 @@ function flip(card: Card) {
     // Record the matched pair for the reveal list
     const termCard = prev.type === 'term' ? prev : card
     const trCard   = prev.type === 'translation' ? prev : card
-    matchedPairs.value.push({ id: prev.pairId, term: termCard.text, translation: trCard.text })
+    matchedPairs.value.push({ id: prev.pairId, term: termCard.text, translation: trCard.text, transliteration: termCard.transliteration })
     if (matchedCount.value === pairsCount.value) {
       setTimeout(() => { done.value = true }, 400)
     }
@@ -180,7 +194,7 @@ watch(done, (val) => {
 })
 
 onMounted(async () => {
-  if (!store.words.length) await store.loadWords()
+  if (!store.words.length) await store.loadWords(8)
   pool.value = store.words
   buildCards(pool.value)
 })
@@ -231,6 +245,8 @@ onMounted(async () => {
 }
 .card-front { color: #555; font-size: 1.4rem; opacity: 1; }
 .card-back  { color: var(--text); opacity: 0; }
+.card-back.term-card-back { flex-direction: column; gap: .2rem; }
+.card-reading { color: #a5b4fc; font-size: .74rem; font-style: italic; font-weight: 700; }
 
 .card.flipped .card-front,
 .card.matched .card-front { opacity: 0; }
@@ -263,6 +279,7 @@ onMounted(async () => {
 .matched-title { color: var(--muted); font-size: .88rem; margin-bottom: .5rem; }
 .matched-item { display: flex; align-items: center; justify-content: center; gap: .5rem; padding: .3rem; font-size: .88rem; }
 .matched-term { color: var(--text); font-weight: 700; }
+.matched-term small { display: block; color: #a5b4fc; font-size: .72rem; font-style: italic; font-weight: 700; }
 .matched-sep { color: var(--muted); }
 .matched-tr { color: #4ade80; }
 

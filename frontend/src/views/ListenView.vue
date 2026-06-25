@@ -159,7 +159,7 @@ watch(done, (val) => {
 })
 
 onMounted(async () => {
-  if (!store.words.length) await store.loadWords()
+  if (!store.words.length) await store.loadWords(8)
   cards.value = [...store.words].sort(() => Math.random() - 0.5)
   buildChoices()
   setTimeout(speak, 600)
@@ -189,16 +189,16 @@ onMounted(async () => {
 .replay-hint { color: #444; font-size: .75rem; margin-top: .5rem; }
 
 .choices { display: flex; flex-direction: column; gap: .6rem; margin-bottom: 1.25rem; }
-.choice-btn { background: var(--bg-card); border: 2px solid #444; border-radius: 10px; padding: .75rem 1rem;
-  color: #ddd; font-size: 1rem; cursor: pointer; text-align: left; transition: border-color .15s; }
+.choice-btn { background: var(--bg-card); border: 2px solid var(--border); border-radius: 10px; padding: .75rem 1rem;
+  color: var(--text); font-size: 1rem; font-weight: 600; cursor: pointer; text-align: left; transition: border-color .15s, color .15s; }
 .choice-btn:not(:disabled):hover { border-color: #0ea5e9; }
-.choice-btn.correct { border-color: #22c55e; background: #14532d40; color: #86efac; }
-.choice-btn.wrong   { border-color: #ef4444; background: #7f1d1d40; color: #fca5a5; }
+.choice-btn.correct { border-color: var(--success); background: #14532d40; color: var(--success); }
+.choice-btn.wrong   { border-color: var(--danger); background: #7f1d1d40; color: var(--danger); }
 
 .reveal-pair { display: flex; align-items: center; justify-content: center; gap: .6rem; flex-wrap: wrap; margin-bottom: .75rem; }
 .reveal-term { font-weight: 700; color: var(--text); }
 .reveal-arrow { color: var(--muted); }
-.reveal-fr { color: #86efac; font-weight: 600; }
+.reveal-fr { color: var(--success); font-weight: 600; }
 .reveal { text-align: center; margin-top: .5rem; }
 .reveal-term { font-size: 1.6rem; font-weight: 700; color: var(--text); margin-bottom: 1rem; }
 .reveal-term.rtl { direction: rtl; }

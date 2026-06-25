@@ -228,7 +228,7 @@ watch(done, (val) => {
 
 // ── Mount ─────────────────────────────────────────────────────────────────────
 onMounted(async () => {
-  if (!store.words.length) await store.loadWords()
+  if (!store.words.length) await store.loadWords(8)
   const withSentence = store.words.filter(w => w.example_sentence).sort(() => Math.random() - 0.5)
   cards.value = buildCards(withSentence)
   if (cards.value.length) loadCard()
@@ -283,18 +283,18 @@ onMounted(async () => {
   border: 2px solid var(--accent)40;
   border-radius: 9px;
   font-size: .92rem; font-weight: 600;
-  color: #ddd;
+  color: var(--text);
   cursor: pointer;
   transition: all .15s ease;
   user-select: none;
 }
 .word-token:hover:not(:disabled) {
-  background: var(--accent); color: var(--text); border-color: var(--accent);
+  background: var(--accent); color: white; border-color: var(--accent);
   transform: translateY(-2px);
   box-shadow: 0 3px 10px var(--accent)40;
 }
 .word-token:active:not(:disabled) { transform: translateY(0); }
-.word-token.in-zone { background: var(--accent); color: var(--text); border-color: #3730a3; }
+.word-token.in-zone { background: var(--accent); color: white; border-color: #3730a3; }
 .word-token.in-zone:hover:not(:disabled) { background: #3730a3; }
 .word-token:disabled { cursor: default; opacity: .85; }
 

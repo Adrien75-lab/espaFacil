@@ -172,7 +172,7 @@ watch(done, (val) => {
 })
 
 onMounted(async () => {
-  if (!store.words.length) await store.loadWords()
+  if (!store.words.length) await store.loadWords(8)
   cards.value = [...store.words].sort(() => Math.random() - 0.5)
   buildChoices()
 })
@@ -198,19 +198,19 @@ onMounted(async () => {
 .clue-box { margin-top: 0.75rem; background: #2a2000; border: 2px solid #b87a00; border-radius: 8px;
   padding: 0.5rem 1rem; color: #f5d080; font-size: 0.88rem; display: inline-block; }
 .choices { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.25rem; }
-.choice-btn { background: var(--bg-card); border: 2px solid #444; border-radius: 10px; padding: 0.75rem 1rem;
-  color: #ddd; font-size: 1rem; cursor: pointer; text-align: left; transition: border-color .15s; }
+.choice-btn { background: var(--bg-card); border: 2px solid var(--border); border-radius: 10px; padding: 0.75rem 1rem;
+  color: var(--text); font-size: 1rem; font-weight: 600; cursor: pointer; text-align: left; transition: border-color .15s, color .15s; }
 .choice-btn:not(:disabled):hover { border-color: var(--accent); }
 .reveal-block { margin-top: 1rem; }
 .answer-feedback { margin-bottom: .7rem; padding: .55rem .75rem; border-radius: 8px; text-align: center; font-weight: 900; animation: feedback-pop .28s cubic-bezier(.2, 1.4, .4, 1) both; }
-.answer-feedback.ok { background: #16a34a20; border: 1px solid #22c55e80; color: #86efac; }
-.answer-feedback.ko { background: #ef444420; border: 1px solid #ef444480; color: #fca5a5; }
+.answer-feedback.ok { background: #16a34a20; border: 1px solid #22c55e80; color: var(--success); }
+.answer-feedback.ko { background: #ef444420; border: 1px solid #ef444480; color: var(--danger); }
 .reveal-pair { display: flex; align-items: center; justify-content: center; gap: .6rem; padding: .65rem 1rem; background: var(--bg-card); border: 1px solid #22c55e40; border-radius: 8px; margin-bottom: .75rem; flex-wrap: wrap; }
 .reveal-term { font-weight: 700; color: var(--text); }
 .reveal-arrow { color: var(--muted); }
-.reveal-fr { color: #86efac; font-weight: 600; }
-.choice-btn.correct { border-color: #22c55e; background: #14532d40; color: #86efac; }
-.choice-btn.wrong   { border-color: #ef4444; background: #7f1d1d40; color: #fca5a5; }
+.reveal-fr { color: var(--success); font-weight: 600; }
+.choice-btn.correct { border-color: var(--success); background: #14532d40; color: var(--success); }
+.choice-btn.wrong   { border-color: var(--danger); background: #7f1d1d40; color: var(--danger); }
 .btn-next { width: 100%; background: var(--accent); color: white; border: none; border-radius: 8px;
   padding: 0.75rem; font-size: 1rem; font-weight: 600; cursor: pointer; }
 .btn-next:hover { opacity: 0.88; }

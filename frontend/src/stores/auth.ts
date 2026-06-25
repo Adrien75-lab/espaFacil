@@ -1,10 +1,11 @@
 import { defineStore } from 'pinia'
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
 export interface AuthUser {
   id: number
   name: string
   email: string
+  email_verified_at: string | null
 }
 
 async function apiFetch(url: string, options: RequestInit = {}) {
@@ -57,7 +58,11 @@ export const useAuthStore = defineStore('auth', () => {
       body: JSON.stringify({ name, email, password, password_confirmation }),
     })
     const data = await res.json()
-    if (!res.ok) throw new Error(data.message ?? 'Erreur d\'inscription.')
+    if (!res.ok) {
+      const err: any = new Error(data.message ?? 'Erreur d\'inscription.')
+      err.errors = data.errors ?? {}
+      throw err
+    }
     user.value = data.user
   }
 
@@ -66,5 +71,23 @@ export const useAuthStore = defineStore('auth', () => {
     user.value = null
   }
 
-  return { user, loading, fetchUser, login, register, logout }
+  async function deleteAccount() {
+    const res = await apiFetch('/api/me', { method: 'DELETE' })
+    if (!res.ok) {
+      const data = await res.json()
+      throw new Error(data.message ?? 'Erreur lors de la suppression.')
+    }
+    user.value = null
+  }
+
+  const emailVerified = computed(() => !!user.value?.email_verified_at)
+
+  async function resendVerification() {
+    const res = await apiFetch('/api/email/resend', { method: 'POST' })
+    const data = await res.json()
+    if (!res.ok) throw new Error(data.message ?? 'Erreur lors de l\'envoi.')
+    return data.message
+  }
+
+  return { user, loading, emailVerified, fetchUser, login, register, logout, deleteAccount, resendVerification }
 })
