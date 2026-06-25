@@ -13,6 +13,9 @@
       <!-- Objectif quotidien (si connecté) -->
       <DailyGoalWidget v-if="auth.user" ref="goalWidget" />
 
+      <!-- Coach personnalisé -->
+      <CoachWidget v-if="auth.user" ref="coachWidget" />
+
       <!-- Bandeau mode démo (visiteur non connecté) -->
       <div v-if="isGuest" class="demo-banner">
         🔓 Mode démo — l'espagnol, le niveau débutant et les modes QCM/Cartes sont disponibles sans compte.
@@ -200,6 +203,7 @@ import { useRouter, RouterLink } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
 import { useAuthStore } from '@/stores/auth'
 import DailyGoalWidget from '@/components/DailyGoalWidget.vue'
+import CoachWidget from '@/components/CoachWidget.vue'
 import FlagIcon from '@/components/FlagIcon.vue'
 import LandingHero from '@/components/LandingHero.vue'
 import { getDialogues } from '@/api/content'
@@ -209,6 +213,7 @@ const store      = useLangStore()
 const auth       = useAuthStore()
 const router     = useRouter()
 const goalWidget = ref<InstanceType<typeof DailyGoalWidget> | null>(null)
+const coachWidget = ref<InstanceType<typeof CoachWidget> | null>(null)
 
 const selectedScenario = ref<string | null>(null)
 const currentMode      = ref<string>('quiz')

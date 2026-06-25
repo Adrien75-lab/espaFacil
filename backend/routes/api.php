@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\CoachController;
 use App\Http\Controllers\Api\ConjugationController;
 use App\Http\Controllers\Api\CustomWordController;
 use App\Http\Controllers\Api\DashboardController;
@@ -56,6 +57,9 @@ Route::middleware(['auth:sanctum', 'verified'])->prefix('me')->group(function ()
     Route::get('/learning-progress', [LearningProgressController::class, 'index']);
     Route::get('/today', [TodayController::class, 'index']);
     Route::put('/goal', [TodayController::class, 'updateGoal']);
+
+    // Coach
+    Route::get('/coach', [CoachController::class, 'index']);
 
     // SRS
     Route::post('/reviews', [ReviewController::class, 'record']);
