@@ -99,7 +99,9 @@ class DashboardController extends Controller
             'total_xp' => $totalXp,
             'total_sessions' => $totalSessions,
             'current_streak' => $currentStreak,
-            'xp_history' => $xpHistory,  // [{date, xp}] trié ASC
+            'lingos_balance' => $user->lingos_balance ?? 0,
+            'member_since' => $user->created_at?->toDateString(),
+            'xp_history' => $xpHistory,
             'badges' => $badges,
             'languages' => $langStats,
             'mode_xp' => $modeXp,

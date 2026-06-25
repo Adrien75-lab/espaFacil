@@ -18,7 +18,12 @@
         <RouterLink class="auth-btn accent" to="/register">S'inscrire</RouterLink>
       </template>
     </div>
-    <RouterView />
+    <RouterView v-slot="{ Component }">
+      <Transition name="page" mode="out-in">
+        <component :is="Component" />
+      </Transition>
+    </RouterView>
+    <BottomNav />
     <AppFooter />
   </div>
 </template>
@@ -31,6 +36,7 @@ import { useTheme } from '@/composables/useTheme'
 import PwaInstallPrompt from '@/components/PwaInstallPrompt.vue'
 import OfflineBanner from '@/components/OfflineBanner.vue'
 import AppFooter from '@/components/AppFooter.vue'
+import BottomNav from '@/components/BottomNav.vue'
 
 const auth = useAuthStore()
 const { theme, toggle } = useTheme()
@@ -46,6 +52,12 @@ async function doLogout() {
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg-app); color: var(--text); font-family: system-ui, sans-serif; }
 a { color: inherit; }
+.page-enter-active, .page-leave-active { transition: opacity 0.15s ease, transform 0.15s ease; }
+.page-enter-from { opacity: 0; transform: translateY(6px); }
+.page-leave-to { opacity: 0; }
+@media (max-width: 640px) {
+  body { padding-bottom: 60px; }
+}
 </style>
 
 <style scoped>

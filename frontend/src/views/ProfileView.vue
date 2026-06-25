@@ -47,11 +47,13 @@
           <span class="stat-value">{{ data.current_streak }}🔥</span>
           <span class="stat-label">Série actuelle</span>
         </div>
-        <div class="stat-card">
-          <span class="stat-value">{{ data.languages.length }}</span>
-          <span class="stat-label">Langue{{ data.languages.length > 1 ? 's' : '' }}</span>
+        <div class="stat-card lingos">
+          <span class="stat-value">🪙 {{ lingosBalance }}</span>
+          <span class="stat-label">Lingos</span>
         </div>
       </div>
+
+      <p class="member-since">Membre depuis {{ memberSince }}</p>
 
       <!-- Graphe XP 30 jours -->
       <section class="section">
@@ -231,6 +233,14 @@ const initials = computed(() => {
   return data.value.user.name.split(' ').map(p => p[0]).join('').slice(0, 2).toUpperCase()
 })
 
+const lingosBalance = computed(() => data.value?.lingos_balance ?? 0)
+
+const memberSince = computed(() => {
+  if (!data.value?.member_since) return ''
+  const d = new Date(data.value.member_since)
+  return d.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })
+})
+
 const badgeMeta: Record<string, { emoji: string; label: string }> = {
   first_session:  { emoji: '🎯', label: '1ère session' },
   score_perfect:  { emoji: '💯', label: 'Score parfait' },
@@ -363,6 +373,8 @@ onMounted(async () => {
 .stat-card { background: var(--bg-card); border: 2px solid var(--bg-hover); border-radius: 12px;
   padding: 1rem; text-align: center; display: flex; flex-direction: column; gap: .25rem; }
 .stat-card.streak { border-color: #f59e0b40; }
+.stat-card.lingos { border-color: #fbbf2440; }
+.member-since { text-align: center; color: var(--muted); font-size: 0.8rem; margin: -1rem 0 2rem; }
 .stat-value { font-size: 1.6rem; font-weight: 700; color: var(--text); }
 .stat-label { font-size: .75rem; color: #666; }
 

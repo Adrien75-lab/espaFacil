@@ -3,6 +3,8 @@ export interface DashboardData {
   total_xp:        number
   total_sessions:  number
   current_streak:  number
+  lingos_balance:  number
+  member_since:    string | null
   xp_history:      Array<{ date: string; xp: number }>
   badges:          Array<{ key: string; language_id: number; unlocked_at: string }>
   mode_xp:         Record<string, number>
